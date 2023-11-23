@@ -1,1 +1,75 @@
-{"type":"header","name":"Footer group","sections":{"footer":{"type":"footer","blocks":{"401e3886-6cb7-4742-8fda-45a0d97a26a3":{"type":"menu","settings":{"column_size":"medium","title":"Company","menu":"footer"}},"00a364e5-af4e-4073-871b-4d533bd4da06":{"type":"menu","settings":{"column_size":"medium","title":"Policy","menu":"policy"}},"9c7d0155-0d4c-4a52-bc56-5276570cbac7":{"type":"social","settings":{"column_size":"small","title":"Social"}},"fb23472e-4921-42b3-a2ac-42a6ac1dee8c":{"type":"text","settings":{"column_size":"small","title":"","text":"<p>Need help? Get in touch with us and we’ll be more than happy to guide you through.<br\/>care.in@virgio.com<\/p>","text_size":"medium","button_text":"","button_link":"","show_social_links":false}}},"block_order":["401e3886-6cb7-4742-8fda-45a0d97a26a3","00a364e5-af4e-4073-871b-4d533bd4da06","9c7d0155-0d4c-4a52-bc56-5276570cbac7","fb23472e-4921-42b3-a2ac-42a6ac1dee8c"],"custom_css":[],"settings":{"full_width":true,"copyright_text":"All rights reserved.","show_language_switcher":false,"show_currency_switcher":false,"show_payment_icons":false,"enable_follow_on_shop":true}}},"order":["footer"]}
+{
+  "type": "header",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+          "type": "menu",
+          "settings": {
+            "column_size": "medium",
+            "title": "Company",
+            "menu": "footer"
+          }
+        },
+        "801371dd-629c-4b6b-a71a-ad849e48af64": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "Community",
+            "menu": "footer"
+          }
+        },
+        "00a364e5-af4e-4073-871b-4d533bd4da06": {
+          "type": "menu",
+          "settings": {
+            "column_size": "medium",
+            "title": "Policy",
+            "menu": "policy"
+          }
+        },
+        "9c7d0155-0d4c-4a52-bc56-5276570cbac7": {
+          "type": "social",
+          "settings": {
+            "column_size": "small",
+            "title": "Social"
+          }
+        },
+        "fb23472e-4921-42b3-a2ac-42a6ac1dee8c": {
+          "type": "text",
+          "settings": {
+            "column_size": "small",
+            "title": "",
+            "text": "<p>Need help? Get in touch with us and we’ll be more than happy to guide you through.<br\/>care.in@virgio.com<\/p>",
+            "text_size": "medium",
+            "button_text": "",
+            "button_link": "",
+            "show_social_links": false
+          }
+        }
+      },
+      "block_order": [
+        "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+        "801371dd-629c-4b6b-a71a-ad849e48af64",
+        "00a364e5-af4e-4073-871b-4d533bd4da06",
+        "9c7d0155-0d4c-4a52-bc56-5276570cbac7",
+        "fb23472e-4921-42b3-a2ac-42a6ac1dee8c"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "copyright_text": "All rights reserved.",
+        "show_language_switcher": false,
+        "show_currency_switcher": false,
+        "show_payment_icons": false,
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
