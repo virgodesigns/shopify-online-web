@@ -45,6 +45,9 @@
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
+  .widget--menu-column-2 {
+    display: none;
+  }
   .footer .widget--menu {
     margin-bottom: 0;
     border-top: 1px solid var(--color-footer-border);
@@ -276,7 +279,11 @@
 .footer-payment-icons {
   margin-bottom: 35px;
 }
+
 @media only screen and (min-width: 768px) {
+  .widget--menu-column-3 {
+    display: none;
+  }
   .footer-payment-icons {
     text-align: right;
     margin-bottom: 25px;
