@@ -3,7 +3,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  min-height: 270px;
+  min-height: auto;
 }
 .collection-banner .row {
   min-width: 100%;
@@ -76,12 +76,15 @@
   font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
+  .collection-banner {
+    margin-top: 7rem;
+  }
   .collection-banner--content h1 + .collection-banner--subcollections {
     margin-top: 20px;
   }
 }
 .collection-banner--content .searchform {
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .collection-banner--content p {
   font-size: inherit;
