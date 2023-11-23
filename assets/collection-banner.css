@@ -66,6 +66,11 @@
   position: relative;
   z-index: 5;
 }
+@media only screen and (max-width: 768px) {
+  .collection-banner--content .searchform {
+    margin-top: 80px !important;
+  }
+}
 @media only screen and (min-width: 768px) {
   .collection-banner--content {
     max-width: 530px;
@@ -84,7 +89,7 @@
   }
 }
 .collection-banner--content .searchform {
-  margin-top: 70px;
+  margin-top: 120px;
 }
 .collection-banner--content p {
   font-size: inherit;
