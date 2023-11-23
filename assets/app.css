@@ -378,14 +378,13 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-
-.icon-hide{
-  display:none;
+.icon-hide {
+  display: none;
 }
 
 .unmute-icon,
 .mute-icon {
-  margin-top:8px;
+  margin-top: 8px;
 }
 
 em,
@@ -2017,7 +2016,7 @@ table thead th {
 table th,
 table td {
   padding: 10px 15px;
-  text-align:center;
+  text-align: center;
 }
 
 table.no-borders {
@@ -2125,7 +2124,7 @@ table.no-borders tfoot td:first-child {
 }
 .side-panel.active {
   transform: translateX(0%);
-  z-index:9999;
+  z-index: 9999;
 }
 .side-panel.facet-drawer {
   transform: translateX(-100%);
@@ -2339,7 +2338,7 @@ table.no-borders tfoot td:first-child {
   stroke-dashoffset: 0;
   transform-origin: center;
   animation: dash 1.4s infinite ease;
-  stroke:#fff;
+  stroke: #fff;
 }
 
 @keyframes rotator {
@@ -2893,7 +2892,7 @@ h6,
 .header {
   border-bottom: none;
   position: fixed;
-  background:rgba(17,17,17,.1);
+  background: rgba(17, 17, 17, 0.1);
   z-index: 30;
   width: 100%;
 }
@@ -2920,9 +2919,9 @@ h6,
 .header.is-sticky:after {
   opacity: 1;
 }
-.transparent--true{
+.transparent--true {
   position: absolute;
-  background: rgba(17, 17, 17, .1);
+  background: rgba(17, 17, 17, 0.1);
   border-bottom-color: rgba(255, 255, 255, 0.4);
 }
 .header.transparent--true:before {
@@ -3847,20 +3846,19 @@ input[type="submit"].medium {
   font-size: 0.75rem;
 }
 
-.button-overflow-container span::after{
-   content: "";
+.button-overflow-container span::after {
+  content: "";
   border-bottom: 1px solid #fff;
   display: block;
   border-radius: 5px;
   margin: 0 auto;
 }
 
-
 .button.white,
 input[type="submit"].white {
- color: #fff;
-background: none;
-border: none;
+  color: #fff;
+  background: none;
+  border: none;
 }
 input[type="submit"].white:before {
   background: var(--color-body);
@@ -3901,7 +3899,7 @@ input[type="submit"].outline {
 .button.outline,
 input[type="submit"].outline:before {
   background: transparent;
-  color:#000;
+  color: #000;
 }
 @media screen and (hover: hover) {
   input[type="submit"].outline:hover {
@@ -3924,7 +3922,7 @@ input[type="submit"].outline:focus {
 input[type="submit"].outline.white {
   border-color: #fff;
   color: #fff;
-  text-decoration:none;
+  text-decoration: none;
 }
 input[type="submit"].outline.white:before {
   background: #fff;
@@ -4539,7 +4537,7 @@ select.resize-select {
 }
 .product-cart-item-info .price {
   display: block;
-  font-size:14px;
+  font-size: 14px;
 }
 @media only screen and (min-width: 1068px) {
   .product-cart-item-info .price {
@@ -5109,8 +5107,8 @@ https://flickity.metafizzy.co
   line-height: 0;
 }
 
-.main-slideshow .flickity-page-dots .dot{
-  margin:0 2px;
+.main-slideshow .flickity-page-dots .dot {
+  margin: 0 2px;
 }
 
 .flickity-page-dots .dot {

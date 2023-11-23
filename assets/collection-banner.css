@@ -1,9 +1,12 @@
 .collection-banner {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   text-align: center;
   position: relative;
   min-height: auto;
+}
+.collection-banner--description {
+  margin-bottom: 1rem;
 }
 .collection-banner .row {
   min-width: 100%;
@@ -98,6 +101,9 @@
 @media only screen and (min-width: 768px) {
   .collection-banner--subcollections {
     margin-top: 35px;
+  }
+  .collection-banner .side-panel-content--initial {
+    padding: 25px 50px;
   }
 }
 .collection-banner--subcollections .text-button {
