@@ -60,7 +60,7 @@
               assign column_class = 'small-12 medium-6'
           endcase
         -%}
-        <div class="{{ column_class | escape }} columns widget--menu-column" {{ block.shopify_attributes }}>
+        <div class="{{ column_class | escape }} columns widget--menu-column widget--menu-column-{{ forloop.index }}" {{ block.shopify_attributes }}>
           <div class="widget widget--menu">
             <button class="thb-widget-title collapsible" tabindex="0">
               {{ block.settings.title }}
