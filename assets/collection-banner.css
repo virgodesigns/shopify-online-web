@@ -79,9 +79,6 @@
   font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
-  .collection-banner {
-    margin-top: 5.1rem;
-  }
   .collection-banner--content h1 + .collection-banner--subcollections {
     margin-top: 20px;
   }
