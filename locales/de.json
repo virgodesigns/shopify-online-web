@@ -96,7 +96,7 @@
       "product_variants": "Produktvarianten",
       "product_information": "Produktinformation",
       "add_to_cart": "In den Warenkorb legen",
-			"choose_options": "Optionen wählen",
+      "choose_options": "Optionen wählen",
       "sold_out": "Ausverkauft",
       "save_html": "Spare {{ saved_amount }}",
       "unavailable": "Nicht verfügbar",
@@ -183,7 +183,7 @@
       "cart": "Warenkorb",
       "products": "Produkte",
       "articles": "Artikel",
-			"suggestions": "Vorschläge",
+      "suggestions": "Vorschläge",
       "view_all_results": "Alle Ergebnisse anzeigen"
     },
     "breadcrumbs": {
@@ -219,7 +219,7 @@
         "total": "Gesamtsumme",
         "quantity": "Anzahl"
       },
-			"terms": "Ich stimme den AGB zu",
+      "terms": "Ich stimme den AGB zu",
       "terms_html": "Ich stimme den <a href='{{ url }}' target='_blank'>Nutzungsbedingungen<\/a> zu",
       "terms_confirm": "Sie müssen den Verkaufsbedingungen zustimmen, um zur Kasse gehen zu können"
     },

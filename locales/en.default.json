@@ -96,7 +96,7 @@
       "product_variants": "Product variants",
       "product_information": "Product information",
       "add_to_cart": "Add to cart",
-			"choose_options": "Choose options",
+      "choose_options": "Choose options",
       "sold_out": "Sold out",
       "save_html": "Save {{ saved_amount }}",
       "unavailable": "Unavailable",
@@ -183,7 +183,7 @@
       "cart": "Cart",
       "products": "Products",
       "articles": "Articles",
-			"suggestions": "Suggestions",
+      "suggestions": "Suggestions",
       "view_all_results": "View all results"
     },
     "breadcrumbs": {
@@ -219,7 +219,7 @@
         "total": "Total",
         "quantity": "Quantity"
       },
-			"terms": "I agree with the terms and conditions",
+      "terms": "I agree with the terms and conditions",
       "terms_html": "I agree with the <a href='{{ url }}' target='_blank'>terms and conditions<\/a>",
       "terms_confirm": "You must agree with the terms and conditions of sales to check out"
     },

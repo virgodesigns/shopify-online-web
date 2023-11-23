@@ -179,15 +179,15 @@
   },
   "sections": {
     "header": {
-			"search": "Ricerca",
+      "search": "Ricerca",
       "search_for": "Cerca qualsiasi cosa",
       "popular_searches": "POPULAR SEARCHES",
       "my_account": "Il mio conto",
       "login": "Login",
       "cart": "Carrello",
-			"products": "Prodotti",
-			"articles": "Articoli",
-			"suggestions": "Suggerimenti",
+      "products": "Prodotti",
+      "articles": "Articoli",
+      "suggestions": "Suggerimenti",
       "view_all_results": "Visualizza tutti i risultati"
     },
     "breadcrumbs": {
@@ -223,7 +223,7 @@
         "total": "Totale",
         "quantity": "Quantità"
       },
-			"terms": "Sono d'accordo con i termini e le condizioni",
+      "terms": "Sono d'accordo con i termini e le condizioni",
       "terms_html": "Sono d'accordo con i <a href='{{ url }}' target='_blank'>termini e condizioni<\/a>",
       "terms_confirm": "Devi accettare i termini e le condizioni di vendita per effettuare il pagamento"
     },

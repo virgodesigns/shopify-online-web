@@ -188,7 +188,7 @@
       "cart": "Panier",
       "products": "Des produits",
       "articles": "Des articles",
-			"suggestions": "Suggestions",
+      "suggestions": "Suggestions",
       "view_all_results": "Voir tous les résultats"
     },
     "breadcrumbs": {
@@ -224,7 +224,7 @@
         "total": "Total",
         "quantity": "Quantité"
       },
-			"terms": "J'accepte les termes et conditions",
+      "terms": "J'accepte les termes et conditions",
       "terms_html": "J'accepte les <a href='{{ url }}' target='_blank'>termes et conditions<\/a>",
       "terms_confirm": "Vous devez accepter les conditions générales de vente pour valider"
     },

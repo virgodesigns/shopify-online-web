@@ -96,7 +96,7 @@
       "product_variants": "Variantes de producto",
       "product_information": "Información del Producto",
       "add_to_cart": "Agregar al carrito",
-			"choose_options": "Elegir opciones",
+      "choose_options": "Elegir opciones",
       "sold_out": "Agotado",
       "save_html": "Guardar {{ saved_amount }}",
       "unavailable": "No disponible",
@@ -128,13 +128,13 @@
         "low_stock": "Stock limitado",
         "in_stock": "En stock"
       },
-			"pickup_availability": {
-				"heading": "Disponibilidad de recogida",
+      "pickup_availability": {
+        "heading": "Disponibilidad de recogida",
         "view_store_info": "Ver información de la tienda",
         "check_other_stores": "Verificar disponibilidad en otras tiendas",
         "pick_up_available": "Retiro disponible",
-        "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "No se pudo cargar la disponibilidad de retiro",
         "refresh": "Actualizar"
       },
@@ -186,7 +186,7 @@
       "cart": "Carrito",
       "products": "Productos",
       "articles": "Artículos",
-			"suggestions": "Sugerencias",
+      "suggestions": "Sugerencias",
       "view_all_results": "Ver todos los resultados"
     },
     "breadcrumbs": {
@@ -222,7 +222,7 @@
         "total": "Total",
         "quantity": "Cantidad"
       },
-			"terms": "Estoy de acuerdo con los términos y condiciones",
+      "terms": "Estoy de acuerdo con los términos y condiciones",
       "terms_html": "Estoy de acuerdo con los <a href='{{ url }}' target='_blank'>términos y condiciones<\/a>",
       "terms_confirm": "Debes estar de acuerdo con los términos y condiciones de venta para pagar"
     },
