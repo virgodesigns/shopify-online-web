@@ -25,7 +25,7 @@
     "sale_badge_type": "save_percentage",
     "cart_drawer_notes": false,
     "cart_recommendations": false,
-    "search_product_collection": "all",
+    "search_product_collection": "",
     "lazy_loading": true,
     "back_to_top": false,
     "favicon": "shopify:\/\/shop_images\/Fav_icon_Dark_32x32_Squircle-1.png",
