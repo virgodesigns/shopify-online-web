@@ -1,0 +1,43 @@
+.good-company {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.good-company .top-image {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.good-company p {
+  width: 77%;
+  text-align: center;
+  margin: 0px auto 16px;
+  color: #111;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+}
+
+.good-company .bottom-image {
+  width: 77%;
+  margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.good-company h6 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.good-company a {
+  display: block;
+  text-align: center;
+}

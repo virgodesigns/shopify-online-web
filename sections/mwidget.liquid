@@ -1,0 +1,100 @@
+<div class="image-container">
+  {% assign image_count = 0 %}
+  <div class="image-item__image">
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <div>
+          <a href="{{ block.settings.button_link }}">
+            {% render 'responsive-picture', desktopImage: block.settings.image, mobileImage: block.settings.image %}
+            {% assign image_count = image_count | plus: 1 %}
+            <div class="image-text__heading heading-{{ block.id }}">{{ block.settings.heading_text }}</div>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  @media only screen and (min-width: 769px) {
+    .image-container {
+        display:none;
+      }
+    }
+  .image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .image-text__heading{
+   color: var(--primary-dark-primary-900111111, #111);
+    text-align: center;
+    margin:12px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.24px;
+  }
+  .image-item__image{
+    display:grid;
+    column-gap: 14px;
+    display: grid;
+    column-gap: 14px;
+    padding: 14px 14px 0 14px
+  }
+  
+  {% if image_count == 3 %}
+     .image-item__image {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  {% else %}
+    .image-item__image {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  {% endif %}
+</style>
+
+{% schema %}
+{
+  "name": "mobile Widget",
+  "class": "homepage-section",
+    "blocks": [
+    {
+      "name": "add image",
+      "type": "image-item",
+      "limit": 4,
+      "settings": [
+          {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image (Mobile)",
+        "info": "200px 200px .jpg recommended"
+          },
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading text"
+        },
+        {
+          "type": "color",
+          "id": "heading_text_color",
+          "label": "Heading text color",
+          "default": "#111111"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "mobile Widget collections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,134 @@
+.collection-carousel {
+  display: flex;
+  align-items: flex-start;
+}
+
+.collection-carousel .page-width-cust {
+  width: calc(100%);
+}
+
+.collection-carousel > div {
+  padding: 0px 16px 0px 16px;
+}
+
+.collection-carousel .heading {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.collection-carousel .flex-box {
+  flex-wrap: nowrap;
+  overflow: auto;
+  /* column-gap: 8px; */
+  margin-bottom: 23px;
+}
+
+.collection-carousel .flex-box .flex-box__item {
+  flex-basis: 78%;
+  flex-shrink: 0;
+}
+
+.collection-carousel .flex-box .image {
+  margin-bottom: 16px;
+}
+
+.collection-carousel .flex-box .name::hover {
+  content: "";
+  border-bottom: 2px solid #8d0349;
+  display: block;
+  border-radius: 5px;
+}
+
+.collection-carousel .flex-box .name {
+  position: relative;
+}
+
+.collection-carousel .flex-box .name {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px; /* Adjust this value to control the gap between text and underline */
+}
+
+.collection-carousel .flex-box .name::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.collection-carousel .flex-box .name:hover::before {
+  transform: scaleX(1);
+}
+
+.collection-carousel .button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  display: block;
+}
+@media screen and (min-height: 768px) {
+  .collection-carousel .flex-box .flex-box__item {
+    flex-basis: 85%;
+  }
+}
+@media screen and (min-height: 868px) {
+  .collection-carousel .flex-box .flex-box__item {
+    flex-basis: 95%;
+  }
+  .collection-carousel .flex-box {
+    margin-bottom: 42px;
+  }
+  .collection-carousel .heading {
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .collection-carousel {
+    padding-top:3rem;
+    align-items: flex-end;
+    padding-bottom: 0px;
+  }
+
+  .collection-carousel .page-width-cust {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .collection-carousel .heading {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+
+  .collection-carousel .flex-box .image {
+    margin-bottom: 24px;
+  }
+
+  .collection-carousel .flex-box p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  .collection-carousel .page-width-cust {
+    width: 74%;
+  }
+  .collection-carousel .flex-box {
+    flex-wrap: wrap;
+    /* column-gap: 24px; */
+  }
+}

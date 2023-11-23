@@ -1,0 +1,3063 @@
+.hideBox {
+  display: none !important;
+}
+.simply-otp-wrapper,
+.sotp-widget {
+  margin: auto;
+}
+.simply-otp-wrapper div:empty,
+.sotp-widget div:empty {
+  display: initial;
+}
+.simply-otp-wrapper .toast-box-wrapper,
+.sotp-widget .toast-box-wrapper {
+  display: none;
+}
+.simply-otp-wrapper .toast-box-wrapper.active,
+.sotp-widget .toast-box-wrapper.active {
+  display: block;
+}
+.simply-otp-wrapper .toast-box-wrapper .toast-content,
+.sotp-widget .toast-box-wrapper .toast-content {
+  margin: 15px 0;
+}
+.simply-otp-wrapper .toast-box-wrapper .toast-content .toast-card,
+.sotp-widget .toast-box-wrapper .toast-content .toast-card {
+  padding: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+}
+.simply-otp-wrapper .toast-box-wrapper .toast-content .toast-card.success,
+.sotp-widget .toast-box-wrapper .toast-content .toast-card.success {
+  border: 2px solid #14a44d;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.success
+  .toast-icon-wrapper
+  svg,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.success
+  .toast-icon-wrapper
+  svg {
+  stroke: #14a44d;
+  border: 2px solid #14a44d;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.success
+  .toast-card-content
+  .toast-title,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.success
+  .toast-card-content
+  .toast-title {
+  color: #14a44d;
+}
+.simply-otp-wrapper .toast-box-wrapper .toast-content .toast-card.error,
+.sotp-widget .toast-box-wrapper .toast-content .toast-card.error {
+  border: 2px solid #d90429;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.error
+  .toast-icon-wrapper
+  svg,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.error
+  .toast-icon-wrapper
+  svg {
+  stroke: #d90429;
+  border: 2px solid #d90429;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.error
+  .toast-card-content
+  .toast-title,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card.error
+  .toast-card-content
+  .toast-title {
+  color: #d90429;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-icon-wrapper,
+.sotp-widget .toast-box-wrapper .toast-content .toast-card .toast-icon-wrapper {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 767px) {
+  .simply-otp-wrapper
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-icon-wrapper,
+  .sotp-widget
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-icon-wrapper {
+    width: 25px;
+    height: 25px;
+  }
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-icon-wrapper
+  svg,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-icon-wrapper
+  svg {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+@media screen and (max-width: 767px) {
+  .simply-otp-wrapper
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-icon-wrapper
+    svg,
+  .sotp-widget
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-icon-wrapper
+    svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content,
+.sotp-widget .toast-box-wrapper .toast-content .toast-card .toast-card-content {
+  padding-left: 15px;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content
+  .toast-title,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content
+  .toast-title {
+  font-size: 1em;
+  margin: 0;
+  line-height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .simply-otp-wrapper
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-card-content
+    .toast-title,
+  .sotp-widget
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-card-content
+    .toast-title {
+    font-size: 1em;
+  }
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content
+  .toast-description,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content
+  .toast-description {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin: 10px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .simply-otp-wrapper
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-card-content
+    .toast-description,
+  .sotp-widget
+    .toast-box-wrapper
+    .toast-content
+    .toast-card
+    .toast-card-content
+    .toast-description {
+    font-size: 0.9em;
+  }
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content
+  .toast-description.hideBox,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-card-content
+  .toast-description.hideBox {
+  display: none;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-close-icon,
+.sotp-widget .toast-box-wrapper .toast-content .toast-card .toast-close-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+.simply-otp-wrapper
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-close-icon
+  svg,
+.sotp-widget
+  .toast-box-wrapper
+  .toast-content
+  .toast-card
+  .toast-close-icon
+  svg {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+.simply-otp-wrapper .olWrapper,
+.sotp-widget .olWrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.simply-otp-wrapper .olWrapper .ol,
+.sotp-widget .olWrapper .ol {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 50px;
+  border-radius: 24px;
+  margin: 20px auto;
+  color: black;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .simply-otp-wrapper .olWrapper .ol,
+  .sotp-widget .olWrapper .ol {
+    max-width: 95%;
+    padding: 30px 20px;
+  }
+}
+.simply-otp-wrapper .olWrapper .ol .login-img,
+.sotp-widget .olWrapper .ol .login-img {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.simply-otp-wrapper .olWrapper .ol .login-img img,
+.sotp-widget .olWrapper .ol .login-img img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.simply-otp-wrapper .olWrapper .ol .login-header,
+.sotp-widget .olWrapper .ol .login-header {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 990px) {
+  .login-header {
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-header {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+}
+
+.simply-otp-wrapper .olWrapper .ol .login-description,
+.sotp-widget .olWrapper .ol .login-description {
+  text-align: center;
+  max-width: 364px;
+  font-size: 1em;
+  color: #000000;
+  letter-spacing: 1px;
+  margin: auto;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+}
+.simply-otp-wrapper .olWrapper .ol .otp-btn,
+.sotp-widget .olWrapper .ol .otp-btn {
+  font-size: 1em;
+  padding: 20px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.simply-otp-wrapper .olWrapper .ol .otp-btn svg,
+.sotp-widget .olWrapper .ol .otp-btn svg {
+  margin-left: 10px;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box,
+.simply-otp-wrapper .olWrapper .ol .update-user-box,
+.sotp-widget .olWrapper .ol .login-box,
+.sotp-widget .olWrapper .ol .update-user-box {
+  min-width: 275px;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .login-inputBox input,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .login-inputBox input,
+.sotp-widget .olWrapper .ol .login-box .login-inputBox input,
+.sotp-widget .olWrapper .ol .update-user-box .login-inputBox input {
+  border: none;
+  outline: none;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  box-shadow: none;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .login-inputBox p,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .login-inputBox p,
+.sotp-widget .olWrapper .ol .login-box .login-inputBox p,
+.sotp-widget .olWrapper .ol .update-user-box .login-inputBox p {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 19px;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .login-inputBox p,
+.simply-otp-wrapper .olWrapper .ol .login-box .login-inputBox input,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .login-inputBox p,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .login-inputBox input,
+.sotp-widget .olWrapper .ol .login-box .login-inputBox p,
+.sotp-widget .olWrapper .ol .login-box .login-inputBox input,
+.sotp-widget .olWrapper .ol .update-user-box .login-inputBox p,
+.sotp-widget .olWrapper .ol .update-user-box .login-inputBox input {
+  margin: 0;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .error-message,
+.simply-otp-wrapper .olWrapper .ol .login-box .error-message-phone,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .error-message,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .error-message-phone,
+.sotp-widget .olWrapper .ol .login-box .error-message,
+.sotp-widget .olWrapper .ol .login-box .error-message-phone,
+.sotp-widget .olWrapper .ol .update-user-box .error-message,
+.sotp-widget .olWrapper .ol .update-user-box .error-message-phone {
+  color: red;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .input-box-content,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .input-box-content,
+.sotp-widget .olWrapper .ol .login-box .input-box-content,
+.sotp-widget .olWrapper .ol .update-user-box .input-box-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid #a5a5a5;
+  border-radius: 9px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .input-box-content p,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .input-box-content p,
+.sotp-widget .olWrapper .ol .login-box .input-box-content p,
+.sotp-widget .olWrapper .ol .update-user-box .input-box-content p {
+  padding: 11px;
+  border-right: 1px solid #787878;
+  font-size: 1em;
+  align-self: center;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .input-box-content input,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .input-box-content input,
+.sotp-widget .olWrapper .ol .login-box .input-box-content input,
+.sotp-widget .olWrapper .ol .update-user-box .input-box-content input {
+  font-size: 1em;
+  padding: 18px 5px;
+  box-shadow: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  margin: 0;
+  text-indent: 5px;
+  -moz-appearance: textfield;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .input-box-content
+  input::-webkit-outer-spin-button,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .input-box-content
+  input::-webkit-inner-spin-button,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .input-box-content
+  input::-webkit-outer-spin-button,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .input-box-content
+  input::-webkit-inner-spin-button,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .input-box-content
+  input::-webkit-outer-spin-button,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .input-box-content
+  input::-webkit-inner-spin-button,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .input-box-content
+  input::-webkit-outer-spin-button,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .input-box-content
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .input-box-content .svg-icon,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .input-box-content
+  .svg-icon,
+.sotp-widget .olWrapper .ol .login-box .input-box-content .svg-icon,
+.sotp-widget .olWrapper .ol .update-user-box .input-box-content .svg-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box.login-box .login-inputBox,
+.simply-otp-wrapper .olWrapper .ol .update-user-box.login-box .login-inputBox,
+.sotp-widget .olWrapper .ol .login-box.login-box .login-inputBox,
+.sotp-widget .olWrapper .ol .update-user-box.login-box .login-inputBox {
+  position: relative;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box.login-box
+  .login-inputBox
+  .input-box-content,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box.login-box
+  .login-inputBox
+  .input-box-content,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box.login-box
+  .login-inputBox
+  .input-box-content,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box.login-box
+  .login-inputBox
+  .input-box-content {
+  display: none;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-main,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .country-selector-main,
+.sotp-widget .olWrapper .ol .login-box .country-selector-main,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 90px;
+  position: relative;
+  cursor: pointer;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-main::after,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main::after,
+.sotp-widget .olWrapper .ol .login-box .country-selector-main::after,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-main::after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 70%;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #c4c4c4;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-main
+  .selected-country,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main
+  .selected-country,
+.sotp-widget .olWrapper .ol .login-box .country-selector-main .selected-country,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main
+  .selected-country {
+  margin-right: 5px;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box {
+  display: block;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box
+  .country-flag,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box
+  .country-flag,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box
+  .country-flag,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-main
+  .selected-country
+  .country-flag-box
+  .country-flag {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-list,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .country-selector-list,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-list {
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0 -1px;
+  box-shadow: 1px 1px 4px #00000033;
+  background-color: white;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  max-height: 200px;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  display: none;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-list.active,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list.active,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list.active,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-list.active {
+  display: block;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-list li,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .country-selector-list li,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list li,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-list li {
+  padding: 5px 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-list li.active,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li.active,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list li.active,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-list li.active {
+  background: #e0e0e0;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .country-selector-list li:hover,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li:hover,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list li:hover,
+.sotp-widget .olWrapper .ol .update-user-box .country-selector-list li:hover {
+  background: #e0e0e0;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-list
+  li
+  .country-flag-box,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li
+  .country-flag-box,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-list
+  li
+  .country-flag-box,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li
+  .country-flag-box {
+  margin-right: 6px;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-list
+  li
+  .country-name,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li
+  .country-name,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list li .country-name,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li
+  .country-name {
+  margin-right: 6px;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .country-selector-list
+  li
+  .dial-code,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li
+  .dial-code,
+.sotp-widget .olWrapper .ol .login-box .country-selector-list li .dial-code,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .country-selector-list
+  li
+  .dial-code {
+  color: #999;
+}
+.simply-otp-wrapper .olWrapper .ol .login-box .other-options-box,
+.simply-otp-wrapper .olWrapper .ol .update-user-box .other-options-box,
+.sotp-widget .olWrapper .ol .login-box .other-options-box,
+.sotp-widget .olWrapper .ol .update-user-box .other-options-box {
+  margin-top: 40px;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-p,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-p,
+.sotp-widget .olWrapper .ol .login-box .other-options-box .other-options-p,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-p {
+  margin: 0 0 30px 0;
+  text-align: center;
+  position: relative;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-p::before,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-p::before,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-p::before,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-p::before {
+  content: "";
+  background-color: #c4c4c4;
+  height: 1px;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: -1;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-p
+  span,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-p
+  span,
+.sotp-widget .olWrapper .ol .login-box .other-options-box .other-options-p span,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-p
+  span {
+  padding: 0 15px;
+  background-color: #fff;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap,
+.sotp-widget .olWrapper .ol .login-box .other-options-box .other-options-wrap,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner {
+  width: 100%;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  svg,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  svg,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  svg,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  svg {
+  width: 15px;
+  height: 15px;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  p,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  p,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  p,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box
+  .other-options-box
+  .other-options-wrap
+  .other-option-inner
+  p {
+  margin: 0;
+  padding-left: 5px;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box[data-active="mobile"]
+  .input-box-content.mobile-no-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box[data-active="mobile"]
+  .input-box-content.mobile-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box[data-active="mobile"]
+  .input-box-content.mobile-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box[data-active="mobile"]
+  .input-box-content.mobile-no-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box[data-active="mobile"]
+  .other-options-wrap
+  .other-option-inner.mobile-no-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box[data-active="mobile"]
+  .other-options-wrap
+  .other-option-inner.mobile-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box[data-active="mobile"]
+  .other-options-wrap
+  .other-option-inner.mobile-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box[data-active="mobile"]
+  .other-options-wrap
+  .other-option-inner.mobile-no-inner {
+  display: none;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box[data-active="email"]
+  .input-box-content.email-no-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box[data-active="email"]
+  .input-box-content.email-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box[data-active="email"]
+  .input-box-content.email-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box[data-active="email"]
+  .input-box-content.email-no-inner {
+  display: block;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box[data-active="email"]
+  .other-options-wrap
+  .other-option-inner.email-no-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box[data-active="email"]
+  .other-options-wrap
+  .other-option-inner.email-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box[data-active="email"]
+  .other-options-wrap
+  .other-option-inner.email-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box[data-active="email"]
+  .other-options-wrap
+  .other-option-inner.email-no-inner {
+  display: none;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box[data-active="whatsapp"]
+  .input-box-content.whatsapp-no-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box[data-active="whatsapp"]
+  .input-box-content.whatsapp-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box[data-active="whatsapp"]
+  .input-box-content.whatsapp-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box[data-active="whatsapp"]
+  .input-box-content.whatsapp-no-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .login-box[data-active="whatsapp"]
+  .other-options-wrap
+  .other-option-inner.whatsapp-no-inner,
+.simply-otp-wrapper
+  .olWrapper
+  .ol
+  .update-user-box[data-active="whatsapp"]
+  .other-options-wrap
+  .other-option-inner.whatsapp-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .login-box[data-active="whatsapp"]
+  .other-options-wrap
+  .other-option-inner.whatsapp-no-inner,
+.sotp-widget
+  .olWrapper
+  .ol
+  .update-user-box[data-active="whatsapp"]
+  .other-options-wrap
+  .other-option-inner.whatsapp-no-inner {
+  display: none;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .mn-container,
+.sotp-widget .olWrapper .ol .verify-box .mn-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .mn-container p,
+.sotp-widget .olWrapper .ol .verify-box .mn-container p {
+  margin: 0;
+  color: black;
+  margin-right: 16px;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .mn-container svg,
+.sotp-widget .olWrapper .ol .verify-box .mn-container svg {
+  cursor: pointer;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .verify-content,
+.sotp-widget .olWrapper .ol .verify-box .verify-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  position: relative;
+  margin: 20px 0;
+  padding-top: 35px;
+  background: white;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .verify-content::before,
+.sotp-widget .olWrapper .ol .verify-box .verify-content::before {
+  content: "";
+  position: absolute;
+  left: calc(100% - calc(calc(100% - 180px) / 2));
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .verify-content::after,
+.sotp-widget .olWrapper .ol .verify-box .verify-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: calc(100% - calc(calc(100% - 240px) / 2));
+  bottom: 0;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .verify-content .otp-input,
+.sotp-widget .olWrapper .ol .verify-box .verify-content .otp-input {
+  position: absolute;
+  top: 0;
+  left: 54%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 0;
+  line-height: 1.4;
+  padding: 5px 0 2px 22px;
+  width: 236px;
+  background: repeating-linear-gradient(
+      90deg,
+      #979797,
+      #979797 45px,
+      transparent 0,
+      transparent 50px
+    )
+    0 100%/200px 1px no-repeat;
+  letter-spacing: 38px;
+  margin: 0;
+  color: #000;
+  font-size: 1em;
+  line-height: 18.62px;
+  box-shadow: none;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .verify-content .otp-input:focus,
+.sotp-widget .olWrapper .ol .verify-box .verify-content .otp-input:focus {
+  border-color: #000;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .verify-content .otp-input.otp6,
+.sotp-widget .olWrapper .ol .verify-box .verify-content .otp-input.otp6 {
+  left: 57%;
+  padding: 5px 0 2px 11px;
+  width: 275px;
+  background: repeating-linear-gradient(
+      90deg,
+      #979797,
+      #979797 30px,
+      transparent 0,
+      transparent 34px
+    )
+    0 100%/212px 1px no-repeat;
+  letter-spacing: 24px;
+  font-size: 1em;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .resend-otp,
+.sotp-widget .olWrapper .ol .verify-box .resend-otp {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .resend-otp p,
+.sotp-widget .olWrapper .ol .verify-box .resend-otp p {
+  color: #a5a5a5;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .resend-otp .resend-btn,
+.sotp-widget .olWrapper .ol .verify-box .resend-otp .resend-btn {
+  color: #2343c8;
+  font-size: 1em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .resend-otp .resend-btn.disabled,
+.sotp-widget .olWrapper .ol .verify-box .resend-otp .resend-btn.disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+.simply-otp-wrapper .olWrapper .ol .verify-box .resend-otp .count-down-otp,
+.sotp-widget .olWrapper .ol .verify-box .resend-otp .count-down-otp {
+  color: #000;
+}
+.simply-otp-wrapper .olWrapper .small-otp-loader,
+.sotp-widget .olWrapper .small-otp-loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: transparent;
+  display: none;
+}
+.simply-otp-wrapper .olWrapper .small-otp-loader .loader-innerDiv,
+.sotp-widget .olWrapper .small-otp-loader .loader-innerDiv {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 18px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: loading 1s infinite ease-out;
+  margin: auto;
+  border: 7px solid #343434;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  display: none;
+}
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+.simply-otp-wrapper .update-user-box .button-wrapper,
+.sotp-widget .update-user-box .button-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.simply-otp-wrapper .update-user-box .button-wrapper .send-btn,
+.sotp-widget .update-user-box .button-wrapper .send-btn {
+  margin-right: 10px;
+  width: 50%;
+}
+.simply-otp-wrapper .update-user-box .button-wrapper .span-text,
+.sotp-widget .update-user-box .button-wrapper .span-text {
+  width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.simply-otp-wrapper .update-user-box .update-checkbox-wrapper,
+.sotp-widget .update-user-box .update-checkbox-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 10px;
+}
+.simply-otp-wrapper
+  .update-user-box
+  .update-checkbox-wrapper
+  .checkbox-main-label,
+.sotp-widget .update-user-box .update-checkbox-wrapper .checkbox-main-label {
+  width: calc(100% - 30px);
+  margin: 0;
+  margin-bottom: 10px;
+}
+.simply-otp-wrapper .update-user-box .input-box-content,
+.sotp-widget .update-user-box .input-box-content {
+  position: relative;
+}
+.simply-otp-wrapper .update-user-box .input-box-content .olInput,
+.sotp-widget .update-user-box .input-box-content .olInput {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 18px;
+  border-radius: 4px;
+  box-shadow: none;
+  background: transparent;
+  -moz-transition: border 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+  -ms-transition: border 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+  -webkit-transition: border 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+}
+.simply-otp-wrapper
+  .update-user-box
+  .input-box-content
+  .olInput:focus-within
+  ~ label,
+.sotp-widget .update-user-box .input-box-content .olInput:focus-within ~ label {
+  transform: scale(0.733) translateY(calc(-24px - 0.5em)) translate(0);
+}
+.simply-otp-wrapper
+  .update-user-box
+  .input-box-content
+  .olInput.is-filled
+  ~ label,
+.sotp-widget .update-user-box .input-box-content .olInput.is-filled ~ label {
+  transform: scale(0.733) translateY(calc(-24px - 0.5em)) translate(0);
+}
+.simply-otp-wrapper .update-user-box .input-box-content .olInput:disabled,
+.sotp-widget .update-user-box .input-box-content .olInput:disabled {
+  background: #dcdcdc !important;
+}
+.simply-otp-wrapper .update-user-box .input-box-content label,
+.sotp-widget .update-user-box .input-box-content label {
+  position: absolute;
+  top: 18px;
+  padding: 0 5px;
+  pointer-events: none;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  background: #fff;
+  color: #1a1a1ab3;
+  line-height: 1;
+  white-space: nowrap;
+  left: 10px;
+}
+.simply-otp-wrapper .update-user-box input[type="checkbox"],
+.sotp-widget .update-user-box input[type="checkbox"] {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  vertical-align: -4px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  background: none;
+  appearance: none;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 0;
+  display: block;
+}
+.simply-otp-wrapper .update-user-box input[type="checkbox"]:checked,
+.sotp-widget .update-user-box input[type="checkbox"]:checked {
+  -webkit-box-shadow: 0 0 0 10px var(--otp-login-btn-color) inset;
+  box-shadow: 0 0 0 10px var(--otp-login-btn-color) inset;
+}
+.simply-otp-wrapper .update-user-box input[type="checkbox"]:checked::after,
+.sotp-widget .update-user-box input[type="checkbox"]:checked::after {
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+.simply-otp-wrapper .update-user-box input[type="checkbox"]::after,
+.sotp-widget .update-user-box input[type="checkbox"]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+  transform: scale(0.2);
+  opacity: 0;
+  width: 10px;
+  height: 8px;
+  margin-left: -5px;
+  margin-top: -4px;
+  background-image: url("https://cdn.shopify.com/shopifycloud/shopify/assets/checkout_2021-01-25/checkbox-tick-66a9a39f70a44a226223ef4c61a701d2d10afaa73ba8846a509fbe58a82f3f36.svg"),
+    none;
+}
+.simply-otp-wrapper .custom_field,
+.sotp-widget .custom_field {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.simply-otp-wrapper .custom_field .custom_select,
+.sotp-widget .custom_field .custom_select {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.simply-otp-wrapper .custom_field .custom_select:before,
+.sotp-widget .custom_field .custom_select:before {
+  pointer-events: none;
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 11px;
+  box-shadow: rgba(46, 42, 57, 0) 0px 4px 5px 0px;
+  z-index: -1;
+}
+.simply-otp-wrapper .custom_field .custom_select:after,
+.sotp-widget .custom_field .custom_select:after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border: 0.1rem solid transparent;
+  border-radius: 10px;
+  box-shadow: rgba(46, 42, 57, 0.55) 0px 0px 0px 1px;
+  transition: box-shadow 0.1 ease;
+  z-index: 1;
+}
+.simply-otp-wrapper .custom_field .custom_select select,
+.sotp-widget .custom_field .custom_select select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2a39;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.1s ease;
+  border-radius: 10px;
+  height: 4.5rem;
+  min-height: 2px;
+  min-width: 72px;
+  position: relative;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  line-height: 25.6px;
+  padding: 10px;
+  margin: 1px;
+  min-height: 2px;
+}
+.simply-otp-wrapper .custom_field .custom_select svg,
+.sotp-widget .custom_field .custom_select svg {
+  height: 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 21.5px;
+  right: 16px;
+}
+.simply-otp-wrapper .custom_field .errormessage,
+.sotp-widget .custom_field .errormessage {
+  color: red;
+}
+.simply-otp-wrapper .country-flag-box,
+.sotp-widget .country-flag-box {
+  display: inline-block;
+  width: 20px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag,
+.sotp-widget .country-flag-box .country-flag {
+  height: 15px;
+  display: block;
+  box-shadow: 0px 0px 1px 0px #888;
+  background-image: url("https://i.ibb.co/cvDrY2B/flags.png");
+  background-repeat: no-repeat;
+  background-color: #dbdbdb;
+  background-position: 20px 0;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.in,
+.sotp-widget .country-flag-box .country-flag.in {
+  height: 14px;
+  background-position: -2413px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.us,
+.sotp-widget .country-flag-box .country-flag.us {
+  height: 11px;
+  background-position: -5263px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ca,
+.sotp-widget .country-flag-box .country-flag.ca {
+  height: 10px;
+  background-position: -834px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gb,
+.sotp-widget .country-flag-box .country-flag.gb {
+  height: 10px;
+  background-position: -1775px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.au,
+.sotp-widget .country-flag-box .country-flag.au {
+  height: 10px;
+  background-position: -286px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ac,
+.sotp-widget .country-flag-box .country-flag.ac {
+  height: 10px;
+  background-position: 0px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ad,
+.sotp-widget .country-flag-box .country-flag.ad {
+  height: 14px;
+  background-position: -22px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ae,
+.sotp-widget .country-flag-box .country-flag.ae {
+  height: 10px;
+  background-position: -44px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.af,
+.sotp-widget .country-flag-box .country-flag.af {
+  height: 14px;
+  background-position: -66px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ag,
+.sotp-widget .country-flag-box .country-flag.ag {
+  height: 14px;
+  background-position: -88px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ai,
+.sotp-widget .country-flag-box .country-flag.ai {
+  height: 10px;
+  background-position: -110px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.al,
+.sotp-widget .country-flag-box .country-flag.al {
+  height: 15px;
+  background-position: -132px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.am,
+.sotp-widget .country-flag-box .country-flag.am {
+  height: 10px;
+  background-position: -154px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ao,
+.sotp-widget .country-flag-box .country-flag.ao {
+  height: 14px;
+  background-position: -176px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.aq,
+.sotp-widget .country-flag-box .country-flag.aq {
+  height: 14px;
+  background-position: -198px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ar,
+.sotp-widget .country-flag-box .country-flag.ar {
+  height: 13px;
+  background-position: -220px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.as,
+.sotp-widget .country-flag-box .country-flag.as {
+  height: 10px;
+  background-position: -242px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.at,
+.sotp-widget .country-flag-box .country-flag.at {
+  height: 14px;
+  background-position: -264px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.au,
+.sotp-widget .country-flag-box .country-flag.au {
+  height: 10px;
+  background-position: -286px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.aw,
+.sotp-widget .country-flag-box .country-flag.aw {
+  height: 14px;
+  background-position: -308px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ax,
+.sotp-widget .country-flag-box .country-flag.ax {
+  height: 13px;
+  background-position: -330px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.az,
+.sotp-widget .country-flag-box .country-flag.az {
+  height: 10px;
+  background-position: -352px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ba,
+.sotp-widget .country-flag-box .country-flag.ba {
+  height: 10px;
+  background-position: -374px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bb,
+.sotp-widget .country-flag-box .country-flag.bb {
+  height: 14px;
+  background-position: -396px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bd,
+.sotp-widget .country-flag-box .country-flag.bd {
+  height: 12px;
+  background-position: -418px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.be,
+.sotp-widget .country-flag-box .country-flag.be {
+  height: 15px;
+  background-position: -440px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bf,
+.sotp-widget .country-flag-box .country-flag.bf {
+  height: 14px;
+  background-position: -460px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bg,
+.sotp-widget .country-flag-box .country-flag.bg {
+  height: 12px;
+  background-position: -482px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bh,
+.sotp-widget .country-flag-box .country-flag.bh {
+  height: 12px;
+  background-position: -504px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bi,
+.sotp-widget .country-flag-box .country-flag.bi {
+  height: 12px;
+  background-position: -526px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bj,
+.sotp-widget .country-flag-box .country-flag.bj {
+  height: 14px;
+  background-position: -548px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bl,
+.sotp-widget .country-flag-box .country-flag.bl {
+  height: 14px;
+  background-position: -570px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bm,
+.sotp-widget .country-flag-box .country-flag.bm {
+  height: 10px;
+  background-position: -592px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bn,
+.sotp-widget .country-flag-box .country-flag.bn {
+  height: 10px;
+  background-position: -614px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bo,
+.sotp-widget .country-flag-box .country-flag.bo {
+  height: 14px;
+  background-position: -636px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bq,
+.sotp-widget .country-flag-box .country-flag.bq {
+  height: 14px;
+  background-position: -658px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.br,
+.sotp-widget .country-flag-box .country-flag.br {
+  height: 14px;
+  background-position: -680px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bs,
+.sotp-widget .country-flag-box .country-flag.bs {
+  height: 10px;
+  background-position: -702px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bt,
+.sotp-widget .country-flag-box .country-flag.bt {
+  height: 14px;
+  background-position: -724px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bv,
+.sotp-widget .country-flag-box .country-flag.bv {
+  height: 15px;
+  background-position: -746px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bw,
+.sotp-widget .country-flag-box .country-flag.bw {
+  height: 14px;
+  background-position: -768px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.by,
+.sotp-widget .country-flag-box .country-flag.by {
+  height: 10px;
+  background-position: -790px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.bz,
+.sotp-widget .country-flag-box .country-flag.bz {
+  height: 14px;
+  background-position: -812px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ca,
+.sotp-widget .country-flag-box .country-flag.ca {
+  height: 10px;
+  background-position: -834px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cc,
+.sotp-widget .country-flag-box .country-flag.cc {
+  height: 10px;
+  background-position: -856px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cd,
+.sotp-widget .country-flag-box .country-flag.cd {
+  height: 15px;
+  background-position: -878px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cf,
+.sotp-widget .country-flag-box .country-flag.cf {
+  height: 14px;
+  background-position: -900px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cg,
+.sotp-widget .country-flag-box .country-flag.cg {
+  height: 14px;
+  background-position: -922px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ch,
+.sotp-widget .country-flag-box .country-flag.ch {
+  height: 15px;
+  background-position: -944px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ci,
+.sotp-widget .country-flag-box .country-flag.ci {
+  height: 14px;
+  background-position: -961px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ck,
+.sotp-widget .country-flag-box .country-flag.ck {
+  height: 10px;
+  background-position: -983px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cl,
+.sotp-widget .country-flag-box .country-flag.cl {
+  height: 14px;
+  background-position: -1005px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cm,
+.sotp-widget .country-flag-box .country-flag.cm {
+  height: 14px;
+  background-position: -1027px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cn,
+.sotp-widget .country-flag-box .country-flag.cn {
+  height: 14px;
+  background-position: -1049px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.co,
+.sotp-widget .country-flag-box .country-flag.co {
+  height: 14px;
+  background-position: -1071px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cp,
+.sotp-widget .country-flag-box .country-flag.cp {
+  height: 14px;
+  background-position: -1093px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cr,
+.sotp-widget .country-flag-box .country-flag.cr {
+  height: 12px;
+  background-position: -1115px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cu,
+.sotp-widget .country-flag-box .country-flag.cu {
+  height: 10px;
+  background-position: -1137px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cv,
+.sotp-widget .country-flag-box .country-flag.cv {
+  height: 12px;
+  background-position: -1159px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cw,
+.sotp-widget .country-flag-box .country-flag.cw {
+  height: 14px;
+  background-position: -1181px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cx,
+.sotp-widget .country-flag-box .country-flag.cx {
+  height: 10px;
+  background-position: -1203px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cy,
+.sotp-widget .country-flag-box .country-flag.cy {
+  height: 14px;
+  background-position: -1225px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.cz,
+.sotp-widget .country-flag-box .country-flag.cz {
+  height: 14px;
+  background-position: -1247px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.de,
+.sotp-widget .country-flag-box .country-flag.de {
+  height: 12px;
+  background-position: -1269px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.dg,
+.sotp-widget .country-flag-box .country-flag.dg {
+  height: 10px;
+  background-position: -1291px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.dj,
+.sotp-widget .country-flag-box .country-flag.dj {
+  height: 14px;
+  background-position: -1313px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.dk,
+.sotp-widget .country-flag-box .country-flag.dk {
+  height: 15px;
+  background-position: -1335px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.dm,
+.sotp-widget .country-flag-box .country-flag.dm {
+  height: 10px;
+  background-position: -1357px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.do,
+.sotp-widget .country-flag-box .country-flag.do {
+  height: 14px;
+  background-position: -1379px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.dz,
+.sotp-widget .country-flag-box .country-flag.dz {
+  height: 14px;
+  background-position: -1401px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ea,
+.sotp-widget .country-flag-box .country-flag.ea {
+  height: 14px;
+  background-position: -1423px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ec,
+.sotp-widget .country-flag-box .country-flag.ec {
+  height: 14px;
+  background-position: -1445px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ee,
+.sotp-widget .country-flag-box .country-flag.ee {
+  height: 13px;
+  background-position: -1467px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.eg,
+.sotp-widget .country-flag-box .country-flag.eg {
+  height: 14px;
+  background-position: -1489px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.eh,
+.sotp-widget .country-flag-box .country-flag.eh {
+  height: 10px;
+  background-position: -1511px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.er,
+.sotp-widget .country-flag-box .country-flag.er {
+  height: 10px;
+  background-position: -1533px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.es,
+.sotp-widget .country-flag-box .country-flag.es {
+  height: 14px;
+  background-position: -1555px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.et,
+.sotp-widget .country-flag-box .country-flag.et {
+  height: 10px;
+  background-position: -1577px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.eu,
+.sotp-widget .country-flag-box .country-flag.eu {
+  height: 14px;
+  background-position: -1599px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.fi,
+.sotp-widget .country-flag-box .country-flag.fi {
+  height: 12px;
+  background-position: -1621px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.fj,
+.sotp-widget .country-flag-box .country-flag.fj {
+  height: 10px;
+  background-position: -1643px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.fk,
+.sotp-widget .country-flag-box .country-flag.fk {
+  height: 10px;
+  background-position: -1665px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.fm,
+.sotp-widget .country-flag-box .country-flag.fm {
+  height: 11px;
+  background-position: -1687px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.fo,
+.sotp-widget .country-flag-box .country-flag.fo {
+  height: 15px;
+  background-position: -1709px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.fr,
+.sotp-widget .country-flag-box .country-flag.fr {
+  height: 14px;
+  background-position: -1731px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ga,
+.sotp-widget .country-flag-box .country-flag.ga {
+  height: 15px;
+  background-position: -1753px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gb,
+.sotp-widget .country-flag-box .country-flag.gb {
+  height: 10px;
+  background-position: -1775px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gd,
+.sotp-widget .country-flag-box .country-flag.gd {
+  height: 12px;
+  background-position: -1797px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ge,
+.sotp-widget .country-flag-box .country-flag.ge {
+  height: 14px;
+  background-position: -1819px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gf,
+.sotp-widget .country-flag-box .country-flag.gf {
+  height: 14px;
+  background-position: -1841px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gg,
+.sotp-widget .country-flag-box .country-flag.gg {
+  height: 14px;
+  background-position: -1863px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gh,
+.sotp-widget .country-flag-box .country-flag.gh {
+  height: 14px;
+  background-position: -1885px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gi,
+.sotp-widget .country-flag-box .country-flag.gi {
+  height: 10px;
+  background-position: -1907px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gl,
+.sotp-widget .country-flag-box .country-flag.gl {
+  height: 14px;
+  background-position: -1929px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gm,
+.sotp-widget .country-flag-box .country-flag.gm {
+  height: 14px;
+  background-position: -1951px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gn,
+.sotp-widget .country-flag-box .country-flag.gn {
+  height: 14px;
+  background-position: -1973px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gp,
+.sotp-widget .country-flag-box .country-flag.gp {
+  height: 14px;
+  background-position: -1995px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gq,
+.sotp-widget .country-flag-box .country-flag.gq {
+  height: 14px;
+  background-position: -2017px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gr,
+.sotp-widget .country-flag-box .country-flag.gr {
+  height: 14px;
+  background-position: -2039px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gs,
+.sotp-widget .country-flag-box .country-flag.gs {
+  height: 10px;
+  background-position: -2061px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gt,
+.sotp-widget .country-flag-box .country-flag.gt {
+  height: 13px;
+  background-position: -2083px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gu,
+.sotp-widget .country-flag-box .country-flag.gu {
+  height: 11px;
+  background-position: -2105px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gw,
+.sotp-widget .country-flag-box .country-flag.gw {
+  height: 10px;
+  background-position: -2127px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.gy,
+.sotp-widget .country-flag-box .country-flag.gy {
+  height: 12px;
+  background-position: -2149px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.hk,
+.sotp-widget .country-flag-box .country-flag.hk {
+  height: 14px;
+  background-position: -2171px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.hm,
+.sotp-widget .country-flag-box .country-flag.hm {
+  height: 10px;
+  background-position: -2193px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.hn,
+.sotp-widget .country-flag-box .country-flag.hn {
+  height: 10px;
+  background-position: -2215px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.hr,
+.sotp-widget .country-flag-box .country-flag.hr {
+  height: 10px;
+  background-position: -2237px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ht,
+.sotp-widget .country-flag-box .country-flag.ht {
+  height: 12px;
+  background-position: -2259px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.hu,
+.sotp-widget .country-flag-box .country-flag.hu {
+  height: 10px;
+  background-position: -2281px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ic,
+.sotp-widget .country-flag-box .country-flag.ic {
+  height: 14px;
+  background-position: -2303px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.id,
+.sotp-widget .country-flag-box .country-flag.id {
+  height: 14px;
+  background-position: -2325px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ie,
+.sotp-widget .country-flag-box .country-flag.ie {
+  height: 10px;
+  background-position: -2347px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.il,
+.sotp-widget .country-flag-box .country-flag.il {
+  height: 15px;
+  background-position: -2369px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.im,
+.sotp-widget .country-flag-box .country-flag.im {
+  height: 10px;
+  background-position: -2391px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.in,
+.sotp-widget .country-flag-box .country-flag.in {
+  height: 14px;
+  background-position: -2413px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.io,
+.sotp-widget .country-flag-box .country-flag.io {
+  height: 10px;
+  background-position: -2435px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.iq,
+.sotp-widget .country-flag-box .country-flag.iq {
+  height: 14px;
+  background-position: -2457px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ir,
+.sotp-widget .country-flag-box .country-flag.ir {
+  height: 12px;
+  background-position: -2479px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.is,
+.sotp-widget .country-flag-box .country-flag.is {
+  height: 15px;
+  background-position: -2501px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.it,
+.sotp-widget .country-flag-box .country-flag.it {
+  height: 14px;
+  background-position: -2523px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.je,
+.sotp-widget .country-flag-box .country-flag.je {
+  height: 12px;
+  background-position: -2545px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.jm,
+.sotp-widget .country-flag-box .country-flag.jm {
+  height: 10px;
+  background-position: -2567px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.jo,
+.sotp-widget .country-flag-box .country-flag.jo {
+  height: 10px;
+  background-position: -2589px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.jp,
+.sotp-widget .country-flag-box .country-flag.jp {
+  height: 14px;
+  background-position: -2611px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ke,
+.sotp-widget .country-flag-box .country-flag.ke {
+  height: 14px;
+  background-position: -2633px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kg,
+.sotp-widget .country-flag-box .country-flag.kg {
+  height: 12px;
+  background-position: -2655px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kh,
+.sotp-widget .country-flag-box .country-flag.kh {
+  height: 13px;
+  background-position: -2677px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ki,
+.sotp-widget .country-flag-box .country-flag.ki {
+  height: 10px;
+  background-position: -2699px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.km,
+.sotp-widget .country-flag-box .country-flag.km {
+  height: 12px;
+  background-position: -2721px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kn,
+.sotp-widget .country-flag-box .country-flag.kn {
+  height: 14px;
+  background-position: -2743px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kp,
+.sotp-widget .country-flag-box .country-flag.kp {
+  height: 10px;
+  background-position: -2765px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kr,
+.sotp-widget .country-flag-box .country-flag.kr {
+  height: 14px;
+  background-position: -2787px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kw,
+.sotp-widget .country-flag-box .country-flag.kw {
+  height: 10px;
+  background-position: -2809px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ky,
+.sotp-widget .country-flag-box .country-flag.ky {
+  height: 10px;
+  background-position: -2831px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.kz,
+.sotp-widget .country-flag-box .country-flag.kz {
+  height: 10px;
+  background-position: -2853px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.la,
+.sotp-widget .country-flag-box .country-flag.la {
+  height: 14px;
+  background-position: -2875px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lb,
+.sotp-widget .country-flag-box .country-flag.lb {
+  height: 14px;
+  background-position: -2897px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lc,
+.sotp-widget .country-flag-box .country-flag.lc {
+  height: 10px;
+  background-position: -2919px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.li,
+.sotp-widget .country-flag-box .country-flag.li {
+  height: 12px;
+  background-position: -2941px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lk,
+.sotp-widget .country-flag-box .country-flag.lk {
+  height: 10px;
+  background-position: -2963px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lr,
+.sotp-widget .country-flag-box .country-flag.lr {
+  height: 11px;
+  background-position: -2985px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ls,
+.sotp-widget .country-flag-box .country-flag.ls {
+  height: 14px;
+  background-position: -3007px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lt,
+.sotp-widget .country-flag-box .country-flag.lt {
+  height: 12px;
+  background-position: -3029px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lu,
+.sotp-widget .country-flag-box .country-flag.lu {
+  height: 12px;
+  background-position: -3051px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.lv,
+.sotp-widget .country-flag-box .country-flag.lv {
+  height: 10px;
+  background-position: -3073px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ly,
+.sotp-widget .country-flag-box .country-flag.ly {
+  height: 10px;
+  background-position: -3095px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ma,
+.sotp-widget .country-flag-box .country-flag.ma {
+  height: 14px;
+  background-position: -3117px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mc,
+.sotp-widget .country-flag-box .country-flag.mc {
+  height: 15px;
+  background-position: -3139px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.md,
+.sotp-widget .country-flag-box .country-flag.md {
+  height: 10px;
+  background-position: -3160px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.me,
+.sotp-widget .country-flag-box .country-flag.me {
+  height: 10px;
+  background-position: -3182px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mf,
+.sotp-widget .country-flag-box .country-flag.mf {
+  height: 14px;
+  background-position: -3204px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mg,
+.sotp-widget .country-flag-box .country-flag.mg {
+  height: 14px;
+  background-position: -3226px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mh,
+.sotp-widget .country-flag-box .country-flag.mh {
+  height: 11px;
+  background-position: -3248px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mk,
+.sotp-widget .country-flag-box .country-flag.mk {
+  height: 10px;
+  background-position: -3270px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ml,
+.sotp-widget .country-flag-box .country-flag.ml {
+  height: 14px;
+  background-position: -3292px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mm,
+.sotp-widget .country-flag-box .country-flag.mm {
+  height: 14px;
+  background-position: -3314px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mn,
+.sotp-widget .country-flag-box .country-flag.mn {
+  height: 10px;
+  background-position: -3336px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mo,
+.sotp-widget .country-flag-box .country-flag.mo {
+  height: 14px;
+  background-position: -3358px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mp,
+.sotp-widget .country-flag-box .country-flag.mp {
+  height: 10px;
+  background-position: -3380px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mq,
+.sotp-widget .country-flag-box .country-flag.mq {
+  height: 14px;
+  background-position: -3402px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mr,
+.sotp-widget .country-flag-box .country-flag.mr {
+  height: 14px;
+  background-position: -3424px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ms,
+.sotp-widget .country-flag-box .country-flag.ms {
+  height: 10px;
+  background-position: -3446px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mt,
+.sotp-widget .country-flag-box .country-flag.mt {
+  height: 14px;
+  background-position: -3468px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mu,
+.sotp-widget .country-flag-box .country-flag.mu {
+  height: 14px;
+  background-position: -3490px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mv,
+.sotp-widget .country-flag-box .country-flag.mv {
+  height: 14px;
+  background-position: -3512px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mw,
+.sotp-widget .country-flag-box .country-flag.mw {
+  height: 14px;
+  background-position: -3534px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mx,
+.sotp-widget .country-flag-box .country-flag.mx {
+  height: 12px;
+  background-position: -3556px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.my,
+.sotp-widget .country-flag-box .country-flag.my {
+  height: 10px;
+  background-position: -3578px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.mz,
+.sotp-widget .country-flag-box .country-flag.mz {
+  height: 14px;
+  background-position: -3600px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.na,
+.sotp-widget .country-flag-box .country-flag.na {
+  height: 14px;
+  background-position: -3622px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.nc,
+.sotp-widget .country-flag-box .country-flag.nc {
+  height: 10px;
+  background-position: -3644px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ne,
+.sotp-widget .country-flag-box .country-flag.ne {
+  height: 15px;
+  background-position: -3666px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.nf,
+.sotp-widget .country-flag-box .country-flag.nf {
+  height: 10px;
+  background-position: -3686px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ng,
+.sotp-widget .country-flag-box .country-flag.ng {
+  height: 10px;
+  background-position: -3708px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ni,
+.sotp-widget .country-flag-box .country-flag.ni {
+  height: 12px;
+  background-position: -3730px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.nl,
+.sotp-widget .country-flag-box .country-flag.nl {
+  height: 14px;
+  background-position: -3752px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.no,
+.sotp-widget .country-flag-box .country-flag.no {
+  height: 15px;
+  background-position: -3774px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.np,
+.sotp-widget .country-flag-box .country-flag.np {
+  height: 15px;
+  background-position: -3796px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.nr,
+.sotp-widget .country-flag-box .country-flag.nr {
+  height: 10px;
+  background-position: -3811px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.nu,
+.sotp-widget .country-flag-box .country-flag.nu {
+  height: 10px;
+  background-position: -3833px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.nz,
+.sotp-widget .country-flag-box .country-flag.nz {
+  height: 10px;
+  background-position: -3855px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.om,
+.sotp-widget .country-flag-box .country-flag.om {
+  height: 10px;
+  background-position: -3877px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pa,
+.sotp-widget .country-flag-box .country-flag.pa {
+  height: 14px;
+  background-position: -3899px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pe,
+.sotp-widget .country-flag-box .country-flag.pe {
+  height: 14px;
+  background-position: -3921px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pf,
+.sotp-widget .country-flag-box .country-flag.pf {
+  height: 14px;
+  background-position: -3943px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pg,
+.sotp-widget .country-flag-box .country-flag.pg {
+  height: 15px;
+  background-position: -3965px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ph,
+.sotp-widget .country-flag-box .country-flag.ph {
+  height: 10px;
+  background-position: -3987px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pk,
+.sotp-widget .country-flag-box .country-flag.pk {
+  height: 14px;
+  background-position: -4009px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pl,
+.sotp-widget .country-flag-box .country-flag.pl {
+  height: 13px;
+  background-position: -4031px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pm,
+.sotp-widget .country-flag-box .country-flag.pm {
+  height: 14px;
+  background-position: -4053px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pn,
+.sotp-widget .country-flag-box .country-flag.pn {
+  height: 10px;
+  background-position: -4075px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pr,
+.sotp-widget .country-flag-box .country-flag.pr {
+  height: 14px;
+  background-position: -4097px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ps,
+.sotp-widget .country-flag-box .country-flag.ps {
+  height: 10px;
+  background-position: -4119px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pt,
+.sotp-widget .country-flag-box .country-flag.pt {
+  height: 14px;
+  background-position: -4141px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.pw,
+.sotp-widget .country-flag-box .country-flag.pw {
+  height: 13px;
+  background-position: -4163px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.py,
+.sotp-widget .country-flag-box .country-flag.py {
+  height: 11px;
+  background-position: -4185px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.qa,
+.sotp-widget .country-flag-box .country-flag.qa {
+  height: 8px;
+  background-position: -4207px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.re,
+.sotp-widget .country-flag-box .country-flag.re {
+  height: 14px;
+  background-position: -4229px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ro,
+.sotp-widget .country-flag-box .country-flag.ro {
+  height: 14px;
+  background-position: -4251px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.rs,
+.sotp-widget .country-flag-box .country-flag.rs {
+  height: 14px;
+  background-position: -4273px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ru,
+.sotp-widget .country-flag-box .country-flag.ru {
+  height: 14px;
+  background-position: -4295px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.rw,
+.sotp-widget .country-flag-box .country-flag.rw {
+  height: 14px;
+  background-position: -4317px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sa,
+.sotp-widget .country-flag-box .country-flag.sa {
+  height: 14px;
+  background-position: -4339px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sb,
+.sotp-widget .country-flag-box .country-flag.sb {
+  height: 10px;
+  background-position: -4361px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sc,
+.sotp-widget .country-flag-box .country-flag.sc {
+  height: 10px;
+  background-position: -4383px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sd,
+.sotp-widget .country-flag-box .country-flag.sd {
+  height: 10px;
+  background-position: -4405px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.se,
+.sotp-widget .country-flag-box .country-flag.se {
+  height: 13px;
+  background-position: -4427px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sg,
+.sotp-widget .country-flag-box .country-flag.sg {
+  height: 14px;
+  background-position: -4449px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sh,
+.sotp-widget .country-flag-box .country-flag.sh {
+  height: 10px;
+  background-position: -4471px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.si,
+.sotp-widget .country-flag-box .country-flag.si {
+  height: 10px;
+  background-position: -4493px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sj,
+.sotp-widget .country-flag-box .country-flag.sj {
+  height: 15px;
+  background-position: -4515px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sk,
+.sotp-widget .country-flag-box .country-flag.sk {
+  height: 14px;
+  background-position: -4537px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sl,
+.sotp-widget .country-flag-box .country-flag.sl {
+  height: 14px;
+  background-position: -4559px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sm,
+.sotp-widget .country-flag-box .country-flag.sm {
+  height: 15px;
+  background-position: -4581px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sn,
+.sotp-widget .country-flag-box .country-flag.sn {
+  height: 14px;
+  background-position: -4603px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.so,
+.sotp-widget .country-flag-box .country-flag.so {
+  height: 14px;
+  background-position: -4625px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sr,
+.sotp-widget .country-flag-box .country-flag.sr {
+  height: 14px;
+  background-position: -4647px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ss,
+.sotp-widget .country-flag-box .country-flag.ss {
+  height: 10px;
+  background-position: -4669px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.st,
+.sotp-widget .country-flag-box .country-flag.st {
+  height: 10px;
+  background-position: -4691px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sv,
+.sotp-widget .country-flag-box .country-flag.sv {
+  height: 12px;
+  background-position: -4713px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sx,
+.sotp-widget .country-flag-box .country-flag.sx {
+  height: 14px;
+  background-position: -4735px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sy,
+.sotp-widget .country-flag-box .country-flag.sy {
+  height: 14px;
+  background-position: -4757px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.sz,
+.sotp-widget .country-flag-box .country-flag.sz {
+  height: 14px;
+  background-position: -4779px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ta,
+.sotp-widget .country-flag-box .country-flag.ta {
+  height: 10px;
+  background-position: -4801px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tc,
+.sotp-widget .country-flag-box .country-flag.tc {
+  height: 10px;
+  background-position: -4823px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.td,
+.sotp-widget .country-flag-box .country-flag.td {
+  height: 14px;
+  background-position: -4845px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tf,
+.sotp-widget .country-flag-box .country-flag.tf {
+  height: 14px;
+  background-position: -4867px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tg,
+.sotp-widget .country-flag-box .country-flag.tg {
+  height: 13px;
+  background-position: -4889px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.th,
+.sotp-widget .country-flag-box .country-flag.th {
+  height: 14px;
+  background-position: -4911px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tj,
+.sotp-widget .country-flag-box .country-flag.tj {
+  height: 10px;
+  background-position: -4933px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tk,
+.sotp-widget .country-flag-box .country-flag.tk {
+  height: 10px;
+  background-position: -4955px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tl,
+.sotp-widget .country-flag-box .country-flag.tl {
+  height: 10px;
+  background-position: -4977px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tm,
+.sotp-widget .country-flag-box .country-flag.tm {
+  height: 14px;
+  background-position: -4999px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tn,
+.sotp-widget .country-flag-box .country-flag.tn {
+  height: 14px;
+  background-position: -5021px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.to,
+.sotp-widget .country-flag-box .country-flag.to {
+  height: 10px;
+  background-position: -5043px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tr,
+.sotp-widget .country-flag-box .country-flag.tr {
+  height: 14px;
+  background-position: -5065px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tt,
+.sotp-widget .country-flag-box .country-flag.tt {
+  height: 12px;
+  background-position: -5087px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tv,
+.sotp-widget .country-flag-box .country-flag.tv {
+  height: 10px;
+  background-position: -5109px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tw,
+.sotp-widget .country-flag-box .country-flag.tw {
+  height: 14px;
+  background-position: -5131px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.tz,
+.sotp-widget .country-flag-box .country-flag.tz {
+  height: 14px;
+  background-position: -5153px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ua,
+.sotp-widget .country-flag-box .country-flag.ua {
+  height: 14px;
+  background-position: -5175px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ug,
+.sotp-widget .country-flag-box .country-flag.ug {
+  height: 14px;
+  background-position: -5197px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.um,
+.sotp-widget .country-flag-box .country-flag.um {
+  height: 11px;
+  background-position: -5219px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.un,
+.sotp-widget .country-flag-box .country-flag.un {
+  height: 14px;
+  background-position: -5241px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.us,
+.sotp-widget .country-flag-box .country-flag.us {
+  height: 11px;
+  background-position: -5263px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.uy,
+.sotp-widget .country-flag-box .country-flag.uy {
+  height: 14px;
+  background-position: -5285px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.uz,
+.sotp-widget .country-flag-box .country-flag.uz {
+  height: 10px;
+  background-position: -5307px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.va,
+.sotp-widget .country-flag-box .country-flag.va {
+  height: 15px;
+  background-position: -5329px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.vc,
+.sotp-widget .country-flag-box .country-flag.vc {
+  height: 14px;
+  background-position: -5346px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ve,
+.sotp-widget .country-flag-box .country-flag.ve {
+  height: 14px;
+  background-position: -5368px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.vg,
+.sotp-widget .country-flag-box .country-flag.vg {
+  height: 10px;
+  background-position: -5390px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.vi,
+.sotp-widget .country-flag-box .country-flag.vi {
+  height: 14px;
+  background-position: -5412px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.vn,
+.sotp-widget .country-flag-box .country-flag.vn {
+  height: 14px;
+  background-position: -5434px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.vu,
+.sotp-widget .country-flag-box .country-flag.vu {
+  height: 12px;
+  background-position: -5456px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.wf,
+.sotp-widget .country-flag-box .country-flag.wf {
+  height: 14px;
+  background-position: -5478px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ws,
+.sotp-widget .country-flag-box .country-flag.ws {
+  height: 10px;
+  background-position: -5500px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.xk,
+.sotp-widget .country-flag-box .country-flag.xk {
+  height: 15px;
+  background-position: -5522px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.ye,
+.sotp-widget .country-flag-box .country-flag.ye {
+  height: 14px;
+  background-position: -5544px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.yt,
+.sotp-widget .country-flag-box .country-flag.yt {
+  height: 14px;
+  background-position: -5566px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.za,
+.sotp-widget .country-flag-box .country-flag.za {
+  height: 14px;
+  background-position: -5588px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.zm,
+.sotp-widget .country-flag-box .country-flag.zm {
+  height: 14px;
+  background-position: -5610px 0px;
+}
+.simply-otp-wrapper .country-flag-box .country-flag.zw,
+.sotp-widget .country-flag-box .country-flag.zw {
+  height: 10px;
+  background-position: -5632px 0px;
+}
+
+.sotp-widget {
+  margin-top: 50px !important;
+}
+
+.input-box-content input::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.input-box-content input::-ms-input-placeholder { /* Edge 12 - 18 */
+  color: black;
+}
+
+.input-box-content input::-webkit-input-placeholder {
+  color: black; /* Your desired color */
+}

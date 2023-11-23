@@ -1,0 +1,33 @@
+
+{%- layout none -%}
+{%- paginate search.results by 1000 -%}
+	[{%- for product in search.results -%}
+		{%- unless forloop.first -%},{%- endunless -%}
+		{
+			"product_id":{{ product.id }},
+			"product_handle":"{{ product.handle }}",
+			"product_type":"{{ product.type | escape }}",
+			"product_vendor": "{{ product.vendor }}",
+			"product_tags": {{ product.tags | json }},
+			"product_collections":{{ product.collections | map: 'id' | json }},
+			"product_price":"{{ product.price }}",
+			"product_compare_at_price":"{{ product.compare_at_price }}",
+			"product_created_at":"{{ product.created_at | date: "%Y-%m-%d %H:%M"  }}",
+			"product_published_at":"{{ product.published_at | date: "%Y-%m-%d %H:%M"  }}",
+			"product_available":{{ product.available }},
+			"product_first_variant":{{ product.selected_or_first_available_variant.id }},
+			"product_variants":[
+				{%- for variant in product.variants -%}{%- unless forloop.first -%},
+					{%- endunless -%}
+					{
+					"variants_id":{{ variant.id }},
+					"variants_price":{{ variant.price }},
+					"variants_available":{{ variant.available }},
+					"variants_compare_at_price":"{{ variant.compare_at_price }}",
+					"variants_inventory_quantity":{{ variant.inventory_quantity }}
+					}
+				{%- endfor -%}
+			]
+		}
+	{%- endfor -%}]
+{%- endpaginate -%}

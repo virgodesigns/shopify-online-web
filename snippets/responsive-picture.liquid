@@ -1,0 +1,61 @@
+{% comment %}
+  Render an responsive image.
+
+  Accepts:
+  - class: {String} Class to add to the image.
+  - id: {String} ID to add to the image.
+  - mobileImage: {Object} Image object for mobile
+  - mobileSize: {String} Size of the mobile image to occupy on mobile screen
+  - desktopImage: {Object} Image object for desktop
+  - desktopSize: {String} Size of the desktop image to occupy on desktop screen
+{% endcomment %}
+
+{%- liquid
+  if loading == false
+    assign loading = 'eager'
+  else
+   assign loading = 'lazy'
+  endif
+-%}
+
+<picture class="{{ class }}" {% if id != blank %}id="{{id}}"{% endif %}>
+  {% if mobileImage %}
+  <source
+    media="(max-width: 767px)"
+    srcset="{%- if mobileImage.width >= 375 -%}{{ mobileImage | image_url: width: 375 }} 375w,{%- endif -%}
+      {%- if mobileImage.width >= 550 -%}{{ mobileImage | image_url: width: 550 }} 550w,{%- endif -%}
+      {%- if mobileImage.width >= 750 -%}{{ mobileImage | image_url: width: 750 }} 750w,{%- endif -%}
+      {%- if mobileImage.width >= 1100 -%}{{ mobileImage | image_url: width: 1100 }} 1100w,{%- endif -%}
+      {%- if mobileImage.width >= 1500 -%}{{ mobileImage | image_url: width: 1500 }} 1500w,{%- endif -%}
+      {%- if mobileImage.width >= 1780 -%}{{ mobileImage | image_url: width: 1780 }} 1780w,{%- endif -%}
+      {%- if mobileImage.width >= 2000 -%}{{ mobileImage | image_url: width: 2000 }} 2000w,{%- endif -%}
+      {%- if mobileImage.width >= 3000 -%}{{ mobileImage | image_url: width: 3000 }} 3000w,{%- endif -%}
+      {%- if mobileImage.width >= 3840 -%}{{ mobileImage | image_url: width: 3840 }} 3840w,{%- endif -%}
+      {{ mobileImage | image_url }} {{ mobileImage.width }}w"
+    sizes="{{ mobileSize | default: '100vw' }}"
+    width="{{ mobileImage.width }}"
+    height="{{ mobileImage.width | divided_by: mobileImage.aspect_ratio | round }}"
+  >
+  {% endif %}
+  <source
+    {% if mobileImage %} media="(min-width: 768px)"{% endif %}
+    srcset="{%- if desktopImage.width >= 375 -%}{{ desktopImage | image_url: width: 375 }} 375w,{%- endif -%}
+      {%- if desktopImage.width >= 550 -%}{{ desktopImage | image_url: width: 550 }} 550w,{%- endif -%}
+      {%- if desktopImage.width >= 750 -%}{{ desktopImage | image_url: width: 750 }} 750w,{%- endif -%}
+      {%- if desktopImage.width >= 1100 -%}{{ desktopImage | image_url: width: 1100 }} 1100w,{%- endif -%}
+      {%- if desktopImage.width >= 1500 -%}{{ desktopImage | image_url: width: 1500 }} 1500w,{%- endif -%}
+      {%- if desktopImage.width >= 1780 -%}{{ desktopImage | image_url: width: 1780 }} 1780w,{%- endif -%}
+      {%- if desktopImage.width >= 2000 -%}{{ desktopImage | image_url: width: 2000 }} 2000w,{%- endif -%}
+      {%- if desktopImage.width >= 3000 -%}{{ desktopImage | image_url: width: 3000 }} 3000w,{%- endif -%}
+      {%- if desktopImage.width >= 3840 -%}{{ desktopImage | image_url: width: 3840 }} 3840w,{%- endif -%}
+      {{ desktopImage | image_url }} {{ desktopImage.width }}w"
+    sizes="{{ desktopSize | default: '100vw' }}"
+    width="{{ desktopImage.width }}"
+    height="{{ desktopImage.width | divided_by: desktopImage.aspect_ratio | round }}"
+  >
+  <img src="{{ desktopImage | image_url: width: 1500 }}"
+    loading="{{ loading | default: "lazy" }}"
+    width="{{ desktopImage.width }}"
+    height="{{ desktopImage.width | divided_by: desktopImage.aspect_ratio | round }}"
+    alt="{{ alt | default: desktopImage.alt | escape }}">
+</picture>

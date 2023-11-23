@@ -1,0 +1,24 @@
+
+
+
+.email-signup--inner {
+  padding: 0 15px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    .email-signup--inner {
+      padding: 0 50px; } }
+
+.email-signup {
+  background: var(--color-bg, var(--bg-body));
+  color: var(--color-text, var(--color-body)); }
+  .email-signup .signup-container {
+    max-width: 510px;
+    margin: 0 auto; }
+    .email-signup .signup-container button svg path {
+      stroke: var(--color-text, var(--color-accent)); }
+    .email-signup .signup-container input {
+      color: var(--color-text, var(--color-body)); }
+  .email-signup .section-header--content .h3 {
+    color: var(--color-text, var(--color-accent)); }

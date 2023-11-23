@@ -1,0 +1,146 @@
+<script type="text/javascript">
+  window.moeApp = {
+    meta : {
+      title : "{{ page_title }}",
+      template : "{{ template }}",
+      full_url : "{{ canonical_url }}",
+      page_type : "{{ request.page_type }}",
+      account_id: "ID1DDG2RM8RICH7QO3BKTWC9",
+      shop_url: "{{ shop.url }}",
+      shop_domain: "{{ shop.domain }}",
+      shop_email: "{{ shop.email }}",
+      shop_money_format: "{{ shop.money_format }}",
+      shop_name: "{{shop.name}}",
+      currency: "{{ shop.currency }}",
+    },
+    moe: {
+      attributes: {"first_name":true,"last_name":true,"mobile":true,"email":true,"tags":true,"accepts_marketing":true,"orders_count":true,"shopify_id":true,"shopify_ltv":true,"shipment_mobile":true},
+      events: {"product_viewed":true,"product_searched":true,"add_to_cart":true,"removed_from_cart":true,"user_logins":true,"checkout_started":true,"order_placed":true}
+    },
+    routes: {
+      customer: {
+        account: "{{ routes.account_url }}",
+        login: "{{ routes.account_login_url }}",
+        logout: "{{ routes.account_logout_url }}",
+        register: "{{ routes.account_register_url }}"
+      },
+      cart: {
+        list: "{{ routes.cart_url }}",
+        add: "{{ routes.cart_add_url }}",
+        clear: "{{ routes.cart_clear_url }}",
+        update: "{{ routes.cart_update_url }}",
+        change: "{{ routes.cart_change_url }}",
+      }    
+    }
+  };
+
+	{% if template contains "collection" %}
+    moeApp.collection = {
+      title: "{{collection.title}}"
+    }
+	{% endif %}
+
+	{% if search.performed %}
+    moeApp.search = {
+      searchterm: "{{search.terms}}"
+    }
+	{% endif %}
+  
+  {% if template == "search" %}
+    if(!moeApp.search) {
+      moeApp.search = {};
+    }
+    moeApp.search.product = {
+        items: [],
+        terms: "{{ search.terms }}"
+    };
+
+    {% for item in search.results %}
+      {% if item.object_type == "product" %}
+        moeApp.search.product.items.push({
+            SKUCode: "{{ item.variants[0].sku }}",
+            id: parseInt("{{ item.variants[0].id }}"),
+            type: "{{ item.type }}",
+            title: "{{ item.title }}",
+            available: "{{ item.available }}",
+            image: "{{ item.featured_image }}",
+            price: parseFloat((parseInt("{{ item.price }}") / 100).toFixed(2)),
+        });
+      {% endif %}
+    {% endfor %}
+  {% elsif template == "collection" %}
+    {% if collection.handle != "all" and collection.url != "" %}
+      moeApp.collection = {
+        url: "{{ collection.url }}",
+        title: "{{ collection.title }}",
+        image: "{{ collection.image }}",
+        handle: "{{ collection.handle }}",
+        id: parseInt("{{ collection.id }}"),
+        productCount: parseInt("{{ collection.products_count }}")
+      }
+    {% endif %}
+  {% elsif template == "product" %}
+    moeApp.product = {
+      variants : {},
+      available: "{{product.available}}",
+      handle: "{{ product.handle }}",
+      id: "{{product.id}}",
+      image: "{{product.featured_image | image_url}}",
+      price: "{{ product.price }}",
+      title: "{{product.title}}",
+      product_type: "{{product.type}}",
+      url: "{{product.url}}",
+      vendor: "{{product.vendor}}"
+    };
+    {% for variant in product.variants %}
+      moeApp.product.variants[parseInt("{{ variant.id }}")] = {
+        title: "{{ variant.title }}",
+        id : parseInt("{{ variant.id }}"),
+        image : "{{ variant.featured_media }}",
+        price : "{{ variant.price }}",
+      };
+    {% endfor %}
+  {% elsif template == "cart" %}
+    moeApp.cart = {{ cart.items | json }}
+  {% endif %}
+
+  {% if customer %}
+    var tags = [];
+    {% for tag in customer.tags %}
+      tags.push("{{tag}}");
+    {% endfor %}
+    moeApp.customer = {
+      phone: "{{ customer.phone }}",
+      email: "{{ customer.email }}",
+      name: "{{ customer.name }}",
+      id: parseInt("{{ customer.id }}"),
+      lastName: "{{ customer.last_name }}",
+      firstName: "{{ customer.first_name }}",
+      city: "{{ customer.default_address.city }}",
+      acceptsMarketing: "{{ customer.accepts_marketing }}",
+      hasAccount: "{{ customer.has_account }}",
+      ordersCount: parseInt("{{ customer.orders_count }}"),
+      taxExempt: "{{ customer.tax_exempt }}",
+      totalSpent:  "{{ customer.total_spent }}",
+      tags: tags
+    };
+  {% endif %}
+  window.addEventListener("MOE_LIFECYCLE",function(e){
+   if(e.detail.name === "SDK_INITIALIZED"){
+   console.log(e.detail.data)
+   }
+   if(e.detail.name === "SETTINGS_FETCHED"){
+   console.log(e.detail.data)
+   }
+   })
+Moengage.add_unique_user_id(UNIQUE_ID);
+Moengage.track_event("EVENT_NAME_1"); // This event has no attributes
+// Track events with additional attributes
+Moengage.track_event("EVENT_NAME_2", {
+"attribute_1": "value_1", // string value
+"attribute_2": 2, // numeric value
+"attribute_3": 3.4, // numeric value
+"attribute_4": new Date(2017, 0, 31), // datetime value. Example value represents 31 January,
+2017.
+});
+</script>

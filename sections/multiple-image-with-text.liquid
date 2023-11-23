@@ -1,0 +1,351 @@
+{{ 'multiple-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<style>
+  {% if section.settings.show_on_mobile == false %}
+    @media screen and (max-width: 768px){
+        #shopify-section-{{ section.id }} {
+          display:none;
+        }
+    }
+  {% endif %}
+  {% if section.settings.show_on_desktop == false %}
+    @media screen and (min-width: 768px){
+      #shopify-section-{{ section.id }} {
+        display:none;
+      }
+    }
+  {% endif %}
+  #shopify-section-{{ section.id }} .fp-bg {
+       background-image: url('{{ section.settings.parallax_image_mobile | image_url }}');
+      background-size: cover;
+      background-position: center 80%;
+    }
+    @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .fp-bg {
+       background-image: url('{{ section.settings.parallax_image | image_url }}');
+    }
+    }
+</style>
+<div class="multiple-image-with-text page-width-cust">
+  <div class="flex-box h-full flex-box--1-col flex-box--2-col-tablet flex-box--2-col-desktop align-center">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'full_image_text' %}
+          <div class="full_image_text h-full flex-box__item flex align-center justify-center">
+            <div>
+              <div class="grid h-full grid-row content-between justify-center">
+                <div class="top-block{% if block.settings.top_image_full_width == false %} flex flex-row{% endif %}">
+                  <div class="miwt-image">
+                    {% if block.settings.top_image != blank %}
+                      {% render 'responsive-image-cust', class: "", mobileSrc: , desktopSrc: block.settings.top_image %}
+                    {% else %}
+                      <div class="">
+                        {{ 'collection-3' | placeholder_svg_tag }}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="top-block{% if block.settings.top_image_full_width == false %} flex flex-row{% endif %}">
+                  <div class="miwt-content{% if block.settings.top_image_full_width == false %} flex flex-column align-start justify-center{% endif %}">
+                    {% if block.settings.top_heading != blank %}
+                      <p class="heading">{{ block.settings.top_heading }}</p>
+                    {% endif %}
+                    {% if block.settings.top_text %}
+                      <p class="text">{{ block.settings.top_text }}</p>
+                    {% endif %}
+                    {% if block.settings.top_button_url != blank and block.settings.top_button_text != blank %}
+                      <a href="{{ block.settings.top_button_url }}">
+                        <button class="button black outline">
+                          <span>{{ block.settings.top_button_text }}</span>
+                        </button>
+                      </a>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="bottom-block{% if block.settings.bottom_image_full_width == false %} flex flex-row{% endif %} align-center">
+                  <div class="miwt-image">
+                    {% if block.settings.bottom_image %}
+                      {% render 'responsive-image-cust', class: "", mobileSrc: , desktopSrc: block.settings.bottom_image %}
+                    {% else %}
+                      <div class="">
+                        {{ 'collection-3' | placeholder_svg_tag }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="miwt-content{% if block.settings.bottom_image_full_width == false %} flex flex-column align-start justify-center{% endif %}">
+                    {% if block.settings.bottom_heading %}
+                      <p class="heading">{{ block.settings.bottom_heading }}</p>
+                    {% endif %}
+                    {% if block.settings.bottom_text %}
+                      <p class="text">{{ block.settings.bottom_text }}</p>
+                    {% endif %}
+                    {% if block.settings.bottom_button_url != blank and block.settings.bottom_button_text != blank %}
+                      <a href="{{ block.settings.bottom_button_url }}">
+                        <button class="button black outline">
+                          <span>{{ block.settings.bottom_button_text }}</span>
+                        </button>
+                      </a>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% when 'two_media_with_text' %}
+          <div class="two_media_with_text h-full grid grid-row flex-box__item">
+            <div class="text-with-image">
+              <div class="top-block flex{% if block.settings.top_toggle_order == false %} flex-row{% else %} flex-row-reverse{% endif %}">
+                {% if block.settings.top_image %}
+                  <div class="miwt-image">
+                    {% render 'responsive-image-cust', class: , mobileSrc: , desktopSrc: block.settings.top_image %}
+                  </div>
+                {% else %}
+                  <div class="media media--landscape">
+                    {{ 'collection-3' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+                <div class="miwt-content flex flex-column align-start justify-center">
+                  {% if block.settings.top_heading %}
+                    <p class="heading">{{ block.settings.top_heading }}</p>
+                  {% endif %}
+                  {% if block.settings.top_text %}
+                    <p class="text">{{ block.settings.top_text }}</p>
+                  {% endif %}
+                  {% if block.settings.top_button_url != blank and block.settings.top_button_text != blank %}
+                    <a href="{{ block.settings.top_button_url }}">
+                      <button class="button black outline">
+                        <span>{{ block.settings.top_button_text }}</span>
+                      </button>
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="text-with-image">
+              <div class="bottom-block flex{% if block.settings.bottom_toggle_order == false %} flex-row{% else %} flex-row-reverse{% endif %}">
+                {% if block.settings.bottom_image %}
+                  <div class="miwt-image">
+                    {% render 'responsive-image-cust', class: , mobileSrc: , desktopSrc: block.settings.bottom_image %}
+                  </div>
+                {% else %}
+                  <div class="media media--square">
+                    {{ 'collection-3' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+                <div class="miwt-content flex flex-column align-start justify-center">
+                  {% if block.settings.bottom_heading %}
+                    <p class="heading">{{ block.settings.bottom_heading }}</p>
+                  {% endif %}
+                  {% if block.settings.bottom_text %}
+                    <p class="text">{{ block.settings.bottom_text }}</p>
+                  {% endif %}
+                  {% if block.settings.bottom_button_url != blank and block.settings.bottom_button_text != blank %}
+                    <a href="{{ block.settings.bottom_button_url }}">
+                      <button class="button black outline">
+                        <span>{{ block.settings.bottom_button_text }} </span>
+                      </button>
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Multiple Image with Text",
+
+  "class":"multi-image-with-text",
+  "settings": [
+  {
+    "type": "checkbox",
+    "id": "show_on_desktop",
+    "default": true,
+    "label": "Show on Desktop"
+  },
+  {
+    "type": "checkbox",
+    "id": "show_on_mobile",
+    "default": true,
+    "label": "Show on Mobile"
+  },
+    {
+      "type": "image_picker",
+      "id": "parallax_image",
+      "label": "Parallax Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "parallax_image_mobile",
+      "label": "Parallax Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Full Image & Text",
+      "type": "full_image_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "top_image",
+          "label": "Top Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "top_image_full_width",
+          "label": "Make Top Image full width",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "top_heading",
+          "label": "Top Heading",
+          "default":"Good Fashion Company"
+        },
+        {
+          "type": "text",
+          "id": "top_text",
+          "label": "Top Text",
+          "default":"Top-notch styles, impeccable quality and un-compromised practices - we're a circular fashion brand with a passion for the planet that's hotter than the sun."
+        },
+        {
+          "type": "url",
+          "id": "top_button_url",
+          "label": "Top Button Url"
+        },
+        {
+          "type": "text",
+          "id": "top_button_text",
+          "label": "Top Button Text",
+          "default": "View More"
+        },
+        {
+          "type": "image_picker",
+          "id": "bottom_image",
+          "label": "Bottom Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "bottom_image_full_width",
+          "label": "Make Bottom Image full width",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "bottom_heading",
+          "label": "Bottom Heading",
+          "default":"Product"
+        },
+        {
+          "type": "text",
+          "id": "bottom_text",
+          "label": "Bottom Text",
+          "default":"Statement pieces that feel like second skin. Made with love to last you a lifetime."
+        },
+        {
+          "type": "url",
+          "id": "bottom_button_url",
+          "label": "Bottom Button Url"
+        },
+        {
+          "type": "text",
+          "id": "bottom_button_text",
+          "label": "Bottom Button Text",
+          "default": "View More"
+        }
+      ]
+    },
+    {
+      "name": "2 Media with Text",
+      "type": "two_media_with_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "top_image",
+          "label": "Top Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "top_toggle_order",
+          "label": "Top Toggle Order",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "top_heading",
+          "label": "Top Heading",
+          "default":"Good Fashion Company"
+        },
+        {
+          "type": "text",
+          "id": "top_text",
+          "label": "Top Text",
+          "default":"Top-notch styles, impeccable quality and un-compromised practices - we're a circular fashion brand with a passion for the planet that's hotter than the sun."
+        },
+        {
+          "type": "url",
+          "id": "top_button_url",
+          "label": "Top Button Url"
+        },
+        {
+          "type": "text",
+          "id": "top_button_text",
+          "label": "Top Button Text",
+          "default": "View More"
+        },
+        {
+          "type": "image_picker",
+          "id": "bottom_image",
+          "label": "Bottom Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "bottom_toggle_order",
+          "label": "Bottom Toggle Order",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "bottom_heading",
+          "label": "Bottom Heading",
+          "default":"Product"
+        },
+        {
+          "type": "text",
+          "id": "bottom_text",
+          "label": "Bottom Text",
+          "default":"Statement pieces that feel like second skin. Made with love to last you a lifetime."
+        },
+        {
+          "type": "url",
+          "id": "bottom_button_url",
+          "label": "Bottom Button Url"
+        },
+        {
+          "type": "text",
+          "id": "bottom_button_text",
+          "label": "Bottom Button Text",
+          "default": "View More"
+        }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name": "Multiple Image with Text 2",
+      "blocks": [
+          {
+            "type": "full_image_text"
+          },
+          {
+            "type": "two_media_with_text"
+          }
+      ]
+    }
+  ]
+}
+{% endschema %}

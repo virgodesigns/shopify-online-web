@@ -1,0 +1,153 @@
+<style>
+  .js-return-exchange {
+    background: #000 !important;
+    padding: 6px 10px !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    white-space: pre;
+    position: relative;
+    margin: 0 !important;
+    min-height: unset !important;
+    min-width: unset !important;
+  }
+  .js-return-exchange.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    display: inline-block;
+    background: none !important;
+    color: #000 !important;
+    text-align: center;
+  }
+  
+  .js-return-exchange::after {
+    content: '';
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    left: calc(50% - 0.75em);
+    top: calc(50% - 0.75em);
+    border: 0.15em solid transparent;
+    border-right-color: white;
+    border-radius: 50%;
+    animation: rp-btn-rotate 0.7s linear infinite;
+    opacity: 0;
+  }
+
+  @keyframes rp-btn-rotate{
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .js-return-exchange.rp_btn_loading {
+    color: transparent !important;
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .js-return-exchange.rp_btn_loading::after {
+    opacity: 1;
+  }
+
+
+</style>
+
+<script >
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let order_numbers = []
+        var ReturnElements = document.querySelectorAll('.return__exchange');
+        Array.prototype.forEach.call(ReturnElements, function(el, i) {
+            order_numbers.push(el.getAttribute('data-order_name'));
+        });
+
+        let url = 'https://admin.returnprime.com/get-fulfilled-order-status';
+        let data = {
+            order_numbers: order_numbers,
+            store_name: Shopify.shop
+        }
+
+        fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                let orders = data.orders;
+                Array.prototype.forEach.call(ReturnElements, function(el, i) {
+                    let orderId = el.getAttribute('data-order_name');
+                    orders.forEach(function(order) {
+                        if (order.order_id === orderId && !order.status) {
+                            el.querySelector(".js-return-exchange").classList.add("disabled");
+                            el.querySelector(".js-return-exchange").innerHTML = "Not avalible";
+                        }
+
+                    })
+                })
+
+            })
+            .catch((error) => {
+            });
+
+
+
+        // on click of return button redirect to returnprime 
+
+        [...document.querySelectorAll(".js-return-exchange")].forEach(el => el.addEventListener('click', function(e) {
+            let OrderId = el.getAttribute('data-order');
+            let CustomerEmail = el.getAttribute('data-customer');
+            let ReturnUrl = 'https://admin.returnprime.com/fetch_order';
+
+            let data = {
+                order_number: OrderId,
+                email: CustomerEmail,
+                store: Shopify.shop,
+               //locale:Shopify.locale //Use it only for multi-lang stores
+
+            }
+
+            el.classList.add("rp_btn_loading");
+            fetch(ReturnUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.json())
+                .then(response => {
+              		el.classList.remove("rp_btn_loading");
+                    if (response.success == false) {
+                        var ErrorMessage = response.message;
+                        alert(ErrorMessage);
+
+                    } else if (response.success == true) {
+
+                       window.location.href = response.url;
+
+                    }
+              
+              
+
+                })
+                .catch((error) => {
+                    el.classList.remove("rp_btn_loading");                    
+              		var ErrorMessage = error.message;
+                    alert(ErrorMessage);
+                });
+        }))
+
+
+    });
+
+</script>

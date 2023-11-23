@@ -1,0 +1,229 @@
+<script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
+{{- 'product-tabs.css' | asset_url | stylesheet_tag -}}
+<tab-switch>
+  <div class="produt-tab-container section-{{ section.id }}-padding">
+    <div class="product-page-tab">
+      {% assign tabs = product.metafields.custom.story_details.value %}
+      {% for tab in tabs %}
+        {% for tabHeading in tab %}
+          {% if tabHeading.header != blank %}
+            <div class="product-tab">
+              <div class="tab--heading" data-tab="{{ tabHeading.footer | handleize }}">
+                {{ tabHeading.footer }}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+    <div
+      class="slideshow"
+      data-flickity='{ "cellAlign": "left", "contain": true , "pageDots":true, "prevNextButtons": false, "watchCSS": true}'
+    >
+      {% assign tabs = product.metafields.custom.story_details.value %}
+      {% for tab in tabs %}
+        {% for tabContent in tab %}
+          {% if tabContent.header != blank %}
+            <div id="{{ tabContent.footer | handleize }}" class="tab-content container-content">
+              <div class="tab-contents">
+                <div class="tab-content-description">
+                  <h1 class="heading">{{ tabContent.header }}</h1>
+                  <p class="description">{{ tabContent.description }}</p>
+                  <!-- KNOW YOUR FABRIC TAB CONTENT -->
+                  <div class="scale_card">
+                    {% assign fabricTabData = tabContent.scale %}
+                    {% for fabric in fabricTabData %}
+                      <div class="circle_card-container">
+                        <span class="scale_value">{{ fabric.key }}</span>
+                        <span>
+                          {% assign circledots = fabric.value | plus: 0 %}
+                          {% for circledot in (1..5) %}
+                            <span class="circle {% if circledot == circledots %} circle_fill {% endif %}">
+                              {% unless forloop.last %}<div class="circle-line"></div>{% endunless %}
+                            </span>
+                          {% endfor %}
+                        </span>
+                        <br>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <!-- IMPACT RECEIPT TAB CONTENT -->
+                  {% assign footprintDetails = tabContent.footprintDetails %}
+                  {% for impactTab in footprintDetails %}
+                    <div class="impact-card-heading">
+                      <div>{{ impactTab.name }}</div>
+                      {% assign impactdata = impactTab.values %}
+                      {% assign entities = tabContent.entities %}
+                      {% assign total_count = 0 %}
+                      {% for values in impactdata %}
+                        {% assign total_count = total_count | plus: values.value %}
+                      {% endfor %}
+                      {% assign tabName = impactTab.name %}
+                      {% if tabName == 'Carbon' %}
+                        <p class="total-values">{{ total_count }} Kg CO2-eq</p>
+                      {% elsif tabName == 'Energy' %}
+                        <p class="total-values">{{ total_count }} MJ</p>
+                      {% else %}
+                        <p class="total-values">{{ total_count }} Liters</p>
+                      {% endif %}
+                    </div>
+                    <div class="progress-card">
+                      {% for values in impactdata %}
+                        {% assign result = values.value | times: 100.00 %}
+                        {% assign final = result | divided_by: total_count %}
+                        {% assign loopIndex = forloop.index %}
+                        {% for item in entities %}
+                          {% if loopIndex == forloop.index %}
+                            <div
+                              style="width: {{ final }}%; background-color:{{ item.color }}; height:8px;"
+                              class="progress-bar {% if forloop.first %} material {% endif %}{% if forloop.last %} use-phase {% endif %}"
+                            ></div>
+                          {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                    </div>
+                    <br>
+                  {% endfor %}
+                  {% assign entities = tabContent.entities %}
+                  <div class="materials_container">
+                    {% for item in entities %}
+                      {% assign colors = item.color %}
+                      <div class="impact-card">
+                        <span class="circle circle-fill-{{ forloop.index }}" style="background:{{ colors }}"> </span>
+                        <span>{{ item.name }}</span>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <!-- WASH & CARE TAB CONTENT -->
+                  {% if tabContent.position == 3 %}
+                    <div class="washcare_card">
+                      {% assign washAndCare = tabContent.data %}
+                      {% for washCare in washAndCare %}
+                        <div class="washcare_images">
+                          {% if washCare.imageUrl != blank %}
+                            <img src="{{ washCare.imageUrl }}" alt="image">
+                          {% endif %}
+                          <p class="header_washcare">{{ washCare.header }}</p>
+                          <p class="description_washcare">{{ washCare.desc }}</p>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                  <!-- ORIGIN STORY TAB CONTENT -->
+                  {% if tabContent.position == 4 %}
+                    <div class="original_story">
+                      {% assign originTab = tabContent.data %}
+                      {% for origindata in originTab %}
+                        <p class="origin-card-heading">{{ origindata.header }}</p>
+                        <p class="origin-description">{{ origindata.desc }}</p>
+                      {% endfor %}
+                    </div>
+                      <img src="{{ tabContent.bottomImage }}" alt="image">
+                  {% endif %}
+                  <!-- STYLING TIPS TAB CONTENT -->
+                  <div class="styling_tips">
+                    {% assign tips = tabContent.pairingGuide %}
+                    {% for stying in tips limit: 1 %}
+                      <p class="description">{{ stying | last }}</p>
+                      <br>
+                    {% endfor %}
+                    {% assign stylingTab = tips.data %}
+                    <div class="styling-cards">
+                      {% for stylingContent in stylingTab %}
+                        <div>
+                          <img src="{{ stylingContent.imageUrl }}" alt="image">
+                          <p class="style-card-heading">{{ stylingContent.header }}</p>
+                          <p class="style-card-description">{{ stylingContent.desc }}</p>
+                        </div>
+                      {% endfor %}
+                    </div>
+                    {% assign tips = tabContent.styleGuide %}
+                    {% for stying in tips limit: 1 %}
+                      <p class="style-guide-heading">{{ stying | last }}</p>
+                      <br>
+                    {% endfor %}
+                    {% assign stylingTab = tips.data %}
+                    <div class="styling-card">
+                      {% for stylingContent in stylingTab %}
+                        <div>
+                          <img src="{{ stylingContent.imageUrl }}" alt="image">
+                          <p class="style-card-tittle">{{ stylingContent.header }}</p>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                <div class="details_image">
+                  {% if tabContent.assetUrl != blank %}
+                    {% if tabContent.assetUrl contains 'mp4' %}
+                      <video
+                        id="tabVideo"
+                        autoplay
+                        loop
+                        muted
+                        controls
+                      >
+                        <source src="{{ tabContent.assetUrl }}" type="video/mp4">
+                      </video>
+                    {% else %}
+                      <img src="{{ tabContent.assetUrl }}" alt="image">
+                    {% endif %}
+                  {% endif %}
+                </div>
+              </div>
+              <div class="tab--heading-mobile">
+                {{ tabContent.footer }}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</tab-switch>
+
+<script>
+  const tabHeadings = document.querySelectorAll('.tab--heading');
+  const tabVideo = document.getElementById('tabVideo');
+
+  tabHeadings.forEach(tabHeading => {
+    tabHeading.addEventListener('click', () => {
+      if (!tabVideo.paused) {
+        tabVideo.pause();
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Product-page-tab",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "padding-top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "padding-bottom",
+      "default": 28
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product-page-tab"
+    }
+  ]
+}
+{% endschema %}
