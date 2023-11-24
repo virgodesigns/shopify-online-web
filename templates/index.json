@@ -694,7 +694,7 @@
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": true,
-        "autoplay_length": 8,
+        "autoplay_length": 5,
         "transition": "fade",
         "show_on_desktop": false,
         "show_on_mobile": true,
