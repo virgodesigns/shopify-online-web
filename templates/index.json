@@ -1034,6 +1034,24 @@
         "button_text": ""
       }
     },
+    "b2307530-ece5-4c67-a308-fb3fb397206f": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_width": "full-width-row",
+        "image": "shopify:\/\/shop_images\/only_good_fashion_comp.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-auto",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 0,
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "b45eed35-2d2f-4a01-b1ee-cbb5f0037d6b": {
       "type": "image-with-text-overlay",
       "settings": {
@@ -1192,6 +1210,7 @@
     "b93b9515-8b86-42d9-8aa4-4dec097dfd43",
     "dff51070-8302-489b-8a4e-ab109aff6176",
     "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94",
+    "b2307530-ece5-4c67-a308-fb3fb397206f",
     "b45eed35-2d2f-4a01-b1ee-cbb5f0037d6b",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "cc2745e0-5d47-408a-9d9d-7f6df509f899"
