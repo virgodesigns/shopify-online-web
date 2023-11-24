@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const variantSize = document.querySelectorAll(".product-form__input--block")[0];
   let addToButton = document.querySelector('[id="AddToCart"]');
   let customerData = document.querySelector(".customer-id");
-  let account = document.querySelector(".account-login");
   let addButton = document.querySelector(".add-to-cart");
   let customerLogin = customerData.getAttribute("customer");
   let buttonDisable = false;
@@ -16,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     addToButton.addEventListener("click", (e) => {
       variantSize.querySelectorAll('[type="radio"]').forEach((element) => {
         if (element.checked) {
-             alertMessage.classList.add("hidecartbutton");
+          alertMessage.classList.add("hidecartbutton");
             if (customerLogin){
             buttonDisable = true;
             productAddedToCart.classList.remove("hide-message");
             }else{
-                buttonDisable = true;
+               buttonDisable = true;
                sessionStorage.setItem('pdpcardt', true)
                window.location.href="/account"
                alertMessage.classList.add("hidecartbutton");
