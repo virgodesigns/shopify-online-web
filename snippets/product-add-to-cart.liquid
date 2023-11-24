@@ -53,7 +53,7 @@
                   disabled
                 {% endif %}
               >
-                <span class="single-add-to-cart-button--text">
+                <span class="single-add-to-cart-button--text v">
                   {% unless product.tags contains 'pre-order' %}
                   {%- if product.selected_or_first_available_variant.available -%}
                     {{ 'products.product.add_to_cart' | t }}
