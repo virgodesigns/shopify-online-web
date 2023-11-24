@@ -625,34 +625,6 @@
     "cc265b0e-27de-4374-a086-654be84e48fe": {
       "type": "slideshow",
       "blocks": {
-        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096246.jpg",
-            "slide_link": "shopify:\/\/collections\/shop-the-look-with-kalki",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
         "95cdd355-0d62-4432-a39e-f29896ce300a": {
           "type": "slide",
           "settings": {
@@ -680,11 +652,39 @@
             "button_2_outline": false,
             "button_2_underline": true
           }
+        },
+        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096246.jpg",
+            "slide_link": "shopify:\/\/collections\/shop-the-look-with-kalki",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3",
-        "95cdd355-0d62-4432-a39e-f29896ce300a"
+        "95cdd355-0d62-4432-a39e-f29896ce300a",
+        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3"
       ],
       "custom_css": [
         ".slideshow__slide {padding-bottom: 0px;}"
