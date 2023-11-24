@@ -54,13 +54,11 @@
                 {% endif %}
               >
                 <span class="single-add-to-cart-button--text">
-                  {% unless product.tags contains 'pre-order' %}
                   {%- if product.selected_or_first_available_variant.available -%}
                     {{ 'products.product.add_to_cart' | t }}
                   {%- else -%}
                     {{ 'products.product.sold_out' | t }}
                   {%- endif -%}
-                    {% endunless %}
                 </span>
                 <span class="loading-overlay">
                   {% render 'svg-icons' with 'thb-loading' %}
