@@ -49,7 +49,9 @@
                 name="add"
                 id="AddToCart"
                 class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}"
-               
+                {% if product.selected_or_first_available_variant.available == false %}
+                  disabled
+                {% endif %}
               >
                 <span class="single-add-to-cart-button--text">
                   {%- if product.selected_or_first_available_variant.available -%}
