@@ -93,34 +93,24 @@
 
               <div class="popup" id="customPopup">
                  <div class="frequent-product_card ">
-                      {%- assign related_products = '' -%}
-                      {% for tag in product.tags %}
-                        {% if tag contains 'related-' %}
-                        {%- assign product_handle = tag | remove: 'related-' -%}
-                        {%- assign related_products = related_products | append: ',' | append: product_handle -%}
-                      {% endif %} 
-                      {% endfor %} 
-                      {%- assign related_products = related_products | remove_first: ',' | split: ',' -%}
-                      {% if related_products.size > 0 %}
+                     
                         <div class="product-frequent-count">
                           <div class="cbb-frequent-product">
-                            {%  assign product = '' %}
-                            {%- assign product_variant_ids = '' -%}
-                            {% for product_handle in related_products %}
-                              {%- assign product = all_products[product_handle] -%}
-                              {%- assign product_variant_ids = product_variant_ids | remove: ', ' -%}
-                               {%- assign variant_id = product.variants.first.id -%}
-                              {%- assign product_variant_ids = product_variant_ids | append: variant_id | append: ', ' -%}
-
+                             {% if product.metafields.custom.variants != blank %}
+                              <div class="related-products__container" data-current-product="{{ product.handle }}">
+                              {% assign variantProduct = product.metafields.custom.variants.value %}
                               <div class="cbb-frequent-item">
+                                {% for product in  variantProduct.products.value %}
                                 <a class="cbb-frequently-bought" href="{{ product.url }}">
-                                  <img class="lg:tw-h-[295px]" src="{{product.featured_image.src | img_url: 'medium'  }}">
+                                  <img class="lg:tw-h-[295px]" src="{{product.featured_image| img_url: 'medium'  }}">
                                 </a>
+                                {% endfor %}
                               </div>
-                            {% endfor %}
+                             </div>
+                         {% endif %}
                           </div>
                         </div>
-                        {% endif %}
+                     
                       </div>
                      <button class="cross-icon" onclick="closePopup()">{% render 'svg-icons' with 'close' %}</button>
               </div>
