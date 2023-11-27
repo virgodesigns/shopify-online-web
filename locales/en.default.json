@@ -409,5 +409,12 @@
       "message": "Message",
       "max_characters": "{{ max_chars }} characters max"
     }
+  },
+  "shopify": {
+    "collections": {
+      "sorting": {
+        "date_descending": "What's New"
+      }
+    }
   }
 }
