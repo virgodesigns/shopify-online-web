@@ -77,6 +77,7 @@
     </fieldset>
       <div class="alert_message_product hide-message">Please select a size and then proceed</div>
        <p class="product-alert_message hide-message">You've bagged it!</p>
+  
   {%- when 'color' -%}
     {%- liquid
       assign custom_colors = settings.color_swatches | newline_to_br | split: '<br />'
@@ -101,6 +102,7 @@
           assign variant_image_size = '104'
       endcase
     -%}
+  {% if settings.color_swatches %}
     <fieldset
       class="product-form__input product-form__input--color product-form__input--color--{{ color_picker_size }}"
       data-use-images="{{ color_picker_use_variants }}"
@@ -156,4 +158,5 @@
         </label>
       {%- endfor -%}
     </fieldset>
+    {% endif %}
 {%- endcase -%}
