@@ -11,6 +11,7 @@
 
 {%- case option_type -%}
   {%- when 'dropdown' -%}
+   {% if settings.color_swatches %}
     <fieldset
       class="product-form__input  product-form__input--dropdown"
       data-index="option{{ forloop.index }}"
@@ -40,6 +41,7 @@
         <div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
       </div>
     </fieldset>
+    {% endif %}
 
      
   {%- when 'button' -%}
@@ -102,7 +104,7 @@
           assign variant_image_size = '104'
       endcase
     -%}
-  {% if settings.color_swatches %}
+     {% if settings.color_swatches %}
     <fieldset
       class="product-form__input product-form__input--color product-form__input--color--{{ color_picker_size }}"
       data-use-images="{{ color_picker_use_variants }}"
