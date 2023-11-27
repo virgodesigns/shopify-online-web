@@ -555,7 +555,7 @@ if (!customElements.get("variant-selects")) {
             // Only enable an option if an available variant matches all but one current selected value
             if (
               countVariantOptionsThatMatchCurrent >=
-              selected_options.length - 1
+              selected_options?.length - 1
             ) {
               entry.isUnavailable =
                 entry.isUnavailable && variant.available
