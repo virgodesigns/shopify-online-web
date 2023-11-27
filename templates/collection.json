@@ -60,10 +60,10 @@
         "full_width": true,
         "products_per_page": 11,
         "columns_desktop": 3,
-        "pagination_type": "paginated",
+        "pagination_type": "infinite",
         "enable_filtering": true,
         "enable_sorting": true,
-        "show_counts": true,
+        "show_counts": false,
         "filter_color_swatches": true,
         "facets_desktop": "drawer"
       }
