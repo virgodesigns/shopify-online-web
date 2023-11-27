@@ -29,7 +29,7 @@
       {%- if enable_sorting -%}
         <div class="thb-filter-sort">
           <div class="select">
-            {%- assign sort_by = results.sort_by | default: 'best-selling' -%}
+            {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
             <select
               name="sort_by"
               class="facet-filters__sort select__select resize-select"
