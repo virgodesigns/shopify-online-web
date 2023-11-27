@@ -9,25 +9,7 @@
 -%}
 
 
-<!-- variant as a products -->
- {% if product.metafields.custom.variants != blank %}
-      <div class="variant-heading">Colour</div>
-      <div class="related-products__container" data-current-product="{{ product.handle }}">
-         {% assign variantProduct = product.metafields.custom.variants.value %}
-        <div class="variant_as-product">
-        {% for product in  variantProduct.products.value %}
-           {% assign loopIndex = forloop.index %}
-          <a class="related-image" href = "{{ product.url }}">
-           {% for vaiantImage in variantProduct.variant_color_image.value%}
-              {% if loopIndex == forloop.index %}
-            <img class="related-image" src="{{ vaiantImage | image_url }}" alt="image" />
-           {% endif %}
-            {% endfor %}
-          </a>
-        {% endfor %}
-        </div>
-      </div>
-  {% endif %}
+
 
 {%- case option_type -%}
   {%- when 'dropdown' -%}
