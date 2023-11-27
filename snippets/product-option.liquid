@@ -104,7 +104,7 @@
           assign variant_image_size = '104'
       endcase
     -%}
-     {% if settings.color_swatches %}
+     {% unless settings.color_swatches %}
     <fieldset
       class="product-form__input product-form__input--color product-form__input--color--{{ color_picker_size }}"
       data-use-images="{{ color_picker_use_variants }}"
@@ -160,5 +160,5 @@
         </label>
       {%- endfor -%}
     </fieldset>
-    {% endif %}
+    {% endunless %}
 {%- endcase -%}
