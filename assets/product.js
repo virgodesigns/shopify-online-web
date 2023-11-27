@@ -545,7 +545,7 @@ if (!customElements.get("variant-selects")) {
             }
 
             // Check how many selected option values match a variant
-            const countVariantOptionsThatMatchCurrent = selected_options.reduce(
+            const countVariantOptionsThatMatchCurrent = selected_options?.reduce(
               (count, { value, index }) => {
                 return variant[index] === value ? count + 1 : count;
               },
