@@ -106,18 +106,20 @@
                           <div class="cbb-frequent-product">
                             {%  assign product = '' %}
                             {%- assign product_variant_ids = '' -%}
-                            {% for product_handle in related_products %}
-                              {%- assign product = all_products[product_handle] -%}
-                              {%- assign product_variant_ids = product_variant_ids | remove: ', ' -%}
-                               {%- assign variant_id = product.variants.first.id -%}
-                              {%- assign product_variant_ids = product_variant_ids | append: variant_id | append: ', ' -%}
+                          {%- assign product_variant_ids = '' -%}
+                          {% for product_handle in related_products %}
+                            {%- assign product = all_products[product_handle] -%}
+                            {%- assign variant_id = product.selected_or_first_available_variant.id -%}
+                            {%- assign product_variant_ids = product_variant_ids | append: variant_id | append: ',' -%}
+                            <div class="cbb-frequent-item">
+                              <a class="cbb-frequently-bought" href="{{ product.url }}">
+                                <img class="lg:tw-h-[295px]" src="{{product.featured_image.src | img_url: 'medium'  }}">
+                              </a>
+                            </div>
+                          {% endfor %}
+                          
+                          {%- assign product_variant_ids = product_variant_ids | remove_last: ',' -%}
 
-                              <div class="cbb-frequent-item">
-                                <a class="cbb-frequently-bought" href="{{ product.url }}">
-                                  <img class="lg:tw-h-[295px]" src="{{product.featured_image.src | img_url: 'medium'  }}">
-                                </a>
-                              </div>
-                            {% endfor %}
                           </div>
                         </div>
                         {% endif %}
