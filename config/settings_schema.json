@@ -40,7 +40,7 @@
         "type": "checkbox",
         "id": "color_swatch",
         "label": "Enable color swatch",
-        "default": true
+        "default": false
       }
     ]
   },
