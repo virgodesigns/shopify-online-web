@@ -866,11 +866,8 @@ if (!customElements.get("product-form")) {
     class ProductForm extends HTMLElement {
       constructor() {
         super();
-
         this.sticky = this.dataset.sticky;
-        this.form = document.getElementById(
-          `product-form-${this.dataset.section}`
-        );
+        this.form = document.getElementById(`product-form-${this.dataset.section}`);
         this.form.querySelector("[name=id]").disabled = false;
         if (!this.sticky) {
           this.form.addEventListener("submit", this.onSubmitHandler.bind(this));
@@ -886,9 +883,7 @@ if (!customElements.get("product-form")) {
         if (!this.form.reportValidity()) {
           return;
         }
-        const submitButtons = document.querySelectorAll(
-          ".single-add-to-cart-button"
-        );
+        const submitButtons = document.querySelectorAll(".single-add-to-cart-button");
         submitButtons.forEach((submitButton) => {
           if (submitButton.classList.contains("loading")) return;
           submitButton.setAttribute("aria-disabled", true);
