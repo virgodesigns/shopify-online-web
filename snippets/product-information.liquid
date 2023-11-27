@@ -106,7 +106,7 @@
                           <div class="cbb-frequent-product">
                             {%  assign product = '' %}
                             {%- assign product_variant_ids = '' -%}
-                            {% for product_handle in related_products limit: 3 %}
+                            {% for product_handle in related_products %}
                               {%- assign product = all_products[product_handle] -%}
                               {%- assign product_variant_ids = product_variant_ids 
                                 | append: product.selected_or_first_available_variant.id
