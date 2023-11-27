@@ -566,7 +566,7 @@ if (!customElements.get("variant-selects")) {
             // Make sure if a variant is unavailable, disable currently selected option
             if (
               (!this.currentVariant || !this.currentVariant.available) &&
-              selected_options?.find(
+              selected_options.find(
                 (option) =>
                   option.value === entry.value && index === option.index
               )
