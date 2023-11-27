@@ -1,7 +1,10 @@
 {{- 'product.css' | asset_url | stylesheet_tag -}}
 <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
-<div id="ProductInfo-{{ section.id }}" class="product-information--inner{% if section.settings.enable_sticky_info %} production-information--sticky{% endif %}">
+<div
+  id="ProductInfo-{{ section.id }}"
+  class="product-information--inner{% if section.settings.enable_sticky_info %} production-information--sticky{% endif %}"
+>
   {%- assign product_form_id = 'product-form-' | append: section.id -%}
   {% for block in section.blocks %}
     {%- case block.type -%}
@@ -31,7 +34,10 @@
           </div>
           {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
             <a class="star-rating-container" href="#shopify-product-reviews">
-              <div class="star-rating" style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"></div>
+              <div
+                class="star-rating"
+                style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"
+              ></div>
               <span>{{ 'products.product.reviews' | t: count: product.metafields.reviews.rating_count }}</span>
             </a>
           {%- endif -%}
@@ -69,6 +75,54 @@
             data-size="{{ product.option }}"
             data-is-disabled="{{ is_disabled }}"
           >
+                 {% if product.metafields.custom.fabric_image != blank %}
+                <div class="variant-heading">Colour</div>
+                <div class="related-products__container" data-current-product="{{ product.handle }}">
+                  {% assign variantProduct = product.metafields.custom.fabric_image.value %}
+                  <div class="variant_as-product">
+                    {% assign imageCount = variantProduct | size %}
+                    {% for VariantImage in variantProduct %}
+                      <span class="related-image">
+                        <img class="related-image" src="{{ VariantImage}}" alt="image">
+                      </span>
+                    {% endfor %}
+                    <span class="variant-count"> {{ imageCount }} Colours </span>
+                  </div>
+                </div>
+              {% endif %}
+
+              <div class="popup" id="customPopup">
+                 <div class="frequent-product_card ">
+                      {%- assign related_products = '' -%}
+                      {% for tag in product.tags %}
+                        {% if tag contains 'related-' %}
+                        {%- assign product_handle = tag | remove: 'related-' -%}
+                        {%- assign related_products = related_products | append: ',' | append: product_handle -%}
+                      {% endif %} 
+                      {% endfor %} 
+                      {%- assign related_products = related_products | remove_first: ',' | split: ',' -%}
+                      {% if related_products.size > 0 %}
+                        <div class="product-frequent-count">
+                          <div class="cbb-frequent-product">
+                            {%  assign product = '' %}
+                            {%- assign product_variant_ids = '' -%}
+                            {% for product_handle in related_products %}
+                              {%- assign product = all_products[product_handle] -%}
+                              {%- assign product_variant_ids = product_variant_ids 
+                                | append: product.selected_or_first_available_variant.id
+                                | append: ', ' -%}
+                              <div class="cbb-frequent-item">
+                                <a class="cbb-frequently-bought" href="{{ product.url }}">
+                                  <img class="lg:tw-h-[295px]" src="{{product.featured_image.src | img_url: 'medium'  }}">
+                                </a>
+                              </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                        {% endif %}
+                      </div>
+                     <button class="cross-icon" onclick="closePopup()">{% render 'svg-icons' with 'close' %}</button>
+              </div>
             <div class="variations" {{ block.shopify_attributes }}>
               {%- for option in product.options_with_values -%}
                 {%- liquid
@@ -98,7 +152,7 @@
                       {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
                    </modal-opener>
                    {%- endcapture -%}
-                  {%- capture sizing_popup -%}
+                    {%- capture sizing_popup -%}
                    <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal">
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
@@ -215,26 +269,26 @@
           </div>
         </noscript>
       {%- when 'side_panel' -%}
-          <div class="side-panel-links">
-            {%- if block.settings.side_panel_1_label != '' -%}
-              <button class="side-panel-links--link ">
-                {% render 'svg-icons-inline', icon: block.settings.side_panel_1_icon -%}
-                <div class="text_button">{{ block.settings.side_panel_1_label }}</div>
-              </button>
-            {%- endif -%}
-            {%- if block.settings.side_panel_2_label != '' -%}
-              <button class="side-panel-links--link no-js-hidden">
-                {% render 'svg-icons-inline', icon: block.settings.side_panel_2_icon -%}
-                <div class="text_button">{{ block.settings.side_panel_2_label }}</div>
-              </button>
-            {%- endif -%}
-            {%- if block.settings.side_panel_3_label != '' -%}
-              <button class="side-panel-links--link no-js-hidden">
-                {% render 'svg-icons-inline', icon: block.settings.side_panel_3_icon -%}
-                <div class="text_button">{{ block.settings.side_panel_3_label }}</div>
-              </button>
-            {%- endif -%}
-          </div>
+        <div class="side-panel-links">
+          {%- if block.settings.side_panel_1_label != '' -%}
+            <button class="side-panel-links--link ">
+              {% render 'svg-icons-inline', icon: block.settings.side_panel_1_icon -%}
+              <div class="text_button">{{ block.settings.side_panel_1_label }}</div>
+            </button>
+          {%- endif -%}
+          {%- if block.settings.side_panel_2_label != '' -%}
+            <button class="side-panel-links--link no-js-hidden">
+              {% render 'svg-icons-inline', icon: block.settings.side_panel_2_icon -%}
+              <div class="text_button">{{ block.settings.side_panel_2_label }}</div>
+            </button>
+          {%- endif -%}
+          {%- if block.settings.side_panel_3_label != '' -%}
+            <button class="side-panel-links--link no-js-hidden">
+              {% render 'svg-icons-inline', icon: block.settings.side_panel_3_icon -%}
+              <div class="text_button">{{ block.settings.side_panel_3_label }}</div>
+            </button>
+          {%- endif -%}
+        </div>
       {%- when 'buy_buttons' -%}
         {% render 'product-add-to-cart',
           product: product,
@@ -245,9 +299,20 @@
         %}
       {%- when 'collapsible_tab' -%}
         <collapsible-row class="product__accordion accordion" {{ block.shopify_attributes }}>
-          <details id="Details-{{ block.id }}-{{ section.id }}" {% if block.settings.open %} open{% endif %}>
-            <summary> {{ block.settings.heading | default: block.settings.page.title }} <span></span></summary>
-            <div class="collapsible__content accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+          <details
+            id="Details-{{ block.id }}-{{ section.id }}"
+            {% if block.settings.open %}
+              open
+            {% endif %}
+          >
+            <summary>
+              {{ block.settings.heading | default: block.settings.page.title }}
+              <span></span>
+            </summary>
+            <div
+              class="collapsible__content accordion__content rte"
+              id="ProductAccordion-{{ block.id }}-{{ section.id }}"
+            >
               {{ block.settings.content }}
               {{ block.settings.page.content }}
               {{ block.settings.custom_liquid }}
@@ -257,7 +322,8 @@
       {%- when 'complementary' -%}
         <product-recommendations
           class="complementary-products no-js-hidden"
-          data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
+          data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary"
+        >
           {%- if recommendations.performed and recommendations.products_count > 0 -%}
             <div class="complementary-products--inner">
               {%- if block.settings.block_heading != blank -%}
@@ -415,3 +481,100 @@
   %}
 {%- endif -%}
 {{ sizing_popup }}
+
+<style>
+    /* Add your styles for the pop-up and other elements here */
+  @media only screen and (min-width: 750px) {
+  .popup {
+      display: none;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      z-index:999;
+      width:100%;
+      height:auto;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  }
+   .cbb-frequent-product{
+    display:flex;
+    gap:10px;
+  }
+  .cbb-frequently-bought img{
+    height:210px;
+  }
+  .cross-icon{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .variant_as-product{
+    display:flex;
+    align-items:center;
+    margin-top:1rem;
+      gap:5px;
+  }
+  .related-products__container{
+    cursor:pointer;
+  }
+
+  .variant-count{
+    font-size: 14px;
+    color: #b5bdb8;
+  }
+
+  /* Add any other styles as needed */
+
+    .cbb-frequent-item{
+       flex-shrink: 0;
+    }
+  .cbb-frequent-product{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .cbb-frequent-product::-webkit-scrollbar {
+    display:none;
+  }
+ 
+  
+
+  @media only screen and (max-width: 769px) {
+      .popup {
+      bottom:0;
+      transform: translateX(-50%) translateY(0);
+      width:100%;
+       height:auto;
+      display: none;
+      position: fixed;
+      z-index:9999;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      let relatedProductsContainer = document.querySelector('.related-products__container');
+      relatedProductsContainer.addEventListener('click', function () {
+          openPopup();
+      });
+  });
+  function openPopup() {
+      let popup = document.getElementById('customPopup');
+      popup.style.display = 'block';
+  }
+  function closePopup() {
+      let popup = document.getElementById('customPopup');
+      popup.style.display = 'none';
+  }
+</script>
