@@ -34,17 +34,6 @@
     ]
   },
   {
-    "name": "swatches Enable",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "color_swatch",
-        "label": "Enable color swatch",
-        "default": false
-      }
-    ]
-  },
-  {
     "name": "Typography",
     "settings": [
       {
