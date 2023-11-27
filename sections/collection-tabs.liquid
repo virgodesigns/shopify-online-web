@@ -136,8 +136,8 @@
 {% schema %}
 {
   "name": "Collection tabs",
-"class": "section-collection-tabs",
-"max_blocks": 4,
+  "class": "section-collection-tabs",
+  "max_blocks": 4,
   "settings": [
     {
       "type": "text",
@@ -145,87 +145,87 @@
       "label": "Heading",
       "default": "Collection Tabs"
     },
-	{
-		"type": "checkbox",
-		"id": "heading_left",
-		"default": false,
-		"label": "Left align heading"
-	},
+    {
+      "type": "checkbox",
+      "id": "heading_left",
+      "default": false,
+      "label": "Left align heading"
+    },
     {
       "type": "richtext",
       "id": "description",
       "label": "Description",
       "default": "<p>Add a short description for your collections</p>"
     },
-	{
-		"type": "checkbox",
-		"id": "full_width",
-		"label": "Make section full width",
-		"default": true
-	},
-	{
-     "type": "range",
-     "id": "product_limit",
-     "min": 2,
-     "max": 16,
-     "step": 1,
-     "default": 6,
-     "label": "Number of products to show"
-   },
-	{
-     "type": "range",
-     "id": "columns_desktop",
-     "min": 2,
-     "max": 5,
-     "step": 1,
-     "default": 4,
-     "label": "Number of columns on desktop"
-   },
-   {
-     "type": "checkbox",
-     "id": "show_view_all",
-     "default": true,
-     "label": "Enable \"View all\" button",
-		"info": "Enable \"View all\" button if collection includes more products than shown"
-   },
-	{
-		"type": "checkbox",
-		"id": "show_progress_bar",
-		"label": "Show progress bar",
-		"default": true
-	},
-	{
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make section full width",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "product_limit",
+      "min": 2,
+      "max": 16,
+      "step": 1,
+      "default": 6,
+      "label": "Number of products to show"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": true,
+      "label": "Enable \"View all\" button",
+      "info": "Enable \"View all\" button if collection includes more products than shown"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_progress_bar",
+      "label": "Show progress bar",
+      "default": true
+    },
+    {
       "type": "header",
       "content": "Spacing"
     },
-	{
-		"type": "checkbox",
-		"id": "disable_top_spacing",
-		"default": false,
-		"label": "Remove top spacing"
-	},
-	{
-		"type": "checkbox",
-		"id": "disable_bottom_spacing",
-		"default": false,
-		"label": "Remove bottom spacing"
-	},
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    },
     {
       "type": "select",
       "id": "margin_left_value",
       "label": "Left Spacing",
-      "options":[
+      "options": [
         {
-          "value":"0",
-          "label":"None"
+          "value": "0",
+          "label": "None"
         },
         {
-          "value":"10.89",
-          "label":"Spacing"
+          "value": "10.89",
+          "label": "Spacing"
         },
         {
-          "value":"38.34",
-          "label":"Large Spacing"
+          "value": "38.34",
+          "label": "Large Spacing"
         }
       ],
       "default": "10.89"
@@ -254,7 +254,7 @@
       "label": "Show on Mobile"
     }
   ],
-"blocks": [
+  "blocks": [
     {
       "type": "collection",
       "name": "Collection",
@@ -264,23 +264,23 @@
           "id": "collection",
           "label": "Collection"
         }
-		]
-	}
-],
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Collection tabs",
-		"blocks": [
-			{
-				"type": "collection"
-			},
-			{
-				"type": "collection"
-			},
-			{
-				"type": "collection"
-			}
-		]
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
     }
   ]
 }

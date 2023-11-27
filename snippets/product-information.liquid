@@ -1,7 +1,10 @@
 {{- 'product.css' | asset_url | stylesheet_tag -}}
 <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
-<div id="ProductInfo-{{ section.id }}" class="product-information--inner{% if section.settings.enable_sticky_info %} production-information--sticky{% endif %}">
+<div
+  id="ProductInfo-{{ section.id }}"
+  class="product-information--inner{% if section.settings.enable_sticky_info %} production-information--sticky{% endif %}"
+>
   {%- assign product_form_id = 'product-form-' | append: section.id -%}
   {% for block in section.blocks %}
     {%- case block.type -%}
@@ -31,7 +34,10 @@
           </div>
           {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
             <a class="star-rating-container" href="#shopify-product-reviews">
-              <div class="star-rating" style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"></div>
+              <div
+                class="star-rating"
+                style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"
+              ></div>
               <span>{{ 'products.product.reviews' | t: count: product.metafields.reviews.rating_count }}</span>
             </a>
           {%- endif -%}
@@ -98,7 +104,7 @@
                       {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
                    </modal-opener>
                    {%- endcapture -%}
-                  {%- capture sizing_popup -%}
+                    {%- capture sizing_popup -%}
                    <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal">
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
@@ -215,26 +221,26 @@
           </div>
         </noscript>
       {%- when 'side_panel' -%}
-          <div class="side-panel-links">
-            {%- if block.settings.side_panel_1_label != '' -%}
-              <button class="side-panel-links--link ">
-                {% render 'svg-icons-inline', icon: block.settings.side_panel_1_icon -%}
-                <div class="text_button">{{ block.settings.side_panel_1_label }}</div>
-              </button>
-            {%- endif -%}
-            {%- if block.settings.side_panel_2_label != '' -%}
-              <button class="side-panel-links--link no-js-hidden">
-                {% render 'svg-icons-inline', icon: block.settings.side_panel_2_icon -%}
-                <div class="text_button">{{ block.settings.side_panel_2_label }}</div>
-              </button>
-            {%- endif -%}
-            {%- if block.settings.side_panel_3_label != '' -%}
-              <button class="side-panel-links--link no-js-hidden">
-                {% render 'svg-icons-inline', icon: block.settings.side_panel_3_icon -%}
-                <div class="text_button">{{ block.settings.side_panel_3_label }}</div>
-              </button>
-            {%- endif -%}
-          </div>
+        <div class="side-panel-links">
+          {%- if block.settings.side_panel_1_label != '' -%}
+            <button class="side-panel-links--link ">
+              {% render 'svg-icons-inline', icon: block.settings.side_panel_1_icon -%}
+              <div class="text_button">{{ block.settings.side_panel_1_label }}</div>
+            </button>
+          {%- endif -%}
+          {%- if block.settings.side_panel_2_label != '' -%}
+            <button class="side-panel-links--link no-js-hidden">
+              {% render 'svg-icons-inline', icon: block.settings.side_panel_2_icon -%}
+              <div class="text_button">{{ block.settings.side_panel_2_label }}</div>
+            </button>
+          {%- endif -%}
+          {%- if block.settings.side_panel_3_label != '' -%}
+            <button class="side-panel-links--link no-js-hidden">
+              {% render 'svg-icons-inline', icon: block.settings.side_panel_3_icon -%}
+              <div class="text_button">{{ block.settings.side_panel_3_label }}</div>
+            </button>
+          {%- endif -%}
+        </div>
       {%- when 'buy_buttons' -%}
         {% render 'product-add-to-cart',
           product: product,
@@ -245,9 +251,20 @@
         %}
       {%- when 'collapsible_tab' -%}
         <collapsible-row class="product__accordion accordion" {{ block.shopify_attributes }}>
-          <details id="Details-{{ block.id }}-{{ section.id }}" {% if block.settings.open %} open{% endif %}>
-            <summary> {{ block.settings.heading | default: block.settings.page.title }} <span></span></summary>
-            <div class="collapsible__content accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+          <details
+            id="Details-{{ block.id }}-{{ section.id }}"
+            {% if block.settings.open %}
+              open
+            {% endif %}
+          >
+            <summary>
+              {{ block.settings.heading | default: block.settings.page.title }}
+              <span></span>
+            </summary>
+            <div
+              class="collapsible__content accordion__content rte"
+              id="ProductAccordion-{{ block.id }}-{{ section.id }}"
+            >
               {{ block.settings.content }}
               {{ block.settings.page.content }}
               {{ block.settings.custom_liquid }}
@@ -257,7 +274,8 @@
       {%- when 'complementary' -%}
         <product-recommendations
           class="complementary-products no-js-hidden"
-          data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
+          data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary"
+        >
           {%- if recommendations.performed and recommendations.products_count > 0 -%}
             <div class="complementary-products--inner">
               {%- if block.settings.block_heading != blank -%}

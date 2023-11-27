@@ -8,9 +8,6 @@
   assign handle = option.name | replace: ' ', '-' | downcase | escape
 -%}
 
-
-
-
 {%- case option_type -%}
   {%- when 'dropdown' -%}
     <fieldset
@@ -43,7 +40,6 @@
       </div>
     </fieldset>
 
-     
   {%- when 'button' -%}
     <fieldset
       class="product-form__input input-tag product-form__input--block"
@@ -77,8 +73,8 @@
         {% endfor %}
       {% endfor %}
     </fieldset>
-      <div class="alert_message_product hide-message">Please select a size and then proceed</div>
-       <p class="product-alert_message hide-message">You've bagged it!</p>
+    <div class="alert_message_product hide-message">Please select a size and then proceed</div>
+    <p class="product-alert_message hide-message">You've bagged it!</p>
   {%- when 'color' -%}
     {%- liquid
       assign custom_colors = settings.color_swatches | newline_to_br | split: '<br />'

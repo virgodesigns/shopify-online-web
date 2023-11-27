@@ -221,7 +221,12 @@
 									{%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
 									<select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortByMobile" aria-describedby="a11y-refresh-page-message">
 										{%- for option in results.sort_options -%}
+								         {% if  option.value != 'created-ascending'
+											and option.value != 'title-descending'
+											and option.value != 'title-ascending'
+											%}
 											<option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+										  {%- endif %}
 										{%- endfor -%}
 									</select>
 									<div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>

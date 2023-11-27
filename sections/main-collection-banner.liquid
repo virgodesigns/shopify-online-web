@@ -30,7 +30,10 @@
 {%- endif -%}
 {{ 'collection-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}" style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
+<div
+  class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}"
+  style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}"
+>
   <div class="collection-banner--breadcrumbs">
     {%- render 'breadcrumbs' -%}
   </div>
@@ -38,9 +41,7 @@
     <div class="small-12 columns">
       {%- if show_collection_image and image -%}
         <div class="collection-banner--image">
-          {%- render 'responsive-image'
-            , image: image
-            , sizes: '0x350,0x700' -%}
+          {%- render 'responsive-image', image: image, sizes: '0x350,0x700' -%}
         </div>
       {%- endif -%}
       <div class="collection-banner--content">
@@ -49,7 +50,8 @@
             role="search"
             method="get"
             class="searchform"
-            action="{{ routes.search_url }}">
+            action="{{ routes.search_url }}"
+          >
             <fieldset>
               <input
                 type="search"
@@ -57,7 +59,8 @@
                 placeholder="{{ 'sections.header.search_for' | t | escape }}"
                 value="{{ search.terms | replace: '*', '' }}"
                 name="q"
-                autocomplete="off">
+                autocomplete="off"
+              >
               <button type="submit" class="thb-search-submit">{% render 'svg-icons' with 'search' %}</button>
             </fieldset>
           </form>
@@ -87,7 +90,6 @@
   </div>
 
   {%- unless description != blank -%}
-
     <div class="side-panel-content side-panel-content--initial">
       <div class="thb-predictive-search">
         {%- if settings.search_menu != blank -%}
@@ -102,15 +104,16 @@
             </scroll-shadow>
           </div>
         {%- endif -%}
-        {%- if settings.search_product_collection -%}
+        {%- if settings.search_product_collection and template == 'search' -%}
           <div class="thb-predictive-search--promotion">
             <span class="thb-predictive-search--label">{{ settings.search_product_heading }}</span>
             <div class="thb-predictive-search--promotion-products">
-              <ul class="products collection row small-up-1 medium-up-6">
-                {%- for product in settings.search_product_collection.products limit: settings.search_product_collection_limit -%}
+              <ul class="products collection row small-up-2 medium-up-6">
+                {%- for product in settings.search_product_collection.products
+                  limit: settings.search_product_collection_limit
+                -%}
                   <li class="columns">
-                    {% render 'product-card'
-                      , product_card_product: product %}
+                    {% render 'product-card', product_card_product: product %}
                   </li>
                 {%- endfor -%}
               </ul>
@@ -120,70 +123,75 @@
       </div>
     </div>
   {%- endunless -%}
-
 </div>
 
-
 {% schema %}
-  {
-    "name": "Collection banner",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Collection page"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_collection_image",
-        "default": true,
-        "label": "Show collection image"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_collection_description",
-        "default": true,
-        "label": "Show collection description"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_subcollections",
-        "default": true,
-        "label": "Show subcollections",
-        "info": "Links to subcollections from your menu will appear here. [Learn more.](https://documentation.fuelthemes.net/kb/how-do-i-add-sub-category-links-inside-main-collection-banner/)"
-      }, {
-        "type": "checkbox",
-        "id": "make_heading_uppercase",
-        "default": false,
-        "label": "Make heading uppercase"
-      }, {
-        "type": "header",
-        "content": "Catalog page"
-      }, {
-        "type": "paragraph",
-        "content": "Learn more about [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page)"
-      }, {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Catalog image",
-        "info": "Changes the image for the [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page). 1920 x 640 px .jpg recommended."
-      }, {
-        "type": "header",
-        "content": "Colors"
-      }, {
-        "type": "color",
-        "id": "overlay_color",
-        "label": "Overlay",
-        "default": "#000000"
-      }, {
-        "type": "range",
-        "id": "overlay_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "%",
-        "label": "Overlay opacity",
-        "default": 20
-      }
-    ]
-  }
+{
+  "name": "Collection banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Collection page"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "default": true,
+      "label": "Show collection image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_description",
+      "default": true,
+      "label": "Show collection description"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_subcollections",
+      "default": true,
+      "label": "Show subcollections",
+      "info": "Links to subcollections from your menu will appear here. [Learn more.](https://documentation.fuelthemes.net/kb/how-do-i-add-sub-category-links-inside-main-collection-banner/)"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_heading_uppercase",
+      "default": false,
+      "label": "Make heading uppercase"
+    },
+    {
+      "type": "header",
+      "content": "Catalog page"
+    },
+    {
+      "type": "paragraph",
+      "content": "Learn more about [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Catalog image",
+      "info": "Changes the image for the [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page). 1920 x 640 px .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 20
+    }
+  ]
+}
 {% endschema %}

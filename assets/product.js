@@ -545,7 +545,7 @@ if (!customElements.get("variant-selects")) {
             }
 
             // Check how many selected option values match a variant
-            const countVariantOptionsThatMatchCurrent = selected_options.reduce(
+            const countVariantOptionsThatMatchCurrent = selected_options?.reduce(
               (count, { value, index }) => {
                 return variant[index] === value ? count + 1 : count;
               },
@@ -555,7 +555,7 @@ if (!customElements.get("variant-selects")) {
             // Only enable an option if an available variant matches all but one current selected value
             if (
               countVariantOptionsThatMatchCurrent >=
-              selected_options.length - 1
+              selected_options?.length - 1
             ) {
               entry.isUnavailable =
                 entry.isUnavailable && variant.available
@@ -566,7 +566,7 @@ if (!customElements.get("variant-selects")) {
             // Make sure if a variant is unavailable, disable currently selected option
             if (
               (!this.currentVariant || !this.currentVariant.available) &&
-              selected_options.find(
+              selected_options?.find(
                 (option) =>
                   option.value === entry.value && index === option.index
               )
@@ -866,11 +866,8 @@ if (!customElements.get("product-form")) {
     class ProductForm extends HTMLElement {
       constructor() {
         super();
-
         this.sticky = this.dataset.sticky;
-        this.form = document.getElementById(
-          `product-form-${this.dataset.section}`
-        );
+        this.form = document.getElementById(`product-form-${this.dataset.section}`);
         this.form.querySelector("[name=id]").disabled = false;
         if (!this.sticky) {
           this.form.addEventListener("submit", this.onSubmitHandler.bind(this));
@@ -886,9 +883,7 @@ if (!customElements.get("product-form")) {
         if (!this.form.reportValidity()) {
           return;
         }
-        const submitButtons = document.querySelectorAll(
-          ".single-add-to-cart-button"
-        );
+        const submitButtons = document.querySelectorAll(".single-add-to-cart-button");
         submitButtons.forEach((submitButton) => {
           if (submitButton.classList.contains("loading")) return;
           submitButton.setAttribute("aria-disabled", true);
