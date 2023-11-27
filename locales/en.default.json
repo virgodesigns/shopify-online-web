@@ -413,7 +413,9 @@
   "shopify": {
     "collections": {
       "sorting": {
-        "date_descending": "What's New"
+        "date_descending": "What's New",
+        "az": " ",
+        "za": " "
       }
     }
   }
