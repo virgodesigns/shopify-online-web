@@ -176,7 +176,7 @@
         "description": "",
         "full_width": true,
         "display_type": "carousel",
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "mobile_swipe": true,
         "show_progress_bar": true,
         "disable_top_spacing": false,
