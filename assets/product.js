@@ -545,7 +545,7 @@ if (!customElements.get("variant-selects")) {
             }
 
             // Check how many selected option values match a variant
-            const countVariantOptionsThatMatchCurrent = selected_options?.reduce(
+            const countVariantOptionsThatMatchCurrent = selected_options.reduce(
               (count, { value, index }) => {
                 return variant[index] === value ? count + 1 : count;
               },
@@ -555,7 +555,7 @@ if (!customElements.get("variant-selects")) {
             // Only enable an option if an available variant matches all but one current selected value
             if (
               countVariantOptionsThatMatchCurrent >=
-              selected_options?.length - 1
+              selected_options.length - 1
             ) {
               entry.isUnavailable =
                 entry.isUnavailable && variant.available
@@ -566,7 +566,7 @@ if (!customElements.get("variant-selects")) {
             // Make sure if a variant is unavailable, disable currently selected option
             if (
               (!this.currentVariant || !this.currentVariant.available) &&
-              selected_options?.find(
+              selected_options.find(
                 (option) =>
                   option.value === entry.value && index === option.index
               )
