@@ -171,7 +171,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You May Also Like",
+        "heading": "Similar Products",
         "heading_left": false,
         "description": "",
         "full_width": true,
@@ -179,8 +179,8 @@
         "columns_desktop": 4,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "6504c889-765e-4951-97dd-2817199cfc89": {
