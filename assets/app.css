@@ -1020,6 +1020,7 @@ code,
   margin-left: 83.33333%;
 }
 
+
 .small-12 {
   flex: 0 0 100%;
   max-width: 100%;
@@ -2393,6 +2394,9 @@ table.no-borders tfoot td:first-child {
     flex: 0 0 20%;
     max-width: 20%;
   }
+  .recommended-products .flickity-nav {
+    top:50%;
+}
 }
 
 @media only screen and (min-width: 1068px) {
@@ -2451,6 +2455,9 @@ scroll-shadow {
   .mobile-height-300 {
     min-height: 300px;
   }
+  .recommended-products .small-12{
+  max-width:50%;
+}
 }
 
 @media only screen and (max-width: 767px) {
