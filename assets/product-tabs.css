@@ -14,9 +14,14 @@
   height:32px;
 }
 
+.produt-tab-container .flickity-page-dots .dot {
+  margin:0 5px;
+}
 
 .produt-tab-container .flickity-page-dots .dot.is-selected {
-    opacity: .2;
+  width: 20px;
+  height: 7px;
+  opacity: .3;
 }
 
 .produt-tab-container .flickity-page-dots .dot{
