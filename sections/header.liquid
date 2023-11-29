@@ -9,7 +9,10 @@
     assign transparent_header = section.settings.transparent_header
   endif
 -%}
-<header id="header" class="header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide">
+<header
+  id="header"
+  class="header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
+>
   <div class="row expanded">
     <div class="small-12 columns">
       {%- case style -%}
@@ -37,6 +40,11 @@
   {%- endstyle -%}
 </header>
 <div class="thb-secondary-area mobile">
+  {% if template contains 'product' %}
+  <a class="right-arrow-button" href="javascript:history.back()">
+    {% render 'home-icon' %}
+  </a>
+    {% endif %}
   <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
     {%- render 'svg-icons' with 'search' -%}
   </a>
@@ -56,10 +64,18 @@
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
-      <ul class="flex-box flex-box--{{ section.settings.menu.links.size }}-col" style="--grid-mobile-horizontal-spacing: 16px;">
+      <ul
+        class="flex-box flex-box--{{ section.settings.menu.links.size }}-col"
+        style="--grid-mobile-horizontal-spacing: 16px;"
+      >
         {%- for link in section.settings.menu.links -%}
           <li class="flex-box__item">
-            <a href="{{ link.url }}" {% if link.active %} aria-current="page"{% endif %}>
+            <a
+              href="{{ link.url }}"
+              {% if link.active %}
+                aria-current="page"
+              {% endif %}
+            >
               <div>
                 {% assign temp_title = link.title | handleize %}
               </div>
