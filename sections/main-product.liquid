@@ -49,11 +49,11 @@
     onload="this.media='all'"
   >
   <link
-        id="ModelViewerOverride"
-        rel="stylesheet"
-        href="{{ 'product-model-viewer-ui.css' | asset_url }}"
-        media="print"
-        onload="this.media='all'"
+    id="ModelViewerOverride"
+    rel="stylesheet"
+    href="{{ 'product-model-viewer-ui.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'"
   >
 {%- endif -%}
 
@@ -119,14 +119,7 @@
                             id="Media-Thumbnails-{{ section.id }}-{{ media.id }}"
                             style="--aspect-ratio: {{ media.aspect_ratio }}"
                           >
-                            {{
-                              media
-                              | external_video_tag:
-                                loading: 'lazy',
-                                loop:true,
-                                muted: '1',
-                                autoplay: true
-                            }}
+                            {{ media | external_video_tag: loading: 'lazy', loop: true, muted: '1', autoplay: true }}
                           </div>
                         {% when 'video' %}
                           <div
@@ -140,7 +133,7 @@
                               | video_tag:
                                 controls: false,
                                 loading: 'lazy',
-                                loop:true,
+                                loop: true,
                                 image_size: '960x',
                                 autoplay: true
                             }}
@@ -290,9 +283,6 @@
                                 </a>
                               {%- endif -%}
                               {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
-                                 <a class="right-arrow-button" href ="javascript:history.back()">
-                                 {% render 'home-icon' %}
-                                 </a>
                             </div>
                           {% when 'external_video' %}
                             <div
@@ -302,14 +292,7 @@
                               id="Media-Thumbnails-{{ section.id }}-{{ media.id }}"
                               style="--aspect-ratio: {{ media.aspect_ratio }}"
                             >
-                              {{
-                                media
-                                | external_video_tag:
-                                  loading: 'lazy',
-                                  loop: true,
-                                  muted: '1',
-                                  autoplay: true
-                              }}
+                              {{ media | external_video_tag: loading: 'lazy', loop: true, muted: '1', autoplay: true }}
                             </div>
                           {% when 'video' %}
                             <div
@@ -318,14 +301,7 @@
                               style="--aspect-ratio: {{ media.aspect_ratio }}"
                               id="Media-Thumbnails-{{ section.id }}-{{ media.id }}"
                             >
-                              {{
-                                media
-                                | video_tag:
-                                  loading: 'lazy',
-                                  loop:true,
-                                  image_size: '960x',
-                                  autoplay: true
-                              }}
+                              {{ media | video_tag: loading: 'lazy', loop: true, image_size: '960x', autoplay: true }}
                             </div>
                           {% when 'model' %}
                             <product-model
@@ -365,8 +341,8 @@
                     {%- endunless -%}
                   {%- endfor -%}
                 </product-slider>
-                {% if  product.metafields.custom.model_info != blank %}
-                <div class='model_info-tittle'>{{ product.metafields.custom.model_info.value }}</div>
+                {% if product.metafields.custom.model_info != blank %}
+                  <div class="model_info-tittle">{{ product.metafields.custom.model_info.value }}</div>
                 {% endif %}
               </div>
             </div>
@@ -378,7 +354,8 @@
             section: section,
             update_url: true,
             pickup: true,
-            first_image: first_image
+            first_image: first_image,
+            product_handle: product.handle
           %}
         </div>
       </div>
