@@ -26,7 +26,7 @@
     "cart_drawer_notes": false,
     "cart_recommendations": false,
     "search_product_heading": "",
-    "search_product_collection": "",
+    "search_product_collection": "all",
     "lazy_loading": true,
     "back_to_top": false,
     "favicon": "shopify:\/\/shop_images\/Fav_icon_Dark_32x32_Squircle-1.png",
