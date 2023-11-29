@@ -201,9 +201,7 @@
   display: block;
   margin-bottom: 5px;
 }
-.product-title-uppercase-true .product-card .product-card-title {
-  text-transform: uppercase;
-}
+
 .product-card .badge {
   position: absolute;
   z-index: 30;
