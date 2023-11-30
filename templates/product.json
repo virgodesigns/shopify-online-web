@@ -171,7 +171,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Similar Products",
+        "heading": "You May Also Like",
         "heading_left": false,
         "description": "",
         "full_width": true,
