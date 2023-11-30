@@ -1,6 +1,7 @@
 {{- 'product.css' | asset_url | stylesheet_tag -}}
 <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
+
 <div
   id="ProductInfo-{{ section.id }}"
   class="product-information--inner{% if section.settings.enable_sticky_info %} production-information--sticky{% endif %}"
@@ -75,6 +76,33 @@
             data-size="{{ product.option }}"
             data-is-disabled="{{ is_disabled }}"
           >
+            {% if product.metafields.custom.fabric_image != blank %}
+              <div class="product_as-varinats">
+              <div class="related-products__container" data-current-product="{{ product.handle }}">
+                {% assign variantProduct = product.metafields.custom.fabric_image.value %}
+                <div class="variant_as-product">
+                  {% assign imageCount = variantProduct | size %}
+                  {% for i in (0..2) %}
+                    {% if variantProduct[i] != blank %}
+                      <span class="related-image">
+                        <img class="related-image" src="{{ variantProduct[i] }}" alt="image">
+                      </span>
+                    {% endif %}
+                  {% endfor %}
+                  {% if imageCount > 3 %}
+                    <span class="variant-count">+{{ imageCount | minus: 3 }} More </span>
+                  {% else %}
+                    <span class="variant-image-count"> {{ imageCount }} Colour </span>
+                  {% endif %}
+                </div>
+              </div>
+                <div class="popup" id="customPopup">
+                   <div class="color_heading">Select Color </div>
+                  <div id="products-container"></div>
+                  <button class="cross-icon" onclick="closePopup()">{% render 'svg-icons' with 'close' %}</button>
+                </div>
+              </div>
+            {% endif %}
             <div class="variations" {{ block.shopify_attributes }}>
               {%- for option in product.options_with_values -%}
                 {%- liquid
@@ -433,3 +461,5 @@
   %}
 {%- endif -%}
 {{ sizing_popup }}
+
+
