@@ -612,21 +612,12 @@
             "heading_text_color": "#111111",
             "button_link": "shopify:\/\/collections\/midi-dresses"
           }
-        },
-        "7bfc9db8-4210-4e3c-8f38-0ca99a8108c9": {
-          "type": "image-item",
-          "settings": {
-            "heading_text": "",
-            "heading_text_color": "#111111",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
         "5aeb32ef-d2de-46a3-bd2c-d07414d20d22",
         "b9d12573-a570-444a-ae31-a3370f7ac97b",
-        "c889e17a-ae15-46f5-83c4-5ce9fc177286",
-        "7bfc9db8-4210-4e3c-8f38-0ca99a8108c9"
+        "c889e17a-ae15-46f5-83c4-5ce9fc177286"
       ],
       "settings": {
       }
