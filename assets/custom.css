@@ -1,3 +1,136 @@
+/* variant as product css */
+
+/* Add your styles for the pop-up and other elements here */
+.product_as-varinats {
+  position: relative;
+}
+
+@media only screen and (min-width: 750px) {
+  .popup {
+    display: none;
+    cursor: auto;
+    position: absolute;
+    top: 49px;
+    left: 50%;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, 0%);
+    padding: 12px 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+.cbb-frequent-product {
+  display: flex;
+  gap: 10px;
+}
+.cbb-frequently-bought img {
+  height: 210px;
+}
+.cross-icon {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+.variant_as-product {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.related-products__container {
+  cursor: pointer;
+}
+
+.variant-image-count {
+  font-size: 14px;
+  color: #b5bdb8;
+}
+.variant-count {
+  color: #000;
+  font-size: 12px;
+}
+
+/* Add any other styles as needed */
+
+.cbb-frequently-bought {
+  flex-shrink: 0;
+}
+.cbb-frequent-item {
+  display: flex;
+  gap: 10px;
+}
+.cbb-frequent-product {
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.cbb-frequent-product::-webkit-scrollbar {
+  display: none;
+}
+.product_selected {
+  border: 1px solid var(--primary-dark-primary-900111111, #111);
+  display: flex;
+}
+
+.color_heading {
+  color: var(--primary-dark-primary-900111111, #111);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 12px;
+  line-height: 22px;
+}
+.product-tittle {
+  color: var(--primary-dark-primary-900111111, #111);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.2rem;
+  letter-spacing: 0.1px;
+}
+
+#products-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.products-container-div {
+  flex-basis: 30%;
+}
+
+@media only screen and (max-width: 769px) {
+  .popup {
+    bottom: 0;
+    transform: translateX(-50%) translateY(0);
+    width: 100%;
+    height: auto;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #products-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .products-container-div {
+    min-width: 26%;
+    max-height: auto;
+  }
+  #products-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .flickity-nav:hover {
   background-color: black;
 }
@@ -104,16 +237,6 @@
   .product-card-info span .amount {
     font-size: 14px;
   }
-}
-
-.bottom_image{
-  display:flex;
-  justify-content:center;
-}
-
-.bottom_image img{
-  width:32%;
-  margin-top:1rem;
 }
 
 .total-values {
@@ -287,7 +410,7 @@ input.pin-input::placeholder {
     left: 0;
     background: #000;
     z-index: 999;
-    height:60px;
+    height: 60px;
   }
   .product-images {
     position: relative;
