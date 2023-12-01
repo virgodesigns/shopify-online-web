@@ -1109,14 +1109,6 @@
             "social_url": "https:\/\/virgio.com\/products\/animal-print-v-neck-mini-dress?_pos=1&_psq=nura&_ss=e&_v=1.0"
           }
         },
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-4": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096284.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/polka-dot-serenade-in-black-with-pockets?_pos=1&_psq=talika&_ss=e&_v=1.0"
-          }
-        },
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12": {
           "type": "social_image",
           "settings": {
@@ -1124,14 +1116,22 @@
             "social_id": "",
             "social_url": "https:\/\/virgio.com\/products\/chic-block-print-shirt-dress-with-pockets?_pos=1&_psq=krita&_ss=e&_v=1.0"
           }
+        },
+        "0f8e3e7d-5fb7-4536-9b51-4e30912c9993": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096288.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/pure-serenity-dress-with-pockets"
+          }
         }
       },
       "block_order": [
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-4",
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12"
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12",
+        "0f8e3e7d-5fb7-4536-9b51-4e30912c9993"
       ],
       "custom_css": [
         ".social-images-collections .image-container::after {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.6) 100% ); z-index: 1;}"
