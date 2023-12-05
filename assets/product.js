@@ -1,13 +1,10 @@
 // when user selecting without the variant size add to cart
 document.addEventListener("DOMContentLoaded", () => {
-  const alertMessage = document.querySelector(".alert_message_product");
-  const productAddedToCart = document.querySelector(".product-alert_message");
-  const variantSize = document.querySelectorAll(".product-form__input--block")[0];
-  let addToButton = document.querySelector('[id="AddToCart"]');
-  let customerData = document.querySelector(".customer-id");
-  let addButton = document.querySelector(".add-to-cart");
-  let customerLogin = customerData.getAttribute("customer");
-  let buttonDisable = false;
+const alertMessage = document.querySelector(".alert_message_product");
+const productAddedToCart = document.querySelector(".product-alert_message");
+const variantSize = document.querySelectorAll(".product-form__input--block")[0];
+const addToButton = document.querySelector('[id="AddToCart"]');
+let buttonDisable = false;
   if (window.location.href.indexOf("/products") != -1) {
     variantSize.querySelectorAll('[type="radio"]').forEach((element) => {
       if (element.checked) buttonDisable = true;
@@ -15,41 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
     addToButton.addEventListener("click", (e) => {
       variantSize.querySelectorAll('[type="radio"]').forEach((element) => {
         if (element.checked) {
-          alertMessage.classList.add("hidecartbutton");
-            if (customerLogin){
-            buttonDisable = true;
-            productAddedToCart.classList.remove("hide-message");
-            }else{
-               buttonDisable = true;
-               sessionStorage.setItem('pdpcardt', true)
-               window.location.href="/account"
-               alertMessage.classList.add("hidecartbutton");
-            }
-          setTimeout(function () {
-            productAddedToCart.classList.add("hide-message");
-          }, 2000);
+          buttonDisable = true;
+          productAddedToCart.classList.remove("hide-message");
         }
+        setTimeout(function() {
+        productAddedToCart.classList.add("hide-message");
+       }, 2000);
       });
       if (!buttonDisable) {
         e.preventDefault();
-        if (window.innerWidth <= 768) {
-          window.scrollTo({ top: 500, behavior: "smooth" });
-        }
+        if (window.innerWidth <= 768) { 
+          window.scrollTo({ top: 500, behavior: 'smooth' });
+          }
         alertMessage.classList.remove("hide-message");
       }
     });
   }
 
-  // thumbnail and scroll events for product gallery
-  const thumbnailImages = document.querySelectorAll(
-    ".thumnails_images .product-images__slide"
-  );
-  const productImages = document.querySelectorAll(
-    ".product-images .product-images__slide"
-  );
-  const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.51,
-  });
+// thumbnail and scroll events for product gallery
+const thumbnailImages = document.querySelectorAll(".thumnails_images .product-images__slide");
+const productImages = document.querySelectorAll(".product-images .product-images__slide");
+const observer = new IntersectionObserver(handleIntersection, {threshold: 0.51,});
   productImages.forEach((target) => {
     observer.observe(target);
   });
@@ -282,17 +265,6 @@ if (!customElements.get("variant-selects")) {
     }
 
     updateVariantInput() {
-      // let customerData = document.querySelector(".customer-id");
-      // let customerLogin = customerData.getAttribute("customer");
-      // if (!customerLogin) {
-      //   let account = document.querySelector(".account-login");
-      //   let addButton = document.querySelector(".add-to-cart");
-      //   addButton.classList.add("hide-message");
-      //   account.classList.remove("hide-message");
-      //   addButton.addEventListener('click', function() => {
-      //   console.log("please login");
-      //   })
-      // }
       const productForms = document.querySelectorAll(
         `#product-form-${this.dataset.section}, #product-form-installment`
       );
@@ -866,8 +838,11 @@ if (!customElements.get("product-form")) {
     class ProductForm extends HTMLElement {
       constructor() {
         super();
+
         this.sticky = this.dataset.sticky;
-        this.form = document.getElementById(`product-form-${this.dataset.section}`);
+        this.form = document.getElementById(
+          `product-form-${this.dataset.section}`
+        );
         this.form.querySelector("[name=id]").disabled = false;
         if (!this.sticky) {
           this.form.addEventListener("submit", this.onSubmitHandler.bind(this));
@@ -971,11 +946,8 @@ if (!customElements.get("product-form")) {
             return;
           }
           const elementToReplace =
-            document
-              .getElementById(section.id)
-              .querySelector(section.selector) ||
-            document.getElementById(section.id);
-          elementToReplace.innerHTML = this.getSectionInnerHTML(
+            document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
+            elementToReplace.innerHTML = this.getSectionInnerHTML(
             parsedState.sections[section.section],
             section.selector
           );
@@ -991,9 +963,7 @@ if (!customElements.get("product-form")) {
 
         let product_drawer = document.getElementById("Product-Drawer");
         if (product_drawer && product_drawer.contains(this)) {
-          product_drawer
-            .querySelector(".product-quick-images--container")
-            .classList.remove("active");
+          product_drawer.querySelector(".product-quick-images--container").classList.remove("active");
           document.body.classList.remove("open-quick-view");
 
           if (window.innerWidth < 1069) {
@@ -1001,26 +971,16 @@ if (!customElements.get("product-form")) {
             if (document.getElementById("Cart-Drawer")) {
               document.getElementById("Cart-Drawer").classList.add("active");
               document.body.classList.add("open-cart");
-              document
-                .getElementById("Cart-Drawer")
-                .querySelector(".product-recommendations--full")
-                .classList.add("active");
+              document.getElementById("Cart-Drawer").querySelector(".product-recommendations--full").classList.add("active");
               dispatchCustomEvent("cart-drawer:open");
             }
           } else {
-            product_drawer
-              .querySelector(".product-quick-images--container")
-              .addEventListener("transitionend", function () {
-                product_drawer.classList.remove("active");
+            product_drawer.querySelector(".product-quick-images--container").addEventListener("transitionend", function () {
+            product_drawer.classList.remove("active");
                 if (document.getElementById("Cart-Drawer")) {
-                  document
-                    .getElementById("Cart-Drawer")
-                    .classList.add("active");
+                  document.getElementById("Cart-Drawer").classList.add("active");
                   document.body.classList.add("open-cart");
-                  document
-                    .getElementById("Cart-Drawer")
-                    .querySelector(".product-recommendations--full")
-                    .classList.add("active");
+                  document.getElementById("Cart-Drawer").querySelector(".product-recommendations--full").classList.add("active");
                   dispatchCustomEvent("cart-drawer:open");
                 }
               });

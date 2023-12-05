@@ -1,5 +1,5 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
-<div class="section-spacing hide-account" id="account-shopify">
+<div class="section-spacing" id="account-shopify">
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="myaccount--header">
@@ -91,24 +91,5 @@
 	  </div>
 	</div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    let valuePresent = sessionStorage.getItem('pdpcardt')
-    if ( valuePresent ){
-		setTimeout(()=>{
-	  document.getElementById("account-shopify").classList.remove("hide-account")
-		},500)
-       window.history.go(-2);
-      sessionStorage.removeItem("pdpcardt");
-    }
-	else{
-		document.getElementById("account-shopify").classList.remove("hide-account")
-	}
-  })
-</script>
-
-
-
 
 {% include 'returnprime_script' %}
