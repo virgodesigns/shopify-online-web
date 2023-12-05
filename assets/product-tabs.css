@@ -71,8 +71,10 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    line-height: 18px; /* 150% */
-    letter-spacing: 0.24px;
+    line-height: 18px;
+    letter-spacing: .24px;
+    width: 73%;
+    margin: 0 auto;
 }
   
   .heading {
