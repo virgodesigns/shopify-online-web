@@ -518,7 +518,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
           "type": "text",
           "settings": {
-            "text": "Premium Earth Friendly Fabrics",
+            "text": "Limited Time Offer",
             "link": "",
             "outline_text": false
           }
@@ -526,7 +526,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-2": {
           "type": "text",
           "settings": {
-            "text": "Fit that flatters the Indian body types",
+            "text": "Get Flat 250 off on your first purchase",
             "link": "",
             "outline_text": false
           }
@@ -534,31 +534,15 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-3": {
           "type": "text",
           "settings": {
-            "text": "Born Circular",
+            "text": "Use Code: WELCOME250",
             "link": "",
             "outline_text": false
           }
         },
-        "73a77c47-3c1c-4f5a-8897-8d0ff5570833": {
+        "8d58d505-54c3-490d-a9b4-b38cd5d77e45": {
           "type": "text",
           "settings": {
-            "text": "Premium Earth Friendly Fabrics",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "be3b72d8-2261-47f9-ad8f-a84e23cea4a2": {
-          "type": "text",
-          "settings": {
-            "text": "Fit that flatters the Indian body types",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "98affab2-1e09-4e3b-9449-b66050618130": {
-          "type": "text",
-          "settings": {
-            "text": "Born Circular",
+            "text": "No minimum Order Value",
             "link": "",
             "outline_text": false
           }
@@ -568,9 +552,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1",
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-2",
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-3",
-        "73a77c47-3c1c-4f5a-8897-8d0ff5570833",
-        "be3b72d8-2261-47f9-ad8f-a84e23cea4a2",
-        "98affab2-1e09-4e3b-9449-b66050618130"
+        "8d58d505-54c3-490d-a9b4-b38cd5d77e45"
       ],
       "custom_css": [
         "div {height: 30px;}",
