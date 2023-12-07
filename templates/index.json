@@ -765,16 +765,17 @@
         "disable_bottom_spacing": true
       }
     },
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e": {
+    "b93b9515-8b86-42d9-8aa4-4dec097dfd43": {
       "type": "slideshow",
       "blocks": {
-        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3": {
+        "template--21447364542761__b93b9515-8b86-42d9-8aa4-4dec097dfd43-slide-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096248.png",
-            "slide_link": "shopify:\/\/collections\/poolside-splash",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/12.png",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/App_Banner_0f6c91af-8b23-4f3a-ab7b-97774aec795b.mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-xlarge",
@@ -798,7 +799,7 @@
         }
       },
       "block_order": [
-        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3"
+        "template--21447364542761__b93b9515-8b86-42d9-8aa4-4dec097dfd43-slide-2"
       ],
       "custom_css": [
         ".slideshow__slide {padding-bottom: 0px;}"
@@ -809,7 +810,7 @@
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 3,
-        "transition": "swipe",
+        "transition": "fade",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -891,42 +892,14 @@
         "button_text": ""
       }
     },
-    "b93b9515-8b86-42d9-8aa4-4dec097dfd43": {
+    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e": {
       "type": "slideshow",
       "blocks": {
-        "template--21447364542761__b93b9515-8b86-42d9-8aa4-4dec097dfd43-slide-2": {
+        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096248.jpg",
-            "slide_link": "shopify:\/\/collections\/dark-florals",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "template--21447364542761__b93b9515-8b86-42d9-8aa4-4dec097dfd43-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096265.png",
-            "slide_link": "shopify:\/\/collections\/black-n-white",
+            "image": "shopify:\/\/shop_images\/Frame_48096248.png",
+            "slide_link": "shopify:\/\/collections\/poolside-splash",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -952,8 +925,7 @@
         }
       },
       "block_order": [
-        "template--21447364542761__b93b9515-8b86-42d9-8aa4-4dec097dfd43-slide-2",
-        "template--21447364542761__b93b9515-8b86-42d9-8aa4-4dec097dfd43-slide-3"
+        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3"
       ],
       "custom_css": [
         ".slideshow__slide {padding-bottom: 0px;}"
@@ -964,7 +936,7 @@
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 3,
-        "transition": "fade",
+        "transition": "swipe",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -1189,10 +1161,10 @@
     "8b86c708-3128-4c50-8ab6-32dbaa09d1ce",
     "cc265b0e-27de-4374-a086-654be84e48fe",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
+    "b93b9515-8b86-42d9-8aa4-4dec097dfd43",
     "2bf90efe-2830-4ea5-b847-b6730ae13568",
     "6cce79bf-50eb-4239-b314-7280d3977c6d",
-    "b93b9515-8b86-42d9-8aa4-4dec097dfd43",
+    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
     "dff51070-8302-489b-8a4e-ab109aff6176",
     "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94",
     "b45eed35-2d2f-4a01-b1ee-cbb5f0037d6b",
