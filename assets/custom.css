@@ -4,6 +4,9 @@
 .product_as-varinats {
   position: relative;
 }
+.tab-content-description{
+  overflow:scroll;
+}
 
 @media only screen and (min-width: 750px) {
   .popup {
