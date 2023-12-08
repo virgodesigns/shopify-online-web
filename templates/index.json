@@ -518,7 +518,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
           "type": "text",
           "settings": {
-            "text": "Limited Time Offer",
+            "text": "Born Circular",
             "link": "",
             "outline_text": false
           }
@@ -526,7 +526,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-2": {
           "type": "text",
           "settings": {
-            "text": "Get Flat 250 off on your first purchase",
+            "text": "Fit that Flatters the Indian Body Type",
             "link": "",
             "outline_text": false
           }
@@ -534,15 +534,31 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-3": {
           "type": "text",
           "settings": {
-            "text": "Use Code: WELCOME250",
+            "text": "Premium Fabrics",
             "link": "",
             "outline_text": false
           }
         },
-        "8d58d505-54c3-490d-a9b4-b38cd5d77e45": {
+        "7cd19a7b-9e6f-4a2a-9e18-c2eeb169fcb3": {
           "type": "text",
           "settings": {
-            "text": "No minimum Order Value",
+            "text": "Born Circular",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "772eb709-637d-4f74-83bb-cc82f41b38a2": {
+          "type": "text",
+          "settings": {
+            "text": "Fit that Flatters the Indian Body Type",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "376ce9ec-5c3f-4d7b-b5fd-8df2a3ea3eeb": {
+          "type": "text",
+          "settings": {
+            "text": "Premium Fabrics",
             "link": "",
             "outline_text": false
           }
@@ -552,7 +568,9 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1",
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-2",
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-3",
-        "8d58d505-54c3-490d-a9b4-b38cd5d77e45"
+        "7cd19a7b-9e6f-4a2a-9e18-c2eeb169fcb3",
+        "772eb709-637d-4f74-83bb-cc82f41b38a2",
+        "376ce9ec-5c3f-4d7b-b5fd-8df2a3ea3eeb"
       ],
       "custom_css": [
         "div {height: 30px;}",
