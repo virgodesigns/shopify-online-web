@@ -518,7 +518,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
           "type": "text",
           "settings": {
-            "text": "Born Circular",
+            "text": "Limited time offer",
             "link": "",
             "outline_text": false
           }
@@ -526,7 +526,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-2": {
           "type": "text",
           "settings": {
-            "text": "Fit that Flatters the Indian Body Type",
+            "text": "Get Flat 250 Off on your first purchase",
             "link": "",
             "outline_text": false
           }
@@ -534,7 +534,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-3": {
           "type": "text",
           "settings": {
-            "text": "Premium Fabrics",
+            "text": "Use Code WELCOME250",
             "link": "",
             "outline_text": false
           }
@@ -542,23 +542,7 @@
         "7cd19a7b-9e6f-4a2a-9e18-c2eeb169fcb3": {
           "type": "text",
           "settings": {
-            "text": "Born Circular",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "772eb709-637d-4f74-83bb-cc82f41b38a2": {
-          "type": "text",
-          "settings": {
-            "text": "Fit that Flatters the Indian Body Type",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "376ce9ec-5c3f-4d7b-b5fd-8df2a3ea3eeb": {
-          "type": "text",
-          "settings": {
-            "text": "Premium Fabrics",
+            "text": "No minimum order value",
             "link": "",
             "outline_text": false
           }
@@ -568,9 +552,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1",
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-2",
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-3",
-        "7cd19a7b-9e6f-4a2a-9e18-c2eeb169fcb3",
-        "772eb709-637d-4f74-83bb-cc82f41b38a2",
-        "376ce9ec-5c3f-4d7b-b5fd-8df2a3ea3eeb"
+        "7cd19a7b-9e6f-4a2a-9e18-c2eeb169fcb3"
       ],
       "custom_css": [
         "div {height: 30px;}",
