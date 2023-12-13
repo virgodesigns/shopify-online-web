@@ -1,0 +1,102 @@
+{{- 'coord-bunddle.css' | asset_url | stylesheet_tag -}}
+<div class="coord-set_container">
+  {% for product in product.metafields.custom.coord_sets.value %}
+    {%- liquid
+      assign target = product
+      assign compare_at_price = target.compare_at_price
+      assign price = target.price | default: 1999
+      assign available = target.available | default: false
+      assign money_price = price | money_without_trailing_zeros
+      if settings.currency_code_enabled
+        assign money_price = price | money_without_trailing_zeros
+      endif
+
+      if target == product and product.price_varies
+        assign money_price = 'products.product.price.from_price_html' | t: price: money_price
+      endif
+    -%}
+
+    {% assign all_variants_out_of_stock = true %}
+    {% for variant in product.variants %}
+      {% if variant.available %}
+        {% assign all_variants_out_of_stock = false %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    <a href="{{ product.handle }}">
+      <div class="coord-set_card">
+        <div class="coord-set_featured-image">
+          {% if all_variants_out_of_stock %}
+            <div class="product_sold">
+              <div class="coord-set_featured-image">
+                <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.alt }}">
+                <span class="sold-out-message">OUT OF STOCK</span>
+              </div>
+            </div>
+          {% else %}
+            <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.alt }}">
+          {% endif %}
+        </div>
+        <div class="coord-sets_information">
+          {% assign title_words = product.title | split: '|' %}
+          <span class="product-first_word">{{ title_words[0] }}</span>
+          <p class="product--remaining_words product-title-line-clamp">
+            {% for i in (1..title_words.size) %}
+              {{ title_words[i] }}
+            {% endfor %}
+          </p>
+          <span class="price">
+            <ins
+              ><span class="amount">{{ money_price }}</span>
+            </ins>
+            <br>
+            {% if compare_at_price != null and compare_at_price != 0 and price != compare_at_price %}
+              <del>
+                <span class="amount amount-variant">
+                  {% if settings.currency_code_enabled %}
+                    {{ compare_at_price | money_without_trailing_zeros }}
+                  {% else %}
+                    {{ compare_at_price | money_without_trailing_zeros }}
+                  {% endif %}
+                </span>
+              </del>
+            {% endif %}
+            <small class="unit-price {% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
+              <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+              <span class="unit-price-separator">/</span>
+              <span>
+                {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+                  {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
+                {%- endif -%}
+                {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit -}}
+              </span>
+            </small>
+            {%- if show_badges -%}
+              <span class="badges">
+                {%- if compare_at_price > price %}
+                  {%- if settings.sale_badge_type == 'save_amount' -%}
+                    {%- capture saved_amount -%}{{ compare_at_price | minus: price | money }}{%- endcapture -%}
+                  {%- elsif settings.sale_badge_type == 'save_percentage' -%}
+                    {%- capture saved_amount -%}{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round }} OFF {%- endcapture -%}
+                  {%- endif -%}
+                  <span class="percent-count">
+                    {%- if settings.sale_badge_type == 'sale' -%}
+                      {{ 'products.product.on_sale' | t }}
+                    {%- else -%}
+                      {{ saved_amount }}
+                    {%- endif -%}
+                  </span>
+                {% endif %}
+                {%- if available == false -%}
+                  <span class="badge out-of-stock">
+                    {{ 'products.product.sold_out' | t }}
+                  </span>
+                {% endif %}
+              </span>
+            {% endif %}
+          </span>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>

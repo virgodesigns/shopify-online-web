@@ -1,5 +1,5 @@
 // tab-switching
-class ProductTabs extends HTMLElement {
+class tabSwitching extends HTMLElement {
   constructor() {
     super();
     this.querySelectorAll(".tab--heading").forEach((head) => {
@@ -21,24 +21,9 @@ class ProductTabs extends HTMLElement {
     event.target.classList.add("is--active");
     const contentTab = this.querySelector(`#${tabId}`);
     contentTab.classList.add("active_content");
-
-    var activeSlide = document
-      .querySelector(".active_content .splide div ul li")
-      .getAttribute("data-video-url");
-    var appendUrl = `url(${activeSlide})`;
-
-    var videoSource = document.querySelector(".slideshow__slide-video-bg");
-
-    if (videoSource.src !== activeSlide)
-      videoSource.style.backgroundImage = appendUrl;
-    var wrapScroll = document.getElementsByClassName("wrap-scroll");
-
-    for (var item of wrapScroll) {
-      item.scrollTop = 0;
-    }
   }
 }
-customElements.define("tab-switch", ProductTabs);
+customElements.define("tab-switch", tabSwitching);
 
 // variant as product script
 document.addEventListener("DOMContentLoaded", function () {

@@ -125,22 +125,4 @@
       tags: tags
     };
   {% endif %}
-  window.addEventListener("MOE_LIFECYCLE",function(e){
-   if(e.detail.name === "SDK_INITIALIZED"){
-   console.log(e.detail.data)
-   }
-   if(e.detail.name === "SETTINGS_FETCHED"){
-   console.log(e.detail.data)
-   }
-   })
-Moengage.add_unique_user_id(UNIQUE_ID);
-Moengage.track_event("EVENT_NAME_1"); // This event has no attributes
-// Track events with additional attributes
-Moengage.track_event("EVENT_NAME_2", {
-"attribute_1": "value_1", // string value
-"attribute_2": 2, // numeric value
-"attribute_3": 3.4, // numeric value
-"attribute_4": new Date(2017, 0, 31), // datetime value. Example value represents 31 January,
-2017.
-});
 </script>

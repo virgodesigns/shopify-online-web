@@ -9,6 +9,15 @@
     assign transparent_header = section.settings.transparent_header
   endif
 -%}
+
+<style>
+  {% if template contains 'product' %}
+      .header{
+        background:#000 !important;
+      }
+   {% endif %}
+</style>
+
 <header
   id="header"
   class="header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
@@ -41,10 +50,10 @@
 </header>
 <div class="thb-secondary-area mobile">
   {% if template contains 'product' %}
-  <a class="right-arrow-button" href="javascript:history.back()">
-    {% render 'home-icon' %}
-  </a>
-    {% endif %}
+    <a class="right-arrow-button" href="javascript:history.back()">
+      {% render 'home-icon' %}
+    </a>
+  {% endif %}
   <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
     {%- render 'svg-icons' with 'search' -%}
   </a>
@@ -55,7 +64,7 @@
         {%- if cart.item_count > 99 -%}
           {%- render 'svg-icons' with 'thb-asterisk' -%}
         {%- else -%}
-          {{ cart.item_count }}
+          <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
         {%- endif -%}
       </span>
     </div>

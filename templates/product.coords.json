@@ -6,24 +6,17 @@
       "settings": {
       }
     },
-    "main-product": {
-      "type": "main-product",
+    "24f3cd4c-bde1-4a78-91d2-88d1e04eb4eb": {
+      "type": "main-coordset-bundle",
       "blocks": {
-        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "style_vendor"
-          }
-        },
-        "title": {
+        "a9ff8f07-41d1-4017-b8e2-215516df6837": {
           "type": "title",
           "settings": {
             "uppercase": true,
             "show_products_rating": true
           }
         },
-        "variant_picker": {
+        "b86af914-c0c6-405b-bf80-41c67bad2111": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
@@ -31,12 +24,12 @@
             "color_picker_size": "regular",
             "color_picker_use_variants": false,
             "variant_is_disabled": true,
-            "sizing_guide_text": "Size Chart",
+            "sizing_guide_text": "Size chart",
             "sizing_guide_icon": "ruler",
             "sizing_guide_page": ""
           }
         },
-        "buy_buttons": {
+        "9a315a55-c5b8-4480-b1e5-84fcda8eb181": {
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
@@ -44,12 +37,12 @@
             "show_gift_card_recipient": false
           }
         },
-        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+        "07714ab8-0cd9-4847-ad34-39fadd8a352a": {
           "type": "description",
           "settings": {
           }
         },
-        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+        "8c947952-f86a-48ee-a886-351ed81f7875": {
           "type": "side_panel",
           "settings": {
             "side_panel_1_label": "Free Shipping above ₹1499",
@@ -66,21 +59,37 @@
             "side_panel_3_page": ""
           }
         },
-        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+        "b567fa7a-ffcd-492d-8b15-170fdae33ee7": {
           "type": "share",
           "settings": {
           }
         }
       },
       "block_order": [
-        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
-        "title",
-        "variant_picker",
-        "buy_buttons",
-        "0b3e272b-c86a-4dba-946c-c6912251371c",
-        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
-        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+        "a9ff8f07-41d1-4017-b8e2-215516df6837",
+        "b86af914-c0c6-405b-bf80-41c67bad2111",
+        "9a315a55-c5b8-4480-b1e5-84fcda8eb181",
+        "07714ab8-0cd9-4847-ad34-39fadd8a352a",
+        "8c947952-f86a-48ee-a886-351ed81f7875",
+        "b567fa7a-ffcd-492d-8b15-170fdae33ee7"
       ],
+      "settings": {
+        "full_width": false,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": false,
+        "show_taxes_included": true,
+        "media_layout": "grid",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": true,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "enable_sticky_info": true,
@@ -195,6 +204,7 @@
   },
   "order": [
     "breadcrumbs",
+    "24f3cd4c-bde1-4a78-91d2-88d1e04eb4eb",
     "main-product",
     "16623877721f33fb14",
     "ace3e86a-9dba-4966-8d72-88d70f4f48c2",

@@ -1,13 +1,25 @@
 /* variant as product css */
-
 /* Add your styles for the pop-up and other elements here */
 .product_as-varinats {
   position: relative;
 }
-.tab-content-description{
-  overflow:scroll;
+
+.chart_sizes {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
+.tab-content-description {
+  overflow: scroll;
+}
+
+.variant_size + label {
+  background: transparent !important;
+  box-shadow: 0 0 0 1px #e1e1e1 inset !important;
+  color: #e1e1e1 !important;
+  text-decoration: line-through;
+}
 @media only screen and (min-width: 750px) {
   .popup {
     display: none;
@@ -106,6 +118,10 @@
   flex-basis: 30%;
 }
 
+.color_swatches {
+  display: none;
+}
+
 @media only screen and (max-width: 769px) {
   .popup {
     bottom: 0;
@@ -152,6 +168,12 @@
     margin: 0px;
     text-transform: capitalize;
     line-height: 22px;
+  }
+  del {
+    text-decoration: unset;
+  }
+  del span.amount {
+    text-decoration: line-through;
   }
   .product-card-info span .amount {
     font-size: 10px;
@@ -382,6 +404,11 @@ input.pin-input::placeholder {
 /* product price  */
 .percent-count {
   color: #aaa;
+}
+
+.product_compare-price{
+  text-wrap:nowrap;
+  font-size:14px;
 }
 
 /* product variant */

@@ -1,4 +1,5 @@
 {{- 'product.css' | asset_url | stylesheet_tag -}}
+{{- 'coord-bunddle.css' | asset_url | stylesheet_tag -}}
 <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
 
@@ -19,9 +20,31 @@
         {{ block.settings.custom_liquid }}
       {%- when 'title' -%}
         <div class="product-title-container" {{ block.shopify_attributes }}>
-          <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
+          <h1 class="product-title">
             {% assign title_words = product.title | split: '|' %}
+            <div class="card_container">
             <span class="product-tittle-first_word">{{ title_words[0] }}</span>
+             
+             <span class="pre-order_products hide-message">
+                  {%- assign Special_deal = '' -%}
+                  {%- assign background = '' -%}
+                  {% for tag in product.tags  %}
+                    {% if tag contains 'PreOrder:' %}
+                      {%- assign special = tag | split:':' -%}
+                      {%- assign Special_deal = special | last -%}
+                    {% endif %}
+                     {% if tag contains 'BadgeColour:' %}
+                      {%- assign color = tag | remove: 'BadgeColour:' -%}
+                      {%- assign background = color -%}
+                    {% endif %}
+                  {% endfor %}
+                 {% if Special_deal != blank %}
+                <div class="coordset_tag">
+                  <div class="coordset" style="background-color:{{ background }}">{{ Special_deal  }}</div>
+                </div>
+                {% endif %}
+            </span>
+            </div>
             <p class="product-tittle-reamaining_words">
               {% for i in (1..title_words.size) %}
                 {{ title_words[i] }}
@@ -44,6 +67,12 @@
           {%- endif -%}
         </div>
       {%- when 'description' -%}
+      {% if product.metafields.custom.coord_sets.value != blank %}
+          <div class="mobile_coord-bunddle">
+              <div class="coord_heading"> ITEMS IN THIS SET (2 Items) </div>
+              {% render 'coord-sets' %}
+           </div>
+      {% endif %}
         <div class="product-short-description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
         {% if product.metafields.custom.product_details != blank %}
           <div class="product-details-card">
@@ -461,5 +490,8 @@
   %}
 {%- endif -%}
 {{ sizing_popup }}
+
+
+
 
 

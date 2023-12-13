@@ -1020,7 +1020,6 @@ code,
   margin-left: 83.33333%;
 }
 
-
 .small-12 {
   flex: 0 0 100%;
   max-width: 100%;
@@ -2395,8 +2394,8 @@ table.no-borders tfoot td:first-child {
     max-width: 20%;
   }
   .recommended-products .flickity-nav {
-    top:50%;
-}
+    top: 50%;
+  }
 }
 
 @media only screen and (min-width: 1068px) {
@@ -2449,15 +2448,20 @@ scroll-shadow {
   .mobile-height-auto {
     min-height: auto;
   }
+  .price > .amount,
+  .price ins {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .mobile-height-300 {
     min-height: 300px;
   }
-  .recommended-products .small-12{
-  max-width:50%;
-}
+  .recommended-products .small-12 {
+    max-width: 50%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2555,11 +2559,16 @@ scroll-shadow {
 }
 
 .subheading {
-  font-size: 0.8125rem;
-  letter-spacing: 0.4em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  color: #fdfdfd;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  padding: 0.5rem;
 }
 @media only screen and (min-width: 768px) {
   .subheading {
@@ -4459,7 +4468,9 @@ select.resize-select {
 }
 
 .price {
-  display: block;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
   font-weight: 400;
   font-size: 0.9375rem;
   letter-spacing: 0.02em;
@@ -4472,6 +4483,9 @@ select.resize-select {
 .price del .amount {
   opacity: 0.4;
 }
+.price del .amount-variant {
+  margin-left: 0;
+}
 .price del + ins {
   margin-left: 10px;
 }
@@ -4483,7 +4497,23 @@ select.resize-select {
 .price > .amount,
 .price ins {
   text-decoration: none;
-  margin-right: 8px;
+}
+
+.card_container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.coordset {
+  font-size: 10px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: normal;
+  padding: 5px 8px;
+  font-size: 10px;
+  background: #fb0;
+  color: #fff;
 }
 .price .unit-price {
   margin-left: 5px;

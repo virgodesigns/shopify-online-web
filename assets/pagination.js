@@ -70,11 +70,11 @@ if (!customElements.get('pagination')) {
         .then((responseText) => {
           const html = responseText;
           base.renderProducts(html, url);
-
           dispatchCustomEvent('pagination:page-changed', {
             url: url
           });
         });
+  
     }
     renderProducts(html, url) {
       let base = this,
@@ -91,6 +91,12 @@ if (!customElements.get('pagination')) {
         return;
       }
       let products = grid_to_replace.querySelectorAll('.column');
+      const loadMoreButton = document.querySelector('.load-more');
+      const paginationText = document.querySelector(".pagination_alert-message")
+       if (products.length === 0){
+         loadMoreButton.classList.add("hide-message");
+         paginationText.classList.remove("hide-message")
+       }
 
       for (var i = 0; i < products.length; i++) {
         this.grid.appendChild(products[i]);
