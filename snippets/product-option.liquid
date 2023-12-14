@@ -80,13 +80,9 @@
     {% else %}
       <div class="chart_sizes">
         <div class="coord_tittle">SELECT SIZE FOR TOP</div>
-        {% comment %}
           <div class="form__label">
-          {% if option.name == 'Size' %}
-            {{- sizing_link }}
-          {% endif %}
+            {{- sizing_link_top }}
            </div>
-        {% endcomment %}
       </div>
       <div
         class="product-form__input input-tag product-form__input--block"
@@ -119,13 +115,9 @@
       </div>
       <div class="chart_sizes">
         <div class="coord_tittle">SELECT SIZE FOR BOTTOM</div>
-        {% comment %}
           <div class="form__label">
-          {% if option.name == 'Size' %}
-            {{- sizing_link }}
-          {% endif %}
+            {{- sizing_link_bottom }}
            </div>
-        {% endcomment %}
       </div>
 
       <div
