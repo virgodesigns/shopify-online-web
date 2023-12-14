@@ -55,10 +55,10 @@
 
         {% if chart.id == 'body_measurement' %}
           {% assign mobileImage = 'BODY_MEASUREMENT_-_' | append: prefix | append: '.png' %}
-          {% assign desktopImage = 'Web_BODY_MEASUREMENT_-_' | append: prefix | append: '.png' %}
+          {% assign desktopImage = 'web_BODY_MEASUREMENT_-_' | append: prefix | append: '.png' %}
         {% elsif chart.id == 'garment_measurement' %}
           {% assign mobileImage = 'GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
-          {% assign desktopImage = 'Web_GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
+          {% assign desktopImage = 'web_GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
         {% endif %}
 
         <script>
