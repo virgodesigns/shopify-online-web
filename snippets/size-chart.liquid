@@ -51,6 +51,8 @@
             {% assign prefix = 'BOTTOM' %}
           {% when 'Dress' %}
             {% assign prefix = 'DRESS' %}
+          {% when 'Skirt' %}
+            {% assign prefix = 'SKIRT' %}
         {% endcase %}
 
         {% if chart.id == 'body_measurement' %}
