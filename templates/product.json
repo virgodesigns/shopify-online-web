@@ -95,7 +95,7 @@
         "enable_video_looping": false
       }
     },
-    "16623877721f33fb14": {
+    "d822b776-512e-4ff1-8e1f-40395029c179": {
       "type": "spacer",
       "settings": {
         "spacer_mobile": 35,
@@ -171,10 +171,22 @@
       "settings": {
       }
     },
+    "16623877721f33fb14": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
     "6504c889-765e-4951-97dd-2817199cfc89": {
       "type": "pdp-spotted-images",
+      "custom_css": [
+
+      ],
       "settings": {
-        "padding_top": 32,
+        "padding_top": 30,
         "padding_bottom": 20,
         "heading": "",
         "sub_heading": "Spotted in Virgio Outfit"
@@ -199,10 +211,11 @@
   "order": [
     "breadcrumbs",
     "main-product",
-    "16623877721f33fb14",
+    "d822b776-512e-4ff1-8e1f-40395029c179",
     "ace3e86a-9dba-4966-8d72-88d70f4f48c2",
     "1663667027ccd68a19",
     "16625458859c68803a",
+    "16623877721f33fb14",
     "6504c889-765e-4951-97dd-2817199cfc89",
     "product-recommendations"
   ]
