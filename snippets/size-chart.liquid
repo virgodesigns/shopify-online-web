@@ -1,0 +1,72 @@
+<div class="size-chart-container">
+  <div class="size-chart-wrapper">
+    {% assign sizeChartData = product.metafields.custom.size_chart.value %}
+    {% for sizechartheading in sizeChartData %}
+      <div
+        class="tab--heading{% if forloop.first %} is--active{% endif %}"
+        data-tab="{{ sizechartheading.id | handleize }}"
+      >
+        {{ sizechartheading.id | replace: '_', ' ' }}
+      </div>
+    {% endfor %}
+  </div>
+  {% assign sizeChartData = product.metafields.custom.size_chart.value %}
+  {% for chart in sizeChartData %}
+    <div
+      id="{{ chart.id | handleize }}"
+      class="tab-content container-content{% if forloop.first %} active_content{% endif %}"
+    >
+      <div class="sizechart-tab-contents">
+        <div class="tab-content-description">
+          <table>
+            {% assign sizeinfo = chart.sizeChartInfo %}
+            <tr class="size-chart-card">
+              <td>SIZE</td>
+              {% for item in sizeinfo %}
+                {% assign sizevalues = item.info %}
+                {% for sizes in sizevalues %}
+                  <td>{{ sizes | first }}</td>
+                {% endfor %}
+                {% break %}
+              {% endfor %}
+            </tr>
+            {% for item in sizeinfo %}
+              {% assign bustvalues = item.info %}
+              <tr class="bust-size-values">
+                <td class="size-values">{{ item.size }}</td>
+                {% for bustsize in bustvalues %}
+                  <td>{{ bustsize | last }}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+        <div class="sizeChart_text">
+          {{ settings.size_chart_text }}
+        </div>
+        {% case product.type %}
+          {% when 'Top' %}
+            {% assign prefix = 'TOP' %}
+          {% when 'Bottom' %}
+            {% assign prefix = 'BOTTOM' %}
+          {% when 'Dress' %}
+            {% assign prefix = 'Dresses' %}
+        {% endcase %}
+
+        {% if chart.id == 'body_measurement' %}
+          {% assign mobileImage = 'BODY_MEASUREMENT_-_' | append: prefix | append: '.png' %}
+          {% assign desktopImage = 'web_BODY_MEASUREMENT_-_' | append: prefix | append: '.png' %}
+        {% elsif chart.id == 'garment_measurement' %}
+          {% assign mobileImage = 'GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
+          {% assign desktopImage = 'Web_GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
+        {% endif %}
+
+        <script>
+          var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+          var imageSrc = (screenWidth < 769) ? '{{ mobileImage | file_img_url:"master" }}' : '{{ desktopImage | file_img_url:"master" }}';
+          document.write('<img src="' + imageSrc + '" alt="{{ image.alt }}">');
+        </script>
+      </div>
+    </div>
+  {% endfor %}
+</div>
