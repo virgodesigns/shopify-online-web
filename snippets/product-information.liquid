@@ -23,27 +23,27 @@
           <h1 class="product-title">
             {% assign title_words = product.title | split: '|' %}
             <div class="card_container">
-            <span class="product-tittle-first_word">{{ title_words[0] }}</span>
-             
-             <span class="pre-order_products hide-message">
-                  {%- assign Special_deal = '' -%}
-                  {%- assign background = '' -%}
-                  {% for tag in product.tags  %}
-                    {% if tag contains 'PreOrder:' %}
-                      {%- assign special = tag | split:':' -%}
-                      {%- assign Special_deal = special | last -%}
-                    {% endif %}
-                     {% if tag contains 'BadgeColour:' %}
-                      {%- assign color = tag | remove: 'BadgeColour:' -%}
-                      {%- assign background = color -%}
-                    {% endif %}
-                  {% endfor %}
-                 {% if Special_deal != blank %}
-                <div class="coordset_tag">
-                  <div class="coordset" style="background-color:{{ background }}">{{ Special_deal  }}</div>
-                </div>
+              <span class="product-tittle-first_word">{{ title_words[0] }}</span>
+
+              <span class="pre-order_products hide-message">
+                {%- assign Special_deal = '' -%}
+                {%- assign background = '' -%}
+                {% for tag in product.tags %}
+                  {% if tag contains 'PreOrder:' %}
+                    {%- assign special = tag | split: ':' -%}
+                    {%- assign Special_deal = special | last -%}
+                  {% endif %}
+                  {% if tag contains 'BadgeColour:' %}
+                    {%- assign color = tag | remove: 'BadgeColour:' -%}
+                    {%- assign background = color -%}
+                  {% endif %}
+                {% endfor %}
+                {% if Special_deal != blank %}
+                  <div class="coordset_tag">
+                    <div class="coordset" style="background-color:{{ background }}">{{ Special_deal }}</div>
+                  </div>
                 {% endif %}
-            </span>
+              </span>
             </div>
             <p class="product-tittle-reamaining_words">
               {% for i in (1..title_words.size) %}
@@ -67,12 +67,12 @@
           {%- endif -%}
         </div>
       {%- when 'description' -%}
-      {% if product.metafields.custom.coord_sets.value != blank %}
+        {% if product.metafields.custom.coord_sets.value != blank %}
           <div class="mobile_coord-bunddle">
-              <div class="coord_heading"> ITEMS IN THIS SET (2 Items) </div>
-              {% render 'coord-sets' %}
-           </div>
-      {% endif %}
+            <div class="coord_heading">ITEMS IN THIS SET (2 Items)</div>
+            {% render 'coord-sets' %}
+          </div>
+        {% endif %}
         <div class="product-short-description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
         {% if product.metafields.custom.product_details != blank %}
           <div class="product-details-card">
@@ -107,26 +107,26 @@
           >
             {% if product.metafields.custom.fabric_image != blank %}
               <div class="product_as-varinats">
-              <div class="related-products__container" data-current-product="{{ product.handle }}">
-                {% assign variantProduct = product.metafields.custom.fabric_image.value %}
-                <div class="variant_as-product">
-                  {% assign imageCount = variantProduct | size %}
-                  {% for i in (0..2) %}
-                    {% if variantProduct[i] != blank %}
-                      <span class="related-image">
-                        <img class="related-image" src="{{ variantProduct[i] }}" alt="image">
-                      </span>
+                <div class="related-products__container" data-current-product="{{ product.handle }}">
+                  {% assign variantProduct = product.metafields.custom.fabric_image.value %}
+                  <div class="variant_as-product">
+                    {% assign imageCount = variantProduct | size %}
+                    {% for i in (0..2) %}
+                      {% if variantProduct[i] != blank %}
+                        <span class="related-image">
+                          <img class="related-image" src="{{ variantProduct[i] }}" alt="image">
+                        </span>
+                      {% endif %}
+                    {% endfor %}
+                    {% if imageCount > 3 %}
+                      <span class="variant-count">+{{ imageCount | minus: 3 }} More </span>
+                    {% else %}
+                      <span class="variant-image-count"> {{ imageCount }} Colour </span>
                     {% endif %}
-                  {% endfor %}
-                  {% if imageCount > 3 %}
-                    <span class="variant-count">+{{ imageCount | minus: 3 }} More </span>
-                  {% else %}
-                    <span class="variant-image-count"> {{ imageCount }} Colour </span>
-                  {% endif %}
+                  </div>
                 </div>
-              </div>
                 <div class="popup" id="customPopup">
-                   <div class="color_heading">Select Color </div>
+                  <div class="color_heading">Select Color</div>
                   <div id="products-container"></div>
                   <button class="cross-icon" onclick="closePopup()">{% render 'svg-icons' with 'close' %}</button>
                 </div>
@@ -161,8 +161,42 @@
                       {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
                    </modal-opener>
                    {%- endcapture -%}
+                    {% for product in product.metafields.custom.coord_sets.value %}
+                      {% if product.type == 'Top' %}
+                        {%- capture sizing_link_top -%}
+                   <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ product.id }}">
+                      <button id="ProductPopup-{{ product.id }}" class="product-popup-modal__button" type="button" aria-haspopup="dialog">
+                      {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
+                   </modal-opener>
+                   {%- endcapture -%}
+                      {% elsif product.type == 'Bottom' %}
+                        {%- capture sizing_link_bottom -%}
+                   <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ product.id }}">
+                      <button id="ProductPopup-{{ product.id }}" class="product-popup-modal__button" type="button" aria-haspopup="dialog">
+                      {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
+                   </modal-opener>
+                   {%- endcapture -%}
+                      {% endif %}
+                    {% endfor %}
                     {%- capture sizing_popup -%}
-                   <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal">
+                      {% if  product.metafields.custom.coord_sets.value != blank %} 
+                       {% for product in product.metafields.custom.coord_sets.value %}
+                   <modal-dialog id="PopupModal-{{ product.id }}" class="product-popup-modal">
+                      <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
+                         <div class="product-popup-modal__content-header">
+                            <h5>{{ block.settings.sizing_guide_page.title }}</h5>
+                            <button id="ModalClose-{{ product.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close' %}</button>
+                         </div>
+                         <div class="product-popup-modal__content-info">
+                        <tab-switch>
+                          {% render 'size-chart', product:product %}
+                        </tab-switch>
+                     </div>
+                  </div>
+               </modal-dialog>
+                         {% endfor %}
+                          {% else %}
+                              <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal">
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
                             <h5>{{ block.settings.sizing_guide_page.title }}</h5>
@@ -170,72 +204,16 @@
                          </div>
                          <div class="product-popup-modal__content-info">
                         <tab-switch>
-                          <div class="size-chart-container">
-                            <div class="size-chart-wrapper">
-                              {% assign sizeChartData = product.metafields.custom.size_chart.value %}
-                              {% for sizechartheading in sizeChartData %}
-                                <div class="tab--heading{% if forloop.first %} is--active{% endif %}" data-tab="{{ sizechartheading.id | handleize }}">
-                                  {{ sizechartheading.id | replace: '_', ' '}}
-                                </div>
-                              {% endfor %}
-                            </div>
-                            {% assign sizeChartData = product.metafields.custom.size_chart.value %}
-                            {% for chart in sizeChartData %}
-                              <div id="{{ chart.id | handleize }}" class="tab-content container-content{% if forloop.first %} active_content{% endif %}">
-                                <div class="sizechart-tab-contents">
-                                  <div class="tab-content-description">
-                                    <table>
-                                      {% assign sizeinfo = chart.sizeChartInfo %}
-                                      <tr class="size-chart-card">
-                                      <td>SIZE</td>
-                                      {% for item in sizeinfo %}
-                                        {% assign sizevalues = item.info %}
-                                        {% for sizes in sizevalues %}
-                                          <td>{{ sizes | first }}</td>
-                                        {% endfor %}
-                                        {% break %}
-                                      {% endfor %}
-                                      </tr>
-                                      {% for item in sizeinfo %}
-                                        {% assign bustvalues = item.info %}
-                                        <tr class="bust-size-values">
-                                         <td class='size-values'>{{ item.size }}</td>
-                                          {% for bustsize in bustvalues %}
-                                            <td>{{ bustsize | last }}</td>
-                                          {% endfor %}
-                                        </tr>
-                                      {% endfor %}
-                                    </table>
-                                  </div>
-                                  <div class="sizeChart_text">
-                                    {{ settings.size_chart_text }}
-                                  </div>
-                                  <div>
-                                   {% if chart.id == "body_measurement" %}
-                                      {% render 'responsive-picture', 
-                                        desktopImage: settings.body_measurement,
-                                        mobileImage: settings.body_measurement_mobile,
-                                        loading: lazy_load
-                                      %}
-                                  {% elsif chart.id == "garment_measurement" %}
-                                      {% render 'responsive-picture', 
-                                        desktopImage: settings.garment_measurement,
-                                        mobileImage: settings.garment_measurement,
-                                        loading: lazy_load
-                                      %}
-                                  {% endif %}
-                                  </div>
-                                </div>
-                              </div>
-                            {% endfor %}
-                          </div>
+                          {% render 'size-chart'%}
                         </tab-switch>
                      </div>
                   </div>
                </modal-dialog>
+                        {% endif %}
                {%- endcapture -%}
                   {%- endif -%}
                 {%- endif -%}
+
                 {% render 'product-option',
                   option_type: option_type,
                   color_picker_size: color_picker_size,
@@ -244,7 +222,9 @@
                   option: option,
                   forloop: forloop,
                   product_form_id: product_form_id,
-                  sizing_link: sizing_link
+                  sizing_link: sizing_link,
+                  sizing_link_top: sizing_link_top,
+                  sizing_link_bottom: sizing_link_bottom
                 %}
               {%- endfor -%}
             </div>
@@ -490,8 +470,3 @@
   %}
 {%- endif -%}
 {{ sizing_popup }}
-
-
-
-
-
