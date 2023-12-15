@@ -1,3 +1,5 @@
+{{ 'scrolling-text.css' | asset_url | stylesheet_tag }}
+
 {%- if settings.cart_drawer -%}
   {%- liquid
     assign free_shipping = settings.free_shipping
