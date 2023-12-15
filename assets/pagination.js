@@ -73,8 +73,7 @@ if (!customElements.get('pagination')) {
           dispatchCustomEvent('pagination:page-changed', {
             url: url
           });
-        });
-  
+        }); 
     }
     renderProducts(html, url) {
       let base = this,
@@ -92,10 +91,9 @@ if (!customElements.get('pagination')) {
       }
       let products = grid_to_replace.querySelectorAll('.column');
       const loadMoreButton = document.querySelector('.load-more');
-      const paginationText = document.querySelector(".pagination_alert-message")
-       if (products.length === 0){
-         loadMoreButton.classList.add("hide-message");
-         paginationText.classList.remove("hide-message")
+      if (products.length >= 1 && products.length <= 11) {
+         loadMoreButton.classList.add("load-more-background");
+          base.button.disabled = true;;
        }
 
       for (var i = 0; i < products.length; i++) {
