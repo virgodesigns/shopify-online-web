@@ -1,0 +1,43 @@
+.spotted_image-cards {
+  text-align: center;
+}
+.spotted_images::-webkit-scrollbar {
+  display: none;
+}
+.spotted_images {
+  display: flex;
+  overflow: scroll;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 750px) {
+  .image-container {
+    position: relative;
+    flex-shrink: 0;
+    width: 21%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .image-container {
+    position: relative;
+    flex-shrink: 0;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white; /* Text color */
+  padding: 5px; /* Adjust padding as needed */
+  margin: 0;
+}
