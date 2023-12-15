@@ -1,9 +1,8 @@
 {
   "current": {
+    "text_message_1": "Get additional 10% off on orders above ₹3000",
+    "text_message_2": "Offer applied automatically",
     "text_message": "<div class=\"notify_alert\">MORE STYLES DROPPING<\/div> <div class=\"pagination_text\"> ON 17 DECEMBER, 2023 <\/div>",
-    "body_measurement_mobile": "shopify:\/\/shop_images\/BODY_MEASUREMENT_1.jpg",
-    "body_measurement": "shopify:\/\/shop_images\/Frame_48096245_ed25262e-e88f-4b4e-b21a-2910a912d38c.png",
-    "garment_measurement": "shopify:\/\/shop_images\/GARMENT_MEASUREMENT.jpg",
     "heading_font": "lora_n4",
     "heading_font_scale": 100,
     "body_font": "inter_n4",
@@ -32,6 +31,9 @@
     "lazy_loading": true,
     "back_to_top": false,
     "favicon": "shopify:\/\/shop_images\/Fav_icon_Dark_32x32_Squircle-1.png",
+    "body_measurement_mobile": "shopify:\/\/shop_images\/BODY_MEASUREMENT_1.jpg",
+    "body_measurement": "shopify:\/\/shop_images\/Frame_48096245_ed25262e-e88f-4b4e-b21a-2910a912d38c.png",
+    "garment_measurement": "shopify:\/\/shop_images\/GARMENT_MEASUREMENT.jpg",
     "full_page": true,
     "srcoll_effect": true,
     "sections": {
