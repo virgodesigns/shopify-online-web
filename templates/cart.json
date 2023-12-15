@@ -31,7 +31,9 @@
         "cb3214c0-164f-4e4e-a2e2-7570c80851c9"
       ],
       "custom_css": [
-        ".scrolling-text--inner {font-size: 12px; line-height: 18px;}"
+        "div {height: 32px;}",
+        " {font-weight: thin;}",
+        "span {font-weight: 300; font-size: 14px;}"
       ],
       "settings": {
         "height": "height-auto",
