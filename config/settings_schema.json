@@ -12,11 +12,13 @@
     "settings": [
       {
         "type": "text",
-        "id": "text_message_1"
+        "id": "text_message_1",
+        "label": "scrolling-text-one"
       },
       {
         "type": "text",
-        "id": "text_message_2"
+        "id": "text_message_2",
+        "label": "scrolling-text-two"
       }
     ]
   },
