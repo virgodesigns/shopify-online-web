@@ -4862,10 +4862,9 @@ select.resize-select {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.marquee{
+.scrolling_text{
   background:#000;
   color:#fff;
-  padding:1.5rem;
 }
 .cart-drawer-buttons {
   display: flex;
