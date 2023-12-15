@@ -4865,6 +4865,7 @@ select.resize-select {
 .marquee{
   background:#000;
   color:#fff;
+  padding:1.5rem;
 }
 .cart-drawer-buttons {
   display: flex;
