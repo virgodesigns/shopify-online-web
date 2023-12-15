@@ -84,4 +84,236 @@
     </div>
   </div>
 </div>
-
+{% schema %}
+ {
+  "name": "Scrolling text",
+  "class": "section-scrolling-text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Height",
+      "options": [
+        {
+          "value": "height-auto",
+          "label": "Adapt to content"
+        },
+        {
+          "value": "height-300",
+          "label": "300px"
+        },
+        {
+          "value": "height-350",
+          "label": "350px"
+        },
+        {
+          "value": "height-400",
+          "label": "400px"
+        },
+        {
+          "value": "height-450",
+          "label": "450px"
+        },
+        {
+          "value": "height-full",
+          "label": "Full screen"
+        }
+      ],
+      "default": "height-300"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make section full width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Direction"
+    },
+    {
+      "type": "select",
+      "id": "speed",
+      "options": [
+        {
+          "value": "10s",
+          "label": "Fast"
+        },
+        {
+          "value": "20s",
+          "label": "Normal"
+        },
+        {
+          "value": "30s",
+          "label": "Slow"
+        },
+        {
+          "value": "50s",
+          "label": "Very slow"
+        }
+      ],
+      "default": "20s",
+      "label": "Speed"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 16,
+      "max": 140,
+      "step": 2,
+      "unit": "px",
+      "label": "Text size",
+      "default": 24
+    },
+    {
+      "type": "checkbox",
+      "id": "text_uppercase",
+      "default": false,
+      "label": "Make text uppercase"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large",
+      "label": "Image size"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background",
+      "default": "#f5f3ef"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text",
+      "default": "#151515"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "default": false,
+      "label": "Show on Desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "default": true,
+      "label": "Show on Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Content",
+          "default": "Add campaign text here."
+        },
+        {
+          "id": "link",
+          "type": "url",
+          "label": "Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "outline_text",
+          "label": "Make text outline",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling text",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
