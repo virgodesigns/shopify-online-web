@@ -4862,8 +4862,11 @@ select.resize-select {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.marquee{
+  background:#000;
+  color:#fff;
+}
 .cart-drawer-buttons {
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
