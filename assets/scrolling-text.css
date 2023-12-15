@@ -5,8 +5,8 @@
 
 
 .scrolling-text {
-  background-color: var(--color-bg, rgba(var(--color-body-rgb), 0.03));
-  color: var(--color-text, var(--color-accent));
+  background-color:#000;
+  color: #fff;
   position: relative;
   background-size: cover;
   display: flex;
