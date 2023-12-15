@@ -30,6 +30,9 @@
         "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3",
         "cb3214c0-164f-4e4e-a2e2-7570c80851c9"
       ],
+      "custom_css": [
+        ".scrolling-text--inner{font-size: 12px; line-height: 32px;}"
+      ],
       "settings": {
         "height": "height-auto",
         "full_width": true,
