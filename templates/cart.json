@@ -1,1 +1,69 @@
-{"sections":{"main-cart":{"type":"main-cart","settings":{"cart_notes_enable":false}},"product-recommendations":{"type":"product-recommendations","settings":{"heading":"You may also like","heading_left":false,"description":"","full_width":true,"display_type":"carousel","columns_desktop":4,"mobile_swipe":false,"show_progress_bar":true,"disable_top_spacing":true,"disable_bottom_spacing":true}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"heading":"Recently viewed products","heading_left":false,"description":"","full_width":true,"mobile_swipe":true,"disable_top_spacing":false,"disable_bottom_spacing":false}}},"order":["main-cart","product-recommendations","recently-viewed-products"]}
+{
+  "sections": {
+    "23bae892-2164-4eba-a8cc-e93bc18dd71a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21527439409449__23bae892-2164-4eba-a8cc-e93bc18dd71a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get additional 10% off on orders above ₹3000<br\/>Offer applied automatically<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--21527439409449__23bae892-2164-4eba-a8cc-e93bc18dd71a-text-1"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#111111",
+        "color_text": "#fdfdfd",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "main-cart": {
+      "type": "main-cart",
+      "settings": {
+        "cart_notes_enable": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "columns_desktop": 4,
+        "mobile_swipe": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "23bae892-2164-4eba-a8cc-e93bc18dd71a",
+    "main-cart",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}
