@@ -18,32 +18,6 @@
     ]
   },
   {
-    "name": "Size chart images",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "body_measurement_mobile",
-        "label": "Body Measurement Image mobile"
-      },
-      {
-        "type": "image_picker",
-        "id": "body_measurement",
-        "label": "Body Measurement Image desktop"
-      },
-      {
-        "type": "image_picker",
-        "id": "garment_measurement",
-        "label": "Garment Measurement Image"
-      },
-      {
-        "type": "text",
-        "id": "size_chart_text",
-        "label": "Size Chart Text",
-        "default": "*Depending on your body type and dressing habits, the above sizes are for reference only"
-      }
-    ]
-  },
-  {
     "name": "Typography",
     "settings": [
       {
