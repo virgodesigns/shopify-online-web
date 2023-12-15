@@ -228,9 +228,15 @@
           </div>
         {%- endif -%}
       </div>
-      <marquee width="100%" direction="left" height="50%" style="padding:1.5rem;">
-		<div class="scrolling_text">Get additional 10% off on orders above ₹3000</div>
-    </marquee>
+      <div class="scrolling-text-container">
+    <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+        <div class="scrolling-text">
+            <div class="scrolling-text-item">Get additional 10% off on orders above ₹3000</div>
+            <div class="scrolling-text-item">Your Second Announcement</div>
+            <!-- Add More Items Here -->
+        </div>
+    </div>
+  </div>
       {%- if cart != empty -%}
         <div class="side-panel-footer">
           {%- if settings.cart_drawer_notes -%}
@@ -315,3 +321,62 @@
     </div>
   </div>
 {%- endif -%}
+
+
+<style>
+  /* Container styles */
+.scrolling-text-container {
+    background-color: #eff5ff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+</style>
