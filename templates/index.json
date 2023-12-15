@@ -439,7 +439,7 @@
         "147ed3ad-dbe9-4668-9f28-39062c0b57a4"
       ],
       "custom_css": [
-        "div {height: 30px;}",
+        "div {height: 32px;}",
         " {font-weight: thin;}",
         "span {font-weight: 300; font-size: 14px;}"
       ],
