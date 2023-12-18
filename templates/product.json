@@ -82,7 +82,7 @@
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "enable_sticky_info": true,
         "enable_sticky_add_to_cart": false,
         "show_taxes_included": true,
