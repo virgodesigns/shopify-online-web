@@ -344,10 +344,10 @@
                         </div>
                       {%- endunless -%}
                     {%- endfor -%}
+                    {% if product.metafields.custom.model_info != blank %}
+                      <div class="model_info-tittle">{{ product.metafields.custom.model_info.value }}</div>
+                    {% endif %}
                   </product-slider>
-                  {% if product.metafields.custom.model_info != blank %}
-                    <div class="model_info-tittle">{{ product.metafields.custom.model_info.value }}</div>
-                  {% endif %}
                 </div>
               </div>
             </div>
@@ -554,9 +554,7 @@ if (!bottomAvailable || !topAvailable) {
     alertMessage.classList.add("hide-message");
 }
 customElements.define('size-selector', SizeSelector);
-
 </script>
-
 
 {% schema %}
 {
