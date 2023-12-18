@@ -446,6 +446,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
   }
   .product-image-cards {
     display: grid;
