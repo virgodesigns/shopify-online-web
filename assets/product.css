@@ -598,6 +598,7 @@
   display: grid;
   grid-gap: 15px;
   scroll-behavior: smooth;
+  position: relative;
 }
 @media only screen and (max-width: 1067px) {
   .product-images {
