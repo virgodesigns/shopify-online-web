@@ -3953,8 +3953,7 @@ input[type="submit"].outline.white:focus {
 }
 .button[disabled],
 input[type="submit"][disabled] {
-  background: transparent;
-  color: #fff !important;
+  color: #808080 !important;
   cursor: not-allowed;
   pointer-events: none;
 }

@@ -1,1 +1,90 @@
-{"sections":{"main-cart":{"type":"main-cart","settings":{"cart_notes_enable":false}},"product-recommendations":{"type":"product-recommendations","settings":{"heading":"You may also like","heading_left":false,"description":"","full_width":true,"display_type":"carousel","columns_desktop":4,"mobile_swipe":false,"show_progress_bar":true,"disable_top_spacing":true,"disable_bottom_spacing":true}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"heading":"Recently viewed products","heading_left":false,"description":"","full_width":true,"mobile_swipe":true,"disable_top_spacing":false,"disable_bottom_spacing":false}}},"order":["main-cart","product-recommendations","recently-viewed-products"]}
+{
+  "sections": {
+    "main-cart": {
+      "type": "main-cart",
+      "settings": {
+        "cart_notes_enable": false
+      }
+    },
+    "aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3": {
+          "type": "text",
+          "settings": {
+            "text": "Get additional 10% off on orders above ₹3500",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "cb3214c0-164f-4e4e-a2e2-7570c80851c9": {
+          "type": "text",
+          "settings": {
+            "text": "Offer applied automatically",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3",
+        "cb3214c0-164f-4e4e-a2e2-7570c80851c9"
+      ],
+      "custom_css": [
+        "div {height: 32px;}",
+        " {font-weight: thin;}",
+        "span {font-weight: 300; font-size: 14px;}"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 16,
+        "text_uppercase": false,
+        "image_size": "small",
+        "color_bg": "#111111",
+        "color_text": "#fdfdfd",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "columns_desktop": 4,
+        "mobile_swipe": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main-cart",
+    "aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

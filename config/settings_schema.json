@@ -8,38 +8,27 @@
     "theme_support_url": "https:\/\/fuelthemes.net\/contact\/"
   },
   {
+    "name": "Scrolling Text Cart Drawer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text_message_1",
+        "label": "scrolling-text-one"
+      },
+      {
+        "type": "text",
+        "id": "text_message_2",
+        "label": "scrolling-text-two"
+      }
+    ]
+  },
+  {
     "name": "Pagination text message",
     "settings": [
       {
         "type": "text",
         "id": "text_message",
         "label": "Text message for pagination"
-      }
-    ]
-  },
-  {
-    "name": "Size chart images",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "body_measurement_mobile",
-        "label": "Body Measurement Image mobile"
-      },
-      {
-        "type": "image_picker",
-        "id": "body_measurement",
-        "label": "Body Measurement Image desktop"
-      },
-      {
-        "type": "image_picker",
-        "id": "garment_measurement",
-        "label": "Garment Measurement Image"
-      },
-      {
-        "type": "text",
-        "id": "size_chart_text",
-        "label": "Size Chart Text",
-        "default": "*Depending on your body type and dressing habits, the above sizes are for reference only"
       }
     ]
   },

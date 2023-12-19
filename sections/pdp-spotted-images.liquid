@@ -1,117 +1,72 @@
+{{ 'spotted-images.css' | asset_url | stylesheet_tag }}
+
 {% if product.metafields.custom.spotted_images != blank %}
-<div class="spotted_images-container"> 
- <div class="spotted_image-cards">
+  <div class="spotted_images-container">
+    <div class="spotted_image-cards">
       {%- if section.settings.heading != blank -%}
         <div class="text_container">
           {{ section.settings.heading }}
         </div>
       {%- endif -%}
-    {%- if section.settings.sub_heading != blank -%}
-      <h2 class="h3">
-        {{ section.settings.sub_heading }}
-      </h2>
-    {%- endif -%}
-  </div>
- <div class="spotted_images">
-  {% assign sizeChartData = product.metafields.custom.spotted_images.value %}
-  {% for chart in sizeChartData %}
-    <div class="image-container">
-      <img src="{{ chart.imageUrl }}" alt="image" class="image">
-      <p class="title">{{ chart.handle }}</p>
+      {%- if section.settings.sub_heading != blank -%}
+        <h2 class="h3">
+          {{ section.settings.sub_heading }}
+        </h2>
+      {%- endif -%}
     </div>
-  {% endfor %}
-</div>
-</div>
+    <div class="spotted_images">
+      {% assign sizeChartData = product.metafields.custom.spotted_images.value %}
+      {% for chart in sizeChartData %}
+        <div class="image-container">
+          <a href="{{chart.imageLink }}">
+            <img src="{{ chart.imageUrl }}" alt="image" class="image">
+            <p class="title">{{ chart.handle }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 {% endif %}
 
-
-<style>
-  .spotted_image-cards{
-    text-align:center;
-  }
-   @media screen and (min-width: 750px) {
-     .spotted_images{
-      display: grid;
-      grid-template-columns: repeat(6,1fr);
-     }
-     .image-container {
-       position: relative;
-     text-align: center;
-    }
-   }
-     @media screen and (max-width: 750px) {
-     .spotted_images{
-      display: flex;
-      overflow: scroll;
-       gap:1rem;
-       margin-bottom:2rem;
-     }
-      .image-container {
-        position: relative;
-        flex-shrink:0;
-        width:90%;
-        text-align: center;
-      }
-   }
-
-.image {
-  width: 100%; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: white; /* Text color */
-  padding: 5px; /* Adjust padding as needed */
-  margin: 0;
-}
-
-</style>
-
-
 {% schema %}
-  {
-    "name": "Spotted images",
-    "settings": [
-         {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Padding top",
-        "default": 20
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Padding bottom",
-        "default": 20
-      },
-     {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "ACADEMY"
-      }, {
-        "type": "text",
-        "id": "sub_heading",
-        "label": "Subheading"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Spotted images"
-      }
-    ]
-  }
+{
+  "name": "Spotted images",
+  "settings": [
+       {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 20
+    },
+   {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "ACADEMY"
+    }, {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Subheading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Spotted images"
+    }
+  ]
+}
 {% endschema %}
-
