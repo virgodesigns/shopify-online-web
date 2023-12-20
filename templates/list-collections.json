@@ -196,15 +196,15 @@
           "type": "slide",
           "settings": {
             "tab_id": "CATEGORY",
-            "image": "shopify:\/\/shop_images\/1_VWWDR2336015601_f8f65f97-5428-4dea-9ace-99b397b773bc.jpg",
-            "image-mobile": "shopify:\/\/shop_images\/1_VWWDR2336015601_f8f65f97-5428-4dea-9ace-99b397b773bc.jpg",
-            "heading": "MINI DRESSES",
+            "image": "shopify:\/\/shop_images\/2_2.jpg",
+            "image-mobile": "shopify:\/\/shop_images\/2_2.jpg",
+            "heading": "DAINTY DRESSES",
             "heading_size": "h2",
             "overlay_color": "#000000",
             "overlay_opacity": 53,
             "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
             "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/mini-dresses",
+            "button_2_link": "shopify:\/\/collections\/veronicas-dresses",
             "button_2_outline": false,
             "button_2_underline": true
           }
