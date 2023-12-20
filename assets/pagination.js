@@ -3,36 +3,41 @@
  *  @function Pagination
  */
 
-if (!customElements.get('pagination')) {
+if (!customElements.get("pagination")) {
   class Pagination extends HTMLElement {
     constructor() {
       super();
       const id = this.dataset.section;
-      this.button = this.querySelector('.load-more');
-      this.grid = document.querySelector('[data-id=' + id + ']');
-      this.animations_enabled = document.body.classList.contains('animations-true') && typeof gsap !== 'undefined';
+      this.button = this.querySelector(".load-more");
+      this.grid = document.querySelector("[data-id=" + id + "]");
+      this.animations_enabled =
+        document.body.classList.contains("animations-true") &&
+        typeof gsap !== "undefined";
       this.i = 2;
     }
     connectedCallback() {
-      if (this.classList.contains('pagination-type--loadmore')) {
+      if (this.classList.contains("pagination-type--loadmore")) {
         this.loadMore();
       }
-      if (this.classList.contains('pagination-type--infinite')) {
+      if (this.classList.contains("pagination-type--infinite")) {
         this.infinite();
       }
     }
     addUrlParam(search, key) {
-      var newParam = key + '=' + this.i,
-        params = '?' + newParam;
+      var newParam = key + "=" + this.i,
+        params = "?" + newParam;
 
       // If the "search" string exists, then build params from it
       if (search) {
         // Try to replace an existance instance
-        params = search.replace(new RegExp('([?&])' + key + '[^&]*'), '$1' + newParam);
+        params = search.replace(
+          new RegExp("([?&])" + key + "[^&]*"),
+          "$1" + newParam
+        );
 
         // If nothing was replaced, then add the new param to the end
         if (params === search) {
-          params += '&' + newParam;
+          params += "&" + newParam;
         }
       }
 
@@ -40,7 +45,7 @@ if (!customElements.get('pagination')) {
     }
     loadMore() {
       let base = this;
-      this.button.addEventListener('click', function() {
+      this.button.addEventListener("click", function () {
         base.loadProducts();
         this.blur();
         return false;
@@ -48,53 +53,64 @@ if (!customElements.get('pagination')) {
     }
     infinite() {
       let base = this;
-      base.observer = new IntersectionObserver(function(entries) {
-        if (entries[0].intersectionRatio === 1) {
-          base.loadProducts();
+      base.observer = new IntersectionObserver(
+        function (entries) {
+          if (entries[0].intersectionRatio === 1) {
+            base.loadProducts();
+          }
+        },
+        {
+          threshold: [0, 1],
         }
-      }, {
-        threshold: [0, 1]
-      });
+      );
       base.observer.observe(base);
     }
     loadProducts() {
       let base = this,
-        url = document.location.pathname + base.addUrlParam(document.location.search, 'page');
-      if (base.getAttribute('loading')) {
+        url =
+          document.location.pathname +
+          base.addUrlParam(document.location.search, "page");
+      if (base.getAttribute("loading")) {
         return;
       }
       base.i++;
-      base.setAttribute('loading', true);
+      base.setAttribute("loading", true);
       fetch(url)
-        .then(response => response.text())
+        .then((response) => response.text())
         .then((responseText) => {
           const html = responseText;
           base.renderProducts(html, url);
-          dispatchCustomEvent('pagination:page-changed', {
-            url: url
+          dispatchCustomEvent("pagination:page-changed", {
+            url: url,
           });
-        }); 
+        });
     }
     renderProducts(html, url) {
       let base = this,
-        grid_to_replace = new DOMParser().parseFromString(html, 'text/html').getElementById('product-grid');
+        grid_to_replace = new DOMParser()
+          .parseFromString(html, "text/html")
+          .getElementById("product-grid");
 
       if (!grid_to_replace) {
         if (base.observer) {
           base.observer.unobserve(base);
         }
-        base.removeAttribute('loading');
+        base.removeAttribute("loading");
         if (base.button) {
-          base.button.classList.add('visually-hidden');
+          base.button.classList.add("visually-hidden");
         }
         return;
       }
-      let products = grid_to_replace.querySelectorAll('.column');
-      const loadMoreButton = document.querySelector('.load-more');
-      if (products.length >= 1 && products.length <= 11) {
-         loadMoreButton.classList.add("load-more-background");
-          base.button.disabled = true;;
-       }
+      let products = grid_to_replace.querySelectorAll(".column");
+      const loadMoreButton = document.querySelector(".load-more");
+
+      if (
+        products.length == 0 ||
+        (products.length >= 1 && products.length <= 11)
+      ) {
+        loadMoreButton.classList.add("load-more-background");
+        base.button.disabled = true;
+      }
 
       for (var i = 0; i < products.length; i++) {
         this.grid.appendChild(products[i]);
@@ -102,21 +118,21 @@ if (!customElements.get('pagination')) {
       if (this.animations_enabled) {
         gsap.set(products, {
           opacity: 0,
-          y: 30
+          y: 30,
         });
         gsap.to(products, {
           duration: 0.5,
           y: 0,
           opacity: 1,
           stagger: 0.05,
-          onComplete: function() {
-            base.removeAttribute('loading');
-          }
+          onComplete: function () {
+            base.removeAttribute("loading");
+          },
         });
       } else {
-        base.removeAttribute('loading');
+        base.removeAttribute("loading");
       }
     }
   }
-  customElements.define('pagination-theme', Pagination);
+  customElements.define("pagination-theme", Pagination);
 }
