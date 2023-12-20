@@ -175,23 +175,6 @@
             "button_2_underline": true
           }
         },
-        "4d65bf52-7ecc-4ab3-8dd8-7df180cf532a": {
-          "type": "slide",
-          "settings": {
-            "tab_id": "CATEGORY",
-            "image": "shopify:\/\/shop_images\/A1._ALL_COLLECTION.png",
-            "image-mobile": "shopify:\/\/shop_images\/1._ALL_COLLECTION_e0091f7f-11a5-41d5-8d09-49e282687833.png",
-            "heading": "ALL DRESSES",
-            "heading_size": "h2",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/all",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
         "9f6d9076-1862-4fe2-a1d9-41df04402e36": {
           "type": "slide",
           "settings": {
@@ -339,7 +322,6 @@
         "575e4d5c-8bc0-4c47-87e7-d36aeda90e7c",
         "0d72bc29-1e3b-483b-93ff-54ef2ca5682f",
         "31be7ac2-6d56-4b57-bbe4-3a8b79f1cff6",
-        "4d65bf52-7ecc-4ab3-8dd8-7df180cf532a",
         "9f6d9076-1862-4fe2-a1d9-41df04402e36",
         "68b2c11f-d02d-4cc9-863c-485ec207e63c",
         "512fc4a0-db0c-45f6-a68f-9c3cc82360a2",
