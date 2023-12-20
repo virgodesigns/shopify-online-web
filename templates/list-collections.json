@@ -235,7 +235,7 @@
             "heading": "CLASSIC CO-ORDS",
             "heading_size": "h2",
             "overlay_color": "#000000",
-            "overlay_opacity": 70,
+            "overlay_opacity": 83,
             "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
             "button_2_text": "EXPLORE NOW",
             "button_2_link": "shopify:\/\/collections\/veronicas-co-ord-sets",
