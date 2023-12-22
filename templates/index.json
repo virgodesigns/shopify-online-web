@@ -768,7 +768,7 @@
             "content_size": "medium",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "overlay_gradient": "",
             "button_1_text": "",
             "button_1_link": "",
             "button_1_outline": true,
