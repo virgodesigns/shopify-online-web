@@ -825,7 +825,7 @@
             "text_alignment": "center",
             "content_size": "medium",
             "overlay_color": "#000000",
-            "overlay_opacity": 70,
+            "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "",
             "button_1_link": "",
