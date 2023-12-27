@@ -920,6 +920,54 @@
         "button_text": ""
       }
     },
+    "942f49ff-4fe6-4df4-8459-45b29f0f83d7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21527439737129__942f49ff-4fe6-4df4-8459-45b29f0f83d7-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_1.png",
+            "slide_link": "shopify:\/\/collections\/party-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21527439737129__942f49ff-4fe6-4df4-8459-45b29f0f83d7-slide-3"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-auto",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "7c2288b9-760f-41be-a885-02548bc5a5c3": {
       "type": "slideshow",
       "blocks": {
@@ -1205,6 +1253,7 @@
     "2bf90efe-2830-4ea5-b847-b6730ae13568",
     "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
     "6cce79bf-50eb-4239-b314-7280d3977c6d",
+    "942f49ff-4fe6-4df4-8459-45b29f0f83d7",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
     "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94",
     "b45eed35-2d2f-4a01-b1ee-cbb5f0037d6b",
