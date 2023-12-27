@@ -807,12 +807,41 @@
             "button_2_outline": false,
             "button_2_underline": true
           }
+        },
+        "c05f312e-6046-49ad-80a2-637ac5d463a6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepage.png",
+            "slide_link": "shopify:\/\/products\/olivia-breezy-cotton-co-ords",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
         "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3",
         "453f27d2-8918-4f5d-b376-c6124a8b81a2",
-        "d81da92d-2b2a-4509-a4a8-b536acbd37d6"
+        "d81da92d-2b2a-4509-a4a8-b536acbd37d6",
+        "c05f312e-6046-49ad-80a2-637ac5d463a6"
       ],
       "custom_css": [
         ".slideshow__slide {padding-bottom: 0px;}"
