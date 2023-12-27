@@ -753,6 +753,7 @@
         },
         "453f27d2-8918-4f5d-b376-c6124a8b81a2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Eve_Banner.png",
             "slide_link": "shopify:\/\/products\/red-v-neck-elegance-with-pockets",
