@@ -276,8 +276,19 @@ body {
   margin: 0;
   padding: 0;
   background: var(--bg-body);
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
   font-weight: normal;
   line-height: 1.6;
   color: var(--color-body);
@@ -418,8 +429,19 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   color: var(--color-body);
@@ -2382,7 +2404,8 @@ table.no-borders tfoot td:first-child {
 
 .lazyloaded {
   opacity: 1;
-  transition: opacity 0.2s cubic-bezier(0.104, 0.204, 0.492, 1),
+  transition:
+    opacity 0.2s cubic-bezier(0.104, 0.204, 0.492, 1),
     filter 0.2s cubic-bezier(0.104, 0.204, 0.492, 1);
 }
 
@@ -2430,7 +2453,45 @@ scroll-shadow {
   );
 }
 
+.cancellation_reasons_modal {
+  display: block !important;
+}
+#cancellation_div {
+  padding: 1rem 1rem 0;
+}
+.cancel_button {
+  width: 97%;
+  background: #000 !important;
+  padding: 16px 22px !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.modal_close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.account_image {
+  width: 20%;
+}
+
 @media only screen and (max-width: 767px) {
+  .account_image {
+    width: 30%;
+  }
+  .cancellation_reasons_modal {
+    bottom: 0;
+    top: auto !important;
+    min-width: 100%;
+    max-width: 100% !important;
+    transform: translate(0) !important;
+    left: 0 !important;
+    right: 0;
+  }
   .mobile-height-full {
     height: calc(100vh - var(--announcement-height, 0px));
   }
@@ -2927,10 +2988,14 @@ h6,
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
 }
 .header.header--shadow-medium:after {
-  box-shadow: 0 9px 38px rgba(0, 0, 0, 0.05), 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 9px 38px rgba(0, 0, 0, 0.05),
+    0 5px 12px rgba(0, 0, 0, 0.1);
 }
 .header.header--shadow-large:after {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 5px 22px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 19px 38px rgba(0, 0, 0, 0.1),
+    0 5px 22px rgba(0, 0, 0, 0.15);
 }
 .header.is-sticky:after {
   opacity: 1;
@@ -3756,7 +3821,8 @@ input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1),
+  transition:
+    color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1),
     background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1),
     border-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
 }
@@ -4541,6 +4607,7 @@ select.resize-select {
   flex-shrink: 0;
   margin-right: 15px;
 }
+
 @media only screen and (min-width: 768px) {
   .product-cart-item-image {
     margin-right: 25px;
