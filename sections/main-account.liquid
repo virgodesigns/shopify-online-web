@@ -24,14 +24,15 @@
         {%- if customer.orders.size > 0 -%}
           {% for order in customer.orders %}
             {% comment %} <a> {% endcomment %}
-            <a href="{{ order.customer_url }}">
-              <div
-                style="
-                  border: 1px solid #0000001a;
-                  padding: 1rem;
-                  margin-bottom: 1rem;
-                "
-              >
+
+            <div
+              style="
+                border: 1px solid #0000001a;
+                padding: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <a href="{{ order.customer_url }}">
                 <div
                   style="
                                        display:flex; justify-content:space-between;
@@ -174,99 +175,27 @@
                   </div>
                   <div>{{ order.total_price | money_with_currency }}</div>
                 </div>
-                <div style="display:flex;align-items:center;justify-content:space-between">
-                  {% if order.fulfillment_status == 'fulfilled' %}
-                    <button
-                      style="
-                        white-space: normal;
-                        margin-top: 1rem !important;
-                      "
-                      class="
-                        js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled hide-strict{% endif %}
-                        {% if order.fulfillment_status != 'fulfilled' %} disabled hide-strict{% endif %}
-                      "
-                      data-order="{{ order.name }}"
-                      data-customer="{{ customer.email }}"
-                    >
-                      Return / Exchange
-                    </button>
-                  {% endif %}
-                </div>
+              </a>
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                {% if order.fulfillment_status == 'fulfilled' %}
+                  <button
+                    style="
+                      white-space: normal;
+                      margin-top: 1rem !important;
+                    "
+                    class="
+                      js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled hide-strict{% endif %}
+                      {% if order.fulfillment_status != 'fulfilled' %} disabled hide-strict{% endif %}
+                    "
+                    data-order="{{ order.name }}"
+                    data-customer="{{ customer.email }}"
+                  >
+                    Return / Exchange
+                  </button>
+                {% endif %}
               </div>
-            </a>
+            </div>
           {% endfor %}
-
-          {% comment %}
-            <table class="no-borders">
-              <thead>
-                <tr>
-                  <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                  <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                  <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                  <th id="ColumnFulfillment" scope="col" role="columnheader">
-                    {{ 'customer.orders.fulfillment_status' | t }}
-                  </th>
-                  <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
-                  <th>Return / Exchange</th>
-                </tr><modal->
-              </thead>
-              <tbody role="rowgroup">
-                {% for order in customer.orders %}
-                  <tr role="row">
-                    <td
-                      id="RowOrder"
-                      role="cell"
-                      headers="ColumnOrder"
-                      data-label="{{ 'customer.orders.order_number' | t }}"
-                    >
-                      <a
-                        href="{{ order.customer_url }}"
-                        aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
-                      >
-                        {{ order.name }}
-                      </a>
-                    </td>
-                    <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                      {{ order.created_at | time_tag: format: 'date' }}
-                    </td>
-                    <td
-                      headers="RowOrder ColumnPayment"
-                      role="cell"
-                      data-label="{{ 'customer.orders.payment_status' | t }}"
-                    >
-                      {{ order.financial_status_label }}
-                    </td>
-                    <td
-                      headers="RowOrder ColumnFulfillment"
-                      role="cell"
-                      data-label="{{ 'customer.orders.fulfillment_status' | t }}"
-                    >
-                      {{ order.fulfillment_status_label }}
-                    </td>
-                    <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
-                      {{ order.total_price | money_with_currency }}
-                    </td>
-                    <td data-order_name="{{order.id}}" data-label="Return" class="return__exchange">
-                      {% if order.fulfillment_status == 'fulfilled' %}
-                        <button
-                          class="
-                            js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled{% endif %}
-                            {% if order.fulfillment_status != 'fulfilled' %} disabled{% endif %}
-                          "
-                          data-order="{{ order.name }}"
-                          data-customer="{{ customer.email }}"
-                        >
-                          Return / Exchange
-                        </button>
-                      {% else %}
-                        <p class="js-return-exchange disabled">Not Available</p>
-                      {% endif %}
-                    </td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          {% endcomment %}
 
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
