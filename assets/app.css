@@ -2459,10 +2459,13 @@ scroll-shadow {
   width: 20%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) {
   .returnprime__app {
     margin-top: 6rem;
   }
+}
+
+@media only screen and (max-width: 767px) {
   .account_image {
     width: 30%;
   }
