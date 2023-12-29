@@ -177,7 +177,10 @@
                 <div style="display:flex;align-items:center;justify-content:space-between">
                   {% if order.fulfillment_status == 'fulfilled' %}
                     <button
-                      style="white-space: normal;margin-top:1rem;"
+                      style="
+                        white-space: normal;
+                        margin-top: 1rem !important;
+                      "
                       class="
                         js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled hide-strict{% endif %}
                         {% if order.fulfillment_status != 'fulfilled' %} disabled hide-strict{% endif %}
