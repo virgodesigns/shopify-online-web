@@ -2460,6 +2460,9 @@ scroll-shadow {
 }
 
 @media only screen and (max-width: 767px) {
+  .returnprime__app {
+    margin-top: 6rem;
+  }
   .account_image {
     width: 30%;
   }
