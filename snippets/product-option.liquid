@@ -128,7 +128,7 @@
       >
         {% for product in product.metafields.custom.coord_sets.value %}
           {%- for option in product.options_with_values -%}
-            {% if product.type == 'Bottom' or product.type == 'Skirt' %}
+            {% if product.type == 'Bottom' or product.type == 'Skirt' or product.type == 'Trouser' %}
               {% if option.name == 'Size' %}
                 {%- for value in option.values -%}
                   <input
