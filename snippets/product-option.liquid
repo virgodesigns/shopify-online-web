@@ -80,9 +80,9 @@
     {% else %}
       <div class="chart_sizes">
         <div class="coord_tittle">SELECT SIZE FOR TOP</div>
-          <div class="form__label">
-            {{- sizing_link_top }}
-           </div>
+        <div class="form__label">
+          {{- sizing_link_top }}
+        </div>
       </div>
       <div
         class="product-form__input input-tag product-form__input--block"
@@ -115,9 +115,9 @@
       </div>
       <div class="chart_sizes">
         <div class="coord_tittle">SELECT SIZE FOR BOTTOM</div>
-          <div class="form__label">
-            {{- sizing_link_bottom }}
-           </div>
+        <div class="form__label">
+          {{- sizing_link_bottom }}
+        </div>
       </div>
 
       <div
@@ -128,7 +128,7 @@
       >
         {% for product in product.metafields.custom.coord_sets.value %}
           {%- for option in product.options_with_values -%}
-            {% if product.type == 'Bottom' %}
+            {% if product.type == 'Bottom' or product.type == 'Skirt' %}
               {% if option.name == 'Size' %}
                 {%- for value in option.values -%}
                   <input

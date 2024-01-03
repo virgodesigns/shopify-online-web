@@ -169,7 +169,7 @@
                       {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
                    </modal-opener>
                    {%- endcapture -%}
-                      {% elsif product.type == 'Bottom' %}
+                      {% elsif product.type == 'Bottom' or product.type == 'Skirt' %}
                         {%- capture sizing_link_bottom -%}
                    <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ product.id }}">
                       <button id="ProductPopup-{{ product.id }}" class="product-popup-modal__button" type="button" aria-haspopup="dialog">
