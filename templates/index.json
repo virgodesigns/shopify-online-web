@@ -782,10 +782,9 @@
         },
         "d81da92d-2b2a-4509-a4a8-b536acbd37d6": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Christmas_Edit.jpg",
-            "slide_link": "shopify:\/\/collections\/christmas-collection",
+            "image": "shopify:\/\/shop_images\/spotted.jpg",
+            "slide_link": "shopify:\/\/products\/schiffly-kaleidoscope-chic-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
