@@ -80,7 +80,7 @@
         {%- for link in section.settings.menu.links -%}
           <li class="flex-box__item">
             <a
-              href="{{ link.url }}"
+              href="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
               {% if link.active %}
                 aria-current="page"
               {% endif %}
