@@ -177,6 +177,16 @@
       "settings": {
       }
     },
+    "a544d9e7-e923-40e6-bd98-e12d3e42b0a3": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -210,6 +220,7 @@
     "ace3e86a-9dba-4966-8d72-88d70f4f48c2",
     "1663667027ccd68a19",
     "16625458859c68803a",
+    "a544d9e7-e923-40e6-bd98-e12d3e42b0a3",
     "product-recommendations",
     "6504c889-765e-4951-97dd-2817199cfc89"
   ]

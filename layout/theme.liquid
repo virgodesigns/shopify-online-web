@@ -8,10 +8,11 @@
 	{%- endcase -%}
 {%- endcapture -%}
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ dir }}">
-  <head>{% include 'moe.liquid' %}
-  {% include 'shop-sheriff-amp' %}
-  {% render 'moe' %}
-    <meta name="google-site-verification" content="cqRrH7XYjPsG9w_XD-VhnwWC4lc8VvKS75mvCYZsuzI" />
+  <head>
+    {% include 'moe.liquid' %}
+    {% include 'shop-sheriff-amp' %}
+    {% render 'moe' %}
+    <meta name="google-site-verification" content="cqRrH7XYjPsG9w_XD-VhnwWC4lc8VvKS75mvCYZsuzI">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
@@ -73,8 +74,8 @@
 				requiresTerms: `{{ 'sections.cart.terms_confirm' | t }}`,
 			}
 		};
-
-    </script><script src='https://bridge.shopflo.com/js/shopflo.bundle.js' async></script>
+    </script>
+    <script src="https://bridge.shopflo.com/js/shopflo.bundle.js" async></script>
     {{ content_for_header }}
     <!-- Header hook for plugins -->
 
@@ -92,25 +93,36 @@
     {% include 'store-credit-launcher' %}
 
     <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ja77xjpcry");
-</script>
-    
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "ja77xjpcry");
+
+
+
+        function openCheckout() {
+        let cartitems = {{ cart | json }};
+        console.log("cart items", cartitems);
+             console.log("cart items", cartitems);
+               Shopify.analytics.publish("Checkout Initiated", {
+              "order_count": cartitems.item_count,
+              "items": cartitems.items,
+
+          });
+      }
+    </script>
   </head>
   <body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
     <a class="screen-reader-shortcut" href="#main-content">{{ 'accessibility.skip_to_text' | t }}</a>
     <div id="wrapper">
-     
       {% sections 'header-group' %}
-       
+
       <div role="main" id="main-content" class="{% if request.path == "/" %}sliding-sections{% endif %}">
         {{ content_for_layout }}
       </div>
       {% unless template == 'index' %}
-      {% sections 'footer-group' %}
+        {% sections 'footer-group' %}
       {% endunless %}
       {% render 'cart-drawer' %}
       {% render 'product-drawer' %}
@@ -123,11 +135,11 @@
       {{ 'animations.min.js' | asset_url | script_tag }}
       <script>
         gsap.defaults({
-        	ease: Power4.easeOut
+          ease: Power4.easeOut,
         });
         gsap.config({
-           nullTargetWarn: false
-         });
+          nullTargetWarn: false,
+        });
         gsap.registerPlugin(ScrollTrigger);
       </script>
     {% endif %}

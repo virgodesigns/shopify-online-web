@@ -20,78 +20,69 @@
   <div class="row">
     <div class="small-12 large-8 columns myaccount-content">
       <h4 style="font-weight:500">{{ 'customer.orders.title' | t }}</h4>
-      {% paginate customer.orders by 20 %}
+      {% paginate customer.orders by 6 %}
         {%- if customer.orders.size > 0 -%}
           {% for order in customer.orders %}
             {% comment %} <a> {% endcomment %}
-            <a href="{{ order.customer_url }}">
-              <div
-                style="
-                  border: 1px solid #0000001a;
-                  padding: 1rem;
-                  margin-bottom: 1rem;
-                "
-              >
+
+            <div
+              style="
+                border: 1px solid #0000001a;
+                padding: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <a href="{{ order.customer_url }}">
                 <div
                   style="
+                                       display:flex; justify-content:space-between;
                     margin-bottom: 1rem;
                     border-bottom: 1px solid #e8e8e8;
                     padding-bottom: 0.5rem;font-weight: 600;
                     font-size: 14px;
                   "
                 >
-                  <div
-                    style="display:flex;"
-                  >
-                    <div style="margin-right:0.5rem">Order ID:</div>
-                    <div>{{ order.name }}</div>
+                  <div>
+                    <div style="display:flex; justify-content:space-between">
+                      <div
+                        style="display:flex;"
+                      >
+                        <div style="margin-right:0.5rem">Order ID:</div>
+                        <div>{{ order.name }}</div>
+                      </div>
+                    </div>
+                    {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
+                    <div
+                      style="
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                      "
+                    >
+                      {{ 'customer.order.date_html' | t: date: order_date }}
+                    </div>
                   </div>
-                  {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
-                  <div
-                    style="
-                      font-weight: 400;
-                      font-size: 0.8rem;
-                    "
-                  >
-                    {{ 'customer.order.date_html' | t: date: order_date }}
+                  <div>
+                    {% if order.cancelled %}
+                      <div style="color:red;text-align:right">
+                        <div>CANCELLED</div>
+                        <div style="font-weight:400;font-size: 0.8rem;">({{ order.cancel_reason_label }})</div>
+                      </div>
+                    {% else %}
+                      <div style="text-transform:uppercase;text-align:right">{{ order.fulfillment_status_label }}</div>
+                      <div style="color: #888383;font-size: 0.8rem;font-weight:400;text-align:right">
+                        {% if order.financial_status_label == 'Pending' -%}
+                          Payment Pending
+                        {% else %}
+                          {{ order.financial_status_label }}
+                        {% endif %}
+                      </div>
+                    {% endif %}
                   </div>
                 </div>
 
                 {% for item in order.line_items %}
                   {% assign title_words = item.title | split: '|' %}
 
-                  {% comment %} {{ item.fulfillment | json -}} {% endcomment %}
-                  {% comment %} {{- order.fulfillment_status }} {% endcomment %}
-                  {% comment %}
-                    {{ item.fulfillment.tracking_number | json }}
-                    {{ item.fulfillment.tracking_url | json }}
-                  {% endcomment %}
-                  {% comment %}
-                    <div>Order Name: {{ order.name }}</div>
-                    <div>Order Number: {{ order.order_number }}</div>
-                    <div>Product Id: {{ item.product_id }}</div>
-                  {% endcomment %}
-
-                  {% comment %} {{ item.id }} {% endcomment %}
-
-                  {% comment %} {{ order.fulfillment_status }} {% endcomment %}
-                  {% comment %}
-                    <div style="text-transform:uppercase">
-                      {% case order.fulfillment_status %}
-                        {% when 'fulfilled' %}
-                          Fulfilled
-                        {% when 'partial' %}
-                          Partially Fulfilled
-                        {% else %}
-                          Not Fulfilled
-                      {% endcase %}
-                    </div>
-                  {% endcomment %}
-                  {% comment %}
-                    <div>asdas</div>
-                    {{ item.product | json }}
-                    <div>asdas</div>
-                  {% endcomment %}
                   <div style="display:flex;margin-bottom:1rem">
                     <div class="account_image">
                       <img style="width:100%" src="{{item.product.featured_image | image_url}}">
@@ -151,7 +142,7 @@
                   <div
                     style="margin-right:0.5rem;"
                   >
-                    Sub Total Price :
+                    Subtotal Price :
                   </div>
                   <div>{{ order.line_items_subtotal_price | money_with_currency }}</div>
                 </div>
@@ -184,118 +175,27 @@
                   </div>
                   <div>{{ order.total_price | money_with_currency }}</div>
                 </div>
-                <div style="display:flex;align-items:center;margin-top:1rem;justify-content:space-between">
+              </a>
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                {% if order.fulfillment_status == 'fulfilled' %}
                   <button
-                    style="white-space: normal;"
-                    class="js-return-exchange"
+                    style="
+                      white-space: normal;
+                      margin-top: 1rem !important;
+                    "
+                    class="
+                      js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled hide-strict{% endif %}
+                      {% if order.fulfillment_status != 'fulfilled' %} disabled hide-strict{% endif %}
+                    "
                     data-order="{{ order.name }}"
                     data-customer="{{ customer.email }}"
                   >
                     Return / Exchange
                   </button>
-
-                  <modal-opener
-                    class="product-popup-modal__opener no-js-hidden"
-                    data-modal="#PopupModal-cancelReasons"
-                    ><button
-                      id="ProductPopup-variant_picker"
-                      class="product-popup-modal__button"
-                      type="button"
-                      aria-haspopup="dialog"
-                      onclick="callApiAndOpenModal(event)"
-                    >
-                      Cancel Order
-                    </button></modal-opener
-                  >
-
-                  {% comment %}
-                    <button
-                      class="
-                        js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled{% endif %}
-                        {% if order.fulfillment_status != 'fulfilled' %} disabled{% endif %}
-                      "
-                      data-order="{{ order.name }}"
-                      data-customer="{{ customer.email }}"
-                    >
-                      Return / Exchange
-                    </button>
-                  {% endcomment %}
-                </div>
+                {% endif %}
               </div>
-            </a>
+            </div>
           {% endfor %}
-
-          {% comment %}
-            <table class="no-borders">
-              <thead>
-                <tr>
-                  <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                  <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                  <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                  <th id="ColumnFulfillment" scope="col" role="columnheader">
-                    {{ 'customer.orders.fulfillment_status' | t }}
-                  </th>
-                  <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
-                  <th>Return / Exchange</th>
-                </tr><modal->
-              </thead>
-              <tbody role="rowgroup">
-                {% for order in customer.orders %}
-                  <tr role="row">
-                    <td
-                      id="RowOrder"
-                      role="cell"
-                      headers="ColumnOrder"
-                      data-label="{{ 'customer.orders.order_number' | t }}"
-                    >
-                      <a
-                        href="{{ order.customer_url }}"
-                        aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
-                      >
-                        {{ order.name }}
-                      </a>
-                    </td>
-                    <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                      {{ order.created_at | time_tag: format: 'date' }}
-                    </td>
-                    <td
-                      headers="RowOrder ColumnPayment"
-                      role="cell"
-                      data-label="{{ 'customer.orders.payment_status' | t }}"
-                    >
-                      {{ order.financial_status_label }}
-                    </td>
-                    <td
-                      headers="RowOrder ColumnFulfillment"
-                      role="cell"
-                      data-label="{{ 'customer.orders.fulfillment_status' | t }}"
-                    >
-                      {{ order.fulfillment_status_label }}
-                    </td>
-                    <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
-                      {{ order.total_price | money_with_currency }}
-                    </td>
-                    <td data-order_name="{{order.id}}" data-label="Return" class="return__exchange">
-                      {% if order.fulfillment_status == 'fulfilled' %}
-                        <button
-                          class="
-                            js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled{% endif %}
-                            {% if order.fulfillment_status != 'fulfilled' %} disabled{% endif %}
-                          "
-                          data-order="{{ order.name }}"
-                          data-customer="{{ customer.email }}"
-                        >
-                          Return / Exchange
-                        </button>
-                      {% else %}
-                        <p class="js-return-exchange disabled">Not Available</p>
-                      {% endif %}
-                    </td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          {% endcomment %}
 
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>

@@ -1,4 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
+{{ 'main-order.css' | asset_url | stylesheet_tag }}
+
 <div class="section-spacing">
   <div class="row">
     <div class="small-12 columns">
@@ -24,11 +26,27 @@
       </div>
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
-      {%- if order.cancelled -%}
-        {%- assign cancelled_at = order.cancelled_at | time_tag: format: 'date_at_time' -%}
-        <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
-        <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
-      {%- endif -%}
+
+      <div>
+        {% if order.cancelled %}
+          <div style="color:red;text-align:right">
+            <div>CANCELLED</div>
+            <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
+            <div style="font-weight:400;font-size: 0.8rem;">({{ order.cancel_reason_label }})</div>
+          </div>
+        {% else %}
+          {% comment %} <div style="text-transform:uppercase;text-align:right">{{ order.fulfillment_status_label }}</div> {% endcomment %}
+          <div style="color: #888383;font-size: 0.8rem;font-weight:400;text-align:right">
+            {% if order.financial_status_label == 'Pending' -%}
+              Payment Pending
+              {% comment %}
+                {% else %}
+                {{ order.financial_status_label }}
+              {% endcomment %}
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
 
       <div
         style="
@@ -40,12 +58,12 @@
         {% for item in order.line_items %}
           {% assign title_words = item.title | split: '|' %}
 
-          <div style="display:flex;margin-bottom:1rem">
+          <div class="account" style="margin-bottom:1rem">
             <div class="account_image">
               <img style="width:100%" src="{{item.product.featured_image | image_url}}">
             </div>
-            <div style="display: flex;align-items: center;margin-left: 1rem;width:70%">
-              <div>
+            <div class="account_content" style="display: flex;align-items: center;margin-left: 1rem;width:70%">
+              <div class="account_content-in">
                 <div
                   style="
                     font-size: 15px;
@@ -108,8 +126,9 @@
                     <a
                       href="{{ item.fulfillment.tracking_url }}"
                       style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                background: #000;color: #fff;padding: 0.3rem 0.6rem;border-radius: 0.5rem;font-size: 0.9rem;margin-right:0.5rem;
+                        background: #000;color: #fff;padding: 0.3rem 0.6rem;border-radius: 0.5rem;font-size: 0.9rem;
                       "
+                      class="tracking"
                     >
                       {{ 'customer.order.track_shipment' | t }}
                     </a>

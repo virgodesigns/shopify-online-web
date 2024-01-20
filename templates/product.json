@@ -173,23 +173,12 @@
     },
     "16623877721f33fb14": {
       "type": "spacer",
+      "disabled": true,
       "settings": {
         "spacer_mobile": 35,
         "spacer_desktop": 90,
         "border_separator": false,
         "border_separator_full": false
-      }
-    },
-    "6504c889-765e-4951-97dd-2817199cfc89": {
-      "type": "pdp-spotted-images",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "padding_top": 30,
-        "padding_bottom": 20,
-        "heading": "",
-        "sub_heading": "Spotted in Virgio Outfit"
       }
     },
     "product-recommendations": {
@@ -206,6 +195,18 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "6504c889-765e-4951-97dd-2817199cfc89": {
+      "type": "pdp-spotted-images",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 30,
+        "padding_bottom": 20,
+        "heading": "",
+        "sub_heading": "Spotted in Virgio"
+      }
     }
   },
   "order": [
@@ -216,7 +217,7 @@
     "1663667027ccd68a19",
     "16625458859c68803a",
     "16623877721f33fb14",
-    "6504c889-765e-4951-97dd-2817199cfc89",
-    "product-recommendations"
+    "product-recommendations",
+    "6504c889-765e-4951-97dd-2817199cfc89"
   ]
 }
