@@ -1,0 +1,17 @@
+.order-btn {
+  background: #000 !important;
+  padding: 6px 10px !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  white-space: pre;
+  position: relative;
+  margin: 0 !important;
+  min-height: unset !important;
+  min-width: unset !important;
+}
+
+.order-btn:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
