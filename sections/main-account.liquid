@@ -19,6 +19,12 @@
   </div>
   <div class="row">
     <div class="small-12 large-8 columns myaccount-content">
+      <div id="data-container"></div>
+      <div id="pagination-container">
+        <button id="prevButton" onclick="loadPage(false)" disabled>Previous Page</button>
+        <button id="nextButton" onclick="loadPage(true)" disabled>Next Page</button>
+      </div>
+
       <h4 style="font-weight:500">{{ 'customer.orders.title' | t }}</h4>
       {% paginate customer.orders by 6 %}
         {%- if customer.orders.size > 0 -%}
@@ -299,6 +305,122 @@
         console.error('Error fetching data:', error);
       });
   }
+
+
+    const apiUrl = 'https://api.damocles.co.in/shop/customer/v1/orders/6293839773798'; // Replace with your actual API URL
+    let endCursor = '';
+    let hasNextPage = true;
+    let hasPrevPage = false;
+
+    async function fetchData() {
+      try {
+        const response = await fetch(apiUrl, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'after': endCursor // Send endCursor as 'after' in headers
+          }
+        });
+
+        const data = await response.json();
+        return data;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        return null;
+      }
+    }
+
+    async function renderData() {
+      const dataContainer = document.getElementById('data-container');
+      const prevButton = document.getElementById('prevButton');
+      const nextButton = document.getElementById('nextButton');
+
+      const data = await fetchData();
+
+      console.log("datadata",data)
+      if (data) {
+        // Update UI with the fetched data
+        dataContainer.innerHTML = data.data.orders.map(orderLineItem => {
+            const { displayStatus } = orderLineItem;
+          return `
+            <div>
+              <p>${useDeliveryStatusText(displayStatus)}</p>
+              <p>${useDeliveryText(displayStatus)}</p>
+              <img src="${orderLineItem.image}" alt="${orderLineItem.title}" style="width: 100px; height: 100px;">
+              <p>Order ID: ${orderLineItem.orderId}</p>
+              <p>Title: ${orderLineItem.title}</p>
+              <p>Status: ${orderLineItem.displayStatus}</p>
+              <hr>
+            </div>
+          `;
+        }).join('');
+
+        // Update pagination information
+        endCursor = data.data.pageInfo.endCursor;
+        hasNextPage = data.data.pageInfo.hasNextPage;
+
+        // Update pagination controls
+        prevButton.disabled = !hasPrevPage;
+        nextButton.disabled = !hasNextPage;
+
+        // Hide/show buttons based on pagination status
+        if (data.data.pageInfo.hasPrevPage !== undefined) {
+          hasPrevPage = data.data.pageInfo.hasPrevPage;
+          prevButton.style.display = hasPrevPage ? 'inline-block' : 'none';
+        }
+
+        nextButton.style.display = hasNextPage ? 'inline-block' : 'none';
+      }
+    }
+
+    function loadPage(isNext) {
+      if ((isNext && hasNextPage) || (!isNext && hasPrevPage)) {
+        endCursor = isNext ? endCursor : ''; // For previous page, set endCursor to an empty string
+        renderData();
+      }
+    }
+
+    const useDeliveryStatusText = (displayStatus) => {
+  if (displayStatus === 'unfulfilled') {
+    return 'Order Confirmed';
+  }
+  if (displayStatus === 'CANCELLED') {
+    return 'Order Cancelled';
+  }
+  //   }  // TODO handle cancelled reason logic
+  if (displayStatus === 'FULFILLED' || displayStatus === 'READY_FOR_PICKUP') {
+    return 'Ready to Ship';
+  }
+  if (displayStatus === 'IN_TRANSIT') {
+    return 'Shipped';
+  }
+  if (displayStatus === 'OUT_FOR_DELIVERY') {
+    return 'Out for Delivery';
+  }
+  if (displayStatus === 'DELIVERED') {
+    return 'Delivered';
+  }
+  return '';
+};
+
+const useDeliveryText = (orderLineItem) => {
+  if (orderLineItem.displayStatus === 'DELIVERED') {
+    return `Delivered on ${orderLineItem.deliveredAt}`;
+  }
+  if (
+    orderLineItem.displayStatus === 'CANCELLED' ||
+    orderLineItem.estimatedDeliveryTime === '' ||
+    orderLineItem.estimatedDeliveryTime === undefined ||
+    orderLineItem.estimatedDeliveryTime === null
+  ) {
+    return '';
+  }
+  return `Arriving by ${orderLineItem?.estimatedDeliveryTime ?? ''}`;
+};
+
+
+    // Initial render
+    renderData();
 </script>
 
 {% include 'returnprime_script' %}

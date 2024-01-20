@@ -22,6 +22,74 @@
     "8e2aa702-a629-4a08-b4ab-75452deb5c89": {
       "type": "explore-page",
       "blocks": {
+        "9f6d9076-1862-4fe2-a1d9-41df04402e36": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "CATEGORY",
+            "image": "shopify:\/\/shop_images\/Frame_48096327.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_2.png",
+            "heading": "DAINTY DRESSES",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 53,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/veronicas-dresses",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "68b2c11f-d02d-4cc9-863c-485ec207e63c": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "CATEGORY",
+            "image": "shopify:\/\/shop_images\/Classic_Co-Ords_1.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_3.png",
+            "heading": "CLASSIC CO-ORDS",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 83,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/veronicas-co-ord-sets",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "512fc4a0-db0c-45f6-a68f-9c3cc82360a2": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "CATEGORY",
+            "image": "shopify:\/\/shop_images\/Tailored_Bottom_wear_1.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_4.png",
+            "heading": "TAILORED BOTTOMWEAR",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 100,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/veronicas-trouser",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "af8048b8-dcb7-48a4-8df6-212a21589bdc": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "CATEGORY",
+            "image": "shopify:\/\/shop_images\/Chic_Topwear_1.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_5.png",
+            "heading": "CHIC TOPWEAR",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/veronicas-tops",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
         "6a7112a8-f40a-4a73-9117-e9153adc61af": {
           "type": "slide",
           "settings": {
@@ -175,74 +243,6 @@
             "button_2_underline": true
           }
         },
-        "9f6d9076-1862-4fe2-a1d9-41df04402e36": {
-          "type": "slide",
-          "settings": {
-            "tab_id": "CATEGORY",
-            "image": "shopify:\/\/shop_images\/Frame_48096327.png",
-            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_2.png",
-            "heading": "DAINTY DRESSES",
-            "heading_size": "h2",
-            "overlay_color": "#000000",
-            "overlay_opacity": 53,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/veronicas-dresses",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "68b2c11f-d02d-4cc9-863c-485ec207e63c": {
-          "type": "slide",
-          "settings": {
-            "tab_id": "CATEGORY",
-            "image": "shopify:\/\/shop_images\/Classic_Co-Ords_1.png",
-            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_3.png",
-            "heading": "CLASSIC CO-ORDS",
-            "heading_size": "h2",
-            "overlay_color": "#000000",
-            "overlay_opacity": 83,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/veronicas-co-ord-sets",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "512fc4a0-db0c-45f6-a68f-9c3cc82360a2": {
-          "type": "slide",
-          "settings": {
-            "tab_id": "CATEGORY",
-            "image": "shopify:\/\/shop_images\/Tailored_Bottom_wear_1.png",
-            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_4.png",
-            "heading": "TAILORED BOTTOMWEAR",
-            "heading_size": "h2",
-            "overlay_color": "#000000",
-            "overlay_opacity": 100,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/veronicas-trouser",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "af8048b8-dcb7-48a4-8df6-212a21589bdc": {
-          "type": "slide",
-          "settings": {
-            "tab_id": "CATEGORY",
-            "image": "shopify:\/\/shop_images\/Chic_Topwear_1.png",
-            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_5.png",
-            "heading": "CHIC TOPWEAR",
-            "heading_size": "h2",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/veronicas-tops",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
         "c7f6672e-f777-4974-b80d-0cdab18dc9a8": {
           "type": "slide",
           "settings": {
@@ -313,6 +313,10 @@
         }
       },
       "block_order": [
+        "9f6d9076-1862-4fe2-a1d9-41df04402e36",
+        "68b2c11f-d02d-4cc9-863c-485ec207e63c",
+        "512fc4a0-db0c-45f6-a68f-9c3cc82360a2",
+        "af8048b8-dcb7-48a4-8df6-212a21589bdc",
         "6a7112a8-f40a-4a73-9117-e9153adc61af",
         "08bd4723-2e0a-47cc-8b15-875e8b628a37",
         "dd4d989c-ba17-429d-8bc8-3854ad5b60fe",
@@ -322,10 +326,6 @@
         "575e4d5c-8bc0-4c47-87e7-d36aeda90e7c",
         "0d72bc29-1e3b-483b-93ff-54ef2ca5682f",
         "31be7ac2-6d56-4b57-bbe4-3a8b79f1cff6",
-        "9f6d9076-1862-4fe2-a1d9-41df04402e36",
-        "68b2c11f-d02d-4cc9-863c-485ec207e63c",
-        "512fc4a0-db0c-45f6-a68f-9c3cc82360a2",
-        "af8048b8-dcb7-48a4-8df6-212a21589bdc",
         "c7f6672e-f777-4974-b80d-0cdab18dc9a8",
         "6b5bce2b-8a40-48a5-8e65-909494313142",
         "88ac6c98-f30f-49e1-b95e-663c5d07b6c3",
