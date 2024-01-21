@@ -271,6 +271,16 @@
 </div>
 {% assign orderStatus = customer.orders | json %}
 <script>
+
+  
+  function redirectToOrderDetails (orderName,lineItemId)  {
+   const selectedIndex = ordersGroup[orderName].map(order => order.lineItemId).findIndex(oId=>oId==lineItemId);
+   const storageData = {
+    selectedIndex, data:ordersGroup[orderName]
+    }
+    sessionStorage.setItem("selectedOrder", JSON.stringify(storageData))
+    }
+
   function callApiAndOpenModal(event) {
     event.preventDefault();
     fetch('http://localhost:3004/cancellationReasons')
@@ -312,22 +322,250 @@
   }
 
 
+
+
     const apiUrl = 'https://api.damocles.co.in/shop/customer/v1/orders/6293839773798'; // Replace with your actual API URL
     let endCursor = '';
     let pageCount = 1; // Keep track of the current page count
 
 
+    let ordersGroup = {}
+
+
     async function fetchData() {
+
+
+
       try {
-        const response = await fetch(apiUrl, {
+        {% comment %} const response = await fetch(apiUrl, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
             'after': endCursor // Send endCursor as 'after' in headers
           }
-        });
+        }); {% endcomment %}
 
-        const data = await response.json();
+
+        const data = await new Promise(res=>res({
+    "orders": [
+        {
+            "orderName": "#1113",
+            "orderId": "gid://shopify/Order/5297336057958",
+            "fullfillmentName": null,
+            "displayStatus": "unfulfilled",
+            "shippingAddress": {
+                "address1": "Virgio (Ameyam Enterprise Private Limited) 168 19th Main Road Sector 4 HSR Layout",
+                "address2": null,
+                "city": "Bengaluru",
+                "name": "Omesh Koul",
+                "phone": null,
+                "zip": "560102",
+                "country": "India"
+            },
+            "quantity": 1,
+            "discountedTotal": "10.00",
+            "originalTotal": "10.00",
+            "skuId": "VWWDR233601700122",
+            "variantTitle": "S / Green",
+            "title": "Aiza|Breezy cotton geo-print fit and flare dress",
+            "image": "https://cdn.shopify.com/s/files/1/0558/4909/1174/files/1_VWWDR2336017001.jpg?v=1701959093",
+            "totalReceived": "3784.00",
+            "lineItemId": "gid://shopify/LineItem/13712383770726",
+            "productHandle": "geo-printed-fit-and-flare-dress",
+            "discountAllocation": "1.2",
+            "order": {
+                "totalPrice": "3784.00",
+                "subtotalPrice": "3784.00",
+                "totalShippingPrice": "0.00",
+                "totalDiscounts": "516.00",
+                "createdAt": "2024-01-17T11:38:59Z"
+            },
+            "isCancellable": true,
+            "isReturnable": false
+        },
+        {
+            "orderName": "#1113",
+            "orderId": "gid://shopify/Order/5297336057958",
+            "fullfillmentName": null,
+            "displayStatus": "unfulfilled",
+            "shippingAddress": {
+                "address1": "Virgio (Ameyam Enterprise Private Limited) 168 19th Main Road Sector 4 HSR Layout",
+                "address2": null,
+                "city": "Bengaluru",
+                "name": "Omesh Koul",
+                "phone": null,
+                "zip": "560102",
+                "country": "India"
+            },
+            "quantity": 1,
+            "discountedTotal": "2000.00",
+            "originalTotal": "2000.00",
+            "skuId": "VWWDR233601370121",
+            "variantTitle": "XS / White",
+            "title": "Abiha|Cotton Gingham Dress with Pockets",
+            "image": "https://cdn.shopify.com/s/files/1/0558/4909/1174/files/1_VWWDR2336013701_a4ed45bb-6889-424f-9bfd-f8466312f2cc.jpg?v=1701957236",
+            "totalReceived": "3784.00",
+            "lineItemId": "gid://shopify/LineItem/13712383803494",
+            "productHandle": "gingham-glamour-mini-dress-with-pockets",
+            "discountAllocation": "240.0",
+            "order": {
+                "totalPrice": "3784.00",
+                "subtotalPrice": "3784.00",
+                "totalShippingPrice": "0.00",
+                "totalDiscounts": "516.00",
+                "createdAt": "2024-01-17T11:38:59Z"
+            },
+            "isCancellable": true,
+            "isReturnable": false
+        },
+        {
+            "orderName": "#1113",
+            "orderId": "gid://shopify/Order/5297336057958",
+            "fullfillmentName": null,
+            "displayStatus": "unfulfilled",
+            "shippingAddress": {
+                "address1": "Virgio (Ameyam Enterprise Private Limited) 168 19th Main Road Sector 4 HSR Layout",
+                "address2": null,
+                "city": "Bengaluru",
+                "name": "Omesh Koul",
+                "phone": null,
+                "zip": "560102",
+                "country": "India"
+            },
+            "quantity": 1,
+            "discountedTotal": "2290.00",
+            "originalTotal": "2290.00",
+            "skuId": "VWWDR233601720123",
+            "variantTitle": "M / Charcoal",
+            "title": "Amrah|Flowy viscose dress with floral print",
+            "image": "https://cdn.shopify.com/s/files/1/0558/4909/1174/files/1_VWWDR2336017201.jpg?v=1701958788",
+            "totalReceived": "3784.00",
+            "lineItemId": "gid://shopify/LineItem/13712383836262",
+            "productHandle": "charcoal-fit-and-flare-dress-with-floral-print",
+            "discountAllocation": "274.8",
+            "order": {
+                "totalPrice": "3784.00",
+                "subtotalPrice": "3784.00",
+                "totalShippingPrice": "0.00",
+                "totalDiscounts": "516.00",
+                "createdAt": "2024-01-17T11:38:59Z"
+            },
+            "isCancellable": true,
+            "isReturnable": false
+        },
+        {
+            "orderName": "#1112",
+            "orderId": "gid://shopify/Order/5297290346598",
+            "fullfillmentName": null,
+            "displayStatus": "unfulfilled",
+            "shippingAddress": {
+                "address1": "Virgio (Ameyam Enterprise Private Limited) 168 19th Main Road Sector 4 HSR Layout",
+                "address2": null,
+                "city": "Bengaluru",
+                "name": "Omesh Koul",
+                "phone": null,
+                "zip": "560102",
+                "country": "India"
+            },
+            "quantity": 1,
+            "discountedTotal": "10.00",
+            "originalTotal": "10.00",
+            "skuId": "VWWDR233601700123",
+            "variantTitle": "M / Green",
+            "title": "Aiza|Breezy cotton geo-print fit and flare dress",
+            "image": "https://cdn.shopify.com/s/files/1/0558/4909/1174/files/1_VWWDR2336017001.jpg?v=1701959093",
+            "totalReceived": "3910.50",
+            "lineItemId": "gid://shopify/LineItem/13712230645862",
+            "productHandle": "geo-printed-fit-and-flare-dress",
+            "discountAllocation": "0.1",
+            "order": {
+                "totalPrice": "3910.50",
+                "subtotalPrice": "3910.50",
+                "totalShippingPrice": "0.00",
+                "totalDiscounts": "39.50",
+                "createdAt": "2024-01-17T10:11:43Z"
+            },
+            "isCancellable": true,
+            "isReturnable": false
+        },
+        {
+            "orderName": "#1112",
+            "orderId": "gid://shopify/Order/5297290346598",
+            "fullfillmentName": null,
+            "displayStatus": "unfulfilled",
+            "shippingAddress": {
+                "address1": "Virgio (Ameyam Enterprise Private Limited) 168 19th Main Road Sector 4 HSR Layout",
+                "address2": null,
+                "city": "Bengaluru",
+                "name": "Omesh Koul",
+                "phone": null,
+                "zip": "560102",
+                "country": "India"
+            },
+            "quantity": 1,
+            "discountedTotal": "2000.00",
+            "originalTotal": "2000.00",
+            "skuId": "VWWDR233601370121",
+            "variantTitle": "XS / White",
+            "title": "Abiha|Cotton Gingham Dress with Pockets",
+            "image": "https://cdn.shopify.com/s/files/1/0558/4909/1174/files/1_VWWDR2336013701_a4ed45bb-6889-424f-9bfd-f8466312f2cc.jpg?v=1701957236",
+            "totalReceived": "3910.50",
+            "lineItemId": "gid://shopify/LineItem/13712230678630",
+            "productHandle": "gingham-glamour-mini-dress-with-pockets",
+            "discountAllocation": "20.0",
+            "order": {
+                "totalPrice": "3910.50",
+                "subtotalPrice": "3910.50",
+                "totalShippingPrice": "0.00",
+                "totalDiscounts": "39.50",
+                "createdAt": "2024-01-17T10:11:43Z"
+            },
+            "isCancellable": true,
+            "isReturnable": false
+        },
+        {
+            "orderName": "#1112",
+            "orderId": "gid://shopify/Order/5297290346598",
+            "fullfillmentName": null,
+            "displayStatus": "unfulfilled",
+            "shippingAddress": {
+                "address1": "Virgio (Ameyam Enterprise Private Limited) 168 19th Main Road Sector 4 HSR Layout",
+                "address2": null,
+                "city": "Bengaluru",
+                "name": "Omesh Koul",
+                "phone": null,
+                "zip": "560102",
+                "country": "India"
+            },
+            "quantity": 1,
+            "discountedTotal": "1940.00",
+            "originalTotal": "1940.00",
+            "skuId": "VWWDR233601630125",
+            "variantTitle": "XL / White",
+            "title": "Alfiya|Viscose Soft Floral Playsuit with Pockets",
+            "image": "https://cdn.shopify.com/s/files/1/0558/4909/1174/files/1_VWWDR2336016301_401fb48c-0e81-45ca-81a5-0844d1fa4e87.jpg?v=1701956300",
+            "totalReceived": "3910.50",
+            "lineItemId": "gid://shopify/LineItem/13712230711398",
+            "productHandle": "garden-whisper-sleeve-dress-with-pockets",
+            "discountAllocation": "19.4",
+            "order": {
+                "totalPrice": "3910.50",
+                "subtotalPrice": "3910.50",
+                "totalShippingPrice": "0.00",
+                "totalDiscounts": "39.50",
+                "createdAt": "2024-01-17T10:11:43Z"
+            },
+            "isCancellable": true,
+            "isReturnable": false
+        }
+    ],
+    "customer": {
+        "name": "omesh.koul@virgio.com",
+        "phone": "+916005649119"
+    }
+}))
+
+        {% comment %} const data = await response.json(); {% endcomment %}
         return data;
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -347,20 +585,39 @@
 
       const data = await fetchData();
 
+
+      const splitData = {};
+
+// Split the objects by orderName
+data.orders.forEach(obj => {
+    const orderName = obj["orderName"];
+    if (!splitData[orderName]) {
+        splitData[orderName] = [];
+    }
+    splitData[orderName].push(obj);
+});
+console.log("splitData",splitData)
+
+      ordersGroup = splitData
+
       if (data) {
         // Update UI with the fetched data
-        dataContainer.innerHTML += data.data.orders.map(order => {
+        dataContainer.innerHTML += data.orders.map(order => {
           const {displayStatus} = order
            const {title} = order;
 
            const titles = title.split('|')
           
           return `
-            <div class="order">
+            <div class="order" onclick="redirectToOrderDetails('${order.orderName}','${order.lineItemId}')">
+
               <div class="order-title ${displayStatus === 'CANCELLED' ? 'order-title-cancel':''}">${useDeliveryStatusText(displayStatus)}</div>
               <div class="order-arriving">${useDeliveryText(order)}</div>
+
               <div style="display: flex;margin-top: 1.5rem;align-items: center;" >
+
                 <div style="margin-right: 1.5rem;"><img  src="${order.image}" alt="${order.title}"  class="order-img"></div>
+               
                 <div>
               <div class="order-title1">${titles[0]}</div>
                <div class="order-title2">${titles[1]}</div>
@@ -368,7 +625,9 @@
                <div class="order-title3">Qty: ${order.quantity}</div>
                 </div>
               </div>
+
               </div>
+
             </div>
           `;
         }).join('');
