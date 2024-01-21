@@ -350,13 +350,25 @@
       if (data) {
         // Update UI with the fetched data
         dataContainer.innerHTML += data.data.orders.map(order => {
+          const {displayStatus} = order
+           const {title} = order;
+
+           const titles = title.split('|')
+          
           return `
-            <div>
-              <img src="${order.image}" alt="${order.title}" style="width: 100px; height: 100px;">
-              <p>Order ID: ${order.orderId}</p>
-              <p>Title: ${order.title}</p>
-              <p>Status: ${order.displayStatus}</p>
-              <hr>
+            <div class="order">
+              <div class="order-title ${displayStatus === 'CANCELLED' ? 'order-title-cancel':''}">${useDeliveryStatusText(displayStatus)}</div>
+              <div class="order-arriving">${useDeliveryText(order)}</div>
+              <div style="display: flex;margin-top: 1.5rem;align-items: center;" >
+                <div style="margin-right: 1.5rem;"><img  src="${order.image}" alt="${order.title}"  class="order-img"></div>
+                <div>
+              <div class="order-title1">${titles[0]}</div>
+               <div class="order-title2">${titles[1]}</div>
+              <div class="order-title3">Size: ${order.variantTitle}</div>
+               <div class="order-title3">Qty: ${order.quantity}</div>
+                </div>
+              </div>
+              </div>
             </div>
           `;
         }).join('');
@@ -406,6 +418,7 @@
 };
 
 const useDeliveryText = (orderLineItem) => {
+  console.log("orderLineItem",orderLineItem)
   if (orderLineItem.displayStatus === 'DELIVERED') {
     return `Delivered on ${orderLineItem.deliveredAt}`;
   }
