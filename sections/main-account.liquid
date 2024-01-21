@@ -279,6 +279,7 @@
     selectedIndex, data:ordersGroup[orderName]
     }
     sessionStorage.setItem("selectedOrder", JSON.stringify(storageData))
+    window.location.href = "/pages/order-details"
     }
 
   function callApiAndOpenModal(event) {
