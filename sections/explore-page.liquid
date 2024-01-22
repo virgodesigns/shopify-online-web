@@ -268,9 +268,11 @@
                     <div class="explore-tabs-content">
                       <div class="slideshow__slide-content">
                         {% if block.settings.heading != blank %}
+                          <a href="{{ block.settings.button_2_link }}">
                           <h1 class="split-text {{ block.settings.heading_size }}">
                             {{ block.settings.heading }}
                           </h1>
+                          </a>
                         {% endif %}
                         {% if block.settings.button_2_text != blank %}
                           <div class="button-overflow-container">
@@ -565,7 +567,9 @@
             "id": "button_2_link",
             "type": "url",
             "label": "Link"
-          }, {
+          },
+        
+          {
             "type": "checkbox",
             "id": "button_2_outline",
             "label": "Use outline button style",
