@@ -283,32 +283,8 @@
     window.location.href = "/pages/order-details"
     }
 
-  function callApiAndOpenModal(event) {
-    event.preventDefault();
-    fetch('http://localhost:3004/cancellationReasons')
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        renderCancellationUI(data);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-    return false;
-  }
 
-  function renderCancellationUI(data) {
-    const renderDiv = document.getElementById('cancellation_div');
-    // Number of times to append the HTML
-    var numberOfTimes = 5;
 
-    // Loop to append HTML content to the div
-    renderDiv.innerHTML = '';
-    for (var i = 0; i < numberOfTimes; i++) {
-      var isChecked = i === 0 ? 'checked' : '';
-      renderDiv.innerHTML += `<p><input type="radio" id="${i}_cancel" name="drone" value="huey" ${isChecked}  /><label for="${i}_cancel">${data[i].body}</label></p>`;
-    }
-  }
   var orderStatus = '{{ orderStatus }}';
 
   function cancelOrderCall() {
@@ -333,7 +309,11 @@
 
     {% comment %} const apiUrl = 'https://api.virgio.com/shop/customer/v1/orders/7555646226729' {% endcomment %}
 
-     const apiUrl = 'https://api.virgio.com/shop/customer/v1/orders/7656136835369'
+ const apiUrl = 'https://api.virgio.com/shop/customer/v1/orders/7656136835369'
+
+          {% comment %} const apiUrl = 'https://api.virgio.com/shop/customer/v1/orders/7607784014121' {% endcomment %}
+
+     
 
      {% comment %} 7656136835369 {% endcomment %}
     
@@ -348,8 +328,6 @@
 
 
     async function fetchData() {
-
-
 
       try {
       const response = await fetch(apiUrl, {
@@ -411,7 +389,7 @@ console.log("splitData",splitData)
               <div class="order-title ${displayStatus === 'CANCELLED' ? 'order-title-cancel':''}">${useDeliveryStatusText(displayStatus)}</div>
               <div class="order-arriving">${useDeliveryText(order)}</div>
 
-              <div style="display: flex;margin-top: 1.5rem;align-items: center;" >
+              <div style="display: flex;margin-top: 1rem;align-items: center;" >
 
                 <div style="margin-right: 1.5rem;"  class="order-img"><img  src="${order.image}" alt="${order.title}"></div>
                
@@ -479,6 +457,7 @@ const useDeliveryText = (orderLineItem) => {
     return `Delivered on ${orderLineItem.deliveredAt}`;
   }
   if (
+    orderLineItem.displayStatus === 'OUT_FOR_DELIVERY' ||
     orderLineItem.displayStatus === 'CANCELLED' ||
     orderLineItem.estimatedDeliveryTime === '' ||
     orderLineItem.estimatedDeliveryTime === undefined ||

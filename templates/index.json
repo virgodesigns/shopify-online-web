@@ -1,57 +1,1382 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "16479477632637c9a7": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "164794776393e76b8e-1": {
+          "type": "slide",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/WTXT_B_HOR.mov",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "EXPLORE THE COLLECTION",
+            "button_1_link": "shopify:\/\/collections\/date-collection",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": false
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "164794776393e76b8e-1"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "717f49c0-b204-480f-8dce-b7f6cddf9195": {
+      "type": "slideshow",
+      "blocks": {
+        "5017a32f-370f-4073-b734-ec713057eb98": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
+            "slide_link": "shopify:\/\/pages\/circularity",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Circularity Desktop_2.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/pages\/circularity",
+            "button_1_outline": false,
+            "button_1_underline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "5017a32f-370f-4073-b734-ec713057eb98"
+      ],
+      "custom_css": [
+        ".main-slideshow .slideshow__slide-content .button {background-color: black;}"
+      ],
       "settings": {
-        "description": "",
-        "full_width": false,
-        "collection": "all",
-        "columns_desktop": 4,
-        "show_view_all": true
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "dcfc8ca7-af12-426a-8f5a-17f79d8c3253": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20881644159273__dcfc8ca7-af12-426a-8f5a-17f79d8c3253-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Website_Spotlight_265.mp4",
+            "subheading": "",
+            "heading": "The Safari Edit",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Explore now",
+            "button_1_link": "shopify:\/\/collections\/the-safari-edit",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--20881644159273__dcfc8ca7-af12-426a-8f5a-17f79d8c3253-slide-3"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "8b61fc5c-4397-4c69-93af-8b61a417cbf0": {
+      "type": "collection-carousel",
+      "blocks": {
+        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
+            "name": "Whims & Fancies",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/whims-fancies"
+          }
+        },
+        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
+            "name": "Cityscape",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cityscape"
+          }
+        },
+        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6._Wild_romance-1.jpg",
+            "name": "Wild Romance",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/wild-romance"
+          }
+        }
+      },
+      "block_order": [
+        "57f80e1c-e1cd-4d69-9254-c8577faa337d",
+        "6c3b3605-3069-4325-bf42-e81b89d7f38b",
+        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e"
+      ],
+      "settings": {
+        "heading": "Other Collections",
+        "bg_color": "#151515",
+        "heading_color": "#ffffff",
+        "name_color": "#ffffff",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "shopify:\/\/collections",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
+    "046c3a6b-d955-4c19-9fd6-ce3b9600312d": {
+      "type": "collection-carousel",
+      "blocks": {
+        "f652fd17-e150-47aa-a7f2-481270aa46bf": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.jpg",
+            "name": "Newtro Twist",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/newtro-twist"
+          }
+        },
+        "6e4143d0-717a-4239-a8dc-7805269e63c0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
+            "name": "#IDGAF",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/poolside-splash"
+          }
+        },
+        "5c8cf632-be43-41d2-a57c-facd24e61156": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
+            "name": "Born To Shine",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
+          }
+        }
+      },
+      "block_order": [
+        "f652fd17-e150-47aa-a7f2-481270aa46bf",
+        "6e4143d0-717a-4239-a8dc-7805269e63c0",
+        "5c8cf632-be43-41d2-a57c-facd24e61156"
+      ],
+      "settings": {
+        "heading": "",
+        "bg_color": "#151515",
+        "heading_color": "#ffffff",
+        "name_color": "#ffffff",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "shopify:\/\/collections",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
+    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
+      "type": "collection-carousel",
+      "blocks": {
+        "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cotton.jpg",
+            "name": "Cotton",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cotton"
+          }
+        },
+        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Viscose.jpg",
+            "name": "Viscose",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/viscose"
+          }
+        },
+        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tencel.jpg",
+            "name": "Tencel",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/tencel"
+          }
+        }
+      },
+      "block_order": [
+        "4becdef9-56f9-47a7-80fd-64c6a8892f80",
+        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f",
+        "89304511-9896-4639-8a32-32a4b0ec2cc0"
+      ],
+      "settings": {
+        "heading": "Shop by Fabric",
+        "bg_color": "#151515",
+        "heading_color": "#ffffff",
+        "name_color": "#ffffff",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "shopify:\/\/collections",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
+    "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Less_is_MOre_1878e93c-93f8-41d8-8d65-8eef9e75cef7.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/9185922_1.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Know More",
+            "button_1_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1"
+      ],
+      "custom_css": [
+        ".main-slideshow .slideshow__slide-content .button {background-color: black;}",
+        "@media only screen and (max-width: 600px) {.main-slideshow .slideshow__slide-content .button {display: none; }}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "53793592-7855-498e-a493-5e345669f947": {
+      "type": "slideshow",
+      "blocks": {
+        "52301fcc-9455-47af-b905-8379efe6af79": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/top_banner_1.png",
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "52301fcc-9455-47af-b905-8379efe6af79"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "0d74af2d-097d-4bfe-8103-91bea60148bb": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Limited Edition Collection | Eco-Conscious | Raw and Irresistible",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "147ed3ad-dbe9-4668-9f28-39062c0b57a4": {
+          "type": "text",
+          "settings": {
+            "text": "Limited Edition Collection | Eco-Conscious | Raw and Irresistible",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1",
+        "147ed3ad-dbe9-4668-9f28-39062c0b57a4"
+      ],
+      "custom_css": [
+        "div {height: 32px;}",
+        " {font-weight: thin;}",
+        "span {font-weight: 300; font-size: 14px;}"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 16,
+        "text_uppercase": false,
+        "image_size": "small",
+        "color_bg": "#151515",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "0c467e92-a72a-4749-a115-b39616437b6b": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_GMBgXk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_2_360_x360_b09725a9-cbd5-4080-9c62-04ba8a3d1eef.png",
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_GMBgXk"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "mwidget_NAaUxK": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_8k6yQC": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png",
+            "heading_text": "Dresses",
+            "button_link": "shopify:\/\/collections\/dresses-date"
+          }
+        },
+        "image_item_YnixeJ": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "heading_text": "Co-ords",
+            "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
+        },
+        "image_item_MLUAC8": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.png",
+            "heading_text": "Bottom wear",
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
+          }
+        },
+        "image_item_ABtpDQ": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png",
+            "heading_text": "Top wear",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_8k6yQC",
+        "image_item_YnixeJ",
+        "image_item_MLUAC8",
+        "image_item_ABtpDQ"
+      ],
+      "settings": {
+        "main_heading": "",
+        "bg_color": "#fff4e2",
+        "text_color": ""
+      }
+    },
+    "cc265b0e-27de-4374-a086-654be84e48fe": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bold_n_beauty.png",
+            "slide_link": "shopify:\/\/products\/date-chic-red-lycra-satin-skirt",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "95cdd355-0d62-4432-a39e-f29896ce300a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096049_bc76ce15-9661-4776-b7a9-73987754b721.png",
+            "slide_link": "shopify:\/\/products\/date-chic-lycra-satin-black-corset-detail-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_RewRja": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096051_fbba9a47-2ff9-4f4a-9e9d-4cad598bb8c1.png",
+            "slide_link": "shopify:\/\/products\/date-classy-black-lycra-satin-skirt",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_R9PDXi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096052.png",
+            "slide_link": "shopify:\/\/products\/date-timeless-lycra-satin-white-halter-neck-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3",
+        "95cdd355-0d62-4432-a39e-f29896ce300a",
+        "slide_RewRja",
+        "slide_R9PDXi"
+      ],
+      "custom_css": [
+        ".slideshow__slide {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "slideshow_MQn6Jh": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_8cy6WM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/celeb_spotted.png",
+            "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_8cy6WM"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1f40935b-b1ff-4d3b-a46e-841cbd995ed2": {
+      "type": "slideshow",
+      "blocks": {
+        "7f0130a8-7d0e-40ba-8011-c1b22d72af9a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_x320_bb146728-258c-4dec-9abc-b360d1533540.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "7f0130a8-7d0e-40ba-8011-c1b22d72af9a"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE_-_Component_1.png",
+            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3"
+      ],
+      "custom_css": [
+        ".slideshow__slide {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "6cce79bf-50eb-4239-b314-7280d3977c6d": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_X9fPAx": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_8.jpg",
+            "name": "Geri",
+            "subname": "",
+            "price": "₹1,740",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-chic-cotton-paper-bag-waist-trousers"
+          }
+        },
+        "34488929-1868-41e5-ae34-70b08c8d1b69": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_5.jpg",
+            "name": "Evelyn",
+            "subname": "",
+            "price": "₹2390",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-sleek-cotton-lycra-fitted-dress"
+          }
+        },
+        "collection_697nU8": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_7.jpg",
+            "name": "Abbey",
+            "subname": "",
+            "price": "₹1,690",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-casual-cotton-checked-skater-skirt"
+          }
+        },
+        "0d92ef2b-2fb0-40cc-981a-d0e8e5020328": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_1.jpg",
+            "name": "Betty Co-ords",
+            "subname": "",
+            "price": "₹2,590",
+            "strikePrice": "₹3080",
+            "url": "shopify:\/\/products\/veronicas-sleek-cotton-checked-co-ords"
+          }
+        },
+        "713521ea-3a2e-4f52-9e72-df85fcf39035": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_4.jpg",
+            "name": "Sabrina",
+            "subname": "",
+            "price": "₹2,490",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+          }
+        },
+        "18ad2472-f6d1-4ecf-a4d2-6109819f7f4f": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_6.jpg",
+            "name": "Cora",
+            "subname": "",
+            "price": "₹1,890",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-comfy-cotton-check-dress"
+          }
+        }
+      },
+      "block_order": [
+        "collection_X9fPAx",
+        "34488929-1868-41e5-ae34-70b08c8d1b69",
+        "collection_697nU8",
+        "0d92ef2b-2fb0-40cc-981a-d0e8e5020328",
+        "713521ea-3a2e-4f52-9e72-df85fcf39035",
+        "18ad2472-f6d1-4ecf-a4d2-6109819f7f4f"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "",
+        "bg_color": "#fff4e2",
+        "heading_color": "#000000",
+        "name_color": "#000000",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "button_url": "shopify:\/\/collections\/veronicas-all-collection",
+        "button_text": "Explore Eco Chic",
+        "carouselCardWidth": "45"
+      }
+    },
+    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE_-_Component_2.png",
+            "slide_link": "shopify:\/\/collections\/cityscape",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
+      ],
+      "custom_css": [
+        ".slideshow__slide {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94": {
+      "type": "collection-carousel",
+      "blocks": {
+        "aad3fa41-6e3e-4769-b3ec-32bfc7dceca7": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_VWWDR2336014901_1737879b-1e30-4750-8809-c738899c93d1.jpg",
+            "name": "Nivi",
+            "subname": "",
+            "price": "₹2,490",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/navy-schiffli-dress-with-puff-sleeves"
+          }
+        },
+        "f8b8d995-c209-48d5-8280-f416f6c0559d": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_VWWDR2336017002_da8900fe-1ecc-4503-8cda-ff53815f7ddc.jpg",
+            "name": "Azmin",
+            "subname": "",
+            "price": "₹2,140",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/fit-and-flare-dress-with-pockets"
+          }
+        },
+        "e5e4b869-f3fc-4978-b71c-d324d81d2f63": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_VWWDR2336011401_496c4ccb-eea8-45cd-a098-793658bee6c5.jpg",
+            "name": "Zora",
+            "subname": "",
+            "price": "₹2,240",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/frill-flare-midi-dress-with-pockets"
+          }
+        },
+        "476773b0-f718-4ddb-978b-7924b452505b": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_VWWDR2336010402_1_f32bf54d-9cf2-4627-8dae-f0b0224c9a4c.jpg",
+            "name": "Viha",
+            "subname": "",
+            "price": "₹2,090",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/ruby-reverie-wrap-blazer-dress-with-pockets"
+          }
+        },
+        "collection_R9wbim": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_VWWDR2336012802_7bc120a3-4b27-4e5b-b11f-0480ca7a27de.jpg",
+            "name": "Zayna",
+            "subname": "",
+            "price": "₹2,040",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/berry-pop-denim-dress"
+          }
+        }
+      },
+      "block_order": [
+        "aad3fa41-6e3e-4769-b3ec-32bfc7dceca7",
+        "f8b8d995-c209-48d5-8280-f416f6c0559d",
+        "e5e4b869-f3fc-4978-b71c-d324d81d2f63",
+        "476773b0-f718-4ddb-978b-7924b452505b",
+        "collection_R9wbim"
+      ],
+      "custom_css": [
+        ".collection-carousel {padding-top: 20px; height: auto; padding-bottom: 0px;}",
+        ".heading {font-family: Inter;}",
+        ".collection-carousel .flex-box .flex-box__item {flex-basis: 55%;}",
+        ".collection-carousel .flex-box .image {margin-bottom: 0px;}",
+        ".collection-carousel .flex-box p {font-size: 14px;}"
+      ],
+      "settings": {
+        "heading": "",
+        "bg_color": "#fff4e2",
+        "heading_color": "#000000",
+        "name_color": "#000000",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "button_url": "shopify:\/\/collections\/cityscape",
+        "button_text": "View All",
+        "carouselCardWidth": "45"
+      }
+    },
+    "slideshow_faEerE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_bdTdRA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/180.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_bdTdRA"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "collection_carousel_Ypt6Qk": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_iE77RU": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/polly.jpg",
+            "name": "",
+            "subname": "Luxe Comfort",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/recycled-polyester"
+          }
+        },
+        "collection_kVWTmD": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096427.png",
+            "name": "",
+            "subname": "Breezy, Light and Gentle",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cotton"
+          }
+        },
+        "collection_CWBzQe": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096428.png",
+            "name": "",
+            "subname": "Buttery-Soft and Lightweight",
+            "price": "",
+            "strikePrice": "",
+            "url": ""
+          }
+        },
+        "collection_Xq4z7B": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/modal_5645ef1e-2c70-45d0-8a70-a0491a5b32b5.jpg",
+            "name": "",
+            "subname": "Feels Like Second Skin",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/modal"
+          }
+        },
+        "collection_t43xpN": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lyocell.jpg",
+            "name": "",
+            "subname": "Royally Cozy",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/tencel"
+          }
+        }
+      },
+      "block_order": [
+        "collection_iE77RU",
+        "collection_kVWTmD",
+        "collection_CWBzQe",
+        "collection_Xq4z7B",
+        "collection_t43xpN"
+      ],
+      "settings": {
+        "heading": "",
+        "bg_color": "#fff4e2",
+        "heading_color": "#000000",
+        "name_color": "#000000",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "button_url": "",
+        "button_text": "",
+        "carouselCardWidth": "60"
+      }
+    },
+    "slideshow_3ANpL7": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_p7tQqU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/virgio_tribe.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_p7tQqU"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "57e4c19e-e72d-42fc-b2a5-f565d4d34148": {
+      "type": "social-images-collections",
+      "blocks": {
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096287.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/floral-fireworks-babydoll-chic-dress?_pos=1&_psq=eni&_ss=e&_v=1.0"
+          }
+        },
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096285.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/black-floral-frill-dress-with-pockets?_pos=1&_sid=e91477e32&_ss=r"
+          }
+        },
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096286.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/animal-print-v-neck-mini-dress?_pos=1&_psq=nura&_ss=e&_v=1.0"
+          }
+        },
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096282_2.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/chic-block-print-shirt-dress-with-pockets?_pos=1&_psq=krita&_ss=e&_v=1.0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12"
+      ],
+      "custom_css": [
+        ".social-images-collections .image-container::after {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.6) 100% ); z-index: 1;}",
+        ".heading {font-family: Inter;}"
+      ],
+      "settings": {
+        "para_top": "",
+        "heading_top": "Hear it from the #VirgioCircle",
+        "bg_color": "#fff4e2",
+        "colmun_number_tablet": "3",
+        "colmun_number_desktop": "6",
+        "para_bottom": "",
+        "show_svg": false,
+        "button_text": "",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "slideshow_RQ3bpV": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_hRYnng": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_540_gurantee.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_hRYnng"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "16479477632637c9a7",
+    "717f49c0-b204-480f-8dce-b7f6cddf9195",
+    "dcfc8ca7-af12-426a-8f5a-17f79d8c3253",
+    "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
+    "046c3a6b-d955-4c19-9fd6-ce3b9600312d",
+    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
+    "db7c3fd2-75c3-4d85-b865-9a233129c01e",
+    "53793592-7855-498e-a493-5e345669f947",
+    "0d74af2d-097d-4bfe-8103-91bea60148bb",
+    "0c467e92-a72a-4749-a115-b39616437b6b",
+    "mwidget_NAaUxK",
+    "cc265b0e-27de-4374-a086-654be84e48fe",
+    "slideshow_MQn6Jh",
+    "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
+    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
+    "6cce79bf-50eb-4239-b314-7280d3977c6d",
+    "7c2288b9-760f-41be-a885-02548bc5a5c3",
+    "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94",
+    "slideshow_faEerE",
+    "collection_carousel_Ypt6Qk",
+    "slideshow_3ANpL7",
+    "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
+    "slideshow_RQ3bpV"
   ]
 }
