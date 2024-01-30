@@ -11,12 +11,20 @@
 -%}
 
 <style>
-  {% if template contains 'product' %}
-      .header{
-        background:#000 !important;
-      }
-   {% endif %}
+    {% if template contains 'product' %}
+        .header{
+          background:#000 !important;
+        }
+     {% endif %}
+    .hide-logo{
+    display:None
+  }
+  .positionLogo{
+    position: absolute;
+   bottom: 6px; 
+  }
 </style>
+
 
 <header
   id="header"
@@ -38,12 +46,12 @@
   </div>
   {%- style -%}
     :root {
-    	--logo-height: {{ logo_height_range | append: 'px' }};
-    	--logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      --logo-height: {{ logo_height_range | append: 'px' }};
+      --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
     }
     {% unless sticky_header %}
     .header-section {
-    	position: static !important;
+      position: static !important;
     }
     {%- endunless -%}
   {%- endstyle -%}
@@ -78,17 +86,24 @@
         style="--grid-mobile-horizontal-spacing: 16px;"
       >
         {%- for link in section.settings.menu.links -%}
-          <li class="flex-box__item">
+          <li
+            class="mobile-links flex-box__item"
+            data-link-url="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
+          >
             <a
-              href="{{ link.url }}"
-              {% if link.active %}
+              href="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
+              {% if activeLink %}
                 aria-current="page"
               {% endif %}
             >
               <div>
                 {% assign temp_title = link.title | handleize %}
               </div>
-              {{ link.title }}
+              <span> {{ link.title }}</span>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/dots.svg?v=1705494981"
+                class="hide-logo  positionLogo "
+              >
             </a>
           </li>
         {% endfor %}
@@ -135,6 +150,25 @@
     }
   </script>
 {%- endif -%}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth <= 750) {
+      var mobileLinks = document.getElementsByClassName('mobile-links');
+      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+      var index = mobileLinksArrayConverted.findIndex(function (link) {
+        let arraySplit = window.location.pathname.split('/');
+        let urlpath = arraySplit[arraySplit.length - 1];
+        return link.dataset.linkUrl.indexOf(urlpath) > -1;
+      });
+      if (index > -1) {
+        var parentElement = mobileLinks[index];
+        var imgElement = parentElement.querySelector('.hide-logo');
+        imgElement.classList.remove('hide-logo');
+      }
+    }
+  });
+  </script>
 
 {% schema %}
 {

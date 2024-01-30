@@ -24,6 +24,7 @@
     }
     }
 </style>
+<div style= "background-color: {{section.settings.bg_color}}">
 <div class="social-images-collections{% if section.settings.show_on_mobile == false %} small-hide{% else %} swipe-mobile{% endif %}{% if section.settings.show_on_desktop == false %} medium-hide large-up-hide{% else %} swipe-desktop{% endif %}">
   <div class="section-spacing-padding {% if section.settings.disable_top_spacing %} section-spacing--disable-top {% endif %} {% if section.settings.disable_bottom_spacing %} section-spacing--disable-bottom {% endif %}">
     <div class="top-text text-center">
@@ -71,7 +72,7 @@
           </div>
         {% endfor %}
       </div>
-      <div class="bottom-text">
+      {% comment %} <div class="bottom-text">
         <div class="text-center">
           {% if section.settings.para_bottom %}
             <p>{{ section.settings.para_bottom }}</p>
@@ -98,10 +99,12 @@
             </a>
           {% endif %}
         </div>
-      </div>
+      </div> {% endcomment %}
     </div>
   </div>
 </div>
+</div>
+
 
 {% schema %}
 {
@@ -118,6 +121,12 @@
       "id": "heading_top",
       "label": "Top Heading",
       "default": "Enter heading text"
+    },
+      {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Colour",
+      "default": "#FFF"
     },
     {
       "type": "select",

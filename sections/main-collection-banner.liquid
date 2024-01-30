@@ -34,9 +34,14 @@
   class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}"
   style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}"
 >
-  <div class="collection-banner--breadcrumbs">
+  <!-- <div class="collection-banner--breadcrumbs">
     {%- render 'breadcrumbs' -%}
-  </div>
+  </div> -->
+
+<a class="right-arrow-button" href="javascript:history.back()">
+      {% render 'home-icon' %}
+    </a>
+  
   <div class="row full-width-row">
     <div class="small-12 columns">
       {%- if show_collection_image and image -%}

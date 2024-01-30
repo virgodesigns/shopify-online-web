@@ -1,0 +1,30 @@
+.account {
+  display: flex;
+}
+.account_image {
+  width: 20%;
+}
+.tracking {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .account {
+    display: block;
+  }
+  .account_content {
+    margin: 0 auto !important;
+  }
+  .account_content-in {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .account_image {
+    width: 40%;
+    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+  }
+  .tracking {
+    margin-right: 0;
+  }
+}

@@ -8,10 +8,11 @@
 }
 
 .social-images-collections .images {
-  margin: 0px 0px 16px 0px;
+  margin: 0;
   flex-wrap: nowrap;
   flex: 1 0 100;
   overflow-y: auto;
+  padding-bottom: 36px;
 }
 
 .social-images-collections .images .flex-box__item {
@@ -59,7 +60,7 @@
 .social-images-collections .bottom-text {
   display: flex;
   justify-content: center;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .social-images-collections .bottom-text > div {
@@ -147,7 +148,6 @@
   }
 }
 
-
 .bottom-text button {
-    display: none;
+  display: none;
 }

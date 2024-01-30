@@ -1,17 +1,14 @@
 {{ 'collection-carousel.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-  .collection-carousel {
+  /* .collection-carousel {
     background-color: {{ section.settings.bg_color }};
-  }
-
-  .collection-carousel .heading {
+  } */
+  /* .collection-carousel .heading {
     color: {{ section.settings.heading_color }};
-  }
+  } */
 
-  .collection-carousel .flex-box p {
-    color: {{ section.settings.name_color }};
-  }
+  
 {% endstyle %}
 <style>
   {% if section.settings.show_on_mobile == false %}
@@ -37,10 +34,11 @@
     }
     }
 </style>
-<div class="collection-carousel{% if section.settings.show_on_mobile == false %} small-hide{% else %} swipe-mobile{% endif %}{% if section.settings.show_on_desktop == false %} medium-hide large-up-hide{% else %} swipe-desktop{% endif %}">
-  <div class="page-width-cust">
+<div style= "background-color: {{section.settings.bg_color}} "  
+  class="collection-carousel{% if section.settings.show_on_mobile == false %} small-hide{% else %} swipe-mobile{% endif %}{% if section.settings.show_on_desktop == false %} medium-hide large-up-hide{% else %} swipe-desktop{% endif %}">
+    <div class="page-width-cust">
     {% if section.settings.heading %}
-      <div class="h1 heading">
+      <div class="h1 heading" style="color:{{ section.settings.heading_color }}">
         {{ section.settings.heading }}
       </div>
     {% endif %}
@@ -54,7 +52,7 @@
       "
     >
       {% for block in section.blocks %}
-        <div class="flex-box__item">
+        <div class="flex-box__item" style="{% if section.settings.carouselCardWidth  %}flex-basis: {{section.settings.carouselCardWidth}}%{% endif %};">
           {% if block.settings.url %}
             <a href="{{ block.settings.url }}">
           {% endif %}
@@ -67,20 +65,33 @@
           {% if block.settings.url %}
             <a href="{{ block.settings.url }}">
           {% endif %}
-          <p class="name">{{ block.settings.name }}</p>
+
+         
+          <div class="product-title" style="color:{{ section.settings.name_color }}">{{ block.settings.name }}</div>
+           <div class="subtitle" style="color:{{ section.settings.name_color }}">{{ block.settings.subname }}</div>
+            <div class="price" style="color:{{ section.settings.name_color }}">{{ block.settings.price }}
+              {% if block.settings.strikePrice %}
+                <span class="strikePrice">{{ block.settings.strikePrice }}</span>
+              {% endif %}
+            </div>
+          
+
+
           {% if block.settings.url %}
             </a>
           {% endif %}
         </div>
       {% endfor -%}
     </div>
+
     {%- if section.settings.button_url != blank and section.settings.button_text != blank %}
       <a href="{{ section.settings.button_url }}">
-        <button class="button white">
+        <button class="button">
           <span>{{ section.settings.button_text }}</span>
         </button>
       </a>
     {% endif %}
+
   </div>
 </div>
 
@@ -94,6 +105,7 @@
       "label": "Heading",
       "default": "Our Collection"
     },
+  
     {
       "type": "color",
       "id": "bg_color",
@@ -104,13 +116,13 @@
       "type": "color",
       "id": "heading_color",
       "label": "Heading Colour",
-      "default": "#000"
+      "default": "#FFF"
     },
     {
       "type": "color",
       "id": "name_color",
       "label": "Name Colour",
-      "default": "#000"
+      "default": "#FFF"
     },
     {
       "type": "checkbox",
@@ -144,6 +156,11 @@
       "type": "image_picker",
       "id": "parallax_image_mobile",
       "label": "Parallax Image"
+    },
+    {
+      "type": "text",
+      "id": "carouselCardWidth",
+      "label": "Carousel Width"
     }
   ],
   "blocks":[
@@ -159,8 +176,26 @@
         {
           "type": "text",
           "id": "name",
-          "label": "Name",
-          "default": "collection"
+          "label": "Name"
+         
+        },
+       {
+          "type": "text",
+          "id": "subname",
+          "label": "SubName"
+         
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price"
+        
+        },
+        {
+          "type": "text",
+          "id": "strikePrice",
+          "label": "Strike price"
+         
         },
         {
           "type": "url",

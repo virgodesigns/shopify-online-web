@@ -17,12 +17,12 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
+  margin-top: 26px;
 }
 
 .collection-carousel .flex-box {
   flex-wrap: nowrap;
   overflow: auto;
-  /* column-gap: 8px; */
   margin-bottom: 23px;
 }
 
@@ -46,12 +46,46 @@
   position: relative;
 }
 
-.collection-carousel .flex-box .name {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 3px; /* Adjust this value to control the gap between text and underline */
+.collection-carousel .flex-box .product-title {
+  color: var(--primary-dark-primary-900111111, #111);
+  font-family: Inter;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+  margin-top: 1rem;
 }
 
+.collection-carousel .flex-box .subtitle {
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+  color: var(--primary-dark-primary-900111111, #111);
+}
+
+.collection-carousel .flex-box .strikePrice {
+  color: var(--primary-dark-primary-400-aaaaaa, #aaa);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+  text-decoration: line-through;
+}
+.collection-carousel .flex-box .price {
+  color: var(--primary-dark-primary-900111111, #111);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 4px;
+}
 .collection-carousel .flex-box .name::before {
   content: "";
   position: absolute;
@@ -94,7 +128,7 @@
 
 @media screen and (min-width: 768px) {
   .collection-carousel {
-    padding-top:3rem;
+    padding-top: 3rem;
     align-items: flex-end;
     padding-bottom: 0px;
   }

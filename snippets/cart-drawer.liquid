@@ -231,13 +231,13 @@
         {%- endif -%}
       </div>
       <div class="scrolling-text-container">
-    <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
-        <div class="scrolling-text">
+        <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+          <div class="scrolling-text">
             <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
             <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
+          </div>
         </div>
-    </div>
-  </div>
+      </div>
       {%- if cart != empty -%}
         <div class="side-panel-footer">
           {%- if settings.cart_drawer_notes -%}
@@ -290,7 +290,7 @@
                   <button
                     type="button"
                     id="checkout2"
-                    onclick="handleFloCheckoutBtn()"
+                    onclick="handleFloCheckoutBtn();openCheckout();"
                     class="button full checkout"
                     name="checkout2"
                   >
@@ -323,61 +323,60 @@
   </div>
 {%- endif -%}
 
-
 <style>
   /* Container styles */
-.scrolling-text-container {
+  .scrolling-text-container {
     border-radius: 4px;
-    color:#fff;
+    color: #fff;
     overflow: hidden;
-}
+  }
 
-/* Inner container styles */
-.scrolling-text-inner {
+  /* Inner container styles */
+  .scrolling-text-inner {
     display: flex;
     white-space: nowrap;
     font-size: 14px;
     font-weight: 600;
     padding: 8px 0;
-}
+  }
 
-/* Text styles */
-.scrolling-text {
+  /* Text styles */
+  .scrolling-text {
     display: flex;
-}
+  }
 
-.scrolling-text-item {
+  .scrolling-text-item {
     padding: 0 30px;
-}
+  }
 
-/* Apply the animation to the text items */
-.scrolling-text-inner>div {
+  /* Apply the animation to the text items */
+  .scrolling-text-inner > div {
     animation: var(--direction) var(--marquee-speed) linear infinite;
-}
+  }
 
-/* Pause the animation when a user hovers over it */
-.scrolling-text-container:hover .scrolling-text-inner>div {
+  /* Pause the animation when a user hovers over it */
+  .scrolling-text-container:hover .scrolling-text-inner > div {
     animation-play-state: paused;
-}
+  }
 
-/* Setting the Animation using Keyframes */
-@keyframes scroll-left {
+  /* Setting the Animation using Keyframes */
+  @keyframes scroll-left {
     0% {
-        transform: translateX(0%);
+      transform: translateX(0%);
     }
 
     100% {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
-}
+  }
 
-@keyframes scroll-right {
+  @keyframes scroll-right {
     0% {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
 
     100% {
-        transform: translateX(0%);
+      transform: translateX(0%);
     }
-}
+  }
 </style>

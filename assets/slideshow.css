@@ -1,4 +1,3 @@
-
 /* enable Flickity by default */
 .slideshow:after {
   content: "flickity";
@@ -395,7 +394,8 @@ tab-switch {
   }
 }
 .slideshow .flickity-page-dots li {
-  border-color: #fff;
+  border: 0.5px solid #000000;
+  background-color: #ffffff;
 }
 .slideshow .flickity-page-dots li.is-selected {
   background-color: #000;

@@ -1,101 +1,124 @@
 <div class="image-container">
   {% assign image_count = 0 %}
-  <div class="widget__heading">{{ section.settings.main_heading }}</div>
-  <div class="image-item__image">
-    {% for block in section.blocks %}
-      {% if block.settings.image != blank %}
-        <div>
-          <a href="{{ block.settings.button_link }}">
-            {% render 'responsive-picture', desktopImage: block.settings.image, mobileImage: block.settings.image %}
-            {% assign image_count = image_count | plus: 1 %}
-            <div class="image-text__heading heading-{{ block.id }}">{{ block.settings.heading_text }}</div>
-          </a>
-        </div>
-      {% endif %}
-    {% endfor %}
+  <div style="background-color:{{ section.settings.bg_color }}">
+    {% if section.settings.main_heading != blank %}
+      <div class="widget__heading" style="color:{{ section.settings.text_color }}">
+        {{ section.settings.main_heading }}
+      </div>
+    {% endif %}
+    <div class="image-item__image">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank and block.settings.button_link != blank %}
+          {% assign moduloNum = section.blocks.size | modulo: 2 %}
+          <div class="image-item__image_card {% if moduloNum == 1 %} image-item__image_card_three {% endif %}">
+            {% if block.settings.button_link != blank -%}
+              <a href="{{ block.settings.button_link }}">
+                <div>
+                  {% render 'responsive-picture',
+                    desktopImage: block.settings.image,
+                    mobileImage: block.settings.image
+                  %}
+                </div>
+                {% assign image_count = image_count | plus: 1 %}
+                <div class="image-text__heading heading-{{ block.id }}" style="color:{{ section.settings.text_color }}">
+                  {{ block.settings.heading_text }}
+                </div>
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
 <style>
   @media only screen and (min-width: 769px) {
     .image-container {
-        display:none;
-      }
+      display: none;
     }
-  .image {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
   }
-  .image-text__heading{
-   color: var(--primary-dark-primary-900111111, #111);
+
+  .image-item__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .image-text__heading {
+    color: var(--primary-dark-primary-900111111, #111);
     text-align: center;
-    margin:12px;
+    margin: 12px;
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 150% */
+    line-height: 18px;
     letter-spacing: 0.24px;
   }
-  .widget__heading{
-    font-size:18px;
-    font-weight:600;
-    text-align:center;
-    margin:1rem;
+
+  .widget__heading {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 1rem;
   }
-  .image-item__image{
-    display:grid;
-    column-gap: 14px;
-    display: grid;
-    column-gap: 14px;
-    padding: 14px 14px 0 14px
+
+  .image-item__image_card {
+    width: 50%;
+    padding: 0 0.4rem;
   }
-  
-  {% if image_count == 3 %}
-     .image-item__image {
-        grid-template-columns: repeat(3, 1fr);
-      }
-  {% else %}
-    .image-item__image {
-        grid-template-columns: repeat(2, 1fr);
-      }
-  {% endif %}
+
+  .image-item__image_card_three {
+    width: 33.3%;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .image-item__image_card {
+      width: 33.3%;
+      padding: 0 0.4rem;
+    }
+  }
 </style>
 
 {% schema %}
 {
   "name": "mobile Widget",
-  "class": "homepage-section",
-   "settings": [
+  "class": "homepage-sections",
+  "settings": [
     {
       "type": "text",
       "id": "main_heading",
       "label": "Heading For Widget"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Colour"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color"
     }
-   ],
-    "blocks": [
+  ],
+  "blocks": [
     {
       "name": "add image",
       "type": "image-item",
       "limit": 4,
       "settings": [
-          {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image (Mobile)",
-        "info": "200px 200px .jpg recommended"
-          },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (Mobile)",
+          "info": "200px 200px .jpg recommended"
+        },
         {
           "type": "text",
           "id": "heading_text",
           "label": "Heading text"
-        },
-        {
-          "type": "color",
-          "id": "heading_text_color",
-          "label": "Heading text color",
-          "default": "#111111"
         },
         {
           "type": "url",
@@ -103,11 +126,6 @@
           "label": "Button link"
         }
       ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "mobile Widget collections"
     }
   ]
 }
