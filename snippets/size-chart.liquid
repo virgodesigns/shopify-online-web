@@ -1,15 +1,19 @@
 <div class="size-chart-container">
   <div class="size-chart-wrapper">
-    {% assign sizeChartData = product.metafields.custom.size_chart.value %}
-    {% for sizechartheading in sizeChartData %}
-      <div
-        class="tab--heading{% if forloop.first %} is--active{% endif %}"
-        data-tab="{{ sizechartheading.id | handleize }}"
-      >
-        {{ sizechartheading.id | replace: '_', ' ' }}
-      </div>
-    {% endfor %}
-  </div>
+  {% assign sizeChartData = product.metafields.custom.size_chart.value %}
+  {% for sizechartheading in sizeChartData %}
+    <div
+      class="tab--heading{% if forloop.first %} is--active{% endif %}"
+      data-tab="{{ sizechartheading.id | handleize }}"
+    >
+      {% assign words = sizechartheading.id | split: '_' %}
+      {% for word in words %}
+        {% capture capitalizedWord %}{{ word | capitalize }}{% endcapture %}
+        {{ capitalizedWord }}{% unless forloop.last %} {% endunless %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
   {% assign sizeChartData = product.metafields.custom.size_chart.value %}
   {% for chart in sizeChartData %}
     <div

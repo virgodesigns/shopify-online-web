@@ -361,6 +361,7 @@
         "0d86c2a6-f30c-40b5-9391-99b5bb12959b": {
           "type": "image",
           "settings": {
+            "banner_link": "",
             "subheading": "Add a tagline",
             "title": "Column",
             "text": "Pair text with an image to focus on your chosen image",
@@ -373,6 +374,7 @@
         "0e695f58-8205-43ec-8762-4137844e2d33": {
           "type": "image",
           "settings": {
+            "banner_link": "",
             "subheading": "Add a tagline",
             "title": "Column",
             "text": "Pair text with an image to focus on your chosen image",
@@ -400,7 +402,9 @@
         "overlay_color": "#000000",
         "overlay_opacity": 40,
         "disable_top_spacing": false,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
       }
     }
   },

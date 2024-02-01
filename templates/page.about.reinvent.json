@@ -6,12 +6,15 @@
         "23c05a65-fd58-4945-b22a-3ebcf7903e48": {
           "type": "heading",
           "settings": {
+            "text": "Affordable. Gorgeous and Beauty Which You Deserves",
+            "size": "h1"
           }
         },
         "05722c02-ce4f-461f-a041-3e159cddb760": {
           "type": "text",
           "settings": {
-            "text": "<p>What you wear is how you present yourself to the world, especially today when human contacts go so fast. Fashion is instant language. Fashion is made to become unfashionable. I'm an accomplice to helping women get what they want. Being one step ahead of a fashion trend is not so important to me. What matters is to always forge ahead. Beauty is perfect in its imperfections, so you just have to go with the imperfections.<\/p>"
+            "text": "<p>What you wear is how you present yourself to the world, especially today when human contacts go so fast. Fashion is instant language. Fashion is made to become unfashionable. I'm an accomplice to helping women get what they want. Being one step ahead of a fashion trend is not so important to me. What matters is to always forge ahead. Beauty is perfect in its imperfections, so you just have to go with the imperfections.<\/p>",
+            "size": "text-size-regular"
           }
         }
       },
@@ -20,6 +23,15 @@
         "05722c02-ce4f-461f-a041-3e159cddb760"
       ],
       "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#1e4e1c",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
       }
     },
     "aa625e0d-88be-4d75-8df5-30c6ed2a30d5": {
@@ -37,6 +49,7 @@
         "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1": {
           "type": "heading",
           "settings": {
+            "text": "Unlock your shine - be more attractive",
             "heading_size": "h2"
           }
         },
@@ -53,9 +66,19 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/c14.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first"
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#fff5e9",
+        "color_text": "#1e4e1c",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "9b5d80c3-a712-486c-be14-8ed726a999d7": {
@@ -64,6 +87,7 @@
         "template--17027745022267__9b5d80c3-a712-486c-be14-8ed726a999d7-1670399999b1d81fbb-1": {
           "type": "heading",
           "settings": {
+            "text": "Self-love comes in all shades of red and pink and brown",
             "heading_size": "h2"
           }
         },
@@ -80,9 +104,19 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/c15.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first"
+        "section_width": "full-width-row-full",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#fce7f1",
+        "color_text": "#1e4e1c",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
       }
     },
     "19ffe627-a09d-44d7-9e06-cfde64314179": {
@@ -92,6 +126,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo-1.png",
+            "image_full_width": false,
+            "retina": true,
             "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -102,6 +138,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo2.png",
+            "image_full_width": false,
+            "retina": true,
             "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -112,6 +150,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo3.png",
+            "image_full_width": false,
+            "retina": true,
             "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -122,6 +162,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo4.png",
+            "image_full_width": false,
+            "retina": true,
             "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -136,9 +178,19 @@
         "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-3"
       ],
       "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "grid",
         "image_ratio": "adapt",
         "columns_desktop": 4,
-        "heading_size": "h5"
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "1822cf42-4957-456b-8fb1-a23fb43b4965": {
