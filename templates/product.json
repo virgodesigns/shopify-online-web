@@ -182,6 +182,21 @@
         "border_separator_full": false
       }
     },
+    "product_pairs_tR6KQe": {
+      "type": "product-pairs",
+      "settings": {
+        "heading": "Similar products",
+        "heading_left": false,
+        "description": "<p>Add a short description for this section<\/p>",
+        "full_width": true,
+        "display_type": "carousel",
+        "columns_desktop": 4,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -217,6 +232,7 @@
     "ace3e86a-9dba-4966-8d72-88d70f4f48c2",
     "1663667027ccd68a19",
     "16623877721f33fb14",
+    "product_pairs_tR6KQe",
     "product-recommendations",
     "6504c889-765e-4951-97dd-2817199cfc89"
   ]
