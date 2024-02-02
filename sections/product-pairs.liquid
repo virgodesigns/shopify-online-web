@@ -14,8 +14,8 @@
   assign disable_bottom_spacing = section.settings.disable_bottom_spacing
   assign card_size_mweb = section.settings.card_size_mweb
   assign card_size_desktop = section.settings.card_size_desktop
-  assign prod_match = product.metafields.custom.product_match.value
-  assign prod_match_arr = product.metafields.custom.product_match | split: ','
+  assign prod_match = product.metafields.custom.product_pairs.value
+  assign prod_match_arr = product.metafields.custom.product_pairs | split: ','
 
   assign product_count = prod_match_arr.size
 
