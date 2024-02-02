@@ -185,7 +185,7 @@
     "product_pairs_tR6KQe": {
       "type": "product-pairs",
       "settings": {
-        "heading": "Similar products",
+        "heading": "Can Be Paired With",
         "heading_left": false,
         "description": "",
         "full_width": true,
@@ -193,8 +193,8 @@
         "columns_desktop": 4,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "product-recommendations": {
