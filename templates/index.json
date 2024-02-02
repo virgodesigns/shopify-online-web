@@ -841,97 +841,29 @@
         "disable_bottom_spacing": true
       }
     },
-    "6cce79bf-50eb-4239-b314-7280d3977c6d": {
-      "type": "collection-carousel",
-      "blocks": {
-        "collection_X9fPAx": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_8.jpg",
-            "name": "Geri",
-            "subname": "",
-            "price": "₹1,740",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-chic-cotton-paper-bag-waist-trousers"
-          }
-        },
-        "34488929-1868-41e5-ae34-70b08c8d1b69": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2_5.jpg",
-            "name": "Evelyn",
-            "subname": "",
-            "price": "₹2,390",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-sleek-cotton-lycra-fitted-dress"
-          }
-        },
-        "collection_697nU8": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_7.jpg",
-            "name": "Abbey",
-            "subname": "",
-            "price": "₹1,690",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-casual-cotton-checked-skater-skirt"
-          }
-        },
-        "0d92ef2b-2fb0-40cc-981a-d0e8e5020328": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3_1.jpg",
-            "name": "Betty Co-ords",
-            "subname": "",
-            "price": "₹2,590",
-            "strikePrice": "₹3080",
-            "url": "shopify:\/\/products\/veronicas-sleek-cotton-checked-co-ords"
-          }
-        },
-        "713521ea-3a2e-4f52-9e72-df85fcf39035": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2_4.jpg",
-            "name": "Sabrina",
-            "subname": "",
-            "price": "₹2,490",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
-          }
-        },
-        "18ad2472-f6d1-4ecf-a4d2-6109819f7f4f": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_6.jpg",
-            "name": "Cora",
-            "subname": "",
-            "price": "₹1,890",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-comfy-cotton-check-dress"
-          }
-        }
-      },
-      "block_order": [
-        "collection_X9fPAx",
-        "34488929-1868-41e5-ae34-70b08c8d1b69",
-        "collection_697nU8",
-        "0d92ef2b-2fb0-40cc-981a-d0e8e5020328",
-        "713521ea-3a2e-4f52-9e72-df85fcf39035",
-        "18ad2472-f6d1-4ecf-a4d2-6109819f7f4f"
-      ],
-      "custom_css": [
-
-      ],
+    "featured_collection_UbiGCE": {
+      "type": "featured-collection",
       "settings": {
         "heading": "",
+        "heading_left": false,
         "bg_color": "#fff4e2",
-        "heading_color": "#000000",
-        "name_color": "#000000",
+        "button_url": "shopify:\/\/collections\/veronicas-all-collection",
+        "button_text": "Explore Eco-Chic",
         "show_on_desktop": false,
         "show_on_mobile": true,
-        "button_url": "shopify:\/\/collections\/veronicas-all-collection",
-        "button_text": "Explore Eco Chic",
-        "carouselCardWidth": "45"
+        "url": "shopify:\/\/collections\/veronicas-all-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "veronicas-all-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "7c2288b9-760f-41be-a885-02548bc5a5c3": {
@@ -981,6 +913,31 @@
         "transition": "fade",
         "show_on_desktop": false,
         "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_BYnUMz": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#fff4e2",
+        "button_url": "shopify:\/\/collections\/cityscape",
+        "button_text": "View All",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/cityscape",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "cityscape",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1051,6 +1008,7 @@
         "476773b0-f718-4ddb-978b-7924b452505b",
         "collection_R9wbim"
       ],
+      "disabled": true,
       "custom_css": [
         ".collection-carousel {padding-top: 20px; height: auto; padding-bottom: 0px;}",
         ".heading {font-family: Inter;}",
@@ -1370,8 +1328,9 @@
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
-    "6cce79bf-50eb-4239-b314-7280d3977c6d",
+    "featured_collection_UbiGCE",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
+    "featured_collection_BYnUMz",
     "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94",
     "slideshow_faEerE",
     "collection_carousel_Ypt6Qk",
