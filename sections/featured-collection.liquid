@@ -15,6 +15,7 @@
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 	assign columns_class = 'small-6 medium-6 large-4'
+	
 	case columns_desktop
 		when 2
 			assign columns_class = 'small-6 medium-6'
@@ -32,7 +33,8 @@
 		assign section_heading_button = featured_collection
 	endif
 -%}
-<div class="featured-collection{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+<div style= "background-color: {{section.settings.bg_color}} "  
+ class="featured-collection{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
 	<div class="row{% if full_width %} full-width-row{% endif %}">
 		<div class="small-12 columns">
 			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left, section_heading_button: section_heading_button %}
@@ -40,9 +42,10 @@
 				<div id="product-grid-{{ section.id }}" class="products row {{ display_type }}">
 					{%- if featured_collection != blank -%}
 						{%- for product in featured_collection.products limit: product_limit -%}
-							<div class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
-								{% render 'product-card', product_card_product: product %}
-							</div>
+							<div class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}" style="max-width: {{ section.settings.carouselCardWidth }}%">
+                                {% render 'product-card', product_card_product: product %}
+                            </div>
+
 						{%- endfor -%}
 					{%- else -%}
 						{%- for i in (1..product_limit) -%}
@@ -64,9 +67,23 @@
 				</div>
 				{%- endif -%}
 			</div>
+           
+			 {%- if section.settings.button_url != blank and section.settings.button_text != blank %}
+             <a href="{{ section.settings.button_url }}">
+        <button class="button">
+          <span>{{ section.settings.button_text }}</span>
+        </button>
+              </a>
+          {% endif %}
+
 		</div>
+
+		  
+
 	</div>
 </div>
+</div>
+
 
 {% schema %}
 {
@@ -78,12 +95,53 @@
       "label": "Heading",
       "default": "Featured Collection"
     },
-		{
-			"type": "checkbox",
-			"id": "heading_left",
-			"default": false,
-			"label": "Left align heading"
-		},
+	{
+		"type": "checkbox",
+		"id": "heading_left",
+		"default": false,
+		"label": "Left align heading"
+	},
+
+	{
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Colour",
+      "default": "#FFF"
+    },
+	 {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    },
+	{
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Know more"
+    },
+    
+	{
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "default": false,
+      "label": "Show on Desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "default": true,
+      "label": "Show on Mobile"
+    },
+    {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        },
+{
+      "type": "text",
+      "id": "carouselCardWidth",
+      "label": "Carousel Width"
+    },
     {
       "type": "richtext",
       "id": "description",
