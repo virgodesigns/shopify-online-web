@@ -187,7 +187,7 @@
       "settings": {
         "heading": "Similar products",
         "heading_left": false,
-        "description": "<p>Add a short description for this section<\/p>",
+        "description": "",
         "full_width": true,
         "display_type": "carousel",
         "columns_desktop": 4,
