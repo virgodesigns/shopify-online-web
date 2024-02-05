@@ -1,6 +1,4 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
-{{ 'main-account.css' | asset_url | stylesheet_tag }}
-
 <div class="section-spacing" id="account-shopify">
   <div class="row">
     <div class="small-12 columns">
@@ -21,198 +19,189 @@
   </div>
   <div class="row">
     <div class="small-12 large-8 columns myaccount-content">
-      <div id="data-container"></div>
-      <div id="loader">Loading...</div>
+      <h4 style="font-weight:500">{{ 'customer.orders.title' | t }}</h4>
+      {% paginate customer.orders by 6 %}
+        {%- if customer.orders.size > 0 -%}
+          {% for order in customer.orders %}
+            {% comment %} <a> {% endcomment %}
 
-      <div id="pagination-container">
-        <button id="loadMoreButton" class="order-btn" onclick="loadMoreData()" disabled>Load More</button>
-      </div>
-
-      {% comment %}
-        <h4 style="font-weight:500">{{ 'customer.orders.title' | t }}</h4>
-        {% paginate customer.orders by 6 %}
-          {%- if customer.orders.size > 0 -%}
-            {% for order in customer.orders %}
-              {% comment %} <a> {% endcomment %}
-
-              <div
-                style="
-                  border: 1px solid #0000001a;
-                  padding: 1rem;
-                  margin-bottom: 1rem;
-                "
-              >
-                <a href="{{ order.customer_url }}">
-                  <div
-                    style="
-                                         display:flex; justify-content:space-between;
-                      margin-bottom: 1rem;
-                      border-bottom: 1px solid #e8e8e8;
-                      padding-bottom: 0.5rem;font-weight: 600;
-                      font-size: 14px;
-                    "
-                  >
-                    <div>
-                      <div style="display:flex; justify-content:space-between">
-                        <div
-                          style="display:flex;"
-                        >
-                          <div style="margin-right:0.5rem">Order ID:</div>
-                          <div>{{ order.name }}</div>
-                        </div>
-                      </div>
-                      {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
+            <div
+              style="
+                border: 1px solid #0000001a;
+                padding: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <a href="{{ order.customer_url }}">
+                <div
+                  style="
+                                       display:flex; justify-content:space-between;
+                    margin-bottom: 1rem;
+                    border-bottom: 1px solid #e8e8e8;
+                    padding-bottom: 0.5rem;font-weight: 600;
+                    font-size: 14px;
+                  "
+                >
+                  <div>
+                    <div style="display:flex; justify-content:space-between">
                       <div
-                        style="
-                          font-weight: 400;
-                          font-size: 0.8rem;
-                        "
+                        style="display:flex;"
                       >
-                        {{ 'customer.order.date_html' | t: date: order_date }}
+                        <div style="margin-right:0.5rem">Order ID:</div>
+                        <div>{{ order.name }}</div>
                       </div>
                     </div>
-                    <div>
-                      {% if order.cancelled %}
-                        <div style="color:red;text-align:right">
-                          <div>CANCELLED</div>
-                          <div style="font-weight:400;font-size: 0.8rem;">({{ order.cancel_reason_label }})</div>
-                        </div>
-                      {% else %}
-                        <div style="text-transform:uppercase;text-align:right">{{ order.fulfillment_status_label }}</div>
-                        <div style="color: #888383;font-size: 0.8rem;font-weight:400;text-align:right">
-                          {% if order.financial_status_label == 'Pending' -%}
-                            Payment Pending
-                          {% else %}
-                            {{ order.financial_status_label }}
-                          {% endif %}
-                        </div>
-                      {% endif %}
-                    </div>
-                  </div>
-
-                  {% for item in order.line_items %}
-                    {% assign title_words = item.title | split: '|' %}
-
-                    <div style="display:flex;margin-bottom:1rem">
-                      <div class="account_image">
-                        <img style="width:100%" src="{{item.product.featured_image | image_url}}">
-                      </div>
-                      <div style="display: flex;align-items: center;margin-left: 1rem;width:70%">
-                        <div>
-                          <div
-                            style="
-                              font-size: 12px;
-                              font-style: normal;
-                              font-weight: 700;
-                            "
-                          >
-                            {{ title_words[0] }}
-                          </div>
-                          <div
-                            style="
-                              font-size: 12px;
-                              font-style: normal;
-                              font-weight: 400;
-                            "
-                          >
-                            {{ title_words[1] }}
-                          </div>
-                          <div
-                            style="
-                              color:#626262;
-                              font-size: 10px;
-                              font-style: normal;
-                              font-weight: 300;
-                            "
-                          >
-                            <span>Size: {{ item.variant.title }}</span> | <span>Qty:{{ item.quantity }}</span>
-                          </div>
-                          <div style="font-size:12px">{{ item.price | money_with_currency }}</div>
-                        </div>
-                      </div>
-                      {% comment %}
-                        <p class="product-tittle-reamaining_words">
-                          {% for i in (1..title_words.size) %}
-                            {{ title_words[i] }}
-                          {% endfor %}
-                        </p>
-                      {% endcomment %}
-                    </div>
-                  {% endfor %}
-
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      border-top: 1px solid #e8e8e8;
-                      padding-top: 0.5rem;
-                      margin-top: 1.5rem;font-size: 14px;
-                    "
-                  >
+                    {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
                     <div
-                      style="margin-right:0.5rem;"
-                    >
-                      Subtotal Price :
-                    </div>
-                    <div>{{ order.line_items_subtotal_price | money_with_currency }}</div>
-                  </div>
-                  <div style="display: flex;justify-content: space-between;font-size: 14px;">
-                    <div
-                      style="margin-right:0.5rem;"
-                    >
-                      Discount:
-                    </div>
-                    <div>
-                      {% for disc in order.discount_applications %}
-                        <div>
-                          <span>- {{ disc.total_allocated_amount | money_with_currency }}</span>
-                          <span>({{ disc.title }})</span>
-                        </div>
-                      {% endfor %}
-                    </div>
-                  </div>
-                  <div
-                    style="
-                        display: flex;justify-content: space-between;
-                        padding-top: 0.5rem;
-                      font-size: 16px;
-                    "
-                  >
-                    <div
-                      style="margin-right:0.5rem;"
-                    >
-                      Total Price :
-                    </div>
-                    <div>{{ order.total_price | money_with_currency }}</div>
-                  </div>
-                </a>
-                <div style="display:flex;align-items:center;justify-content:space-between">
-                  {% if order.fulfillment_status == 'fulfilled' %}
-                    <button
                       style="
-                        white-space: normal;
-                        margin-top: 1rem !important;
+                        font-weight: 400;
+                        font-size: 0.8rem;
                       "
-                      class="
-                        js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled hide-strict{% endif %}
-                        {% if order.fulfillment_status != 'fulfilled' %} disabled hide-strict{% endif %}
-                      "
-                      data-order="{{ order.name }}"
-                      data-customer="{{ customer.email }}"
                     >
-                      Return / Exchange
-                    </button>
-                  {% endif %}
+                      {{ 'customer.order.date_html' | t: date: order_date }}
+                    </div>
+                  </div>
+                  <div>
+                    {% if order.cancelled %}
+                      <div style="color:red;text-align:right">
+                        <div>CANCELLED</div>
+                        <div style="font-weight:400;font-size: 0.8rem;">({{ order.cancel_reason_label }})</div>
+                      </div>
+                    {% else %}
+                      <div style="text-transform:uppercase;text-align:right">{{ order.fulfillment_status_label }}</div>
+                      <div style="color: #888383;font-size: 0.8rem;font-weight:400;text-align:right">
+                        {% if order.financial_status_label == 'Pending' -%}
+                          Payment Pending
+                        {% else %}
+                          {{ order.financial_status_label }}
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
                 </div>
-              </div>
-            {% endfor %}
 
-          {%- else -%}
-            <p>{{ 'customer.orders.none' | t }}</p>
-          {%- endif -%}
-          {% render 'pagination', paginate: paginate, pagination_type: 'paginated' %}
-        {% endpaginate %}
-      {% endcomment %}
+                {% for item in order.line_items %}
+                  {% assign title_words = item.title | split: '|' %}
+
+                  <div style="display:flex;margin-bottom:1rem">
+                    <div class="account_image">
+                      <img style="width:100%" src="{{item.product.featured_image | image_url}}">
+                    </div>
+                    <div style="display: flex;align-items: center;margin-left: 1rem;width:70%">
+                      <div>
+                        <div
+                          style="
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 700;
+                          "
+                        >
+                          {{ title_words[0] }}
+                        </div>
+                        <div
+                          style="
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                          "
+                        >
+                          {{ title_words[1] }}
+                        </div>
+                        <div
+                          style="
+                            color:#626262;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 300;
+                          "
+                        >
+                          <span>Size: {{ item.variant.title }}</span> | <span>Qty:{{ item.quantity }}</span>
+                        </div>
+                        <div style="font-size:12px">{{ item.price | money_with_currency }}</div>
+                      </div>
+                    </div>
+                    {% comment %}
+                      <p class="product-tittle-reamaining_words">
+                        {% for i in (1..title_words.size) %}
+                          {{ title_words[i] }}
+                        {% endfor %}
+                      </p>
+                    {% endcomment %}
+                  </div>
+                {% endfor %}
+
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1px solid #e8e8e8;
+                    padding-top: 0.5rem;
+                    margin-top: 1.5rem;font-size: 14px;
+                  "
+                >
+                  <div
+                    style="margin-right:0.5rem;"
+                  >
+                    Subtotal Price :
+                  </div>
+                  <div>{{ order.line_items_subtotal_price | money_with_currency }}</div>
+                </div>
+                <div style="display: flex;justify-content: space-between;font-size: 14px;">
+                  <div
+                    style="margin-right:0.5rem;"
+                  >
+                    Discount:
+                  </div>
+                  <div>
+                    {% for disc in order.discount_applications %}
+                      <div>
+                        <span>- {{ disc.total_allocated_amount | money_with_currency }}</span>
+                        <span>({{ disc.title }})</span>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div
+                  style="
+                      display: flex;justify-content: space-between;
+                      padding-top: 0.5rem;
+                    font-size: 16px;
+                  "
+                >
+                  <div
+                    style="margin-right:0.5rem;"
+                  >
+                    Total Price :
+                  </div>
+                  <div>{{ order.total_price | money_with_currency }}</div>
+                </div>
+              </a>
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                {% if order.fulfillment_status == 'fulfilled' %}
+                  <button
+                    style="
+                      white-space: normal;
+                      margin-top: 1rem !important;
+                    "
+                    class="
+                      js-return-exchange {% if order.tags contains 'Non_Returnable' or order.tags contains 'Non_Exchangeable' %}disabled hide-strict{% endif %}
+                      {% if order.fulfillment_status != 'fulfilled' %} disabled hide-strict{% endif %}
+                    "
+                    data-order="{{ order.name }}"
+                    data-customer="{{ customer.email }}"
+                  >
+                    Return / Exchange
+                  </button>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+
+        {%- else -%}
+          <p>{{ 'customer.orders.none' | t }}</p>
+        {%- endif -%}
+        {% render 'pagination', paginate: paginate, pagination_type: 'paginated' %}
+      {% endpaginate %}
     </div>
     <div class="small-12 large-4 columns myaccount-sidebar">
       <h4>{{ 'customer.account.details' | t }}</h4>
@@ -271,20 +260,32 @@
 </div>
 {% assign orderStatus = customer.orders | json %}
 <script>
+  function callApiAndOpenModal(event) {
+    event.preventDefault();
+    fetch('http://localhost:3004/cancellationReasons')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        renderCancellationUI(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+    return false;
+  }
 
-  
-  function redirectToOrderDetails (orderName,lineItemId)  {
-   const selectedIndex = ordersGroup[orderName].map(order => order.lineItemId).findIndex(oId=>oId==lineItemId);
-   const storageData = {
-    selectedIndex, data:ordersGroup[orderName],
-    customer
+  function renderCancellationUI(data) {
+    const renderDiv = document.getElementById('cancellation_div');
+    // Number of times to append the HTML
+    var numberOfTimes = 5;
+
+    // Loop to append HTML content to the div
+    renderDiv.innerHTML = '';
+    for (var i = 0; i < numberOfTimes; i++) {
+      var isChecked = i === 0 ? 'checked' : '';
+      renderDiv.innerHTML += `<p><input type="radio" id="${i}_cancel" name="drone" value="huey" ${isChecked}  /><label for="${i}_cancel">${data[i].body}</label></p>`;
     }
-    sessionStorage.setItem("selectedOrder", JSON.stringify(storageData))
-    window.location.href = "/pages/order-details"
-    }
-
-
-
+  }
   var orderStatus = '{{ orderStatus }}';
 
   function cancelOrderCall() {
@@ -298,161 +299,6 @@
         console.error('Error fetching data:', error);
       });
   }
-
-
-
-
-    const apiUrl = 'https://api.virgio.com/shop/customer/v1/orders/{{ customer.id }}'; // Replace with your actual API URL
-
-    
-    let endCursor = '';
-    let pageCount = 1; // Keep track of the current page count
-
-
-    let ordersGroup = {}
-    let customer = {}
-
-
-    async function fetchData() {
-
-      try {
-      const response = await fetch(apiUrl, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'after': endCursor // Send endCursor as 'after' in headers
-          }
-        }); 
-
-        const data = await response.json(); 
-        return data;
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        return null;
-      }
-    }
-
-    async function renderData(isNext) {
-      const dataContainer = document.getElementById('data-container');
-      const loadMoreButton = document.getElementById('loadMoreButton');
-      
-      const loader = document.getElementById('loader');
-
-
-           loader.style.display = 'block';
-
-
-      const data = await fetchData();
-
-console.log("dataA",data)
-      const splitData = {};
-
-// Split the objects by orderName
-data.data.orders.forEach(obj => {
-    const orderName = obj["orderName"];
-    if (!splitData[orderName]) {
-        splitData[orderName] = [];
-    }
-    splitData[orderName].push(obj);
-});
-console.log("splitData",splitData)
-
-      ordersGroup = splitData
-      console.log(" data.data", data.data)
-      customer = data.data.customer
-
-      if (data) {
-        // Update UI with the fetched data
-        dataContainer.innerHTML += data.data.orders.map(order => {
-          const {displayStatus} = order
-           const {title} = order;
-
-           const titles = title.split('|')
-          
-          return `
-            <div class="order" onclick="redirectToOrderDetails('${order.orderName}','${order.lineItemId}')">
-
-              <div class="order-title ${displayStatus === 'CANCELLED' ? 'order-title-cancel':''}">${useDeliveryStatusText(displayStatus)}</div>
-              <div class="order-arriving">${useDeliveryText(order)}</div>
-
-              <div style="display: flex;margin-top: 1rem;align-items: center;" >
-
-                <div style="margin-right: 1.5rem;"  class="order-img"><img  src="${order.image}" alt="${order.title}"></div>
-               
-                <div>
-              <div class="order-title1">${titles[0]}</div>
-               <div class="order-title2">${titles[1]}</div>
-              <div class="order-title3">Size: ${order.variantTitle}</div>
-               <div class="order-title3">Qty: ${order.quantity}</div>
-                </div>
-              </div>
-
-              </div>
-
-            </div>
-          `;
-        }).join('');
-
-        // Update pagination information
-        endCursor = data.data.pageInfo.endCursor;
-        const hasNextPage = data.data.pageInfo.hasNextPage;
-
-        // Enable or disable the Load More button based on pagination status
-        loadMoreButton.disabled = !hasNextPage;
-
-        // Increment the pageCount for tracking
-        pageCount = pageCount + 1;
-
-        loader.style.display = 'none'; 
-      }
-    }
-
-    function loadMoreData() {
-      renderData();
-    }
-
-    // Initial render
-    renderData();
-
-    const useDeliveryStatusText = (displayStatus) => {
-  if (displayStatus === 'unfulfilled') {
-    return 'Order Confirmed';
-  }
-  if (displayStatus === 'CANCELLED') {
-    return 'Order Cancelled';
-  }
-  //   }  // TODO handle cancelled reason logic
-  if (displayStatus === 'FULFILLED' || displayStatus === 'READY_FOR_PICKUP') {
-    return 'Ready to Ship';
-  }
-  if (displayStatus === 'IN_TRANSIT') {
-    return 'Shipped';
-  }
-  if (displayStatus === 'OUT_FOR_DELIVERY') {
-    return 'Out for Delivery';
-  }
-  if (displayStatus === 'DELIVERED') {
-    return 'Delivered';
-  }
-  return '';
-};
-
-const useDeliveryText = (orderLineItem) => {
-  console.log("orderLineItem",orderLineItem)
-  if (orderLineItem.displayStatus === 'DELIVERED') {
-    return `Delivered on ${orderLineItem.deliveredAt}`;
-  }
-  if (
-    orderLineItem.displayStatus === 'OUT_FOR_DELIVERY' ||
-    orderLineItem.displayStatus === 'CANCELLED' ||
-    orderLineItem.estimatedDeliveryTime === '' ||
-    orderLineItem.estimatedDeliveryTime === undefined ||
-    orderLineItem.estimatedDeliveryTime === null
-  ) {
-    return '';
-  }
-  return `Arriving by ${orderLineItem?.estimatedDeliveryTime ?? ''}`;
-};
 </script>
 
 {% include 'returnprime_script' %}

@@ -3814,6 +3814,10 @@ input[type="submit"] {
 .button-uppercase-true .button,
 .button-uppercase-true input[type="submit"] {
   text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 input[type="submit"]:before {
   content: "";

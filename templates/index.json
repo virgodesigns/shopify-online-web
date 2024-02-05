@@ -9,7 +9,7 @@
             "slide_link": "shopify:\/\/collections\/date-collection",
             "video_background": true,
             "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080.mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/WTXT_B_HOR.mov",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-large",
@@ -108,12 +108,12 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
-            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "slide_link": "",
             "video_background": true,
             "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Campaign 1 (1).mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/Website_Spotlight_265.mp4",
             "subheading": "",
-            "heading": "The Veronicas",
+            "heading": "The Safari Edit",
             "heading_size": "h1",
             "content": "",
             "description_size": "medium",
@@ -124,7 +124,7 @@
             "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "Explore now",
-            "button_1_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "button_1_link": "shopify:\/\/collections\/the-safari-edit",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
@@ -261,22 +261,11 @@
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
       "type": "collection-carousel",
       "blocks": {
-        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/polly.jpg",
-            "name": "Luxe Comfort",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/recycled-polyester"
-          }
-        },
         "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096427.png",
-            "name": "Breezy, Light and Gentle",
+            "image": "shopify:\/\/shop_images\/Cotton.jpg",
+            "name": "Cotton",
             "subname": "",
             "price": "",
             "strikePrice": "",
@@ -286,19 +275,30 @@
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096428.png",
-            "name": "Buttery-Soft and Lightweight",
+            "image": "shopify:\/\/shop_images\/Viscose.jpg",
+            "name": "Viscose",
             "subname": "",
             "price": "",
             "strikePrice": "",
             "url": "shopify:\/\/collections\/viscose"
           }
+        },
+        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tencel.jpg",
+            "name": "Tencel",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/tencel"
+          }
         }
       },
       "block_order": [
-        "89304511-9896-4639-8a32-32a4b0ec2cc0",
         "4becdef9-56f9-47a7-80fd-64c6a8892f80",
-        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
+        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f",
+        "89304511-9896-4639-8a32-32a4b0ec2cc0"
       ],
       "settings": {
         "heading": "Shop by Fabric",
@@ -562,7 +562,7 @@
         "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096053_0f04a08f-b945-4293-ad2b-f628dd9555c1.png",
+            "image": "shopify:\/\/shop_images\/bold_n_beauty.png",
             "slide_link": "shopify:\/\/products\/date-chic-red-lycra-satin-skirt",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -590,7 +590,7 @@
         "95cdd355-0d62-4432-a39e-f29896ce300a": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096049_87f6dc68-70e2-4495-b18e-1df0919593d5.png",
+            "image": "shopify:\/\/shop_images\/Frame_48096049_bc76ce15-9661-4776-b7a9-73987754b721.png",
             "slide_link": "shopify:\/\/products\/date-chic-lycra-satin-black-corset-detail-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -618,7 +618,7 @@
         "slide_RewRja": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096051_da60e289-72d2-4b21-bd4b-8816edf9afe6.png",
+            "image": "shopify:\/\/shop_images\/Frame_48096051_fbba9a47-2ff9-4f4a-9e9d-4cad598bb8c1.png",
             "slide_link": "shopify:\/\/products\/date-classy-black-lycra-satin-skirt",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -646,7 +646,7 @@
         "slide_R9PDXi": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096052_7695316a-d4a4-4332-9aab-0e66e513978f.png",
+            "image": "shopify:\/\/shop_images\/Frame_48096052.png",
             "slide_link": "shopify:\/\/products\/date-timeless-lycra-satin-white-halter-neck-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -685,8 +685,8 @@
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-image",
         "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 3,
+        "autoplay": false,
+        "autoplay_length": 5,
         "transition": "fade",
         "show_on_desktop": false,
         "show_on_mobile": true,
@@ -742,13 +742,31 @@
         "disable_bottom_spacing": true
       }
     },
+    "featured_collection_VanMAf": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "collection": "veronicas-all-collection",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2": {
       "type": "slideshow",
       "blocks": {
         "7f0130a8-7d0e-40ba-8011-c1b22d72af9a": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/360_x320_8f68c91c-f6c0-4260-9b42-37ab5ed629d8.png",
+            "image": "shopify:\/\/shop_images\/360_x320_bb146728-258c-4dec-9abc-b360d1533540.png",
             "slide_link": "https:\/\/virgio.com\/pages\/circularity-mweb",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -861,7 +879,7 @@
             "image": "shopify:\/\/shop_images\/2_5.jpg",
             "name": "Evelyn",
             "subname": "",
-            "price": "₹2,390",
+            "price": "₹2390",
             "strikePrice": "",
             "url": "shopify:\/\/products\/veronicas-sleek-cotton-lycra-fitted-dress"
           }
@@ -1076,7 +1094,7 @@
         "slide_bdTdRA": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_237652.png",
+            "image": "shopify:\/\/shop_images\/180.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1368,6 +1386,7 @@
     "mwidget_NAaUxK",
     "cc265b0e-27de-4374-a086-654be84e48fe",
     "slideshow_MQn6Jh",
+    "featured_collection_VanMAf",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
     "6cce79bf-50eb-4239-b314-7280d3977c6d",

@@ -1,5 +1,29 @@
 <div class="size-chart-container">
-  <div class="size-chart-wrapper">
+
+<div class="size-chart-header">
+  <div class="head">
+    SIZE CHART
+  </div>
+</div>
+
+<div class="initial-text">
+    <div class="initial">
+            All our sizes are tailored keeping in view Indian women body types.
+            Every fit and finish has been meticulously designed with best fabric
+            in mind.
+    </div>
+</div>
+
+  <div class="toggle-container">
+    <button class="unit-button inches-button{% if inchesMode %} active{% endif %}" onclick="updateSizeValues(event, true)">
+  INCHES
+</button>
+<button class="unit-button centimeters-button{% unless inchesMode %} active{% endunless %}" onclick="updateSizeValues(event, false)">
+  CM
+</button>
+</div>
+
+ <div class="size-chart-wrapper">
   {% assign sizeChartData = product.metafields.custom.size_chart.value %}
   {% for sizechartheading in sizeChartData %}
     <div
@@ -13,7 +37,8 @@
       {% endfor %}
     </div>
   {% endfor %}
-</div>
+ </div>
+
   {% assign sizeChartData = product.metafields.custom.size_chart.value %}
   {% for chart in sizeChartData %}
     <div
@@ -29,7 +54,7 @@
               {% for item in sizeinfo %}
                 {% assign sizevalues = item.info %}
                 {% for sizes in sizevalues %}
-                  <td>{{ sizes | first }}</td>
+                  <td>{{ sizes | first }}<span class="unit-indicator"></span></td>
                 {% endfor %}
                 {% break %}
               {% endfor %}
@@ -37,17 +62,21 @@
             {% for item in sizeinfo %}
               {% assign bustvalues = item.info %}
               <tr class="bust-size-values">
-                <td class="size-values">{{ item.size }}</td>
+                <td class="size-values" data-original-value="{{ item.size }}">{{ item.size }}</td>
                 {% for bustsize in bustvalues %}
-                  <td>{{ bustsize | last }}</td>
+                  <td data-original-value="{{ bustsize | last }}">{{ bustsize | last }}<span class="unit-indicator"></span></td>
                 {% endfor %}
               </tr>
             {% endfor %}
           </table>
         </div>
-        <div class="sizeChart_text">
-          {{ settings.size_chart_text }}
+        <div class="sizeChart-text">
+         <div class = "sub-text">
+          *Depending on your body type and dressing habits, the
+          above sizes are for reference only.
+         </div>
         </div>
+
         {% case product.type %}
           {% when 'Top' %}
             {% assign prefix = 'TOP' %}
@@ -66,13 +95,155 @@
           {% assign mobileImage = 'GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
           {% assign desktopImage = 'desktop_GARMENT_MEASUREMENT_-_' | append: prefix | append: '.png' %}
         {% endif %}
-
         <script>
-          var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-          var imageSrc = (screenWidth < 769) ? '{{ mobileImage | file_img_url:"master" }}' : '{{ desktopImage | file_img_url:"master" }}';
-          document.write('<img src="' + imageSrc + '" alt="sizechart{{ image.alt }}">');
-        </script>
+          
+  var inchesMode = true;
+
+  function updateSizeValues(event, toInches) {
+    event.preventDefault(); 
+
+    inchesMode = toInches;
+
+    var sizeValues = document.querySelectorAll('.size-chart-container td[data-original-value]');
+    sizeValues.forEach(function (sizeValue) {
+      var originalValue = parseFloat(sizeValue.getAttribute('data-original-value'));
+
+      if (!isNaN(originalValue)) {
+        sizeValue.textContent = convertUnits(originalValue, inchesMode).toFixed(2);
+      }
+    });
+
+    var inchesButton = document.querySelector('.unit-button.inches-button');
+    var centimetersButton = document.querySelector('.unit-button.centimeters-button');
+
+    if (inchesMode) {
+      inchesButton.classList.add('active');
+      centimetersButton.classList.remove('active');
+    } else {
+      centimetersButton.classList.add('active');
+      inchesButton.classList.remove('active');
+    }
+  }
+  function convertUnits(value, toInches) {
+    return toInches ? value: Math.round(value * 2.54);
+}
+  var inchesButton = document.querySelector('.unit-button.inches-button');
+  var centimetersButton = document.querySelector('.unit-button.centimeters-button');
+  inchesButton.classList.add('active');
+  centimetersButton.classList.remove('active');
+
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var imageSrc = (screenWidth < 769) ? '{{ mobileImage | file_img_url:"master" }}' : '{{ desktopImage | file_img_url:"master" }}';
+  document.write('<img src="' + imageSrc + '" alt="{{ image.alt }}">');
+ </script>
+
       </div>
     </div>
   {% endfor %}
 </div>
+
+<style>
+
+.inches-button.active,
+.centimeters-button.active 
+{
+    background-color: #111;
+    color: white;
+ }
+
+  @media (min-width: 769px) {
+    .size-chart-container {
+      margin-left: 84px;
+    }
+  }
+  .size-chart-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100; 
+  margin-right: 55px;
+}
+ .toggle-container {
+    display: flex;
+    width: 160px; 
+    margin-top: 20px;
+    margin-left: 93px;
+  }
+.head{
+  font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px;
+}
+@media (min-width: 769px) {
+    .head{
+      font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+    }
+  }
+
+.sub-text{
+  color: #AAA;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.24px;
+margin-top: 8px;
+word-wrap: break-word;
+white-space: normal;
+}
+
+  .initial{
+font-size: 12px;
+margin-top: 25px;
+line-height: 18px; 
+letter-spacing: 0.24px;
+  }
+
+  .unit-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    transition: background-color 0.4s;
+  }
+
+  .inches-button.active {
+    background-color: #111;
+    color: white;
+  }
+
+  .centimeters-button.active {
+    background-color: #111;
+    color: white;
+  }
+
+
+  input:checked + .slider {
+    background-color: #111;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #111;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>

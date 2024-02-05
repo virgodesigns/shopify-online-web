@@ -27,7 +27,7 @@
           "settings": {
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Frame_48096327.png",
-            "image-mobile": "shopify:\/\/shop_images\/Dresses.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_2.png",
             "heading": "DAINTY DRESSES",
             "heading_size": "h2",
             "overlay_color": "#000000",
@@ -44,7 +44,7 @@
           "settings": {
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Classic_Co-Ords_1.png",
-            "image-mobile": "shopify:\/\/shop_images\/Co-ords.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_3.png",
             "heading": "CLASSIC CO-ORDS",
             "heading_size": "h2",
             "overlay_color": "#000000",
@@ -61,7 +61,7 @@
           "settings": {
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Tailored_Bottom_wear_1.png",
-            "image-mobile": "shopify:\/\/shop_images\/bottoms.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_4.png",
             "heading": "TAILORED BOTTOMWEAR",
             "heading_size": "h2",
             "overlay_color": "#000000",
@@ -78,7 +78,7 @@
           "settings": {
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Chic_Topwear_1.png",
-            "image-mobile": "shopify:\/\/shop_images\/Explore_State_7.png",
+            "image-mobile": "shopify:\/\/shop_images\/EXPLORE_STATE_5.png",
             "heading": "CHIC TOPWEAR",
             "heading_size": "h2",
             "overlay_color": "#000000",
@@ -108,23 +108,6 @@
           }
         },
         "08bd4723-2e0a-47cc-8b15-875e8b628a37": {
-          "type": "slide",
-          "settings": {
-            "tab_id": "COLLECTION",
-            "image": "shopify:\/\/shop_images\/explore.png",
-            "image-mobile": "shopify:\/\/shop_images\/explore.png",
-            "heading": "THE DATE COLLECTION",
-            "heading_size": "h2",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/date-collection",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_g9ch6A": {
           "type": "slide",
           "settings": {
             "tab_id": "COLLECTION",
@@ -336,7 +319,6 @@
         "af8048b8-dcb7-48a4-8df6-212a21589bdc",
         "6a7112a8-f40a-4a73-9117-e9153adc61af",
         "08bd4723-2e0a-47cc-8b15-875e8b628a37",
-        "slide_g9ch6A",
         "dd4d989c-ba17-429d-8bc8-3854ad5b60fe",
         "b570446c-10f1-4d20-b6c3-e342f9462350",
         "47e222f4-2cab-4611-a963-524937ae7b8a",

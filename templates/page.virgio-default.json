@@ -7,6 +7,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_page_title": false,
         "disable_top_spacing": false,
@@ -21,7 +22,6 @@
     },
     "video_4AyjLt": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "Video",
         "heading_left": false,

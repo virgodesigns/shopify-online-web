@@ -51,11 +51,13 @@
               {% endfor %}
             </p>
           </h1>
+
           <div class="product-price-container">
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {% render 'product-price', product: product, use_variant: true, show_badges: true %}
             </div>
           </div>
+
           {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
             <a class="star-rating-container" href="#shopify-product-reviews">
               <div
@@ -65,6 +67,7 @@
               <span>{{ 'products.product.reviews' | t: count: product.metafields.reviews.rating_count }}</span>
             </a>
           {%- endif -%}
+          
         </div>
       {%- when 'description' -%}
         {% if product.metafields.custom.coord_sets.value != blank %}
@@ -185,13 +188,13 @@
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
                             <h5>{{ block.settings.sizing_guide_page.title }}</h5>
-                            <button id="ModalClose-{{ product.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close' %}</button>
+                            <button id="ModalClose-{{ product.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}"><div class = "close-button">{% render 'svg-icons' with 'close-size' %}</div></button>
                          </div>
                          <div class="product-popup-modal__content-info">
                         <tab-switch>
                           {% render 'size-chart', product:product %}
                         </tab-switch>
-                     </div>
+                      </div>
                   </div>
                </modal-dialog>
                          {% endfor %}
@@ -200,7 +203,7 @@
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
                             <h5>{{ block.settings.sizing_guide_page.title }}</h5>
-                            <button id="ModalClose-{{ block.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close' %}</button>
+                            <button id="ModalClose-{{ block.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close-size' %}</button>
                          </div>
                          <div class="product-popup-modal__content-info">
                         <tab-switch>

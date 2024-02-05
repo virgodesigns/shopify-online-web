@@ -23,11 +23,6 @@
             "show_products_rating": true
           }
         },
-        "judge_me_reviews_preview_badge_JHrKVw": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -80,7 +75,6 @@
       "block_order": [
         "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
-        "judge_me_reviews_preview_badge_JHrKVw",
         "variant_picker",
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
@@ -108,16 +102,6 @@
         "spacer_desktop": 90,
         "border_separator": false,
         "border_separator_full": false
-      }
-    },
-    "ace3e86a-9dba-4966-8d72-88d70f4f48c2": {
-      "type": "product-page-tabs",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 16
       }
     },
     "1663667027ccd68a19": {
@@ -172,31 +156,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "16623877721f33fb14": {
-      "type": "spacer",
-      "disabled": true,
-      "settings": {
-        "spacer_mobile": 35,
-        "spacer_desktop": 90,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
-    "product_pairs_tR6KQe": {
-      "type": "product-pairs",
-      "settings": {
-        "heading": "Can Be Paired With",
-        "heading_left": false,
-        "description": "",
-        "full_width": true,
-        "display_type": "carousel",
-        "columns_desktop": 4,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -223,17 +182,42 @@
         "heading": "",
         "sub_heading": "Spotted in Virgio"
       }
+    },
+    "ace3e86a-9dba-4966-8d72-88d70f4f48c2": {
+      "type": "product-page-tabs",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "16625458859c68803a": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "16623877721f33fb14": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
     }
   },
   "order": [
     "breadcrumbs",
     "main-product",
     "d822b776-512e-4ff1-8e1f-40395029c179",
-    "ace3e86a-9dba-4966-8d72-88d70f4f48c2",
     "1663667027ccd68a19",
-    "16623877721f33fb14",
-    "product_pairs_tR6KQe",
     "product-recommendations",
-    "6504c889-765e-4951-97dd-2817199cfc89"
+    "6504c889-765e-4951-97dd-2817199cfc89",
+    "ace3e86a-9dba-4966-8d72-88d70f4f48c2",
+    "16625458859c68803a",
+    "16623877721f33fb14"
   ]
 }
