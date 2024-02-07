@@ -2015,8 +2015,12 @@ table thead th {
 }
 table th,
 table td {
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+line-height: 14px;
+letter-spacing: 0.1px;
 }
 
 table.no-borders {
