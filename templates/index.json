@@ -849,7 +849,7 @@
         "bg_color": "#fff4e2",
         "button_url": "shopify:\/\/collections\/veronicas-all-collection",
         "button_text": "Explore Eco-Chic",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "url": "shopify:\/\/collections\/veronicas-all-collection",
         "carouselCardWidth": "45",
