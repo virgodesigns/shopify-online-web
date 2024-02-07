@@ -7,7 +7,6 @@
   </div>
 
   <div class="toggle-container">
-    {{ inchesMode | jso }}
     <button
       class="unit-button inches-button{% if inchesMode %} active{% endif %}"
       onclick="updateSizeValues(event, true)"
@@ -159,10 +158,6 @@
 
           classAdditionRemoval(true);
 
-          {% comment %} var inchesButton = document.querySelector('.unit-button.inches-button');
-          var centimetersButton = document.querySelector('.unit-button.centimeters-button');
-          inchesButton.classList.add('active');
-          centimetersButton.classList.remove('active'); {% endcomment %}
 
           var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
           var imageSrc =
