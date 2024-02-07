@@ -1,89 +1,106 @@
 {{ 'featured-collection.css' | asset_url | stylesheet_tag }}
 {{ 'product-grid.css' | asset_url | stylesheet_tag }}
 {%- liquid
-	assign section_heading = section.settings.heading
-	assign section_heading_left = section.settings.heading_left
-	assign section_description = section.settings.description
-	assign full_width = section.settings.full_width
-	assign display_type = section.settings.display_type
-	assign columns_desktop = section.settings.columns_desktop
-	assign featured_collection = section.settings.collection
-	assign show_view_all = section.settings.show_view_all
-	assign product_limit = section.settings.product_limit
-	assign mobile_swipe = section.settings.mobile_swipe
-	assign show_progress_bar = section.settings.show_progress_bar
-	assign disable_top_spacing = section.settings.disable_top_spacing
-	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
-	assign columns_class = 'small-6 medium-6 large-4'
-	
-	case columns_desktop
-		when 2
-			assign columns_class = 'small-6 medium-6'
-		when 3
-			assign columns_class = 'small-6 medium-4'
-		when 4
-			assign columns_class = 'small-6 medium-6 large-3'
-	endcase
+  assign section_heading = section.settings.heading
+  assign section_heading_left = section.settings.heading_left
+  assign section_description = section.settings.description
+  assign full_width = section.settings.full_width
+  assign display_type = section.settings.display_type
+  assign columns_desktop = section.settings.columns_desktop
+  assign featured_collection = section.settings.collection
+  assign show_view_all = section.settings.show_view_all
+  assign product_limit = section.settings.product_limit
+  assign mobile_swipe = section.settings.mobile_swipe
+  assign show_progress_bar = section.settings.show_progress_bar
+  assign disable_top_spacing = section.settings.disable_top_spacing
+  assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+  assign columns_class = 'small-6 medium-6 large-4'
 
-	if featured_collection.all_products_count > product_limit
+  case columns_desktop
+    when 2
+      assign columns_class = 'small-6 medium-6'
+    when 3
+      assign columns_class = 'small-6 medium-4'
+    when 4
+      assign columns_class = 'small-6 medium-6 large-3'
+  endcase
+
+  if featured_collection.all_products_count > product_limit
     assign more_in_collection = true
   endif
 
-	if show_view_all and more_in_collection
-		assign section_heading_button = featured_collection
-	endif
+  if show_view_all and more_in_collection
+    assign section_heading_button = featured_collection
+  endif
 -%}
-<div style= "background-color: {{section.settings.bg_color}} "  
- class="featured-collection{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
-	<div class="row{% if full_width %} full-width-row{% endif %}">
-		<div class="small-12 columns">
-			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left, section_heading_button: section_heading_button %}
-			<div class="featured-collection__inner display-type--{{ display_type }}">
-				<div id="product-grid-{{ section.id }}" class="products row {{ display_type }}">
-					{%- if featured_collection != blank -%}
-						{%- for product in featured_collection.products limit: product_limit -%}
-							<div class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}" style="max-width: {{ section.settings.carouselCardWidth }}%">
-                                {% render 'product-card', product_card_product: product %}
-                            </div>
+<div
+  style="background-color: {{section.settings.bg_color}} "
+  class="featured-collection{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"
+>
+  <div class="row{% if full_width %} full-width-row{% endif %}">
+    <div class="small-12 columns">
+      {% render 'section-header',
+        section_heading: section_heading,
+        section_description: section_description,
+        section_heading_left: section_heading_left,
+        section_heading_button: section_heading_button
+      %}
+      <div class="featured-collection__inner display-type--{{ display_type }}">
+        <div id="product-grid-{{ section.id }}" class="products row {{ display_type }}">
+          {%- if featured_collection != blank -%}
+            {%- for product in featured_collection.products limit: product_limit -%}
+              <div
+                class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}"
+                style="max-width: {{ section.settings.carouselCardWidth }}%"
+              >
+                {% render 'product-card', product_card_product: product %}
+              </div>
+            {%- endfor -%}
+          {%- else -%}
+            {%- for i in (1..product_limit) -%}
+              <div class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
+                {% render 'product-card' %}
+              </div>
+            {%- endfor -%}
+          {%- endif -%}
+          {%- if display_type == 'carousel' -%}
+            {%- if product_limit > columns_desktop -%}
+              <div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+              <div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+        {%- if display_type == 'carousel' and show_progress_bar -%}
+          <div class="flickity-progress">
+            <div class="flickity-progress--bar"></div>
+          </div>
+        {%- endif -%}
+      </div>
 
-						{%- endfor -%}
-					{%- else -%}
-						{%- for i in (1..product_limit) -%}
-						<div class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
-							{% render 'product-card' %}
-						</div>
-						{%- endfor -%}
-					{%- endif -%}
-					{%- if display_type == 'carousel' -%}
-						{%- if product_limit > columns_desktop -%}
-						<div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
-						<div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
-						{%- endif -%}
-					{%- endif -%}
-				</div>
-				{%- if display_type == 'carousel' and show_progress_bar -%}
-				<div class="flickity-progress">
-					<div class="flickity-progress--bar"></div>
-				</div>
-				{%- endif -%}
-			</div>
-           
-			 {%- if section.settings.button_url != blank and section.settings.button_text != blank %}
-             <a href="{{ section.settings.button_url }}">
-        <button class="button">
-          <span>{{ section.settings.button_text }}</span>
-        </button>
-              </a>
-          {% endif %}
-
-		</div>
-
-		  
-
-	</div>
+      {%- if section.settings.button_url != blank and section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_url }}">
+          <button class="button">
+            <span>{{ section.settings.button_text }}</span>
+          </button>
+        </a>
+      {% endif %}
+      <style>
+        {% if section.settings.show_on_mobile == false %}
+          @media screen and (max-width: 768px){
+              #shopify-section-{{ section.id }} {
+            display:none;
+          }}
+        {% endif %}
+        {% if section.settings.show_on_desktop == false %}
+          @media screen and (min-width: 768px){
+          #shopify-section-{{ section.id }} {
+            display:none;
+          }}
+        {% endif %}
+      </style>
+    </div>
+  </div>
 </div>
-</div>
-
 
 {% schema %}
 {
@@ -119,7 +136,7 @@
       "label": "Button Text",
       "default": "Know more"
     },
-    
+
 	{
       "type": "checkbox",
       "id": "show_on_desktop",
@@ -246,5 +263,4 @@
     }
   ]
 }
-
 {% endschema %}
