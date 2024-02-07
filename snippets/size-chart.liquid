@@ -7,6 +7,7 @@
   </div>
 
   <div class="toggle-container">
+    {{ inchesMode | jso }}
     <button
       class="unit-button inches-button{% if inchesMode %} active{% endif %}"
       onclick="updateSizeValues(event, true)"
@@ -102,6 +103,32 @@
         <script>
           var inchesMode = true;
 
+          var inchesButton = document.getElementsByClassName('unit-button inches-button');
+          var centimetersButton = document.getElementsByClassName('unit-button centimeters-button');
+
+          var inchesButtonArr = Array.from(inchesButton);
+          var centimetersButtonArr = Array.from(centimetersButton);
+
+          function classAdditionRemoval(add) {
+            if (add) {
+              inchesButtonArr.forEach((elem) => {
+                elem.classList.add('active');
+              });
+              centimetersButtonArr.forEach((elem) => {
+                elem.classList.remove('active');
+              });
+            } else {
+              centimetersButtonArr.forEach((elem) => {
+                elem.classList.add('active');
+              });
+              inchesButtonArr.forEach((elem) => {
+                elem.classList.remove('active');
+              });
+            }
+          }
+
+          function centimetersClass() {}
+
           function updateSizeValues(event, toInches) {
             event.preventDefault();
 
@@ -117,15 +144,10 @@
               }
             });
 
-            var inchesButton = document.querySelector('.unit-button.inches-button');
-            var centimetersButton = document.querySelector('.unit-button.centimeters-button');
-
             if (inchesMode) {
-              inchesButton.classList.add('active');
-              centimetersButton.classList.remove('active');
+              classAdditionRemoval(true);
             } else {
-              centimetersButton.classList.add('active');
-              inchesButton.classList.remove('active');
+              classAdditionRemoval(false);
             }
           }
 
@@ -133,10 +155,14 @@
             return toInches ? value : Math.round(value * 2.54);
           }
 
-          var inchesButton = document.querySelector('.unit-button.inches-button');
+          //Set inches on First load
+
+          classAdditionRemoval(true);
+
+          {% comment %} var inchesButton = document.querySelector('.unit-button.inches-button');
           var centimetersButton = document.querySelector('.unit-button.centimeters-button');
           inchesButton.classList.add('active');
-          centimetersButton.classList.remove('active');
+          centimetersButton.classList.remove('active'); {% endcomment %}
 
           var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
           var imageSrc =
@@ -181,12 +207,12 @@
   }
   @media (min-width: 769px) {
     .head {
-     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: left;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      text-align: left;
     }
   }
 
@@ -212,7 +238,7 @@
     padding: 10px;
     font-size: 14px;
     cursor: pointer;
-    border: 1px solid black;;
+    border: 1px solid black;
     outline: none;
     background-color: #fff;
     transition: background-color 0.4s;
