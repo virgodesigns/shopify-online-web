@@ -218,10 +218,16 @@
 
       ],
       "settings": {
-        "padding_top": 30,
-        "padding_bottom": 20,
-        "heading": "",
-        "sub_heading": "Spotted in Virgio"
+        "heading": "Spotted In Virgio",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "columns_desktop": 4,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     }
   },
