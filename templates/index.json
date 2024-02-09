@@ -35,6 +35,7 @@
       "block_order": [
         "164794776393e76b8e-1"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-full",
@@ -940,7 +941,6 @@
         "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE_-_Component_2.png",
             "slide_link": "shopify:\/\/collections\/cityscape",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
