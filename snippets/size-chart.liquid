@@ -25,7 +25,7 @@
     {% assign sizeChartData = product.metafields.custom.size_chart.value %}
     {% for sizechartheading in sizeChartData %}
       <div
-        class="tab--heading{% if forloop.first %} is--active{% endif %}"
+        class="tab--heading tab-heading-size-chart {% if forloop.first %} is--active{% endif %}"
         data-tab="{{ sizechartheading.id | handleize }}"
       >
         {% assign words = sizechartheading.id | split: '_' %}
