@@ -1,14 +1,15 @@
 <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
 {{- 'product-tabs.css' | asset_url | stylesheet_tag -}}
 <tab-switch>
-  <div class="produt-tab-container section-{{ section.id }}-padding">
+  
+  <div class="produt-tab-container  section-{{ section.id }}-padding">
     <div class="product-page-tab">
       {% assign tabs = product.metafields.custom.story_details.value %}
       {% for tab in tabs %}
         {% for tabHeading in tab %}
           {% if tabHeading.header != blank %}
             <div class="product-tab">
-              <div class="tab--heading" data-tab="{{ tabHeading.footer | handleize }}">
+              <div class="tab--heading tab-heading-impact" data-tab="{{ tabHeading.footer | handleize }}">
                 {{ tabHeading.footer }}
               </div>
             </div>
@@ -156,7 +157,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="details_image">
+
+                <div class="details_image" style="padding-right: 15px;" >
                   {% if tabContent.assetUrl != blank %}
                     {% if tabContent.assetUrl contains 'mp4' %}
                       <video
@@ -173,6 +175,7 @@
                     {% endif %}
                   {% endif %}
                 </div>
+
               </div>
               <div class="tab--heading-mobile">
                 {{ tabContent.footer }}

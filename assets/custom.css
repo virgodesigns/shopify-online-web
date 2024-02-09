@@ -379,11 +379,25 @@ input.pin-input::placeholder {
   cursor: pointer;
   color: #898989;
   font-weight: 400;
-  width: 50%;
   text-align: center;
   font-size: 12px;
+  
+}
+.tab-heading-size-chart{
+  width: 50%;
   border-bottom: 1px solid #e1e1e1;
 }
+
+.tab-heading-impact{
+  font-size: 14px;
+
+}
+
+.tab-heading-impact.is--active{
+  font-size: 14px !important;
+}
+
+
 .tab--heading.is--active {
   color: #000;
   font-size: 12px;
@@ -625,6 +639,11 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+video{
+  padding-right: 15px;
+}
+
 
 .hidden {
   display: none !important;
