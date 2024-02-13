@@ -697,6 +697,34 @@
     "slideshow_MQn6Jh": {
       "type": "slideshow",
       "blocks": {
+        "slide_TnB8by": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_2.png",
+            "slide_link": "shopify:\/\/products\/date-chic-lycra-satin-red-v-neck-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
         "slide_8cy6WM": {
           "type": "slide",
           "settings": {
@@ -727,6 +755,7 @@
         }
       },
       "block_order": [
+        "slide_TnB8by",
         "slide_8cy6WM"
       ],
       "settings": {
