@@ -763,7 +763,7 @@
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
-        "autoplay_length": 3,
+        "autoplay_length": 5,
         "transition": "swipe",
         "show_on_desktop": false,
         "show_on_mobile": true,
