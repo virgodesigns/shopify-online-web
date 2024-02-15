@@ -371,8 +371,8 @@
         "52301fcc-9455-47af-b905-8379efe6af79": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/top_banner_1.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
+            "image": "shopify:\/\/shop_images\/1._Hero_banner.png",
+            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -419,7 +419,7 @@
         "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
           "type": "text",
           "settings": {
-            "text": "Limited Edition Collection | Eco-Conscious | Raw and Irresistible",
+            "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
             "link": "",
             "outline_text": false
           }
@@ -427,7 +427,7 @@
         "147ed3ad-dbe9-4668-9f28-39062c0b57a4": {
           "type": "text",
           "settings": {
-            "text": "Limited Edition Collection | Eco-Conscious | Raw and Irresistible",
+            "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
             "link": "",
             "outline_text": false
           }
@@ -463,11 +463,11 @@
     "0c467e92-a72a-4749-a115-b39616437b6b": {
       "type": "slideshow",
       "blocks": {
-        "slide_GMBgXk": {
+        "slide_yVNL8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_2_360_x360_b09725a9-cbd5-4080-9c62-04ba8a3d1eef.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
+            "image": "shopify:\/\/shop_images\/2._shop_by_category_header.png",
+            "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -493,7 +493,55 @@
         }
       },
       "block_order": [
-        "slide_GMBgXk"
+        "slide_yVNL8q"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "slideshow_LHQzMt": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WkWbxy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.1_Dress_category.png",
+            "slide_link": "shopify:\/\/collections\/dresses-date",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_WkWbxy"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -514,23 +562,15 @@
         "image_item_8k6yQC": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
-            "heading_text": "Dresses",
-            "button_link": "shopify:\/\/collections\/dresses-date"
-          }
-        },
-        "image_item_YnixeJ": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
-            "heading_text": "Co-ords",
-            "button_link": "shopify:\/\/collections\/co-ords-date"
+            "image": "shopify:\/\/shop_images\/2.2_Topwear_category_img.png",
+            "heading_text": "Topwear",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
           }
         },
         "image_item_MLUAC8": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/2.3_Bottomwear_category_img.png",
             "heading_text": "Bottom wear",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
@@ -538,15 +578,14 @@
         "image_item_ABtpDQ": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "heading_text": "Top wear",
-            "button_link": "shopify:\/\/collections\/top-wear-date"
+            "image": "shopify:\/\/shop_images\/2.4_Co-ord_category_img.png",
+            "heading_text": "Co-ords",
+            "button_link": "shopify:\/\/collections\/co-ords-date"
           }
         }
       },
       "block_order": [
         "image_item_8k6yQC",
-        "image_item_YnixeJ",
         "image_item_MLUAC8",
         "image_item_ABtpDQ"
       ],
@@ -562,8 +601,8 @@
         "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096053_0f04a08f-b945-4293-ad2b-f628dd9555c1.png",
-            "slide_link": "shopify:\/\/products\/date-chic-red-lycra-satin-skirt",
+            "image": "shopify:\/\/shop_images\/1._Cherry_Crush.png",
+            "slide_link": "shopify:\/\/collections\/cherry-crush",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -590,8 +629,8 @@
         "95cdd355-0d62-4432-a39e-f29896ce300a": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096049_87f6dc68-70e2-4495-b18e-1df0919593d5.png",
-            "slide_link": "shopify:\/\/products\/date-chic-lycra-satin-black-corset-detail-dress",
+            "image": "shopify:\/\/shop_images\/2._sunny_side_up.png",
+            "slide_link": "shopify:\/\/collections\/sunny-side-up",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -618,8 +657,8 @@
         "slide_RewRja": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096051_da60e289-72d2-4b21-bd4b-8816edf9afe6.png",
-            "slide_link": "shopify:\/\/products\/date-classy-black-lycra-satin-skirt",
+            "image": "shopify:\/\/shop_images\/3._ceulean_dreams.png",
+            "slide_link": "shopify:\/\/collections\/cerulean-dreams",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -646,8 +685,36 @@
         "slide_R9PDXi": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096052_7695316a-d4a4-4332-9aab-0e66e513978f.png",
-            "slide_link": "shopify:\/\/products\/date-timeless-lycra-satin-white-halter-neck-dress",
+            "image": "shopify:\/\/shop_images\/4._sage_serenity.png",
+            "slide_link": "shopify:\/\/collections\/sage-serenity",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_idabbR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5._peony_perfection.png",
+            "slide_link": "shopify:\/\/collections\/peony-perfection",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -676,7 +743,8 @@
         "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3",
         "95cdd355-0d62-4432-a39e-f29896ce300a",
         "slide_RewRja",
-        "slide_R9PDXi"
+        "slide_R9PDXi",
+        "slide_idabbR"
       ],
       "custom_css": [
         ".slideshow__slide {padding-bottom: 0px;}"
@@ -700,8 +768,8 @@
         "slide_TnB8by": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_2.png",
-            "slide_link": "shopify:\/\/products\/date-chic-lycra-satin-red-v-neck-dress",
+            "image": "shopify:\/\/shop_images\/lisa_haydon.png",
+            "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -728,7 +796,7 @@
         "slide_8cy6WM": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/celeb_spotted.png",
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar.png",
             "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -777,7 +845,7 @@
         "7f0130a8-7d0e-40ba-8011-c1b22d72af9a": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/360_x320_8f68c91c-f6c0-4260-9b42-37ab5ed629d8.png",
+            "image": "shopify:\/\/shop_images\/5_We_are_Virgio.png",
             "slide_link": "https:\/\/virgio.com\/pages\/circularity-mweb",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -819,13 +887,89 @@
         "disable_bottom_spacing": true
       }
     },
+    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_The_Date_Banner.png",
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
+      ],
+      "custom_css": [
+        ".slideshow__slide {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_BYnUMz": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#fff4e2",
+        "button_url": "shopify:\/\/collections\/cityscape",
+        "button_text": "View All",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/date-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "date-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e": {
       "type": "slideshow",
       "blocks": {
         "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE_-_Component_1.png",
+            "image": "shopify:\/\/shop_images\/7_Veronicas_Banner.png",
             "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -895,175 +1039,13 @@
         "disable_bottom_spacing": true
       }
     },
-    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE_-_Component_2.png",
-            "slide_link": "shopify:\/\/collections\/cityscape",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection_BYnUMz": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#fff4e2",
-        "button_url": "shopify:\/\/collections\/cityscape",
-        "button_text": "View All",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/cityscape",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "cityscape",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94": {
-      "type": "collection-carousel",
-      "blocks": {
-        "aad3fa41-6e3e-4769-b3ec-32bfc7dceca7": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_VWWDR2336014901_1737879b-1e30-4750-8809-c738899c93d1.jpg",
-            "name": "Nivi",
-            "subname": "",
-            "price": "₹2,490",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/navy-schiffli-dress-with-puff-sleeves"
-          }
-        },
-        "f8b8d995-c209-48d5-8280-f416f6c0559d": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_VWWDR2336017002_da8900fe-1ecc-4503-8cda-ff53815f7ddc.jpg",
-            "name": "Azmin",
-            "subname": "",
-            "price": "₹2,140",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/fit-and-flare-dress-with-pockets"
-          }
-        },
-        "e5e4b869-f3fc-4978-b71c-d324d81d2f63": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_VWWDR2336011401_496c4ccb-eea8-45cd-a098-793658bee6c5.jpg",
-            "name": "Zora",
-            "subname": "",
-            "price": "₹2,240",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/frill-flare-midi-dress-with-pockets"
-          }
-        },
-        "476773b0-f718-4ddb-978b-7924b452505b": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_VWWDR2336010402_1_f32bf54d-9cf2-4627-8dae-f0b0224c9a4c.jpg",
-            "name": "Viha",
-            "subname": "",
-            "price": "₹2,090",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/ruby-reverie-wrap-blazer-dress-with-pockets"
-          }
-        },
-        "collection_R9wbim": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_VWWDR2336012802_7bc120a3-4b27-4e5b-b11f-0480ca7a27de.jpg",
-            "name": "Zayna",
-            "subname": "",
-            "price": "₹2,040",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/berry-pop-denim-dress"
-          }
-        }
-      },
-      "block_order": [
-        "aad3fa41-6e3e-4769-b3ec-32bfc7dceca7",
-        "f8b8d995-c209-48d5-8280-f416f6c0559d",
-        "e5e4b869-f3fc-4978-b71c-d324d81d2f63",
-        "476773b0-f718-4ddb-978b-7924b452505b",
-        "collection_R9wbim"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".collection-carousel {padding-top: 20px; height: auto; padding-bottom: 0px;}",
-        ".heading {font-family: Inter;}",
-        ".collection-carousel .flex-box .flex-box__item {flex-basis: 55%;}",
-        ".collection-carousel .flex-box .image {margin-bottom: 0px;}",
-        ".collection-carousel .flex-box p {font-size: 14px;}"
-      ],
-      "settings": {
-        "heading": "",
-        "bg_color": "#fff4e2",
-        "heading_color": "#000000",
-        "name_color": "#000000",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "button_url": "shopify:\/\/collections\/cityscape",
-        "button_text": "View All",
-        "carouselCardWidth": "45"
-      }
-    },
     "slideshow_faEerE": {
       "type": "slideshow",
       "blocks": {
         "slide_bdTdRA": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_237652.png",
+            "image": "shopify:\/\/shop_images\/8_We_love_Fabrics.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1111,7 +1093,7 @@
         "collection_iE77RU": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/polly.jpg",
+            "image": "shopify:\/\/shop_images\/Recycled_Polyester.png",
             "name": "",
             "subname": "Luxe Comfort",
             "price": "",
@@ -1122,7 +1104,7 @@
         "collection_kVWTmD": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096427.png",
+            "image": "shopify:\/\/shop_images\/Cotton_ffc0b929-9f74-4c93-9c4f-7e4a8479c474.png",
             "name": "",
             "subname": "Breezy, Light and Gentle",
             "price": "",
@@ -1133,7 +1115,7 @@
         "collection_CWBzQe": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096428.png",
+            "image": "shopify:\/\/shop_images\/Viscose_1.png",
             "name": "",
             "subname": "Buttery-Soft and Lightweight",
             "price": "",
@@ -1144,7 +1126,7 @@
         "collection_Xq4z7B": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/modal_5645ef1e-2c70-45d0-8a70-a0491a5b32b5.jpg",
+            "image": "shopify:\/\/shop_images\/Modal_198471d6-3fa2-4add-89c0-be3a21726d75.png",
             "name": "",
             "subname": "Feels Like Second Skin",
             "price": "",
@@ -1155,7 +1137,7 @@
         "collection_t43xpN": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lyocell.jpg",
+            "image": "shopify:\/\/shop_images\/Lyocell_22a00b4a-07c6-482a-9383-ddfebd8bde77.png",
             "name": "",
             "subname": "Royally Cozy",
             "price": "",
@@ -1189,7 +1171,7 @@
         "slide_p7tQqU": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/virgio_tribe.png",
+            "image": "shopify:\/\/shop_images\/10_VirgioCircle_header.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1298,7 +1280,7 @@
         "slide_hRYnng": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/360_540_gurantee.png",
+            "image": "shopify:\/\/shop_images\/11_Guarantee.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1346,7 +1328,7 @@
         "slide_Tb6yiP": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096541_2.png",
+            "image": "shopify:\/\/shop_images\/12_Media_Spotlight.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1400,15 +1382,15 @@
     "53793592-7855-498e-a493-5e345669f947",
     "0d74af2d-097d-4bfe-8103-91bea60148bb",
     "0c467e92-a72a-4749-a115-b39616437b6b",
+    "slideshow_LHQzMt",
     "mwidget_NAaUxK",
     "cc265b0e-27de-4374-a086-654be84e48fe",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
-    "featured_collection_UbiGCE",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
     "featured_collection_BYnUMz",
-    "3729dca8-ad50-4b13-9b48-dd3cd5ba3b94",
+    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
+    "featured_collection_UbiGCE",
     "slideshow_faEerE",
     "collection_carousel_Ypt6Qk",
     "slideshow_3ANpL7",
