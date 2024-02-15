@@ -943,7 +943,7 @@
       "settings": {
         "heading": "",
         "heading_left": false,
-        "bg_color": "#fff4e2",
+        "bg_color": "#ffeddb",
         "button_url": "shopify:\/\/collections\/cityscape",
         "button_text": "View All",
         "show_on_desktop": false,
@@ -1019,7 +1019,7 @@
       "settings": {
         "heading": "",
         "heading_left": false,
-        "bg_color": "#fff4e2",
+        "bg_color": "#ffeddb",
         "button_url": "shopify:\/\/collections\/veronicas-all-collection",
         "button_text": "Explore Eco-Chic",
         "show_on_desktop": false,
