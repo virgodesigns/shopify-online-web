@@ -36,22 +36,24 @@
             </scroll-shadow>
           </div>
         {%- endif -%}
-        {%- if settings.search_product_collection -%}
-          <div class="thb-predictive-search--promotion">
-            <span class="thb-predictive-search--label">{{ settings.search_product_heading }}</span>
-            <div class="thb-predictive-search--promotion-products">
-              <ul class="products collection row small-up-2 medium-up-2">
-                {%- for product in settings.search_product_collection.products
-                  limit: settings.search_product_collection_limit
-                -%}
-                  <li class="columns">
-                    {% render 'product-card', product_card_product: product %}
-                  </li>
-                {%- endfor -%}
-              </ul>
+        {% comment %}
+          {%- if settings.search_product_collection -%}
+            <div class="thb-predictive-search--promotion">
+              <span class="thb-predictive-search--label">{{ settings.search_product_heading }}</span>
+              <div class="thb-predictive-search--promotion-products">
+                <ul class="products collection row small-up-2 medium-up-2">
+                  {%- for product in settings.search_product_collection.products
+                    limit: settings.search_product_collection_limit
+                  -%}
+                    <li class="columns">
+                      {% render 'product-card', product_card_product: product %}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
             </div>
-          </div>
-        {%- endif -%}
+          {%- endif -%}
+        {% endcomment %}
       </div>
     </div>
   </div>
