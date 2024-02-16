@@ -50,7 +50,7 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "EXPLORE THE COLLECTION",
+            "button_1_text": "",
             "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
             "button_1_outline": true,
             "button_1_underline": true,
