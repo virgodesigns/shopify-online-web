@@ -53,6 +53,18 @@
         "disable_bottom_spacing": false
       }
     },
+    "spacer_8treUM": {
+      "type": "spacer",
+      "custom_css": [
+        "div {background-color: white;}"
+      ],
+      "settings": {
+        "spacer_mobile": 25,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
     "rich_text_7dDwd4": {
       "type": "rich-text",
       "blocks": {
@@ -60,7 +72,7 @@
           "type": "button",
           "settings": {
             "link_label": "Fill the form",
-            "link": "",
+            "link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScj4BKFlY3GCSde2E0T-X7awwkek0VtARegLGtS7V1PKiKEVA\/viewform?usp=sf_link",
             "button_outline": false
           }
         }
@@ -69,7 +81,7 @@
         "button_RFqDN8"
       ],
       "custom_css": [
-        "div {background-color: white; height: 40px; width: 200px;}"
+        "div {background-color: white; height: 40px; width: 100%;}"
       ],
       "settings": {
         "section_width": "full-width-row",
@@ -83,20 +95,33 @@
         "disable_bottom_spacing": true
       }
     },
-    "spacer_JNehed": {
+    "spacer_KQk76Y": {
       "type": "spacer",
       "custom_css": [
         "div {background-color: white;}"
       ],
       "settings": {
-        "spacer_mobile": 25,
-        "spacer_desktop": 0,
+        "spacer_mobile": 20,
+        "spacer_desktop": 20,
         "border_separator": false,
         "border_separator_full": false
       }
     },
     "image_with_text_overlay_PMjnQx": {
       "type": "image-with-text-overlay",
+      "blocks": {
+        "button_QrYwwe": {
+          "type": "button",
+          "settings": {
+            "button_text": "Fill the form",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "button_QrYwwe"
+      ],
       "custom_css": [
 
       ],
@@ -139,6 +164,9 @@
     },
     "spacer_hXfqBy": {
       "type": "spacer",
+      "custom_css": [
+        "div {background-color: white;}"
+      ],
       "settings": {
         "spacer_mobile": 30,
         "spacer_desktop": 0,
@@ -218,8 +246,9 @@
     "main",
     "image_with_text_overlay_irWUXY",
     "image_with_text_overlay_KntcNT",
+    "spacer_8treUM",
     "rich_text_7dDwd4",
-    "spacer_JNehed",
+    "spacer_KQk76Y",
     "image_with_text_overlay_PMjnQx",
     "image_with_text_overlay_ngQf9e",
     "spacer_hXfqBy",
