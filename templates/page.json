@@ -12,10 +12,30 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "image_with_text_overlay_B393UW": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/Hero_web.png",
+        "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 30,
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
     "shogun-helper",
-    "main"
+    "main",
+    "image_with_text_overlay_B393UW"
   ]
 }
