@@ -185,12 +185,48 @@
             "strikePrice": "",
             "url": "shopify:\/\/collections\/wild-romance"
           }
+        },
+        "collection_eC7Qmf": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.png",
+            "name": "Newtro Twist",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/newtro-twist"
+          }
+        },
+        "collection_GzqYTr": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
+            "name": "#IDGAF",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/poolside-splash"
+          }
+        },
+        "collection_QKNKgb": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
+            "name": "Born To Shine",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
+          }
         }
       },
       "block_order": [
         "57f80e1c-e1cd-4d69-9254-c8577faa337d",
         "6c3b3605-3069-4325-bf42-e81b89d7f38b",
-        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e"
+        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
+        "collection_eC7Qmf",
+        "collection_GzqYTr",
+        "collection_QKNKgb"
       ],
       "settings": {
         "heading": "Other Collections",
@@ -204,58 +240,52 @@
         "carouselCardWidth": ""
       }
     },
-    "046c3a6b-d955-4c19-9fd6-ce3b9600312d": {
-      "type": "collection-carousel",
+    "slideshow_EQEBa7": {
+      "type": "slideshow",
       "blocks": {
-        "f652fd17-e150-47aa-a7f2-481270aa46bf": {
-          "type": "collection",
+        "slide_fQAnAm": {
+          "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.jpg",
-            "name": "Newtro Twist",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/newtro-twist"
-          }
-        },
-        "6e4143d0-717a-4239-a8dc-7805269e63c0": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
-            "name": "#IDGAF",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/poolside-splash"
-          }
-        },
-        "5c8cf632-be43-41d2-a57c-facd24e61156": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
+            "slide_link": "",
+            "video_background": false,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Explore Now",
+            "button_2_link": "shopify:\/\/collections\/date-collection",
+            "button_2_outline": false,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "f652fd17-e150-47aa-a7f2-481270aa46bf",
-        "6e4143d0-717a-4239-a8dc-7805269e63c0",
-        "5c8cf632-be43-41d2-a57c-facd24e61156"
+        "slide_fQAnAm"
       ],
       "settings": {
-        "heading": "",
-        "bg_color": "#151515",
-        "heading_color": "#ffffff",
-        "name_color": "#ffffff",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
         "show_on_desktop": true,
         "show_on_mobile": false,
-        "button_url": "shopify:\/\/collections",
-        "button_text": "",
-        "carouselCardWidth": ""
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
@@ -1379,7 +1409,7 @@
     "717f49c0-b204-480f-8dce-b7f6cddf9195",
     "dcfc8ca7-af12-426a-8f5a-17f79d8c3253",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
-    "046c3a6b-d955-4c19-9fd6-ce3b9600312d",
+    "slideshow_EQEBa7",
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "53793592-7855-498e-a493-5e345669f947",
