@@ -112,6 +112,7 @@
     },
     "ace3e86a-9dba-4966-8d72-88d70f4f48c2": {
       "type": "product-page-tabs",
+      "disabled": true,
       "custom_css": [
 
       ],
