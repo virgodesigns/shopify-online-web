@@ -3,35 +3,6 @@
     "16479477632637c9a7": {
       "type": "slideshow",
       "blocks": {
-        "164794776393e76b8e-1": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "EXPLORE THE COLLECTION",
-            "button_1_link": "shopify:\/\/collections\/date-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        },
         "slide_V4D4x9": {
           "type": "slide",
           "settings": {
@@ -62,7 +33,6 @@
         }
       },
       "block_order": [
-        "164794776393e76b8e-1",
         "slide_V4D4x9"
       ],
       "settings": {
