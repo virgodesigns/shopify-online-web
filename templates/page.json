@@ -148,7 +148,7 @@
         "section_width": "full-width-row-full",
         "image": "shopify:\/\/shop_images\/content_creator_banner_017cd617-8fbe-4cc8-b900-42451b76bef5.png",
         "image_parallax": false,
-        "desktop_height": "desktop-height-650",
+        "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-500",
         "content_width": "medium",
         "content_position": "bottom-center",
