@@ -21,14 +21,14 @@
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-500",
+        "mobile_height": "mobile-height-full",
         "content_width": "medium",
         "content_position": "bottom-center",
         "text_alignment": "center",
         "overlay_opacity": 0,
         "show_on_desktop": true,
         "show_on_mobile": false,
-        "disable_top_spacing": true,
+        "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
     },
@@ -47,7 +47,7 @@
         "overlay_opacity": 0,
         "show_on_desktop": false,
         "show_on_mobile": true,
-        "disable_top_spacing": true,
+        "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
     },
