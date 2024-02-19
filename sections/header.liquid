@@ -21,10 +21,9 @@
   }
   .positionLogo{
     position: absolute;
-   bottom: 6px; 
+   bottom: 6px;
   }
 </style>
-
 
 <header
   id="header"
@@ -58,7 +57,7 @@
 </header>
 <div class="thb-secondary-area mobile">
   {% if template contains 'product' %}
-    <a class="right-arrow-button" href="javascript:history.back()">
+    <a class="right-arrow-button" id="back_btn">
       {% render 'home-icon' %}
     </a>
   {% endif %}
@@ -167,8 +166,19 @@
         imgElement.classList.remove('hide-logo');
       }
     }
+    const backElem = document.getElementById('back_btn');
+
+    const liquidTemplate = {{ template|json }}
+
+    backElem.addEventListener('click', (e) => {
+      if (document.referrer == '' && liquidTemplate == 'product') {
+        window.location.href = "/"
+      } else {
+        history.back();
+      }
+    });
   });
-  </script>
+</script>
 
 {% schema %}
 {
