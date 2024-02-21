@@ -1250,28 +1250,60 @@
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148": {
       "type": "social-images-collections",
       "blocks": {
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096289.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/date-chic-red-lycra-satin-skirt?_pos=1&_psq=claret&_ss=e&_v=1.0"
+          }
+        },
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1": {
           "type": "social_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096287.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_48096288_6a86ef23-78dd-4581-99c5-bce71403c0b1.jpg",
             "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/floral-fireworks-babydoll-chic-dress?_pos=1&_psq=eni&_ss=e&_v=1.0"
+            "social_url": "https:\/\/virgio.com\/products\/date-glam-corset-dress-with-flutter-sleeve"
+          }
+        },
+        "social_image_pExG7k": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096287_f7cb14aa-eca5-40c5-805e-b421f8ddf67a.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
+          }
+        },
+        "social_image_LBa3rF": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096290.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/polka-dot-serenade-in-black-with-pockets"
           }
         },
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2": {
           "type": "social_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096285.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_48096284_e385c33c-33ad-4e68-848e-338230b4c0fb.jpg",
             "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/black-floral-frill-dress-with-pockets?_pos=1&_sid=e91477e32&_ss=r"
+            "social_url": "https:\/\/virgio.com\/products\/sun-kissed-floral-bodycon-dress?_pos=1&_psq=kaina&_ss=e&_v=1.0"
           }
         },
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
+        "social_image_QwDgtt": {
           "type": "social_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096286.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_48096282_9aac6d05-0bf8-41de-9be9-e125c8b28ca1.jpg",
             "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/animal-print-v-neck-mini-dress?_pos=1&_psq=nura&_ss=e&_v=1.0"
+            "social_url": "https:\/\/virgio.com\/products\/vivid-v-neck-frill-elegance-with-pockets?_pos=1&_psq=erum&_ss=e&_v=1.0"
+          }
+        },
+        "social_image_PHLdAe": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096285_cb553be5-2bfc-4e4e-901f-bbceb5fb32f5.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/red-v-neck-elegance-with-pockets"
           }
         },
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12": {
@@ -1284,9 +1316,13 @@
         }
       },
       "block_order": [
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
+        "social_image_pExG7k",
+        "social_image_LBa3rF",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
+        "social_image_QwDgtt",
+        "social_image_PHLdAe",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12"
       ],
       "custom_css": [
