@@ -1274,6 +1274,14 @@
             "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
           }
         },
+        "social_image_QwDgtt": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096282_9aac6d05-0bf8-41de-9be9-e125c8b28ca1.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/vivid-v-neck-frill-elegance-with-pockets?_pos=1&_psq=erum&_ss=e&_v=1.0"
+          }
+        },
         "social_image_LBa3rF": {
           "type": "social_image",
           "settings": {
@@ -1288,14 +1296,6 @@
             "image": "shopify:\/\/shop_images\/Frame_48096284_e385c33c-33ad-4e68-848e-338230b4c0fb.jpg",
             "social_id": "",
             "social_url": "https:\/\/virgio.com\/products\/sun-kissed-floral-bodycon-dress?_pos=1&_psq=kaina&_ss=e&_v=1.0"
-          }
-        },
-        "social_image_QwDgtt": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096282_9aac6d05-0bf8-41de-9be9-e125c8b28ca1.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/vivid-v-neck-frill-elegance-with-pockets?_pos=1&_psq=erum&_ss=e&_v=1.0"
           }
         },
         "social_image_PHLdAe": {
@@ -1319,9 +1319,9 @@
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
         "social_image_pExG7k",
+        "social_image_QwDgtt",
         "social_image_LBa3rF",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
-        "social_image_QwDgtt",
         "social_image_PHLdAe",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12"
       ],
