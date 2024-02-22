@@ -1094,5 +1094,12 @@
 
       ]
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "#dialogContainer {--stylevue-background: #222222; --stylevue-text: white; --stylevue-text-heading: white; --stylevue-text-light: white; --stylevue-primary: #f74f3d; --stylevue-primary-accent: #ffffff; --stylevue-box-background: black;}",
+      "#navbar {background-color: white;}",
+      "#dialogContainer {--stylevue-background: white; --stylevue-text: black; --stylevue-text-heading: black; --stylevue-text-light: black; --stylevue-primary: black; --stylevue-primary-accent: #ffffff; --stylevue-box-background: white;}"
+    ]
   }
 }
