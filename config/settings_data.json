@@ -207,6 +207,13 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "13225279708922339527": {
+        "type": "shopify:\/\/apps\/stylevue\/blocks\/size\/a7bfd781-8ae4-456b-a71c-e804cdd270fd",
+        "disabled": false,
+        "settings": {
+          "product": ""
+        }
       }
     }
   },
