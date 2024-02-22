@@ -1,80 +1,56 @@
 {
   "sections": {
-    "16479477632637c9a7": {
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_left": false,
+        "bg_color": "#ffffff",
+        "button_url": "",
+        "button_text": "Know more",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "",
+        "carouselCardWidth": "",
+        "description": "",
+        "full_width": false,
+        "collection": "all",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "slideshow_nfyjbt": {
       "type": "slideshow",
       "blocks": {
-        "slide_V4D4x9": {
+        "slide_fDPWtA": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
             "slide_link": "shopify:\/\/collections\/spring-dream-collection",
-            "video_background": true,
-            "video": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
             "heading": "",
-            "heading_size": "h1-large",
+            "heading_size": "h1-xlarge",
             "content": "",
             "description_size": "medium",
-            "content_position": "bottom-center",
+            "content_position": "middle-center",
             "text_alignment": "center",
             "content_size": "medium",
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
+            "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_V4D4x9"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "717f49c0-b204-480f-8dce-b7f6cddf9195": {
-      "type": "slideshow",
-      "blocks": {
-        "5017a32f-370f-4073-b734-ec713057eb98": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
-            "slide_link": "shopify:\/\/pages\/circularity",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Circularity Desktop_2.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/circularity",
-            "button_1_outline": false,
-            "button_1_underline": false,
             "button_2_text": "",
             "button_2_link": "",
             "button_2_outline": false,
@@ -83,10 +59,7 @@
         }
       },
       "block_order": [
-        "5017a32f-370f-4073-b734-ec713057eb98"
-      ],
-      "custom_css": [
-        ".main-slideshow .slideshow__slide-content .button {background-color: black;}"
+        "slide_fDPWtA"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -101,305 +74,10 @@
         "disable_bottom_spacing": true
       }
     },
-    "dcfc8ca7-af12-426a-8f5a-17f79d8c3253": {
+    "slideshow_8djHwc": {
       "type": "slideshow",
       "blocks": {
-        "template--20881644159273__dcfc8ca7-af12-426a-8f5a-17f79d8c3253-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
-            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Campaign 1 (1).mp4",
-            "subheading": "",
-            "heading": "The Veronicas",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Explore now",
-            "button_1_link": "shopify:\/\/collections\/veronicas-all-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--20881644159273__dcfc8ca7-af12-426a-8f5a-17f79d8c3253-slide-3"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "8b61fc5c-4397-4c69-93af-8b61a417cbf0": {
-      "type": "collection-carousel",
-      "blocks": {
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
-            "name": "Whims & Fancies",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/whims-fancies"
-          }
-        },
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
-            "name": "Cityscape",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cityscape"
-          }
-        },
-        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/6._Wild_romance-1.jpg",
-            "name": "Wild Romance",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/wild-romance"
-          }
-        },
-        "collection_eC7Qmf": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.png",
-            "name": "Newtro Twist",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/newtro-twist"
-          }
-        },
-        "collection_GzqYTr": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
-            "name": "#IDGAF",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/poolside-splash"
-          }
-        },
-        "collection_QKNKgb": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
-          }
-        }
-      },
-      "block_order": [
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d",
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b",
-        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
-        "collection_eC7Qmf",
-        "collection_GzqYTr",
-        "collection_QKNKgb"
-      ],
-      "settings": {
-        "heading": "Other Collections",
-        "bg_color": "#151515",
-        "heading_color": "#ffffff",
-        "name_color": "#ffffff",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "button_url": "shopify:\/\/collections",
-        "button_text": "",
-        "carouselCardWidth": ""
-      }
-    },
-    "slideshow_BBgkGm": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_6Ve9bX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Explore now",
-            "button_1_link": "shopify:\/\/collections\/date-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_6Ve9bX"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
-      "type": "collection-carousel",
-      "blocks": {
-        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/polly.jpg",
-            "name": "Luxe Comfort",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/recycled-polyester"
-          }
-        },
-        "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096427.png",
-            "name": "Breezy, Light and Gentle",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cotton"
-          }
-        },
-        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096428.png",
-            "name": "Buttery-Soft and Lightweight",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/viscose"
-          }
-        }
-      },
-      "block_order": [
-        "89304511-9896-4639-8a32-32a4b0ec2cc0",
-        "4becdef9-56f9-47a7-80fd-64c6a8892f80",
-        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
-      ],
-      "settings": {
-        "heading": "Shop by Fabric",
-        "bg_color": "#151515",
-        "heading_color": "#ffffff",
-        "name_color": "#ffffff",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "button_url": "shopify:\/\/collections",
-        "button_text": "",
-        "carouselCardWidth": ""
-      }
-    },
-    "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
-      "type": "slideshow",
-      "blocks": {
-        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Less_is_MOre_1878e93c-93f8-41d8-8d65-8eef9e75cef7.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/9185922_1.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Know More",
-            "button_1_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1"
-      ],
-      "custom_css": [
-        ".main-slideshow .slideshow__slide-content .button {background-color: black;}",
-        "@media only screen and (max-width: 600px) {.main-slideshow .slideshow__slide-content .button {display: none; }}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "53793592-7855-498e-a493-5e345669f947": {
-      "type": "slideshow",
-      "blocks": {
-        "52301fcc-9455-47af-b905-8379efe6af79": {
+        "slide_chAVfL": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/1._Hero_banner.png",
@@ -429,7 +107,7 @@
         }
       },
       "block_order": [
-        "52301fcc-9455-47af-b905-8379efe6af79"
+        "slide_chAVfL"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -444,10 +122,10 @@
         "disable_bottom_spacing": true
       }
     },
-    "0d74af2d-097d-4bfe-8103-91bea60148bb": {
+    "scrolling_text_BtBWP8": {
       "type": "scrolling-text",
       "blocks": {
-        "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
+        "text_68Dy9J": {
           "type": "text",
           "settings": {
             "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
@@ -455,7 +133,7 @@
             "outline_text": false
           }
         },
-        "147ed3ad-dbe9-4668-9f28-39062c0b57a4": {
+        "text_KqxEnJ": {
           "type": "text",
           "settings": {
             "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
@@ -465,8 +143,8 @@
         }
       },
       "block_order": [
-        "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1",
-        "147ed3ad-dbe9-4668-9f28-39062c0b57a4"
+        "text_68Dy9J",
+        "text_KqxEnJ"
       ],
       "custom_css": [
         "div {height: 32px;}",
@@ -480,9 +158,9 @@
         "speed": "20s",
         "text_size": 16,
         "text_uppercase": false,
-        "image_size": "small",
-        "color_bg": "#151515",
-        "color_text": "#ffffff",
+        "image_size": "large",
+        "color_bg": "#f5f3ef",
+        "color_text": "#151515",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "show_on_desktop": false,
@@ -491,981 +169,156 @@
         "disable_bottom_spacing": true
       }
     },
-    "0c467e92-a72a-4749-a115-b39616437b6b": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_yVNL8q": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2._shop_by_category_header.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_yVNL8q"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_LHQzMt": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_WkWbxy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.1_Dress_category_2.png",
-            "slide_link": "shopify:\/\/collections\/dresses-date",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_WkWbxy"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "mwidget_NAaUxK": {
-      "type": "mwidget",
-      "blocks": {
-        "image_item_8k6yQC": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.2_Topwear_category_img_1.png",
-            "heading_text": "Topwear",
-            "button_link": "shopify:\/\/collections\/top-wear-date"
-          }
-        },
-        "image_item_ABtpDQ": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
-            "heading_text": "Co-ord Sets",
-            "button_link": "shopify:\/\/collections\/co-ords-date"
-          }
-        },
-        "image_item_MLUAC8": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
-            "heading_text": "Bottomwear",
-            "button_link": "shopify:\/\/collections\/bottomwear-date"
-          }
-        }
-      },
-      "block_order": [
-        "image_item_8k6yQC",
-        "image_item_ABtpDQ",
-        "image_item_MLUAC8"
-      ],
-      "settings": {
-        "main_heading": "",
-        "bg_color": "#ffeddb",
-        "text_color": ""
-      }
-    },
-    "cc265b0e-27de-4374-a086-654be84e48fe": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1._Cherry_Crush_1.png",
-            "slide_link": "shopify:\/\/collections\/cherry-crush",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "95cdd355-0d62-4432-a39e-f29896ce300a": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2._sunny_side_up_1.png",
-            "slide_link": "shopify:\/\/collections\/sunny-side-up",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_RewRja": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3._cerulean_dreams.png",
-            "slide_link": "shopify:\/\/collections\/cerulean-dreams",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_R9PDXi": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4._sage_serenity_2.png",
-            "slide_link": "shopify:\/\/collections\/sage-serenity",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_idabbR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5._peony_perfection_1.png",
-            "slide_link": "shopify:\/\/collections\/peony-perfection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3",
-        "95cdd355-0d62-4432-a39e-f29896ce300a",
-        "slide_RewRja",
-        "slide_R9PDXi",
-        "slide_idabbR"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_MQn6Jh": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_TnB8by": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_1.png",
-            "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_8cy6WM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_1.png",
-            "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_TnB8by",
-        "slide_8cy6WM"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "1f40935b-b1ff-4d3b-a46e-841cbd995ed2": {
-      "type": "slideshow",
-      "blocks": {
-        "7f0130a8-7d0e-40ba-8011-c1b22d72af9a": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5_We_are_Virgio_1.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity-mweb",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "7f0130a8-7d0e-40ba-8011-c1b22d72af9a"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "swipe",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/6_The_Date_Banner.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection_BYnUMz": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffeddb",
-        "button_url": "shopify:\/\/collections\/date-collection",
-        "button_text": "EXPLORE ECO-CHIC",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/date-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "date-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/7_Veronicas_Banner.png",
-            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "swipe",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection_UbiGCE": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffeddb",
-        "button_url": "shopify:\/\/collections\/veronicas-all-collection",
-        "button_text": "Explore Eco-Chic",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/veronicas-all-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "veronicas-all-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_faEerE": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_bdTdRA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/8_We_love_Fabrics_1.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_bdTdRA"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "collection_carousel_Ypt6Qk": {
+    "collection_carousel_yAfpTf": {
       "type": "collection-carousel",
       "blocks": {
-        "collection_iE77RU": {
+        "collection_4EmmqJ": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Recycled_Polyester.png",
+            "image": "shopify:\/\/shop_images\/Frame_1.png",
             "name": "",
-            "subname": "Luxe Comfort",
+            "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/recycled-polyester"
+            "url": ""
           }
         },
-        "collection_kVWTmD": {
+        "collection_MWf6kB": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cotton_ffc0b929-9f74-4c93-9c4f-7e4a8479c474.png",
+            "image": "shopify:\/\/shop_images\/PDP_img.png",
             "name": "",
-            "subname": "Breezy, Light and Gentle",
+            "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/cotton"
+            "url": ""
           }
         },
-        "collection_CWBzQe": {
+        "collection_RUHg7f": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Viscose_1.png",
+            "image": "shopify:\/\/shop_images\/Frame_8_970d15e5-5715-4308-b0fa-ce1c757b607a.png",
             "name": "",
-            "subname": "Buttery-Soft and Lightweight",
+            "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/viscose"
+            "url": ""
           }
         },
-        "collection_Xq4z7B": {
+        "collection_MqFaVB": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Modal_198471d6-3fa2-4add-89c0-be3a21726d75.png",
+            "image": "shopify:\/\/shop_images\/Frame_10.png",
             "name": "",
-            "subname": "Feels Like Second Skin",
+            "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/modal"
+            "url": ""
           }
         },
-        "collection_t43xpN": {
+        "collection_hdAYbh": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lyocell_22a00b4a-07c6-482a-9383-ddfebd8bde77.png",
+            "image": "shopify:\/\/shop_images\/Frame_2.png",
             "name": "",
-            "subname": "Royally Cozy",
+            "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/tencel"
+            "url": ""
           }
         }
       },
       "block_order": [
-        "collection_iE77RU",
-        "collection_kVWTmD",
-        "collection_CWBzQe",
-        "collection_Xq4z7B",
-        "collection_t43xpN"
+        "collection_4EmmqJ",
+        "collection_MWf6kB",
+        "collection_RUHg7f",
+        "collection_MqFaVB",
+        "collection_hdAYbh"
       ],
       "settings": {
-        "heading": "",
-        "bg_color": "#ffeddb",
+        "heading": "Other Collections",
+        "bg_color": "#ffffff",
         "heading_color": "#000000",
         "name_color": "#000000",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "button_url": "",
-        "button_text": "",
-        "carouselCardWidth": "60"
+        "button_text": "Know more",
+        "carouselCardWidth": ""
       }
     },
-    "slideshow_3ANpL7": {
-      "type": "slideshow",
+    "logo_list_RLgY4j": {
+      "type": "logo-list",
       "blocks": {
-        "slide_p7tQqU": {
-          "type": "slide",
+        "logo_dxPqH9": {
+          "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_VirgioCircle_header_3.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
+            "image": "shopify:\/\/shop_images\/4_42117ee3-8345-45b8-9705-8d5a2809790e.jpg",
+            "link": ""
+          }
+        },
+        "logo_NHdq6k": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.png",
+            "link": ""
+          }
+        },
+        "logo_6w7NJV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2.png",
+            "link": ""
+          }
+        },
+        "logo_3gr3kf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PDP_img.png",
+            "link": ""
+          }
+        },
+        "logo_6cfLGP": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_a0003cff-50c6-4354-8558-9a015a4a099e.jpg",
+            "link": ""
+          }
+        },
+        "logo_MFrJX6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_8.png",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "slide_p7tQqU"
+        "logo_dxPqH9",
+        "logo_NHdq6k",
+        "logo_6w7NJV",
+        "logo_3gr3kf",
+        "logo_6cfLGP",
+        "logo_MFrJX6"
       ],
+      "disabled": true,
       "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "57e4c19e-e72d-42fc-b2a5-f565d4d34148": {
-      "type": "social-images-collections",
-      "blocks": {
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096289.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/date-chic-red-lycra-satin-skirt?_pos=1&_psq=claret&_ss=e&_v=1.0"
-          }
-        },
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096288_6a86ef23-78dd-4581-99c5-bce71403c0b1.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/date-glam-corset-dress-with-flutter-sleeve"
-          }
-        },
-        "social_image_pExG7k": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096287_f7cb14aa-eca5-40c5-805e-b421f8ddf67a.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
-          }
-        },
-        "social_image_QwDgtt": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096282_9aac6d05-0bf8-41de-9be9-e125c8b28ca1.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/vivid-v-neck-frill-elegance-with-pockets?_pos=1&_psq=erum&_ss=e&_v=1.0"
-          }
-        },
-        "social_image_LBa3rF": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096290.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/polka-dot-serenade-in-black-with-pockets"
-          }
-        },
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096284_e385c33c-33ad-4e68-848e-338230b4c0fb.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/sun-kissed-floral-bodycon-dress?_pos=1&_psq=kaina&_ss=e&_v=1.0"
-          }
-        },
-        "social_image_PHLdAe": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096285_cb553be5-2bfc-4e4e-901f-bbceb5fb32f5.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/red-v-neck-elegance-with-pockets"
-          }
-        },
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096286_28328d6e-3b41-4531-a3e4-bc2f2e822323.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/frill-icious-beige-poplin-dress-with-pockets?_pos=1&_psq=ziva&_ss=e&_v=1.0"
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
-        "social_image_pExG7k",
-        "social_image_QwDgtt",
-        "social_image_LBa3rF",
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
-        "social_image_PHLdAe",
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-12"
-      ],
-      "custom_css": [
-        ".social-images-collections .image-container::after {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.6) 100% ); z-index: 1;}",
-        ".heading {font-family: Inter;}"
-      ],
-      "settings": {
-        "para_top": "",
-        "heading_top": "Hear it from the #VirgioCircle",
-        "bg_color": "#ffeddb",
-        "colmun_number_tablet": "3",
-        "colmun_number_desktop": "6",
-        "para_bottom": "",
-        "show_svg": false,
-        "button_text": "",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_RQ3bpV": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_hRYnng": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/11_Guarantee.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_hRYnng"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_HL8m7z": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_Tb6yiP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/12_Media_Spotlight_a412c606-b8b8-4112-b38d-c4df82f75405.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#ffffff",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_Tb6yiP"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "heading": "Clients",
+        "description": "<p>Add a short description for this section<\/p>",
+        "columns": 5,
+        "mobile_swipe": true,
+        "center_align": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     }
   },
   "order": [
-    "16479477632637c9a7",
-    "717f49c0-b204-480f-8dce-b7f6cddf9195",
-    "dcfc8ca7-af12-426a-8f5a-17f79d8c3253",
-    "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
-    "slideshow_BBgkGm",
-    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
-    "db7c3fd2-75c3-4d85-b865-9a233129c01e",
-    "53793592-7855-498e-a493-5e345669f947",
-    "0d74af2d-097d-4bfe-8103-91bea60148bb",
-    "0c467e92-a72a-4749-a115-b39616437b6b",
-    "slideshow_LHQzMt",
-    "mwidget_NAaUxK",
-    "cc265b0e-27de-4374-a086-654be84e48fe",
-    "slideshow_MQn6Jh",
-    "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
-    "7c2288b9-760f-41be-a885-02548bc5a5c3",
-    "featured_collection_BYnUMz",
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
-    "featured_collection_UbiGCE",
-    "slideshow_faEerE",
-    "collection_carousel_Ypt6Qk",
-    "slideshow_3ANpL7",
-    "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
-    "slideshow_RQ3bpV",
-    "slideshow_HL8m7z"
+    "featured_collection",
+    "slideshow_nfyjbt",
+    "slideshow_8djHwc",
+    "scrolling_text_BtBWP8",
+    "collection_carousel_yAfpTf",
+    "logo_list_RLgY4j"
   ]
 }

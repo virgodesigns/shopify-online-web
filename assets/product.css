@@ -23,14 +23,8 @@
 }
 
 .right-arrow-button {
-  position: absolute;
-  top: 18px;
-  left: 8px;
-  z-index: 999;
   display: flex;
-  background: rgba(87 80 80 / 50%);
-  padding: 5px;
-  border-radius: 50%;
+  padding: 0.8rem 1rem;
 }
 
 .product-thumnails-image img,
