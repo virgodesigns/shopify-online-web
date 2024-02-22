@@ -128,9 +128,12 @@
       <div role="main" id="main-content" class="{% if request.path == "/" %}sliding-sections{% endif %}">
         {{ content_for_layout }}
       </div>
-      {% unless template == 'index' %}
-        {% sections 'footer-group' %}
-      {% endunless %}
+      {% comment %}
+        {% unless template == 'index' %}
+          {% sections 'footer-group' %}
+        {% endunless %}
+      {% endcomment %}
+      {% sections 'footer-group' %}
       {% render 'cart-drawer' %}
       {% render 'product-drawer' %}
       {% render 'search-drawer' %}
