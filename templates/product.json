@@ -23,6 +23,12 @@
             "show_products_rating": true
           }
         },
+        "stylevue_size_button_ttEQe9": {
+          "type": "shopify:\/\/apps\/stylevue\/blocks\/size-button\/a7bfd781-8ae4-456b-a71c-e804cdd270fd",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -80,6 +86,7 @@
       "block_order": [
         "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
+        "stylevue_size_button_ttEQe9",
         "variant_picker",
         "judge_me_reviews_preview_badge_JHrKVw",
         "buy_buttons",
