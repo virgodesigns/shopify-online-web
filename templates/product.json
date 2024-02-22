@@ -210,6 +210,21 @@
         "heading": "",
         "sub_heading": "Spotted in Virgio"
       }
+    },
+    "1708602122cdd568e3": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_HrqFMc": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_HrqFMc"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -220,6 +235,7 @@
     "1663667027ccd68a19",
     "16623877721f33fb14",
     "product-recommendations",
-    "6504c889-765e-4951-97dd-2817199cfc89"
+    "6504c889-765e-4951-97dd-2817199cfc89",
+    "1708602122cdd568e3"
   ]
 }
