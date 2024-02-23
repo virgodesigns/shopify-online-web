@@ -11,18 +11,20 @@ class MuteToggleElement extends HTMLElement {
   muteToggle(event) {
     event.preventDefault();
     let mute = false;
-    const muteIcon = this.querySelector('.mute-icon');
-    const unmuteIcon = this.querySelector('.unmute-icon');
-    const videos = this.querySelectorAll(".main-slideshow .slideshow__slide-video-bg video");
+    const muteIcon = this.querySelector(".mute-icon");
+    const unmuteIcon = this.querySelector(".unmute-icon");
+    const videos = this.querySelectorAll(
+      ".main-slideshow .slideshow__slide-video-bg video"
+    );
     if (videos.length > 0) {
       if (videos[0].muted === true) {
         mute = false;
-        unmuteIcon.classList.remove('icon-hide');
-        muteIcon.classList.add('icon-hide');
+        unmuteIcon.classList.remove("icon-hide");
+        muteIcon.classList.add("icon-hide");
       } else {
         mute = true;
-        unmuteIcon.classList.add('icon-hide');
-        muteIcon.classList.remove('icon-hide');
+        unmuteIcon.classList.add("icon-hide");
+        muteIcon.classList.remove("icon-hide");
       }
 
       videos.forEach((video) => {
@@ -37,7 +39,7 @@ class MuteToggleElement extends HTMLElement {
   }
 }
 
-customElements.define('mute-toggle-element', MuteToggleElement);
+customElements.define("mute-toggle-element", MuteToggleElement);
 
 let productContent = document.getElementById("content");
 let viewMoreBtn = document.getElementById("viewMoreBtn");
@@ -56,7 +58,6 @@ if (viewMoreBtn) {
   });
 }
 
-
 // on page load by default first tab selecting
 document.addEventListener("DOMContentLoaded", () => {
   const tabHeading = document.querySelectorAll(".tab--heading");
@@ -73,7 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   for (let i = 0; i <= tabHeading.length; i++) {
     let exist = false;
-    if (tabHeading[i].getAttribute("data-tab") != "") {
+    if (
+      tabHeading &&
+      tabHeading[i] &&
+      tabHeading[i].getAttribute("data-tab") != ""
+    ) {
       tabHeading[i].classList.add("is--active");
       exist = true;
     }
