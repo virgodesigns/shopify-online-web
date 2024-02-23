@@ -25,7 +25,6 @@
         },
         "stylevue_size_button_ttEQe9": {
           "type": "shopify:\/\/apps\/stylevue\/blocks\/size-button\/a7bfd781-8ae4-456b-a71c-e804cdd270fd",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
