@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabContent = document.querySelectorAll(".tab-content");
   for (let i = 0; i <= tabContent.length; i++) {
     let exist = false;
-    if (tabContent[i].getAttribute("id") != "") {
+    if (tabContent && tabContent[i] && tabContent[i].getAttribute("id") != "") {
       tabContent[i].classList.add("active_content");
       exist = true;
     }
