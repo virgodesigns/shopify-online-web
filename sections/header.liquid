@@ -260,13 +260,17 @@
 
     const liquidTemplate = {{ template|json }}
 
+    if(backElem){
     backElem.addEventListener('click', (e) => {
       if (document.referrer == '' && liquidTemplate == 'product') {
         window.location.href = "/"
       } else {
         history.back();
       }
-    });
+    })
+  }
+
+
   });
 </script>
 
