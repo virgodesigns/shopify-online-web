@@ -1737,7 +1737,7 @@ html {
 }
 
 body {
-  /* overflow-wrap: break-word; */
+  overflow-wrap: break-word;
   font-size: 1.0625rem;
   line-height: calc(var(--font-body-line-height-scale) * 1.6);
   letter-spacing: var(--font-body-letter-spacing, normal);
@@ -2019,8 +2019,8 @@ table td {
   text-align: center;
   font-size: 10px;
   font-weight: 500;
-line-height: 14px;
-letter-spacing: 0.1px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
 }
 
 table.no-borders {
