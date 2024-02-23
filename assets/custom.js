@@ -43,6 +43,8 @@ customElements.define('mute-toggle-element', MuteToggleElement);
 let productContent = document.getElementById("content");
 let viewMoreBtn = document.getElementById("viewMoreBtn");
 let isExpanded = false;
+
+if(viewMoreBtn){
 viewMoreBtn.addEventListener("click", () => {
   if (isExpanded) {
     productContent.style.maxHeight = "0px";
@@ -51,6 +53,7 @@ viewMoreBtn.addEventListener("click", () => {
     productContent.style.maxHeight = "none";
     viewMoreBtn.textContent = "View Less";
   }
+}
   isExpanded = !isExpanded;
 });
 
