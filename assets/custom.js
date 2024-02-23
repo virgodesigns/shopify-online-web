@@ -39,23 +39,22 @@ class MuteToggleElement extends HTMLElement {
 
 customElements.define('mute-toggle-element', MuteToggleElement);
 
-// view more button for product description
 let productContent = document.getElementById("content");
 let viewMoreBtn = document.getElementById("viewMoreBtn");
 let isExpanded = false;
 
-if(viewMoreBtn){
-viewMoreBtn.addEventListener("click", () => {
-  if (isExpanded) {
-    productContent.style.maxHeight = "0px";
-    viewMoreBtn.textContent = "View More";
-  } else {
-    productContent.style.maxHeight = "none";
-    viewMoreBtn.textContent = "View Less";
-  }
+if (viewMoreBtn) {
+  viewMoreBtn.addEventListener("click", () => {
+    if (isExpanded) {
+      productContent.style.maxHeight = "0px";
+      viewMoreBtn.textContent = "View More";
+    } else {
+      productContent.style.maxHeight = "none";
+      viewMoreBtn.textContent = "View Less";
+    }
+    isExpanded = !isExpanded;
+  });
 }
-  isExpanded = !isExpanded;
-});
 
 
 // on page load by default first tab selecting
