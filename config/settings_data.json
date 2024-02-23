@@ -1098,7 +1098,9 @@
   "platform_customizations": {
     "custom_css": [
       "#navbar {background-color: white;}",
-      "#dialogContainer {--stylevue-background: white; --stylevue-text: black; --stylevue-text-heading: black; --stylevue-text-light: black; --stylevue-primary: black; --stylevue-primary-accent: #ffffff; --stylevue-box-background: white;}"
+      "#dialogContainer {--stylevue-background: white; --stylevue-text: black; --stylevue-text-heading: black; --stylevue-text-light: black; --stylevue-primary: black; --stylevue-primary-accent: #ffffff; --stylevue-box-background: white;}",
+      "#openBtn{border-radius: 0px !important; color: #000000; border: 1px dotted #033161; background-color: #EDFAFF; }",
+      "#openBtn.recommend{color: #000000;background-color: #EDFAFF;}"
     ]
   }
 }
