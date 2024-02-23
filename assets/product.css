@@ -90,7 +90,7 @@
 }
 
 .product-tittle-first_word {
-  color:  #111;
+  color: #111;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -99,7 +99,7 @@
 }
 
 .product-small-title {
-  color:  #111;
+  color: #111;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -216,6 +216,7 @@
   flex: 1;
   color: #fff;
   border: none;
+  margin-bottom: 0;
 }
 .add_to_cart_holder .swym-button-bar {
   margin-top: 0;
@@ -1486,8 +1487,8 @@
 }
 .product-popup-modal__toggle {
   position: absolute;
-  top: 50%;
-  right: 30px;
+  top: 13px;
+  right: 14px;
   margin-top: -7px;
 }
 .product-popup-modal__content {
@@ -1512,7 +1513,7 @@
   text-align: center;
   position: sticky;
   background-color: var(--bg-body, #fff);
-  top: 1rem;
+  top: 0;
   left: 0;
   flex-shrink: 0;
 }
@@ -2123,4 +2124,7 @@
   font-weight: 300;
   line-height: 18px;
   margin-top: 24px;
+}
+.close-button {
+  margin-top: 8px;
 }

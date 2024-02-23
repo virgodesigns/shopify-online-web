@@ -343,7 +343,7 @@ input.pin-input::placeholder {
     content: "";
   }
   #body_measurement .tab-content-description {
-    width: 60%;
+    width: 100%;
   }
   #garment_measurement .tab-content-description {
     width: 100%;
@@ -379,19 +379,37 @@ input.pin-input::placeholder {
   cursor: pointer;
   color: #898989;
   font-weight: 400;
+  text-align: center;
+  font-size: 12px;
+  
 }
+.tab-heading-size-chart{
+  width: 50%;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.tab-heading-impact{
+  font-size: 14px;
+
+}
+
+.tab-heading-impact.is--active{
+  font-size: 14px !important;
+}
+
+
 .tab--heading.is--active {
   color: #000;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
+  border-bottom: 1.5px solid #000;
 }
 
 .is--active::after {
   content: "";
-  border-bottom: 1.5px solid #000;
   display: block;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 0.4rem auto 0;
 }
 
 .tab-content {
@@ -406,9 +424,9 @@ input.pin-input::placeholder {
   color: #aaa;
 }
 
-.product_compare-price{
-  text-wrap:nowrap;
-  font-size:14px;
+.product_compare-price {
+  text-wrap: nowrap;
+  font-size: 14px;
 }
 
 /* product variant */
@@ -459,6 +477,8 @@ input.pin-input::placeholder {
     overflow: scroll;
     width: 100%;
     text-wrap: nowrap;
+    padding-top: 20px !important;
+    font-size: 12px;
   }
   .size-chart-wrapper::-webkit-scrollbar {
     display: none;
@@ -468,13 +488,14 @@ input.pin-input::placeholder {
 /* size chart */
 
 .size-chart-container {
-  margin: 2rem 1rem;
+  margin: 4.5rem 2rem 1rem;
 }
 
 .size-chart-wrapper {
   display: flex;
-  gap: 20px;
   margin-bottom: 1rem;
+  padding-top: 40px;
+  /* border-bottom: 1.5px solid  #E1E1E1; */
 }
 .sizechart-tab-contents {
   text-wrap: nowrap;
@@ -483,10 +504,10 @@ input.pin-input::placeholder {
   padding: 16px;
 }
 .size-values {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  background: #475569;
-  color: #fff;
+  background: #f6f6f6;
+  color: #111;
   text-align: center;
 }
 .size-chart-card {
@@ -503,7 +524,7 @@ input.pin-input::placeholder {
   width: 50%; /* Adjust the width as needed */
 }
 
-.size-values,
+/* .size-values, */
 .bust-size-values {
   display: table-row;
 }
@@ -518,12 +539,12 @@ input.pin-input::placeholder {
 .sizechart-tab-contents {
   text-wrap: nowrap;
 }
-.size-values {
+/* .size-values {
   display: flex;
   flex-direction: column;
   min-width: 16%;
   text-align: center;
-}
+} */
 .hide-message {
   display: none;
 }
@@ -618,6 +639,11 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+video{
+  padding-right: 15px;
+}
+
 
 .hidden {
   display: none !important;
