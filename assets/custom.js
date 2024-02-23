@@ -11,18 +11,20 @@ class MuteToggleElement extends HTMLElement {
   muteToggle(event) {
     event.preventDefault();
     let mute = false;
-    const muteIcon = this.querySelector('.mute-icon');
-    const unmuteIcon = this.querySelector('.unmute-icon');
-    const videos = this.querySelectorAll(".main-slideshow .slideshow__slide-video-bg video");
+    const muteIcon = this.querySelector(".mute-icon");
+    const unmuteIcon = this.querySelector(".unmute-icon");
+    const videos = this.querySelectorAll(
+      ".main-slideshow .slideshow__slide-video-bg video"
+    );
     if (videos.length > 0) {
       if (videos[0].muted === true) {
         mute = false;
-        unmuteIcon.classList.remove('icon-hide');
-        muteIcon.classList.add('icon-hide');
+        unmuteIcon.classList.remove("icon-hide");
+        muteIcon.classList.add("icon-hide");
       } else {
         mute = true;
-        unmuteIcon.classList.add('icon-hide');
-        muteIcon.classList.remove('icon-hide');
+        unmuteIcon.classList.add("icon-hide");
+        muteIcon.classList.remove("icon-hide");
       }
 
       videos.forEach((video) => {
@@ -37,23 +39,24 @@ class MuteToggleElement extends HTMLElement {
   }
 }
 
-customElements.define('mute-toggle-element', MuteToggleElement);
+customElements.define("mute-toggle-element", MuteToggleElement);
 
-// view more button for product description
 let productContent = document.getElementById("content");
 let viewMoreBtn = document.getElementById("viewMoreBtn");
 let isExpanded = false;
-viewMoreBtn.addEventListener("click", () => {
-  if (isExpanded) {
-    productContent.style.maxHeight = "0px";
-    viewMoreBtn.textContent = "View More";
-  } else {
-    productContent.style.maxHeight = "none";
-    viewMoreBtn.textContent = "View Less";
-  }
-  isExpanded = !isExpanded;
-});
 
+if (viewMoreBtn) {
+  viewMoreBtn.addEventListener("click", () => {
+    if (isExpanded) {
+      productContent.style.maxHeight = "0px";
+      viewMoreBtn.textContent = "View More";
+    } else {
+      productContent.style.maxHeight = "none";
+      viewMoreBtn.textContent = "View Less";
+    }
+    isExpanded = !isExpanded;
+  });
+}
 
 // on page load by default first tab selecting
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabContent = document.querySelectorAll(".tab-content");
   for (let i = 0; i <= tabContent.length; i++) {
     let exist = false;
-    if (tabContent[i].getAttribute("id") != "") {
+    if (tabContent && tabContent[i] && tabContent[i].getAttribute("id") != "") {
       tabContent[i].classList.add("active_content");
       exist = true;
     }
@@ -71,7 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   for (let i = 0; i <= tabHeading.length; i++) {
     let exist = false;
-    if (tabHeading[i].getAttribute("data-tab") != "") {
+    if (
+      tabHeading &&
+      tabHeading[i] &&
+      tabHeading[i].getAttribute("data-tab") != ""
+    ) {
       tabHeading[i].classList.add("is--active");
       exist = true;
     }
