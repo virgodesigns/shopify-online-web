@@ -421,7 +421,7 @@ console.log("splitData",splitData)
     // Initial render
     renderData();
 
-    const useDeliveryStatusText = (displayStatus) => {
+const useDeliveryStatusText = (displayStatus) => {
   if (displayStatus === 'unfulfilled') {
     return 'Order Confirmed';
   }
@@ -441,6 +441,13 @@ console.log("splitData",splitData)
   if (displayStatus === 'DELIVERED') {
     return 'Delivered';
   }
+  if (displayStatus === 'RETURN_IN_PROGRESS') {
+    return 'Return in Progress';
+  }
+  if (displayStatus === 'RETURNED') {
+    return 'Return Complete';
+  }
+  // if( displayStatus === '')
   return '';
 };
 
