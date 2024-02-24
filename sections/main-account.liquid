@@ -277,7 +277,8 @@
    const selectedIndex = ordersGroup[orderName].map(order => order.lineItemId).findIndex(oId=>oId==lineItemId);
    const storageData = {
     selectedIndex, data:ordersGroup[orderName],
-    customer
+    customer,
+    customerId: {{ customer.id }}
     }
     sessionStorage.setItem("selectedOrder", JSON.stringify(storageData))
     window.location.href = "/pages/order-details"
