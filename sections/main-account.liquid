@@ -356,9 +356,6 @@ console.log("dataA",data)
 
 // Split the objects by orderName
 
-      if(data.data.orders.length===0){
-        return <div>No Orders</div>
-      }
 data.data.orders.forEach(obj => {
     const orderName = obj["orderName"];
     if (!splitData[orderName]) {
@@ -372,7 +369,10 @@ console.log("splitData",splitData)
       console.log(" data.data", data.data)
       customer = data.data.customer
 
-      if (data) {
+      if(data.data.orders.length===0){
+        return <div>No Orders</div>
+      }
+      else if (data) {
         // Update UI with the fetched data
         dataContainer.innerHTML += data.data.orders.map(order => {
           const {displayStatus} = order
