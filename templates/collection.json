@@ -2,6 +2,10 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        "h1 {position: absolute; top: 20px; text-align: center;}",
+        ".collection-banner--has-bg {margin-bottom: 0px;}"
+      ],
       "settings": {
         "show_collection_image": false,
         "show_collection_description": true,
@@ -34,7 +38,7 @@
         "text_width": "grid",
         "text_position": "left",
         "text_alignment": "left",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": true,
