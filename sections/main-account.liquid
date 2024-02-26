@@ -355,6 +355,10 @@ console.log("dataA",data)
       const splitData = {};
 
 // Split the objects by orderName
+
+      if(data.data.orders.length===0){
+        return <div>No Orders</div>
+      }
 data.data.orders.forEach(obj => {
     const orderName = obj["orderName"];
     if (!splitData[orderName]) {
