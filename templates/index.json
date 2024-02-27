@@ -796,7 +796,7 @@
         "show_on_desktop": true,
         "show_on_mobile": true,
         "button_url": "",
-        "button_text": "Know more",
+        "button_text": "",
         "carouselCardWidth": ""
       }
     },
