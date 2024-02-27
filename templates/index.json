@@ -674,26 +674,74 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_Ej77cE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_XGPBmj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_We_love_Fabrics_1.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_XGPBmj"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "collection_carousel_yAfpTf": {
       "type": "collection-carousel",
       "blocks": {
         "collection_4EmmqJ": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1.png",
+            "image": "shopify:\/\/shop_images\/Recycled_Polyester.png",
             "name": "",
-            "subname": "",
+            "subname": "Luxe Comfort",
             "price": "",
             "strikePrice": "",
-            "url": ""
+            "url": "shopify:\/\/collections\/recycled-polyester"
           }
         },
         "collection_MWf6kB": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PDP_img.png",
+            "image": "shopify:\/\/shop_images\/Cotton_ffc0b929-9f74-4c93-9c4f-7e4a8479c474.png",
             "name": "",
-            "subname": "",
+            "subname": "Breezy, Light and Gentle",
             "price": "",
             "strikePrice": "",
             "url": ""
@@ -702,9 +750,9 @@
         "collection_RUHg7f": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_8_970d15e5-5715-4308-b0fa-ce1c757b607a.png",
+            "image": "shopify:\/\/shop_images\/Viscose_1.png",
             "name": "",
-            "subname": "",
+            "subname": "Buttery-Soft and Lightweight",
             "price": "",
             "strikePrice": "",
             "url": ""
@@ -713,9 +761,9 @@
         "collection_MqFaVB": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_10.png",
+            "image": "shopify:\/\/shop_images\/Modal_198471d6-3fa2-4add-89c0-be3a21726d75.png",
             "name": "",
-            "subname": "",
+            "subname": "Feels Like Second Skin",
             "price": "",
             "strikePrice": "",
             "url": ""
@@ -724,9 +772,9 @@
         "collection_hdAYbh": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_2.png",
+            "image": "shopify:\/\/shop_images\/Lyocell_22a00b4a-07c6-482a-9383-ddfebd8bde77.png",
             "name": "",
-            "subname": "",
+            "subname": "Royally Cozy",
             "price": "",
             "strikePrice": "",
             "url": ""
@@ -741,8 +789,8 @@
         "collection_hdAYbh"
       ],
       "settings": {
-        "heading": "Other Collections",
-        "bg_color": "#ffffff",
+        "heading": "",
+        "bg_color": "#ffeddb",
         "heading_color": "#000000",
         "name_color": "#000000",
         "show_on_desktop": true,
@@ -831,6 +879,7 @@
     "featured_collection",
     "slideshow_pNjyMa",
     "featured_collection_9GpbxD",
+    "slideshow_Ej77cE",
     "collection_carousel_yAfpTf",
     "logo_list_RLgY4j"
   ]
