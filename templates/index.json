@@ -48,6 +48,60 @@
         "disable_bottom_spacing": true
       }
     },
+    "collection_carousel_eALWpf": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_djWXcy": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Recycled_Polyester.png",
+            "name": "",
+            "subname": "Luxe Comfort",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/recycled-polyester"
+          }
+        },
+        "collection_PNhNyD": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cotton_ffc0b929-9f74-4c93-9c4f-7e4a8479c474.png",
+            "name": "",
+            "subname": "Breezy, Light and Gentle",
+            "price": "",
+            "strikePrice": "",
+            "url": ""
+          }
+        },
+        "collection_bx7db7": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Viscose_1.png",
+            "name": "",
+            "subname": "Buttery-Soft and Lightweight",
+            "price": "",
+            "strikePrice": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_djWXcy",
+        "collection_PNhNyD",
+        "collection_bx7db7"
+      ],
+      "settings": {
+        "heading": "Shop by Fabric",
+        "bg_color": "#000000",
+        "heading_color": "#ffffff",
+        "name_color": "#FFFFFF",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
     "slideshow_8djHwc": {
       "type": "slideshow",
       "blocks": {
@@ -1044,6 +1098,7 @@
   },
   "order": [
     "slideshow_nfyjbt",
+    "collection_carousel_eALWpf",
     "slideshow_8djHwc",
     "scrolling_text_BtBWP8",
     "slideshow_ewzyqL",
