@@ -601,6 +601,79 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_pNjyMa": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_PR8Djp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_Veronicas_Banner_1.png",
+            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_PR8Djp"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_9GpbxD": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#ffeddb",
+        "button_url": "shopify:\/\/collections\/veronicas-all-collection",
+        "button_text": "Explore Eco-chic",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/veronicas-all-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "veronicas-all-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "collection_carousel_yAfpTf": {
       "type": "collection-carousel",
       "blocks": {
@@ -756,6 +829,8 @@
     "slideshow_zG9XfE",
     "slideshow_a6Y4RT",
     "featured_collection",
+    "slideshow_pNjyMa",
+    "featured_collection_9GpbxD",
     "collection_carousel_yAfpTf",
     "logo_list_RLgY4j"
   ]
