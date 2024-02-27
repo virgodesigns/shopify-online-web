@@ -800,69 +800,52 @@
         "carouselCardWidth": ""
       }
     },
-    "logo_list_RLgY4j": {
-      "type": "logo-list",
+    "slideshow_rbPrak": {
+      "type": "slideshow",
       "blocks": {
-        "logo_dxPqH9": {
-          "type": "logo",
+        "slide_e8EwAW": {
+          "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_42117ee3-8345-45b8-9705-8d5a2809790e.jpg",
-            "link": ""
-          }
-        },
-        "logo_NHdq6k": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/6.png",
-            "link": ""
-          }
-        },
-        "logo_6w7NJV": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_2.png",
-            "link": ""
-          }
-        },
-        "logo_3gr3kf": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PDP_img.png",
-            "link": ""
-          }
-        },
-        "logo_6cfLGP": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3_a0003cff-50c6-4354-8558-9a015a4a099e.jpg",
-            "link": ""
-          }
-        },
-        "logo_MFrJX6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_8.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/10_VirgioCircle_header_1.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "logo_dxPqH9",
-        "logo_NHdq6k",
-        "logo_6w7NJV",
-        "logo_3gr3kf",
-        "logo_6cfLGP",
-        "logo_MFrJX6"
+        "slide_e8EwAW"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "Clients",
-        "description": "<p>Add a short description for this section<\/p>",
-        "columns": 5,
-        "mobile_swipe": true,
-        "center_align": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     }
   },
@@ -881,6 +864,6 @@
     "featured_collection_9GpbxD",
     "slideshow_Ej77cE",
     "collection_carousel_yAfpTf",
-    "logo_list_RLgY4j"
+    "slideshow_rbPrak"
   ]
 }
