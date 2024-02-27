@@ -847,6 +847,103 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "social_images_collections_AyYGeN": {
+      "type": "social-images-collections",
+      "blocks": {
+        "social_image_MXtUYw": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096289_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/date-chic-red-lycra-satin-skirt"
+          }
+        },
+        "social_image_RqREVU": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096288_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/date-glam-corset-dress-with-flutter-sleeve"
+          }
+        },
+        "social_image_eky3QD": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096287_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
+          }
+        },
+        "social_image_mEpKEG": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096282_1_85552a2f-3a7b-4a48-9bcd-0a87350acbb1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/vivid-v-neck-frill-elegance-with-pockets"
+          }
+        },
+        "social_image_aN4Up4": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096290_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/polka-dot-serenade-in-black-with-pockets"
+          }
+        },
+        "social_image_TAgLj7": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096284_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/sun-kissed-floral-bodycon-dress"
+          }
+        },
+        "social_image_NpMjqm": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096286_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/frill-icious-beige-poplin-dress-with-pockets"
+          }
+        },
+        "social_image_PnCEYH": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096285_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/red-v-neck-elegance-with-pockets"
+          }
+        }
+      },
+      "block_order": [
+        "social_image_MXtUYw",
+        "social_image_RqREVU",
+        "social_image_eky3QD",
+        "social_image_mEpKEG",
+        "social_image_aN4Up4",
+        "social_image_TAgLj7",
+        "social_image_NpMjqm",
+        "social_image_PnCEYH"
+      ],
+      "custom_css": [
+        ".social-images-collections .image-container::after {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.6) 100% ); z-index: 1;}",
+        ".heading {font-family: Inter;}"
+      ],
+      "settings": {
+        "para_top": "",
+        "heading_top": "Hear it from the #VirgioCircle",
+        "bg_color": "#ffeddb",
+        "colmun_number_tablet": "3",
+        "colmun_number_desktop": "6",
+        "para_bottom": "",
+        "show_svg": false,
+        "button_text": "",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
@@ -864,6 +961,7 @@
     "featured_collection_9GpbxD",
     "slideshow_Ej77cE",
     "collection_carousel_yAfpTf",
-    "slideshow_rbPrak"
+    "slideshow_rbPrak",
+    "social_images_collections_AyYGeN"
   ]
 }
