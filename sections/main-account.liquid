@@ -277,7 +277,11 @@
    const selectedIndex = ordersGroup[orderName].map(order => order.lineItemId).findIndex(oId=>oId==lineItemId);
    const storageData = {
     selectedIndex, data:ordersGroup[orderName],
-    customer
+    customer,
+    customerId: {{ customer.id }},
+    firstName: "{{ customer.first_name }}",
+    lastName: "{{ customer.last_name }}",
+    email: "{{ customer.email }}"
     }
     sessionStorage.setItem("selectedOrder", JSON.stringify(storageData))
     window.location.href = "/pages/order-details"
@@ -300,9 +304,15 @@
   }
 
 
+      {% if shop.url contains 'dev' %}
+  const baseUrl = 'https://api.damocles.co.in';
+  {% else %}
+     const baseUrl = 'https://api.virgio.com';
+  {% endif %}
 
 
-    const apiUrl = 'https://api.virgio.com/shop/customer/v1/orders/{{ customer.id }}'; // Replace with your actual API URL
+
+    const apiUrl = baseUrl+'/shop/customer/v1/orders/{{ customer.id }}'; // Replace with your actual API URL
 
     
     let endCursor = '';
@@ -414,7 +424,7 @@ console.log("splitData",splitData)
     // Initial render
     renderData();
 
-    const useDeliveryStatusText = (displayStatus) => {
+const useDeliveryStatusText = (displayStatus) => {
   if (displayStatus === 'unfulfilled') {
     return 'Order Confirmed';
   }
@@ -434,6 +444,13 @@ console.log("splitData",splitData)
   if (displayStatus === 'DELIVERED') {
     return 'Delivered';
   }
+  if (displayStatus === 'RETURN_IN_PROGRESS') {
+    return 'Return in Progress';
+  }
+  if (displayStatus === 'RETURNED') {
+    return 'Return Complete';
+  }
+  // if( displayStatus === '')
   return '';
 };
 
