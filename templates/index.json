@@ -1,31 +1,5 @@
 {
   "sections": {
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "heading": "Featured Collection",
-        "heading_left": false,
-        "bg_color": "#ffffff",
-        "button_url": "",
-        "button_text": "Know more",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "",
-        "carouselCardWidth": "",
-        "description": "",
-        "full_width": false,
-        "collection": "all",
-        "display_type": "grid",
-        "product_limit": 4,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
     "slideshow_nfyjbt": {
       "type": "slideshow",
       "blocks": {
@@ -602,6 +576,31 @@
         "disable_bottom_spacing": true
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#ffeddb",
+        "button_url": "shopify:\/\/collections\/date-collection",
+        "button_text": "Explore Eco-chic",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/date-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "date-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "collection_carousel_yAfpTf": {
       "type": "collection-carousel",
       "blocks": {
@@ -747,7 +746,6 @@
     }
   },
   "order": [
-    "featured_collection",
     "slideshow_nfyjbt",
     "slideshow_8djHwc",
     "scrolling_text_BtBWP8",
@@ -757,6 +755,7 @@
     "slideshow_majm9j",
     "slideshow_zG9XfE",
     "slideshow_a6Y4RT",
+    "featured_collection",
     "collection_carousel_yAfpTf",
     "logo_list_RLgY4j"
   ]
