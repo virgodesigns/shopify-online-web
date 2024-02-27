@@ -48,55 +48,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_ChVExk": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_kGm6RJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
-            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_kGm6RJ"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "slideshow_8djHwc": {
       "type": "slideshow",
       "blocks": {
@@ -1093,7 +1044,6 @@
   },
   "order": [
     "slideshow_nfyjbt",
-    "slideshow_ChVExk",
     "slideshow_8djHwc",
     "scrolling_text_BtBWP8",
     "slideshow_ewzyqL",
