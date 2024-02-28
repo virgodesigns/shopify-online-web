@@ -48,6 +48,54 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_ppqEHU": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ez4qpH": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/pages\/circularity",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Circularity.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_ez4qpH"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "collection_carousel_7zXpBt": {
       "type": "collection-carousel",
       "blocks": {
@@ -1323,6 +1371,7 @@
   },
   "order": [
     "slideshow_nfyjbt",
+    "slideshow_ppqEHU",
     "collection_carousel_7zXpBt",
     "collection_carousel_eALWpf",
     "slideshow_b3443E",
