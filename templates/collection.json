@@ -15,44 +15,6 @@
         "overlay_opacity": 0
       }
     },
-    "rich_text_hVATKa": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_w9kXxK": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Dresses",
-            "size": "h2"
-          }
-        },
-        "subheading_wPpaHj": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_w9kXxK",
-        "subheading_wPpaHj"
-      ],
-      "custom_css": [
-        "div {align-items: center; justify-content: center; display: flex; width: 100%;}",
-        "div .subheading {margin-bottom: 0; padding: 0.6rem;}"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#111111",
-        "color_text": "#fdfdfd",
-        "color_links": "#151515",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "rich_text_niTmmD": {
       "type": "rich-text",
       "blocks": {
@@ -237,7 +199,6 @@
   },
   "order": [
     "banner",
-    "rich_text_hVATKa",
     "rich_text_niTmmD",
     "product-grid",
     "slideshow_bj8nzW",
