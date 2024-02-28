@@ -48,6 +48,96 @@
         "disable_bottom_spacing": true
       }
     },
+    "collection_carousel_7zXpBt": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_KtDBL7": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IDGAF_7c25b4a3-2f50-4942-b128-d4ff66bb941a.png",
+            "name": "",
+            "subname": "#IDGAF",
+            "price": "",
+            "strikePrice": "",
+            "url": ""
+          }
+        },
+        "collection_7ymTbN": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wild_Romance.png",
+            "name": "",
+            "subname": "Wild Romance",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/wild-romance"
+          }
+        },
+        "collection_KjHwJF": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
+            "name": "",
+            "subname": "Newtro Twist",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/newtro-twist"
+          }
+        },
+        "collection_mqnmhe": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cityscape.png",
+            "name": "",
+            "subname": "Cityscape",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cityscape"
+          }
+        },
+        "collection_aE8TUw": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Whims_and_Fancies.png",
+            "name": "",
+            "subname": "Whims & Fancies",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/whims-fancies"
+          }
+        },
+        "collection_i88TFF": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Born_to_Shine.png",
+            "name": "",
+            "subname": "Born to Shine",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
+          }
+        }
+      },
+      "block_order": [
+        "collection_KtDBL7",
+        "collection_7ymTbN",
+        "collection_KjHwJF",
+        "collection_mqnmhe",
+        "collection_aE8TUw",
+        "collection_i88TFF"
+      ],
+      "settings": {
+        "heading": "Other Collections",
+        "bg_color": "#000000",
+        "heading_color": "#ffffff",
+        "name_color": "#ffffff",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
     "collection_carousel_eALWpf": {
       "type": "collection-carousel",
       "blocks": {
@@ -1137,6 +1227,7 @@
   },
   "order": [
     "slideshow_nfyjbt",
+    "collection_carousel_7zXpBt",
     "collection_carousel_eALWpf",
     "slideshow_8djHwc",
     "scrolling_text_BtBWP8",
