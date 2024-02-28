@@ -94,7 +94,7 @@
         "heading": "Shop by Fabric",
         "bg_color": "#000000",
         "heading_color": "#ffffff",
-        "name_color": "#FFFFFF",
+        "name_color": "#ffffff",
         "show_on_desktop": true,
         "show_on_mobile": false,
         "button_url": "",
@@ -243,6 +243,45 @@
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
+      }
+    },
+    "mwidget_wP9t6e": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_kfJXYh": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
+            "heading_text": "Bottomwear",
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
+          }
+        },
+        "image_item_Hx8bmE": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
+            "heading_text": "Co-ords Set",
+            "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
+        },
+        "image_item_WtCAGK": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.2_Topwear_category_img_1.png",
+            "heading_text": "Topwear",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_kfJXYh",
+        "image_item_Hx8bmE",
+        "image_item_WtCAGK"
+      ],
+      "settings": {
+        "main_heading": "",
+        "bg_color": "#ffeddb",
+        "text_color": ""
       }
     },
     "slideshow_bLrrF9": {
@@ -1102,6 +1141,7 @@
     "slideshow_8djHwc",
     "scrolling_text_BtBWP8",
     "slideshow_ewzyqL",
+    "mwidget_wP9t6e",
     "slideshow_bLrrF9",
     "slideshow_y979Wg",
     "slideshow_majm9j",
