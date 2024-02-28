@@ -20,14 +20,22 @@
       "blocks": {
         "heading_w9kXxK": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Dresses",
             "size": "h2"
           }
+        },
+        "subheading_wPpaHj": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
         }
       },
       "block_order": [
-        "heading_w9kXxK"
+        "heading_w9kXxK",
+        "subheading_wPpaHj"
       ],
       "custom_css": [
         "div {align-items: center; justify-content: center; display: flex; width: 100%;}",
@@ -40,6 +48,44 @@
         "text_alignment": "center",
         "color_bg": "#111111",
         "color_text": "#fdfdfd",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_niTmmD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4m6AgR": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "size": "h2"
+          }
+        },
+        "text_ryX6hk": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "size": "text-size-small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4m6AgR",
+        "text_ryX6hk"
+      ],
+      "custom_css": [
+        "h3 {font-family: \"Inter\"; font-weight: 900; padding-top: 1.5rem; margin-bottom: 0.8rem;}",
+        ".rich-text__inner {padding: 0 0.4rem;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row",
+        "text_width": "grid",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "transparent",
+        "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -58,11 +104,144 @@
         "filter_color_swatches": true,
         "facets_desktop": "drawer"
       }
+    },
+    "slideshow_bj8nzW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_jLKnCg": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_jLKnCg"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "slideshow_qLLAni": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_Gk3EiL": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_Gk3EiL"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "collection_list_cRUyV4": {
+      "type": "collection-list",
+      "custom_css": [
+        "h2 {font-family: \"Inter\"; font-weight: 500; margin-bottom: 8px;}",
+        ".collection-card__link {font-size: 10px;}",
+        ".collection-grid {padding-bottom: 16px;}"
+      ],
+      "settings": {
+        "heading": "Other Collections",
+        "heading_left": true,
+        "description": "",
+        "full_width": true,
+        "collection_list": [
+          "date-collection",
+          "whims-fancies",
+          "born-to-shine",
+          "wild-romance",
+          "cityscape",
+          "newtro-twist",
+          "the-safari-edit",
+          "veronicas-all-collection"
+        ],
+        "image_ratio": "square",
+        "layout": "carousel",
+        "style": "style2",
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
     "banner",
     "rich_text_hVATKa",
-    "product-grid"
+    "rich_text_niTmmD",
+    "product-grid",
+    "slideshow_bj8nzW",
+    "slideshow_qLLAni",
+    "collection_list_cRUyV4"
   ]
 }
