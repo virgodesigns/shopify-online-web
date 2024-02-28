@@ -21,13 +21,13 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
+            "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_outline": false,
+            "button_2_outline": true,
             "button_2_underline": true
           }
         }
