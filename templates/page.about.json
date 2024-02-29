@@ -62,36 +62,28 @@
         "b1bb057f-62ba-4239-a792-dec2a68621a9": {
           "type": "image",
           "settings": {
-            "retina": true
-          }
-        },
-        "35ba44fe-0dfa-463a-920a-d0df404ab526": {
-          "type": "space",
-          "settings": {
-            "height": 48
-          }
-        },
-        "100ac1ce-4a1c-45fd-9648-02b517aa76d1": {
-          "type": "image",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_237631.png",
             "retina": true
           }
         },
         "5c23121f-d034-4e43-9da0-f63cca2746e0": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product<\/p>"
+            "text": "<p>Our clothes, while being super cute and fashionable, also come with a promise to last longer owing to their exceptional quality. <\/p><p>We’ve made 100% of our clothes with <br\/>high-grade, natural fabrics; in responsibly factories and ensured that they’re affordable for our GenConscious community members.<\/p>"
           }
         }
       },
       "block_order": [
         "b1bb057f-62ba-4239-a792-dec2a68621a9",
-        "35ba44fe-0dfa-463a-920a-d0df404ab526",
-        "100ac1ce-4a1c-45fd-9648-02b517aa76d1",
         "5c23121f-d034-4e43-9da0-f63cca2746e0"
       ],
-      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 24px; line-height: 32px; text-align: center;}",
+        "p {font-size: 16px; text-align: center;}",
+        "div {background-color: #000000;}"
+      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/virgio_logo_bg_6875da53-076f-4061-b4c7-78fc1d86b29f.png",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -101,9 +93,9 @@
         "section_width": "grid",
         "layout": "image_first",
         "content_position": "text-center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
+        "color_bg": "#000000",
+        "color_text": "#ffffff",
+        "color_border": "#ffffff",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -209,13 +201,14 @@
       ],
       "settings": {
         "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/community_1e96d360-257c-4063-8086-6a3e49fbc3dc.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-full",
         "content_width": "medium",
         "content_position": "bottom-center",
         "text_alignment": "center",
-        "overlay_opacity": 60,
+        "overlay_opacity": 38,
         "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
