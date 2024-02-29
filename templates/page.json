@@ -15,6 +15,7 @@
     },
     "image_with_text_overlay_irWUXY": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
@@ -33,6 +34,7 @@
     },
     "image_with_text_overlay_EtzxBX": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
@@ -51,6 +53,7 @@
     },
     "image_with_text_overlay_KntcNT": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "div {height: 100px;}"
       ],
@@ -72,6 +75,7 @@
     },
     "spacer_8treUM": {
       "type": "spacer",
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
@@ -97,6 +101,7 @@
       "block_order": [
         "button_RFqDN8"
       ],
+      "disabled": true,
       "custom_css": [
         "div {background-color: white; height: 40px; width: 100%;}"
       ],
@@ -114,6 +119,7 @@
     },
     "spacer_KQk76Y": {
       "type": "spacer",
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
@@ -139,6 +145,7 @@
       "block_order": [
         "button_QrYwwe"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -160,6 +167,7 @@
     },
     "image_with_text_overlay_ngQf9e": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "div {height: 260px;}"
       ],
@@ -181,6 +189,7 @@
     },
     "spacer_hXfqBy": {
       "type": "spacer",
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
@@ -193,6 +202,7 @@
     },
     "image_with_text_overlay_eCyk9f": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "div {height: 260px;}"
       ],
@@ -214,6 +224,7 @@
     },
     "spacer_RYqNVn": {
       "type": "spacer",
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
@@ -226,6 +237,7 @@
     },
     "image_with_text_overlay_WeXmBi": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "div {height: 80px;}"
       ],
@@ -247,6 +259,7 @@
     },
     "spacer_zbf4kG": {
       "type": "spacer",
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
