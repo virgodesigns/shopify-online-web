@@ -21,7 +21,7 @@
         "subheading_6EtBeJ": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading for{{ collection.metafields.custom.top_section_strip.value }}"
+            "text": "{{ collection.metafields.custom.top_section_strip.value }}"
           }
         }
       },
