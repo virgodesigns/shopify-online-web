@@ -267,168 +267,104 @@
         "disable_bottom_spacing": true
       }
     },
-    "1662373455c24650d9": {
-      "type": "spacer",
-      "disabled": true,
-      "settings": {
-        "spacer_mobile": 10,
-        "spacer_desktop": 20,
-        "border_separator": true,
-        "border_separator_full": true
-      }
-    },
-    "1662373200967c613c": {
-      "type": "rich-text",
+    "image_with_text_CcnLEa": {
+      "type": "image-with-text",
       "blocks": {
-        "1662373200dc732b07-1": {
-          "type": "heading",
+        "subheading_TcL9Dn": {
+          "type": "subheading",
           "settings": {
-            "text": "LUXURY MATERIALS",
-            "size": "h3"
+            "text": "FOUNDER'S NOTE"
           }
         },
-        "1662373200dc732b07-2": {
+        "text_A6bg3r": {
           "type": "text",
           "settings": {
-            "text": "<p>We understand that creating your custom size can feel daunting. But not to worry, it's actually quite easy and completely risk-free. If you're not 100% happy with your fit, we'll remake your first shirt from scratch free of charge or give your money back.<\/p>",
-            "size": "text-size-large"
+            "text": "<p>\"Working with the fashion and e-commerce industry for years opened my eyes to the glaring gaps in the fashion landscape. This prodded me to think on how can we leverage tech to make circular fashion a way of life again. We're putting all our might to this mission & coming up with small and big steps to make a difference.<\/p><p>I also tapped into my experiences at home - from passing on heirloom pieces to the next generation to upcycling clothes to live demonstration of sustainable living still greatly inspires me. Going back to our roots can actually help us move forward easily.<\/p><p>That’s how Virgio is being built. It is a coming together of age-old practices and futuristic, cutting edge technology to shape a brighter and more responsible way of life.\"<\/p>"
           }
         }
       },
       "block_order": [
-        "1662373200dc732b07-1",
-        "1662373200dc732b07-2"
+        "subheading_TcL9Dn",
+        "text_A6bg3r"
       ],
-      "disabled": true,
+      "custom_css": [
+        "p {font-size: 14px;}",
+        "p.subheading {color: #111111; font-family: Inter; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px;}"
+      ],
       "settings": {
-        "section_width": "grid",
-        "text_width": "large",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
+        "image": "shopify:\/\/shop_images\/img_txt_founder_f9fa7b43-e729-4101-b5d9-ae6a4ec5da9c.png",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": true
-      }
-    },
-    "16623736356fb1e92f": {
-      "type": "spacer",
-      "disabled": true,
-      "settings": {
-        "spacer_mobile": 0,
-        "spacer_desktop": 25,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
-    "1661619131dc23111f": {
-      "type": "text-with-icons",
-      "blocks": {
-        "166161913112fa572a-0": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon": "ruler",
-            "heading": "RESPONSIBLE MATERIALS",
-            "text": ""
-          }
-        },
-        "166161913112fa572a-1": {
-          "type": "icon",
-          "settings": {
-            "icon": "ruler",
-            "heading": "LUXURY-GRADE MATERIALS",
-            "text": ""
-          }
-        },
-        "166161913112fa572a-2": {
-          "type": "icon",
-          "settings": {
-            "icon": "ruler",
-            "heading": "LIGHTWEIGHT CLOTH",
-            "text": ""
-          }
-        },
-        "4753b34b-0a98-4cc7-81c5-f7a462d46603": {
-          "type": "icon",
-          "settings": {
-            "icon": "ruler",
-            "heading": "WORLD CLASS CRAFTING",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "166161913112fa572a-0",
-        "166161913112fa572a-1",
-        "166161913112fa572a-2",
-        "4753b34b-0a98-4cc7-81c5-f7a462d46603"
-      ],
-      "disabled": true,
-      "settings": {
-        "text_alignment": "center",
-        "icon_position": "top",
-        "icon_size": "xlarge",
-        "heading_size": "medium",
-        "mobile_swipe": true,
-        "color_bg": "rgba(0,0,0,0)",
-        "color_heading": "#151515",
-        "color_text": "#103a3a",
+        "color_border": "#e2e2e2",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
     },
-    "1661619177029ffd60": {
-      "type": "gallery",
+    "image_with_text_overlay_AWLDVf": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "0d86c2a6-f30c-40b5-9391-99b5bb12959b": {
-          "type": "image",
+        "subheading_cNqFVp": {
+          "type": "subheading",
           "settings": {
-            "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
+            "text": "Add a tagline"
           }
         },
-        "0e695f58-8205-43ec-8762-4137844e2d33": {
-          "type": "image",
+        "heading_QU3iDL": {
+          "type": "heading",
           "settings": {
-            "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
+            "text": "Image with text overlay",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "text_PKJ4NQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "button_4JtNJR": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false
           }
         }
       },
       "block_order": [
-        "0d86c2a6-f30c-40b5-9391-99b5bb12959b",
-        "0e695f58-8205-43ec-8762-4137844e2d33"
+        "subheading_cNqFVp",
+        "heading_QU3iDL",
+        "text_PKJ4NQ",
+        "button_4JtNJR"
       ],
-      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 28px; line-height: 40px;}",
+        "p.subheading {color: var(--neutral-coolgrey-neutral-25-fefefe, #fefefe); text-align: center; font-family: Inter; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px;}"
+      ],
       "settings": {
-        "columns_desktop": 2,
         "section_width": "full-width-row-full",
-        "mobile_swipe": false,
-        "image_ratio": "landscape",
-        "content_position": "middle-center",
+        "image": "shopify:\/\/shop_images\/get_in_touch.png",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-full",
+        "content_width": "medium",
+        "content_position": "bottom-center",
         "text_alignment": "center",
-        "column_spacing": "none",
-        "heading_size": "h1",
-        "overlay_color": "#000000",
-        "overlay_opacity": 40,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": true,
+        "overlay_opacity": 0,
         "show_on_desktop": true,
-        "show_on_mobile": true
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     }
   },
@@ -438,10 +374,7 @@
     "image_with_text_slideshow_rThkUJ",
     "16618593470c5f63bd",
     "166161906436c7d4d0",
-    "1662373455c24650d9",
-    "1662373200967c613c",
-    "16623736356fb1e92f",
-    "1661619131dc23111f",
-    "1661619177029ffd60"
+    "image_with_text_CcnLEa",
+    "image_with_text_overlay_AWLDVf"
   ]
 }
