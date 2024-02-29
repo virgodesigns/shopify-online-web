@@ -18,24 +18,53 @@
     "rich_text_niTmmD": {
       "type": "rich-text",
       "blocks": {
-        "heading_4m6AgR": {
+        "subheading_6EtBeJ": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading for{{ collection.metafields.custom.top_section_strip.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6EtBeJ"
+      ],
+      "custom_css": [
+        "h3 {font-family: \"Inter\"; font-weight: 900; padding-top: 1.5rem; margin-bottom: 0.8rem;}",
+        ".rich-text__inner {padding: 0 0.4rem;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#111111",
+        "color_text": "#fdfdfd",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_PMRjM3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HwnMpA": {
           "type": "heading",
           "settings": {
             "text": "{{ collection.title }}",
             "size": "h2"
           }
         },
-        "text_ryX6hk": {
+        "text_9XmKDT": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<p>{{ collection.metafields.custom.collection_description | metafield_tag }}<\/p>",
             "size": "text-size-small"
           }
         }
       },
       "block_order": [
-        "heading_4m6AgR",
-        "text_ryX6hk"
+        "heading_HwnMpA",
+        "text_9XmKDT"
       ],
       "custom_css": [
         "h3 {font-family: \"Inter\"; font-weight: 900; padding-top: 1.5rem; margin-bottom: 0.8rem;}",
@@ -46,7 +75,7 @@
         "text_width": "grid",
         "text_position": "left",
         "text_alignment": "left",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": true,
@@ -200,6 +229,7 @@
   "order": [
     "banner",
     "rich_text_niTmmD",
+    "rich_text_PMRjM3",
     "product-grid",
     "slideshow_bj8nzW",
     "slideshow_qLLAni",
