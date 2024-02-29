@@ -7,7 +7,6 @@
     },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "show_page_title": false,
         "disable_top_spacing": false,
@@ -18,7 +17,6 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_width": "full-width-row-full",
-        "image": "shopify:\/\/shop_images\/Hero_web_3b5966f8-65ab-4284-a4a3-c0e0c7b2b6b8.png",
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-full",
@@ -37,7 +35,6 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_width": "full-width-row-full",
-        "image": "shopify:\/\/shop_images\/Hero_web_3b5966f8-65ab-4284-a4a3-c0e0c7b2b6b8.png",
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-full",
