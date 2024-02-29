@@ -1,8 +1,0 @@
-{
-  "parent": "page.circularity.json",
-  "context": {
-    "market": "uae"
-  },
-  "sections": {
-  }
-}
