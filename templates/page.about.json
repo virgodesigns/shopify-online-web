@@ -315,37 +315,44 @@
         "subheading_cNqFVp": {
           "type": "subheading",
           "settings": {
-            "text": "Add a tagline"
+            "text": "GET IN TOUCH"
           }
         },
         "heading_QU3iDL": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
-            "heading_size": "h1-xlarge"
-          }
-        },
-        "text_PKJ4NQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "description_size": "medium"
+            "text": "It's impossible to do this alone. We need you! If you believe in making circular fashion a part of everyone’s lives, join us.",
+            "heading_size": "h2"
           }
         },
         "button_4JtNJR": {
           "type": "button",
           "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_outline": false
+            "button_text": "INSTAGRAM",
+            "button_link": "https:\/\/www.instagram.com\/virgio_in\/",
+            "button_outline": true
+          }
+        },
+        "space_kjxAAa": {
+          "type": "space",
+          "settings": {
+            "height": 50
+          }
+        },
+        "text_LfPtBG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Write to us at<\/p><p>care.in@virgio.com<\/p>",
+            "description_size": "small"
           }
         }
       },
       "block_order": [
         "subheading_cNqFVp",
         "heading_QU3iDL",
-        "text_PKJ4NQ",
-        "button_4JtNJR"
+        "button_4JtNJR",
+        "space_kjxAAa",
+        "text_LfPtBG"
       ],
       "custom_css": [
         "h3 {font-size: 28px; line-height: 40px;}",
