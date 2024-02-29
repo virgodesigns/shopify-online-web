@@ -3,17 +3,17 @@
     "166161901464a25e50": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "166161901437c6bc67-1": {
-          "type": "heading",
-          "settings": {
-            "text": "OUR STORY",
-            "heading_size": "h1-xlarge"
-          }
-        },
         "subheading_hjpcNB": {
           "type": "subheading",
           "settings": {
-            "text": "Remember that time when"
+            "text": "Our story"
+          }
+        },
+        "166161901437c6bc67-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Remember that time when",
+            "heading_size": "h2"
           }
         },
         "space_jCrGdf": {
@@ -31,8 +31,8 @@
         }
       },
       "block_order": [
-        "166161901437c6bc67-1",
         "subheading_hjpcNB",
+        "166161901437c6bc67-1",
         "space_jCrGdf",
         "166161901437c6bc67-2"
       ],
@@ -52,33 +52,6 @@
         "overlay_opacity": 0,
         "show_on_desktop": true,
         "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "16616191162185f622": {
-      "type": "rich-text",
-      "blocks": {
-        "1661619116558a03c6-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Establishing our first tailoring shop in London in 1910, we’ve been shaping the fashion industry since our humble beginnings. Today, we focus on curating the best collections of 0–16 kids clothing, from classic Stone Island Junior and Moncler staples to statement pieces from Gucci, Kenzo and Burberry. Home to the freshest drops and exclusives.",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "1661619116558a03c6-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_width": "grid",
-        "text_width": "xlarge",
-        "text_position": "center",
-        "text_alignment": "left",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -135,27 +108,80 @@
         "disable_bottom_spacing": true
       }
     },
+    "image_with_text_slideshow_rThkUJ": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "slide_KCVq8U": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pillar_1_539d2b01-7f92-43e4-8730-a1eedc58a211.png",
+            "heading": "Fashion, with a purpose",
+            "content": "We've built our products for Indian body types - to suit the local weather and lifestyle of our community.\n\nMore importantly, we've made efforts to ensure conscious clothes are accessible to the young generation that cares about its actions - we call them GenConscious!",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "slide_pFqHyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pillar_2_db11d2d9-fc2e-4c16-ae24-769758c507af.png",
+            "heading": "All is fair in love & Our Practices",
+            "content": "Our fabrics are a promise towards a better world. We only use natural fabrics & make our garments in ethical and safe factories that follow legal compliances and pay fair wages to their employees. This is how we ensure that you can be proud of wearing products that are made responsibly.",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "slide_3eXXhy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pillar_3_86e7afd2-2463-499a-8ef2-9d9b34fb9389.png",
+            "heading": "Welcome to our Tech Talk",
+            "content": "Our biggest flex is our tech, which is engineered to predict trends and consumer demand, so only what’s required is produced. We also continuously innovate to give you cool new features like the Smart QR Code Label that allows you to access more information on your treasured clothes than 5-6 polyester labels in most of the garments.",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "slide_8rYxWc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pillar_4_66bd9027-fde8-4bbb-932d-8c0bca827dcb.png",
+            "heading": "We can't keep secrets",
+            "content": "There's no such thing as oversharing when it comes to being transparent! From factory practices, and how clothes are made to the carbon footprint of our garments - we’ll tell you everything. Greenwashing won’t do it for us, we’ll give you data-backed info that’ll help you make informed choices!",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_KCVq8U",
+        "slide_pFqHyF",
+        "slide_3eXXhy",
+        "slide_8rYxWc"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-500",
+        "desktop_height": "desktop-height-450",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "full_width": false,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "16618593470c5f63bd": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "166185934718a0a8c1-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "SUBHEADING"
-          }
-        },
         "166185934718a0a8c1-1": {
           "type": "heading",
           "settings": {
-            "text": "IMAGE WITH TEXT OVERLAY",
-            "heading_size": "h1"
-          }
-        },
-        "166185934718a0a8c1-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>There are only three things I can do - make a dress, decorate a house, and entertain people. You have to stay true to your heritage; that's what your brand is about. Clothes mean nothing until someone lives in them. If you cut a painter's hands off.<\/p>",
-            "description_size": "medium"
+            "text": "Community is the centre of our universe",
+            "heading_size": "h2"
           }
         },
         "baa48f62-cde3-466c-9436-e106114464af": {
@@ -164,34 +190,61 @@
             "height": 16
           }
         },
-        "166185934718a0a8c1-3": {
-          "type": "button",
+        "166185934718a0a8c1-2": {
+          "type": "text",
           "settings": {
-            "button_text": "LEARN MORE",
-            "button_link": "shopify:\/\/pages\/contact",
-            "button_outline": false
+            "text": "<p>We heard our community members strongly voice their opinion on how fashionable clothes today are not responsibly made and conscious clothes are not trendy enough to match their lifestyle needs. We're happy to empower this conscious generation looking for a change in the fashion industry.<\/p><p>Hence, our trendy styles are made responsibly in natural fabrics & in partnership with responsible partners. Each step is taken mindfully so that it is good for the community and the planet.<\/p>",
+            "description_size": "medium"
           }
         }
       },
       "block_order": [
-        "166185934718a0a8c1-0",
         "166185934718a0a8c1-1",
-        "166185934718a0a8c1-2",
         "baa48f62-cde3-466c-9436-e106114464af",
-        "166185934718a0a8c1-3"
+        "166185934718a0a8c1-2"
       ],
-      "disabled": true,
+      "custom_css": [
+        "p {font-size: 16px;}",
+        "h3 {font-size: 32px;}"
+      ],
       "settings": {
         "section_width": "full-width-row-full",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-500",
+        "mobile_height": "mobile-height-full",
         "content_width": "medium",
-        "content_position": "middle-center",
+        "content_position": "bottom-center",
         "text_alignment": "center",
-        "overlay_opacity": 40,
-        "show_on_desktop": false,
+        "overlay_opacity": 60,
+        "show_on_desktop": true,
         "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16616191162185f622": {
+      "type": "rich-text",
+      "blocks": {
+        "1661619116558a03c6-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Establishing our first tailoring shop in London in 1910, we’ve been shaping the fashion industry since our humble beginnings. Today, we focus on curating the best collections of 0–16 kids clothing, from classic Stone Island Junior and Moncler staples to statement pieces from Gucci, Kenzo and Burberry. Home to the freshest drops and exclusives.",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "1661619116558a03c6-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "grid",
+        "text_width": "xlarge",
+        "text_position": "center",
+        "text_alignment": "left",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -434,9 +487,10 @@
   },
   "order": [
     "166161901464a25e50",
-    "16616191162185f622",
     "16521210505e7fc635",
+    "image_with_text_slideshow_rThkUJ",
     "16618593470c5f63bd",
+    "16616191162185f622",
     "16623735222f31e80e",
     "166161906436c7d4d0",
     "1662373455c24650d9",
