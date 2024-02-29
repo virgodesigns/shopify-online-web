@@ -5,7 +5,7 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+        "menu_UBC3GT": {
           "type": "menu",
           "settings": {
             "column_size": "medium",
@@ -16,7 +16,7 @@
         "801371dd-629c-4b6b-a71a-ad849e48af64": {
           "type": "menu",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Community",
             "menu": "community"
           }
@@ -24,7 +24,7 @@
         "86936a5b-1bb4-424b-bdbc-2b5e3032a8d8": {
           "type": "menu",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Community",
             "menu": "community-mobile"
           }
@@ -40,7 +40,7 @@
         "9c7d0155-0d4c-4a52-bc56-5276570cbac7": {
           "type": "social",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Social"
           }
         },
@@ -58,7 +58,7 @@
         }
       },
       "block_order": [
-        "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+        "menu_UBC3GT",
         "801371dd-629c-4b6b-a71a-ad849e48af64",
         "86936a5b-1bb4-424b-bdbc-2b5e3032a8d8",
         "00a364e5-af4e-4073-871b-4d533bd4da06",
