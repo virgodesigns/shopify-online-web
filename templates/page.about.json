@@ -222,99 +222,46 @@
         "disable_bottom_spacing": true
       }
     },
-    "16616191162185f622": {
-      "type": "rich-text",
-      "blocks": {
-        "1661619116558a03c6-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Establishing our first tailoring shop in London in 1910, we’ve been shaping the fashion industry since our humble beginnings. Today, we focus on curating the best collections of 0–16 kids clothing, from classic Stone Island Junior and Moncler staples to statement pieces from Gucci, Kenzo and Burberry. Home to the freshest drops and exclusives.",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "1661619116558a03c6-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_width": "grid",
-        "text_width": "xlarge",
-        "text_position": "center",
-        "text_alignment": "left",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "16623735222f31e80e": {
-      "type": "spacer",
-      "disabled": true,
-      "settings": {
-        "spacer_mobile": 5,
-        "spacer_desktop": 10,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
     "166161906436c7d4d0": {
       "type": "scrolling-text",
       "blocks": {
         "16616190648ddabc05-0": {
           "type": "text",
           "settings": {
-            "text": "SUMMER EDIT",
-            "link": "shopify:\/\/collections\/summer-edit",
-            "outline_text": true
-          }
-        },
-        "16616190648ddabc05-1": {
-          "type": "text",
-          "settings": {
-            "text": "ICONIC GOODS",
-            "link": "shopify:\/\/collections\/iconic",
+            "text": "It's you and I for the world.",
+            "link": "",
             "outline_text": false
-          }
-        },
-        "16616190648ddabc05-2": {
-          "type": "text",
-          "settings": {
-            "text": "READY TO WEAR",
-            "link": "shopify:\/\/collections\/ready-to-wear",
-            "outline_text": true
           }
         },
         "234a9f9c-a2b0-4da8-9f1e-e9d2d172071b": {
           "type": "text",
           "settings": {
-            "text": "HAUTE COUTURE",
-            "link": "shopify:\/\/collections\/haute-couture",
+            "text": "It's you and I for the world.",
+            "link": "",
             "outline_text": false
           }
         }
       },
       "block_order": [
         "16616190648ddabc05-0",
-        "16616190648ddabc05-1",
-        "16616190648ddabc05-2",
         "234a9f9c-a2b0-4da8-9f1e-e9d2d172071b"
       ],
-      "disabled": true,
+      "custom_css": [
+        "div {height: 60px;}"
+      ],
       "settings": {
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
-        "speed": "50s",
-        "text_size": 60,
-        "text_uppercase": false,
-        "image_size": "large",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "overlay_color": "#ffffff",
+        "speed": "20s",
+        "text_size": 16,
+        "text_uppercase": true,
+        "image_size": "small",
+        "color_bg": "#000000",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -490,8 +437,6 @@
     "16521210505e7fc635",
     "image_with_text_slideshow_rThkUJ",
     "16618593470c5f63bd",
-    "16616191162185f622",
-    "16623735222f31e80e",
     "166161906436c7d4d0",
     "1662373455c24650d9",
     "1662373200967c613c",
