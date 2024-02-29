@@ -302,6 +302,55 @@
         "disable_bottom_spacing": true
       }
     },
+    "image_with_text_slideshow_DghAfw": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "slide_9WHiaT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ct_img_1.png",
+            "heading": "",
+            "content": "\"Our mission is to revolutionise the fashion industry which is one of the biggest contributors of environmental pollution. We do this by tracing the environmental footprint of the brands by meticulously monitoring the impact of each step that's taken.\n\nOur synergies instantly matched with Virgio because of their heartfelt commitment to bringing circular styles to the consumers. Together, we hope to empower our community with reliable information so they’re able to make more conscious choices.\"",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "slide_q3iJVN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gw_img_1.png",
+            "heading": "",
+            "content": "\"Our factories are known for their ethical practices. We have more than 60% women work force and we ensure all our employees get fair wages. Our water conservation methods and usage of Azo free dyes helps us be pro-planet at every step. We also take compliance with the government regulations very seriously.\n\nNaturally, our partnership with Virgio is an extension of our principles. It is our shared commitment to make a positive impact on the world through ethical collaboration.\"",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_9WHiaT",
+        "slide_q3iJVN"
+      ],
+      "custom_css": [
+        "div {background-color: #000000;}",
+        "h3 {font-size: 24px; line-height: 32px;}",
+        "p {font-size: 14px;}"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-auto",
+        "desktop_height": "desktop-height-auto",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#000000",
+        "color_text": "#ffffff",
+        "color_links": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "image_with_text_overlay_AWLDVf": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -375,6 +424,7 @@
     "16618593470c5f63bd",
     "166161906436c7d4d0",
     "image_with_text_CcnLEa",
+    "image_with_text_slideshow_DghAfw",
     "image_with_text_overlay_AWLDVf"
   ]
 }
