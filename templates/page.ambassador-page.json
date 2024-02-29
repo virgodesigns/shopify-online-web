@@ -18,6 +18,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/Hero_web.png",
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-full",
@@ -36,6 +37,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/Hero_banner_fd0e7303-e31d-42b4-b709-c48ed5fafda0.png",
         "mobile_image": "shopify:\/\/shop_images\/Hero_banner_96c484a1-0b17-4050-8a9b-f789dbc28985.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-full",
