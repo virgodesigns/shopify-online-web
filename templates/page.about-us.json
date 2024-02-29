@@ -255,7 +255,7 @@
       "settings": {
         "height": "height-auto",
         "full_width": true,
-        "direction": "right",
+        "direction": "left",
         "speed": "20s",
         "text_size": 16,
         "text_uppercase": true,
