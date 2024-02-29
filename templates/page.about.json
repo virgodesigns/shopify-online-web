@@ -10,30 +10,50 @@
             "heading_size": "h1-xlarge"
           }
         },
+        "subheading_hjpcNB": {
+          "type": "subheading",
+          "settings": {
+            "text": "Remember that time when"
+          }
+        },
+        "space_jCrGdf": {
+          "type": "space",
+          "settings": {
+            "height": 50
+          }
+        },
         "166161901437c6bc67-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Generation are looking to create a clothing brand that is massively focused on being sustainable and ethical.<\/p>",
+            "text": "<p>we chose mom’s saree for our school farewell or graduation ceremony?<\/p><p><\/p><p>Or the time a cousin outgrew her dress, which meant one thing - you were going to debut your own \"homewear collection\"?<\/p><p><\/p><p>This was our first brush with what felt like a community spanning generations. Brimming with stories and a common belief of treasuring our closets rather than throwing them away.<\/p><p>Our aim is to make these acts of love for our planet, a way of life again.<\/p>",
             "description_size": "medium"
           }
         }
       },
       "block_order": [
         "166161901437c6bc67-1",
+        "subheading_hjpcNB",
+        "space_jCrGdf",
         "166161901437c6bc67-2"
       ],
-      "disabled": true,
+      "custom_css": [
+        "p.subheading {color: var(--neutral-coolgrey-neutral-25-fefefe, #fefefe); text-align: center; font-family: Inter; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px;}",
+        "p {font-size: 16px;}"
+      ],
       "settings": {
         "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/Remember_when.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
         "content_width": "medium",
         "content_position": "middle-center",
         "text_alignment": "center",
-        "overlay_opacity": 20,
+        "overlay_opacity": 0,
+        "show_on_desktop": true,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "16616191162185f622": {
@@ -170,6 +190,8 @@
         "content_position": "middle-center",
         "text_alignment": "center",
         "overlay_opacity": 40,
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -239,6 +261,8 @@
         "color_text": "#151515",
         "overlay_color": "#ffffff",
         "overlay_opacity": 0,
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
