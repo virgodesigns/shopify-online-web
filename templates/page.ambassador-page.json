@@ -229,6 +229,7 @@
     },
     "image_with_text_overlay_WeXmBi": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "div {height: 80px;}"
       ],
