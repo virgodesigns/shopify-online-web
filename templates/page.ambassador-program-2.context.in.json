@@ -4,5 +4,19 @@
     "market": "in"
   },
   "sections": {
+    "image_with_text_overlay_eCyk9f": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "image_with_text_overlay_WeXmBi": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
   }
 }
