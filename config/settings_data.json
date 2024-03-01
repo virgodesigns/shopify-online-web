@@ -200,7 +200,7 @@
         "disabled": false,
         "settings": {
           "test_mode": true,
-          "modal_closeButton": false,
+          "modal_closeButton": true,
           "option_flag_style": "none",
           "option_currency_type": "none",
           "option_language": true,
@@ -216,11 +216,11 @@
           "title_font_size": 20,
           "text_font_size": 14,
           "show_blurred_background": false,
-          "style_colors_background": "#FFF",
-          "style_colors_closeButton": "#5C5F62",
-          "style_colors_cta_text": "#fff",
-          "style_colors_cta_button": "#000",
-          "style_colors_text": "#000"
+          "style_colors_background": "#ffffff",
+          "style_colors_closeButton": "#5c5f62",
+          "style_colors_cta_text": "#ffffff",
+          "style_colors_cta_button": "#000000",
+          "style_colors_text": "#000000"
         }
       }
     }
