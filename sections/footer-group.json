@@ -10,13 +10,13 @@
           "settings": {
             "column_size": "medium",
             "title": "Company",
-            "menu": "footer"
+            "menu": "company-menu"
           }
         },
         "801371dd-629c-4b6b-a71a-ad849e48af64": {
           "type": "menu",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Community",
             "menu": "community"
           }
@@ -24,7 +24,7 @@
         "86936a5b-1bb4-424b-bdbc-2b5e3032a8d8": {
           "type": "menu",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Community",
             "menu": "community-mobile"
           }
@@ -40,7 +40,7 @@
         "9c7d0155-0d4c-4a52-bc56-5276570cbac7": {
           "type": "social",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Social"
           }
         },
