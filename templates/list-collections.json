@@ -102,7 +102,7 @@
             "overlay_opacity": 70,
             "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
             "button_2_text": "EXPLORE NOW",
-            "button_2_link": "shopify:\/\/collections\/all",
+            "button_2_link": "shopify:\/\/collections",
             "button_2_outline": false,
             "button_2_underline": true
           }
