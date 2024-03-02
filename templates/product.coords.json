@@ -49,12 +49,12 @@
             "side_panel_1_icon": "leather",
             "side_panel_1_content": "",
             "side_panel_1_page": "",
-            "side_panel_2_label": "Cash on delivery available",
-            "side_panel_2_icon": "box",
+            "side_panel_2_label": "15 Days hassle-free return\/exchange",
+            "side_panel_2_icon": "washing",
             "side_panel_2_content": "",
             "side_panel_2_page": "",
-            "side_panel_3_label": "15 Days hassle-free return\/exchange",
-            "side_panel_3_icon": "washing",
+            "side_panel_3_label": "",
+            "side_panel_3_icon": "none",
             "side_panel_3_content": "",
             "side_panel_3_page": ""
           }
@@ -205,7 +205,16 @@
     "6504c889-765e-4951-97dd-2817199cfc89": {
       "type": "pdp-spotted-images",
       "settings": {
-        "heading": ""
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "columns_desktop": 4,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     }
   },
