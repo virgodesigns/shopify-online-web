@@ -283,7 +283,8 @@
     lastName: "{{ customer.last_name }}",
     email: "{{ customer.email }}"
     }
-    sessionStorage.setItem("selectedOrder", JSON.stringify(storageData))
+    sessionStorage.removeItem("selectedOrder");
+    sessionStorage.setItem("selectedOrder", JSON.stringify(storageData));
     window.location.href = "/pages/order-details"
     }
 
