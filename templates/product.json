@@ -52,16 +52,16 @@
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
           "settings": {
-            "side_panel_1_label": "Free Shipping across UAE (limited offer)",
-            "side_panel_1_icon": "leather",
+            "side_panel_1_label": "Delivered in 5-8 days",
+            "side_panel_1_icon": "stopwatch",
             "side_panel_1_content": "",
             "side_panel_1_page": "",
-            "side_panel_2_label": "15 Days hassle-free Returns",
-            "side_panel_2_icon": "washing",
+            "side_panel_2_label": "Free Shipping across UAE (limited offer)",
+            "side_panel_2_icon": "leather",
             "side_panel_2_content": "",
             "side_panel_2_page": "",
-            "side_panel_3_label": "",
-            "side_panel_3_icon": "washing",
+            "side_panel_3_label": "15 Days hassle-free Returns",
+            "side_panel_3_icon": "return",
             "side_panel_3_content": "",
             "side_panel_3_page": ""
           }
