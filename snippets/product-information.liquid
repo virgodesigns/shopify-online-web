@@ -88,7 +88,7 @@
           </div>
           <button id="viewMoreBtn">View More</button>
         {% endif %}
-        {% render 'pincode-checker' %}
+        {% comment %} {% render 'pincode-checker' %} {% endcomment %}
       {%- when 'inventory_level' -%}
         {% render 'product-inventory-notice', product: product, section: section, block: block %}
       {%- when 'variant_picker' -%}
