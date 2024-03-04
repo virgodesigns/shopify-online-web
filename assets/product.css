@@ -2119,6 +2119,7 @@
   }
   .thb-product-detail .product-price-container .price {
     justify-content: end;
+    text-align: right;
   }
   .price del .amount {
     margin-right: 5px;
