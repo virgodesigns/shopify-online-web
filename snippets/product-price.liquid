@@ -76,14 +76,14 @@
         {% endif %}
       </span>
     {% endif %}
-    {% if template contains 'product' %}
-      <div
-        class="inclusive"
-      >
-        Inclusive of all taxes
-      </div>
-    {% endif %}
   </div>
+  {% if template contains 'product' %}
+    <div
+      class="inclusive"
+    >
+      Inclusive of all taxes
+    </div>
+  {% endif %}
 
   <!-- To get the group id from the product tags -->
   {%- assign group_id = '' -%}
