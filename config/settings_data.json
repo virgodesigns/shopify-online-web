@@ -199,7 +199,7 @@
         "type": "shopify:\/\/apps\/geolocation-redirects-xapps\/blocks\/app-embed\/99c42a40-4a88-4244-a03e-a752a0b4e07d",
         "disabled": false,
         "settings": {
-          "ngr_test_mode": true,
+          "ngr_test_mode": false,
           "ngr_disable_widget": false,
           "ngr_force_disable": false,
           "ngr_auto_once": false,
