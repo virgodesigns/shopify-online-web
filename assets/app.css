@@ -2502,6 +2502,11 @@ scroll-shadow {
   .mobile-height-auto {
     min-height: auto;
   }
+  .price > .amount,
+  .price ins {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -4552,11 +4557,8 @@ select.resize-select {
   text-transform: uppercase;
   font-size: 0.6875rem;
 }
-
 .price > .amount,
 .price ins {
-  display: flex;
-  justify-content: end;
   text-decoration: none;
 }
 
