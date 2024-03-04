@@ -1834,6 +1834,7 @@ summary {
 @media only screen and (min-width: 768px) {
   .price .inclusive {
     font-size: 14px !important;
+    text-align: left !important;
   }
   .footer .row {
     padding: 0 50px;
