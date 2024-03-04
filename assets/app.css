@@ -1832,6 +1832,9 @@ summary {
   margin-bottom: -4rem;
 }
 @media only screen and (min-width: 768px) {
+  .price .inclusive {
+    font-size: 14px !important;
+  }
   .footer .row {
     padding: 0 50px;
   }
@@ -2019,8 +2022,8 @@ table td {
   text-align: center;
   font-size: 10px;
   font-weight: 500;
-line-height: 14px;
-letter-spacing: 0.1px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
 }
 
 table.no-borders {
@@ -4529,6 +4532,11 @@ select.resize-select {
   font-size: 0.9375rem;
   letter-spacing: 0.02em;
   color: var(--color-price, --color-accent);
+}
+.price .inclusive {
+  font-size: 10px;
+  margin-top: 0.1rem;
+  color: #898989;
 }
 .price > span {
   display: inline-flex;
