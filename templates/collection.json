@@ -85,13 +85,13 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-
+        ".spinner-path{stroke: #000;}"
       ],
       "settings": {
         "full_width": true,
         "products_per_page": 12,
         "columns_desktop": 4,
-        "pagination_type": "loadmore",
+        "pagination_type": "infinite",
         "enable_filtering": true,
         "enable_sorting": true,
         "show_counts": false,
