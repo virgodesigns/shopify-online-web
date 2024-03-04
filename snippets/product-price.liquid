@@ -26,8 +26,17 @@
   endif
 -%}
 <span class="price">
-  <ins><span class="amount">{{ money_price }}</span>
+  <ins
+    ><span class="amount">{{ money_price }}</span>
   </ins>
+  {% if template contains 'product' %}
+    <div
+      class="inclusive"
+    >
+      Inclusive of all taxes
+    </div>
+  {% endif %}
+
   <small class="unit-price {% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
     <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
     <span class="unit-price-separator">/</span>
@@ -38,7 +47,7 @@
       {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit -}}
     </span>
   </small>
-    <div class="product_compare-price">
+  <div class="product_compare-price">
     {% if compare_at_price != null and compare_at_price != 0 and price != compare_at_price %}
       <del>
         <span class="amount">
@@ -50,30 +59,32 @@
         </span>
       </del>
     {% endif %}
-  {%- if show_badges -%}
-    <span class="badges">
-      {%- if compare_at_price > price %}
-        {%- if settings.sale_badge_type == 'save_amount' -%}
-          {%- capture saved_amount -%} {{ compare_at_price | minus: price | money }} {%- endcapture -%}
-        {% comment %} {%- elsif settings.sale_badge_type == 'save_percentage' -%}
-          {%- capture saved_amount -%} {{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round }}% OFF {%- endcapture -%} {% endcomment %}
-        {%- endif -%}
-        <span class="percent-count">
-          {%- if settings.sale_badge_type == 'sale' -%}
-            {{ 'products.product.on_sale' | t }}
-          {%- else -%}
-            {{ saved_amount }}
+    {%- if show_badges -%}
+      <span class="badges">
+        {%- if compare_at_price > price %}
+          {%- if settings.sale_badge_type == 'save_amount' -%}
+            {%- capture saved_amount -%} {{ compare_at_price | minus: price | money }} {%- endcapture -%}
+            {% comment %}
+              {%- elsif settings.sale_badge_type == 'save_percentage' -%}
+              {%- capture saved_amount -%} {{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round }}% OFF {%- endcapture -%}
+            {% endcomment %}
           {%- endif -%}
-        </span>
-      {% endif %}
-      {%- if available == false -%}
-        <span class="badge out-of-stock">
-          {{ 'products.product.sold_out' | t }}
-        </span>
-      {% endif %}
-    </span>
-  {% endif %}
-    </div>
+          <span class="percent-count">
+            {%- if settings.sale_badge_type == 'sale' -%}
+              {{ 'products.product.on_sale' | t }}
+            {%- else -%}
+              {{ saved_amount }}
+            {%- endif -%}
+          </span>
+        {% endif %}
+        {%- if available == false -%}
+          <span class="badge out-of-stock">
+            {{ 'products.product.sold_out' | t }}
+          </span>
+        {% endif %}
+      </span>
+    {% endif %}
+  </div>
 
   <!-- To get the group id from the product tags -->
   {%- assign group_id = '' -%}
@@ -89,7 +100,7 @@
   </div>
 
   <!-- To get the style id from the product tags -->
-  
+
   {%- assign style_id = '' -%}
   {% for tag in product.tags %}
     {% if tag contains 'StyleID:' and style_id == '' %}
@@ -102,5 +113,3 @@
     <p class="style-id" data-style-id="{{ style_id }}"></p>
   </div>
 </span>
-
-
