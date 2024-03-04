@@ -1,0 +1,78 @@
+{{ 'https://modapps.com.au/geolocationredirect/assets/geo/virgiofashion.myshopify.com/main_geo.js' | script_tag }}  
+<script>
+var safariBrowserCompatibility = false;
+var sessionStCall = false;
+var ajaxLinkUrl = 'https://modapps.com.au/geolocationredirect/assets/geo/virgiofashion.myshopify.com/geolocationredirect.js';
+ if(typeof(Storage) !== 'undefined') {
+       try {
+                localStorage.setItem('lStorageBrowserCheck', 1);
+                localStorage.removeItem('lStorageBrowserCheck');
+                safariBrowserCompatibility = true;
+            } 
+            catch (e) {
+                Storage.prototype._setItem = Storage.prototype.setItem;
+                Storage.prototype.setItem = function () { };
+                safariBrowserCompatibility = false;
+                console.log('Sorry, your browser does not support web storage...');
+            }
+            if (safariBrowserCompatibility) {
+                if (window.sessionStorage.geoJsCodeTxt) {
+                    sessionStCall = true;
+                } else {
+                    sessionStCall = false;
+                }
+            }
+    } else {
+            safariBrowserCompatibility = false;
+            sessionStCall = false;
+            console.log('Sorry, your browser does not support web storage...');
+        }
+if(sessionStCall){
+          var s = document.createElement('script');
+        s.type = 'text/javascript';
+        try{
+          s.appendChild(document.CreateTextNode(window.sessionStorage.geoJsCodeTxt));
+          document.getElementsByTagName('head')[0].appendChild(s);
+          
+        }
+        catch (e) {
+          s.text = window.sessionStorage.geoJsCodeTxt;
+          document.getElementsByTagName('head')[0].appendChild(s);
+          
+        }
+  }
+else {
+modBarjquery.ajax({
+          type: 'GET',
+          data: { urlajaxpath : ajaxLinkUrl },  
+          dataType: 'text', 
+          async: false,
+          url: 'https://modapps.com.au/geolocationredirect/getfilecs.php',
+          timeout: 7000,   
+          success: function (data) {           
+            var tempScriptTxt = '';
+                    if (safariBrowserCompatibility) {
+                        window.sessionStorage.geoJsCodeTxt = data;
+                        tempScriptTxt = window.sessionStorage.geoJsCodeTxt;
+                    }  
+                    else {
+                      tempScriptTxt = data;
+                      //alert(tempScriptTxt);
+                    }                  
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    try {
+                        s.appendChild(document.CreateTextNode(tempScriptTxt));
+                        document.getElementsByTagName('head')[0].appendChild(s);
+
+                    }
+                    catch (e) {
+                        s.text = tempScriptTxt;
+                        document.getElementsByTagName('head')[0].appendChild(s);
+
+                    } }, 
+          error: function (data) 
+            { console.log('Cannot load service from server'); }
+    });
+}
+</script> 
