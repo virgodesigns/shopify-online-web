@@ -29,14 +29,6 @@
   <ins
     ><span class="amount">{{ money_price }}</span>
   </ins>
-  {% if template contains 'product' %}
-    <div
-      class="inclusive"
-    >
-      Inclusive of all taxes
-    </div>
-  {% endif %}
-
   <small class="unit-price {% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
     <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
     <span class="unit-price-separator">/</span>
@@ -85,6 +77,14 @@
       </span>
     {% endif %}
   </div>
+
+  {% if template contains 'product' %}
+    <div
+      class="inclusive"
+    >
+      Inclusive of all taxes
+    </div>
+  {% endif %}
 
   <!-- To get the group id from the product tags -->
   {%- assign group_id = '' -%}
