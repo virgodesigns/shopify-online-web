@@ -4537,6 +4537,7 @@ select.resize-select {
   font-size: 10px;
   margin-top: 0.1rem;
   color: #898989;
+  text-align: right;
 }
 .price > span {
   display: inline-flex;
