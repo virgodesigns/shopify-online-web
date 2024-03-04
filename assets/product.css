@@ -855,6 +855,16 @@
   font-weight: 500;
   margin-bottom: 3px;
   color: var(--color-body);
+  width: calc(100% - 140px);
+}
+.thb-product-detail .product-price-container {
+  margin-left: 11px;
+  width: 110px;
+}
+.thb-product-detail .product-tittle-reamaining_words {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .thb-product-detail .product-title.uppercase--true {
   text-transform: uppercase;
@@ -1979,6 +1989,12 @@
   font-size: 1.0625rem;
 }
 @media only screen and (min-width: 768px) {
+  .thb-product-detail .product-title {
+    width: 100%;
+  }
+  .thb-product-detail .product-price-container {
+    width: 100%;
+  }
   #shopify-product-reviews .spr-summary {
     display: flex;
     align-items: center;
