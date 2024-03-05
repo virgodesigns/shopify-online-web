@@ -823,6 +823,7 @@
       "blocks": {
         "slide_PR8Djp": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Veronicas_Banner_2.png",
             "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
@@ -869,6 +870,7 @@
     },
     "featured_collection_9GpbxD": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_left": false,
