@@ -447,6 +447,9 @@
       "block_order": [
         "heading_VcygP6"
       ],
+      "custom_css": [
+        "div {height: 100px;}"
+      ],
       "settings": {
         "section_width": "full-width-row-full",
         "text_width": "medium",
@@ -455,7 +458,7 @@
         "color_bg": "#ffeddb",
         "color_text": "#151515",
         "color_links": "#151515",
-        "disable_top_spacing": true,
+        "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
     },
