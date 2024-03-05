@@ -1144,11 +1144,16 @@
         "icon_ERKgAK",
         "icon_ca6KEK"
       ],
+      "custom_css": [
+        "div {background-color: #ffeddb; }"
+      ],
       "settings": {
         "text_alignment": "left",
         "icon_position": "left",
         "icon_size": "medium",
         "heading_size": "medium",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "mobile_swipe": true,
         "color_bg": "#ffeddb",
         "color_heading": "#151515",
