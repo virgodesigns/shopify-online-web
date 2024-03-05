@@ -1315,9 +1315,9 @@
     "video_NWaUgW": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_left": false,
-        "description": "<p>Add a short description for this section<\/p>",
+        "description": "",
         "section_width": "full-width-row-full",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
