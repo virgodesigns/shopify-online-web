@@ -438,39 +438,6 @@
         "disable_bottom_spacing": false
       }
     },
-    "rich_text_8KqTNR": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_WaDhFN": {
-          "type": "subheading",
-          "settings": {
-            "text": "SHOP BY"
-          }
-        },
-        "heading_eV3atj": {
-          "type": "heading",
-          "settings": {
-            "text": "CATEGORY",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_WaDhFN",
-        "heading_eV3atj"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffeddb",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": false
-      }
-    },
     "mwidget_wP9t6e": {
       "type": "mwidget",
       "blocks": {
@@ -519,168 +486,34 @@
         "text_color": ""
       }
     },
-    "slideshow_y979Wg": {
-      "type": "slideshow",
+    "rich_text_8KqTNR": {
+      "type": "rich-text",
       "blocks": {
-        "slide_7idbXW": {
-          "type": "slide",
+        "heading_eV3atj": {
+          "type": "heading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1._Cherry_Crush_1.png",
-            "slide_link": "shopify:\/\/collections\/cherry-crush",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_qyFkWi": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5._peony_perfection_1.png",
-            "slide_link": "shopify:\/\/collections\/peony-perfection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_wrmRCK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3._cerulean_dreams.png",
-            "slide_link": "shopify:\/\/collections\/cerulean-dreams",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_pC8yQh": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4._sage_serenity_2.png",
-            "slide_link": "shopify:\/\/collections\/sage-serenity",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_Nhdfqt": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2._sunny_side_up_1.png",
-            "slide_link": "shopify:\/\/collections\/sunny-side-up",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
+            "text": "#SpottedInVirgio",
+            "size": "h3"
           }
         }
       },
       "block_order": [
-        "slide_7idbXW",
-        "slide_qyFkWi",
-        "slide_wrmRCK",
-        "slide_pC8yQh",
-        "slide_Nhdfqt"
+        "heading_eV3atj"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#151515",
+        "color_links": "#151515",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": false
       }
     },
     "slideshow_majm9j": {
@@ -1316,7 +1149,7 @@
         "icon_size": "medium",
         "heading_size": "medium",
         "mobile_swipe": true,
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_heading": "#151515",
         "color_text": "#151515",
         "disable_top_spacing": true,
@@ -1334,9 +1167,8 @@
     "slideshow_V9kw7y",
     "slideshow_8djHwc",
     "rich_text_UjAFhP",
-    "rich_text_8KqTNR",
     "mwidget_wP9t6e",
-    "slideshow_y979Wg",
+    "rich_text_8KqTNR",
     "slideshow_majm9j",
     "slideshow_zG9XfE",
     "slideshow_a6Y4RT",
