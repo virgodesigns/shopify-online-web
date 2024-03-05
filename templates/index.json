@@ -433,98 +433,28 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_ewzyqL": {
-      "type": "slideshow",
+    "rich_text_XXHqdJ": {
+      "type": "rich-text",
       "blocks": {
-        "slide_KNggVb": {
-          "type": "slide",
+        "heading_VcygP6": {
+          "type": "heading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2._shop_by_category_header.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
+            "text": "Shop By Category",
+            "size": "h2"
           }
         }
       },
       "block_order": [
-        "slide_KNggVb"
+        "heading_VcygP6"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_bLrrF9": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_dckQrn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.1_Dress_category_2.png",
-            "slide_link": "shopify:\/\/collections\/dresses-date",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_dckQrn"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#151515",
+        "color_links": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -555,12 +485,21 @@
             "heading_text": "Topwear",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
+        },
+        "image_item_wBwCT7": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RAMADAN_-SPRING_SUMMER_-_LONG_DRESSES.png",
+            "heading_text": "Dresses",
+            "button_link": "shopify:\/\/collections\/priyam-and-hitika"
+          }
         }
       },
       "block_order": [
         "image_item_kfJXYh",
         "image_item_Hx8bmE",
-        "image_item_WtCAGK"
+        "image_item_WtCAGK",
+        "image_item_wBwCT7"
       ],
       "settings": {
         "main_heading": "",
@@ -1382,8 +1321,7 @@
     "slideshow_b3443E",
     "slideshow_V9kw7y",
     "slideshow_8djHwc",
-    "slideshow_ewzyqL",
-    "slideshow_bLrrF9",
+    "rich_text_XXHqdJ",
     "mwidget_wP9t6e",
     "slideshow_y979Wg",
     "slideshow_majm9j",
