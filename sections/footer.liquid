@@ -33,14 +33,19 @@
             {%- endif -%}
             {%- if block.settings.text != blank -%}
               <div class="rte text-size--{{ block.settings.text_size }}">
-                {{ block.settings.text | remove:'<br>' }}
+                {{ block.settings.text | remove: '<br>' }}
               </div>
               <a href="https://wa.me/message/QZN6PWNVMDFZM1">
-              {% render 'chat-with-us' %}
+                {% render 'chat-with-us' %}
               </a>
             {%- endif -%}
             {%- if block.settings.button_text != blank -%}
-              <a class="text-button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}">
+              <a
+                class="text-button"
+                href="{{ block.settings.button_link }}"
+                role="button"
+                title="{{ block.settings.button_text | escape }}"
+              >
                 {{- block.settings.button_text -}}
               </a>
             {%- endif -%}
@@ -60,11 +65,14 @@
               assign column_class = 'small-12 medium-6'
           endcase
         -%}
-        <div class="{{ column_class | escape }} columns widget--menu-column widget--menu-column-{{ forloop.index }}" {{ block.shopify_attributes }}>
+        <div
+          class="{{ column_class | escape }} columns widget--menu-column widget--menu-column-{{ forloop.index }}"
+          {{ block.shopify_attributes }}
+        >
           <div class="widget widget--menu">
             <button class="thb-widget-title collapsible" tabindex="0">
               {{ block.settings.title }}
-               <span></span>
+              <span></span>
             </button>
             {%- if block.settings.menu != blank -%}
               <ul class="thb-widget-menu">
@@ -93,7 +101,10 @@
                           {% if l.links.size > 0 %}
                             {% assign has_sub_menu = true %}
                           {% endif %}
-                          <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if l.active %} active{% endif %}" role="none">
+                          <li
+                            class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if l.active %} active{% endif %}"
+                            role="none"
+                          >
                             <a href="{{ l.url }}" title="{{ l.title | escape }}" role="menuitem">{{ l.title }}</a>
                             {%- if has_sub_menu -%}
                               <span class="thb-arrow" tabindex="0">
@@ -171,10 +182,12 @@
         </div>
       {%- endif -%}
     {%- endfor -%}
-    <div class="social-container">
-      <div><a href="https://play.google.com/store/apps/details?id=com.ameyam.virgio&hl=en_IN&gl=US">{% render 'play-store-icon' %}</a></div>
-      <div><a href="https://apps.apple.com/in/app/virgio/id1635305474">{% render 'app-store-icon' %}</a></div>
-    </div>
+    {% comment %}
+      <div class="social-container">
+        <div><a href="https://play.google.com/store/apps/details?id=com.ameyam.virgio&hl=en_IN&gl=US">{% render 'play-store-icon' %}</a></div>
+        <div><a href="https://apps.apple.com/in/app/virgio/id1635305474">{% render 'app-store-icon' %}</a></div>
+      </div>
+    {% endcomment %}
   </div>
   <div class="sub-footer">
     <div class="row {% if full_width %}full-width-row{% endif %}">
