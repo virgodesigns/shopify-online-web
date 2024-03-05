@@ -225,11 +225,11 @@
   <tab-switch>
     <div class="slider-main-container {% if full_width %} full-width-row{% endif %}{% if section.settings.show_on_mobile == false %} small-hide{% else %} swipe-mobile{% endif %}{% if section.settings.show_on_desktop == false %} medium-hide large-up-hide{% else %} swipe-desktop{% endif %}" style="--overlay-color-rgb: {{ overlay_color.rgb | replace: ' ' , ',' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }};">
       <div class="mobile-video main-slideshow">
-        {% comment %} <div
+        <div
           class="slideshow__slide-video-bg {{ mobile_height }} {{ desktop_height }}"
           data-provider="hosted"
           data-video-url="{{section.blocks[0].settings.image-mobile | img_url: ' '  }}"
-          style="visibility: visible; background-color: black; background-image: url({{ section.blocks[0].settings.image-mobile | img_url: ' ' }});background-size: cover;"></div> {% endcomment %}
+          style="visibility: visible; background-color: black; background-image: url({{ section.blocks[0].settings.image-mobile | img_url: ' ' }});background-size: cover;"></div>
       </div>
       <div class="explore-tabs">
         {% for tab in tabHeadings %}
@@ -319,7 +319,7 @@
 
             <!-- FOR MOBILE DEVICE -->
 
-            {% comment %} <div class="mobile_device">
+            <div class="mobile_device">
               <div class="splide" style="z-index: 10; width: 100%;">
                 <div class="wrap-container wrap-scroll">
                   <ul class="ul-scroll">
@@ -341,7 +341,7 @@
                   </ul>
                 </div>
               </div>
-            </div> {% endcomment %}
+            </div>
           </div>
         {% endunless %}
       {%- endfor -%}
