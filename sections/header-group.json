@@ -5,14 +5,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "text_9K3P4c": {
-          "type": "text",
-          "settings": {
-            "icon": "none",
-            "text": "Add campaign text here.",
-            "link": ""
-          }
-        },
         "5b1ab378-833d-4a94-a02e-8325ec1551d0": {
           "type": "text",
           "settings": {
@@ -39,7 +31,6 @@
         }
       },
       "block_order": [
-        "text_9K3P4c",
         "5b1ab378-833d-4a94-a02e-8325ec1551d0",
         "text_LwecY9",
         "2f7893ee-7b84-4f15-911a-801b94ffa38e"
