@@ -501,8 +501,7 @@
         "heading_eV3atj"
       ],
       "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+        "div {background-color: #ffeddb;}"
       ],
       "settings": {
         "section_width": "full-width-row-full",
@@ -513,7 +512,7 @@
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "slideshow_majm9j": {
