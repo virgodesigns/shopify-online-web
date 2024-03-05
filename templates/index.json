@@ -31,10 +31,39 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
+        },
+        "slide_KG87MY": {
+          "type": "slide",
+          "settings": {
+            "mobile_image": "shopify:\/\/shop_images\/uae_fashion_1.png",
+            "slide_link": "shopify:\/\/collections\/all-collections",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/all-collections",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "slide_fDPWtA"
+        "slide_fDPWtA",
+        "slide_KG87MY"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
