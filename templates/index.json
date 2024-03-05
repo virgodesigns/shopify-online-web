@@ -618,7 +618,7 @@
         "slide_3L3mzh": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SHOP_BY_FABRIC.jpg",
+            "image": "shopify:\/\/shop_images\/fabric_ed575591-685c-4d67-ae1e-74d024b0e430.jpg",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -910,7 +910,7 @@
       ],
       "settings": {
         "heading": "OTHER COLLECTIONS",
-        "bg_color": "#FFF",
+        "bg_color": "#ffffff",
         "heading_color": "#151515",
         "name_color": "#151515",
         "show_on_desktop": false,
