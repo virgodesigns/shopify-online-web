@@ -35,13 +35,13 @@
         "slide_KG87MY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop.png",
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_1.png",
             "mobile_image": "shopify:\/\/shop_images\/uae_fashion_2.png",
             "slide_link": "shopify:\/\/collections\/all-collections",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "SAY HELLO TO",
-            "heading": "CIRCULAR FASHION",
+            "subheading": "",
+            "heading": "",
             "heading_size": "h1",
             "content": "",
             "description_size": "medium",
@@ -684,7 +684,7 @@
         "collection_mwdtHQ"
       ],
       "custom_css": [
-        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize}",
+        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
         ".h3 {font-size: 24px;}"
       ],
       "settings": {
