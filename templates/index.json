@@ -438,13 +438,14 @@
         "text_68Dy9J": {
           "type": "text",
           "settings": {
-            "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
+            "text": "Pro-Planet Fashion        |        Easy Return        |        Free Shipping",
             "link": "",
             "outline_text": false
           }
         },
         "text_KqxEnJ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
             "link": "",
