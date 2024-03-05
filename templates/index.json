@@ -473,20 +473,20 @@
     "mwidget_wP9t6e": {
       "type": "mwidget",
       "blocks": {
-        "image_item_kfJXYh": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
-            "heading_text": "Bottomwear",
-            "button_link": "shopify:\/\/collections\/bottomwear-date"
-          }
-        },
         "image_item_Hx8bmE": {
           "type": "image-item",
           "settings": {
             "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
             "heading_text": "Co-ords Set",
             "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
+        },
+        "image_item_kfJXYh": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
+            "heading_text": "Bottomwear",
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
         },
         "image_item_WtCAGK": {
@@ -507,8 +507,8 @@
         }
       },
       "block_order": [
-        "image_item_kfJXYh",
         "image_item_Hx8bmE",
+        "image_item_kfJXYh",
         "image_item_WtCAGK",
         "image_item_wBwCT7"
       ],
