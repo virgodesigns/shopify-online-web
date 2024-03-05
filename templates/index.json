@@ -35,6 +35,7 @@
         "slide_KG87MY": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/uae_fashion_1.png",
             "mobile_image": "shopify:\/\/shop_images\/uae_fashion_1.png",
             "slide_link": "shopify:\/\/collections\/all-collections",
             "video_background": false,
