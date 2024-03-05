@@ -64,7 +64,11 @@
     }
 </style>
 
-{% if template contains 'index' or template contains 'list-collections' or template contains 'page.circularity' %}
+{% if template contains 'index'
+  or template contains 'list-collections'
+  or template contains 'collection'
+  or template contains 'page.circularity'
+%}
   <header
     id="header"
     class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active"
