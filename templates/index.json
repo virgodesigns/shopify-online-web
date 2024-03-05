@@ -38,13 +38,13 @@
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
+        "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "slide",
         "show_on_desktop": true,
-        "show_on_mobile": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -420,6 +420,7 @@
       "block_order": [
         "slide_chAVfL"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
