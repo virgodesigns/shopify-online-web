@@ -1057,17 +1057,42 @@
         "disable_bottom_spacing": true
       }
     },
-    "video_xdr9iB": {
-      "type": "video",
+    "image_with_text_overlay_dJVL7T": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_EBzjQ8": {
+          "type": "subheading",
+          "settings": {
+            "text": "WE LOVE FABRICS"
+          }
+        },
+        "heading_VGLfTc": {
+          "type": "heading",
+          "settings": {
+            "text": "We’ve spent endless hours perfecting our fabric game and we’re not shy about flaunting it!",
+            "heading_size": "h1-xlarge"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EBzjQ8",
+        "heading_VGLfTc"
+      ],
+      "custom_css": [
+        "div {height: 200px;}"
+      ],
       "settings": {
-        "heading": "",
-        "heading_left": false,
-        "description": "",
         "section_width": "full-width-row-full",
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "video_hosted": "shopify:\/\/files\/videos\/ca9523265470492e8679c7f371f545df_d985f234-11e0-441c-bec7-8450b6040b10.mp4",
-        "video_autoplay": true,
-        "aspect_ratio": "16-9",
+        "image": "shopify:\/\/shop_images\/fabric_bg.png",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-auto",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 10,
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1178,7 +1203,7 @@
     "collection_carousel_yAfpTf",
     "slideshow_rbPrak",
     "social_images_collections_AyYGeN",
-    "video_xdr9iB",
+    "image_with_text_overlay_dJVL7T",
     "collection_tabs_LDM6fX",
     "text_with_icons_iHKLff"
   ]
