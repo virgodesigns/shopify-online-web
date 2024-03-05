@@ -35,8 +35,8 @@
         "slide_KG87MY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/uae_fashion_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/uae_fashion_1.png",
+            "image": "shopify:\/\/shop_images\/uae_fashion_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/uae_fashion_2.png",
             "slide_link": "shopify:\/\/collections\/all-collections",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1145,7 +1145,7 @@
         "icon_ca6KEK"
       ],
       "custom_css": [
-        "div {background-color: #ffeddb; }"
+        "div {background-color: #ffeddb;}"
       ],
       "settings": {
         "text_alignment": "left",
