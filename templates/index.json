@@ -1276,68 +1276,53 @@
     "video_xdr9iB": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_left": false,
-        "description": "<p>Add a short description for this section<\/p>",
-        "section_width": "grid",
+        "description": "",
+        "section_width": "full-width-row-full",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_hosted": "shopify:\/\/files\/videos\/ca9523265470492e8679c7f371f545df_d985f234-11e0-441c-bec7-8450b6040b10.mp4",
         "video_autoplay": true,
         "aspect_ratio": "16-9",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
-    "tabbed_content_eGWwkR": {
-      "type": "tabbed-content",
+    "collection_tabs_LDM6fX": {
+      "type": "collection-tabs",
       "blocks": {
-        "tab_JwfTzN": {
-          "type": "tab",
+        "collection_CGdnyg": {
+          "type": "collection",
           "settings": {
-            "tab_label": "Tab label",
-            "icon": "ruler",
-            "text": "<p>Add a short description for this tabbed section<\/p>",
-            "text_columns": "1",
-            "page": ""
+            "collection": "recycled-polyester"
           }
         },
-        "tab_L9AWx6": {
-          "type": "tab",
+        "collection_mwdtHQ": {
+          "type": "collection",
           "settings": {
-            "tab_label": "Tab label",
-            "icon": "ruler",
-            "text": "<p>Add a short description for this tabbed section<\/p>",
-            "text_columns": "1",
-            "page": ""
-          }
-        },
-        "tab_tTm4wx": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Tab label",
-            "icon": "ruler",
-            "text": "<p>Add a short description for this tabbed section<\/p>",
-            "text_columns": "1",
-            "page": ""
+            "collection": "cotton-collection"
           }
         }
       },
       "block_order": [
-        "tab_JwfTzN",
-        "tab_L9AWx6",
-        "tab_tTm4wx"
+        "collection_CGdnyg",
+        "collection_mwdtHQ"
       ],
       "settings": {
-        "heading": "Tabbed content",
-        "description": "<p>Add a short description for this section<\/p>",
-        "text_width": "medium",
-        "tab_alignment": "left",
-        "text_alignment": "left",
-        "color_bg": "#ffffff",
-        "color_tabs": "#151515",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "heading": "Collection Tabs",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 6,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "10.89",
+        "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+        "show_on_desktop": false,
+        "show_on_mobile": true
       }
     },
     "text_with_icons_iHKLff": {
@@ -1376,14 +1361,14 @@
       "settings": {
         "text_alignment": "left",
         "icon_position": "left",
-        "icon_size": "large",
-        "heading_size": "large",
+        "icon_size": "medium",
+        "heading_size": "medium",
         "mobile_swipe": true,
         "color_bg": "transparent",
         "color_heading": "#151515",
         "color_text": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     }
   },
@@ -1411,7 +1396,7 @@
     "slideshow_rbPrak",
     "social_images_collections_AyYGeN",
     "video_xdr9iB",
-    "tabbed_content_eGWwkR",
+    "collection_tabs_LDM6fX",
     "text_with_icons_iHKLff"
   ]
 }
