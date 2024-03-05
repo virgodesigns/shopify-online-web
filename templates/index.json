@@ -35,8 +35,8 @@
         "slide_KG87MY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/uae_fashion.png",
-            "mobile_image": "shopify:\/\/shop_images\/uae_fashion_80e48e91-6bf3-4cf6-b51e-5639d339f517.png",
+            "image": "shopify:\/\/shop_images\/uae_fashion_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/uae_fashion_2.png",
             "slide_link": "shopify:\/\/collections\/all-collections",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -307,6 +307,7 @@
         "collection_PNhNyD",
         "collection_bx7db7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Shop by Fabric",
         "bg_color": "#000000",
@@ -461,11 +462,9 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_links": "#151515",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
@@ -514,7 +513,7 @@
       ],
       "settings": {
         "main_heading": "",
-        "bg_color": "#ffeddb",
+        "bg_color": "#ffffff",
         "text_color": ""
       }
     },
@@ -540,11 +539,9 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_links": "#151515",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
