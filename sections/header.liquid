@@ -31,6 +31,12 @@
        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
      }
 
+       @media only screen and (min-width: 768px) {
+        .customPDPheader{
+        display:none
+      }
+    }
+
       .customPDPheader .logo{
        display: flex;
      align-items: center;
@@ -99,7 +105,37 @@
       {%- endunless -%}
     {%- endstyle -%}
   </header>
-{% elsif template contains 'product' %}
+{% elsif template contains 'product' or template contains 'product.coords' %}
+  <header
+    id="header"
+    class="pdp_header header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
+  >
+    <div class="row expanded">
+      <div class="small-12 columns">
+        {%- case style -%}
+          {%- when 'style1' -%}
+            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style2' -%}
+            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style3' -%}
+            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style4' -%}
+            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
+        {%- endcase -%}
+      </div>
+    </div>
+    {%- style -%}
+      :root {
+        --logo-height: {{ logo_height_range | append: 'px' }};
+        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      }
+      {% unless sticky_header %}
+      .header-section {
+        position: static !important;
+      }
+      {%- endunless -%}
+    {%- endstyle -%}
+  </header>
   <div class="customPDPheader thb-secondary-area">
     <a class="right-arrow-button customPDPheaderEqual" id="back_btn">
       {% render 'back-icon-pdp' %}
@@ -134,7 +170,7 @@
   </div>
 {%- else -%}
   <div class="thb-secondary-area mobile">
-    {% if template contains 'product' %}
+    {% if template contains 'product' or template contains 'product.coords' %}
       <a class="right-arrow-button" id="back_btn">
         {% render 'home-icon' %}
       </a>
@@ -157,7 +193,7 @@
   </div>
 {% endif %}
 
-<mobile-header class="medium-hide large-up-hide  {% if template == 'product' %}header-hide{% endif %}">
+<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
       <ul
@@ -278,7 +314,7 @@
          const liquidTemplate = {{ template|json }}
 
          backElem.addEventListener('click', (e) => {
-           if (document.referrer == '' && liquidTemplate == 'product') {
+           if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords')) {
              window.location.href = "/"
            } else {
              history.back();
