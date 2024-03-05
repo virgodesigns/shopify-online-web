@@ -710,7 +710,7 @@
         "disable_bottom_spacing": true,
         "margin_left_value": "0",
         "overlay_gradient": "",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true
       }
     },
