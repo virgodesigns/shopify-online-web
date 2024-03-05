@@ -519,34 +519,6 @@
     "slideshow_majm9j": {
       "type": "slideshow",
       "blocks": {
-        "slide_gF9wAx": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_1.png",
-            "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
         "slide_7tA3eb": {
           "type": "slide",
           "settings": {
@@ -574,11 +546,39 @@
             "button_2_outline": false,
             "button_2_underline": true
           }
+        },
+        "slide_gF9wAx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_0f4bf59d-aa8c-4d95-b6e6-04348ab9fadd.png",
+            "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "slide_gF9wAx",
-        "slide_7tA3eb"
+        "slide_7tA3eb",
+        "slide_gF9wAx"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
