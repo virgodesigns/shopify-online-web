@@ -501,7 +501,7 @@
         "heading_eV3atj"
       ],
       "custom_css": [
-        "div {background-color: #ffeddb;}"
+        "div {background-color: #ffeddb; height: 80px}"
       ],
       "settings": {
         "section_width": "full-width-row-full",
