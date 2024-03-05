@@ -83,8 +83,8 @@ tab-switch {
     margin-top: 25px;
   }
   .slideshow__slide-content,
-.explore-tabs-content {
-  height: 80% !important;
+  .explore-tabs-content {
+    height: 80% !important;
   }
   .explore-tabs {
     gap: 16px;
@@ -304,7 +304,7 @@ tab-switch {
     height: 35px;
   }
   .explore-tabs {
-    display: none !important;
+    /* display: none !important; */
     position: absolute;
     top: 25%;
     z-index: 9999;
