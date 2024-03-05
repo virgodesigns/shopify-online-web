@@ -758,7 +758,7 @@
         "slide_nrk3f4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6_The_Date_Banner_1.png",
+            "image": "shopify:\/\/shop_images\/The_Date_Banner.png",
             "slide_link": "shopify:\/\/collections\/date-collection",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -773,7 +773,7 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
+            "button_1_text": "SHOP NOW",
             "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
