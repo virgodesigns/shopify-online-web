@@ -617,14 +617,14 @@
         "slide_3L3mzh": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fabric_bg_1.png",
+            "image": "shopify:\/\/shop_images\/SHOP_BY_FABRIC.jpg",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "WE LOVE FABRICS",
+            "subheading": "",
             "heading": "",
             "heading_size": "h1-xlarge",
-            "content": "We’ve spent endless hours perfecting\nour fabric game and we’re not shy about flaunting it!",
+            "content": "",
             "description_size": "large",
             "content_position": "middle-center",
             "text_alignment": "center",
