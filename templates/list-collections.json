@@ -349,6 +349,7 @@
         "88ac6c98-f30f-49e1-b95e-663c5d07b6c3",
         "314e89fc-2f50-418d-b7d7-5f1e674c0e00"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-full",
@@ -361,10 +362,59 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "mwidget_yyhMqJ": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_cnEdnq": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black_date_long_dress_1.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/all-collections"
+          }
+        },
+        "image_item_GcaByz": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_0f4bf59d-aa8c-4d95-b6e6-04348ab9fadd.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/priyam-and-hitika"
+          }
+        },
+        "image_item_UgnXej": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lisa_haydon_0d85a0f5-821d-4b57-a6cf-f46c2d2ed783.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/poolside-splash"
+          }
+        },
+        "image_item_pzmqnV": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RAMADAN_-SPRING_SUMMER_-_LONG_DRESSES_f910142e-3b10-48cb-97e8-faf88749d184.png",
+            "heading_text": "Lisa haydon",
+            "button_link": "shopify:\/\/collections\/priyam-and-hitika"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_cnEdnq",
+        "image_item_GcaByz",
+        "image_item_UgnXej",
+        "image_item_pzmqnV"
+      ],
+      "settings": {
+        "main_heading": "Categories",
+        "bg_color": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "8e2aa702-a629-4a08-b4ab-75452deb5c89"
+    "8e2aa702-a629-4a08-b4ab-75452deb5c89",
+    "mwidget_yyhMqJ"
   ]
 }
