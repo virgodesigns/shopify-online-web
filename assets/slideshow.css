@@ -33,7 +33,7 @@
   justify-content: end;
   width: 100%;
   align-items: center;
-  height: 80%;
+  height: 100%;
 }
 
 tab-switch {
@@ -81,6 +81,10 @@ tab-switch {
 @media only screen and (min-width: 768px) {
   .slideshow__slide .button {
     margin-top: 25px;
+  }
+  .slideshow__slide-content,
+.explore-tabs-content {
+  height: 80% !important;
   }
   .explore-tabs {
     gap: 16px;
