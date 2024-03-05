@@ -3,8 +3,8 @@
     {% render 'header-mobile-toggle', header_settings: header_settings, blocks: blocks %}
   </div>
 {% endcomment %}
-{%- if template contains 'product' -%}
-  <div class="thb-header-mobile-left">
+{%- if template == 'collection' -%}
+  <div class="thb-header-mobile-left" id="back_btn">
     <a class="right-arrow-button">
       {% render 'svg-icons' with 'thb-back-white' %}
     </a>
