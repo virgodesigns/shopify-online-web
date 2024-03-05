@@ -71,7 +71,8 @@
     }
 </style>
 <div
-  style="background-color: {{section.settings.bg_color}} "
+  style="background-color: {{section.settings.bg_color}}"
+  style="--color-text: {{ color_text }};
   class="collection-tabs section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"
 >
   <div
@@ -241,6 +242,12 @@
       "type": "image_picker",
       "id": "bg_image",
       "label": "Backgorund Image"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text",
+      "default": "#151515"
     },
     {
       "type": "color_background",
