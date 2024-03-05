@@ -438,6 +438,39 @@
         "disable_bottom_spacing": false
       }
     },
+    "rich_text_8KqTNR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_WaDhFN": {
+          "type": "subheading",
+          "settings": {
+            "text": "SHOP BY"
+          }
+        },
+        "heading_eV3atj": {
+          "type": "heading",
+          "settings": {
+            "text": "CATEGORY",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WaDhFN",
+        "heading_eV3atj"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
     "mwidget_wP9t6e": {
       "type": "mwidget",
       "blocks": {
@@ -1301,6 +1334,7 @@
     "slideshow_V9kw7y",
     "slideshow_8djHwc",
     "rich_text_UjAFhP",
+    "rich_text_8KqTNR",
     "mwidget_wP9t6e",
     "slideshow_y979Wg",
     "slideshow_majm9j",
