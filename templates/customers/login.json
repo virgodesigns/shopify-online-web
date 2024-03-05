@@ -2,12 +2,12 @@
   "sections": {
     "main-login": {
       "type": "main-login",
-      "disabled": true,
       "settings": {
       }
     },
     "165460479522332vv3": {
       "type": "otp-login",
+      "disabled": true,
       "settings": {
       }
     }
