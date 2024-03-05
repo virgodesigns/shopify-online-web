@@ -41,7 +41,7 @@
         "full_width": true,
         "autoplay": true,
         "autoplay_length": 5,
-        "transition": "swipe",
+        "transition": "slide",
         "show_on_desktop": true,
         "show_on_mobile": false,
         "disable_top_spacing": true,
@@ -390,7 +390,7 @@
         "slide_chAVfL": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/RAMADAN_-SPRING_SUMMER_-_LONG_DRESSES.png",
+            "image": "shopify:\/\/shop_images\/RAMADAN_-SPRING_SUMMER_-_LONG_DRESSES_c8de8f55-9f11-4399-91f7-7de1b7f1d04a.png",
             "slide_link": "shopify:\/\/collections\/ramadan-spring-edit",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -403,7 +403,7 @@
             "text_alignment": "center",
             "content_size": "medium",
             "overlay_color": "#000000",
-            "overlay_opacity": 25,
+            "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "SHOP NOW",
             "button_1_link": "",
@@ -447,7 +447,6 @@
       "block_order": [
         "text_68Dy9J"
       ],
-      "disabled": true,
       "custom_css": [
         "div {height: 32px;}",
         " {font-weight: thin;}",
@@ -1312,55 +1311,113 @@
         "disable_bottom_spacing": true
       }
     },
-    "video_NWaUgW": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "description": "",
-        "section_width": "full-width-row-full",
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "aspect_ratio": "16-9",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "collection_tabs_dwGfLK": {
-      "type": "collection-tabs",
+    "slideshow_nihi4P": {
+      "type": "slideshow",
       "blocks": {
-        "collection_C7YfQU": {
-          "type": "collection",
+        "slide_YkiHhL": {
+          "type": "slide",
           "settings": {
-            "collection": "recycled-polyester"
-          }
-        },
-        "collection_EiwDQx": {
-          "type": "collection",
-          "settings": {
-            "collection": "cotton-collection"
+            "image": "shopify:\/\/shop_images\/11_Guarantee.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "collection_C7YfQU",
-        "collection_EiwDQx"
+        "slide_YkiHhL"
       ],
       "settings": {
-        "heading": "Collection Tabs",
-        "heading_left": false,
-        "description": "<p>Add a short description for your collections<\/p>",
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
         "full_width": true,
-        "product_limit": 6,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "multicolumn_XJRqNm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_m4JNpk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_3833.svg",
+            "image_full_width": false,
+            "retina": false,
+            "title": "271528+",
+            "text": "<p><strong>Shoe pairs sold worldwide & still counting.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X8L4g8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_3833.svg",
+            "image_full_width": false,
+            "retina": false,
+            "title": "2456788+",
+            "text": "<p><strong>Plastic bottle recycled.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_L6wPWp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_3833.svg",
+            "image_full_width": false,
+            "retina": false,
+            "title": "5363+Kg's",
+            "text": "<p><strong>Tyres recycled<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_m4JNpk",
+        "column_X8L4g8",
+        "column_L6wPWp"
+      ],
+      "settings": {
+        "heading": "Environmental impact",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "adapt",
         "columns_desktop": 4,
-        "show_view_all": true,
+        "text_alignment": "left",
+        "heading_size": "h4",
+        "mobile_swipe": false,
         "show_progress_bar": true,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "margin_left_value": "10.89",
-        "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-        "show_on_desktop": false,
-        "show_on_mobile": true
+        "disable_bottom_spacing": true
       }
     }
   },
@@ -1388,7 +1445,7 @@
     "collection_carousel_yAfpTf",
     "slideshow_rbPrak",
     "social_images_collections_AyYGeN",
-    "video_NWaUgW",
-    "collection_tabs_dwGfLK"
+    "slideshow_nihi4P",
+    "multicolumn_XJRqNm"
   ]
 }
