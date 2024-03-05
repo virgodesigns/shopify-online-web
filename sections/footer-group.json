@@ -13,6 +13,22 @@
             "menu": "footer"
           }
         },
+        "menu_RmPQ93": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "Community",
+            "menu": "community"
+          }
+        },
+        "menu_kftHJe": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "Community",
+            "menu": "community-mobile"
+          }
+        },
         "00a364e5-af4e-4073-871b-4d533bd4da06": {
           "type": "menu",
           "settings": {
@@ -43,6 +59,8 @@
       },
       "block_order": [
         "menu_UBC3GT",
+        "menu_RmPQ93",
+        "menu_kftHJe",
         "00a364e5-af4e-4073-871b-4d533bd4da06",
         "9c7d0155-0d4c-4a52-bc56-5276570cbac7",
         "fb23472e-4921-42b3-a2ac-42a6ac1dee8c"
