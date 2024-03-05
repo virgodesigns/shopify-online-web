@@ -1114,13 +1114,13 @@
         "collection_CGdnyg": {
           "type": "collection",
           "settings": {
-            "collection": "recycled-polyester"
+            "collection": "natural-fabrics"
           }
         },
         "collection_mwdtHQ": {
           "type": "collection",
           "settings": {
-            "collection": "cotton-collection"
+            "collection": "recycled-fabric"
           }
         }
       },
@@ -1128,19 +1128,22 @@
         "collection_CGdnyg",
         "collection_mwdtHQ"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "heading": "Collection Tabs",
+        "heading": "Fabrics, circular?",
         "heading_left": false,
         "description": "",
         "full_width": true,
-        "product_limit": 6,
+        "product_limit": 8,
         "columns_desktop": 4,
-        "show_view_all": true,
-        "show_progress_bar": false,
+        "show_view_all": false,
+        "show_progress_bar": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
-        "margin_left_value": "10.89",
-        "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+        "margin_left_value": "0",
+        "overlay_gradient": "",
         "show_on_desktop": false,
         "show_on_mobile": true
       }
