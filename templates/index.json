@@ -1237,7 +1237,8 @@
         "slide_ATcAam": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096541.png",
+            "image": "shopify:\/\/shop_images\/Media_Spotlight_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_48096541.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
