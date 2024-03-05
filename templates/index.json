@@ -774,7 +774,7 @@
             "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "SHOP NOW",
-            "button_1_link": "",
+            "button_1_link": "shopify:\/\/collections\/date-collection",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
@@ -831,7 +831,7 @@
         "slide_PR8Djp": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_Veronicas_Banner_1.png",
+            "image": "shopify:\/\/shop_images\/Veronicas_Banner_2.png",
             "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -846,8 +846,8 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections\/veronicas-all-collection",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
