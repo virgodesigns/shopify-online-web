@@ -550,12 +550,12 @@
         "slide_7tA3eb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_1.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_0d85a0f5-821d-4b57-a6cf-f46c2d2ed783.png",
             "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
-            "heading": "",
+            "heading": "LISA HAYDON",
             "heading_size": "h1-xlarge",
             "content": "",
             "description_size": "medium",
@@ -565,7 +565,7 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
+            "button_1_text": "shop the look",
             "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
