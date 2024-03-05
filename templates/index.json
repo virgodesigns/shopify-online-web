@@ -519,7 +519,7 @@
         "heading_eV3atj"
       ],
       "custom_css": [
-        "div {background-color: #fDFDFD; height: 80px;}"
+        "div {background-color: #fdfdfd; height: 80px;}"
       ],
       "settings": {
         "section_width": "full-width-row-full",
@@ -704,6 +704,45 @@
         "overlay_gradient": "",
         "show_on_desktop": true,
         "show_on_mobile": true
+      }
+    },
+    "rich_text_X9yyVR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_xNeMgD": {
+          "type": "subheading",
+          "settings": {
+            "text": "COLLECTION IN"
+          }
+        },
+        "heading_yXxRJh": {
+          "type": "heading",
+          "settings": {
+            "text": "SPOTLIGHT",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xNeMgD",
+        "heading_yXxRJh"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
       }
     },
     "slideshow_a6Y4RT": {
@@ -1254,6 +1293,7 @@
     "slideshow_majm9j",
     "slideshow_fKw6nT",
     "collection_tabs_LDM6fX",
+    "rich_text_X9yyVR",
     "slideshow_a6Y4RT",
     "featured_collection",
     "slideshow_pNjyMa",
