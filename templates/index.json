@@ -768,7 +768,7 @@
       "settings": {
         "heading": "",
         "heading_left": false,
-        "bg_color": "#ffeddb",
+        "bg_color": "#ffffff",
         "button_url": "shopify:\/\/collections\/date-collection",
         "button_text": "Explore Eco-chic",
         "show_on_desktop": false,
@@ -841,7 +841,7 @@
       "settings": {
         "heading": "",
         "heading_left": false,
-        "bg_color": "#ffeddb",
+        "bg_color": "#ffffff",
         "button_url": "shopify:\/\/collections\/veronicas-all-collection",
         "button_text": "Explore Eco-chic",
         "show_on_desktop": false,
@@ -1146,7 +1146,7 @@
         "icon_ca6KEK"
       ],
       "custom_css": [
-        "div {background-color: #ffeddb;}"
+        "div {background-color: #ffff;}"
       ],
       "settings": {
         "text_alignment": "left",
@@ -1156,7 +1156,7 @@
         "show_on_desktop": false,
         "show_on_mobile": true,
         "mobile_swipe": true,
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_heading": "#151515",
         "color_text": "#151515",
         "disable_top_spacing": true,
