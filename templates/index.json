@@ -818,6 +818,108 @@
         "disable_bottom_spacing": true
       }
     },
+    "collection_carousel_ctNVrA": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_QWndkH": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IDGAF_7c25b4a3-2f50-4942-b128-d4ff66bb941a.png",
+            "name": "#IDGAF",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/poolside-splash"
+          }
+        },
+        "collection_zyCQeb": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Safari_Edit.png",
+            "name": "Safari Edit",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/the-safari-edit"
+          }
+        },
+        "collection_FWz8Tm": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
+            "name": "Newtro Twist",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/newtro-twist"
+          }
+        },
+        "collection_jbxAA8": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cityscape.png",
+            "name": "Cityscape",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cityscape"
+          }
+        },
+        "collection_xy6wKV": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Born_to_Shine.png",
+            "name": "Born To Shine",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
+          }
+        },
+        "collection_6N6pnn": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wild_Romance.png",
+            "name": "Wild Romance",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/wild-romance"
+          }
+        },
+        "collection_NVA93a": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Whims_and_Fancies.png",
+            "name": "Whims & Fancies",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/whims-fancies"
+          }
+        }
+      },
+      "block_order": [
+        "collection_QWndkH",
+        "collection_zyCQeb",
+        "collection_FWz8Tm",
+        "collection_jbxAA8",
+        "collection_xy6wKV",
+        "collection_6N6pnn",
+        "collection_NVA93a"
+      ],
+      "settings": {
+        "heading": "OTHER COLLECTIONS",
+        "bg_color": "#FFF",
+        "heading_color": "#151515",
+        "name_color": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "button_url": "",
+        "button_text": "",
+        "carouselCardWidth": "55"
+      }
+    },
     "slideshow_pNjyMa": {
       "type": "slideshow",
       "blocks": {
@@ -1281,108 +1383,6 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
-    },
-    "collection_carousel_ctNVrA": {
-      "type": "collection-carousel",
-      "blocks": {
-        "collection_QWndkH": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IDGAF_7c25b4a3-2f50-4942-b128-d4ff66bb941a.png",
-            "name": "#IDGAF",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/poolside-splash"
-          }
-        },
-        "collection_zyCQeb": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Safari_Edit.png",
-            "name": "Safari Edit",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/the-safari-edit"
-          }
-        },
-        "collection_FWz8Tm": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
-            "name": "Newtro Twist",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/newtro-twist"
-          }
-        },
-        "collection_jbxAA8": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cityscape.png",
-            "name": "Cityscape",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cityscape"
-          }
-        },
-        "collection_xy6wKV": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Born_to_Shine.png",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
-          }
-        },
-        "collection_6N6pnn": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wild_Romance.png",
-            "name": "Wild Romance",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/wild-romance"
-          }
-        },
-        "collection_NVA93a": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Whims_and_Fancies.png",
-            "name": "Whims & Fancies",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/whims-fancies"
-          }
-        }
-      },
-      "block_order": [
-        "collection_QWndkH",
-        "collection_zyCQeb",
-        "collection_FWz8Tm",
-        "collection_jbxAA8",
-        "collection_xy6wKV",
-        "collection_6N6pnn",
-        "collection_NVA93a"
-      ],
-      "settings": {
-        "heading": "Other Collections",
-        "bg_color": "#FFF",
-        "heading_color": "#151515",
-        "name_color": "#151515",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "button_url": "",
-        "button_text": "",
-        "carouselCardWidth": "55"
-      }
     }
   },
   "order": [
@@ -1402,6 +1402,7 @@
     "rich_text_X9yyVR",
     "slideshow_a6Y4RT",
     "featured_collection",
+    "collection_carousel_ctNVrA",
     "slideshow_pNjyMa",
     "featured_collection_9GpbxD",
     "slideshow_cpDimr",
@@ -1409,7 +1410,6 @@
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
     "slideshow_4mRJ9Y",
-    "slideshow_bdnbCa",
-    "collection_carousel_ctNVrA"
+    "slideshow_bdnbCa"
   ]
 }
