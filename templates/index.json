@@ -442,20 +442,10 @@
             "link": "",
             "outline_text": false
           }
-        },
-        "text_KqxEnJ": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
-            "link": "",
-            "outline_text": false
-          }
         }
       },
       "block_order": [
-        "text_68Dy9J",
-        "text_KqxEnJ"
+        "text_68Dy9J"
       ],
       "custom_css": [
         "div {height: 32px;}",
@@ -1369,50 +1359,63 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_tCmUCW": {
-      "type": "slideshow",
+    "multicolumn_XJRqNm": {
+      "type": "multicolumn",
       "blocks": {
-        "slide_zmJrBj": {
-          "type": "slide",
+        "column_m4JNpk": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/12_Media_Spotlight_a412c606-b8b8-4112-b38d-c4df82f75405.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
+            "image": "shopify:\/\/shop_images\/Frame_3833.svg",
+            "image_full_width": false,
+            "retina": false,
+            "title": "271528+",
+            "text": "<p><strong>Shoe pairs sold worldwide & still counting.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X8L4g8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_3833.svg",
+            "image_full_width": false,
+            "retina": false,
+            "title": "2456788+",
+            "text": "<p><strong>Plastic bottle recycled.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_L6wPWp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_3833.svg",
+            "image_full_width": false,
+            "retina": false,
+            "title": "5363+Kg's",
+            "text": "<p><strong>Tyres recycled<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "slide_zmJrBj"
+        "column_m4JNpk",
+        "column_X8L4g8",
+        "column_L6wPWp"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
+        "heading": "Environmental impact",
+        "heading_left": false,
+        "description": "",
         "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "left",
+        "heading_size": "h4",
+        "mobile_swipe": false,
+        "show_progress_bar": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1443,6 +1446,6 @@
     "slideshow_rbPrak",
     "social_images_collections_AyYGeN",
     "slideshow_nihi4P",
-    "slideshow_tCmUCW"
+    "multicolumn_XJRqNm"
   ]
 }
