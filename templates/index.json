@@ -740,7 +740,7 @@
         "slide_3Qxrpx"
       ],
       "settings": {
-        "desktop_height": "desktop-height-image",
+        "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
@@ -1004,52 +1004,43 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_rbPrak": {
-      "type": "slideshow",
+    "rich_text_LYm4pr": {
+      "type": "rich-text",
       "blocks": {
-        "slide_e8EwAW": {
-          "type": "slide",
+        "subheading_UWaWyP": {
+          "type": "subheading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_VirgioCircle_header_1.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
+            "text": "FEATURED IN"
+          }
+        },
+        "heading_fiWGrG": {
+          "type": "heading",
+          "settings": {
+            "text": "#VIRGIOCIRCLE",
+            "size": "h3"
           }
         }
       },
       "block_order": [
-        "slide_e8EwAW"
+        "subheading_UWaWyP",
+        "heading_fiWGrG"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_links": "#151515",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": false
       }
     },
     "social_images_collections_AyYGeN": {
@@ -1266,7 +1257,7 @@
     "slideshow_pNjyMa",
     "featured_collection_9GpbxD",
     "slideshow_tQPWEz",
-    "slideshow_rbPrak",
+    "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
     "slideshow_4mRJ9Y",
     "slideshow_bdnbCa"
