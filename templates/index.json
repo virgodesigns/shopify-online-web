@@ -448,30 +448,11 @@
             "text": "CATEGORY",
             "size": "h3"
           }
-        },
-        "text_4HxfqJ": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "size": "text-size-regular"
-          }
-        },
-        "button_VLDMBe": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_label": "Learn More",
-            "link": "",
-            "button_outline": false
-          }
         }
       },
       "block_order": [
         "subheading_XtgeQD",
-        "heading_k6978T",
-        "text_4HxfqJ",
-        "button_VLDMBe"
+        "heading_k6978T"
       ],
       "custom_css": [
         "div {height: 100px;}",
