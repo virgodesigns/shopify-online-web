@@ -349,7 +349,6 @@
         "88ac6c98-f30f-49e1-b95e-663c5d07b6c3",
         "314e89fc-2f50-418d-b7d7-5f1e674c0e00"
       ],
-      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-full",
@@ -405,6 +404,7 @@
         "image_item_UgnXej",
         "image_item_pzmqnV"
       ],
+      "disabled": true,
       "settings": {
         "main_heading": "Categories",
         "bg_color": "",
