@@ -433,22 +433,49 @@
         "disable_bottom_spacing": true
       }
     },
-    "rich_text_XXHqdJ": {
+    "rich_text_UjAFhP": {
       "type": "rich-text",
       "blocks": {
-        "heading_VcygP6": {
+        "subheading_XtgeQD": {
+          "type": "subheading",
+          "settings": {
+            "text": "SHOP BY"
+          }
+        },
+        "heading_k6978T": {
           "type": "heading",
           "settings": {
-            "text": "Shop By Category",
-            "size": "h2"
+            "text": "CATEGORY",
+            "size": "h3"
+          }
+        },
+        "text_4HxfqJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        },
+        "button_VLDMBe": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_label": "Learn More",
+            "link": "",
+            "button_outline": false
           }
         }
       },
       "block_order": [
-        "heading_VcygP6"
+        "subheading_XtgeQD",
+        "heading_k6978T",
+        "text_4HxfqJ",
+        "button_VLDMBe"
       ],
       "custom_css": [
-        "div {height: 100px;}"
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
       ],
       "settings": {
         "section_width": "full-width-row-full",
@@ -458,8 +485,8 @@
         "color_bg": "#ffeddb",
         "color_text": "#151515",
         "color_links": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": true
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
       }
     },
     "mwidget_wP9t6e": {
@@ -1324,7 +1351,7 @@
     "slideshow_b3443E",
     "slideshow_V9kw7y",
     "slideshow_8djHwc",
-    "rich_text_XXHqdJ",
+    "rich_text_UjAFhP",
     "mwidget_wP9t6e",
     "slideshow_y979Wg",
     "slideshow_majm9j",
