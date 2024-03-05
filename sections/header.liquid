@@ -11,11 +11,11 @@
 -%}
 
 <style>
-       {% if template contains 'product' %}
+       {% comment %} {% if template contains 'product' %}
            .header{
              background:#000 !important;
            }
-        {% endif %}
+        {% endif %} {% endcomment %}
        .hide-logo{
        display:None
      }
@@ -26,6 +26,7 @@
 
      .customPDPheader{
        display:flex;
+       justify-content: space-between;
        background-color:#FFF;
        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
      }
@@ -35,9 +36,6 @@
      align-items: center;
      justify-content: center;
      }
-     .customPDPheaderEqual{
-     width:33%;
-   }
 
   .customPDPheader .search-container{
    display: flex;
@@ -66,37 +64,38 @@
     }
 </style>
 
-<header
-  id="header"
-  class="header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
->
-  <div class="row expanded">
-    <div class="small-12 columns">
-      {%- case style -%}
-        {%- when 'style1' -%}
-          {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
-        {%- when 'style2' -%}
-          {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
-        {%- when 'style3' -%}
-          {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
-        {%- when 'style4' -%}
-          {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
-      {%- endcase -%}
+{% if template contains 'index' or template contains 'list-collections' or template contains 'page.circularity' %}
+  <header
+    id="header"
+    class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active"
+  >
+    <div class="row expanded">
+      <div class="small-12 columns" style="display:flex;">
+        {%- case style -%}
+          {%- when 'style1' -%}
+            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style2' -%}
+            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style3' -%}
+            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style4' -%}
+            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
+        {%- endcase -%}
+      </div>
     </div>
-  </div>
-  {%- style -%}
-    :root {
-      --logo-height: {{ logo_height_range | append: 'px' }};
-      --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
-    }
-    {% unless sticky_header %}
-    .header-section {
-      position: static !important;
-    }
-    {%- endunless -%}
-  {%- endstyle -%}
-</header>
-{%- if template contains 'product' -%}
+    {%- style -%}
+      :root {
+        --logo-height: {{ logo_height_range | append: 'px' }};
+        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      }
+      {% unless sticky_header %}
+      .header-section {
+        position: static !important;
+      }
+      {%- endunless -%}
+    {%- endstyle -%}
+  </header>
+{% elsif template contains 'product' %}
   <div class="customPDPheader thb-secondary-area">
     <a class="right-arrow-button customPDPheaderEqual" id="back_btn">
       {% render 'back-icon-pdp' %}
@@ -115,20 +114,6 @@
       >
         <div class="search">{%- render 'svg-icons' with 'search-pdp' -%}</div>
       </a>
-
-      {% comment %}
-        <a class="thb-secondary-area-item thb-secondary-cart" href="{{ routes.cart_url }}" id="cart-drawer-toggle">
-          <div class="thb-secondary-item-icon" style="position:relative">
-            {% render 'svg-icons' with 'search-cart-bag' %}
-            <span class="search-cart-bag-count {% if cart != empty %} emptycart {% endif %}">
-              {%- if cart.item_count < 100 -%}
-                <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
-              {%- endif -%}
-            </span>
-          </div>
-        </a>
-      {% endcomment %}
-
       <a class="" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
         <div class="thb-secondary-item-icon">
           {% render 'svg-icons' with 'search-cart-bag' %}
@@ -166,7 +151,8 @@
       </div>
     </a>
   </div>
-{%- endif -%}
+{% endif %}
+
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
@@ -241,33 +227,60 @@
 {%- endif -%}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.innerWidth <= 750) {
-      var mobileLinks = document.getElementsByClassName('mobile-links');
-      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-      var index = mobileLinksArrayConverted.findIndex(function (link) {
-        let arraySplit = window.location.pathname.split('/');
-        let urlpath = arraySplit[arraySplit.length - 1];
-        return link.dataset.linkUrl.indexOf(urlpath) > -1;
-      });
-      if (index > -1) {
-        var parentElement = mobileLinks[index];
-        var imgElement = parentElement.querySelector('.hide-logo');
-        imgElement.classList.remove('hide-logo');
-      }
+       document.addEventListener('DOMContentLoaded', function () {
+         if (window.innerWidth <= 750) {
+
+
+    let prevScrollPos = window.pageYOffset;
+
+     window.onscroll = function() {
+       let currentScrollPos = window.pageYOffset;
+       let header = document.getElementById("header");
+  console.log("prevScrollPos",prevScrollPos)
+    console.log("currentScrollPos",currentScrollPos,prevScrollPos > currentScrollPos)
+    if(currentScrollPos < 200){
+        header.style.display = "block";
+         {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
+        return;
     }
-    const backElem = document.getElementById('back_btn');
 
-    const liquidTemplate = {{ template|json }}
+       if (prevScrollPos > currentScrollPos) {
+         // User is scrolling up, show the header
+         header.style.display = "block";
+       } else {
+         // User is scrolling down, hide the header
+         header.style.display = "none"; // Adjust this value based on your header height
+       }
 
-    backElem.addEventListener('click', (e) => {
-      if (document.referrer == '' && liquidTemplate == 'product') {
-        window.location.href = "/"
-      } else {
-        history.back();
-      }
-    });
-  });
+       prevScrollPos = currentScrollPos;
+     }
+
+
+           var mobileLinks = document.getElementsByClassName('mobile-links');
+           var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+           var index = mobileLinksArrayConverted.findIndex(function (link) {
+             let arraySplit = window.location.pathname.split('/');
+             let urlpath = arraySplit[arraySplit.length - 1];
+             return link.dataset.linkUrl.indexOf(urlpath) > -1;
+           });
+           if (index > -1) {
+             var parentElement = mobileLinks[index];
+             var imgElement = parentElement.querySelector('.hide-logo');
+             imgElement.classList.remove('hide-logo');
+           }
+         }
+         const backElem = document.getElementById('back_btn');
+
+         const liquidTemplate = {{ template|json }}
+
+         backElem.addEventListener('click', (e) => {
+           if (document.referrer == '' && liquidTemplate == 'product') {
+             window.location.href = "/"
+           } else {
+             history.back();
+           }
+         });
+       });
 </script>
 
 {% schema %}

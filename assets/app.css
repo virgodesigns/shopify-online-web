@@ -2963,7 +2963,7 @@ h6,
 .header {
   border-bottom: none;
   position: fixed;
-  background: rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17, 0.25);
   z-index: 30;
   width: 100%;
 }
