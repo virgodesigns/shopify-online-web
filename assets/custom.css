@@ -223,12 +223,12 @@
     width: 36px;
     border-radius: 50%;
     background: rgba(87 80 80 / 50%);
-    position: fixed;
+    position: absolute;
     padding-left: 1px;
   }
 
   .thb-secondary-area-item.thb-secondary-cart.mobile {
-    position: fixed;
+    position: absolute;
     top: 16px;
     right: 16px;
     bottom: auto;
@@ -381,22 +381,19 @@ input.pin-input::placeholder {
   font-weight: 400;
   text-align: center;
   font-size: 12px;
-  
 }
-.tab-heading-size-chart{
+.tab-heading-size-chart {
   width: 50%;
   border-bottom: 1px solid #e1e1e1;
 }
 
-.tab-heading-impact{
+.tab-heading-impact {
   font-size: 14px;
-
 }
 
-.tab-heading-impact.is--active{
+.tab-heading-impact.is--active {
   font-size: 14px !important;
 }
-
 
 .tab--heading.is--active {
   color: #000;
