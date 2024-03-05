@@ -853,6 +853,7 @@
       "block_order": [
         "slide_PR8Djp"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
