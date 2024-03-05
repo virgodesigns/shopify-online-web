@@ -56,12 +56,12 @@
             "side_panel_1_icon": "stopwatch",
             "side_panel_1_content": "",
             "side_panel_1_page": "",
-            "side_panel_2_label": "Free Shipping across UAE (limited time offer)",
+            "side_panel_2_label": "Free shipping in UAE (limited time offer)",
             "side_panel_2_icon": "leather",
             "side_panel_2_content": "",
             "side_panel_2_page": "",
-            "side_panel_3_label": "15 Days hassle-free Returns",
-            "side_panel_3_icon": "return",
+            "side_panel_3_label": "",
+            "side_panel_3_icon": "none",
             "side_panel_3_content": "",
             "side_panel_3_page": ""
           }
