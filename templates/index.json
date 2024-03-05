@@ -1332,22 +1332,10 @@
         "collection_C7YfQU": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "recycled-polyester"
           }
         },
         "collection_EiwDQx": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_UR8jAX": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_qdpQqn": {
           "type": "collection",
           "settings": {
             "collection": ""
@@ -1356,9 +1344,7 @@
       },
       "block_order": [
         "collection_C7YfQU",
-        "collection_EiwDQx",
-        "collection_UR8jAX",
-        "collection_qdpQqn"
+        "collection_EiwDQx"
       ],
       "settings": {
         "heading": "Collection Tabs",
