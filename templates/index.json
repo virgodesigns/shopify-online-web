@@ -526,7 +526,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffffff",
+        "color_bg": "#ffeddb",
         "color_text": "#151515",
         "color_links": "#151515",
         "show_on_desktop": false,
@@ -541,12 +541,12 @@
         "slide_7tA3eb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_4.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_2.png",
             "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
-            "heading": "LISA   HAYDON",
+            "heading": "LISA  HAYDON",
             "heading_size": "h2",
             "content": "",
             "description_size": "medium",
@@ -569,7 +569,7 @@
         "slide_gF9wAx": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_2.png",
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_0f4bf59d-aa8c-4d95-b6e6-04348ab9fadd.png",
             "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -706,43 +706,53 @@
         "show_on_mobile": true
       }
     },
-    "rich_text_X9yyVR": {
-      "type": "rich-text",
+    "slideshow_cpDimr": {
+      "type": "slideshow",
       "blocks": {
-        "subheading_xNeMgD": {
-          "type": "subheading",
+        "slide_3Qxrpx": {
+          "type": "slide",
           "settings": {
-            "text": "COLLECTION IN"
-          }
-        },
-        "heading_yXxRJh": {
-          "type": "heading",
-          "settings": {
-            "text": "SPOTLIGHT",
-            "size": "h3"
+            "image": "shopify:\/\/shop_images\/Environmental_Savings_web_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob_1.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "subheading_xNeMgD",
-        "heading_yXxRJh"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+        "slide_3Qxrpx"
       ],
       "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "show_on_desktop": false,
+        "desktop_height": "desktop-height-auto",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "slideshow_a6Y4RT": {
@@ -766,7 +776,7 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
+            "button_1_text": "SHOP NOW",
             "button_1_link": "shopify:\/\/collections\/date-collection",
             "button_1_outline": true,
             "button_1_underline": true,
@@ -813,7 +823,7 @@
         "columns_desktop": 4,
         "show_view_all": true,
         "mobile_swipe": true,
-        "show_progress_bar": true,
+        "show_progress_bar": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -823,7 +833,6 @@
       "blocks": {
         "slide_PR8Djp": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Veronicas_Banner_2.png",
             "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
@@ -854,7 +863,6 @@
       "block_order": [
         "slide_PR8Djp"
       ],
-      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -870,7 +878,6 @@
     },
     "featured_collection_9GpbxD": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_left": false,
@@ -890,55 +897,6 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_cpDimr": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_3Qxrpx": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Environmental_Savings_web_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob_1.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_3Qxrpx"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-image",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": true,
-        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1191,7 +1149,7 @@
         "slide_rNVLNL": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Guarantee_1.png",
+            "image": "shopify:\/\/shop_images\/Guarantee.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1239,8 +1197,7 @@
         "slide_ATcAam": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Media_Spotlight_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Frame_48096541.png",
+            "image": "shopify:\/\/shop_images\/Frame_48096541.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1297,12 +1254,11 @@
     "slideshow_majm9j",
     "slideshow_fKw6nT",
     "collection_tabs_LDM6fX",
-    "rich_text_X9yyVR",
+    "slideshow_cpDimr",
     "slideshow_a6Y4RT",
     "featured_collection",
     "slideshow_pNjyMa",
     "featured_collection_9GpbxD",
-    "slideshow_cpDimr",
     "slideshow_tQPWEz",
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
