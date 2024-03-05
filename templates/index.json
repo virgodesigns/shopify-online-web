@@ -449,6 +449,8 @@
         "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
@@ -526,6 +528,8 @@
         "color_bg": "#ffeddb",
         "color_text": "#151515",
         "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
@@ -1242,6 +1246,55 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "slideshow_cpDimr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_3Qxrpx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Environmental_Savings_web.png",
+            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_3Qxrpx"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
@@ -1267,6 +1320,7 @@
     "social_images_collections_AyYGeN",
     "text_with_icons_iHKLff",
     "slideshow_4mRJ9Y",
-    "slideshow_bdnbCa"
+    "slideshow_bdnbCa",
+    "slideshow_cpDimr"
   ]
 }
