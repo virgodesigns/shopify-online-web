@@ -1044,7 +1044,7 @@
         "icon_size": "medium",
         "heading_size": "medium",
         "mobile_swipe": true,
-        "color_bg": "rgba(0,0,0,0)",
+        "color_bg": "#ffeddb",
         "color_heading": "#151515",
         "color_text": "#151515",
         "disable_top_spacing": true,
