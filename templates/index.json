@@ -519,14 +519,14 @@
         "heading_eV3atj"
       ],
       "custom_css": [
-        "div {background-color: #ffeddb; height: 80px;}"
+        "div {background-color: #fDFDFD; height: 80px;}"
       ],
       "settings": {
         "section_width": "full-width-row-full",
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_links": "#151515",
         "show_on_desktop": false,
@@ -541,7 +541,7 @@
         "slide_7tA3eb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_2.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_4.png",
             "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -569,7 +569,7 @@
         "slide_gF9wAx": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_0f4bf59d-aa8c-4d95-b6e6-04348ab9fadd.png",
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_2.png",
             "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
