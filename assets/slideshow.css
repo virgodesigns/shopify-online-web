@@ -300,7 +300,7 @@ tab-switch {
     height: 35px;
   }
   .explore-tabs {
-    display: none !important;
+    /* display: none !important; */
     position: absolute;
     top: 25%;
     z-index: 9999;
