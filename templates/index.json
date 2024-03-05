@@ -1035,7 +1035,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_links": "#151515",
         "show_on_desktop": false,
@@ -1129,7 +1129,7 @@
       "settings": {
         "para_top": "",
         "heading_top": "Hear it from the #VirgioCircle",
-        "bg_color": "#ffeddb",
+        "bg_color": "#ffffff",
         "colmun_number_tablet": "3",
         "colmun_number_desktop": "6",
         "para_bottom": "",
