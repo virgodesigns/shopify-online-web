@@ -783,7 +783,7 @@
       "settings": {
         "section_width": "full-width-row-full",
         "text_width": "medium",
-        "text_position": "center",
+        "text_position": "left",
         "text_alignment": "center",
         "color_bg": "#ffffff",
         "color_text": "#151515",
