@@ -275,17 +275,6 @@
     "collection_carousel_eALWpf": {
       "type": "collection-carousel",
       "blocks": {
-        "collection_EqTk6A": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_5.png",
-            "name": "",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
-          }
-        },
         "collection_djWXcy": {
           "type": "collection",
           "settings": {
@@ -297,21 +286,32 @@
             "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
           }
         },
-        "collection_XCWGQE": {
+        "collection_EqTk6A": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_3.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_5.png",
             "name": "",
             "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
+          }
+        },
+        "collection_XCWGQE": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PARUL_GULATI.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords"
           }
         }
       },
       "block_order": [
-        "collection_EqTk6A",
         "collection_djWXcy",
+        "collection_EqTk6A",
         "collection_XCWGQE"
       ],
       "custom_css": [
