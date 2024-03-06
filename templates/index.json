@@ -418,11 +418,40 @@
             "button_2_outline": false,
             "button_2_underline": true
           }
+        },
+        "slide_tUK7fP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parul.png",
+            "slide_link": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "PARUL GULATI",
+            "heading_size": "h2",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "SHOP THE LOOK",
+            "button_1_link": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
         "slide_7tA3eb",
-        "slide_gF9wAx"
+        "slide_gF9wAx",
+        "slide_tUK7fP"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
