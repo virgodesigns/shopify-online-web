@@ -281,7 +281,8 @@
     customerId: {{ customer.id }},
     firstName: "{{ customer.first_name }}",
     lastName: "{{ customer.last_name }}",
-    email: "{{ customer.email }}"
+    email: "{{ customer.email }}",
+     isUae: true
     }
     sessionStorage.removeItem("selectedOrder");
     sessionStorage.setItem("selectedOrder", JSON.stringify(storageData));
