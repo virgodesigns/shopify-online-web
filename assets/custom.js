@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabContent = document.querySelectorAll(".tab-content");
   for (let i = 0; i <= tabContent.length; i++) {
     let exist = false;
-    if (tabContent[i].getAttribute("id") != "") {
+    if (tabContent && tabContent[i] && tabContent[i].getAttribute("id") != "") {
       tabContent[i].classList.add("active_content");
       exist = true;
     }
@@ -74,7 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   for (let i = 0; i <= tabHeading.length; i++) {
     let exist = false;
-    if (tabHeading[i].getAttribute("data-tab") != "") {
+    if (
+      tabHeading &&
+      tabHeading[i] &&
+      tabHeading[i].getAttribute("data-tab") != ""
+    ) {
       tabHeading[i].classList.add("is--active");
       exist = true;
     }

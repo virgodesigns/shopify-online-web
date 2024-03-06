@@ -313,6 +313,7 @@
 
          const liquidTemplate = {{ template|json }}
 
+         if(backElem) {
          backElem.addEventListener('click', (e) => {
            if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords')) {
              window.location.href = "/"
@@ -320,6 +321,7 @@
              history.back();
            }
          });
+        }
        });
 </script>
 
