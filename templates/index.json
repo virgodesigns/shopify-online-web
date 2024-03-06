@@ -946,6 +946,17 @@
             "strikePrice": "",
             "url": "shopify:\/\/collections\/whims-fancies"
           }
+        },
+        "collection_ja9zbe": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Veronicas.png",
+            "name": "The Veronicas",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/veronicas-all-collection"
+          }
         }
       },
       "block_order": [
@@ -955,7 +966,8 @@
         "collection_jbxAA8",
         "collection_xy6wKV",
         "collection_6N6pnn",
-        "collection_NVA93a"
+        "collection_NVA93a",
+        "collection_ja9zbe"
       ],
       "settings": {
         "heading": "OTHER COLLECTIONS",
