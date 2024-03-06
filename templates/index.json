@@ -56,7 +56,7 @@
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "Shop Now",
-            "button_2_link": "",
+            "button_2_link": "shopify:\/\/collections\/all-collections",
             "button_2_outline": true,
             "button_2_underline": true
           }
@@ -114,7 +114,7 @@
         "collection_Ark6DC"
       ],
       "custom_css": [
-        "h2{padding-top: 40px; }"
+        "h2 {padding-top: 40px;}"
       ],
       "settings": {
         "heading": "SHOP BY CATEGORY",
