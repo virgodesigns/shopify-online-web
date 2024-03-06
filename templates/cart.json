@@ -11,6 +11,7 @@
       "blocks": {
         "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Get additional 10% off on orders above ₹3500",
             "link": "",
