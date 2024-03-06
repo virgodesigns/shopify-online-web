@@ -399,6 +399,34 @@
     "53793592-7855-498e-a493-5e345669f947": {
       "type": "slideshow",
       "blocks": {
+        "slide_dRJwFB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Women_s_Day_main_banner_1080x1620_def86811-70b5-49d8-89f8-94d2838f3fa4.png",
+            "slide_link": "shopify:\/\/collections\/all",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        },
         "52301fcc-9455-47af-b905-8379efe6af79": {
           "type": "slide",
           "settings": {
@@ -429,6 +457,7 @@
         }
       },
       "block_order": [
+        "slide_dRJwFB",
         "52301fcc-9455-47af-b905-8379efe6af79"
       ],
       "settings": {
