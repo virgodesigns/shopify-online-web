@@ -1319,6 +1319,48 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "featured_collection_list_zeDUHp": {
+      "type": "featured-collection-list",
+      "blocks": {
+        "collection_Bzcpwp": {
+          "type": "collection",
+          "settings": {
+            "collection": "poolside-splash"
+          }
+        },
+        "collection_Bjd6Aa": {
+          "type": "collection",
+          "settings": {
+            "collection": "priyam-and-hitika",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-03-06_at_12.57.57_PM.png"
+          }
+        },
+        "collection_9A9HdC": {
+          "type": "collection",
+          "settings": {
+            "collection": "cityscape",
+            "image": "shopify:\/\/shop_images\/Cityscape.png"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Bzcpwp",
+        "collection_Bjd6Aa",
+        "collection_9A9HdC"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "content_position": "middle-center",
+        "heading_size": "h1",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
@@ -1344,6 +1386,7 @@
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
     "slideshow_4mRJ9Y",
-    "slideshow_bdnbCa"
+    "slideshow_bdnbCa",
+    "featured_collection_list_zeDUHp"
   ]
 }
