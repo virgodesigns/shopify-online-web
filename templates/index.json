@@ -1341,7 +1341,7 @@
         "slide_ATcAam": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Media_Spotlight_1.png",
+            "image": "shopify:\/\/shop_images\/Media_Spotlight_2.png",
             "mobile_image": "shopify:\/\/shop_images\/Frame_48096541.png",
             "slide_link": "",
             "video_background": false,
@@ -1363,7 +1363,7 @@
             "button_1_underline": true,
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_outline": false,
+            "button_2_outline": true,
             "button_2_underline": true
           }
         }
@@ -1372,13 +1372,13 @@
         "slide_ATcAam"
       ],
       "settings": {
-        "desktop_height": "desktop-height-auto",
+        "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 5,
         "transition": "fade",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
