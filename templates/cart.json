@@ -9,15 +9,6 @@
     "aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e": {
       "type": "scrolling-text",
       "blocks": {
-        "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Get 10% discount on your first order apply \"WELCOME10\" at check out",
-            "link": "",
-            "outline_text": false
-          }
-        },
         "cb3214c0-164f-4e4e-a2e2-7570c80851c9": {
           "type": "text",
           "settings": {
@@ -28,7 +19,6 @@
         }
       },
       "block_order": [
-        "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3",
         "cb3214c0-164f-4e4e-a2e2-7570c80851c9"
       ],
       "custom_css": [
