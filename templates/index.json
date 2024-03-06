@@ -1342,22 +1342,50 @@
             "collection": "cityscape",
             "image": "shopify:\/\/shop_images\/Cityscape.png"
           }
+        },
+        "collection_jNAe9t": {
+          "type": "collection",
+          "settings": {
+            "collection": "whims-fancies"
+          }
+        },
+        "collection_bzdJwB": {
+          "type": "collection",
+          "settings": {
+            "collection": "born-to-shine"
+          }
+        },
+        "collection_PgeinW": {
+          "type": "collection",
+          "settings": {
+            "collection": "newtro-twist"
+          }
+        },
+        "collection_d7bhXH": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-safari-edit"
+          }
         }
       },
       "block_order": [
         "collection_Bzcpwp",
         "collection_Bjd6Aa",
-        "collection_9A9HdC"
+        "collection_9A9HdC",
+        "collection_jNAe9t",
+        "collection_bzdJwB",
+        "collection_PgeinW",
+        "collection_d7bhXH"
       ],
       "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-500",
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-auto",
         "full_width": true,
         "content_position": "middle-center",
-        "heading_size": "h1",
-        "color_text": "#ffffff",
+        "heading_size": "h2",
+        "color_text": "#151515",
         "overlay_color": "#000000",
-        "overlay_opacity": 70,
+        "overlay_opacity": 12,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
