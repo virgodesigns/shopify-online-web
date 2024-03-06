@@ -461,7 +461,9 @@
       ],
       "custom_css": [
         ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
-        ".h3 {font-size: 24px;}"
+        ".h3 {font-size: 24px;}",
+        ".section-header--button.has--tabs{margin-top:0;}",
+        " .text-button.linked-to-tab.active {margin-bottom: 1.5rem;}"
       ],
       "settings": {
         "heading": "SHOP BY FABRIC",
