@@ -13,7 +13,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Get additional 10% off on orders above ₹3500",
+            "text": "Save 10% on you first order using \"Welcome10\"",
             "link": "",
             "outline_text": false
           }
