@@ -1274,6 +1274,7 @@
       "block_order": [
         "slide_YXLMfz"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-full",
