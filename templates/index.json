@@ -870,15 +870,26 @@
     "collection_carousel_ctNVrA": {
       "type": "collection-carousel",
       "blocks": {
-        "collection_QWndkH": {
+        "collection_ja9zbe": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IDGAF_7c25b4a3-2f50-4942-b128-d4ff66bb941a.png",
-            "name": "#IDGAF",
+            "image": "shopify:\/\/shop_images\/Veronicas.png",
+            "name": "The Veronicas",
             "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/poolside-splash"
+            "url": "shopify:\/\/collections\/veronicas-all-collection"
+          }
+        },
+        "collection_xy6wKV": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Born_to_Shine.png",
+            "name": "Born To Shine",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
           }
         },
         "collection_zyCQeb": {
@@ -903,6 +914,17 @@
             "url": "shopify:\/\/collections\/newtro-twist"
           }
         },
+        "collection_QWndkH": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IDGAF_7c25b4a3-2f50-4942-b128-d4ff66bb941a.png",
+            "name": "#IDGAF",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/poolside-splash"
+          }
+        },
         "collection_jbxAA8": {
           "type": "collection",
           "settings": {
@@ -912,17 +934,6 @@
             "price": "",
             "strikePrice": "",
             "url": "shopify:\/\/collections\/cityscape"
-          }
-        },
-        "collection_xy6wKV": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Born_to_Shine.png",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
           }
         },
         "collection_6N6pnn": {
@@ -946,28 +957,17 @@
             "strikePrice": "",
             "url": "shopify:\/\/collections\/whims-fancies"
           }
-        },
-        "collection_ja9zbe": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Veronicas.png",
-            "name": "The Veronicas",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/veronicas-all-collection"
-          }
         }
       },
       "block_order": [
-        "collection_QWndkH",
+        "collection_ja9zbe",
+        "collection_xy6wKV",
         "collection_zyCQeb",
         "collection_FWz8Tm",
+        "collection_QWndkH",
         "collection_jbxAA8",
-        "collection_xy6wKV",
         "collection_6N6pnn",
-        "collection_NVA93a",
-        "collection_ja9zbe"
+        "collection_NVA93a"
       ],
       "settings": {
         "heading": "OTHER COLLECTIONS",
