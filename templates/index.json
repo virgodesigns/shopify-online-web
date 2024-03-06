@@ -441,7 +441,7 @@
         "collection_CGdnyg": {
           "type": "collection",
           "settings": {
-            "collection": "natural-fabrics"
+            "collection": "natural-fabric"
           }
         },
         "collection_mwdtHQ": {
@@ -476,6 +476,193 @@
         "overlay_gradient": "",
         "show_on_desktop": true,
         "show_on_mobile": true
+      }
+    },
+    "slideshow_cpDimr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_3Qxrpx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Environmental_Savings_web_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob_1.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_3Qxrpx"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_X9yyVR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_xNeMgD": {
+          "type": "subheading",
+          "settings": {
+            "text": "COLLECTION IN"
+          }
+        },
+        "heading_yXxRJh": {
+          "type": "heading",
+          "settings": {
+            "text": "SPOTLIGHT",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xNeMgD",
+        "heading_yXxRJh"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "slideshow_a6Y4RT": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_nrk3f4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_Date_Banner.png",
+            "mobile_image": "shopify:\/\/shop_images\/The_Date_Banner.png",
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/date-collection",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_nrk3f4"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_list_zeDUHp": {
+      "type": "featured-collection-list",
+      "blocks": {
+        "collection_jNAe9t": {
+          "type": "collection",
+          "settings": {
+            "collection": "whims-fancies"
+          }
+        },
+        "collection_bzdJwB": {
+          "type": "collection",
+          "settings": {
+            "collection": "born-to-shine"
+          }
+        },
+        "collection_PgeinW": {
+          "type": "collection",
+          "settings": {
+            "collection": "newtro-twist"
+          }
+        },
+        "collection_d7bhXH": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-safari-edit"
+          }
+        }
+      },
+      "block_order": [
+        "collection_jNAe9t",
+        "collection_bzdJwB",
+        "collection_PgeinW",
+        "collection_d7bhXH"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "content_position": "middle-center",
+        "heading_size": "h2",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 57,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "slideshow_b3443E": {
@@ -570,142 +757,6 @@
         "transition": "swipe",
         "show_on_desktop": true,
         "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_cpDimr": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_3Qxrpx": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Environmental_Savings_web_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob_1.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_3Qxrpx"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-image",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": true,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "rich_text_X9yyVR": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_xNeMgD": {
-          "type": "subheading",
-          "settings": {
-            "text": "COLLECTION IN"
-          }
-        },
-        "heading_yXxRJh": {
-          "type": "heading",
-          "settings": {
-            "text": "SPOTLIGHT",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_xNeMgD",
-        "heading_yXxRJh"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": false
-      }
-    },
-    "slideshow_a6Y4RT": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_nrk3f4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/The_Date_Banner.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/date-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_nrk3f4"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1187,56 +1238,6 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
-    },
-    "featured_collection_list_zeDUHp": {
-      "type": "featured-collection-list",
-      "blocks": {
-        "collection_jNAe9t": {
-          "type": "collection",
-          "settings": {
-            "collection": "whims-fancies"
-          }
-        },
-        "collection_bzdJwB": {
-          "type": "collection",
-          "settings": {
-            "collection": "born-to-shine"
-          }
-        },
-        "collection_PgeinW": {
-          "type": "collection",
-          "settings": {
-            "collection": "newtro-twist"
-          }
-        },
-        "collection_d7bhXH": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-safari-edit"
-          }
-        }
-      },
-      "block_order": [
-        "collection_jNAe9t",
-        "collection_bzdJwB",
-        "collection_PgeinW",
-        "collection_d7bhXH"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "content_position": "middle-center",
-        "heading_size": "h2",
-        "color_text": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 57,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
     }
   },
   "order": [
@@ -1249,18 +1250,18 @@
     "slideshow_majm9j",
     "slideshow_fKw6nT",
     "collection_tabs_LDM6fX",
-    "slideshow_b3443E",
-    "slideshow_V9kw7y",
     "slideshow_cpDimr",
     "rich_text_X9yyVR",
     "slideshow_a6Y4RT",
+    "featured_collection_list_zeDUHp",
+    "slideshow_b3443E",
+    "slideshow_V9kw7y",
     "featured_collection",
     "collection_carousel_ctNVrA",
     "slideshow_tQPWEz",
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
     "slideshow_4mRJ9Y",
-    "slideshow_bdnbCa",
-    "featured_collection_list_zeDUHp"
+    "slideshow_bdnbCa"
   ]
 }
