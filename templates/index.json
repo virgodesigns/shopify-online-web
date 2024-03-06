@@ -683,6 +683,7 @@
         "collection_CGdnyg",
         "collection_mwdtHQ"
       ],
+      "disabled": true,
       "custom_css": [
         ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
         ".h3 {font-size: 24px;}"
