@@ -289,7 +289,7 @@
         "collection_EqTk6A": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_6.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_5.png",
             "name": "",
             "subname": "",
             "price": "",
@@ -418,40 +418,11 @@
             "button_2_outline": false,
             "button_2_underline": true
           }
-        },
-        "slide_tUK7fP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/parul.png",
-            "slide_link": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "PARUL GULATI",
-            "heading_size": "h2",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "SHOP THE LOOK",
-            "button_1_link": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
         }
       },
       "block_order": [
         "slide_7tA3eb",
-        "slide_gF9wAx",
-        "slide_tUK7fP"
+        "slide_gF9wAx"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -1239,6 +1210,54 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_V9kw7y": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_YXLMfz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Media_spotlight.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_YXLMfz"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "slideshow_4mRJ9Y": {
       "type": "slideshow",
       "blocks": {
@@ -1293,7 +1312,7 @@
         "slide_ATcAam": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Media_Spotlight_2.png",
+            "image": "shopify:\/\/shop_images\/Media_Spotlight_1.png",
             "mobile_image": "shopify:\/\/shop_images\/Frame_48096541.png",
             "slide_link": "",
             "video_background": false,
@@ -1315,7 +1334,7 @@
             "button_1_underline": true,
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_outline": true,
+            "button_2_outline": false,
             "button_2_underline": true
           }
         }
@@ -1324,13 +1343,13 @@
         "slide_ATcAam"
       ],
       "settings": {
-        "desktop_height": "desktop-height-image",
+        "desktop_height": "desktop-height-auto",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 5,
         "transition": "fade",
-        "show_on_desktop": true,
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -1359,6 +1378,7 @@
     "slideshow_tQPWEz",
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
+    "slideshow_V9kw7y",
     "slideshow_4mRJ9Y",
     "slideshow_bdnbCa"
   ]

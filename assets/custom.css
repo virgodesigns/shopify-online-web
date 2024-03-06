@@ -188,7 +188,7 @@
     right: auto;
     bottom: 0px;
     left: 0px;
-    padding: 15px 16px;
+    padding: 0.5rem 0;
     background-color: #111;
   }
   mobile-header nav {

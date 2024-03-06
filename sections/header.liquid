@@ -19,10 +19,17 @@
        .hide-logo{
        display:None
      }
-     .positionLogo{
-       position: absolute;
-      bottom: 6px;
-     }
+   .m-header span{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+  text-transform: capitalize;
+  }
 
      .customPDPheader{
        display:flex;
@@ -196,32 +203,37 @@
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
-      <ul
-        class="flex-box flex-box--{{ section.settings.menu.links.size }}-col"
-        style="--grid-mobile-horizontal-spacing: 16px;"
-      >
-        {%- for link in section.settings.menu.links -%}
-          <li
-            class="mobile-links flex-box__item"
-            data-link-url="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
-          >
-            <a
-              href="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
-              {% if activeLink %}
-                aria-current="page"
-              {% endif %}
-            >
-              <div>
-                {% assign temp_title = link.title | handleize %}
-              </div>
-              <span> {{ link.title }}</span>
+      <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;">
+        <li class="mobile-links flex-box__item" data-link-url="/">
+          <a href="/">
+            {% render 'svg-icons' with 'mobile-nav-home' %}
+            {% comment %}
               <img
                 src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/dots.svg?v=1705494981"
-                class="hide-logo  positionLogo "
+                class="positionLogo "
               >
-            </a>
-          </li>
-        {% endfor %}
+            {% endcomment %}
+            <span> Home</span>
+          </a>
+        </li>
+        <li class="mobile-links flex-box__item" data-link-url="/collections">
+          <a href="/collections">
+            {% render 'svg-icons' with 'mobile-nav-category' %}
+            <span> Categories</span>
+          </a>
+        </li>
+        <li class="mobile-links flex-box__item" data-link-url="/pages/circularity-mweb">
+          <a href="/pages/circularity-mweb">
+            {% render 'svg-icons' with 'mobile-nav-circularity' %}
+            <span> Circularity</span>
+          </a>
+        </li>
+        <li class="mobile-links flex-box__item" data-link-url="https://virgiofashion.myshopify.com/account/login">
+          <a href="https://virgiofashion.myshopify.com/account/login">
+            {% render 'svg-icons' with 'mobile-nav-account' %}
+            <span> Account</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
