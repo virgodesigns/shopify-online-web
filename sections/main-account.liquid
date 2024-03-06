@@ -351,7 +351,7 @@ async function renderData(isNext) {
   loader.style.display = 'block';
 
   const data = await fetchData();
-console.log("datadatadata",data,!data || !data.data || data.data.orders.length === 0)
+console.log("datadatadata",!data || !data.data || data.data.orders.length === 0)
 if (!data || !data.data || data.data.orders.length === 0) {
   // If there is no data or orders array is empty, show a custom message and hide the loader
   dataContainer.innerHTML = '<p>No orders found.</p>';
