@@ -420,6 +420,55 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_cpDimr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_3Qxrpx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Environmental_Savings_web_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob_2.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_3Qxrpx"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "slideshow_fKw6nT": {
       "type": "slideshow",
       "blocks": {
@@ -515,55 +564,6 @@
         "overlay_gradient": "",
         "show_on_desktop": true,
         "show_on_mobile": true
-      }
-    },
-    "slideshow_cpDimr": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_3Qxrpx": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Environmental_Savings_web_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Environmental_Savings_mob_2.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_3Qxrpx"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-image",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": true,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "rich_text_X9yyVR": {
@@ -1381,9 +1381,9 @@
     "collection_carousel_eALWpf",
     "rich_text_8KqTNR",
     "slideshow_majm9j",
+    "slideshow_cpDimr",
     "slideshow_fKw6nT",
     "collection_tabs_LDM6fX",
-    "slideshow_cpDimr",
     "rich_text_X9yyVR",
     "slideshow_a6Y4RT",
     "slideshow_PEK4zU",
