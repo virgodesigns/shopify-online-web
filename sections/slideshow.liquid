@@ -37,13 +37,13 @@
     @media screen and (max-width: 768px){
         #shopify-section-{{ section.id }} {
       display:none;
-    }} 
+    }
   {% endif %}
   {% if section.settings.show_on_desktop == false %}
     @media screen and (min-width: 768px){
     #shopify-section-{{ section.id }} {
       display:none;
-    }}
+    }
   {% endif %}
 </style>
 <mute-toggle-element>
@@ -144,9 +144,9 @@
 							-%}
 							<div class="slideshow__slide-video-bg" data-provider="{{ video.type }}" data-video-id="{{ video.id }}">
 								{%- if video.type == 'youtube' -%}
-									<iframe {{ src_type }}="https://www.youtube.com/embed/{{ video.id }}?loop=1&autoplay=1&mute=1&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls=0&playsinline=1&enablejsapi=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen tabindex="-1"></iframe>
+									<iframe src="https://www.youtube.com/embed/{{ video.id }}?loop=1&autoplay=1&mute=1&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls=0&playsinline=1&enablejsapi=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen tabindex="-1" />
 								{%- else -%}
-									<iframe {{ src_type }}="https://player.vimeo.com/video/{{ video.id }}?background=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen tabindex="-1"></iframe>
+									<iframe src="https://player.vimeo.com/video/{{ video.id }}?background=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen tabindex="-1" />
 								{%- endif -%}
 							</div>
 						{%- endif -%}
@@ -159,19 +159,18 @@
 							{% if block.settings.subheading != blank %}
 								<p class="subheading">{{ block.settings.subheading }}</p>
 							{% endif %}
-							 {% if block.settings.heading != blank %}
-                
-								
-                <h1 class="split-text {{ block.settings.heading_size }}">{{ block.settings.heading | newline_to_br }}</h1>
-							</a> 
+							 {% if block.settings.heading != blank %}	
+                                <h1 class="split-text {{ block.settings.heading_size }}">{{ block.settings.heading | newline_to_br }}</h1>
+                           {% endif %}  
+				</a> 
           
-              {% endif %}  
+    
 							{% if block.settings.content != blank %}
 							<p class="split-text description-size--{{ block.settings.description_size }}">{{ block.settings.content | newline_to_br }}</p>
 							{% endif %}
 							{% if block.settings.button_1_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button white{% if block.settings.button_1_underline == true %} underline outline{% elsif block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}"><span>{{ block.settings.button_1_text }}</span></a>
+								<a class="button white {% if block.settings.button_1_underline == true %} underline outline{% elsif block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}"><span>{{ block.settings.button_1_text }}</span></a>
 							</div>
 			        {% endif %}
 							{% if block.settings.button_2_text != blank %}
