@@ -1323,27 +1323,6 @@
     "featured_collection_list_zeDUHp": {
       "type": "featured-collection-list",
       "blocks": {
-        "collection_Bzcpwp": {
-          "type": "collection",
-          "settings": {
-            "collection": "poolside-splash",
-            "image": "shopify:\/\/shop_images\/IDGAF_7c25b4a3-2f50-4942-b128-d4ff66bb941a.png"
-          }
-        },
-        "collection_Bjd6Aa": {
-          "type": "collection",
-          "settings": {
-            "collection": "priyam-and-hitika",
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-03-06_at_12.57.57_PM.png"
-          }
-        },
-        "collection_9A9HdC": {
-          "type": "collection",
-          "settings": {
-            "collection": "cityscape",
-            "image": "shopify:\/\/shop_images\/Cityscape.png"
-          }
-        },
         "collection_jNAe9t": {
           "type": "collection",
           "settings": {
@@ -1370,9 +1349,6 @@
         }
       },
       "block_order": [
-        "collection_Bzcpwp",
-        "collection_Bjd6Aa",
-        "collection_9A9HdC",
         "collection_jNAe9t",
         "collection_bzdJwB",
         "collection_PgeinW",
@@ -1384,11 +1360,64 @@
         "full_width": true,
         "content_position": "middle-center",
         "heading_size": "h2",
-        "color_text": "#151515",
+        "color_text": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 12,
+        "overlay_opacity": 57,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
+      }
+    },
+    "collection_tabs_xFtXcC": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_rwmDtW": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-date"
+          }
+        },
+        "collection_pdacYX": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottomwear-date"
+          }
+        },
+        "collection_X6683k": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-wear-date"
+          }
+        },
+        "collection_Ark6DC": {
+          "type": "collection",
+          "settings": {
+            "collection": "co-ords-date"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rwmDtW",
+        "collection_pdacYX",
+        "collection_X6683k",
+        "collection_Ark6DC"
+      ],
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 6,
+        "columns_desktop": 5,
+        "show_view_all": true,
+        "show_progress_bar": false,
+        "bg_color": "#FFF",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "0",
+        "color_text": "#151515",
+        "overlay_gradient": "",
+        "show_on_desktop": true,
+        "show_on_mobile": false
       }
     }
   },
@@ -1416,6 +1445,7 @@
     "social_images_collections_AyYGeN",
     "slideshow_4mRJ9Y",
     "slideshow_bdnbCa",
-    "featured_collection_list_zeDUHp"
+    "featured_collection_list_zeDUHp",
+    "collection_tabs_xFtXcC"
   ]
 }
