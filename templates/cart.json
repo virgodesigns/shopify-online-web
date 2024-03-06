@@ -13,7 +13,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Save 10% on you first order using \"Welcome10\"",
+            "text": "Get 10% discount on your first order apply \"WELCOME10\" at check out",
             "link": "",
             "outline_text": false
           }
