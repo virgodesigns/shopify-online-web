@@ -5,12 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+        "menu_bEXaHT": {
           "type": "menu",
           "settings": {
             "column_size": "medium",
             "title": "Company",
-            "menu": "company-menu"
+            "menu": "policy"
           }
         },
         "801371dd-629c-4b6b-a71a-ad849e48af64": {
@@ -58,7 +58,7 @@
         }
       },
       "block_order": [
-        "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+        "menu_bEXaHT",
         "801371dd-629c-4b6b-a71a-ad849e48af64",
         "86936a5b-1bb4-424b-bdbc-2b5e3032a8d8",
         "00a364e5-af4e-4073-871b-4d533bd4da06",
