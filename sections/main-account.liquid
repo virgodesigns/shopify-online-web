@@ -343,80 +343,70 @@
       }
     }
 
-    async function renderData(isNext) {
-      const dataContainer = document.getElementById('data-container');
-      const loadMoreButton = document.getElementById('loadMoreButton');
-      
-      const loader = document.getElementById('loader');
+async function renderData(isNext) {
+  const dataContainer = document.getElementById('data-container');
+  const loadMoreButton = document.getElementById('loadMoreButton');
+  const loader = document.getElementById('loader');
 
+  loader.style.display = 'block';
 
-           loader.style.display = 'block';
+  const data = await fetchData();
 
+  if (!data || !data.data || data.data.orders.length === 0) {
+    // If there is no data or orders array is empty, hide the loader
+    loader.style.display = 'none';
+    return;
+  }
 
-      const data = await fetchData();
+  const splitData = {};
 
-console.log("dataA",data)
-      const splitData = {};
-
-// Split the objects by orderName
-data.data.orders.forEach(obj => {
+  // Split the objects by orderName
+  data.data.orders.forEach(obj => {
     const orderName = obj["orderName"];
     if (!splitData[orderName]) {
-        splitData[orderName] = [];
+      splitData[orderName] = [];
     }
     splitData[orderName].push(obj);
-});
-console.log("splitData",splitData)
+  });
 
-      ordersGroup = splitData
-      console.log(" data.data", data.data)
-      customer = data.data.customer
+  ordersGroup = splitData;
+  customer = data.data.customer;
 
-      if (data) {
-        // Update UI with the fetched data
-        dataContainer.innerHTML += data.data.orders.map(order => {
-          const {displayStatus} = order
-           const {title} = order;
+  // Update UI with the fetched data
+  dataContainer.innerHTML += data.data.orders.map(order => {
+    const { displayStatus } = order;
+    const { title } = order;
+    const titles = title.split('|');
 
-           const titles = title.split('|')
-          
-          return `
-            <div class="order" onclick="redirectToOrderDetails('${order.orderName}','${order.lineItemId}')">
+    return `
+      <div class="order" onclick="redirectToOrderDetails('${order.orderName}','${order.lineItemId}')">
+        <div class="order-title ${displayStatus === 'CANCELLED' ? 'order-title-cancel':''}">${useDeliveryStatusText(displayStatus)}</div>
+        <div class="order-arriving">${useDeliveryText(order)}</div>
+        <div style="display: flex;margin-top: 1rem;align-items: center;">
+          <div style="margin-right: 1.5rem;" class="order-img"><img  src="${order.image}" alt="${order.title}"></div>
+          <div>
+            <div class="order-title1">${titles[0]}</div>
+            <div class="order-title2">${titles[1]}</div>
+            <div class="order-title3">Size: ${order.variantTitle}</div>
+            <div class="order-title3">Qty: ${order.quantity}</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
 
-              <div class="order-title ${displayStatus === 'CANCELLED' ? 'order-title-cancel':''}">${useDeliveryStatusText(displayStatus)}</div>
-              <div class="order-arriving">${useDeliveryText(order)}</div>
+  // Update pagination information
+  endCursor = data.data.pageInfo.endCursor;
+  const hasNextPage = data.data.pageInfo.hasNextPage;
 
-              <div style="display: flex;margin-top: 1rem;align-items: center;" >
+  // Enable or disable the Load More button based on pagination status
+  loadMoreButton.disabled = !hasNextPage;
 
-                <div style="margin-right: 1.5rem;"  class="order-img"><img  src="${order.image}" alt="${order.title}"></div>
-               
-                <div>
-              <div class="order-title1">${titles[0]}</div>
-               <div class="order-title2">${titles[1]}</div>
-              <div class="order-title3">Size: ${order.variantTitle}</div>
-               <div class="order-title3">Qty: ${order.quantity}</div>
-                </div>
-              </div>
+  // Increment the pageCount for tracking
+  pageCount = pageCount + 1;
 
-              </div>
-
-            </div>
-          `;
-        }).join('');
-
-        // Update pagination information
-        endCursor = data.data.pageInfo.endCursor;
-        const hasNextPage = data.data.pageInfo.hasNextPage;
-
-        // Enable or disable the Load More button based on pagination status
-        loadMoreButton.disabled = !hasNextPage;
-
-        // Increment the pageCount for tracking
-        pageCount = pageCount + 1;
-
-        loader.style.display = 'none'; 
-      }
-    }
+  loader.style.display = 'none';
+}
 
     function loadMoreData() {
       renderData();
