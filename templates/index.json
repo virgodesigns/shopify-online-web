@@ -135,101 +135,58 @@
         "show_on_mobile": false
       }
     },
-    "slideshow_ppqEHU": {
-      "type": "slideshow",
+    "collection_carousel_eALWpf": {
+      "type": "collection-carousel",
       "blocks": {
-        "slide_ez4qpH": {
-          "type": "slide",
+        "collection_EqTk6A": {
+          "type": "collection",
           "settings": {
-            "slide_link": "shopify:\/\/pages\/circularity",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Circularity.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
+            "image": "shopify:\/\/shop_images\/lisa_haydon_4.png",
+            "name": "",
+            "subname": "LISA HAYDON",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
+          }
+        },
+        "collection_djWXcy": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_2.png",
+            "name": "",
+            "subname": "SAIEE MANJREKAR",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+          }
+        },
+        "collection_x3tTCD": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lisa_haydon_0d85a0f5-821d-4b57-a6cf-f46c2d2ed783.png",
+            "name": "",
+            "subname": "SAIEE MANJREKAR",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
           }
         }
       },
       "block_order": [
-        "slide_ez4qpH"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_wMJWQE": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_FGcznB": {
-          "type": "slide",
-          "settings": {
-            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Veronica video.mov",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_FGcznB"
+        "collection_EqTk6A",
+        "collection_djWXcy",
+        "collection_x3tTCD"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
+        "heading": "CELEB CORNER",
+        "bg_color": "#ffffff",
+        "heading_color": "#151515",
+        "name_color": "#151515",
         "show_on_desktop": true,
         "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "button_url": "",
+        "button_text": "",
+        "carouselCardWidth": ""
       }
     },
     "collection_carousel_7zXpBt": {
@@ -315,60 +272,6 @@
         "bg_color": "#000000",
         "heading_color": "#ffffff",
         "name_color": "#ffffff",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "button_url": "",
-        "button_text": "",
-        "carouselCardWidth": ""
-      }
-    },
-    "collection_carousel_eALWpf": {
-      "type": "collection-carousel",
-      "blocks": {
-        "collection_EqTk6A": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_4.png",
-            "name": "",
-            "subname": "LISA HAYDON",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
-          }
-        },
-        "collection_djWXcy": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_2.png",
-            "name": "",
-            "subname": "SAIEE MANJREKAR",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
-          }
-        },
-        "collection_x3tTCD": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_0d85a0f5-821d-4b57-a6cf-f46c2d2ed783.png",
-            "name": "",
-            "subname": "SAIEE MANJREKAR",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
-          }
-        }
-      },
-      "block_order": [
-        "collection_EqTk6A",
-        "collection_djWXcy",
-        "collection_x3tTCD"
-      ],
-      "settings": {
-        "heading": "CELEB CORNER",
-        "bg_color": "#ffffff",
-        "heading_color": "#151515",
-        "name_color": "#151515",
         "show_on_desktop": true,
         "show_on_mobile": false,
         "button_url": "",
@@ -1429,10 +1332,8 @@
   "order": [
     "slideshow_nfyjbt",
     "collection_tabs_xFtXcC",
-    "slideshow_ppqEHU",
-    "slideshow_wMJWQE",
-    "collection_carousel_7zXpBt",
     "collection_carousel_eALWpf",
+    "collection_carousel_7zXpBt",
     "slideshow_b3443E",
     "slideshow_V9kw7y",
     "rich_text_UjAFhP",
