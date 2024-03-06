@@ -721,13 +721,41 @@
           "settings": {
             "collection": "the-safari-edit"
           }
+        },
+        "collection_CYhiRM": {
+          "type": "collection",
+          "settings": {
+            "collection": "cityscape"
+          }
+        },
+        "collection_LKMmep": {
+          "type": "collection",
+          "settings": {
+            "collection": "poolside-splash"
+          }
+        },
+        "collection_THAK7W": {
+          "type": "collection",
+          "settings": {
+            "collection": "veronicas-all-collection"
+          }
+        },
+        "collection_6tTwwR": {
+          "type": "collection",
+          "settings": {
+            "collection": "wild-romance"
+          }
         }
       },
       "block_order": [
         "collection_jNAe9t",
         "collection_bzdJwB",
         "collection_PgeinW",
-        "collection_d7bhXH"
+        "collection_d7bhXH",
+        "collection_CYhiRM",
+        "collection_LKMmep",
+        "collection_THAK7W",
+        "collection_6tTwwR"
       ],
       "custom_css": [
 
