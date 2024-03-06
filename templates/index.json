@@ -554,7 +554,7 @@
         "full_width": true,
         "product_limit": 8,
         "columns_desktop": 4,
-        "show_view_all": false,
+        "show_view_all": true,
         "show_progress_bar": false,
         "bg_color": "#ffffff",
         "disable_top_spacing": true,
