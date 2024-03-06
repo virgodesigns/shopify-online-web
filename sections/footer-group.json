@@ -13,22 +13,6 @@
             "menu": "company-menu"
           }
         },
-        "801371dd-629c-4b6b-a71a-ad849e48af64": {
-          "type": "menu",
-          "settings": {
-            "column_size": "medium",
-            "title": "Community",
-            "menu": "community"
-          }
-        },
-        "86936a5b-1bb4-424b-bdbc-2b5e3032a8d8": {
-          "type": "menu",
-          "settings": {
-            "column_size": "medium",
-            "title": "Community",
-            "menu": "community-mobile"
-          }
-        },
         "00a364e5-af4e-4073-871b-4d533bd4da06": {
           "type": "menu",
           "settings": {
@@ -59,8 +43,6 @@
       },
       "block_order": [
         "menu_bEXaHT",
-        "801371dd-629c-4b6b-a71a-ad849e48af64",
-        "86936a5b-1bb4-424b-bdbc-2b5e3032a8d8",
         "00a364e5-af4e-4073-871b-4d533bd4da06",
         "9c7d0155-0d4c-4a52-bc56-5276570cbac7",
         "fb23472e-4921-42b3-a2ac-42a6ac1dee8c"
