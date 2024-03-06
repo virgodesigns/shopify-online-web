@@ -611,12 +611,10 @@
         "slide_nrk3f4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/The_Date_Banner.png",
-            "mobile_image": "shopify:\/\/shop_images\/The_Date_Banner.png",
             "slide_link": "shopify:\/\/collections\/date-collection",
             "video_background": true,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "video_hosted": "shopify:\/\/files\/videos\/Date collection.mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080 (1).mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-xlarge",
