@@ -279,7 +279,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/lisa_haydon_5.png",
             "name": "",
-            "subname": "LISA HAYDON",
+            "subname": "",
             "price": "",
             "strikePrice": "",
             "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
@@ -365,7 +365,7 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "shop the look",
+            "button_1_text": "",
             "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
