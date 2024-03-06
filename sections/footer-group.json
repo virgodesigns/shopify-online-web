@@ -10,7 +10,7 @@
           "settings": {
             "column_size": "medium",
             "title": "Company",
-            "menu": "policy"
+            "menu": "company-menu"
           }
         },
         "801371dd-629c-4b6b-a71a-ad849e48af64": {
