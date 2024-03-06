@@ -79,6 +79,62 @@
         "disable_bottom_spacing": true
       }
     },
+    "collection_tabs_xFtXcC": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_rwmDtW": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-date"
+          }
+        },
+        "collection_pdacYX": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottomwear-date"
+          }
+        },
+        "collection_X6683k": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-wear-date"
+          }
+        },
+        "collection_Ark6DC": {
+          "type": "collection",
+          "settings": {
+            "collection": "co-ords-date"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rwmDtW",
+        "collection_pdacYX",
+        "collection_X6683k",
+        "collection_Ark6DC"
+      ],
+      "custom_css": [
+        "h2{padding-top: 40px; }"
+      ],
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 6,
+        "columns_desktop": 5,
+        "show_view_all": true,
+        "show_progress_bar": false,
+        "bg_color": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "0",
+        "color_text": "#151515",
+        "overlay_gradient": "",
+        "show_on_desktop": true,
+        "show_on_mobile": false
+      }
+    },
     "slideshow_ppqEHU": {
       "type": "slideshow",
       "blocks": {
@@ -1354,6 +1410,9 @@
         "collection_PgeinW",
         "collection_d7bhXH"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-full",
@@ -1366,63 +1425,11 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
-    },
-    "collection_tabs_xFtXcC": {
-      "type": "collection-tabs",
-      "blocks": {
-        "collection_rwmDtW": {
-          "type": "collection",
-          "settings": {
-            "collection": "dresses-date"
-          }
-        },
-        "collection_pdacYX": {
-          "type": "collection",
-          "settings": {
-            "collection": "bottomwear-date"
-          }
-        },
-        "collection_X6683k": {
-          "type": "collection",
-          "settings": {
-            "collection": "top-wear-date"
-          }
-        },
-        "collection_Ark6DC": {
-          "type": "collection",
-          "settings": {
-            "collection": "co-ords-date"
-          }
-        }
-      },
-      "block_order": [
-        "collection_rwmDtW",
-        "collection_pdacYX",
-        "collection_X6683k",
-        "collection_Ark6DC"
-      ],
-      "settings": {
-        "heading": "SHOP BY CATEGORY",
-        "heading_left": false,
-        "description": "",
-        "full_width": true,
-        "product_limit": 6,
-        "columns_desktop": 5,
-        "show_view_all": true,
-        "show_progress_bar": false,
-        "bg_color": "#FFF",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "margin_left_value": "0",
-        "color_text": "#151515",
-        "overlay_gradient": "",
-        "show_on_desktop": true,
-        "show_on_mobile": false
-      }
     }
   },
   "order": [
     "slideshow_nfyjbt",
+    "collection_tabs_xFtXcC",
     "slideshow_ppqEHU",
     "slideshow_wMJWQE",
     "collection_carousel_7zXpBt",
@@ -1445,7 +1452,6 @@
     "social_images_collections_AyYGeN",
     "slideshow_4mRJ9Y",
     "slideshow_bdnbCa",
-    "featured_collection_list_zeDUHp",
-    "collection_tabs_xFtXcC"
+    "featured_collection_list_zeDUHp"
   ]
 }
