@@ -1146,14 +1146,6 @@
             "social_url": "shopify:\/\/products\/polka-dot-serenade-in-black-with-pockets"
           }
         },
-        "social_image_MXtUYw": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096289_1.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/date-chic-red-lycra-satin-skirt"
-          }
-        },
         "social_image_TAgLj7": {
           "type": "social_image",
           "settings": {
@@ -1170,14 +1162,6 @@
             "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
           }
         },
-        "social_image_mEpKEG": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096282_1_85552a2f-3a7b-4a48-9bcd-0a87350acbb1.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/vivid-v-neck-frill-elegance-with-pockets"
-          }
-        },
         "social_image_PnCEYH": {
           "type": "social_image",
           "settings": {
@@ -1191,10 +1175,8 @@
         "social_image_RqREVU",
         "social_image_NpMjqm",
         "social_image_aN4Up4",
-        "social_image_MXtUYw",
         "social_image_TAgLj7",
         "social_image_eky3QD",
-        "social_image_mEpKEG",
         "social_image_PnCEYH"
       ],
       "custom_css": [
