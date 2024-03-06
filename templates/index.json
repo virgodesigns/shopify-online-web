@@ -713,79 +713,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_V9kw7y": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_YXLMfz": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Media_spotlight.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_YXLMfz"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffffff",
-        "button_url": "shopify:\/\/collections\/date-collection",
-        "button_text": "Explore Eco-chic",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/date-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "date-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "collection_carousel_ctNVrA": {
       "type": "collection-carousel",
       "blocks": {
@@ -898,6 +825,79 @@
         "button_url": "",
         "button_text": "",
         "carouselCardWidth": ""
+      }
+    },
+    "slideshow_V9kw7y": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_YXLMfz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Media_spotlight.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_YXLMfz"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#ffffff",
+        "button_url": "shopify:\/\/collections\/date-collection",
+        "button_text": "Explore Eco-chic",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/date-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "date-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "slideshow_tQPWEz": {
@@ -1255,9 +1255,9 @@
     "slideshow_a6Y4RT",
     "featured_collection_list_zeDUHp",
     "slideshow_b3443E",
+    "collection_carousel_ctNVrA",
     "slideshow_V9kw7y",
     "featured_collection",
-    "collection_carousel_ctNVrA",
     "slideshow_tQPWEz",
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
