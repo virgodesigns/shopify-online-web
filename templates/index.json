@@ -296,11 +296,23 @@
             "strikePrice": "",
             "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
           }
+        },
+        "collection_XCWGQE": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_3.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+          }
         }
       },
       "block_order": [
         "collection_EqTk6A",
-        "collection_djWXcy"
+        "collection_djWXcy",
+        "collection_XCWGQE"
       ],
       "custom_css": [
         "div {padding: 0px; font-size: 28px; font-weight: 600;}"
