@@ -615,6 +615,31 @@
         "disable_bottom_spacing": true
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#ffffff",
+        "button_url": "shopify:\/\/collections\/date-collection",
+        "button_text": "Explore Eco-chic",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/date-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "date-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "featured_collection_list_zeDUHp": {
       "type": "featured-collection-list",
       "blocks": {
@@ -826,31 +851,6 @@
         "button_url": "",
         "button_text": "",
         "carouselCardWidth": ""
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffffff",
-        "button_url": "shopify:\/\/collections\/date-collection",
-        "button_text": "Explore Eco-chic",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/date-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "date-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "slideshow_tQPWEz": {
@@ -1254,10 +1254,10 @@
     "slideshow_cpDimr",
     "rich_text_X9yyVR",
     "slideshow_a6Y4RT",
+    "featured_collection",
     "featured_collection_list_zeDUHp",
     "slideshow_b3443E",
     "collection_carousel_ctNVrA",
-    "featured_collection",
     "slideshow_tQPWEz",
     "rich_text_LYm4pr",
     "social_images_collections_AyYGeN",
