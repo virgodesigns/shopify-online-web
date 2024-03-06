@@ -325,51 +325,50 @@
     "collection_carousel_eALWpf": {
       "type": "collection-carousel",
       "blocks": {
+        "collection_EqTk6A": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lisa_haydon_4.png",
+            "name": "",
+            "subname": "LISA HAYDON",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
+          }
+        },
         "collection_djWXcy": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Recycled_Polyester.png",
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_2.png",
             "name": "",
-            "subname": "Luxe Comfort",
+            "subname": "SAIEE MANJREKAR",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/recycled-polyester"
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
           }
         },
-        "collection_PNhNyD": {
+        "collection_x3tTCD": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cotton_ffc0b929-9f74-4c93-9c4f-7e4a8479c474.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_0d85a0f5-821d-4b57-a6cf-f46c2d2ed783.png",
             "name": "",
-            "subname": "Breezy, Light and Gentle",
+            "subname": "SAIEE MANJREKAR",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/cotton-collection"
-          }
-        },
-        "collection_bx7db7": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Viscose_1.png",
-            "name": "",
-            "subname": "Buttery-Soft and Lightweight",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/viscose-collection"
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
           }
         }
       },
       "block_order": [
+        "collection_EqTk6A",
         "collection_djWXcy",
-        "collection_PNhNyD",
-        "collection_bx7db7"
+        "collection_x3tTCD"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "Shop by Fabric",
-        "bg_color": "#000000",
-        "heading_color": "#ffffff",
-        "name_color": "#ffffff",
+        "heading": "CELEB CORNER",
+        "bg_color": "#ffffff",
+        "heading_color": "#151515",
+        "name_color": "#151515",
         "show_on_desktop": true,
         "show_on_mobile": false,
         "button_url": "",
