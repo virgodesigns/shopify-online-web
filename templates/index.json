@@ -114,7 +114,8 @@
         "collection_Ark6DC"
       ],
       "custom_css": [
-        "h2 {padding-top: 40px; font-size: 24px;}"
+        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
+        ".h3 {font-size: 24px;}"
       ],
       "settings": {
         "heading": "SHOP BY CATEGORY",
@@ -300,6 +301,9 @@
       "block_order": [
         "collection_EqTk6A",
         "collection_djWXcy"
+      ],
+      "custom_css": [
+        "div {padding: 0px; font-size: 28px; font-weight: 600;}"
       ],
       "settings": {
         "heading": "CELEB CORNER",
