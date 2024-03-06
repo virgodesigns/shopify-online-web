@@ -1,18 +1,6 @@
 {{ 'social-images-collections.css' | asset_url | stylesheet_tag }}
 
 <style>
-  {% if section.settings.show_on_mobile == false %}
-    @media screen and (max-width: 768px){
-        #shopify-section-{{ section.id }} {
-      display:none;
-    }}
-  {% endif %}
-  {% if section.settings.show_on_desktop == false %}
-    @media screen and (min-width: 768px){
-    #shopify-section-{{ section.id }} {
-      display:none;
-    }}
-  {% endif %}
   #shopify-section-{{ section.id }} .fp-bg {
        background-image: url('{{ section.settings.parallax_image_mobile | image_url }}');
       background-size: cover;
@@ -24,87 +12,88 @@
     }
     }
 </style>
-<div style= "background-color: {{section.settings.bg_color}}">
-<div class="social-images-collections{% if section.settings.show_on_mobile == false %} small-hide{% else %} swipe-mobile{% endif %}{% if section.settings.show_on_desktop == false %} medium-hide large-up-hide{% else %} swipe-desktop{% endif %}">
-  <div class="section-spacing-padding {% if section.settings.disable_top_spacing %} section-spacing--disable-top {% endif %} {% if section.settings.disable_bottom_spacing %} section-spacing--disable-bottom {% endif %}">
-    <div class="top-text text-center">
-      {% if section.settings.para_top %}
-        <p>{{ section.settings.para_top }}</p>
-      {% endif %}
-    </div>
-    <div class="top-heading text-center">
-      {% if section.settings.heading_top %}
-        <h3>{{ section.settings.heading_top }}</h3>
-      {% endif %}
-    </div>
-    <div style="width: 100%">
-      <div
-        class="images flex-box flex-box--1-col flex-box--{{ section.settings.colmun_number_tablet }}-col-tablet flex-box--{{ section.settings.colmun_number_desktop }}-col-desktop"
-        style="
-          --grid-mobile-horizontal-spacing: 0px;
-          --grid-mobile-vertical-spacing: 0px;
-        "
-      >
-        {% for block in section.blocks %}
-          <div class="flex-box__item">
-            <div>
-              {% if block.settings.social_url %}
-                <a href="{{ block.settings.social_url }}" class="banner-link white">
-              {% endif %}
-              <div class="image-container">
-                <div>
-                  {% if block.settings.image %}
-                    {% render 'responsive-image-cust',class: 'media media--portrait_3-4', mobileSrc:, desktopSrc:  block.settings.image %}
-                  {% else %}
-                    <div class="media media--portrait">
-                      {{ 'collection-3' | placeholder_svg_tag }}
-                    </div>
+<div style="background-color: {{section.settings.bg_color}}">
+  <div class="social-images-collections{% if section.settings.show_on_mobile == false %} small-hide{% else %} swipe-mobile{% endif %}{% if section.settings.show_on_desktop == false %} medium-hide large-up-hide{% else %} swipe-desktop{% endif %}">
+    <div class="section-spacing-padding {% if section.settings.disable_top_spacing %} section-spacing--disable-top {% endif %} {% if section.settings.disable_bottom_spacing %} section-spacing--disable-bottom {% endif %}">
+      <div class="top-text text-center">
+        {% if section.settings.para_top %}
+          <p>{{ section.settings.para_top }}</p>
+        {% endif %}
+      </div>
+      <div class="top-heading text-center">
+        {% if section.settings.heading_top %}
+          <h3>{{ section.settings.heading_top }}</h3>
+        {% endif %}
+      </div>
+      <div style="width: 100%">
+        <div
+          class="images flex-box flex-box--1-col flex-box--{{ section.settings.colmun_number_tablet }}-col-tablet flex-box--{{ section.settings.colmun_number_desktop }}-col-desktop"
+          style="
+            --grid-mobile-horizontal-spacing: 0px;
+            --grid-mobile-vertical-spacing: 0px;
+          "
+        >
+          {% for block in section.blocks %}
+            <div class="flex-box__item">
+              <div>
+                {% if block.settings.social_url %}
+                  <a href="{{ block.settings.social_url }}" class="banner-link white">
+                {% endif %}
+                <div class="image-container">
+                  <div>
+                    {% if block.settings.image %}
+                      {% render 'responsive-image-cust',class: 'media media--portrait_3-4', mobileSrc:, desktopSrc:  block.settings.image %}
+                    {% else %}
+                      <div class="media media--portrait">
+                        {{ 'collection-3' | placeholder_svg_tag }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.social_id %}
+                    <p class="social-id text-center">{{ block.settings.social_id }}</p>
                   {% endif %}
                 </div>
-                {% if block.settings.social_id %}
-                  <p class="social-id text-center">{{ block.settings.social_id }}</p>
+                {% if block.settings.social_url %}
+                  </a>
                 {% endif %}
               </div>
-              {% if block.settings.social_url %}
+            </div>
+          {% endfor %}
+        </div>
+        {% comment %}
+          <div class="bottom-text">
+            <div class="text-center">
+              {% if section.settings.para_bottom %}
+                <p>{{ section.settings.para_bottom }}</p>
+              {% endif %}
+              {% if settings.social_instagram_link %}
+                <a href="{{ settings.social_instagram_link }}">
+                  <button class="button black outline">
+                    {% if section.settings.show_svg %}
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="invert"
+                      >
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3341 2.75012H7.6651C4.6441 2.75012 2.7501 4.88912 2.7501 7.91612V16.0841C2.7501 19.1111 4.6351 21.2501 7.6651 21.2501H16.3331C19.3641 21.2501 21.2501 19.1111 21.2501 16.0841V7.91612C21.2501 4.88912 19.3641 2.75012 16.3341 2.75012Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.9947 16.0001V12.0001" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.9899 8.20435H11.9999" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    {% endif %}
+                    <span>{{ section.settings.button_text }}</span>
+                  </button>
                 </a>
               {% endif %}
             </div>
           </div>
-        {% endfor %}
+        {% endcomment %}
       </div>
-      {% comment %} <div class="bottom-text">
-        <div class="text-center">
-          {% if section.settings.para_bottom %}
-            <p>{{ section.settings.para_bottom }}</p>
-          {% endif %}
-          {% if settings.social_instagram_link %}
-            <a href="{{ settings.social_instagram_link }}">
-              <button class="button black outline">
-                {% if section.settings.show_svg %}
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="invert"
-                  >
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3341 2.75012H7.6651C4.6441 2.75012 2.7501 4.88912 2.7501 7.91612V16.0841C2.7501 19.1111 4.6351 21.2501 7.6651 21.2501H16.3331C19.3641 21.2501 21.2501 19.1111 21.2501 16.0841V7.91612C21.2501 4.88912 19.3641 2.75012 16.3341 2.75012Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M11.9947 16.0001V12.0001" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M11.9899 8.20435H11.9999" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                {% endif %}
-                <span>{{ section.settings.button_text }}</span>
-              </button>
-            </a>
-          {% endif %}
-        </div>
-      </div> {% endcomment %}
     </div>
   </div>
 </div>
-</div>
-
 
 {% schema %}
 {
