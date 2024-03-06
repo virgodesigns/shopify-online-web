@@ -3,35 +3,6 @@
     "slideshow_nfyjbt": {
       "type": "slideshow",
       "blocks": {
-        "slide_KG87MY": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Hero_banner_2.png",
-            "slide_link": "shopify:\/\/collections\/all-collections",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/all-collections",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "Shop Now",
-            "button_2_link": "shopify:\/\/collections\/all-collections",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_fDPWtA": {
           "type": "slide",
           "settings": {
@@ -60,11 +31,40 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
+        },
+        "slide_KG87MY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Hero_banner_2.png",
+            "slide_link": "shopify:\/\/collections\/all-collections",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/all-collections",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "shopify:\/\/collections\/all-collections",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "slide_KG87MY",
-        "slide_fDPWtA"
+        "slide_fDPWtA",
+        "slide_KG87MY"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -181,20 +181,20 @@
     "mwidget_wP9t6e": {
       "type": "mwidget",
       "blocks": {
-        "image_item_wBwCT7": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/black_date_long_dress_1.png",
-            "heading_text": "Dresses",
-            "button_link": "shopify:\/\/collections\/dresses-date"
-          }
-        },
         "image_item_Hx8bmE": {
           "type": "image-item",
           "settings": {
             "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
             "heading_text": "Co-ords Set",
             "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
+        },
+        "image_item_kfJXYh": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
+            "heading_text": "Bottomwear",
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
         },
         "image_item_WtCAGK": {
@@ -205,20 +205,20 @@
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
         },
-        "image_item_kfJXYh": {
+        "image_item_wBwCT7": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
-            "heading_text": "Bottomwear",
-            "button_link": "shopify:\/\/collections\/bottomwear-date"
+            "image": "shopify:\/\/shop_images\/black_date_long_dress_1.png",
+            "heading_text": "Dresses",
+            "button_link": "shopify:\/\/collections\/dresses-date"
           }
         }
       },
       "block_order": [
-        "image_item_wBwCT7",
         "image_item_Hx8bmE",
+        "image_item_kfJXYh",
         "image_item_WtCAGK",
-        "image_item_kfJXYh"
+        "image_item_wBwCT7"
       ],
       "settings": {
         "main_heading": "",
@@ -442,6 +442,52 @@
         "disable_bottom_spacing": true
       }
     },
+    "collection_tabs_LDM6fX": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_CGdnyg": {
+          "type": "collection",
+          "settings": {
+            "collection": "natural-fabrics"
+          }
+        },
+        "collection_mwdtHQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "recycled-fabric"
+          }
+        }
+      },
+      "block_order": [
+        "collection_CGdnyg",
+        "collection_mwdtHQ"
+      ],
+      "custom_css": [
+        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
+        ".h3 {font-size: 24px;}",
+        ".section-header--button.has--tabs {margin-top: 0;}",
+        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
+        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
+      ],
+      "settings": {
+        "heading": "SHOP BY FABRIC",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "show_progress_bar": false,
+        "bg_color": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "0",
+        "color_text": "#151515",
+        "overlay_gradient": "",
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "slideshow_cpDimr": {
       "type": "slideshow",
       "blocks": {
@@ -489,52 +535,6 @@
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
-      }
-    },
-    "collection_tabs_LDM6fX": {
-      "type": "collection-tabs",
-      "blocks": {
-        "collection_CGdnyg": {
-          "type": "collection",
-          "settings": {
-            "collection": "natural-fabrics"
-          }
-        },
-        "collection_mwdtHQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "recycled-fabric"
-          }
-        }
-      },
-      "block_order": [
-        "collection_CGdnyg",
-        "collection_mwdtHQ"
-      ],
-      "custom_css": [
-        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
-        ".h3 {font-size: 24px;}",
-        ".section-header--button.has--tabs {margin-top: 0;}",
-        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
-        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
-      ],
-      "settings": {
-        "heading": "SHOP BY FABRIC",
-        "heading_left": false,
-        "description": "",
-        "full_width": true,
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "show_progress_bar": false,
-        "bg_color": "#ffffff",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "margin_left_value": "0",
-        "color_text": "#151515",
-        "overlay_gradient": "",
-        "show_on_desktop": true,
-        "show_on_mobile": true
       }
     },
     "rich_text_X9yyVR": {
@@ -1371,8 +1371,8 @@
     "rich_text_8KqTNR",
     "slideshow_majm9j",
     "slideshow_fKw6nT",
-    "slideshow_cpDimr",
     "collection_tabs_LDM6fX",
+    "slideshow_cpDimr",
     "rich_text_X9yyVR",
     "slideshow_a6Y4RT",
     "slideshow_PEK4zU",

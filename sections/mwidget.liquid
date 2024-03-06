@@ -1,4 +1,4 @@
-<div class="image-container">
+<div class="image-container image-container-mwidget">
   {% assign image_count = 0 %}
   <div style="background-color:{{ section.settings.bg_color }}">
     {% if section.settings.main_heading != blank %}
@@ -34,7 +34,7 @@
 
 <style>
   @media only screen and (min-width: 769px) {
-    .image-container {
+    .image-container.image-container-mwidget {
       display: none;
     }
   }
