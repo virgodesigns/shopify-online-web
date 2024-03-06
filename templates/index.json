@@ -277,7 +277,7 @@
         "collection_EqTk6A": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_4.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_5.png",
             "name": "",
             "subname": "LISA HAYDON",
             "price": "",
@@ -288,9 +288,9 @@
         "collection_djWXcy": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_2.png",
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_3.png",
             "name": "",
-            "subname": "SAIEE MANJREKAR",
+            "subname": "",
             "price": "",
             "strikePrice": "",
             "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
@@ -355,7 +355,7 @@
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
-            "heading": "LISA   HAYDON",
+            "heading": "",
             "heading_size": "h2",
             "content": "",
             "description_size": "medium",
