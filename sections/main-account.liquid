@@ -351,16 +351,13 @@ async function renderData(isNext) {
   loader.style.display = 'block';
 
   const data = await fetchData();
-  
 
-  if (!data || !data.data || data.data.orders.length === 0) {
-    // If there is no data or orders array is empty, show a custom message and hide the loader
-    dataContainer.innerHTML = '<p>No orders found.</p>';
-    loader.style.display = 'none';
-    return;
-  }
-  else{
-
+if (!data || !data.data || data.data.orders.length === 0) {
+  // If there is no data or orders array is empty, show a custom message and hide the loader
+  dataContainer.innerHTML = '<p>No orders found.</p>';
+  loader.style.display = 'none';
+  return;
+}
   const splitData = {};
 
   // Split the objects by orderName
@@ -409,7 +406,6 @@ async function renderData(isNext) {
   pageCount = pageCount + 1;
 
   loader.style.display = 'none';
-}
 }
 
 
