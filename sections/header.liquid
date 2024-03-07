@@ -11,70 +11,89 @@
 -%}
 
 <style>
-       {% comment %} {% if template contains 'product' %}
-           .header{
-             background:#000 !important;
-           }
-        {% endif %} {% endcomment %}
-       .hide-logo{
-       display:None
-     }
-   .m-header span{
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 0.625rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1rem;
-  letter-spacing: 0.0125rem;
-  text-transform: capitalize;
+                 {% comment %} {% if template contains 'product' %}
+                     .header{
+                       background:#000 !important;
+                     }
+                  {% endif %} {% endcomment %}
+  /* Default styles */
+  .mobile-links .normal {
+    display: inline-block; /* or 'block', 'inline', or 'inline-block' based on your design */
   }
 
-     .customPDPheader{
-       display:flex;
-       justify-content: space-between;
-       background-color:#FFF;
-       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-     }
+  .mobile-links .highlight {
+    display: none;
+  }
 
-       @media only screen and (min-width: 768px) {
-        .customPDPheader{
-        display:none
-      }
-    }
+  /* Styles when 'active' class is present */
+  .mobile-links a.active .normal {
+    display: none;
+  }
 
-      .customPDPheader .logo{
-       display: flex;
-     align-items: center;
-     justify-content: center;
-     }
+  .mobile-links a.active .highlight {
+    display: inline-block; /* or any other display value you want when 'active' */
+  }
 
-  .customPDPheader .search-container{
-   display: flex;
-     align-items: center;
-     justify-content: end;
-    margin-right:0.75rem;
-    }
-     .customPDPheader .search-container .search{
-   margin-right:0.9rem;}
-     .customPDPheader .search-container div{
-   display: flex;
-    }
-   .customPDPheader .search-cart-bag-count{
-  position: absolute;
-  top: -3.2px;
-  right: -2.6px;
-  color: #FFF;
-  width: 0.9rem;
-  height: 0.9rem;
-  background: #E1595A;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 1rem;
-  font-size: 0.5rem;
-    }
+
+             .m-header span{
+            color: #FFF;
+            text-align: center;
+            font-family: Inter;
+            font-size: 0.625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1rem;
+            letter-spacing: 0.0125rem;
+            text-transform: capitalize;
+            }
+            .m-header a.active span{
+            font-weight:500;
+          }
+
+               .customPDPheader{
+                 display:flex;
+                 justify-content: space-between;
+                 background-color:#FFF;
+                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+               }
+
+                 @media only screen and (min-width: 768px) {
+                  .customPDPheader{
+                  display:none
+                }
+              }
+
+                .customPDPheader .logo{
+                 display: flex;
+               align-items: center;
+               justify-content: center;
+               }
+
+            .customPDPheader .search-container{
+             display: flex;
+               align-items: center;
+               justify-content: end;
+              margin-right:0.75rem;
+              }
+               .customPDPheader .search-container .search{
+             margin-right:0.9rem;}
+               .customPDPheader .search-container div{
+             display: flex;
+              }
+             .customPDPheader .search-cart-bag-count{
+            position: absolute;
+            top: -3.2px;
+            right: -2.6px;
+            color: #FFF;
+            width: 0.9rem;
+            height: 0.9rem;
+            background: #E1595A;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 1rem;
+            font-size: 0.5rem;
+              }
 </style>
 
 {% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %}
@@ -199,34 +218,52 @@
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
-      <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;">
+      <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
         <li class="mobile-links flex-box__item" data-link-url="/">
           <a href="/">
-            {% render 'svg-icons' with 'mobile-nav-home' %}
-            {% comment %}
-              <img
-                src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/dots.svg?v=1705494981"
-                class="positionLogo "
-              >
-            {% endcomment %}
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-home-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-home' %}
+            </div>
+
             <span> Home</span>
           </a>
         </li>
         <li class="mobile-links flex-box__item" data-link-url="/collections">
           <a href="/collections">
-            {% render 'svg-icons' with 'mobile-nav-category' %}
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-category-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-category' %}
+            </div>
+
             <span> Categories</span>
           </a>
         </li>
         <li class="mobile-links flex-box__item" data-link-url="/pages/circularity-mweb">
           <a href="/pages/circularity-mweb">
-            {% render 'svg-icons' with 'mobile-nav-circularity' %}
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-circularity-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-circularity' %}
+            </div>
+
             <span> Circularity</span>
           </a>
         </li>
         <li class="mobile-links flex-box__item" data-link-url="https://virgiofashion.myshopify.com/account/login">
           <a href="/account/login">
-            {% render 'svg-icons' with 'mobile-nav-account' %}
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-account-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-account' %}
+            </div>
+
             <span> Account</span>
           </a>
         </li>
@@ -275,62 +312,72 @@
 {%- endif -%}
 
 <script>
-       document.addEventListener('DOMContentLoaded', function () {
-         if (window.innerWidth <= 750) {
+         document.addEventListener('DOMContentLoaded', function () {
+           if (window.innerWidth <= 750) {
 
-
-    let prevScrollPos = window.pageYOffset;
-
-     window.onscroll = function() {
-       let currentScrollPos = window.pageYOffset;
-       let header = document.getElementById("header");
-  console.log("prevScrollPos",prevScrollPos)
-    console.log("currentScrollPos",currentScrollPos,prevScrollPos > currentScrollPos)
-    if(currentScrollPos < 200){
-        header.style.display = "block";
-         {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
-        return;
+      var currentUrl = window.location.href;
+      var navLinks = document.querySelectorAll('#mobile-header-custom a');
+  console.log("navLinks",navLinks)
+      for (var i = 0; i < navLinks.length; i++) {
+        console.log("Loop",navLinks[i].href,currentUrl)
+      if (navLinks[i].href === currentUrl) {
+        navLinks[i].classList.add('active');
+      }
     }
 
-       if (prevScrollPos > currentScrollPos) {
-         // User is scrolling up, show the header
-         header.style.display = "block";
-       } else {
-         // User is scrolling down, hide the header
-         header.style.display = "none"; // Adjust this value based on your header height
+
+      let prevScrollPos = window.pageYOffset;
+
+       window.onscroll = function() {
+         let currentScrollPos = window.pageYOffset;
+         let header = document.getElementById("header");
+    console.log("prevScrollPos",prevScrollPos)
+      console.log("currentScrollPos",currentScrollPos,prevScrollPos > currentScrollPos)
+      if(currentScrollPos < 200){
+          header.style.display = "block";
+           {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
+          return;
+      }
+
+         if (prevScrollPos > currentScrollPos) {
+           // User is scrolling up, show the header
+           header.style.display = "block";
+         } else {
+           // User is scrolling down, hide the header
+           header.style.display = "none"; // Adjust this value based on your header height
+         }
+
+         prevScrollPos = currentScrollPos;
        }
 
-       prevScrollPos = currentScrollPos;
-     }
 
+             var mobileLinks = document.getElementsByClassName('mobile-links');
+             var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+             var index = mobileLinksArrayConverted.findIndex(function (link) {
+               let arraySplit = window.location.pathname.split('/');
+               let urlpath = arraySplit[arraySplit.length - 1];
+               return link.dataset.linkUrl.indexOf(urlpath) > -1;
+             });
+             if (index > -1) {
+               var parentElement = mobileLinks[index];
+               var imgElement = parentElement.querySelector('.hide-logo');
+               imgElement.classList.remove('hide-logo');
+             }
+           }
+           const backElem = document.getElementById('back_btn');
 
-           var mobileLinks = document.getElementsByClassName('mobile-links');
-           var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-           var index = mobileLinksArrayConverted.findIndex(function (link) {
-             let arraySplit = window.location.pathname.split('/');
-             let urlpath = arraySplit[arraySplit.length - 1];
-             return link.dataset.linkUrl.indexOf(urlpath) > -1;
+           const liquidTemplate = {{ template|json }}
+
+           if(backElem) {
+           backElem.addEventListener('click', (e) => {
+             if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords')) {
+               window.location.href = "/"
+             } else {
+               history.back();
+             }
            });
-           if (index > -1) {
-             var parentElement = mobileLinks[index];
-             var imgElement = parentElement.querySelector('.hide-logo');
-             imgElement.classList.remove('hide-logo');
-           }
-         }
-         const backElem = document.getElementById('back_btn');
-
-         const liquidTemplate = {{ template|json }}
-
-         if(backElem) {
-         backElem.addEventListener('click', (e) => {
-           if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords')) {
-             window.location.href = "/"
-           } else {
-             history.back();
-           }
+          }
          });
-        }
-       });
 </script>
 
 {% schema %}
