@@ -331,8 +331,7 @@
        window.onscroll = function() {
          let currentScrollPos = window.pageYOffset;
          let header = document.getElementById("header");
-    console.log("prevScrollPos",prevScrollPos)
-      console.log("currentScrollPos",currentScrollPos,prevScrollPos > currentScrollPos)
+
       if(currentScrollPos < 200){
           header.style.display = "block";
            {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
@@ -346,7 +345,6 @@
            // User is scrolling down, hide the header
            header.style.display = "none"; // Adjust this value based on your header height
          }
-
          prevScrollPos = currentScrollPos;
        }
 
