@@ -210,7 +210,7 @@
       },
       "13225279708922339527": {
         "type": "shopify:\/\/apps\/stylevue\/blocks\/size\/a7bfd781-8ae4-456b-a71c-e804cdd270fd",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "product": ""
         }
@@ -1099,8 +1099,8 @@
     "custom_css": [
       "#navbar {background-color: white;}",
       "#dialogContainer {--stylevue-background: white; --stylevue-text: black; --stylevue-text-heading: black; --stylevue-text-light: black; --stylevue-primary: black; --stylevue-primary-accent: #ffffff; --stylevue-box-background: white;}",
-      "#openBtn{border-radius: 0px !important; color: #000000; border: 1px dotted #033161; background-color: #EDFAFF; }",
-      "#openBtn.recommend{color: #000000;background-color: #EDFAFF;}"
+      "#openBtn {border-radius: 0px !important; color: #000000; border: 1px dotted #033161; background-color: #edfaff;}",
+      "#openBtn.recommend {color: #000000; background-color: #edfaff;}"
     ]
   }
 }
