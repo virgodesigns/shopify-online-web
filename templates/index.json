@@ -611,12 +611,12 @@
         "slide_nrk3f4": {
           "type": "slide",
           "settings": {
-            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "slide_link": "shopify:\/\/collections\/date-collection",
             "video_background": true,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "video_hosted": "shopify:\/\/files\/videos\/Veronicas.mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080 (1).mp4",
             "subheading": "",
-            "heading": "The Veronicas",
+            "heading": "",
             "heading_size": "h1",
             "content": "",
             "description_size": "medium",
@@ -627,7 +627,7 @@
             "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "button_1_link": "shopify:\/\/collections\/date-collection",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
@@ -799,7 +799,6 @@
         },
         "collection_THAK7W": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "veronicas-all-collection"
           }
