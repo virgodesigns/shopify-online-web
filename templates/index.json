@@ -891,6 +891,7 @@
       "blocks": {
         "collection_ja9zbe": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Veronicas_1.png",
             "name": "The Veronicas",
