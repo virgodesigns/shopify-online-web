@@ -191,28 +191,34 @@
     </div>
   </div>
 {%- else -%}
-  <div class="thb-secondary-area mobile">
-    {% if template contains 'product' or template contains 'product.coords' %}
-      <a class="right-arrow-button" id="back_btn">
-        {% render 'home-icon' %}
+  {% if template contains 'product' or template contains 'product.coords' %}
+    <div class="thb-secondary-area mobile">
+      {% if template contains 'product' or template contains 'product.coords' %}
+        <a class="right-arrow-button" id="back_btn">
+          {% render 'home-icon' %}
+        </a>
+      {% endif %}
+      <a
+        class="mobile-search thb-quick-search"
+        href="{{ routes.search_url }}"
+        title="{{ 'sections.header.search' | t }}"
+      >
+        {%- render 'svg-icons' with 'search' -%}
       </a>
-    {% endif %}
-    <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
-      {%- render 'svg-icons' with 'search' -%}
-    </a>
-    <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
-      <div class="thb-secondary-item-icon">
-        {% render 'svg-icons' with 'cart' %}
-        <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
-          {%- if cart.item_count > 99 -%}
-            {%- render 'svg-icons' with 'thb-asterisk' -%}
-          {%- else -%}
-            <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
-          {%- endif -%}
-        </span>
-      </div>
-    </a>
-  </div>
+      <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
+        <div class="thb-secondary-item-icon">
+          {% render 'svg-icons' with 'cart' %}
+          <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
+            {%- if cart.item_count > 99 -%}
+              {%- render 'svg-icons' with 'thb-asterisk' -%}
+            {%- else -%}
+              <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
+            {%- endif -%}
+          </span>
+        </div>
+      </a>
+    </div>
+  {% endif %}
 {% endif %}
 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
