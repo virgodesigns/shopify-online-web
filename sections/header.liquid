@@ -57,10 +57,17 @@
                  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                }
 
+          .hide-mobile{
+                     display:none;
+                   }
+
                  @media only screen and (min-width: 768px) {
                   .customPDPheader{
                   display:none
                 }
+                   .hide-mobile{
+                     display:block;
+                   }
               }
 
                 .customPDPheader .logo{
@@ -191,34 +198,58 @@
     </div>
   </div>
 {%- else -%}
-  {% if template contains 'product' or template contains 'product.coords' %}
-    <div class="thb-secondary-area mobile">
-      {% if template contains 'product' or template contains 'product.coords' %}
-        <a class="right-arrow-button" id="back_btn">
-          {% render 'home-icon' %}
-        </a>
-      {% endif %}
-      <a
-        class="mobile-search thb-quick-search"
-        href="{{ routes.search_url }}"
-        title="{{ 'sections.header.search' | t }}"
-      >
-        {%- render 'svg-icons' with 'search' -%}
-      </a>
-      <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
-        <div class="thb-secondary-item-icon">
-          {% render 'svg-icons' with 'cart' %}
-          <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
-            {%- if cart.item_count > 99 -%}
-              {%- render 'svg-icons' with 'thb-asterisk' -%}
-            {%- else -%}
-              <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
-            {%- endif -%}
-          </span>
-        </div>
-      </a>
+  <header
+    id="header"
+    class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active hide-mobile"
+  >
+    <div class="row expanded">
+      <div class="small-12 columns" style="display:flex;">
+        {%- case style -%}
+          {%- when 'style1' -%}
+            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style2' -%}
+            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style3' -%}
+            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style4' -%}
+            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
+        {%- endcase -%}
+      </div>
     </div>
-  {% endif %}
+    {%- style -%}
+      :root {
+        --logo-height: {{ logo_height_range | append: 'px' }};
+        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      }
+      {% unless sticky_header %}
+      .header-section {
+        position: static !important;
+      }
+      {%- endunless -%}
+    {%- endstyle -%}
+  </header>
+  <div class="thb-secondary-area mobile">
+    {% if template contains 'product' or template contains 'product.coords' %}
+      <a class="right-arrow-button" id="back_btn">
+        {% render 'home-icon' %}
+      </a>
+    {% endif %}
+    <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
+      {%- render 'svg-icons' with 'search' -%}
+    </a>
+    <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
+      <div class="thb-secondary-item-icon">
+        {% render 'svg-icons' with 'cart' %}
+        <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
+          {%- if cart.item_count > 99 -%}
+            {%- render 'svg-icons' with 'thb-asterisk' -%}
+          {%- else -%}
+            <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
+          {%- endif -%}
+        </span>
+      </div>
+    </a>
+  </div>
 {% endif %}
 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
