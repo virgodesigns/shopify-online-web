@@ -611,10 +611,10 @@
         "slide_nrk3f4": {
           "type": "slide",
           "settings": {
-            "slide_link": "shopify:\/\/collections\/date-collection",
+            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
             "video_background": true,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080 (1).mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/Veronicas.mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1",
@@ -627,7 +627,7 @@
             "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify:\/\/collections\/date-collection",
+            "button_1_link": "shopify:\/\/collections\/veronicas-all-collection",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
@@ -773,6 +773,12 @@
             "collection": "born-to-shine"
           }
         },
+        "collection_THAK7W": {
+          "type": "collection",
+          "settings": {
+            "collection": "date-collection"
+          }
+        },
         "collection_PgeinW": {
           "type": "collection",
           "settings": {
@@ -797,12 +803,6 @@
             "collection": "poolside-splash"
           }
         },
-        "collection_THAK7W": {
-          "type": "collection",
-          "settings": {
-            "collection": "veronicas-all-collection"
-          }
-        },
         "collection_6tTwwR": {
           "type": "collection",
           "settings": {
@@ -813,11 +813,11 @@
       "block_order": [
         "collection_jNAe9t",
         "collection_bzdJwB",
+        "collection_THAK7W",
         "collection_PgeinW",
         "collection_d7bhXH",
         "collection_CYhiRM",
         "collection_LKMmep",
-        "collection_THAK7W",
         "collection_6tTwwR"
       ],
       "custom_css": [
