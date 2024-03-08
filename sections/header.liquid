@@ -11,102 +11,262 @@
 -%}
 
 <style>
-    {% if template contains 'product' %}
-        .header{
-          background:#000 !important;
-        }
-     {% endif %}
-    .hide-logo{
-    display:None
+                 {% comment %} {% if template contains 'product' %}
+                     .header{
+                       background:#000 !important;
+                     }
+                  {% endif %} {% endcomment %}
+  /* Default styles */
+  .mobile-links .normal {
+    display: inline-block; /* or 'block', 'inline', or 'inline-block' based on your design */
   }
-  .positionLogo{
-    position: absolute;
-   bottom: 6px; 
+
+  .mobile-links .highlight {
+    display: none;
   }
+
+  /* Styles when 'active' class is present */
+  .mobile-links a.active .normal {
+    display: none;
+  }
+
+  .mobile-links a.active .highlight {
+    display: inline-block; /* or any other display value you want when 'active' */
+  }
+
+
+             .m-header span{
+            color: #FFF;
+            text-align: center;
+            font-family: Inter;
+            font-size: 0.625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1rem;
+            letter-spacing: 0.0125rem;
+            text-transform: capitalize;
+            }
+            .m-header a.active span{
+            font-weight:500;
+          }
+
+               .customPDPheader{
+                 display:flex;
+                 justify-content: space-between;
+                 background-color:#FFF;
+                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+               }
+
+                 @media only screen and (min-width: 768px) {
+                  .customPDPheader{
+                  display:none
+                }
+              }
+
+                .customPDPheader .logo{
+                 display: flex;
+               align-items: center;
+               justify-content: center;
+               }
+
+            .customPDPheader .search-container{
+             display: flex;
+               align-items: center;
+               justify-content: end;
+              margin-right:0.75rem;
+              }
+               .customPDPheader .search-container .search{
+             margin-right:0.9rem;}
+               .customPDPheader .search-container div{
+             display: flex;
+              }
+             .customPDPheader .search-cart-bag-count{
+            position: absolute;
+            top: -3.2px;
+            right: -2.6px;
+            color: #FFF;
+            width: 0.9rem;
+            height: 0.9rem;
+            background: #E1595A;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 1rem;
+            font-size: 0.5rem;
+              }
 </style>
 
-
-<header
-  id="header"
-  class="header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
->
-  <div class="row expanded">
-    <div class="small-12 columns">
-      {%- case style -%}
-        {%- when 'style1' -%}
-          {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
-        {%- when 'style2' -%}
-          {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
-        {%- when 'style3' -%}
-          {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
-        {%- when 'style4' -%}
-          {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
-      {%- endcase -%}
+{% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %}
+  <header
+    id="header"
+    class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active"
+  >
+    <div class="row expanded">
+      <div class="small-12 columns" style="display:flex;">
+        {%- case style -%}
+          {%- when 'style1' -%}
+            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style2' -%}
+            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style3' -%}
+            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style4' -%}
+            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
+        {%- endcase -%}
+      </div>
+    </div>
+    {%- style -%}
+      :root {
+        --logo-height: {{ logo_height_range | append: 'px' }};
+        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      }
+      {% unless sticky_header %}
+      .header-section {
+        position: static !important;
+      }
+      {%- endunless -%}
+    {%- endstyle -%}
+  </header>
+{% elsif template contains 'product' or template contains 'product.coords' %}
+  <header
+    id="header"
+    class="pdp_header header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
+  >
+    <div class="row expanded">
+      <div class="small-12 columns">
+        {%- case style -%}
+          {%- when 'style1' -%}
+            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style2' -%}
+            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style3' -%}
+            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style4' -%}
+            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
+        {%- endcase -%}
+      </div>
+    </div>
+    {%- style -%}
+      :root {
+        --logo-height: {{ logo_height_range | append: 'px' }};
+        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      }
+      {% unless sticky_header %}
+      .header-section {
+        position: static !important;
+      }
+      {%- endunless -%}
+    {%- endstyle -%}
+  </header>
+  <div class="customPDPheader thb-secondary-area">
+    <a class="right-arrow-button customPDPheaderEqual" id="back_btn">
+      {% render 'back-icon-pdp' %}
+    </a>
+    <a href="/" class="customPDPheaderEqual logo">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/pdp-virgio-logo.svg?v=1708433812"
+        alt="virgio logo"
+      >
+    </a>
+    <div class="customPDPheaderEqual search-container">
+      <a
+        class="thb-quick-search"
+        href="{{ routes.search_url }}"
+        title="{{ 'sections.header.search' | t }}"
+      >
+        <div class="search">{%- render 'svg-icons' with 'search-pdp' -%}</div>
+      </a>
+      <a class="" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
+        <div class="thb-secondary-item-icon">
+          {% render 'svg-icons' with 'search-cart-bag' %}
+          <span class="search-cart-bag-count thb-item-count {% if cart != empty %} emptycart {% endif %}">
+            {%- if cart.item_count > 99 -%}
+              {%- render 'svg-icons' with 'thb-asterisk' -%}
+            {%- else -%}
+              <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
+            {%- endif -%}
+          </span>
+        </div>
+      </a>
     </div>
   </div>
-  {%- style -%}
-    :root {
-      --logo-height: {{ logo_height_range | append: 'px' }};
-      --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
-    }
-    {% unless sticky_header %}
-    .header-section {
-      position: static !important;
-    }
-    {%- endunless -%}
-  {%- endstyle -%}
-</header>
-<div class="thb-secondary-area mobile">
-  {% if template contains 'product' %}
-    <a class="right-arrow-button" href="javascript:history.back()">
-      {% render 'home-icon' %}
+{%- else -%}
+  <div class="thb-secondary-area mobile">
+    {% if template contains 'product' or template contains 'product.coords' %}
+      <a class="right-arrow-button" id="back_btn">
+        {% render 'home-icon' %}
+      </a>
+    {% endif %}
+    <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
+      {%- render 'svg-icons' with 'search' -%}
     </a>
-  {% endif %}
-  <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
-    {%- render 'svg-icons' with 'search' -%}
-  </a>
-  <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
-    <div class="thb-secondary-item-icon">
-      {% render 'svg-icons' with 'cart' %}
-      <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
-        {%- if cart.item_count > 99 -%}
-          {%- render 'svg-icons' with 'thb-asterisk' -%}
-        {%- else -%}
-          <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
-        {%- endif -%}
-      </span>
-    </div>
-  </a>
-</div>
-<mobile-header class="medium-hide large-up-hide  {% if template == 'product' %}header-hide{% endif %}">
+    <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
+      <div class="thb-secondary-item-icon">
+        {% render 'svg-icons' with 'cart' %}
+        <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
+          {%- if cart.item_count > 99 -%}
+            {%- render 'svg-icons' with 'thb-asterisk' -%}
+          {%- else -%}
+            <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
+          {%- endif -%}
+        </span>
+      </div>
+    </a>
+  </div>
+{% endif %}
+
+<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
-      <ul
-        class="flex-box flex-box--{{ section.settings.menu.links.size }}-col"
-        style="--grid-mobile-horizontal-spacing: 16px;"
-      >
-        {%- for link in section.settings.menu.links -%}
-          <li
-            class="mobile-links flex-box__item"
-            data-link-url="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
-          >
-            <a
-              href="{% if link.url == '/pages/circularity' %}/pages/circularity-mweb{% else %}{{ link.url }}{% endif %}"
-              {% if activeLink %}
-                aria-current="page"
-              {% endif %}
-            >
-              <div>
-                {% assign temp_title = link.title | handleize %}
-              </div>
-              <span> {{ link.title }}</span>
-              <img
-                src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/dots.svg?v=1705494981"
-                class="hide-logo  positionLogo "
-              >
-            </a>
-          </li>
-        {% endfor %}
+      <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
+        <li class="mobile-links flex-box__item" data-link-url="/">
+          <a href="/">
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-home-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-home' %}
+            </div>
+
+            <span> Home</span>
+          </a>
+        </li>
+        <li class="mobile-links flex-box__item" data-link-url="/collections">
+          <a href="/collections">
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-category-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-category' %}
+            </div>
+
+            <span> Categories</span>
+          </a>
+        </li>
+        <li class="mobile-links flex-box__item" data-link-url="/pages/circularity-mweb">
+          <a href="/pages/circularity-mweb">
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-circularity-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-circularity' %}
+            </div>
+
+            <span> Circularity</span>
+          </a>
+        </li>
+        <li class="mobile-links flex-box__item" data-link-url="https://virgiofashion.myshopify.com/account/login">
+          <a href="/account/login">
+            <div class="highlight">
+              {% render 'svg-icons' with 'mobile-nav-account-active' %}
+            </div>
+            <div class="normal">
+              {% render 'svg-icons' with 'mobile-nav-account' %}
+            </div>
+
+            <span> Account</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -152,23 +312,71 @@
 {%- endif -%}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.innerWidth <= 750) {
-      var mobileLinks = document.getElementsByClassName('mobile-links');
-      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-      var index = mobileLinksArrayConverted.findIndex(function (link) {
-        let arraySplit = window.location.pathname.split('/');
-        let urlpath = arraySplit[arraySplit.length - 1];
-        return link.dataset.linkUrl.indexOf(urlpath) > -1;
-      });
-      if (index > -1) {
-        var parentElement = mobileLinks[index];
-        var imgElement = parentElement.querySelector('.hide-logo');
-        imgElement.classList.remove('hide-logo');
+         document.addEventListener('DOMContentLoaded', function () {
+           if (window.innerWidth <= 750) {
+
+      var currentUrl = window.location.href;
+      var navLinks = document.querySelectorAll('#mobile-header-custom a');
+  console.log("navLinks",navLinks)
+      for (var i = 0; i < navLinks.length; i++) {
+        console.log("Loop",navLinks[i].href,currentUrl)
+      if (navLinks[i].href === currentUrl) {
+        navLinks[i].classList.add('active');
       }
     }
-  });
-  </script>
+
+
+      let prevScrollPos = window.pageYOffset;
+
+       window.onscroll = function() {
+         let currentScrollPos = window.pageYOffset;
+         let header = document.getElementById("header");
+
+      if(currentScrollPos < 200){
+          header.style.display = "block";
+           {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
+          return;
+      }
+
+         if (prevScrollPos > currentScrollPos) {
+           // User is scrolling up, show the header
+           header.style.display = "block";
+         } else {
+           // User is scrolling down, hide the header
+           header.style.display = "none"; // Adjust this value based on your header height
+         }
+         prevScrollPos = currentScrollPos;
+       }
+
+
+             var mobileLinks = document.getElementsByClassName('mobile-links');
+             var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+             var index = mobileLinksArrayConverted.findIndex(function (link) {
+               let arraySplit = window.location.pathname.split('/');
+               let urlpath = arraySplit[arraySplit.length - 1];
+               return link.dataset.linkUrl.indexOf(urlpath) > -1;
+             });
+             if (index > -1) {
+               var parentElement = mobileLinks[index];
+               var imgElement = parentElement.querySelector('.hide-logo');
+               imgElement.classList.remove('hide-logo');
+             }
+           }
+           const backElem = document.getElementById('back_btn');
+
+           const liquidTemplate = {{ template|json }}
+
+           if(backElem) {
+           backElem.addEventListener('click', (e) => {
+             if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords')) {
+               window.location.href = "/"
+             } else {
+               history.back();
+             }
+           });
+          }
+         });
+</script>
 
 {% schema %}
 {
