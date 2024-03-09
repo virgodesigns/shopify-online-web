@@ -20,7 +20,7 @@
           "type": "title",
           "settings": {
             "uppercase": true,
-            "show_products_rating": true
+            "show_products_rating": false
           }
         },
         "variant_picker": {
