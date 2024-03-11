@@ -1014,7 +1014,7 @@
         "color_bg": "#ffeddb",
         "color_text": "#000000",
         "color_links": "#151515",
-        "show_on_desktop": true,
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -1111,7 +1111,7 @@
         "para_bottom": "",
         "show_svg": false,
         "button_text": "",
-        "show_on_desktop": true,
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
