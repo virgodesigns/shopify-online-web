@@ -261,65 +261,13 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_LHQzMt": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_WkWbxy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.1_Dress_category_2.png",
-            "slide_link": "shopify:\/\/collections\/dresses-date",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_WkWbxy"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "mwidget_NAaUxK": {
       "type": "mwidget",
       "blocks": {
         "image_item_wfhHkc": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_6224.png",
+            "image": "shopify:\/\/shop_images\/1.png",
             "heading_text": "Dresses",
             "button_link": "shopify:\/\/collections\/dresses-date"
           }
@@ -327,7 +275,7 @@
         "image_item_8k6yQC": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.2_Topwear_category_img_1.png",
+            "image": "shopify:\/\/shop_images\/3.png",
             "heading_text": "Topwear",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
@@ -335,7 +283,7 @@
         "image_item_ABtpDQ": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
+            "image": "shopify:\/\/shop_images\/2.png",
             "heading_text": "Co-ord Sets",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
@@ -1329,7 +1277,6 @@
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
     "0c467e92-a72a-4749-a115-b39616437b6b",
-    "slideshow_LHQzMt",
     "mwidget_NAaUxK",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
