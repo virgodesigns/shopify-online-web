@@ -57,10 +57,17 @@
                  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                }
 
+          .hide-mobile{
+                     display:none;
+                   }
+
                  @media only screen and (min-width: 768px) {
                   .customPDPheader{
                   display:none
                 }
+                   .hide-mobile{
+                     display:block;
+                   }
               }
 
                 .customPDPheader .logo{
@@ -191,6 +198,36 @@
     </div>
   </div>
 {%- else -%}
+  <header
+    id="header"
+    class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active hide-mobile"
+  >
+    <div class="row expanded">
+      <div class="small-12 columns" style="display:flex;">
+        {%- case style -%}
+          {%- when 'style1' -%}
+            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style2' -%}
+            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style3' -%}
+            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
+          {%- when 'style4' -%}
+            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
+        {%- endcase -%}
+      </div>
+    </div>
+    {%- style -%}
+      :root {
+        --logo-height: {{ logo_height_range | append: 'px' }};
+        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+      }
+      {% unless sticky_header %}
+      .header-section {
+        position: static !important;
+      }
+      {%- endunless -%}
+    {%- endstyle -%}
+  </header>
   <div class="thb-secondary-area mobile">
     {% if template contains 'product' or template contains 'product.coords' %}
       <a class="right-arrow-button" id="back_btn">
@@ -215,7 +252,8 @@
   </div>
 {% endif %}
 
-<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
+
+<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
       <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
@@ -331,8 +369,7 @@
        window.onscroll = function() {
          let currentScrollPos = window.pageYOffset;
          let header = document.getElementById("header");
-    console.log("prevScrollPos",prevScrollPos)
-      console.log("currentScrollPos",currentScrollPos,prevScrollPos > currentScrollPos)
+
       if(currentScrollPos < 200){
           header.style.display = "block";
            {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
@@ -346,7 +383,6 @@
            // User is scrolling down, hide the header
            header.style.display = "none"; // Adjust this value based on your header height
          }
-
          prevScrollPos = currentScrollPos;
        }
 
