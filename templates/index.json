@@ -95,7 +95,7 @@
         "heading": "SHOP BY CATEGORY",
         "heading_left": false,
         "description": "",
-        "full_width": true,
+        "full_width": false,
         "product_limit": 8,
         "columns_desktop": 5,
         "show_view_all": true,
