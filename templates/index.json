@@ -248,6 +248,7 @@
       "block_order": [
         "slide_yVNL8q"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -255,6 +256,45 @@
         "autoplay": false,
         "autoplay_length": 5,
         "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_yxRDrG": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_XWtKFL": {
+          "type": "subheading",
+          "settings": {
+            "text": "SHOP BY"
+          }
+        },
+        "heading_aXFtm3": {
+          "type": "heading",
+          "settings": {
+            "text": "CATEGORY",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XWtKFL",
+        "heading_aXFtm3"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#000000",
+        "color_links": "#151515",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -1268,6 +1308,7 @@
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
     "0c467e92-a72a-4749-a115-b39616437b6b",
+    "rich_text_yxRDrG",
     "mwidget_NAaUxK",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
