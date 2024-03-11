@@ -658,112 +658,6 @@
         "show_on_mobile": true
       }
     },
-    "slideshow_3ANpL7": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_p7tQqU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_4.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
-        "slide_xA8GyA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2_5.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_dDgMBm": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3_5.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_p7tQqU",
-        "slide_xA8GyA",
-        "slide_dDgMBm"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "rich_text_RXHcJh": {
       "type": "rich-text",
       "blocks": {
@@ -970,6 +864,112 @@
         "button_url": "shopify:\/\/collections",
         "button_text": "",
         "carouselCardWidth": ""
+      }
+    },
+    "slideshow_3ANpL7": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_p7tQqU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_4.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        },
+        "slide_xA8GyA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_5.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_dDgMBm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_5.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_p7tQqU",
+        "slide_xA8GyA",
+        "slide_dDgMBm"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
@@ -1329,11 +1329,11 @@
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
-    "slideshow_3ANpL7",
     "rich_text_RXHcJh",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
     "featured_collection_BYnUMz",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
+    "slideshow_3ANpL7",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "slideshow_8PmRkL",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
