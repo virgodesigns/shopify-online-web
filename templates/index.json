@@ -99,7 +99,7 @@
         "product_limit": 8,
         "columns_desktop": 5,
         "show_view_all": true,
-        "show_progress_bar": true,
+        "show_progress_bar": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "margin_left_value": "10.89",
