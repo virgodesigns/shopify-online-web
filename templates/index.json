@@ -283,7 +283,7 @@
         "image_item_MLUAC8": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
             "heading_text": "Bottomwear",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
@@ -291,7 +291,7 @@
         "image_item_ABtpDQ": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
             "heading_text": "Co-ord Sets",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
