@@ -50,6 +50,121 @@
         "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
       }
     },
+    "collection_tabs_Fbjncb": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_7nXni4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-date"
+          }
+        },
+        "collection_3NfEi3": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-wear-date"
+          }
+        },
+        "collection_hqUEew": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottomwear-date"
+          }
+        },
+        "collection_W8aeqc": {
+          "type": "collection",
+          "settings": {
+            "collection": "co-ords-date"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7nXni4",
+        "collection_3NfEi3",
+        "collection_hqUEew",
+        "collection_W8aeqc"
+      ],
+      "custom_css": [
+        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
+        ".h3 {font-size: 24px;}",
+        ".section-header--button.has--tabs {margin-top: 0;}",
+        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
+        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
+      ],
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 8,
+        "columns_desktop": 5,
+        "show_view_all": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "10.89",
+        "overlay_gradient": "",
+        "show_on_desktop": true,
+        "show_on_mobile": false
+      }
+    },
+    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
+      "type": "collection-carousel",
+      "blocks": {
+        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lisa_haydon_8.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
+          }
+        },
+        "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_4.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+          }
+        },
+        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PARUL_GULATI_1.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords"
+          }
+        }
+      },
+      "block_order": [
+        "89304511-9896-4639-8a32-32a4b0ec2cc0",
+        "4becdef9-56f9-47a7-80fd-64c6a8892f80",
+        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
+      ],
+      "custom_css": [
+        "div {padding: 0px; font-size: 28px; font-weight: 600;}"
+      ],
+      "settings": {
+        "heading": "CELEB CORNER",
+        "bg_color": "#FFFFFF",
+        "heading_color": "#151515",
+        "name_color": "#ffffff",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
     "dcfc8ca7-af12-426a-8f5a-17f79d8c3253": {
       "type": "slideshow",
       "blocks": {
@@ -236,60 +351,6 @@
         "show_on_mobile": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
-      }
-    },
-    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
-      "type": "collection-carousel",
-      "blocks": {
-        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_8.png",
-            "name": "",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
-          }
-        },
-        "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_4.png",
-            "name": "",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
-          }
-        },
-        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PARUL_GULATI_1.png",
-            "name": "",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords"
-          }
-        }
-      },
-      "block_order": [
-        "89304511-9896-4639-8a32-32a4b0ec2cc0",
-        "4becdef9-56f9-47a7-80fd-64c6a8892f80",
-        "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
-      ],
-      "settings": {
-        "heading": "CELEB CORNER",
-        "bg_color": "#FFFFFF",
-        "heading_color": "#151515",
-        "name_color": "#ffffff",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "button_url": "",
-        "button_text": "",
-        "carouselCardWidth": ""
       }
     },
     "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
@@ -1476,72 +1537,15 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
-    },
-    "collection_tabs_Fbjncb": {
-      "type": "collection-tabs",
-      "blocks": {
-        "collection_7nXni4": {
-          "type": "collection",
-          "settings": {
-            "collection": "dresses-date"
-          }
-        },
-        "collection_3NfEi3": {
-          "type": "collection",
-          "settings": {
-            "collection": "top-wear-date"
-          }
-        },
-        "collection_hqUEew": {
-          "type": "collection",
-          "settings": {
-            "collection": "bottomwear-date"
-          }
-        },
-        "collection_W8aeqc": {
-          "type": "collection",
-          "settings": {
-            "collection": "co-ords-date"
-          }
-        }
-      },
-      "block_order": [
-        "collection_7nXni4",
-        "collection_3NfEi3",
-        "collection_hqUEew",
-        "collection_W8aeqc"
-      ],
-      "custom_css": [
-        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
-        ".h3 {font-size: 24px;}",
-        ".section-header--button.has--tabs {margin-top: 0;}",
-        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
-        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
-      ],
-      "settings": {
-        "heading": "SHOP BY CATEGORY",
-        "heading_left": false,
-        "description": "",
-        "full_width": true,
-        "product_limit": 8,
-        "columns_desktop": 5,
-        "show_view_all": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "margin_left_value": "10.89",
-        "overlay_gradient": "",
-        "show_on_desktop": true,
-        "show_on_mobile": false
-      }
     }
   },
   "order": [
     "16479477632637c9a7",
+    "collection_tabs_Fbjncb",
+    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "dcfc8ca7-af12-426a-8f5a-17f79d8c3253",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "slideshow_BBgkGm",
-    "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "0d74af2d-097d-4bfe-8103-91bea60148bb",
     "0c467e92-a72a-4749-a115-b39616437b6b",
@@ -1560,7 +1564,6 @@
     "slideshow_8PmRkL",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_RQ3bpV",
-    "slideshow_HL8m7z",
-    "collection_tabs_Fbjncb"
+    "slideshow_HL8m7z"
   ]
 }
