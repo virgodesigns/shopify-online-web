@@ -303,10 +303,10 @@
     "slideshow_MQn6Jh": {
       "type": "slideshow",
       "blocks": {
-        "slide_TnB8by": {
+        "slide_CbRU6m": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_1.png",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_8.png",
             "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -334,7 +334,7 @@
         "slide_8cy6WM": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_1.png",
+            "image": "shopify:\/\/shop_images\/PARUL_GULATI_2.png",
             "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -361,8 +361,11 @@
         }
       },
       "block_order": [
-        "slide_TnB8by",
+        "slide_CbRU6m",
         "slide_8cy6WM"
+      ],
+      "custom_css": [
+        "div {background-color: #ffeddb;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
