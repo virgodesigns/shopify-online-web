@@ -7,6 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
+            "mobile_image": "shopify:\/\/shop_images\/1._Hero_banner_c2e45879-6162-4523-80e5-5ffaba22723c.png",
             "slide_link": "shopify:\/\/collections\/spring-dream-collection",
             "video_background": true,
             "video": "",
@@ -21,7 +22,7 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "SHOP NOW",
+            "button_1_text": "",
             "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
             "button_1_outline": true,
             "button_1_underline": true,
@@ -37,13 +38,13 @@
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
+        "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 5,
         "transition": "fade",
         "show_on_desktop": true,
-        "show_on_mobile": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
@@ -461,6 +462,7 @@
         "slide_dRJwFB",
         "52301fcc-9455-47af-b905-8379efe6af79"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
