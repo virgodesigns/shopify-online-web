@@ -296,6 +296,7 @@
       "block_order": [
         "slide_WkWbxy"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -315,6 +316,14 @@
     "mwidget_NAaUxK": {
       "type": "mwidget",
       "blocks": {
+        "image_item_wfhHkc": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_6224.png",
+            "heading_text": "Dresses",
+            "button_link": "shopify:\/\/collections\/dresses-date"
+          }
+        },
         "image_item_8k6yQC": {
           "type": "image-item",
           "settings": {
@@ -334,13 +343,14 @@
         "image_item_MLUAC8": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
+            "image": "shopify:\/\/shop_images\/4.png",
             "heading_text": "Bottomwear",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
         }
       },
       "block_order": [
+        "image_item_wfhHkc",
         "image_item_8k6yQC",
         "image_item_ABtpDQ",
         "image_item_MLUAC8"
