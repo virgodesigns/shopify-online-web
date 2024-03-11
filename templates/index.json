@@ -353,106 +353,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
-      "type": "slideshow",
-      "blocks": {
-        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Less_is_MOre_1878e93c-93f8-41d8-8d65-8eef9e75cef7.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/9185922_1.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Know More",
-            "button_1_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1"
-      ],
-      "custom_css": [
-        ".main-slideshow .slideshow__slide-content .button {background-color: black;}",
-        "@media only screen and (max-width: 600px) {.main-slideshow .slideshow__slide-content .button {display: none; }}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "0d74af2d-097d-4bfe-8103-91bea60148bb": {
-      "type": "scrolling-text",
-      "blocks": {
-        "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "147ed3ad-dbe9-4668-9f28-39062c0b57a4": {
-          "type": "text",
-          "settings": {
-            "text": "Limited Edition Collection | Eco-Conscious | Hot Girl Summer",
-            "link": "",
-            "outline_text": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__0d74af2d-097d-4bfe-8103-91bea60148bb-text-1",
-        "147ed3ad-dbe9-4668-9f28-39062c0b57a4"
-      ],
-      "custom_css": [
-        "div {height: 32px;}",
-        " {font-weight: thin;}",
-        "span {font-weight: 300; font-size: 14px;}"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "left",
-        "speed": "20s",
-        "text_size": 16,
-        "text_uppercase": false,
-        "image_size": "small",
-        "color_bg": "#151515",
-        "color_text": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "0c467e92-a72a-4749-a115-b39616437b6b": {
       "type": "slideshow",
       "blocks": {
@@ -1145,7 +1045,7 @@
         "heading_left": false,
         "description": "",
         "full_width": true,
-        "product_limit": 6,
+        "product_limit": 8,
         "columns_desktop": 4,
         "show_view_all": true,
         "show_progress_bar": false,
@@ -1154,7 +1054,7 @@
         "disable_bottom_spacing": true,
         "margin_left_value": "10.89",
         "overlay_gradient": "",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true
       }
     },
@@ -1308,6 +1208,59 @@
         "transition": "fade",
         "show_on_desktop": false,
         "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Less_is_MOre_1878e93c-93f8-41d8-8d65-8eef9e75cef7.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/9185922_1.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Know More",
+            "button_1_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1"
+      ],
+      "custom_css": [
+        ".main-slideshow .slideshow__slide-content .button {background-color: black;}",
+        "@media only screen and (max-width: 600px) {.main-slideshow .slideshow__slide-content .button {display: none; }}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1513,8 +1466,6 @@
     "slideshow_KMFfTm",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "slideshow_BBgkGm",
-    "db7c3fd2-75c3-4d85-b865-9a233129c01e",
-    "0d74af2d-097d-4bfe-8103-91bea60148bb",
     "0c467e92-a72a-4749-a115-b39616437b6b",
     "slideshow_LHQzMt",
     "mwidget_NAaUxK",
@@ -1529,6 +1480,7 @@
     "collection_tabs_V4xyYe",
     "slideshow_3ANpL7",
     "slideshow_8PmRkL",
+    "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_RQ3bpV",
     "slideshow_HL8m7z"
