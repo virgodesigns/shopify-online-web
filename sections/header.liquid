@@ -45,9 +45,14 @@
             line-height: 1rem;
             letter-spacing: 0.0125rem;
             text-transform: capitalize;
+            opacity: 0.8;
             }
+           .m-header a .normal{
+            opacity: 0.8;
+          }
             .m-header a.active span{
             font-weight:500;
+            opacity: 1
           }
 
                .customPDPheader{
@@ -252,7 +257,8 @@
   </div>
 {% endif %}
 
-<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' %}header-hide{% endif %}">
+
+<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
     <nav role="navigation">
       <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
