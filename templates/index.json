@@ -296,34 +296,34 @@
         "89304511-9896-4639-8a32-32a4b0ec2cc0": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/polly.jpg",
-            "name": "Luxe Comfort",
+            "image": "shopify:\/\/shop_images\/lisa_haydon_8.png",
+            "name": "",
             "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/recycled-polyester"
+            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
           }
         },
         "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096427.png",
-            "name": "Breezy, Light and Gentle",
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_4.png",
+            "name": "",
             "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/cotton"
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
           }
         },
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096428.png",
-            "name": "Buttery-Soft and Lightweight",
+            "image": "shopify:\/\/shop_images\/PARUL_GULATI_1.png",
+            "name": "",
             "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/viscose"
+            "url": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords"
           }
         }
       },
@@ -333,13 +333,13 @@
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
       ],
       "settings": {
-        "heading": "Shop by Fabric",
-        "bg_color": "#151515",
-        "heading_color": "#ffffff",
+        "heading": "CELEB CORNER",
+        "bg_color": "#FFFFFF",
+        "heading_color": "#151515",
         "name_color": "#ffffff",
         "show_on_desktop": true,
         "show_on_mobile": false,
-        "button_url": "shopify:\/\/collections",
+        "button_url": "",
         "button_text": "",
         "carouselCardWidth": ""
       }
