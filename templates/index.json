@@ -100,6 +100,7 @@
         "columns_desktop": 5,
         "show_view_all": true,
         "show_progress_bar": false,
+        "bg_color": "#FFF",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "margin_left_value": "10.89",
@@ -293,7 +294,7 @@
       ],
       "settings": {
         "heading": "Other Collections",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "heading_color": "#151515",
         "name_color": "#151515",
         "show_on_desktop": true,
@@ -1064,13 +1065,13 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_faEerE": {
+    "slideshow_CPqhht": {
       "type": "slideshow",
       "blocks": {
-        "slide_bdTdRA": {
+        "slide_DLLef8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8_We_love_Fabrics_1.png",
+            "image": "shopify:\/\/shop_images\/fabric_1.jpg",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1082,7 +1083,7 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "content_size": "medium",
-            "overlay_color": "#000000",
+            "overlay_color": "#ffffff",
             "overlay_opacity": 0,
             "overlay_gradient": "",
             "button_1_text": "",
@@ -1097,97 +1098,64 @@
         }
       },
       "block_order": [
-        "slide_bdTdRA"
+        "slide_DLLef8"
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-image",
         "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
     },
-    "collection_carousel_Ypt6Qk": {
-      "type": "collection-carousel",
+    "collection_tabs_V4xyYe": {
+      "type": "collection-tabs",
       "blocks": {
-        "collection_iE77RU": {
+        "collection_Qe6XtQ": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Recycled_Polyester.png",
-            "name": "",
-            "subname": "Luxe Comfort",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/recycled-polyester"
+            "collection": "natural-fabrics"
           }
         },
-        "collection_kVWTmD": {
+        "collection_aWG4Gb": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cotton_ffc0b929-9f74-4c93-9c4f-7e4a8479c474.png",
-            "name": "",
-            "subname": "Breezy, Light and Gentle",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cotton"
-          }
-        },
-        "collection_CWBzQe": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Viscose_1.png",
-            "name": "",
-            "subname": "Buttery-Soft and Lightweight",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/viscose"
-          }
-        },
-        "collection_Xq4z7B": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Modal_198471d6-3fa2-4add-89c0-be3a21726d75.png",
-            "name": "",
-            "subname": "Feels Like Second Skin",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/modal"
-          }
-        },
-        "collection_t43xpN": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Lyocell_22a00b4a-07c6-482a-9383-ddfebd8bde77.png",
-            "name": "",
-            "subname": "Royally Cozy",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/tencel"
+            "collection": "recycled-fabrics"
           }
         }
       },
       "block_order": [
-        "collection_iE77RU",
-        "collection_kVWTmD",
-        "collection_CWBzQe",
-        "collection_Xq4z7B",
-        "collection_t43xpN"
+        "collection_Qe6XtQ",
+        "collection_aWG4Gb"
+      ],
+      "custom_css": [
+        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
+        ".h3 {font-size: 24px;}",
+        ".section-header--button.has--tabs {margin-top: 0;}",
+        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
+        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
       ],
       "settings": {
-        "heading": "",
+        "heading": "SHOP BY FABRIC",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 6,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "show_progress_bar": false,
         "bg_color": "#ffeddb",
-        "heading_color": "#000000",
-        "name_color": "#000000",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "10.89",
+        "overlay_gradient": "",
         "show_on_desktop": false,
-        "show_on_mobile": true,
-        "button_url": "",
-        "button_text": "",
-        "carouselCardWidth": "60"
+        "show_on_mobile": true
       }
     },
     "slideshow_3ANpL7": {
@@ -1557,8 +1525,8 @@
     "featured_collection_BYnUMz",
     "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
     "featured_collection_UbiGCE",
-    "slideshow_faEerE",
-    "collection_carousel_Ypt6Qk",
+    "slideshow_CPqhht",
+    "collection_tabs_V4xyYe",
     "slideshow_3ANpL7",
     "slideshow_8PmRkL",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
