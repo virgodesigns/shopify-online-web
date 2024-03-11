@@ -50,58 +50,6 @@
         "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
       }
     },
-    "717f49c0-b204-480f-8dce-b7f6cddf9195": {
-      "type": "slideshow",
-      "blocks": {
-        "5017a32f-370f-4073-b734-ec713057eb98": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
-            "slide_link": "shopify:\/\/pages\/circularity",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Circularity Desktop_2.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/circularity",
-            "button_1_outline": false,
-            "button_1_underline": false,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "5017a32f-370f-4073-b734-ec713057eb98"
-      ],
-      "custom_css": [
-        ".main-slideshow .slideshow__slide-content .button {background-color: black;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "dcfc8ca7-af12-426a-8f5a-17f79d8c3253": {
       "type": "slideshow",
       "blocks": {
@@ -1528,11 +1476,68 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "collection_tabs_Fbjncb": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_7nXni4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-date"
+          }
+        },
+        "collection_3NfEi3": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-wear-date"
+          }
+        },
+        "collection_hqUEew": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottomwear-date"
+          }
+        },
+        "collection_W8aeqc": {
+          "type": "collection",
+          "settings": {
+            "collection": "co-ords-date"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7nXni4",
+        "collection_3NfEi3",
+        "collection_hqUEew",
+        "collection_W8aeqc"
+      ],
+      "custom_css": [
+        ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
+        ".h3 {font-size: 24px;}",
+        ".section-header--button.has--tabs {margin-top: 0;}",
+        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
+        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
+      ],
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 8,
+        "columns_desktop": 5,
+        "show_view_all": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "margin_left_value": "10.89",
+        "overlay_gradient": "",
+        "show_on_desktop": true,
+        "show_on_mobile": false
+      }
     }
   },
   "order": [
     "16479477632637c9a7",
-    "717f49c0-b204-480f-8dce-b7f6cddf9195",
     "dcfc8ca7-af12-426a-8f5a-17f79d8c3253",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "slideshow_BBgkGm",
@@ -1555,6 +1560,7 @@
     "slideshow_8PmRkL",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_RQ3bpV",
-    "slideshow_HL8m7z"
+    "slideshow_HL8m7z",
+    "collection_tabs_Fbjncb"
   ]
 }
