@@ -302,99 +302,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "8b61fc5c-4397-4c69-93af-8b61a417cbf0": {
-      "type": "collection-carousel",
-      "blocks": {
-        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Veronicas_2.png",
-            "name": "Veronicas",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/veronicas-all-collection"
-          }
-        },
-        "collection_QKNKgb": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
-          }
-        },
-        "collection_eC7Qmf": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.png",
-            "name": "Newtro Twist",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/newtro-twist"
-          }
-        },
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
-            "name": "Whims & Fancies",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/whims-fancies"
-          }
-        },
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
-            "name": "Cityscape",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cityscape"
-          }
-        },
-        "collection_GzqYTr": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
-            "name": "#IDGAF",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/poolside-splash"
-          }
-        }
-      },
-      "block_order": [
-        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
-        "collection_QKNKgb",
-        "collection_eC7Qmf",
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d",
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b",
-        "collection_GzqYTr"
-      ],
-      "settings": {
-        "heading": "Other Collections",
-        "bg_color": "#ffffff",
-        "heading_color": "#151515",
-        "name_color": "#151515",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "button_url": "shopify:\/\/collections",
-        "button_text": "",
-        "carouselCardWidth": ""
-      }
-    },
     "0c467e92-a72a-4749-a115-b39616437b6b": {
       "type": "slideshow",
       "blocks": {
@@ -658,121 +565,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "rich_text_RXHcJh": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_eLYDNb": {
-          "type": "subheading",
-          "settings": {
-            "text": "COLLECTION IN"
-          }
-        },
-        "heading_Dcan6P": {
-          "type": "heading",
-          "settings": {
-            "text": "SPOTLIGHT",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_eLYDNb",
-        "heading_Dcan6P"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffeddb",
-        "color_text": "#000000",
-        "color_links": "#151515",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/6_The_Date_Banner_1a264d0b-300e-4277-9ba5-064cfdfa2722.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection_BYnUMz": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffeddb",
-        "button_url": "shopify:\/\/collections\/date-collection",
-        "button_text": "EXPLORE ECO-CHIC",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/date-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "date-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "slideshow_CPqhht": {
       "type": "slideshow",
       "blocks": {
@@ -864,6 +656,45 @@
         "overlay_gradient": "",
         "show_on_desktop": true,
         "show_on_mobile": true
+      }
+    },
+    "rich_text_RXHcJh": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_eLYDNb": {
+          "type": "subheading",
+          "settings": {
+            "text": "COLLECTION IN"
+          }
+        },
+        "heading_Dcan6P": {
+          "type": "heading",
+          "settings": {
+            "text": "SPOTLIGHT",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_eLYDNb",
+        "heading_Dcan6P"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#000000",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "slideshow_3ANpL7": {
@@ -1018,6 +849,175 @@
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
+      }
+    },
+    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_The_Date_Banner_1a264d0b-300e-4277-9ba5-064cfdfa2722.png",
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
+      ],
+      "custom_css": [
+        ".slideshow__slide {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 3,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_BYnUMz": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "bg_color": "#ffeddb",
+        "button_url": "shopify:\/\/collections\/date-collection",
+        "button_text": "EXPLORE ECO-CHIC",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "url": "shopify:\/\/collections\/date-collection",
+        "carouselCardWidth": "45",
+        "description": "",
+        "full_width": true,
+        "collection": "date-collection",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "8b61fc5c-4397-4c69-93af-8b61a417cbf0": {
+      "type": "collection-carousel",
+      "blocks": {
+        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Veronicas_2.png",
+            "name": "Veronicas",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/veronicas-all-collection"
+          }
+        },
+        "collection_QKNKgb": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
+            "name": "Born To Shine",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
+          }
+        },
+        "collection_eC7Qmf": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.png",
+            "name": "Newtro Twist",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/newtro-twist"
+          }
+        },
+        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
+            "name": "Whims & Fancies",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/whims-fancies"
+          }
+        },
+        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
+            "name": "Cityscape",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cityscape"
+          }
+        },
+        "collection_GzqYTr": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
+            "name": "#IDGAF",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/poolside-splash"
+          }
+        }
+      },
+      "block_order": [
+        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
+        "collection_QKNKgb",
+        "collection_eC7Qmf",
+        "57f80e1c-e1cd-4d69-9254-c8577faa337d",
+        "6c3b3605-3069-4325-bf42-e81b89d7f38b",
+        "collection_GzqYTr"
+      ],
+      "settings": {
+        "heading": "Other Collections",
+        "bg_color": "#ffffff",
+        "heading_color": "#151515",
+        "name_color": "#151515",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "button_url": "shopify:\/\/collections",
+        "button_text": "",
+        "carouselCardWidth": ""
       }
     },
     "db7c3fd2-75c3-4d85-b865-9a233129c01e": {
@@ -1322,19 +1322,19 @@
     "slideshow_KMFfTm",
     "rich_text_VtnfbU",
     "slideshow_BBgkGm",
-    "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "0c467e92-a72a-4749-a115-b39616437b6b",
     "slideshow_LHQzMt",
     "mwidget_NAaUxK",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
-    "rich_text_RXHcJh",
-    "7c2288b9-760f-41be-a885-02548bc5a5c3",
-    "featured_collection_BYnUMz",
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
+    "rich_text_RXHcJh",
     "slideshow_3ANpL7",
     "slideshow_8PmRkL",
+    "7c2288b9-760f-41be-a885-02548bc5a5c3",
+    "featured_collection_BYnUMz",
+    "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_RQ3bpV",
