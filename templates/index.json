@@ -100,7 +100,7 @@
         "columns_desktop": 5,
         "show_view_all": true,
         "show_progress_bar": false,
-        "bg_color": "#FFF",
+        "bg_color": "#ffffff",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "margin_left_value": "0",
@@ -235,7 +235,6 @@
         "subheading_nybKUr",
         "heading_MqiNhN"
       ],
-      "disabled": true,
       "custom_css": [
         "div {height: 100px;}",
         "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
@@ -245,9 +244,11 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -851,6 +852,45 @@
         "disable_bottom_spacing": true
       }
     },
+    "rich_text_RXHcJh": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_eLYDNb": {
+          "type": "subheading",
+          "settings": {
+            "text": "COLLECTION IN"
+          }
+        },
+        "heading_Dcan6P": {
+          "type": "heading",
+          "settings": {
+            "text": "SPOTLIGHT",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_eLYDNb",
+        "heading_Dcan6P"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#000000",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "7c2288b9-760f-41be-a885-02548bc5a5c3": {
       "type": "slideshow",
       "blocks": {
@@ -917,82 +957,6 @@
         "description": "",
         "full_width": true,
         "collection": "date-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/7_Veronicas_Banner_0bc5f1a9-cc17-4987-9ab1-d5643de57987.png",
-            "slide_link": "shopify:\/\/collections\/veronicas-all-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__1e9fb853-328f-4da2-a6c6-b4dea07bbc0e-slide-3"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "swipe",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection_UbiGCE": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffeddb",
-        "button_url": "shopify:\/\/collections\/veronicas-all-collection",
-        "button_text": "Explore Eco-Chic",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/veronicas-all-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "veronicas-all-collection",
         "display_type": "carousel",
         "product_limit": 8,
         "columns_desktop": 4,
@@ -1495,6 +1459,54 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "slideshow_aQQdbF": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_CnFAgX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Media_Spotlight_3.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_CnFAgX"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
@@ -1511,10 +1523,9 @@
     "cc265b0e-27de-4374-a086-654be84e48fe",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
+    "rich_text_RXHcJh",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
     "featured_collection_BYnUMz",
-    "1e9fb853-328f-4da2-a6c6-b4dea07bbc0e",
-    "featured_collection_UbiGCE",
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
     "slideshow_3ANpL7",
@@ -1522,6 +1533,7 @@
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_RQ3bpV",
-    "slideshow_HL8m7z"
+    "slideshow_HL8m7z",
+    "slideshow_aQQdbF"
   ]
 }
