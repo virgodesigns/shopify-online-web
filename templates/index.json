@@ -306,6 +306,34 @@
         "slide_CbRU6m": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/saiee_manjrekar_5.png",
+            "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_iyD8AR": {
+          "type": "slide",
+          "settings": {
             "image": "shopify:\/\/shop_images\/lisa_haydon_8.png",
             "slide_link": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve",
             "video_background": false,
@@ -335,7 +363,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/PARUL_GULATI_2.png",
-            "slide_link": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress",
+            "slide_link": "shopify:\/\/products\/veronicas-breezy-cotton-checked-co-ords",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -362,6 +390,7 @@
       },
       "block_order": [
         "slide_CbRU6m",
+        "slide_iyD8AR",
         "slide_8cy6WM"
       ],
       "custom_css": [
