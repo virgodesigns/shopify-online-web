@@ -99,7 +99,7 @@
         "columns_desktop": 5,
         "show_view_all": true,
         "show_progress_bar": false,
-        "bg_color": "#ffffff",
+        "bg_color": "#ffeddb",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "margin_left_value": "0",
@@ -155,7 +155,7 @@
       ],
       "settings": {
         "heading": "CELEB CORNER",
-        "bg_color": "#ffffff",
+        "bg_color": "#ffeddb",
         "heading_color": "#151515",
         "name_color": "#ffffff",
         "show_on_desktop": true,
@@ -203,94 +203,6 @@
       "settings": {
         "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "rich_text_VtnfbU": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_nybKUr": {
-          "type": "subheading",
-          "settings": {
-            "text": "COLLECTION IN"
-          }
-        },
-        "heading_MqiNhN": {
-          "type": "heading",
-          "settings": {
-            "text": "SPOTLIGHT",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_nybKUr",
-        "heading_MqiNhN"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
-      ],
-      "settings": {
-        "section_width": "grid",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "show_on_desktop": true,
-        "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_BBgkGm": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_6Ve9bX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Theme_Dev-Sect6_Parallax.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Explore now",
-            "button_1_link": "shopify:\/\/collections\/date-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_6Ve9bX"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
         "full_width": true,
         "autoplay": true,
         "autoplay_length": 5,
@@ -656,6 +568,45 @@
         "show_on_mobile": true
       }
     },
+    "rich_text_VtnfbU": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_nybKUr": {
+          "type": "subheading",
+          "settings": {
+            "text": "COLLECTION IN"
+          }
+        },
+        "heading_MqiNhN": {
+          "type": "heading",
+          "settings": {
+            "text": "SPOTLIGHT",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nybKUr",
+        "heading_MqiNhN"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "rich_text_RXHcJh": {
       "type": "rich-text",
       "blocks": {
@@ -691,6 +642,55 @@
         "color_links": "#151515",
         "show_on_desktop": false,
         "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "slideshow_BBgkGm": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6Ve9bX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_The_Date_Banner_2.png",
+            "slide_link": "shopify:\/\/collections\/date-collection",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Banner_1920x1080.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Explore now",
+            "button_1_link": "shopify:\/\/collections\/date-collection",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_6Ve9bX"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-full",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1318,8 +1318,6 @@
     "collection_tabs_Fbjncb",
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
-    "rich_text_VtnfbU",
-    "slideshow_BBgkGm",
     "0c467e92-a72a-4749-a115-b39616437b6b",
     "slideshow_LHQzMt",
     "mwidget_NAaUxK",
@@ -1327,7 +1325,9 @@
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
+    "rich_text_VtnfbU",
     "rich_text_RXHcJh",
+    "slideshow_BBgkGm",
     "7c2288b9-760f-41be-a885-02548bc5a5c3",
     "featured_collection_BYnUMz",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
