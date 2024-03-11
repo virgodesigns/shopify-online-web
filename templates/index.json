@@ -300,6 +300,34 @@
         "text_color": ""
       }
     },
+    "rich_text_RxPfji": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FTF7Gr": {
+          "type": "heading",
+          "settings": {
+            "text": "CELEB CORNER",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FTF7Gr"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "slideshow_MQn6Jh": {
       "type": "slideshow",
       "blocks": {
@@ -394,7 +422,7 @@
         "slide_8cy6WM"
       ],
       "custom_css": [
-        "div {background-color: #ffeddb;}"
+
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
@@ -1292,6 +1320,7 @@
     "slideshow_KMFfTm",
     "rich_text_yxRDrG",
     "mwidget_NAaUxK",
+    "rich_text_RxPfji",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "slideshow_CPqhht",
