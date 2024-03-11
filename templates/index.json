@@ -280,14 +280,6 @@
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
         },
-        "image_item_ABtpDQ": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
-            "heading_text": "Co-ord Sets",
-            "button_link": "shopify:\/\/collections\/co-ords-date"
-          }
-        },
         "image_item_MLUAC8": {
           "type": "image-item",
           "settings": {
@@ -295,13 +287,21 @@
             "heading_text": "Bottomwear",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
+        },
+        "image_item_ABtpDQ": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "heading_text": "Co-ord Sets",
+            "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
         }
       },
       "block_order": [
         "image_item_wfhHkc",
         "image_item_8k6yQC",
-        "image_item_ABtpDQ",
-        "image_item_MLUAC8"
+        "image_item_MLUAC8",
+        "image_item_ABtpDQ"
       ],
       "settings": {
         "main_heading": "",
