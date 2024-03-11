@@ -401,6 +401,7 @@
       "blocks": {
         "slide_dRJwFB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Women_s_Day_main_banner_1080x1620_1.png",
             "slide_link": "shopify:\/\/collections\/all",
