@@ -1134,10 +1134,10 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffffff",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
@@ -1216,7 +1216,7 @@
         "para_bottom": "",
         "show_svg": false,
         "button_text": "",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
