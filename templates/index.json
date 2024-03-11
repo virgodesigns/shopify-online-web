@@ -245,9 +245,9 @@
       ],
       "settings": {
         "heading": "Other Collections",
-        "bg_color": "#151515",
-        "heading_color": "#ffffff",
-        "name_color": "#ffffff",
+        "bg_color": "#FFFFFF",
+        "heading_color": "#151515",
+        "name_color": "#151515",
         "show_on_desktop": true,
         "show_on_mobile": false,
         "button_url": "shopify:\/\/collections",
