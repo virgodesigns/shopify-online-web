@@ -305,37 +305,26 @@
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0": {
       "type": "collection-carousel",
       "blocks": {
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
-            "name": "Whims & Fancies",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/whims-fancies"
-          }
-        },
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
-            "name": "Cityscape",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cityscape"
-          }
-        },
         "a5279dc3-0e75-450e-9f44-d11e8a0ed34e": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6._Wild_romance-1.jpg",
-            "name": "Wild Romance",
+            "image": "shopify:\/\/shop_images\/Veronicas_2.png",
+            "name": "Veronicas",
             "subname": "",
             "price": "",
             "strikePrice": "",
-            "url": "shopify:\/\/collections\/wild-romance"
+            "url": "shopify:\/\/collections\/veronicas-all-collection"
+          }
+        },
+        "collection_QKNKgb": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
+            "name": "Born To Shine",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/born-to-shine"
           }
         },
         "collection_eC7Qmf": {
@@ -349,8 +338,33 @@
             "url": "shopify:\/\/collections\/newtro-twist"
           }
         },
+        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
+            "name": "Whims & Fancies",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/whims-fancies"
+          }
+        },
+        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
+            "name": "Cityscape",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/cityscape"
+          }
+        },
         "collection_GzqYTr": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/IDGAF.jpg",
             "name": "#IDGAF",
@@ -359,26 +373,15 @@
             "strikePrice": "",
             "url": "shopify:\/\/collections\/poolside-splash"
           }
-        },
-        "collection_QKNKgb": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
-          }
         }
       },
       "block_order": [
+        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
+        "collection_QKNKgb",
+        "collection_eC7Qmf",
         "57f80e1c-e1cd-4d69-9254-c8577faa337d",
         "6c3b3605-3069-4325-bf42-e81b89d7f38b",
-        "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
-        "collection_eC7Qmf",
-        "collection_GzqYTr",
-        "collection_QKNKgb"
+        "collection_GzqYTr"
       ],
       "settings": {
         "heading": "Other Collections",
@@ -530,173 +533,6 @@
         "text_color": ""
       }
     },
-    "cc265b0e-27de-4374-a086-654be84e48fe": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1._Cherry_Crush_1.png",
-            "slide_link": "shopify:\/\/collections\/cherry-crush",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "95cdd355-0d62-4432-a39e-f29896ce300a": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2._sunny_side_up_1.png",
-            "slide_link": "shopify:\/\/collections\/sunny-side-up",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_RewRja": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3._cerulean_dreams.png",
-            "slide_link": "shopify:\/\/collections\/cerulean-dreams",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_R9PDXi": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4._sage_serenity_2.png",
-            "slide_link": "shopify:\/\/collections\/sage-serenity",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
-        "slide_idabbR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5._peony_perfection_1.png",
-            "slide_link": "shopify:\/\/collections\/peony-perfection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__cc265b0e-27de-4374-a086-654be84e48fe-slide-3",
-        "95cdd355-0d62-4432-a39e-f29896ce300a",
-        "slide_RewRja",
-        "slide_R9PDXi",
-        "slide_idabbR"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "slideshow_MQn6Jh": {
       "type": "slideshow",
       "blocks": {
@@ -777,35 +613,6 @@
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2": {
       "type": "slideshow",
       "blocks": {
-        "7f0130a8-7d0e-40ba-8011-c1b22d72af9a": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5_We_are_Virgio_1.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity-mweb",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        },
         "slide_yCjcCn": {
           "type": "slide",
           "settings": {
@@ -836,7 +643,6 @@
         }
       },
       "block_order": [
-        "7f0130a8-7d0e-40ba-8011-c1b22d72af9a",
         "slide_yCjcCn"
       ],
       "settings": {
@@ -1520,7 +1326,6 @@
     "0c467e92-a72a-4749-a115-b39616437b6b",
     "slideshow_LHQzMt",
     "mwidget_NAaUxK",
-    "cc265b0e-27de-4374-a086-654be84e48fe",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "rich_text_RXHcJh",
