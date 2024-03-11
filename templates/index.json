@@ -87,9 +87,7 @@
       "custom_css": [
         ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
         ".h3 {font-size: 24px;}",
-        ".section-header--button.has--tabs {margin-top: 0;}",
-        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
-        ".section-collection-tabs .products.carousel .columns.carousel__slide {padding-bottom: 1rem;}"
+        ".collection-tabs .section-header {margin-top: 0;}"
       ],
       "settings": {
         "heading": "SHOP BY CATEGORY",
