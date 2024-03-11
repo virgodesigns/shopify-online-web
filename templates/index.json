@@ -981,49 +981,40 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_8PmRkL": {
-      "type": "slideshow",
+    "rich_text_WLiWHk": {
+      "type": "rich-text",
       "blocks": {
-        "slide_BPUdE8": {
-          "type": "slide",
+        "subheading_zazyUe": {
+          "type": "subheading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_VirgioCircle_header_3.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
+            "text": "FEATURING"
+          }
+        },
+        "heading_WgyTXR": {
+          "type": "heading",
+          "settings": {
+            "text": "#VIRGIOCIRCLE",
+            "size": "h3"
           }
         }
       },
       "block_order": [
-        "slide_BPUdE8"
+        "subheading_zazyUe",
+        "heading_WgyTXR"
+      ],
+      "custom_css": [
+        "div {height: 100px;}",
+        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffeddb",
+        "color_text": "#000000",
+        "color_links": "#151515",
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -1120,7 +1111,7 @@
         "para_bottom": "",
         "show_svg": false,
         "button_text": "",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -1290,7 +1281,7 @@
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "slideshow_3ANpL7",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
-    "slideshow_8PmRkL",
+    "rich_text_WLiWHk",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_RQ3bpV",
     "slideshow_HL8m7z",
