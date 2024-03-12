@@ -482,11 +482,12 @@
         "image_gagKLe": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Group_237788.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
@@ -495,11 +496,26 @@
         "image_P33kUd": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Group_237790.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_AWiwLX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_237791.png",
+            "banner_link": "shopify:\/\/collections\/poolside-splash",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
@@ -556,16 +572,101 @@
             "use_text_button": false,
             "block_link": ""
           }
+        },
+        "image_bDYhyL": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_mFwQ7G": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_mD6fVc": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_pwzjNQ": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_xVyLRj": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_UdgB4J": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
         }
       },
       "block_order": [
         "image_PQe6R8",
         "image_gagKLe",
         "image_P33kUd",
+        "image_AWiwLX",
         "image_QCeH4L",
         "image_MQTdnn",
         "image_Brh9BJ",
-        "image_JpziA3"
+        "image_JpziA3",
+        "image_bDYhyL",
+        "image_mFwQ7G",
+        "image_mD6fVc",
+        "image_pwzjNQ",
+        "image_xVyLRj",
+        "image_UdgB4J"
       ],
       "settings": {
         "columns_desktop": 3,
