@@ -357,14 +357,240 @@
         "autoplay_length": 4,
         "transition": "fade",
         "show_on_desktop": true,
-        "show_on_mobile": true,
+        "show_on_mobile": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_4MX4F3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_c3JBQn": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop By Categories",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c3JBQn"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "mwidget_W9XH4M": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_j47W9K": {
+          "type": "image-item",
+          "settings": {
+            "heading_text": "Dresses",
+            "button_link": "shopify:\/\/collections\/dresses-date"
+          }
+        },
+        "image_item_NPyiVi": {
+          "type": "image-item",
+          "settings": {
+            "heading_text": "Topwear",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
+          }
+        },
+        "image_item_QHb3CA": {
+          "type": "image-item",
+          "settings": {
+            "heading_text": "Bottomwear",
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
+          }
+        },
+        "image_item_KLFkJL": {
+          "type": "image-item",
+          "settings": {
+            "heading_text": "Co-ords",
+            "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_j47W9K",
+        "image_item_NPyiVi",
+        "image_item_QHb3CA",
+        "image_item_KLFkJL"
+      ],
+      "settings": {
+        "main_heading": "",
+        "bg_color": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_MX8JkP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fdBJmi": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop By Collections",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fdBJmi"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "gallery_CUjiGh": {
+      "type": "gallery",
+      "blocks": {
+        "image_PQe6R8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_237789.png",
+            "banner_link": "",
+            "subheading": "",
+            "title": "The Date",
+            "text": "Sassy Styles For Date Nights",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "shopify:\/\/collections\/date-collection"
+          }
+        },
+        "image_gagKLe": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_P33kUd": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_QCeH4L": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_MQTdnn": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_Brh9BJ": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_JpziA3": {
+          "type": "image",
+          "settings": {
+            "banner_link": "",
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PQe6R8",
+        "image_gagKLe",
+        "image_P33kUd",
+        "image_QCeH4L",
+        "image_MQTdnn",
+        "image_Brh9BJ",
+        "image_JpziA3"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "section_width": "grid",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
       }
     }
   },
   "order": [
     "main",
-    "8e2aa702-a629-4a08-b4ab-75452deb5c89"
+    "8e2aa702-a629-4a08-b4ab-75452deb5c89",
+    "rich_text_4MX4F3",
+    "mwidget_W9XH4M",
+    "rich_text_MX8JkP",
+    "gallery_CUjiGh"
   ]
 }
