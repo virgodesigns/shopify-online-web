@@ -560,7 +560,8 @@
         ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
         ".h3 {font-size: 24px;}",
         ".collection-tabs .section-header {margin-top: 0;}",
-        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}"
+        ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
+        "@media only screen and (max-width: 767px){.section-collection-tabs .products.carousel .carousel__slide {width: calc(50vw - 19px);}}"
       ],
       "settings": {
         "heading": "SHOP BY FABRIC",
