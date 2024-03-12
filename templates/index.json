@@ -111,17 +111,6 @@
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
       "type": "collection-carousel",
       "blocks": {
-        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096569.png",
-            "name": "",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
-          }
-        },
         "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
           "type": "collection",
           "settings": {
@@ -131,6 +120,17 @@
             "price": "",
             "strikePrice": "",
             "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+          }
+        },
+        "89304511-9896-4639-8a32-32a4b0ec2cc0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096569.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
           }
         },
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
@@ -146,8 +146,8 @@
         }
       },
       "block_order": [
-        "89304511-9896-4639-8a32-32a4b0ec2cc0",
         "4becdef9-56f9-47a7-80fd-64c6a8892f80",
+        "89304511-9896-4639-8a32-32a4b0ec2cc0",
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
       ],
       "custom_css": [
