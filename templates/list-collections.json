@@ -387,7 +387,7 @@
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "mwidget_W9XH4M": {
