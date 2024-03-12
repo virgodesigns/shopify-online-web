@@ -465,14 +465,28 @@
     "gallery_CUjiGh": {
       "type": "gallery",
       "blocks": {
+        "image_DcDJir": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_date.png",
+            "banner_link": "",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
         "image_PQe6R8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_237789.png",
+            "image": "shopify:\/\/shop_images\/Spring_fling.png",
             "banner_link": "",
             "subheading": "",
-            "title": "The Date",
-            "text": "Sassy Styles For Date Nights",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": "",
             "use_text_button": false,
@@ -482,7 +496,7 @@
         "image_gagKLe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_237788.png",
+            "image": "shopify:\/\/shop_images\/The_Veronicas.png",
             "banner_link": "",
             "subheading": "",
             "title": "",
@@ -496,7 +510,7 @@
         "image_P33kUd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_237790.png",
+            "image": "shopify:\/\/shop_images\/Cherry_crush_04d2d42f-215f-4ae6-8c9e-9ef747c66367.png",
             "banner_link": "",
             "subheading": "",
             "title": "",
@@ -510,7 +524,7 @@
         "image_AWiwLX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_237791.png",
+            "image": "shopify:\/\/shop_images\/Sunny_slide_up.png",
             "banner_link": "shopify:\/\/collections\/poolside-splash",
             "subheading": "",
             "title": "",
@@ -524,128 +538,82 @@
         "image_QCeH4L": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Cerulean_Dreams_fd7fb684-6823-4d72-8ce6-16cbf4f8e29c.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
           }
         },
-        "image_MQTdnn": {
+        "image_dM9kQM": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Sage_Serenity.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
           }
         },
-        "image_Brh9BJ": {
+        "image_fR88cU": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
           }
         },
-        "image_JpziA3": {
+        "image_crrqJh": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/office_wear.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
           }
         },
-        "image_bDYhyL": {
+        "image_ncMXn4": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Evening_wear.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
           }
         },
-        "image_mFwQ7G": {
+        "image_UQ8JqD": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Day_wear.png",
             "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_mD6fVc": {
-          "type": "image",
-          "settings": {
-            "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_pwzjNQ": {
-          "type": "image",
-          "settings": {
-            "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_xVyLRj": {
-          "type": "image",
-          "settings": {
-            "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_UdgB4J": {
-          "type": "image",
-          "settings": {
-            "banner_link": "",
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
             "use_text_button": false,
             "block_link": ""
@@ -653,20 +621,17 @@
         }
       },
       "block_order": [
+        "image_DcDJir",
         "image_PQe6R8",
         "image_gagKLe",
         "image_P33kUd",
         "image_AWiwLX",
         "image_QCeH4L",
-        "image_MQTdnn",
-        "image_Brh9BJ",
-        "image_JpziA3",
-        "image_bDYhyL",
-        "image_mFwQ7G",
-        "image_mD6fVc",
-        "image_pwzjNQ",
-        "image_xVyLRj",
-        "image_UdgB4J"
+        "image_dM9kQM",
+        "image_fR88cU",
+        "image_crrqJh",
+        "image_ncMXn4",
+        "image_UQ8JqD"
       ],
       "settings": {
         "columns_desktop": 3,
