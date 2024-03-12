@@ -458,8 +458,8 @@
         "color_links": "#151515",
         "show_on_desktop": false,
         "show_on_mobile": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "gallery_CUjiGh": {
