@@ -357,14 +357,380 @@
         "autoplay_length": 4,
         "transition": "fade",
         "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "spacer_ftfyrK": {
+      "type": "spacer",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.shopify-ection{display: none; }}"
+      ],
+      "settings": {
+        "spacer_mobile": 40,
+        "spacer_desktop": 100,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "rich_text_4MX4F3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_c3JBQn": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop By Categories",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c3JBQn"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; font-weight: 600; margin-top: 40px;}",
+        ".rich-text__inner {padding: 0 0px;}"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "mwidget_W9XH4M": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_j47W9K": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dresses_ddb524a5-93bb-4cef-9fe5-3d8873a51c06.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/dresses-date"
+          }
+        },
+        "image_item_KLFkJL": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Co-Ords_83268d7f-9d3e-492c-8109-0820f13c8988.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/co-ords-date"
+          }
+        },
+        "image_item_QHb3CA": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bottomwear.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
+          }
+        },
+        "image_item_NPyiVi": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Topwear.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_j47W9K",
+        "image_item_KLFkJL",
+        "image_item_QHb3CA",
+        "image_item_NPyiVi"
+      ],
+      "settings": {
+        "main_heading": "",
+        "bg_color": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_MX8JkP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fdBJmi": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop By Collections",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fdBJmi"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; font-weight: 600; margin-top: 20px;}",
+        ".rich-text__inner {padding: 0 0px;}"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
+      }
+    },
+    "gallery_CUjiGh": {
+      "type": "gallery",
+      "blocks": {
+        "image_DcDJir": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_date.png",
+            "banner_link": "shopify:\/\/collections\/date-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_PQe6R8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring_fling.png",
+            "banner_link": "shopify:\/\/collections\/spring-dream-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_gagKLe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_Veronicas.png",
+            "banner_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_P33kUd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cherry_crush_04d2d42f-215f-4ae6-8c9e-9ef747c66367.png",
+            "banner_link": "shopify:\/\/collections\/cherry-crush",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_AWiwLX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sunny_slide_up.png",
+            "banner_link": "shopify:\/\/collections\/sunny-side-up",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_QCeH4L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cerulean_Dreams_fd7fb684-6823-4d72-8ce6-16cbf4f8e29c.png",
+            "banner_link": "shopify:\/\/collections\/cerulean-dreams",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_dM9kQM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sage_Serenity.png",
+            "banner_link": "shopify:\/\/collections\/sage-serenity",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_crrqJh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/office_wear.png",
+            "banner_link": "shopify:\/\/collections\/office-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_HtVt8X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/day-wear.png",
+            "banner_link": "shopify:\/\/collections\/day-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_t8rHGV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/party_wear.png",
+            "banner_link": "shopify:\/\/collections\/party-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_ncMXn4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Evening_wear.png",
+            "banner_link": "shopify:\/\/collections\/evening-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_UQ8JqD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vacation_wear.png",
+            "banner_link": "shopify:\/\/collections\/vacation-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_fR88cU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
+            "banner_link": "shopify:\/\/collections\/newtro-twist",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_kpHrN4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cityscape.png",
+            "banner_link": "shopify:\/\/collections\/cityscape",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_DcDJir",
+        "image_PQe6R8",
+        "image_gagKLe",
+        "image_P33kUd",
+        "image_AWiwLX",
+        "image_QCeH4L",
+        "image_dM9kQM",
+        "image_crrqJh",
+        "image_HtVt8X",
+        "image_t8rHGV",
+        "image_ncMXn4",
+        "image_UQ8JqD",
+        "image_fR88cU",
+        "image_kpHrN4"
+      ],
+      "custom_css": [
+        ".gallery-spacing--small .gallery__inner {grid-gap: 24px;"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "section_width": "grid",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false,
+        "show_on_desktop": false,
+        "show_on_mobile": true
       }
     }
   },
   "order": [
     "main",
-    "8e2aa702-a629-4a08-b4ab-75452deb5c89"
+    "8e2aa702-a629-4a08-b4ab-75452deb5c89",
+    "spacer_ftfyrK",
+    "rich_text_4MX4F3",
+    "mwidget_W9XH4M",
+    "rich_text_MX8JkP",
+    "gallery_CUjiGh"
   ]
 }
