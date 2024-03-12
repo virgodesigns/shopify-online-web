@@ -353,6 +353,8 @@ class Header {
         }
       }
     });
+
+   if(toggle){
     toggle.querySelector('.mobile-toggle').addEventListener('click', (e) => {
       setAnnouncementHeight(header);
       if (toggle.classList.contains('active')) {
@@ -369,6 +371,7 @@ class Header {
       }
       window.dispatchEvent(new Event('resize.resize-select'));
     });
+  }
 
     // Mobile Menu offset
     window.addEventListener('scroll', function () {
@@ -396,8 +399,10 @@ class Header {
       window.dispatchEvent(new Event('resize'));
     }
     // Buttons.
-    menu.querySelectorAll('summary').forEach(summary => summary.addEventListener('click', this.onSummaryClick.bind(this)));
-    menu.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
+    if(menu){
+      menu.querySelectorAll('summary').forEach(summary => summary.addEventListener('click', this.onSummaryClick.bind(this)));
+      menu.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
+    }
   }
   setAnnouncementHeight(a_bar) {
     let h = a_bar.clientHeight;
