@@ -402,7 +402,9 @@
              if (index > -1) {
                var parentElement = mobileLinks[index];
                var imgElement = parentElement.querySelector('.hide-logo');
-               imgElement.classList.remove('hide-logo');
+               if(imgElement){
+                imgElement.classList.remove('hide-logo');
+              }
              }
            }
            const backElem = document.getElementById('back_btn');
