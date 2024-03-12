@@ -433,7 +433,7 @@
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 5,
-        "transition": "swipe",
+        "transition": "slide",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
