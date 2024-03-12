@@ -396,28 +396,32 @@
         "image_item_j47W9K": {
           "type": "image-item",
           "settings": {
-            "heading_text": "Dresses",
+            "image": "shopify:\/\/shop_images\/Dresses_ddb524a5-93bb-4cef-9fe5-3d8873a51c06.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/dresses-date"
           }
         },
         "image_item_NPyiVi": {
           "type": "image-item",
           "settings": {
-            "heading_text": "Topwear",
+            "image": "shopify:\/\/shop_images\/Topwear.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
         },
         "image_item_QHb3CA": {
           "type": "image-item",
           "settings": {
-            "heading_text": "Bottomwear",
+            "image": "shopify:\/\/shop_images\/Bottomwear.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
         },
         "image_item_KLFkJL": {
           "type": "image-item",
           "settings": {
-            "heading_text": "Co-ords",
+            "image": "shopify:\/\/shop_images\/Co-Ords_83268d7f-9d3e-492c-8109-0820f13c8988.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
         }
