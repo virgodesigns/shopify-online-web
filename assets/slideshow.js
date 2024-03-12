@@ -424,7 +424,7 @@ class SlideShow {
       ".product-featured-image"
     )
     if(prodFeatImg){
-    let image_height = fprodFeatImg.clientHeight;
+    let image_height = prodFeatImg.clientHeight;
 
     flickity.cells.forEach((item, i) => {
       if (item.size.height > max_height) {
