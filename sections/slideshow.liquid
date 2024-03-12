@@ -254,25 +254,26 @@
 {%- if section.blocks[0].settings.video_background == true -%}
   <script>
    document.addEventListener('DOMContentLoaded', function() {
-   document.querySelector('#shopify-section-{{ section.id }} .fp-bg').innerHTML = `<div class="slideshow__slide-video-bg" data-provider="hosted" data-video-id="{{ video.id }}" style="visibility: visible">
-	{{ video | video_tag: autoplay: autoplay, loop: true, controls: false, muted: true }}
-							</div>`;
-   document.querySelector('#shopify-section-{{ section.id }} .fp-bg video').setAttribute('data-keepplaying', '');
+    var videoBg = document.querySelector('#shopify-section-{{ section.id }} .fp-bg');
+    if(videoBg){
+      document.querySelector('#shopify-section-{{ section.id }} .fp-bg').innerHTML = `<div class="slideshow__slide-video-bg" data-provider="hosted" data-video-id="{{ video.id }}" style="visibility: visible">{{ video | video_tag: autoplay: autoplay, loop: true, controls: false, muted: true }}</div>`;
+      document.querySelector('#shopify-section-{{ section.id }} .fp-bg video').setAttribute('data-keepplaying', '');
+    }
      });
   </script>
 {% else %}
   <style>
       #shopify-section-{{ section.id }} .fp-bg {
-    {% if section.blocks[0].settings.mobile_image != blank %}
+      {% if section.blocks[0].settings.mobile_image != blank %}
          background-image: url('{{ section.blocks[0].settings.mobile_image | image_url }}');
-        {% else %}
+      {% else %}
          background-image: url('{{ section.blocks[0].settings.image | image_url }}');
       {% endif %}
         background-size: cover;
         background-position: center 80%;
       }
 
-      @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       #shopify-section-{{ section.id }} .fp-bg {
          background-image: url('{{ section.blocks[0].settings.image | image_url }}');
       }
