@@ -194,7 +194,7 @@
 
   tabHeadings.forEach(tabHeading => {
     tabHeading.addEventListener('click', () => {
-      if (!tabVideo.paused) {
+      if (tabVideo && !tabVideo.paused) {
         tabVideo.pause();
       }
     });
