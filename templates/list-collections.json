@@ -385,6 +385,9 @@
       "block_order": [
         "heading_c3JBQn"
       ],
+      "custom_css": [
+        "h3 {font-size: 24px; font-weight: 600;}"
+      ],
       "settings": {
         "section_width": "grid",
         "text_width": "medium",
