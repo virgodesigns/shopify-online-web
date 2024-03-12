@@ -111,6 +111,17 @@
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
       "type": "collection-carousel",
       "blocks": {
+        "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096570.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
+          }
+        },
         "89304511-9896-4639-8a32-32a4b0ec2cc0": {
           "type": "collection",
           "settings": {
@@ -122,21 +133,10 @@
             "url": "shopify:\/\/products\/date-chic-corset-dress-with-flutter-sleeve"
           }
         },
-        "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_5.png",
-            "name": "",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/products\/veronicas-vintage-cotton-neck-tie-up-sheath-dress"
-          }
-        },
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PARUL_GULATI_1.png",
+            "image": "shopify:\/\/shop_images\/Frame_48096571.png",
             "name": "",
             "subname": "",
             "price": "",
@@ -146,8 +146,8 @@
         }
       },
       "block_order": [
-        "89304511-9896-4639-8a32-32a4b0ec2cc0",
         "4becdef9-56f9-47a7-80fd-64c6a8892f80",
+        "89304511-9896-4639-8a32-32a4b0ec2cc0",
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
       ],
       "custom_css": [
@@ -315,7 +315,7 @@
         "heading_FTF7Gr"
       ],
       "custom_css": [
-        ".h3 {margin-bottom: 1rem;}"
+        ".h3 {margin-bottom: 0; padding-bottom: 2rem; padding-top: 2rem;}"
       ],
       "settings": {
         "section_width": "full-width-row-full",
@@ -431,9 +431,9 @@
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-image",
         "full_width": true,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_length": 5,
-        "transition": "swipe",
+        "transition": "slide",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -778,7 +778,7 @@
         "columns_desktop": 4,
         "show_view_all": true,
         "mobile_swipe": true,
-        "show_progress_bar": true,
+        "show_progress_bar": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1077,14 +1077,6 @@
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148": {
       "type": "social-images-collections",
       "blocks": {
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096289.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/date-chic-red-lycra-satin-skirt?_pos=1&_psq=claret&_ss=e&_v=1.0"
-          }
-        },
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1": {
           "type": "social_image",
           "settings": {
@@ -1099,6 +1091,14 @@
             "image": "shopify:\/\/shop_images\/Frame_48096287_f7cb14aa-eca5-40c5-805e-b421f8ddf67a.jpg",
             "social_id": "",
             "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
+          }
+        },
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096289.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/date-chic-red-lycra-satin-skirt?_pos=1&_psq=claret&_ss=e&_v=1.0"
           }
         },
         "social_image_QwDgtt": {
@@ -1143,9 +1143,9 @@
         }
       },
       "block_order": [
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
         "social_image_pExG7k",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
         "social_image_QwDgtt",
         "social_image_LBa3rF",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
