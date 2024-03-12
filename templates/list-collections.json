@@ -365,7 +365,7 @@
     "spacer_ftfyrK": {
       "type": "spacer",
       "settings": {
-        "spacer_mobile": 50,
+        "spacer_mobile": 40,
         "spacer_desktop": 100,
         "border_separator": false,
         "border_separator_full": false
@@ -445,6 +445,15 @@
         "main_heading": "",
         "bg_color": "",
         "text_color": ""
+      }
+    },
+    "spacer_rmDrwx": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 100,
+        "border_separator": false,
+        "border_separator_full": false
       }
     },
     "rich_text_MX8JkP": {
@@ -718,6 +727,7 @@
     "spacer_ftfyrK",
     "rich_text_4MX4F3",
     "mwidget_W9XH4M",
+    "spacer_rmDrwx",
     "rich_text_MX8JkP",
     "gallery_CUjiGh"
   ]
