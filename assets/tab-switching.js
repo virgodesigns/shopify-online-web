@@ -31,14 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let relatedProductsContainer = document.querySelector(
     ".related-products__container"
   );
-  relatedProductsContainer.addEventListener("click", function () {
-    openPopup();
-  });
+  if(relatedProductsContainer){
+    relatedProductsContainer.addEventListener("click", function () {
+      openPopup();
+    });
+  }
 });
 
 async function fetchData() {
+  let productGroupId = document.querySelector(".group-id");
+  if(productGroupId){
   try {
-    let productGroupId = document.querySelector(".group-id");
     let groupId = productGroupId.getAttribute("data-group-id");
     let url = `https://api.virgio.com/shop/product/group/${groupId}`;
     let options = {
@@ -56,6 +59,7 @@ async function fetchData() {
   } catch (error) {
     console.error("An error occurred:", error);
   }
+}
 }
 
 // Function to generate HTML for products
