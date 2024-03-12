@@ -1077,14 +1077,6 @@
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148": {
       "type": "social-images-collections",
       "blocks": {
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096289.jpg",
-            "social_id": "",
-            "social_url": "https:\/\/virgio.com\/products\/date-chic-red-lycra-satin-skirt?_pos=1&_psq=claret&_ss=e&_v=1.0"
-          }
-        },
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1": {
           "type": "social_image",
           "settings": {
@@ -1099,6 +1091,14 @@
             "image": "shopify:\/\/shop_images\/Frame_48096287_f7cb14aa-eca5-40c5-805e-b421f8ddf67a.jpg",
             "social_id": "",
             "social_url": "shopify:\/\/products\/blue-lagoon-crossback-dress"
+          }
+        },
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096289.jpg",
+            "social_id": "",
+            "social_url": "https:\/\/virgio.com\/products\/date-chic-red-lycra-satin-skirt?_pos=1&_psq=claret&_ss=e&_v=1.0"
           }
         },
         "social_image_QwDgtt": {
@@ -1143,9 +1143,9 @@
         }
       },
       "block_order": [
-        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-1",
         "social_image_pExG7k",
+        "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-3",
         "social_image_QwDgtt",
         "social_image_LBa3rF",
         "template--21447364542761__57e4c19e-e72d-42fc-b2a5-f565d4d34148-social_image-2",
