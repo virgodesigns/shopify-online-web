@@ -1,7 +1,7 @@
 {{- 'product.css' | asset_url | stylesheet_tag -}}
 {{- 'coord-bunddle.css' | asset_url | stylesheet_tag -}}
 <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
 <div
   id="ProductInfo-{{ section.id }}"

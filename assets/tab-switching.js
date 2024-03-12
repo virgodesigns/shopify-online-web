@@ -10,7 +10,6 @@ class tabSwitching extends HTMLElement {
   }
   onChange(event) {
     let tabId = event.target.dataset.tab;
-    console.log("On Change", tabId);
 
     this.querySelectorAll(".tab--heading").forEach((tabs) => {
       tabs.classList.remove("is--active");
