@@ -563,10 +563,10 @@
             "block_link": ""
           }
         },
-        "image_fR88cU": {
+        "image_crrqJh": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
+            "image": "shopify:\/\/shop_images\/office_wear.png",
             "banner_link": "",
             "subheading": "",
             "title": "",
@@ -577,10 +577,24 @@
             "block_link": ""
           }
         },
-        "image_crrqJh": {
+        "image_HtVt8X": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/office_wear.png",
+            "image": "shopify:\/\/shop_images\/day-wear.png",
+            "banner_link": "",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_t8rHGV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/party_wear.png",
             "banner_link": "",
             "subheading": "",
             "title": "",
@@ -608,7 +622,35 @@
         "image_UQ8JqD": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Day_wear.png",
+            "image": "shopify:\/\/shop_images\/Vacation_wear.png",
+            "banner_link": "",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_fR88cU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
+            "banner_link": "",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_kpHrN4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cityscape.png",
             "banner_link": "",
             "subheading": "",
             "title": "",
@@ -628,10 +670,16 @@
         "image_AWiwLX",
         "image_QCeH4L",
         "image_dM9kQM",
-        "image_fR88cU",
         "image_crrqJh",
+        "image_HtVt8X",
+        "image_t8rHGV",
         "image_ncMXn4",
-        "image_UQ8JqD"
+        "image_UQ8JqD",
+        "image_fR88cU",
+        "image_kpHrN4"
+      ],
+      "custom_css": [
+        ".gallery-spacing--small .gallery__inner {grid-gap: 24px;"
       ],
       "settings": {
         "columns_desktop": 3,
