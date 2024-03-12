@@ -482,14 +482,14 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/The_date.png",
-            "banner_link": "",
+            "banner_link": "shopify:\/\/collections\/date-collection",
             "subheading": "",
             "title": "",
             "text": "",
             "link_label": "",
             "link": "",
             "use_text_button": false,
-            "block_link": "shopify:\/\/collections\/date-collection"
+            "block_link": ""
           }
         },
         "image_PQe6R8": {
