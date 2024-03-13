@@ -418,11 +418,13 @@ class SlideShow {
     animations[i].timeScale(3).reverse();
   }
   centerArrows(flickity, slideshow, prev_button, next_button) {
-    let first_cell = flickity.cells[0],
-      max_height = 0,
-      image_height = first_cell.element.querySelector(
-        ".product-featured-image"
-      ).clientHeight;
+    let first_cell = flickity.cells[0];
+    let max_height = 0;
+    let prodFeatImg = first_cell.element.querySelector(
+      ".product-featured-image"
+    )
+    if(prodFeatImg){
+    let image_height = prodFeatImg.clientHeight;
 
     flickity.cells.forEach((item, i) => {
       if (item.size.height > max_height) {
@@ -436,6 +438,7 @@ class SlideShow {
       prev_button.style.transform = "translateY(" + difference + "px)";
       next_button.style.transform = "translateY(" + difference + "px)";
     }
+  }
   }
 }
 if (typeof SlideShow !== "undefined") {

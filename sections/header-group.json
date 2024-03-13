@@ -49,7 +49,7 @@
         "sticky_header": true,
         "logo": "shopify:\/\/shop_images\/Frame_3624.png",
         "logo_height_range": 42,
-        "logo_height_range_mobile": 30,
+        "logo_height_range_mobile": 40,
         "style": "style1",
         "header_shadow": "header--shadow-none",
         "menu": "main-menu",
