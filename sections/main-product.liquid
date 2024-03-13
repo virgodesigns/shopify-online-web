@@ -212,8 +212,8 @@
                             data-h="{{ featured_media.height }}"
                             data-w="{{ featured_media.width }}"
                             target="_blank"
-                            tabindex="-1"
                             data-index="{{ image_index }}"
+                             tabindex="-1"
                           >
                             {%- render 'svg-icons' with 'zoom' -%}
                           </a>
@@ -273,11 +273,12 @@
                                   data-h="{{ media.height }}"
                                   data-w="{{ media.width }}"
                                   target="_blank"
-                                  tabindex="-1"
+                                  
                                   {%- if alt != blank and display_captions -%}
                                     title="{{ alt | escape }}"
                                   {%- endif -%}
                                   data-index="{{ image_index }}"
+                                  tabindex="-1"
                                 >
                                   {%- render 'svg-icons' with 'zoom' -%}
                                 </a>
