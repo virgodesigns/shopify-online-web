@@ -1,6 +1,6 @@
-<link rel="preload" as="style" href="{{ 'app.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'app.css' | asset_url }}">
 {% if template contains 'product' -%}
-<link rel="preload" as="style" href="{{ 'product.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'product.css' | asset_url }}">
 {% liquid
 	if product.selected_or_first_available_variant.featured_media.preview_image
 		assign image = product.selected_or_first_available_variant.featured_media.preview_image
