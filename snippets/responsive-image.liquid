@@ -56,7 +56,6 @@
   <img
     width="{{ image.width }}"
     height="{{ image.height }}"
-    sizes="auto"
     src="{{- image.src | img_url: image_sizes[0], crop: 'center' -}}"
     srcset="{{ srcset | slice: 0, l | strip_newlines }}"
     alt="{{ image.alt | escape }}"
