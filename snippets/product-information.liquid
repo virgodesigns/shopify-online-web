@@ -20,7 +20,7 @@
         {{ block.settings.custom_liquid }}
       {%- when 'title' -%}
         <div class="product-title-container" {{ block.shopify_attributes }}>
-          <h1 class="product-title">
+          <div class="product-title">
             {% assign title_words = product.title | split: '|' %}
             <div class="card_container">
               <span class="product-tittle-first_word">{{ title_words[0] }}</span>
@@ -50,7 +50,7 @@
                 {{ title_words[i] }}
               {% endfor %}
             </p>
-          </h1>
+          </div>
 
           <div class="product-price-container">
             <div class="no-js-hidden" id="price-{{ section.id }}">
@@ -186,7 +186,9 @@
                    <modal-dialog id="PopupModal-{{ product.id }}" class="product-popup-modal">
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
-                            <h5>{{ block.settings.sizing_guide_page.title }}</h5>
+                             {% if  block.settings.sizing_guide_page.title != blank %} 
+                             <h5>{{ block.settings.sizing_guide_page.title }}</h5>
+                             {% endif %}
                             <div class="size-chart-header"><div class="head">Size Chart </div></div>
                             <button id="ModalClose-{{ product.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}"><div class = "close-button">{% render 'svg-icons' with 'close-size' %}</div></button>
                          </div>
@@ -264,22 +266,22 @@
       {%- when 'side_panel' -%}
         <div class="side-panel-links">
           {%- if block.settings.side_panel_1_label != '' -%}
-            <button class="side-panel-links--link ">
+            <div class="side-panel-links--link ">
               {% render 'svg-icons-inline', icon: block.settings.side_panel_1_icon -%}
               <div class="text_button">{{ block.settings.side_panel_1_label }}</div>
-            </button>
+            </div>
           {%- endif -%}
           {%- if block.settings.side_panel_2_label != '' -%}
-            <button class="side-panel-links--link no-js-hidden">
+            <div class="side-panel-links--link no-js-hidden">
               {% render 'svg-icons-inline', icon: block.settings.side_panel_2_icon -%}
               <div class="text_button">{{ block.settings.side_panel_2_label }}</div>
-            </button>
+            </div>
           {%- endif -%}
           {%- if block.settings.side_panel_3_label != '' -%}
-            <button class="side-panel-links--link no-js-hidden">
+            <div class="side-panel-links--link no-js-hidden">
               {% render 'svg-icons-inline', icon: block.settings.side_panel_3_icon -%}
               <div class="text_button">{{ block.settings.side_panel_3_label }}</div>
-            </button>
+            </div>
           {%- endif -%}
         </div>
       {%- when 'buy_buttons' -%}
