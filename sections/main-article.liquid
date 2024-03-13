@@ -84,7 +84,7 @@
 				          {% for comment in article.comments %}
 				            <li class="comment">
 				              <div class="comment-body">
-												<img data-src="https://www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=200" class="avatar lazyload" alt="{{ comment.author | escape }}" width="100" height="100" />
+												<img src="" data-src="https://www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=200" class="avatar lazyload" alt="{{ comment.author | escape }}" width="100" height="100" />
 				                <div class="comment-author">
 				                  <cite class="fn">{{ comment.author }}</cite> — <a href="{{ comment.url }}" class="comment-meta">{{ comment.created_at | date: "%B %d, %Y" }}</a>
 				                </div>

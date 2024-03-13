@@ -86,6 +86,7 @@
                     endif
                   -%}
                   <img
+                    src=""
                     data-src="{{ image | image_url }}"
                     class="lazyload {{ class }}{% unless settings.lazy_loading %} no-blur{% endunless %}"
                     width="{{ image.src.width }}"
@@ -100,6 +101,7 @@
                     assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
                   -%}
                   <img
+                    src=""
                     data-src="{{ image | image_url }}"
                     class="lazyload slideshow-image--mobile{% unless settings.lazy_loading %} no-blur{% endunless %}"
                     width="{{ image.src.width }}"

@@ -22,7 +22,7 @@
 			<div class="text-with-icons__block {% if block.settings.text != blank %} has-no-content{% endif %}">
 				<div class="text-with-icons__icon">
 					{%- if block.settings.image != blank -%}
-					<img data-src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" class="lazyload" />
+					<img src="" data-src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" class="lazyload" />
 					<noscript>
 					<img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" />
 					</noscript>
