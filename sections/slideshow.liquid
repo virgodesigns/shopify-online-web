@@ -190,7 +190,7 @@
                 </div>
               {%- endif -%}
             {%- endif -%}
-            <div class="slideshow__slide-overlay" style="background: {{ block.settings.overlay_gradient }}"></div>
+            <div class="slideshow__slide-overlay" {% if block.settings.overlay_gradient != blank %} style="background: {{ block.settings.overlay_gradient }}" {%  endif %}></div>
             <div class="slideshow__slide-inner content-{{ content_position }}">
               <div class="slideshow__slide-content">
                 <a href="{{ block.settings.button_1_link }}">

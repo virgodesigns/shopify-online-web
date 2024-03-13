@@ -52,7 +52,7 @@
       "
     >
       {% for block in section.blocks %}
-        <div class="flex-box__item" style="{% if section.settings.carouselCardWidth  %}flex-basis: {{section.settings.carouselCardWidth}}%{% endif %};">
+        <div class="flex-box__item" style="{% if section.settings.carouselCardWidth != blank  %}flex-basis: {{section.settings.carouselCardWidth}}%{% endif %};">
           {% if block.settings.url %}
             <a href="{{ block.settings.url }}">
           {% endif %}

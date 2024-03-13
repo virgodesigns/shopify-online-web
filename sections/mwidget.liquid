@@ -2,7 +2,7 @@
   {% assign image_count = 0 %}
   <div style="background-color:{{ section.settings.bg_color }}">
     {% if section.settings.main_heading != blank %}
-      <div class="widget__heading" style="color:{{ section.settings.text_color }}">
+      <div class="widget__heading" {% if section.settings.text_color != blank -%} style="color:{{ section.settings.text_color }}"  {% endif %}>
         {{ section.settings.main_heading }}
       </div>
     {% endif %}
@@ -20,7 +20,7 @@
                   %}
                 </div>
                 {% assign image_count = image_count | plus: 1 %}
-                <div class="image-text__heading heading-{{ block.id }}" style="color:{{ section.settings.text_color }}">
+                <div class="image-text__heading heading-{{ block.id }}"  {% if section.settings.text_color != blank -%} style="color:{{ section.settings.text_color }}"  {% endif %}>
                   {{ block.settings.heading_text }}
                 </div>
               </a>
