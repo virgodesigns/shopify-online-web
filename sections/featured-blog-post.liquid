@@ -12,10 +12,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row{% endif %}">
   <div class="small-12 columns">
-    <div
-      style="background-color: {{section.settings.bg_color}}"
-      class="blog-posts section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"
-    >
+    <div class="blog-posts section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
       {% render 'section-header',
         section_heading: section_heading,
         section_description: section_description,
