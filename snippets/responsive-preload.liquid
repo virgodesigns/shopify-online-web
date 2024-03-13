@@ -9,7 +9,7 @@
       {%- assign small_x = size_array[1] | times: 20 | divided_by: size_array[0] | floor -%}
       {%- assign small_size = small_size | append: small_x -%}
     {%- endif -%}
-    {{- image.src | img_url: size_x, crop: 'center' }} {{ size_array[0] }}w,
+    {{- image.src | image_url: size_x, crop: 'center' }} {{ size_array[0] }}w,
   {%- endfor -%}
 {%- endcapture -%}
 {%- assign l = srcset | size | minus: 1 -%}
