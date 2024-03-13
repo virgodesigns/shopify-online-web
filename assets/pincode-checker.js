@@ -3,7 +3,7 @@ const checkButton = document.querySelector(".pin-check-button");
 const alertMessage = document.querySelector(".alert_message");
 const productStyleId = document.querySelector('.style-id');
 const styleId = productStyleId.getAttribute('data-style-id');
-const urlLocation = "https://api.virgio.com/shop/delivery/eta/";
+const urlLocation = "https://api.damocles.co.in/shop/delivery/eta/";
 checkButton.addEventListener("click", () => {
   let pincode = pincodeInput.value.trim();
   if (!pincode || pincode.length !== 6 || isNaN(pincode)) {
