@@ -1173,6 +1173,9 @@
     },
     "featured_blog_post_eEtyF7": {
       "type": "featured-blog-post",
+      "custom_css": [
+        ".row {background-color: #ffeddb;}"
+      ],
       "settings": {
         "heading": "From The Editor's Desk",
         "heading_left": false,
