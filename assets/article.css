@@ -49,7 +49,9 @@
     .blog-post-detail .post-title {
       margin-bottom: 55px; } }
   .blog-post-detail .post-title .entry-title {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    line-height: 2.4rem; }
 
 .blog-post-detail .featured-image {
   margin-left: -15px;
@@ -101,6 +103,11 @@
   .blog-post-detail .post-content p + h5,
   .blog-post-detail .post-content p + h6 {
     margin-top: 40px; }
+
+  .blog-post-detail .post-content p + h3 {
+    font-size: 19px;
+    margin-top: 40px;
+    font-weight: 700; }
 
 .blog-post-detail .article-tags {
   margin-top: 30px; }
