@@ -35,15 +35,15 @@
                     {% assign fabricTabData = tabContent.scale %}
                     {% for fabric in fabricTabData %}
                       <div class="circle_card-container">
-                        <span class="scale_value">{{ fabric.key }}</span>
-                        <span>
+                        <div class="scale_value">{{ fabric.key }}</div>
+                        <div>
                           {% assign circledots = fabric.value | plus: 0 %}
                           {% for circledot in (1..5) %}
-                            <span class="circle {% if circledot == circledots %} circle_fill {% endif %}">
+                            <div class="circle {% if circledot == circledots %} circle_fill {% endif %}">
                               {% unless forloop.last %}<div class="circle-line"></div>{% endunless %}
-                            </span>
+                            </div>
                           {% endfor %}
-                        </span>
+                        </div>
                         <br>
                       </div>
                     {% endfor %}
