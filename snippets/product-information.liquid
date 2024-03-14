@@ -1,7 +1,10 @@
 {{- 'product.css' | asset_url | stylesheet_tag -}}
 {{- 'coord-bunddle.css' | asset_url | stylesheet_tag -}}
+
+{{- 'ratings-reviews.css' | asset_url | stylesheet_tag -}}
+
 <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
-{% comment %} <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+<script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
 
 <div
   id="ProductInfo-{{ section.id }}"
@@ -20,7 +23,7 @@
         {{ block.settings.custom_liquid }}
       {%- when 'title' -%}
         <div class="product-title-container" {{ block.shopify_attributes }}>
-          <div class="product-title">
+          <h1 class="product-title">
             {% assign title_words = product.title | split: '|' %}
             <div class="card_container">
               <span class="product-tittle-first_word">{{ title_words[0] }}</span>
@@ -50,7 +53,7 @@
                 {{ title_words[i] }}
               {% endfor %}
             </p>
-          </div>
+          </h1>
 
           <div class="product-price-container">
             <div class="no-js-hidden" id="price-{{ section.id }}">
@@ -58,15 +61,7 @@
             </div>
           </div>
 
-          {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
-            <a class="star-rating-container" href="#shopify-product-reviews">
-              <div
-                class="star-rating"
-                style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"
-              ></div>
-              <span>{{ 'products.product.reviews' | t: count: product.metafields.reviews.rating_count }}</span>
-            </a>
-          {%- endif -%}
+          
         </div>
       {%- when 'description' -%}
         {% if product.metafields.custom.coord_sets.value != blank %}
@@ -186,10 +181,12 @@
                    <modal-dialog id="PopupModal-{{ product.id }}" class="product-popup-modal">
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
-                             {% if  block.settings.sizing_guide_page.title != blank %} 
-                             <h5>{{ block.settings.sizing_guide_page.title }}</h5>
-                             {% endif %}
-                            <div class="size-chart-header"><div class="head">Size Chart </div></div>
+                            <h5>{{ block.settings.sizing_guide_page.title }}</h5>
+                                          <div class="size-chart-header">
+          <div class="head">
+    Size Chart 
+  </div>
+     </div>
                             <button id="ModalClose-{{ product.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}"><div class = "close-button">{% render 'svg-icons' with 'close-size' %}</div></button>
                          </div>
                         <div class="product-popup-modal__content-info">
@@ -197,7 +194,7 @@
                           {% render 'size-chart', product:product %}
                         </tab-switch>
                          </div>
-                       </div>
+                  </div>
                      </modal-dialog>
                          {% endfor %}
                           {% else %}
@@ -205,7 +202,13 @@
                       <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
                          <div class="product-popup-modal__content-header">
                             <h5>{{ block.settings.sizing_guide_page.title }}</h5>
-                              <div class="size-chart-header"><div class="head">Size Chart</div></div>
+
+                               <div class="size-chart-header">
+          <div class="head">
+    Size Chart
+  </div>
+     </div>
+
                             <button id="ModalClose-{{ block.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close-size' %}</button>
                          </div>
                          <div class="product-popup-modal__content-info">
@@ -266,22 +269,22 @@
       {%- when 'side_panel' -%}
         <div class="side-panel-links">
           {%- if block.settings.side_panel_1_label != '' -%}
-            <div class="side-panel-links--link ">
+            <button class="side-panel-links--link ">
               {% render 'svg-icons-inline', icon: block.settings.side_panel_1_icon -%}
               <div class="text_button">{{ block.settings.side_panel_1_label }}</div>
-            </div>
+            </button>
           {%- endif -%}
           {%- if block.settings.side_panel_2_label != '' -%}
-            <div class="side-panel-links--link no-js-hidden">
+            <button class="side-panel-links--link no-js-hidden">
               {% render 'svg-icons-inline', icon: block.settings.side_panel_2_icon -%}
               <div class="text_button">{{ block.settings.side_panel_2_label }}</div>
-            </div>
+            </button>
           {%- endif -%}
           {%- if block.settings.side_panel_3_label != '' -%}
-            <div class="side-panel-links--link no-js-hidden">
+            <button class="side-panel-links--link no-js-hidden">
               {% render 'svg-icons-inline', icon: block.settings.side_panel_3_icon -%}
               <div class="text_button">{{ block.settings.side_panel_3_label }}</div>
-            </div>
+            </button>
           {%- endif -%}
         </div>
       {%- when 'buy_buttons' -%}
