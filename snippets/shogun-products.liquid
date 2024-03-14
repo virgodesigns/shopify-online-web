@@ -5,7 +5,7 @@ This file can be re-written at any time.
 
 {% assign handles = content.metafields.shogun.products | split: "," | slice: 0, 20 %}
 {% if handles.size > 0 %}
-  <script>
+  <script type="text/javascript">
     window.__shgProducts = window.__shgProducts || {};
     {% for handle in handles %}
       {% assign currentProduct = all_products[handle] %}
@@ -17,7 +17,7 @@ This file can be re-written at any time.
 {% endif %}
 
 {% if cart and cart.currency and cart.currency.iso_code %}
-  <script>
+  <script type="text/javascript">
     {% if 'shopify' == 'shopify' %}
       window.__shgMoneyFormat = window.__shgMoneyFormat || {"INR":{"currency":"INR","currency_symbol":"₹","currency_symbol_location":"left","decimal_places":2,"decimal_separator":".","thousands_separator":","}};
     {% endif %}
