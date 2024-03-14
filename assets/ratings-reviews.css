@@ -41,10 +41,3 @@ line-height: 24px;
         display: none !important;
     }
 }
-
-
-@media only screen and (min-width: 768px) {
-    .star-rating-box {
-        display: none !important;
-    }
-}
