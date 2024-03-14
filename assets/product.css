@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#variations_pdp{
+  scroll-margin: 80px;
+}
+
 .shopify-payment-button__button:not(
     .shopify-payment-button__button--branded
   ):before,
