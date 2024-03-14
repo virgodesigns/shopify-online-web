@@ -89,7 +89,7 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
-    <script src="{{ 'scroll-shadow.js' | asset_url }}" defer="defer"></script>
+    <script type="module" src="{{ 'scroll-shadow.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {%- if settings.cart_recommendations -%}
