@@ -42,11 +42,7 @@
                 {{ block.shopify_attributes }}
               ></div>   
             {%- endif -%}
-            <div class="customer-id" 
-              {%- if customer != null -%}
-                customer={{ customer }}
-              {% endif %}
-            >
+            <div class="customer-id" customer={{ customer }} >
             <div class="button-card-containers add-to-cart">    
               <button
                 type="submit"
