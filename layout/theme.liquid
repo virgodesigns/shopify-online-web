@@ -9,17 +9,16 @@
 {%- endcapture -%}
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ dir }}">
   <head>
-    {{shop.metafields.CCR.shopat_script}}
     {% include 'moe.liquid' %}
     {% include 'shop-sheriff-amp' %}
     {% render 'moe' %}
-    <meta name="google-site-verification" content="cqRrH7XYjPsG9w_XD-VhnwWC4lc8VvKS75mvCYZsuzI" >
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" > 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" >
-    <meta name="theme-color" content="{{ settings.color_body_bg }}" >
-    <link rel="canonical" href="{{ canonical_url }}" >
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin >
+    <meta name="google-site-verification" content="cqRrH7XYjPsG9w_XD-VhnwWC4lc8VvKS75mvCYZsuzI">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="theme-color" content="{{ settings.color_body_bg }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {% render 'head-preload' %}
 
     {% if settings.favicon != blank -%}
@@ -76,14 +75,7 @@
 			}
 		};
     </script>
-    <script src="https://bridge.shopflo.com/js/shopflo.bundle.js" async ></script>
-    <!-- Cloudflare Web Analytics -->
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "1692971e968441478bfb85fad81d8bea"}'
-    ></script>
-    <!-- End Cloudflare Web Analytics -->
+    <script src="https://bridge.shopflo.com/js/shopflo.bundle.js" async></script>
     {{ content_for_header }}
     <!-- Header hook for plugins -->
 
@@ -100,7 +92,7 @@
 
     {% include 'store-credit-launcher' %}
 
-    <script>
+    <script type="text/javascript">
           (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -111,6 +103,8 @@
 
         function openCheckout() {
         let cartitems = {{ cart | json }};
+        console.log("cart items", cartitems);
+             console.log("cart items", cartitems);
                Shopify.analytics.publish("Checkout Initiated", {
               "order_count": cartitems.item_count,
               "items": cartitems.items,
