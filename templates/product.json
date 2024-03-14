@@ -36,6 +36,11 @@
             "sizing_guide_page": ""
           }
         },
+        "judge_me_reviews_preview_badge_6KjYeM": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -76,6 +81,7 @@
         "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
         "variant_picker",
+        "judge_me_reviews_preview_badge_6KjYeM",
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
