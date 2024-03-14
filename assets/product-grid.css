@@ -86,7 +86,7 @@
 .product-card {
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
