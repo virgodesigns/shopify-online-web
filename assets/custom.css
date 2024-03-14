@@ -14,6 +14,16 @@
   overflow: scroll;
 }
 
+.jdgm-review-widget--small .jdgm-rev-widg, .jdgm-review-widget--medium .jdgm-rev-widg 
+{
+  padding: 16px !important;
+}
+@media only screen and (min-width: 768px) {
+    .jdgm-rev-widg {
+        padding: 24px 150px !important;
+    }
+}
+
 .variant_size + label {
   background: transparent !important;
   box-shadow: 0 0 0 1px #e1e1e1 inset !important;
