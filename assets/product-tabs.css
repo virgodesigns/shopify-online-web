@@ -276,6 +276,19 @@
   margin: 20px 0 10px 0;
 }
 
+@media screen and (max-width: 750px){
+  .button-card-containers.add-to-cart {
+    background: #fff;
+    padding: 12px 16px;
+    height: auto;
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.12);
+  }
+  .button-card-containers.add-to-cart button {
+    background: #000;
+    height: 3rem;
+  }
+}
+
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .button-card-containers {
     display: flex;
