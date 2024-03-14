@@ -16,7 +16,6 @@ function scrollWrap(i) {
     itemsScrolled = 1;
   }
 
-  console.log("itemsScrolled", itemsScrolled);
   listOpts[i].items.forEach(function (ele, i) {
     if (itemsScrolled === i + 1) {
       ele.classList.add("active");

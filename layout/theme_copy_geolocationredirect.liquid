@@ -89,7 +89,7 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
-    <script src="{{ 'scroll-shadow.js' | asset_url }}" defer="defer"></script>
+    <script type="module" src="{{ 'scroll-shadow.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {%- if settings.cart_recommendations -%}
@@ -110,8 +110,6 @@
 
         function openCheckout() {
         let cartitems = {{ cart | json }};
-        console.log("cart items", cartitems);
-             console.log("cart items", cartitems);
                Shopify.analytics.publish("Checkout Initiated", {
               "order_count": cartitems.item_count,
               "items": cartitems.items,
