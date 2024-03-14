@@ -34,7 +34,7 @@
         href="{{ product_card_product.url | within: collection }}"
         title="{{ product_card_product.title | escape }}"
         class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}"
-        style="--padding-bottom: {% if custom-aspect-ratio %}{{ custom-aspect-ratio }}{% else %}178.333{% endif %}%;"
+        style="--padding-bottom: {% if custom-aspect-ratio %}{{ custom-aspect-ratio }}{% else %}150{% endif %}%;"
       >
         {%- if products_hover_images and product_card_product.images.size > 1 -%}
           {%- for i in (1..products_hover_images_count) -%}
