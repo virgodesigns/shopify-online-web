@@ -212,8 +212,8 @@
                             data-h="{{ featured_media.height }}"
                             data-w="{{ featured_media.width }}"
                             target="_blank"
+                            tabindex="-1"
                             data-index="{{ image_index }}"
-                             tabindex="-1"
                           >
                             {%- render 'svg-icons' with 'zoom' -%}
                           </a>
@@ -273,12 +273,11 @@
                                   data-h="{{ media.height }}"
                                   data-w="{{ media.width }}"
                                   target="_blank"
-                                  
+                                  tabindex="-1"
                                   {%- if alt != blank and display_captions -%}
                                     title="{{ alt | escape }}"
                                   {%- endif -%}
                                   data-index="{{ image_index }}"
-                                  tabindex="-1"
                                 >
                                   {%- render 'svg-icons' with 'zoom' -%}
                                 </a>
@@ -339,13 +338,42 @@
                             </button>
                         {% endcase %}
                       </div>
+                      
                     {%- endunless -%}
                   {%- endfor -%}
+                  
                 </product-slider>
+                  
+            {%- if product.metafields.reviews.rating.value != blank -%}
+  <div class="star-rating-box" onclick="scrollToReviewWidget()">
+    <div class="star-rating-container">
+      <span class="ratings-numbers">{{ product.metafields.reviews.rating.value.rating }}</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+        <path d="M6.13519 0.256468C6.25001 -0.0854892 6.74999 -0.0854892 6.86481 0.256468L8.13629 4.04294C8.18764 4.19587 8.33492 4.29941 8.5011 4.29941H12.6157C12.9873 4.29941 13.1418 4.75951 12.8411 4.97085L9.51238 7.31101C9.37794 7.40553 9.32168 7.57306 9.37303 7.72599L10.6445 11.5125C10.7593 11.8544 10.3549 12.1388 10.0542 11.9274L6.72547 9.58727C6.59102 9.49275 6.40898 9.49275 6.27453 9.58727L2.94577 11.9274C2.64515 12.1388 2.24066 11.8544 2.35549 11.5125L3.62697 7.72599C3.67832 7.57306 3.62206 7.40553 3.48762 7.31101L0.158855 4.97085C-0.141766 4.75951 0.0127325 4.29941 0.384321 4.29941H4.4989C4.66508 4.29941 4.81236 4.19587 4.86371 4.04294L6.13519 0.256468Z" fill="#111111"/>
+      </svg>
+      <span class="numbers">|</span>
+      <span class="reviews-numbers">{{ product.metafields.reviews.rating_count }}</span>
+    </div>
+  </div>
+{%- endif -%}
+
+<script>
+  function scrollToReviewWidget() {
+    var reviewWidget = document.querySelector('.jdgm-rev-widg');
+    if (reviewWidget) {
+      reviewWidget.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
+
+
+      
+
                 {% if product.metafields.custom.model_info != blank %}
                   <div class="model_info-tittle">{{ product.metafields.custom.model_info.value }}</div>
                 {% endif %}
-              </div>
+              </div>   
             </div>
           </div>
         </div>
