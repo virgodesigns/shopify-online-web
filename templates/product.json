@@ -232,6 +232,29 @@
         "heading": "",
         "sub_heading": "Spotted in Virgio"
       }
+    },
+    "17103942529f2cf36f": {
+      "type": "apps",
+      "blocks": {
+        "reviewbit_whatsapp_reviews_reviewbit_main_widget_jTJ38J": {
+          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/reviewbit-main-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
+          "settings": {
+            "seo_snippet": true
+          }
+        },
+        "reviewbit_whatsapp_reviews_star_rating_8MXB67": {
+          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/star-rating\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
+          "settings": {
+            "show_count": "left"
+          }
+        }
+      },
+      "block_order": [
+        "reviewbit_whatsapp_reviews_reviewbit_main_widget_jTJ38J",
+        "reviewbit_whatsapp_reviews_star_rating_8MXB67"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -243,6 +266,7 @@
     "1663667027ccd68a19",
     "16623877721f33fb14",
     "product-recommendations",
-    "6504c889-765e-4951-97dd-2817199cfc89"
+    "6504c889-765e-4951-97dd-2817199cfc89",
+    "17103942529f2cf36f"
   ]
 }
