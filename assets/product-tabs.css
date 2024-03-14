@@ -287,6 +287,12 @@
     background: #000;
     height: 3rem;
   }
+
+  .button-card-containers.add-to-cart  .button.outline:focus, input[type=submit].outline:focus {
+    background: #000;
+ }
+
+
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
