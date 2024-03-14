@@ -217,7 +217,7 @@
       },
       "7856480075841494758": {
         "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
