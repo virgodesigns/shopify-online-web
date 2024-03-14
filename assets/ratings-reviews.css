@@ -1,0 +1,50 @@
+.jdgm-prev-badge{
+  box-sizing: border-box;
+
+}
+.jdgm-sort-dropdown{
+  position: relative;
+  top: 0;
+  right: 0;
+
+}
+.jdgm-rev__author {
+  color: #898989;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.24px;
+   
+}
+.jdgm-rev__icon {
+    display: none !important;
+}
+.jdgm-row-extra{
+  display: none;
+}
+.jdgm-rev__votes-inner
+{
+   display: none !important;
+}
+.jdgm-rev__title{
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .jdgm-prev-badge {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .star-rating-box {
+        display: none !important;
+    }
+}
