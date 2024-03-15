@@ -2,7 +2,6 @@
 
 
 <product-card class="product-cart-item">
-    <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link" style="display:flex;">
     <div class="product-cart-item-image">
         {% if product_small.featured_image %}
             {%- render 'responsive-image', image: product_small.featured_image, sizes: '192x0' -%}
@@ -29,11 +28,10 @@
                 assign product_subtitle = product_subtitle | highlight: predictive_search.terms
             endif 
         -%}
-        <div>
+        <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
             <span style="font-weight: bold;" class="product-small-title">{{ product_title }}</span><br>
             <span style="font-weight: regular;" class="product-small-subtitle">{{ product_subtitle }}</span><br>
-      
-    </div>
+        </a>
         {% render 'product-price', product: product_small %}
         {% if quick_add %}
             <quick-view class="product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
@@ -42,7 +40,6 @@
             </quick-view>
         {% endif %}
     </div>
-</a>
 </product-card>
 
 

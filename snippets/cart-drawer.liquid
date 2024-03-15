@@ -42,6 +42,7 @@
             {% for item in cart.items %}
               <div class="product-cart-item" id="CartDrawerItem-{{ item.index | plus: 1 }}">
                 <div class="product-cart-item-image">
+                  <a href="{{ item.url }}" title="{{ item.product.title | escape }}" class="cart-product-link">
                   {% if item.image %}
                     {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                   {% else %}
@@ -49,6 +50,7 @@
                       {{ 'product-1' | placeholder_svg_tag }}
                     </div>
                   {% endif %}
+                  </a>
                   <div class="loading-overlay">
                     {% render 'svg-icons' with 'thb-loading' %}
                   </div>
