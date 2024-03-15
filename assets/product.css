@@ -1199,7 +1199,7 @@ letter-spacing: 0.24px;
   object-fit: cover;
   z-index: 5;
 }
-.thb-product-detail .product-single__media-zoom {
+/* .thb-product-detail .product-single__media-zoom {
   position: absolute;
   top: 23px;
   right: 23px;
@@ -1216,7 +1216,7 @@ letter-spacing: 0.24px;
 .thb-product-detail .product-single__media-zoom svg {
   width: 20px;
   height: 20px;
-}
+} */
 .thb-product-detail .product-single__media-zoom:hover svg,
 .thb-product-detail .product-single__media-zoom:focus svg {
   transform: scale(1.2);
