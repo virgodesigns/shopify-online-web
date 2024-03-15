@@ -305,7 +305,7 @@
                         id="Media-Thumbnails-{{ section.id }}-{{ featured_media.id }}"
                         style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;"
                       >
-                        {%- if section.settings.lightbox != blank -%}
+                        {% comment %} {%- if section.settings.lightbox != blank -%}
                           <a
                             href="{{ featured_media.src | image_url }}"
                             class="product-single__media-zoom"
@@ -318,7 +318,7 @@
                           >
                             {%- render 'svg-icons' with 'zoom' -%}
                           </a>
-                        {%- endif -%}
+                        {%- endif -%} {% endcomment %}
                         {%- render 'responsive-image', image: featured_media.preview_image, sizes: sizes -%}
                       </div>
                     </div>
