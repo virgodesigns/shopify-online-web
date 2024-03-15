@@ -305,7 +305,6 @@
                         id="Media-Thumbnails-{{ section.id }}-{{ featured_media.id }}"
                         style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;"
                       >
-                        {%- if section.settings.lightbox != blank -%}
                           <a
                             href="{{ featured_media.src | image_url }}"
                             class="product-single__media-zoom"
@@ -315,11 +314,9 @@
                             target="_blank"
                             tabindex="-1"
                             data-index="{{ image_index }}"
-                          >
-                            {%- render 'svg-icons' with 'zoom' -%}
-                          </a>
-                        {%- endif -%}
+                          >                      
                         {%- render 'responsive-image', image: featured_media.preview_image, sizes: sizes -%}
+                      </a>
                       </div>
                     </div>
                   {%- endif -%}
@@ -366,24 +363,21 @@
                               id="Media-Thumbnails-{{ section.id }}-{{ media.id }}"
                               style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;"
                             >
-                              {%- if section.settings.lightbox != blank -%}
-                                <a
-                                  href="{{ media.src | image_url }}"
-                                  class="product-single__media-zoom"
-                                  data-msrc="{{- media.src | image_url: width: 20 -}}"
-                                  data-h="{{ media.height }}"
-                                  data-w="{{ media.width }}"
-                                  target="_blank"
-                                  tabindex="-1"
-                                  {%- if alt != blank and display_captions -%}
-                                    title="{{ alt | escape }}"
-                                  {%- endif -%}
-                                  data-index="{{ image_index }}"
-                                >
-                                  {%- render 'svg-icons' with 'zoom' -%}
-                                </a>
-                              {%- endif -%}
+                              <a
+                                href="{{ media.src | image_url }}"
+                                class="product-single__media-zoom"
+                                data-msrc="{{- media.src | image_url: width: 20 -}}"
+                                data-h="{{ media.height }}"
+                                data-w="{{ media.width }}"
+                                target="_blank"
+                                tabindex="-1"
+                                {%- if alt != blank and display_captions -%}
+                                  title="{{ alt | escape }}"
+                                {%- endif -%}
+                                data-index="{{ image_index }}"
+                              >            
                               {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
+                            </a>
                             </div>
                           {% when 'external_video' %}
                             <div
