@@ -1171,28 +1171,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "featured_blog_YU4Nfw": {
-      "type": "featured-blog",
-      "custom_css": [
-        ".row {background-color: #ffeddb;}"
-      ],
-      "settings": {
-        "heading": "From The Editor's Desk",
-        "heading_left": false,
-        "description": "",
-        "full_width": true,
-        "blog": "textiles-and-fashion",
-        "post_limit": 2,
-        "columns_desktop": 2,
-        "mobile_swipe": true,
-        "image_ratio": "adapt",
-        "show_date": false,
-        "show_excerpt": true,
-        "show_view_all": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "slideshow_RQ3bpV": {
       "type": "slideshow",
       "blocks": {
@@ -1237,6 +1215,28 @@
         "transition": "fade",
         "show_on_desktop": false,
         "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_blog_YU4Nfw": {
+      "type": "featured-blog",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "From The Editor's Desk",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "blog": "textiles-and-fashion",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "show_date": false,
+        "show_excerpt": true,
+        "show_view_all": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1360,8 +1360,8 @@
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "rich_text_WLiWHk",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
-    "featured_blog_YU4Nfw",
     "slideshow_RQ3bpV",
+    "featured_blog_YU4Nfw",
     "slideshow_MCNKwV",
     "slideshow_aQQdbF"
   ]
