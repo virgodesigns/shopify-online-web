@@ -54,7 +54,7 @@
                 <td class="size-values">{{ item.size }}</td>
               {% endfor %}
             </tr>
-            {% assign sizes = 'BUST,WAIST,HIP,FRONT LENGTH,SLEEVE LENGTH,ACROSS SHOULDER,BOTTOM INSEAM,SKIRT LENGTH' | split: ',' %}
+            {% assign sizes = 'BUST,WAIST,HIP,FRONT LENGTH,SLEEVE LENGTH,ACROSS SHOULDER,BOTTOM INSEAM,SKIRT LENGTH,BOTTOM OUTSEAM' | split: ',' %}
 
             {% for size in sizes %}
               {% assign isEmpty = true %}
