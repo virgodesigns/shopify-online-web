@@ -739,9 +739,9 @@ letter-spacing: 0.24px;
     width: 100%;
     text-align: center;
   }
-  /* .thb-product-detail .product-single__media-zoom {
+  .thb-product-detail .product-single__media-zoom {
     display: none !important;
-  } */
+  }
   .product-title-container {
     display: flex;
     justify-content: space-between;
