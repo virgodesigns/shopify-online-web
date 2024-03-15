@@ -305,7 +305,7 @@
                         id="Media-Thumbnails-{{ section.id }}-{{ featured_media.id }}"
                         style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;"
                       >
-                          <a
+                          {% comment %} <a
                             href="{{ featured_media.src | image_url }}"
                             class="product-single__media-zoom"
                             data-msrc="{{- featured_media.src | image_url: width: 20 -}}"
@@ -314,9 +314,9 @@
                             target="_blank"
                             tabindex="-1"
                             data-index="{{ image_index }}"
-                          >                      
+                          >                       {% endcomment %}
                         {%- render 'responsive-image', image: featured_media.preview_image, sizes: sizes -%}
-                      </a>
+                      {% comment %} </a> {% endcomment %}
                       </div>
                     </div>
                   {%- endif -%}
@@ -363,7 +363,7 @@
                               id="Media-Thumbnails-{{ section.id }}-{{ media.id }}"
                               style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;"
                             >
-                              <a
+                              {% comment %} <a
                                 href="{{ media.src | image_url }}"
                                 class="product-single__media-zoom"
                                 data-msrc="{{- media.src | image_url: width: 20 -}}"
@@ -375,9 +375,9 @@
                                   title="{{ alt | escape }}"
                                 {%- endif -%}
                                 data-index="{{ image_index }}"
-                              >            
+                              >             {% endcomment %}
                               {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
-                            </a>
+                            {% comment %} </a> {% endcomment %}
                             </div>
                           {% when 'external_video' %}
                             <div
