@@ -38,6 +38,30 @@
   height: 108px;
 }
 
+
+.coupon {
+  display: flex;
+  background-color: #DCFCE7;
+  margin-bottom: 16px;
+}
+
+.coupon-content {
+  padding: 12px 14px 12px 9px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+}
+.offer-code {
+  font-weight: 500;
+}
+.coupon-svg{
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
 .star-rating-box {
   padding: 2px 8px;
   gap: 4px;
@@ -1175,7 +1199,7 @@ letter-spacing: 0.24px;
   object-fit: cover;
   z-index: 5;
 }
-/* .thb-product-detail .product-single__media-zoom {
+.thb-product-detail .product-single__media-zoom {
   position: absolute;
   top: 23px;
   right: 23px;
@@ -1192,7 +1216,7 @@ letter-spacing: 0.24px;
 .thb-product-detail .product-single__media-zoom svg {
   width: 20px;
   height: 20px;
-} */
+}
 .thb-product-detail .product-single__media-zoom:hover svg,
 .thb-product-detail .product-single__media-zoom:focus svg {
   transform: scale(1.2);
