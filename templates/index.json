@@ -1197,14 +1197,6 @@
     "social_images_collections_AyYGeN": {
       "type": "social-images-collections",
       "blocks": {
-        "social_image_RqREVU": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096288_1.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/date-glam-corset-dress-with-flutter-sleeve"
-          }
-        },
         "social_image_NpMjqm": {
           "type": "social_image",
           "settings": {
@@ -1213,20 +1205,28 @@
             "social_url": "shopify:\/\/products\/frill-icious-beige-poplin-dress-with-pockets"
           }
         },
-        "social_image_aN4Up4": {
-          "type": "social_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096290_1.jpg",
-            "social_id": "",
-            "social_url": "shopify:\/\/products\/polka-dot-serenade-in-black-with-pockets"
-          }
-        },
         "social_image_TAgLj7": {
           "type": "social_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096284_1.jpg",
             "social_id": "",
             "social_url": "shopify:\/\/products\/sun-kissed-floral-bodycon-dress"
+          }
+        },
+        "social_image_RqREVU": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096288_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/date-glam-corset-dress-with-flutter-sleeve"
+          }
+        },
+        "social_image_aN4Up4": {
+          "type": "social_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_48096290_1.jpg",
+            "social_id": "",
+            "social_url": "shopify:\/\/products\/polka-dot-serenade-in-black-with-pockets"
           }
         },
         "social_image_eky3QD": {
@@ -1247,10 +1247,10 @@
         }
       },
       "block_order": [
-        "social_image_RqREVU",
         "social_image_NpMjqm",
-        "social_image_aN4Up4",
         "social_image_TAgLj7",
+        "social_image_RqREVU",
+        "social_image_aN4Up4",
         "social_image_eky3QD",
         "social_image_PnCEYH"
       ],
