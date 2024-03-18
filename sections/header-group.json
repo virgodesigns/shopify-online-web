@@ -53,7 +53,7 @@
         "style": "style1",
         "header_shadow": "header--shadow-none",
         "menu": "main-menu",
-        "transparent_header": false,
+        "transparent_header": true,
         "show_language_switcher": false,
         "show_currency_switcher": false,
         "mobile_secondary_menu": "",
