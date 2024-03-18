@@ -498,8 +498,8 @@
         "slide_DLLef8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fabric_1.jpg",
-            "slide_link": "",
+            "image": "shopify:\/\/shop_images\/fabric_2.jpg",
+            "slide_link": "shopify:\/\/collections\/natural-fabrics",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
