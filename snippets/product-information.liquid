@@ -134,7 +134,7 @@
                 </div>
               </div>
             {% endif %}
-            <div class="variations" {{ block.shopify_attributes }}>
+            <div id="variations_pdp" class="variations" {{ block.shopify_attributes }}>
               {%- for option in product.options_with_values -%}
                 {%- liquid
                   assign option_name = option.name | downcase | escape
