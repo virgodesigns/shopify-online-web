@@ -7,7 +7,7 @@
   Usage:
   {% render 'price', product: product %}
 {% endcomment %}
-{%- liquid
+{%- liquid 
   if use_variant
     assign target = product.selected_or_first_available_variant
   else
@@ -77,7 +77,7 @@
       </span>
     {% endif %}
   </div>
-  {% if template contains 'product' %}
+  {% if template contains 'product' and show_inclusive  %}
     <div
       class="inclusive"
     >
