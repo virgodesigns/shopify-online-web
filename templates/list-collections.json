@@ -362,39 +362,71 @@
         "disable_bottom_spacing": true
       }
     },
+    "rich_text_eQiJWb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fdVqpp": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop By Categories",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fdVqpp"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; font-weight: 600; margin-top: 40px;}",
+        ".rich-text__inner {padding: 0 0px;}"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
     "mwidget_yyhMqJ": {
       "type": "mwidget",
       "blocks": {
         "image_item_cnEdnq": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/black_date_long_dress_1.png",
+            "image": "shopify:\/\/shop_images\/Dresses_bf81ec4b-5c7e-47a8-9595-0e7bc4db19bf.png",
             "heading_text": "",
-            "button_link": "shopify:\/\/collections\/all-collections"
+            "button_link": "shopify:\/\/collections\/dresses-date"
           }
         },
         "image_item_GcaByz": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saiee_manjrekar_0f4bf59d-aa8c-4d95-b6e6-04348ab9fadd.png",
+            "image": "shopify:\/\/shop_images\/Co-Ords_357f659e-8f04-45e4-bd00-7e440fcb8cf1.png",
             "heading_text": "",
-            "button_link": "shopify:\/\/collections\/priyam-and-hitika"
+            "button_link": "shopify:\/\/collections\/co-ords-date"
           }
         },
         "image_item_UgnXej": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lisa_haydon_0d85a0f5-821d-4b57-a6cf-f46c2d2ed783.png",
+            "image": "shopify:\/\/shop_images\/Bottomwear.png",
             "heading_text": "",
-            "button_link": "shopify:\/\/collections\/poolside-splash"
+            "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
         },
         "image_item_pzmqnV": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/RAMADAN_-SPRING_SUMMER_-_LONG_DRESSES_f910142e-3b10-48cb-97e8-faf88749d184.png",
-            "heading_text": "Lisa haydon",
-            "button_link": "shopify:\/\/collections\/priyam-and-hitika"
+            "image": "shopify:\/\/shop_images\/Topwear.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
           }
         }
       },
@@ -404,17 +436,227 @@
         "image_item_UgnXej",
         "image_item_pzmqnV"
       ],
-      "disabled": true,
       "settings": {
-        "main_heading": "Categories",
+        "main_heading": "",
         "bg_color": "",
         "text_color": ""
+      }
+    },
+    "rich_text_AtQCdz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4pxkGB": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop By Collections",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4pxkGB"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; font-weight: 600; margin-top: 20px;}",
+        ".rich-text__inner {padding: 0 0px;}"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "gallery_pt6jFb": {
+      "type": "gallery",
+      "blocks": {
+        "image_7Yw7cj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_date.png",
+            "banner_link": "shopify:\/\/collections\/date-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_yK7bwm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring_fling.png",
+            "banner_link": "shopify:\/\/collections\/spring-dream-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_EPjcYV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_Veronicas.png",
+            "banner_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_JnPbEM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/office_wear.png",
+            "banner_link": "shopify:\/\/collections\/office-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_mYj8Vx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Day_wear.png",
+            "banner_link": "shopify:\/\/collections\/day-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_XYx4Vy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/party_wear.png",
+            "banner_link": "shopify:\/\/collections\/party-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_DRQFeN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Evening_wear.png",
+            "banner_link": "shopify:\/\/collections\/evening-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_gdhdVX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vacation_wear.png",
+            "banner_link": "shopify:\/\/collections\/vacation-wear",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_ig8qMT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Newtro_Twist_c8a7c62a-5731-4318-bc3a-ca91f144951f.png",
+            "banner_link": "shopify:\/\/collections\/newtro-twist",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_emYbFg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cityscape_5d323c7b-9adc-446d-a3af-7c74cee9b985.png",
+            "banner_link": "shopify:\/\/collections\/newtro-twist",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_7Yw7cj",
+        "image_yK7bwm",
+        "image_EPjcYV",
+        "image_JnPbEM",
+        "image_mYj8Vx",
+        "image_XYx4Vy",
+        "image_DRQFeN",
+        "image_gdhdVX",
+        "image_ig8qMT",
+        "image_emYbFg"
+      ],
+      "custom_css": [
+        ".gallery-spacing--small .gallery__inner {grid-gap: 24px;"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "section_width": "grid",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false,
+        "show_on_desktop": false,
+        "show_on_mobile": true
       }
     }
   },
   "order": [
     "main",
     "8e2aa702-a629-4a08-b4ab-75452deb5c89",
-    "mwidget_yyhMqJ"
+    "rich_text_eQiJWb",
+    "mwidget_yyhMqJ",
+    "rich_text_AtQCdz",
+    "gallery_pt6jFb"
   ]
 }
