@@ -229,7 +229,7 @@
       },
       "1900010302808700452": {
         "type": "shopify:\/\/apps\/super-pinch-zoom\/blocks\/star_rating\/ab7c7f82-c7c7-4520-9f92-6394fd695a86",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
