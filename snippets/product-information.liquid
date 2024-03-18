@@ -54,7 +54,7 @@
 
           <div class="product-price-container">
             <div class="no-js-hidden" id="price-{{ section.id }}">
-              {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+              {% render 'product-price', product: product, use_variant: true, show_badges: true, show_inclusive: true %}
             </div>
           </div>
 
@@ -134,7 +134,7 @@
                 </div>
               </div>
             {% endif %}
-            <div class="variations" {{ block.shopify_attributes }}>
+            <div id="variations_pdp" class="variations" {{ block.shopify_attributes }}>
               {%- for option in product.options_with_values -%}
                 {%- liquid
                   assign option_name = option.name | downcase | escape
