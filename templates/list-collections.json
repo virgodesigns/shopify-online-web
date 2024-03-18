@@ -366,7 +366,7 @@
       "type": "spacer",
       "disabled": true,
       "custom_css": [
-        "@media screen and (min-width: 768px) {.shopify-ection{display: none; }}"
+        "@media screen and (min-width: 768px) {.shopify-ection {display: none; }}"
       ],
       "settings": {
         "spacer_mobile": 40,
@@ -532,62 +532,6 @@
             "block_link": ""
           }
         },
-        "image_P33kUd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cherry_crush_04d2d42f-215f-4ae6-8c9e-9ef747c66367.png",
-            "banner_link": "shopify:\/\/collections\/cherry-crush",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_AWiwLX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Sunny_slide_up.png",
-            "banner_link": "shopify:\/\/collections\/sunny-side-up",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_QCeH4L": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cerulean_Dreams_fd7fb684-6823-4d72-8ce6-16cbf4f8e29c.png",
-            "banner_link": "shopify:\/\/collections\/cerulean-dreams",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_dM9kQM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Sage_Serenity.png",
-            "banner_link": "shopify:\/\/collections\/sage-serenity",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
         "image_crrqJh": {
           "type": "image",
           "settings": {
@@ -691,10 +635,6 @@
         "image_DcDJir",
         "image_PQe6R8",
         "image_gagKLe",
-        "image_P33kUd",
-        "image_AWiwLX",
-        "image_QCeH4L",
-        "image_dM9kQM",
         "image_crrqJh",
         "image_HtVt8X",
         "image_t8rHGV",
