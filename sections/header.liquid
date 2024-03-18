@@ -45,9 +45,14 @@
             line-height: 1rem;
             letter-spacing: 0.0125rem;
             text-transform: capitalize;
+            opacity: 0.8;
             }
+           .m-header a .normal{
+            opacity: 0.8;
+          }
             .m-header a.active span{
             font-weight:500;
+            opacity: 1
           }
 
                .customPDPheader{
@@ -199,8 +204,7 @@
   </div>
 {%- else -%}
   <header
-    id="header"
-    class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active hide-mobile"
+    class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active hide-mobile"
   >
     <div class="row expanded">
       <div class="small-12 columns" style="display:flex;">
@@ -255,7 +259,7 @@
 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
-    <nav role="navigation">
+    <nav>
       <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
         <li class="mobile-links flex-box__item" data-link-url="/">
           <a href="/">
@@ -350,70 +354,70 @@
 {%- endif -%}
 
 <script>
-         document.addEventListener('DOMContentLoaded', function () {
-           if (window.innerWidth <= 750) {
+  document.addEventListener('DOMContentLoaded', function () {
 
+    if (window.innerWidth <= 750) {
       var currentUrl = window.location.href;
       var navLinks = document.querySelectorAll('#mobile-header-custom a');
-  console.log("navLinks",navLinks)
+  
       for (var i = 0; i < navLinks.length; i++) {
-        console.log("Loop",navLinks[i].href,currentUrl)
-      if (navLinks[i].href === currentUrl) {
-        navLinks[i].classList.add('active');
+        if (navLinks[i] && navLinks[i].href === currentUrl) {
+          navLinks[i].classList.add('active');
+        }
+      }
+  
+      let prevScrollPos = window.pageYOffset;
+  
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset;
+        let header = document.getElementById("header");
+  
+        if (currentScrollPos < 200) {
+          header.style.display = "block";
+          return;
+        }
+  
+        if (prevScrollPos > currentScrollPos) {
+          header.style.display = "block";
+        } else {
+          header.style.display = "none";
+        }
+  
+        prevScrollPos = currentScrollPos;
+      }
+  
+      var mobileLinks = document.getElementsByClassName('mobile-links');
+      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+      var index = mobileLinksArrayConverted.findIndex(function (link) {
+        let arraySplit = window.location.pathname.split('/');
+        let urlpath = arraySplit[arraySplit.length - 1];
+        return link.dataset.linkUrl.indexOf(urlpath) > -1;
+      });
+      if (index > -1) {
+        var parentElement = mobileLinks[index];
+        var imgElement = parentElement.querySelector('.hide-logo');
+        if (imgElement) {
+          imgElement.classList.remove('hide-logo');
+        }
       }
     }
 
+    const backElem = document.getElementById('back_btn');
+  
+    const liquidTemplate = {{ template|json }}
 
-      let prevScrollPos = window.pageYOffset;
-
-       window.onscroll = function() {
-         let currentScrollPos = window.pageYOffset;
-         let header = document.getElementById("header");
-
-      if(currentScrollPos < 200){
-          header.style.display = "block";
-           {% comment %} header.style.backgroundColor = "#FFF"; {% endcomment %}
-          return;
-      }
-
-         if (prevScrollPos > currentScrollPos) {
-           // User is scrolling up, show the header
-           header.style.display = "block";
-         } else {
-           // User is scrolling down, hide the header
-           header.style.display = "none"; // Adjust this value based on your header height
-         }
-         prevScrollPos = currentScrollPos;
-       }
-
-
-             var mobileLinks = document.getElementsByClassName('mobile-links');
-             var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-             var index = mobileLinksArrayConverted.findIndex(function (link) {
-               let arraySplit = window.location.pathname.split('/');
-               let urlpath = arraySplit[arraySplit.length - 1];
-               return link.dataset.linkUrl.indexOf(urlpath) > -1;
-             });
-             if (index > -1) {
-               var parentElement = mobileLinks[index];
-               var imgElement = parentElement.querySelector('.hide-logo');
-               imgElement.classList.remove('hide-logo');
-             }
-           }
-           const backElem = document.getElementById('back_btn');
-
-           const liquidTemplate = {{ template|json }}
-
-           if(backElem) {
-           backElem.addEventListener('click', (e) => {
-             if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords')) {
-               window.location.href = "/"
-             } else {
-               history.back();
-             }
-           });
-          }
-         });
+    if (backElem) {
+      backElem.addEventListener('click', (e) => {
+        if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
+          window.location.href = "/"
+        } else {
+          history.back();
+        }
+      });
+    }
+  
+  });
+  
 </script>
 
 {% schema %}

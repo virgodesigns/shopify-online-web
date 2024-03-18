@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#variations_pdp{
+  scroll-margin: 80px;
+}
+
 .shopify-payment-button__button:not(
     .shopify-payment-button__button--branded
   ):before,
@@ -32,6 +36,71 @@
   cursor: pointer;
   width: 72px;
   height: 108px;
+}
+
+
+.coupon {
+  display: flex;
+  background-color: #DCFCE7;
+  margin-bottom: 16px;
+}
+
+.coupon-content {
+  padding: 12px 14px 12px 9px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+}
+.offer-code {
+  font-weight: 500;
+}
+.coupon-svg{
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.star-rating-box {
+  padding: 2px 8px;
+  gap: 4px;
+  border-radius: 16px;
+border: 1px solid var(--opacity-dark-111111-opacity-50, rgba(17, 17, 17, 0.50));
+background: white;
+position: absolute;
+bottom: 41px;
+left: 16px;
+display: inline-flex;
+}
+.star-rating-container {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 3px;
+}
+.ratings-numbers{
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; 
+letter-spacing: 0.24px;
+text-transform: uppercase;
+}
+.reviews-numbers{
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.24px;
+}
+.numbers {
+  margin-right: 5px; 
+  color: #111; 
+  stroke-width: 1px;
+  width: 0px;
+  height: 16px;
 }
 
 .product-images .flickity-page-dots .dot {
@@ -694,9 +763,9 @@
     width: 100%;
     text-align: center;
   }
-  .thb-product-detail .product-single__media-zoom {
+  /* .thb-product-detail .product-single__media-zoom {
     display: none !important;
-  }
+  } */
   .product-title-container {
     display: flex;
     justify-content: space-between;
@@ -904,7 +973,7 @@
 }
 
 .thb-product-detail .product-price-container .price {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   display: block;
   flex-wrap: wrap;
 }
@@ -1130,19 +1199,11 @@
   object-fit: cover;
   z-index: 5;
 }
-.thb-product-detail .product-single__media-zoom {
+ .thb-product-detail .product-single__media-zoom {
   position: absolute;
-  top: 23px;
-  right: 23px;
+  height: 100%;
+  width: 100%;
   z-index: 40;
-  background: var(--bg-body, #fff);
-  border-radius: 50%;
-  height: 38px;
-  width: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 .thb-product-detail .product-single__media-zoom svg {
   width: 20px;

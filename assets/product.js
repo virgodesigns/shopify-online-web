@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", async function () {
   
   let buttonDisable = false;
   if (window.location.href.indexOf("/products") !== -1) {
+
+    function scrollToElement(id) {
+      var element = document.getElementById(id);
+  
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+      }
+  }
+  
     addToButton.addEventListener("click", (e) => {
       let isVariantSelected = true;
       variantSizes.forEach((variantSize) => {
@@ -32,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         e.preventDefault();
         alertMessage.classList.remove("hide-message");
         if (window.innerWidth <= 768) {
-          window.scrollTo({ top: 600, behavior: "smooth" });
+          scrollToElement('variations_pdp')
           alertMessage.classList.remove("hide-message");
         }
       } else {
@@ -437,7 +446,7 @@ if (!customElements.get("variant-selects")) {
         );
         const available_options = this.createAvailableOptionsTree(
           variant_data,
-          selected_options
+          selected_options ? selected_options : []
         );
 
         this.fieldsets.forEach((fieldset, i) => {
