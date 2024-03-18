@@ -491,25 +491,25 @@
             "block_link": ""
           }
         },
-        "image_yK7bwm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Spring_fling.png",
-            "banner_link": "shopify:\/\/collections\/spring-dream-collection",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
         "image_EPjcYV": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/The_Veronicas.png",
             "banner_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_4cDCLQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spring_fling.png",
+            "banner_link": "shopify:\/\/collections\/spring-dream-collection",
             "subheading": "",
             "title": "",
             "text": "",
@@ -620,8 +620,8 @@
       },
       "block_order": [
         "image_7Yw7cj",
-        "image_yK7bwm",
         "image_EPjcYV",
+        "image_4cDCLQ",
         "image_JnPbEM",
         "image_mYj8Vx",
         "image_XYx4Vy",
