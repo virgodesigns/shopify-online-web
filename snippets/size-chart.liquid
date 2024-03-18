@@ -54,7 +54,7 @@
                 <td class="size-values">{{ item.size }}</td>
               {% endfor %}
             </tr>
-            {% assign sizes = 'BUST,WAIST,HIP,FRONT LENGTH' | split: ',' %}
+            {% assign sizes = 'BUST,WAIST,HIP,FRONT LENGTH,SLEEVE LENGTH,ACROSS SHOULDER,BOTTOM INSEAM,SKIRT LENGTH,BOTTOM OUTSEAM' | split: ',' %}
 
             {% for size in sizes %}
               {% assign isEmpty = true %}
@@ -134,7 +134,6 @@
             inchesMode = toInches;
 
             var sizeValues = document.querySelectorAll('.size-chart-container td[data-original-value]');
-            console.log(sizeValues);
             sizeValues.forEach(function (sizeValue) {
               var originalValue = parseFloat(sizeValue.getAttribute('data-original-value'));
 
@@ -157,6 +156,7 @@
           //Set inches on First load
 
           classAdditionRemoval(true);
+
 
           var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
           var imageSrc =
