@@ -455,6 +455,9 @@
       "block_order": [
         "slide_3Qxrpx"
       ],
+      "custom_css": [
+        ".mute-toggle {display: none;}"
+      ],
       "settings": {
         "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
