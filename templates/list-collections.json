@@ -357,7 +357,7 @@
         "autoplay_length": 4,
         "transition": "fade",
         "show_on_desktop": true,
-        "show_on_mobile": true,
+        "show_on_mobile": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
