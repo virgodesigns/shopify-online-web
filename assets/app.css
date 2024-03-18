@@ -2992,7 +2992,7 @@ h6,
 }
 .transparent--true {
   position: absolute;
-  background: rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17, 0.4);
   border-bottom-color: rgba(255, 255, 255, 0.4);
 }
 .header.transparent--true:before {
