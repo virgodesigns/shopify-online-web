@@ -14,14 +14,28 @@
   overflow: scroll;
 }
 
-.jdgm-review-widget--small .jdgm-rev-widg, .jdgm-review-widget--medium .jdgm-rev-widg 
-{
+.jdgm-review-widget--small .jdgm-rev-widg,
+.jdgm-review-widget--medium .jdgm-rev-widg {
   padding: 16px !important;
 }
+
+.jdgm-widget {
+  margin: 8px 16px 0px;
+}
+
+.jdgm-rev-widg__summary-text {
+  padding-top: 8px;
+}
+
+.jdgm-write-rev-link {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 @media only screen and (min-width: 768px) {
-    .jdgm-rev-widg {
-        padding: 24px 150px !important;
-    }
+  .jdgm-rev-widg {
+    padding: 24px 150px !important;
+  }
 }
 
 .variant_size + label {
