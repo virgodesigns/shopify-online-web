@@ -119,7 +119,7 @@
         ".collection-tabs .section-header {margin-top: 0;}",
         ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
         ".flickity-slider {display: flex; align-items: center;}",
-        ".carousel__slide{margin-bottom:0;}"
+        ".carousel__slide {padding-bottom: 0;}"
       ],
       "settings": {
         "heading": "SHOP BY CATEGORY",
