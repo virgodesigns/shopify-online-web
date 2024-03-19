@@ -40,7 +40,7 @@ async function fetchData() {
   try {
     let productGroupId = document.querySelector(".group-id");
     let groupId = productGroupId.getAttribute("data-group-id");
-    let url = `https://api.virgio.com/shop/product/group/${groupId}`;
+    let url = `https://api.virgio.com/shop/product/group/${groupId}?store=uae`;
     let options = {
       method: "GET",
     };
