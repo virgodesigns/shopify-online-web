@@ -118,7 +118,8 @@
         ".h3 {font-size: 24px;}",
         ".collection-tabs .section-header {margin-top: 0;}",
         ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
-        ".flickity-slider {display: flex; align-items: center;}"
+        ".flickity-slider {display: flex; align-items: center;}",
+        ".carousel__slide{margin-bottom:0;}"
       ],
       "settings": {
         "heading": "SHOP BY CATEGORY",
