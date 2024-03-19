@@ -894,7 +894,7 @@
         "slide_YC6Kaq": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Less_is_More_web.png",
+            "image": "shopify:\/\/shop_images\/Less_is_MOre_1.png",
             "slide_link": "shopify:\/\/pages\/circularity",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -909,7 +909,7 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "Shop Now",
+            "button_1_text": "",
             "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
