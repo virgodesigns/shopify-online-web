@@ -9,6 +9,14 @@
     "aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e": {
       "type": "scrolling-text",
       "blocks": {
+        "cb3214c0-164f-4e4e-a2e2-7570c80851c9": {
+          "type": "text",
+          "settings": {
+            "text": "Use Code : GET10OFF",
+            "link": "",
+            "outline_text": false
+          }
+        },
         "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3": {
           "type": "text",
           "settings": {
@@ -16,19 +24,11 @@
             "link": "",
             "outline_text": false
           }
-        },
-        "cb3214c0-164f-4e4e-a2e2-7570c80851c9": {
-          "type": "text",
-          "settings": {
-            "text": "Offer applied automatically",
-            "link": "",
-            "outline_text": false
-          }
         }
       },
       "block_order": [
-        "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3",
-        "cb3214c0-164f-4e4e-a2e2-7570c80851c9"
+        "cb3214c0-164f-4e4e-a2e2-7570c80851c9",
+        "template--21527439409449__aaf5b7ec-0be1-484e-84e9-ea7e8e1fde9e-text-3"
       ],
       "custom_css": [
         "div {height: 32px;}",
