@@ -2,9 +2,17 @@
 .collection-tabs__list-link:after {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
 }
-
+.section-header--button.has--tabs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.collection-tabs .text-button:before{
+  background: transparent;
+}
 .collection-tabs {
   overflow: hidden;
+  position: relative;
 }
 .collection-tabs__list {
   display: block;
