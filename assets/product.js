@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", async function () {
   const productAddedToCart = document.querySelector(".product-alert_message");
   const variantSizes = document.querySelectorAll(".product-form__input--block");
   const addToButton = document.querySelector('[id="AddToCart"]');
+
+  let customerData = document.querySelector(".customer-id");
+  let customerLogin = customerData.getAttribute("customer");
   
 // Checking the wheather the button is pre-order or not 
   const preOrderButton =  document.querySelector('.pre-order_products');
@@ -23,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
       }
-  }
+    }
   
     addToButton.addEventListener("click", (e) => {
       let isVariantSelected = true;
@@ -49,6 +52,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         productAddedToCart.classList.remove("hide-message");
         setTimeout(function () {
           productAddedToCart.classList.add("hide-message");
+          if (!customerLogin){
+          window.location.href = "/account/login?checkout_url="+ window.location.pathname+window.location.search
+          }
         }, 2000);
       }
     });
