@@ -43,6 +43,20 @@
               ></div>   
             {%- endif -%}
             <div class="customer-id" customer={{ customer }} >
+              {% if customer == null %}
+    <!-- Button visible for logged-out customers -->
+    <a href="/account/login" class="button-card-containers add-to-cart button">
+      <div class="button-card-containers add-to-cart button">    
+      
+        <div class="login-text">
+        Add to Cart
+        </div>
+      
+    </div>
+    </a>
+    <!-- End of button for logged-out customers -->
+  {% endif %}
+  {% if customer != null %}
             <div class="button-card-containers add-to-cart">    
               <button
                 type="submit"
@@ -65,6 +79,7 @@
                 </span>
               </button>
             </div>
+            {% endif %}
             </div>
           </div>
         </div>

@@ -469,6 +469,7 @@ input.pin-input::placeholder {
   background: #000;
   height: 50px;
   align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 749px) {
   .button-card-containers {
@@ -1035,4 +1036,10 @@ video {
 
 .thb-item-count {
   visibility: hidden;
+}
+
+.login-text {
+  color: #fff;
+  position: relative;
+  z-index: 10;
 }
