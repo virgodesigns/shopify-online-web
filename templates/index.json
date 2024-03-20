@@ -147,6 +147,7 @@
       "custom_css": [
         ".collection-tabs__list-link {opacity: 1; font-size: 16px; text-transform: capitalize;}",
         ".h3 {font-size: 24px;}",
+        ".collection-tabs {padding-bottom: 6rem;}",
         ".collection-tabs .section-header {margin-top: 0;}",
         ".text-button.linked-to-tab.active {margin-bottom: 1.5rem;}",
         ".flickity-slider {display: flex; align-items: center;}",
