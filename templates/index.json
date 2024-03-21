@@ -1343,6 +1343,7 @@
       "block_order": [
         "slide_YXLMfz"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-full",
@@ -1411,7 +1412,7 @@
         "slide_ATcAam": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Media_Spotlight_1.png",
+            "image": "shopify:\/\/shop_images\/Media_spotlight.png",
             "mobile_image": "shopify:\/\/shop_images\/Frame_48096541.png",
             "slide_link": "",
             "video_background": false,
