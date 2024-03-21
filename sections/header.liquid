@@ -147,8 +147,10 @@
   >
     <div class="row expanded">
       <div class="small-12 columns" style="display: flex; justify-content: space-between;">
+        <a href="/">
        <div class="white-variant"> {% render 'svg-icons' with 'virgio-logo' %}</div>
        <div class="black-variant"> {% render 'svg-icons' with 'virgio-logo-dark' %}</div>
+       </a>
        {% comment %} <div style="display: flex;
         align-items: center;">
         <span style="display:flex;">{% render 'svg-icons' with 'header-search-white' %}</span>
@@ -395,30 +397,54 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+  
 
-    var header = document.getElementById('header');
-    var lastScrollPosition = 0;
-  
-    window.addEventListener('scroll', function() {
-      var currentScrollPosition = window.pageYOffset;
-  
-      if (currentScrollPosition > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-  
-      if (currentScrollPosition > 400) {
-        header.style.transform = 'translateY(-100%)';
-      } else {
-        header.style.transform = 'translateY(0)';
-      }
-  
-      lastScrollPosition = currentScrollPosition;
-    });
-  
+
+    if (window.innerWidth <= 750) {
+
+      var header = document.getElementById('header');
+      var lastScrollPosition = 0;
+    
+      window.addEventListener('scroll', function() {
+        var currentScrollPosition = window.pageYOffset;
+    
+        if (currentScrollPosition > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+    
+        if (currentScrollPosition > 600) {
+          header.style.transform = 'translateY(-100%)';
+        } else {
+          header.style.transform = 'translateY(0)';
+        }
+    
+        lastScrollPosition = currentScrollPosition;
+      });
+
     // Add transparent class to header by default
     header.classList.add('transparent');
+
+
+
+      var mobileLinks = document.getElementsByClassName('mobile-links');
+      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+      var index = mobileLinksArrayConverted.findIndex(function (link) {
+        let arraySplit = window.location.pathname.split('/');
+        let urlpath = arraySplit[arraySplit.length - 1];
+        return link.dataset.linkUrl.indexOf(urlpath) > -1;
+      });
+      if (index > -1) {
+        var parentElement = mobileLinks[index];
+        var imgElement = parentElement.querySelector('.hide-logo');
+        if (imgElement) {
+          imgElement.classList.remove('hide-logo');
+        }
+      }
+
+
+    }
 
     {% comment %} if (window.innerWidth <= 750) {
       var currentUrl = window.location.href;
