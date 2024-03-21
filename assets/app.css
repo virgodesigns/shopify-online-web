@@ -2992,8 +2992,11 @@ h6,
 }
 .transparent--true {
   position: absolute;
-  background: rgba(17, 17, 17, 0.1);
-  border-bottom-color: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #FDFDFD;
+  background: rgba(17, 17, 17, 0.25);
+}
+.white-header-bg{
+  background: #FDFDFD;
 }
 .header.transparent--true:before {
   content: "";
