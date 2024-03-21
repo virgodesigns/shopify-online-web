@@ -13,14 +13,6 @@
 <style>
 
 
-  #header {
-    transition: background-color 0.3s ease;
-  }
-  
-  #header.transparent {
-    background-color: rgba(17, 17, 17, 0.25);
-  }
-
   .black-variant{
     display:none;
   }
@@ -28,17 +20,33 @@
   display:block;
   }
 
- #header.scrolled .black-variant{
-   display:block
+  @media only screen and (max-width: 768px) {
+
+    #header {
+      transition: background-color 0.3s ease;
+      display:none;
+    }
+    #header.scrolled .black-variant{
+      display:block
+     }
+   
+     #header.scrolled .white-variant{
+       display:none
+      } 
+   
+     #header.scrolled {
+      background-color: #ffffff;
+      display: block;
+      position: relative;
+     }
+
+     #header.transparent {
+      background-color: rgba(17, 17, 17, 0.25);
+      display:block;
+    }
+   
   }
 
-  #header.scrolled .white-variant{
-    display:none
-   } 
-
-  #header.scrolled {
-    background-color: #ffffff; 
-  }
 
 
   
@@ -87,12 +95,12 @@
             opacity: 1
           }
 
-               .customPDPheader{
+               {% comment %} .customPDPheader{
                  display:flex;
                  justify-content: space-between;
                  background-color:#FFF;
                  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-               }
+               } {% endcomment %}
 
           .hide-mobile{
                      display:none;
@@ -140,23 +148,170 @@
               }
 </style>
 
-{% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  
+    if (window.innerWidth <= 750) {
+
+      var header = document.getElementById('header');
+      var lastScrollPosition = 0;
+
+
+      {% comment %} {% if template contains 'product' or if template contains 'product.coords' or template contains 'page.circularity' %} {% endcomment %}
+      {% if template contains 'product' or template contains 'product.coords'%}
+
+console.log("HOMEEE");
+header.classList.add('scrolled');
+
+window.addEventListener('scroll', function() {
+  var currentScrollPosition = window.pageYOffset;
+
+  if (currentScrollPosition > 600) {
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    header.style.transform = 'translateY(0)';
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});
+
+      {% else  %}
+
+      {% comment %} header.classList.add('transparent'); {% endcomment %}
+
+      window.addEventListener('scroll', function() {
+        var currentScrollPosition = window.pageYOffset;
+    
+        if (currentScrollPosition > 50) {
+          header.classList.add('scrolled');
+          header.classList.remove('transparent');
+        } else {
+          header.classList.remove('scrolled');
+          header.classList.add('transparent');
+        }
+    
+        if (currentScrollPosition > 600) {
+          header.style.transform = 'translateY(-100%)';
+        } else {
+          header.style.transform = 'translateY(0)';
+        }
+    
+        lastScrollPosition = currentScrollPosition;
+      });
+
+
+
+    {% endif %}
+
+
+
+
+
+      var mobileLinks = document.getElementsByClassName('mobile-links');
+      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+      var index = mobileLinksArrayConverted.findIndex(function (link) {
+        let arraySplit = window.location.pathname.split('/');
+        let urlpath = arraySplit[arraySplit.length - 1];
+        return link.dataset.linkUrl.indexOf(urlpath) > -1;
+      });
+      if (index > -1) {
+        var parentElement = mobileLinks[index];
+        var imgElement = parentElement.querySelector('.hide-logo');
+        if (imgElement) {
+          imgElement.classList.remove('hide-logo');
+        }
+      }
+
+
+    }
+
+    {% comment %} if (window.innerWidth <= 750) {
+      var currentUrl = window.location.href;
+      var navLinks = document.querySelectorAll('#mobile-header-custom a');
+  
+      for (var i = 0; i < navLinks.length; i++) {
+        if (navLinks[i] && navLinks[i].href === currentUrl) {
+          navLinks[i].classList.add('active');
+        }
+      }
+  
+      let prevScrollPos = window.pageYOffset;
+  
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset;
+        let header = document.getElementById("header");
+  
+        if (currentScrollPos < 200) {
+          header.style.display = "block";
+          header.style.background = "rgba(17, 17, 17, 0.25)";
+          if(currentScrollPos > 50 && currentScrollPos < 200){
+          console.log("POSSS");
+          header.style.background = "#FDFDFD";
+          }
+          return;
+        }
+  
+        if (prevScrollPos > currentScrollPos) {
+          header.style.display = "block";
+        } else {
+          header.style.display = "none";
+        }
+  
+        prevScrollPos = currentScrollPos;
+      }
+  
+      var mobileLinks = document.getElementsByClassName('mobile-links');
+      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+      var index = mobileLinksArrayConverted.findIndex(function (link) {
+        let arraySplit = window.location.pathname.split('/');
+        let urlpath = arraySplit[arraySplit.length - 1];
+        return link.dataset.linkUrl.indexOf(urlpath) > -1;
+      });
+      if (index > -1) {
+        var parentElement = mobileLinks[index];
+        var imgElement = parentElement.querySelector('.hide-logo');
+        if (imgElement) {
+          imgElement.classList.remove('hide-logo');
+        }
+      }
+    } {% endcomment %}
+
+    const backElem = document.getElementById('back_btn');
+  
+    const liquidTemplate = {{ template|json }}
+
+    if (backElem) {
+      backElem.addEventListener('click', (e) => {
+        if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
+          window.location.href = "/"
+        } else {
+          history.back();
+        }
+      });
+    }
+  
+  });
+  
+</script>
+
+{% comment %} {% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %} {% endcomment %}
   <header
     id="header"
-    class="header   transparent--true  style1 header--shadow-none transparent--false header-sticky--active"
+    class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
   >
     <div class="row expanded">
       <div class="small-12 columns" style="display: flex; justify-content: space-between;">
+        {% if template contains 'product' or template contains 'product.coords' %}
+        <a class="right-arrow-button customPDPheader" id="back_btn">
+          {% render 'back-icon-pdp' %}
+        </a>
+        {% endif %}
         <a href="/">
        <div class="white-variant"> {% render 'svg-icons' with 'virgio-logo' %}</div>
        <div class="black-variant"> {% render 'svg-icons' with 'virgio-logo-dark' %}</div>
        </a>
-       {% comment %} <div style="display: flex;
-        align-items: center;">
-        <span style="display:flex;">{% render 'svg-icons' with 'header-search-white' %}</span>
-        <span style="display:flex;">{% render 'svg-icons' with 'header-cart-white' %}</span>
-      </div> {% endcomment %}
-      {% render 'header-secondary-area', header_settings: section.settings %}
+      {% render 'header-full-menu', menu: section.settings.menu, blocks: section.blocks %}
+     {% render 'header-secondary-area', header_settings: section.settings %}
         {% comment %} {%- case style -%}
           {%- when 'style1' -%}
             {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
@@ -181,7 +336,8 @@
       {%- endunless -%}
     {%- endstyle -%}
   </header>
-{% elsif template contains 'product' or template contains 'product.coords' %}
+
+{% comment %} {% elsif template contains 'product' or template contains 'product.coords' %}
   <header
     id="header"
     class="pdp_header header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
@@ -296,7 +452,7 @@
       </div>
     </a>
   </div>
-{% endif %}
+{% endif %} {% endcomment %}
 
 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
@@ -395,125 +551,6 @@
   </script>
 {%- endif -%}
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  
-
-
-    if (window.innerWidth <= 750) {
-
-      var header = document.getElementById('header');
-      var lastScrollPosition = 0;
-    
-      window.addEventListener('scroll', function() {
-        var currentScrollPosition = window.pageYOffset;
-    
-        if (currentScrollPosition > 50) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-    
-        if (currentScrollPosition > 600) {
-          header.style.transform = 'translateY(-100%)';
-        } else {
-          header.style.transform = 'translateY(0)';
-        }
-    
-        lastScrollPosition = currentScrollPosition;
-      });
-
-    // Add transparent class to header by default
-    header.classList.add('transparent');
-
-
-
-      var mobileLinks = document.getElementsByClassName('mobile-links');
-      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-      var index = mobileLinksArrayConverted.findIndex(function (link) {
-        let arraySplit = window.location.pathname.split('/');
-        let urlpath = arraySplit[arraySplit.length - 1];
-        return link.dataset.linkUrl.indexOf(urlpath) > -1;
-      });
-      if (index > -1) {
-        var parentElement = mobileLinks[index];
-        var imgElement = parentElement.querySelector('.hide-logo');
-        if (imgElement) {
-          imgElement.classList.remove('hide-logo');
-        }
-      }
-
-
-    }
-
-    {% comment %} if (window.innerWidth <= 750) {
-      var currentUrl = window.location.href;
-      var navLinks = document.querySelectorAll('#mobile-header-custom a');
-  
-      for (var i = 0; i < navLinks.length; i++) {
-        if (navLinks[i] && navLinks[i].href === currentUrl) {
-          navLinks[i].classList.add('active');
-        }
-      }
-  
-      let prevScrollPos = window.pageYOffset;
-  
-      window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        let header = document.getElementById("header");
-  
-        if (currentScrollPos < 200) {
-          header.style.display = "block";
-          header.style.background = "rgba(17, 17, 17, 0.25)";
-          if(currentScrollPos > 50 && currentScrollPos < 200){
-          console.log("POSSS");
-          header.style.background = "#FDFDFD";
-          }
-          return;
-        }
-  
-        if (prevScrollPos > currentScrollPos) {
-          header.style.display = "block";
-        } else {
-          header.style.display = "none";
-        }
-  
-        prevScrollPos = currentScrollPos;
-      }
-  
-      var mobileLinks = document.getElementsByClassName('mobile-links');
-      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-      var index = mobileLinksArrayConverted.findIndex(function (link) {
-        let arraySplit = window.location.pathname.split('/');
-        let urlpath = arraySplit[arraySplit.length - 1];
-        return link.dataset.linkUrl.indexOf(urlpath) > -1;
-      });
-      if (index > -1) {
-        var parentElement = mobileLinks[index];
-        var imgElement = parentElement.querySelector('.hide-logo');
-        if (imgElement) {
-          imgElement.classList.remove('hide-logo');
-        }
-      }
-    } {% endcomment %}
-
-    const backElem = document.getElementById('back_btn');
-  
-    const liquidTemplate = {{ template|json }}
-
-    if (backElem) {
-      backElem.addEventListener('click', (e) => {
-        if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
-          window.location.href = "/"
-        } else {
-          history.back();
-        }
-      });
-    }
-  
-  });
-  
-</script>
 
 {% schema %}
 {
