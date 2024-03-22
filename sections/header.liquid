@@ -48,7 +48,7 @@
       position: relative;
       border-bottom: none;
       padding-bottom: 0;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
      }
 
      #header.transparent {
@@ -215,7 +215,6 @@
     }  
     else{
 
-let lastScrollTop = 0;
 const header = document.getElementById('header');
 window.addEventListener('scroll', function() {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
