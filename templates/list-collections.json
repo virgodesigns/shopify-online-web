@@ -392,7 +392,7 @@
       "custom_css": [
         "h3 {font-size: 24px; font-weight: 600;}",
         ".rich-text__inner {padding: 0 0px;}",
-        ".rich-text text-left text-position-left text-width-medium section-spacing-padding section-spacing--disable-bottom{padding-top:33px;}"
+        ".section-spacing-padding {padding-top: 33px;}"
       ],
       "settings": {
         "section_width": "grid",
