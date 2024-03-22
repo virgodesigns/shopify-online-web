@@ -390,8 +390,9 @@
         "heading_c3JBQn"
       ],
       "custom_css": [
-        "h3 {font-size: 24px; font-weight: 600; margin-top: 40px;}",
-        ".rich-text__inner {padding: 0 0px;}"
+        "h3 {font-size: 24px; font-weight: 600;}",
+        ".rich-text__inner {padding: 0 0px;}",
+        ".section-spacing-padding {padding-top: 30px;}"
       ],
       "settings": {
         "section_width": "grid",
