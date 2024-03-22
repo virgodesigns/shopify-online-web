@@ -17,7 +17,7 @@
           "type": "text",
           "settings": {
             "icon": "price_tag",
-            "text": "First Order Coupon: Welcome250",
+            "text": "Use Code: Welcome250 on orders above INR 2000\/-",
             "link": ""
           }
         },
