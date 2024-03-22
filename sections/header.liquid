@@ -197,10 +197,8 @@
       });
       if (index > -1) {
         var parentElement = mobileLinks[index];
-        var imgElement = parentElement.querySelector('.hide-logo');
-        if (imgElement) {
-          imgElement.classList.remove('hide-logo');
-        }
+        const link = parentElement.querySelector('a');
+        link.classList.add('active');
       }
       const backElem = document.getElementById('back_btn');
       const liquidTemplate = {{ template|json }}
@@ -217,25 +215,17 @@
     }  
     else{
 
-      let lastScrollTop = 0;
+let lastScrollTop = 0;
 const header = document.getElementById('header');
-
 window.addEventListener('scroll', function() {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-  console.log("currentScroll",currentScroll)
-
   if (currentScroll > lastScrollTop && currentScroll > innerHeightVal) {
-    // Scroll down and past 400px
     header.style.display = "none"
   } else {
-    // Scroll up or not past 400px
     header.style.display = "block"
   }
-
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
 }, false);
-
-
   }
   });
   
@@ -286,124 +276,6 @@ window.addEventListener('scroll', function() {
       {%- endunless -%}
     {%- endstyle -%}
   </header>
-
-{% comment %} {% elsif template contains 'product' or template contains 'product.coords' %}
-  <header
-    id="header"
-    class="pdp_header header  {% if template == 'index' %} transparent--true {% endif %} {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif %} small-hide"
-  >
-    <div class="row expanded">
-      <div class="small-12 columns">
-        {%- case style -%}
-          {%- when 'style1' -%}
-            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
-          {%- when 'style2' -%}
-            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
-          {%- when 'style3' -%}
-            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
-          {%- when 'style4' -%}
-            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
-        {%- endcase -%}
-      </div>
-    </div>
-    {%- style -%}
-      :root {
-        --logo-height: {{ logo_height_range | append: 'px' }};
-        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
-      }
-      {% unless sticky_header %}
-      .header-section {
-        position: static !important;
-      }
-      {%- endunless -%}
-    {%- endstyle -%}
-  </header>
-  <div class="customPDPheader thb-secondary-area">
-    <a class="right-arrow-button customPDPheaderEqual" id="back_btn">
-      {% render 'back-icon-pdp' %}
-    </a>
-    <a href="/" class="customPDPheaderEqual logo">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/pdp-virgio-logo.svg?v=1708433812"
-        alt="virgio logo"
-      >
-    </a>
-    <div class="customPDPheaderEqual search-container">
-      <a
-        class="thb-quick-search"
-        href="{{ routes.search_url }}"
-        title="{{ 'sections.header.search' | t }}"
-      >
-        <div class="search">{%- render 'svg-icons' with 'search-pdp' -%}</div>
-      </a>
-      <a class="" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
-        <div class="thb-secondary-item-icon">
-          {% render 'svg-icons' with 'search-cart-bag' %}
-          <span class="search-cart-bag-count thb-item-count {% if cart != empty %} emptycart {% endif %}">
-            {%- if cart.item_count > 99 -%}
-              {%- render 'svg-icons' with 'thb-asterisk' -%}
-            {%- else -%}
-              <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
-            {%- endif -%}
-          </span>
-        </div>
-      </a>
-    </div>
-  </div>
-{%- else -%}
-  <header
-    class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active hide-mobile"
-  >
-    <div class="row expanded">
-      <div class="small-12 columns" style="display:flex;">
-        {%- case style -%}
-          {%- when 'style1' -%}
-            {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
-          {%- when 'style2' -%}
-            {% render 'header-style2', blocks: section.blocks, header_settings: section.settings %}
-          {%- when 'style3' -%}
-            {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
-          {%- when 'style4' -%}
-            {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
-        {%- endcase -%}
-      </div>
-    </div>
-    {%- style -%}
-      :root {
-        --logo-height: {{ logo_height_range | append: 'px' }};
-        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
-      }
-      {% unless sticky_header %}
-      .header-section {
-        position: static !important;
-      }
-      {%- endunless -%}
-    {%- endstyle -%}
-  </header>
-  <div class="thb-secondary-area mobile">
-    {% if template contains 'product' or template contains 'product.coords' %}
-      <a class="right-arrow-button" id="back_btn">
-        {% render 'home-icon' %}
-      </a>
-    {% endif %}
-    <a class="mobile-search thb-quick-search" href="{{ routes.search_url }}" title="{{ 'sections.header.search' | t }}">
-      {%- render 'svg-icons' with 'search' -%}
-    </a>
-    <a class="thb-secondary-area-item thb-secondary-cart mobile" href="{{ routes.cart_url }}" id="cart-drawer-toggl">
-      <div class="thb-secondary-item-icon">
-        {% render 'svg-icons' with 'cart' %}
-        <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
-          {%- if cart.item_count > 99 -%}
-            {%- render 'svg-icons' with 'thb-asterisk' -%}
-          {%- else -%}
-            <span class="cart-count" aria-hidden="true" id="demo">{{ cart.item_count }}</span>
-          {%- endif -%}
-        </span>
-      </div>
-    </a>
-  </div>
-{% endif %} {% endcomment %}
-
 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
