@@ -163,7 +163,7 @@
       var header = document.getElementById('header');
       var lastScrollPosition = 0;
 
-
+   console.log("HOMEEE" ,{{ template|json }}); 
       {% comment %} {% if template contains 'product' or if template contains 'product.coords' or template contains 'page.circularity' %} {% endcomment %}
       {% if template contains 'product' or template contains 'product.coords'%}
 
@@ -185,6 +185,21 @@ window.addEventListener('scroll', function() {
       {% else  %}
 
       {% comment %} header.classList.add('transparent'); {% endcomment %}
+
+      {% comment %} const scrollDoc =  {% if template contains 'page.circularity' %} document.querySelectorAll('.vertical-snap-container')[0] {% else %} window {% endif %} {% endcomment %}
+
+
+      const iframe = document.getElementById('iframe-circularity'); 
+
+      console.log("iframeiframe",iframe)
+
+      const iframeContentWindow = iframe.contentWindow;
+
+      iframeContentWindow.addEventListener('load', () => {
+        const verticalSnapContainers = iframeContentWindow.document.querySelectorAll('.vertical-snap-container')[0];
+        console.log("verticalSnapContainers",verticalSnapContainers)
+      });
+
 
       window.addEventListener('scroll', function() {
         var currentScrollPosition = window.pageYOffset;
