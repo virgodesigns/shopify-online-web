@@ -189,7 +189,7 @@ window.addEventListener('scroll', function() {
       {% comment %} const scrollDoc =  {% if template contains 'page.circularity' %} document.querySelectorAll('.vertical-snap-container')[0] {% else %} window {% endif %} {% endcomment %}
 
 
-      const iframe = document.getElementById('iframe-circularity'); 
+      {% comment %} const iframe = document.getElementById('iframe-circularity'); 
 
       console.log("iframeiframe",iframe)
 
@@ -198,7 +198,7 @@ window.addEventListener('scroll', function() {
       iframeContentWindow.addEventListener('load', () => {
         const verticalSnapContainers = iframeContentWindow.document.querySelectorAll('.vertical-snap-container')[0];
         console.log("verticalSnapContainers",verticalSnapContainers)
-      });
+      }); {% endcomment %}
 
 
       window.addEventListener('scroll', function() {
