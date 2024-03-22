@@ -88,7 +88,7 @@ tab-switch {
   .explore-tabs {
     position: absolute;
     top: 50%;
-    z-index: 9999;
+    z-index: 10;
     left: 50%;
     display: flex;
     transform: translate(-50%, -50%);
@@ -302,7 +302,6 @@ tab-switch {
   .explore-tabs {
     position: absolute;
     top: 25%;
-    z-index: 9999;
     left: 50%;
     display: flex;
     transform: translate(-50%, -50%);

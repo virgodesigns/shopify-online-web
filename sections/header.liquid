@@ -161,131 +161,33 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-  
+  var innerHeightVal = window.innerHeight
     if (window.innerWidth <= 750) {
-
       var header = document.getElementById('header');
       var lastScrollPosition = 0;
-
-   console.log("HOMEEE" ,{{ template|json }}); 
-      {% comment %} {% if template contains 'product' or if template contains 'product.coords' or template contains 'page.circularity' %} {% endcomment %}
-      {% if template contains 'product' or template contains 'product.coords'%}
-
-console.log("HOMEEE");
-header.classList.add('scrolled');
-
-window.addEventListener('scroll', function() {
-  var currentScrollPosition = window.pageYOffset;
-
-  if (currentScrollPosition > 600) {
-    header.style.transform = 'translateY(-100%)';
-  } else {
-    header.style.transform = 'translateY(0)';
-  }
-
-  lastScrollPosition = currentScrollPosition;
-});
-
-      {% else  %}
-
-      {% comment %} header.classList.add('transparent'); {% endcomment %}
-
-      {% comment %} const scrollDoc =  {% if template contains 'page.circularity' %} document.querySelectorAll('.vertical-snap-container')[0] {% else %} window {% endif %} {% endcomment %}
-
-
-    {% comment %} const iframe = document.getElementById('iframe-circularity'); 
-
-      console.log("iframeiframe",iframe)
-
-      const iframeContentWindow = iframe.contentWindow;
-
-      console.log("iframeContentWindow",iframeContentWindow)
-      iframeContentWindow.addEventListener('load', () => {
-        console.log("iframe loaded")
-      });  {% endcomment %}
-
-
       window.addEventListener('scroll', function() {
-        var currentScrollPosition = window.pageYOffset;
-    
-        if (currentScrollPosition > 50) {
-          header.classList.add('scrolled');
-          header.classList.remove('transparent');
-        } else {
-          header.classList.remove('scrolled');
-          header.classList.add('transparent');
-        }
-    
-        if (currentScrollPosition > 600) {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;      
+        if (currentScroll > lastScrollPosition && currentScroll > innerHeightVal) {
           header.style.transform = 'translateY(-100%)';
         } else {
           header.style.transform = 'translateY(0)';
         }
-    
-        lastScrollPosition = currentScrollPosition;
-      });
-
-
-
-    {% endif %}
-
-
-
-
-
-      var mobileLinks = document.getElementsByClassName('mobile-links');
-      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-      var index = mobileLinksArrayConverted.findIndex(function (link) {
-        let arraySplit = window.location.pathname.split('/');
-        let urlpath = arraySplit[arraySplit.length - 1];
-        return link.dataset.linkUrl.indexOf(urlpath) > -1;
-      });
-      if (index > -1) {
-        var parentElement = mobileLinks[index];
-        var imgElement = parentElement.querySelector('.hide-logo');
-        if (imgElement) {
-          imgElement.classList.remove('hide-logo');
-        }
-      }
-
-
-    }
-
-    {% comment %} if (window.innerWidth <= 750) {
-      var currentUrl = window.location.href;
-      var navLinks = document.querySelectorAll('#mobile-header-custom a');
-  
-      for (var i = 0; i < navLinks.length; i++) {
-        if (navLinks[i] && navLinks[i].href === currentUrl) {
-          navLinks[i].classList.add('active');
-        }
-      }
-  
-      let prevScrollPos = window.pageYOffset;
-  
-      window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        let header = document.getElementById("header");
-  
-        if (currentScrollPos < 200) {
-          header.style.display = "block";
-          header.style.background = "rgba(17, 17, 17, 0.25)";
-          if(currentScrollPos > 50 && currentScrollPos < 200){
-          console.log("POSSS");
-          header.style.background = "#FDFDFD";
+        lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
+      }, false);
+      {% if template contains 'index' %}
+        window.addEventListener('scroll', function() {
+          var currentScrollPosition = window.pageYOffset;
+          if (currentScrollPosition > 50) {
+            header.classList.add('scrolled');
+            header.classList.remove('transparent');
+          } else {
+            header.classList.remove('scrolled');
+            header.classList.add('transparent');
           }
-          return;
-        }
-  
-        if (prevScrollPos > currentScrollPos) {
-          header.style.display = "block";
-        } else {
-          header.style.display = "none";
-        }
-  
-        prevScrollPos = currentScrollPos;
-      }
-  
+        });
+      {% else  %}
+      header.classList.add('scrolled');
+      {% endif %}
       var mobileLinks = document.getElementsByClassName('mobile-links');
       var mobileLinksArrayConverted = [].slice.call(mobileLinks);
       var index = mobileLinksArrayConverted.findIndex(function (link) {
@@ -300,22 +202,41 @@ window.addEventListener('scroll', function() {
           imgElement.classList.remove('hide-logo');
         }
       }
-    } {% endcomment %}
-
-    const backElem = document.getElementById('back_btn');
+      const backElem = document.getElementById('back_btn');
+      const liquidTemplate = {{ template|json }}
   
-    const liquidTemplate = {{ template|json }}
+      if (backElem) {
+        backElem.addEventListener('click', (e) => {
+          if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
+            window.location.href = "/"
+          } else {
+            history.back();
+          }
+        });
+      }
+    }  
+    else{
 
-    if (backElem) {
-      backElem.addEventListener('click', (e) => {
-        if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
-          window.location.href = "/"
-        } else {
-          history.back();
-        }
-      });
-    }
-  
+      let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  console.log("currentScroll",currentScroll)
+
+  if (currentScroll > lastScrollTop && currentScroll > innerHeightVal) {
+    // Scroll down and past 400px
+    header.style.display = "none"
+  } else {
+    // Scroll up or not past 400px
+    header.style.display = "block"
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
+}, false);
+
+
+  }
   });
   
 </script>

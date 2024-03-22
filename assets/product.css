@@ -28,6 +28,7 @@
 
 .right-arrow-button {
   display: flex;
+  margin-right: 0.5rem;
 }
 
 .product-thumnails-image img,
