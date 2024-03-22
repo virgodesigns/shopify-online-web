@@ -3,13 +3,13 @@
     "16479477632637c9a7": {
       "type": "slideshow",
       "blocks": {
-        "slide_V4D4x9": {
+        "slide_GPnqP4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
-            "mobile_image": "shopify:\/\/shop_images\/1._Hero_banner_c2e45879-6162-4523-80e5-5ffaba22723c.png",
-            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
-            "video_background": true,
+            "image": "shopify:\/\/shop_images\/holi_desk_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/holi_1.png",
+            "slide_link": "shopify:\/\/collections\/holi-sale-edit",
+            "video_background": false,
             "video": "",
             "subheading": "",
             "heading": "",
@@ -32,13 +32,13 @@
             "button_2_underline": false
           }
         },
-        "slide_GPnqP4": {
+        "slide_V4D4x9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/holi_desk.png",
-            "mobile_image": "shopify:\/\/shop_images\/holi.png",
-            "slide_link": "shopify:\/\/collections\/holi-sale-edit",
-            "video_background": false,
+            "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_48096541_1.png",
+            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
+            "video_background": true,
             "video": "",
             "subheading": "",
             "heading": "",
@@ -63,8 +63,8 @@
         }
       },
       "block_order": [
-        "slide_V4D4x9",
-        "slide_GPnqP4"
+        "slide_GPnqP4",
+        "slide_V4D4x9"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
