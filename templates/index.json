@@ -3,35 +3,6 @@
     "16479477632637c9a7": {
       "type": "slideshow",
       "blocks": {
-        "slide_V4D4x9": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
-            "mobile_image": "shopify:\/\/shop_images\/1._Hero_banner_c2e45879-6162-4523-80e5-5ffaba22723c.png",
-            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
-            "video_background": true,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        },
         "slide_GPnqP4": {
           "type": "slide",
           "settings": {
@@ -60,11 +31,40 @@
             "button_2_outline": false,
             "button_2_underline": false
           }
+        },
+        "slide_V4D4x9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
+            "mobile_image": "shopify:\/\/shop_images\/1._Hero_banner_c2e45879-6162-4523-80e5-5ffaba22723c.png",
+            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": false
+          }
         }
       },
       "block_order": [
-        "slide_V4D4x9",
-        "slide_GPnqP4"
+        "slide_GPnqP4",
+        "slide_V4D4x9"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
