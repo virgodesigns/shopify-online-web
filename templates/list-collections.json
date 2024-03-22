@@ -390,7 +390,7 @@
         "heading_c3JBQn"
       ],
       "custom_css": [
-        "h3 {font-size: 24px; font-weight: 600; margin-top: 40px;}",
+        "h3 {font-size: 24px; font-weight: 600;}",
         ".rich-text__inner {padding: 0 0px;}"
       ],
       "settings": {
