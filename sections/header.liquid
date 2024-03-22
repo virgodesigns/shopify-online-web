@@ -31,6 +31,9 @@
       transition: background-color 0.3s ease;
       display:none;
     }
+    #header .header-in{
+      padding:0 1rem;
+    }
     #header.scrolled .black-variant{
       display:flex
      }
@@ -322,12 +325,13 @@ window.addEventListener('scroll', function() {
     id="header"
     class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
   >
-    <div class="row expanded">
+    <div class="row expanded header-in">
       <div class="small-12 columns" style="display: flex; justify-content: space-between; padding: 0;">
 
         {% unless template contains 'index' or template contains 'page.circularity' or template contains 'list-collections' or template contains 'customers' %}
         <a class="right-arrow-button customPDPheader" id="back_btn">
-          {% render 'back-icon-pdp' %}
+          <div class="black-variant">  {% render 'back-icon-pdp' %}</div>
+          <div class="white-variant">  {% render 'back-icon-white-pdp' %}</div>
         </a>
         {% endunless %}
         <a href="/">
