@@ -17,7 +17,12 @@
     display:none;
   }
   .white-variant{
-  display:block;
+  display:flex;
+  }
+  .virgio-logo{
+    {% comment %} position: relative;
+    bottom: 5px; {% endcomment %}
+    height: 30px;
   }
 
   @media only screen and (max-width: 768px) {
@@ -27,7 +32,7 @@
       display:none;
     }
     #header.scrolled .black-variant{
-      display:block
+      display:flex
      }
    
      #header.scrolled .white-variant{
@@ -38,6 +43,8 @@
       background-color: #ffffff;
       display: block;
       position: relative;
+      border-bottom: none;
+      padding-bottom: 0;
      }
 
      #header.transparent {
@@ -300,15 +307,15 @@ window.addEventListener('scroll', function() {
     class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
   >
     <div class="row expanded">
-      <div class="small-12 columns" style="display: flex; justify-content: space-between;">
+      <div class="small-12 columns" style="display: flex; justify-content: space-between; padding: 0;">
         {% if template contains 'product' or template contains 'product.coords' %}
         <a class="right-arrow-button customPDPheader" id="back_btn">
           {% render 'back-icon-pdp' %}
         </a>
         {% endif %}
         <a href="/">
-       <div class="white-variant"> {% render 'svg-icons' with 'virgio-logo' %}</div>
-       <div class="black-variant"> {% render 'svg-icons' with 'virgio-logo-dark' %}</div>
+       <div class="white-variant virgio-logo"> {% render 'svg-icons' with 'virgio-logo' %}</div>
+       <div class="black-variant virgio-logo"> {% render 'svg-icons' with 'virgio-logo-dark' %}</div>
        </a>
       {% render 'header-full-menu', menu: section.settings.menu, blocks: section.blocks %}
      {% render 'header-secondary-area', header_settings: section.settings %}
