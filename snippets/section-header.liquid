@@ -47,8 +47,20 @@
             <a
               class="text-button linked-to-tab{% if forloop.first == true %} active{% endif %}"
               href="{{ block.settings.collection.url }}"
+              style="height: auto;"
             >
-              {{- 'sections.featured_collection.shop_collection' | t: collection: block.settings.collection.title -}}
+
+              <button style="display: flex;
+                width: 100%;
+                background: #000;
+                height: auto;
+                align-items: center;
+                color: #fff;
+                padding: 1rem;
+                text-transform: uppercase">{{- 'sections.featured_collection.shop_collection' | t: collection: block.settings.collection.title -}}
+            </button>
+
+              {% comment %} {{- 'sections.featured_collection.shop_collection' | t: collection: block.settings.collection.title -}} {% endcomment %}
             </a>
           {%- else -%}
             <a class="text-button linked-to-tab{% if forloop.first == true %} active{% endif %}" href="#">
@@ -72,3 +84,4 @@
     {%- endif -%}
   </div>
 {%- endif -%}
+
