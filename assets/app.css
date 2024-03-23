@@ -2992,7 +2992,7 @@ h6,
 }
 .transparent--true {
   position: absolute;
-  border-bottom: 1px solid #FDFDFD;
+  border-bottom: 0.5px solid #FDFDFD;
   background: rgba(17, 17, 17, 0.25);
   padding-bottom: 1px;
 }
@@ -3276,14 +3276,14 @@ h6,
   text-align: center;
   font-size: 0.625rem;
   font-weight: 600;
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--color-header-transparent-text, #fff);
   color: var(--color-header-icons, --color-accent);
   position: absolute;
-  top: -8px;
-  right: -12px;
+  top: -2px;
+  right: -6px;
 }
 
 .logolink {
