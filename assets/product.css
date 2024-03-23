@@ -28,7 +28,7 @@
 
 .right-arrow-button {
   display: flex;
-  padding: 0.8rem 1rem;
+  margin-right: 0.5rem;
 }
 
 .product-thumnails-image img,

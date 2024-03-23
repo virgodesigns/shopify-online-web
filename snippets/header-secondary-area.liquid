@@ -24,14 +24,20 @@
     href="{{ routes.search_url }}"
     title="{{ 'sections.header.search' | t }}"
   >
-    {%- render 'svg-icons' with 'search' -%}
+    <span class="white-variant">
+    {%- render 'svg-icons' with 'header-search-white' -%}
+  </span>
+  <span class="black-variant">
+    {%- render 'svg-icons' with 'header-search-black' -%}
+  </span>
   </a>
   <a class="thb-secondary-area-item thb-secondary-cart" href="{{ routes.cart_url }}" id="cart-drawer-toggle">
     <div class="thb-secondary-item-icon">
-      {% render 'svg-icons' with 'cart' %}
+     <span class="white-variant"> {% render 'svg-icons' with 'header-cart-white' %}</span>
+     <span class="black-variant"> {% render 'svg-icons' with 'header-cart-black' %}</span>
       <span class="thb-item-count {% if cart != empty %} emptycart {% endif %}">
-        {%- if cart.item_count > 99 -%}
-          {%- render 'svg-icons' with 'thb-asterisk' -%}
+        {%- if cart.item_count > 99 -%} 
+          {%- render 'svg-icons' with 'thb-asterisk' -%}  
         {%- else -%}
           <span>{{ cart.item_count }}</span>
         {%- endif -%}
@@ -39,3 +45,10 @@
     </div>
   </a>
 </div>
+
+
+{% comment %} <div style="display: flex;
+  align-items: center;">
+  <span style="display:flex;">{% render 'svg-icons' with 'header-search-white' %}</span>
+  <span style="display:flex;">{% render 'svg-icons' with 'header-cart-white' %}</span>
+</div> {% endcomment %}
