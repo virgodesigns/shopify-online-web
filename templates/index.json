@@ -367,7 +367,7 @@
         "slide_DLLef8"
       ],
       "custom_css": [
-        ".mute-toggle {display: none;}"
+
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
