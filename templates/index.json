@@ -5,6 +5,7 @@
       "blocks": {
         "slide_GPnqP4": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/holi_desk_2.png",
             "mobile_image": "shopify:\/\/shop_images\/holi_1.png",
