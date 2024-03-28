@@ -6,9 +6,10 @@
         "slide_YJbkij": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_5.png",
             "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
             "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
-            "video_background": true,
+            "video_background": false,
             "video": "",
             "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
             "subheading": "",
@@ -46,7 +47,7 @@
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "slide",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
