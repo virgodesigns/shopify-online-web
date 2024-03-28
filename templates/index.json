@@ -157,7 +157,35 @@
         "slide_9wDP8D": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fractured_floral.jpg",
+            "image": "shopify:\/\/shop_images\/FACTURED_FLORAL.jpg",
+            "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": false
+          }
+        },
+        "slide_PtrTWK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GOTHIC_1.jpg",
             "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
             "video_background": false,
             "video": "",
@@ -184,7 +212,8 @@
         }
       },
       "block_order": [
-        "slide_9wDP8D"
+        "slide_9wDP8D",
+        "slide_PtrTWK"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -472,7 +501,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_links": "#151515",
         "show_on_desktop": false,
@@ -600,7 +629,7 @@
             "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
             "video_background": true,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "video_hosted": "shopify:\/\/files\/videos\/App_1080x1416.mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/not brag_1080x1416.mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-xlarge",
