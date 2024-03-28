@@ -363,39 +363,48 @@
         "disable_bottom_spacing": true
       }
     },
-    "rich_text_yxRDrG": {
-      "type": "rich-text",
+    "slideshow_BzpK3t": {
+      "type": "slideshow",
       "blocks": {
-        "subheading_XWtKFL": {
-          "type": "subheading",
+        "slide_3VeF7t": {
+          "type": "slide",
           "settings": {
-            "text": "SHOP BY"
-          }
-        },
-        "heading_aXFtm3": {
-          "type": "heading",
-          "settings": {
-            "text": "CATEGORY",
-            "size": "h3"
+            "image": "shopify:\/\/shop_images\/shop_by_category_header_b1e03f28-020a-4af5-b725-06984abfe654.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "subheading_XWtKFL",
-        "heading_aXFtm3"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+        "slide_3VeF7t"
       ],
       "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffffff",
-        "color_text": "#000000",
-        "color_links": "#151515",
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -1359,7 +1368,7 @@
     "collection_tabs_Fbjncb",
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
-    "rich_text_yxRDrG",
+    "slideshow_BzpK3t",
     "mwidget_NAaUxK",
     "rich_text_RxPfji",
     "slideshow_MQn6Jh",
