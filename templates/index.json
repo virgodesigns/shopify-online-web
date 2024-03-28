@@ -1285,7 +1285,8 @@
         "slide_ti9aVE": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/media_in_spotlight.png",
+            "image": "shopify:\/\/shop_images\/Media_Spotlight_5.png",
+            "mobile_image": "shopify:\/\/shop_images\/media_in_spotlight.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1321,7 +1322,7 @@
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "swipe",
-        "show_on_desktop": false,
+        "show_on_desktop": true,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
