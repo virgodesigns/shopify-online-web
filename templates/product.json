@@ -240,7 +240,7 @@
         "heading_left": false,
         "description": "<p>Add a short description for this section<\/p>",
         "full_width": true,
-        "display_type": "carousel",
+        "display_type": "grid",
         "columns_desktop": 4,
         "mobile_swipe": true,
         "show_progress_bar": true,
