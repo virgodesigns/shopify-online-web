@@ -459,31 +459,48 @@
         "text_color": ""
       }
     },
-    "rich_text_RxPfji": {
-      "type": "rich-text",
+    "slideshow_abQTXj": {
+      "type": "slideshow",
       "blocks": {
-        "heading_FTF7Gr": {
-          "type": "heading",
+        "slide_CBTekc": {
+          "type": "slide",
           "settings": {
-            "text": "CELEB CORNER",
-            "size": "h3"
+            "image": "shopify:\/\/shop_images\/shop_by_category_header-2_f16ece48-f849-44f0-aca7-520e7670d66d.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "heading_FTF7Gr"
-      ],
-      "custom_css": [
-        ".h3 {margin-bottom: 0; padding-bottom: 2rem; padding-top: 2rem;}"
+        "slide_CBTekc"
       ],
       "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "color_links": "#151515",
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -785,45 +802,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "rich_text_RXHcJh": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_eLYDNb": {
-          "type": "subheading",
-          "settings": {
-            "text": "COLLECTION IN"
-          }
-        },
-        "heading_Dcan6P": {
-          "type": "heading",
-          "settings": {
-            "text": "SPOTLIGHT",
-            "size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_eLYDNb",
-        "heading_Dcan6P"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffffff",
-        "color_text": "#000000",
-        "color_links": "#151515",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "slideshow_BBgkGm": {
       "type": "slideshow",
       "blocks": {
@@ -869,82 +847,6 @@
         "transition": "swipe",
         "show_on_desktop": true,
         "show_on_mobile": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "7c2288b9-760f-41be-a885-02548bc5a5c3": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/The_Date_Banner_2_3fa9579d-1c40-479e-af6f-2e90c316986d.png",
-            "slide_link": "shopify:\/\/collections\/date-collection",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3"
-      ],
-      "custom_css": [
-        ".slideshow__slide {padding-bottom: 0px;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "featured_collection_BYnUMz": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "bg_color": "#ffffff",
-        "button_url": "shopify:\/\/collections\/date-collection",
-        "button_text": "EXPLORE ECO-CHIC",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "url": "shopify:\/\/collections\/date-collection",
-        "carouselCardWidth": "45",
-        "description": "",
-        "full_width": true,
-        "collection": "date-collection",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -1201,39 +1103,48 @@
         "disable_bottom_spacing": true
       }
     },
-    "rich_text_WLiWHk": {
-      "type": "rich-text",
+    "slideshow_ti6LAx": {
+      "type": "slideshow",
       "blocks": {
-        "subheading_zazyUe": {
-          "type": "subheading",
+        "slide_tEQqTH": {
+          "type": "slide",
           "settings": {
-            "text": "FEATURING"
-          }
-        },
-        "heading_WgyTXR": {
-          "type": "heading",
-          "settings": {
-            "text": "#VIRGIOCIRCLE",
-            "size": "h3"
+            "image": "shopify:\/\/shop_images\/shop_by_category_header-5_d3af145e-cd0b-4b64-83b3-6162cf0db857.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
           }
         }
       },
       "block_order": [
-        "subheading_zazyUe",
-        "heading_WgyTXR"
-      ],
-      "custom_css": [
-        "div {height: 100px;}",
-        "p {color: #111111; padding-top: 32px; margin-bottom: -1.5px;}"
+        "slide_tEQqTH"
       ],
       "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#ffffff",
-        "color_text": "#000000",
-        "color_links": "#151515",
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
@@ -1370,20 +1281,17 @@
     "slideshow_KMFfTm",
     "slideshow_BzpK3t",
     "mwidget_NAaUxK",
-    "rich_text_RxPfji",
+    "slideshow_abQTXj",
     "slideshow_MQn6Jh",
     "1f40935b-b1ff-4d3b-a46e-841cbd995ed2",
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
     "rich_text_VtnfbU",
-    "rich_text_RXHcJh",
     "slideshow_BBgkGm",
-    "7c2288b9-760f-41be-a885-02548bc5a5c3",
-    "featured_collection_BYnUMz",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
     "slideshow_3ANpL7",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
-    "rich_text_WLiWHk",
+    "slideshow_ti6LAx",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "featured_blog_YU4Nfw"
   ]
