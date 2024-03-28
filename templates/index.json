@@ -10,7 +10,7 @@
             "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
             "video_background": true,
             "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner_1080x2350_83b96cad-b7ef-49c8-ba2c-c0791fddc32b.mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-large",
@@ -41,7 +41,7 @@
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
+        "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": true,
         "autoplay_length": 5,
@@ -49,7 +49,56 @@
         "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
+      }
+    },
+    "slideshow_4W9bzy": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_R6Arwd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_2_b9bfa1cc-6b7d-4afd-83ed-7e14bee3d4f1.jpg",
+            "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_R6Arwd"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "slide",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
         "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
       }
     },
@@ -1281,6 +1330,7 @@
   },
   "order": [
     "16479477632637c9a7",
+    "slideshow_4W9bzy",
     "slideshow_w7MbVp",
     "slideshow_tDqQJ4",
     "slideshow_VqLG7P",
