@@ -36,7 +36,7 @@
         "text_nMhnJx"
       ],
       "custom_css": [
-        "div {background-color: #526D52;}"
+        "div {background-color: #11111;}"
       ],
       "settings": {
         "announcement_bar": true,
