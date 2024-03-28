@@ -37,8 +37,7 @@
         "slide_YJbkij"
       ],
       "custom_css": [
-        ".mute-toggle {display: none;}",
-        "@media only screen and (max-width: 767px) {.slideshow.mobile-height-full {height: 100%;}}"
+        ".mute-toggle {display: none;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
