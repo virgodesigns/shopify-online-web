@@ -1248,6 +1248,54 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_z6nJUD": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_86hgPb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Guarantee_6.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_86hgPb"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "featured_blog_YU4Nfw": {
       "type": "featured-blog",
       "custom_css": [
@@ -1293,6 +1341,7 @@
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "slideshow_ti6LAx",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
+    "slideshow_z6nJUD",
     "featured_blog_YU4Nfw"
   ]
 }
