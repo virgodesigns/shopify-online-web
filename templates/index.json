@@ -3,36 +3,6 @@
     "16479477632637c9a7": {
       "type": "slideshow",
       "blocks": {
-        "slide_V4D4x9": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
-            "mobile_image": "shopify:\/\/shop_images\/Frame_48096541_1.png",
-            "slide_link": "shopify:\/\/collections\/spring-dream-collection",
-            "video_background": true,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        },
         "slide_YJbkij": {
           "type": "slide",
           "settings": {
@@ -64,7 +34,6 @@
         }
       },
       "block_order": [
-        "slide_V4D4x9",
         "slide_YJbkij"
       ],
       "custom_css": [
@@ -424,7 +393,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "#ffeddb",
+        "color_bg": "#ffffff",
         "color_text": "#000000",
         "color_links": "#151515",
         "show_on_desktop": false,
@@ -439,7 +408,7 @@
         "image_item_wfhHkc": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_6224_1.png",
             "heading_text": "Dresses",
             "button_link": "shopify:\/\/collections\/dresses-date"
           }
@@ -447,7 +416,7 @@
         "image_item_8k6yQC": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_6224-1_1.png",
             "heading_text": "Topwear",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
@@ -455,7 +424,7 @@
         "image_item_MLUAC8": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.4_Bottomwear_category_img.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_6224-3_1.png",
             "heading_text": "Bottomwear",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
@@ -463,7 +432,7 @@
         "image_item_ABtpDQ": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.3_Co-ord_category_img.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_6224-2_1.png",
             "heading_text": "Co-ord Sets",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
@@ -477,7 +446,7 @@
       ],
       "settings": {
         "main_heading": "",
-        "bg_color": "#ffeddb",
+        "bg_color": "#ffffff",
         "text_color": ""
       }
     },
