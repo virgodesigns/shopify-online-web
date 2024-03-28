@@ -3738,6 +3738,21 @@ h6,
   cursor: pointer;
   position: relative;
 }
+
+.read-more-custom {
+  background: #000;
+  height: auto;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.read-more-custom:before{
+ background: none !important;
+}
+
+
+
 .shopify-payment-button__more-options:after,
 .shopify-payment-button__more-options:before,
 .spr-summary-actions-newreview:after,

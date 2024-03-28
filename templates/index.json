@@ -157,7 +157,7 @@
         "slide_9wDP8D": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096620.jpg",
+            "image": "shopify:\/\/shop_images\/FACTURED_FLORAL.jpg",
             "slide_link": "shopify:\/\/collections\/fractured-floral",
             "video_background": false,
             "video": "",
@@ -206,7 +206,7 @@
         "slide_yV9NrF": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096621.jpg",
+            "image": "shopify:\/\/shop_images\/GOTHIC_1.jpg",
             "slide_link": "shopify:\/\/collections\/forbidden-bloom",
             "video_background": false,
             "video": "",
@@ -298,7 +298,7 @@
         "columns_desktop": 5,
         "show_view_all": true,
         "show_progress_bar": false,
-        "bg_color": "#ffffff",
+        "bg_color": "#ffeddb",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "margin_left_value": "0",
@@ -1285,8 +1285,7 @@
         "slide_ti9aVE": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Media_Spotlight_5.png",
-            "mobile_image": "shopify:\/\/shop_images\/media_in_spotlight.png",
+            "image": "shopify:\/\/shop_images\/media_in_spotlight.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1322,7 +1321,7 @@
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "swipe",
-        "show_on_desktop": true,
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true

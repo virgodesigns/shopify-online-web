@@ -1,3 +1,6 @@
+
+{{ 'app.css' | asset_url | stylesheet_tag }}
+
 {%- liquid
 	assign ratio = 1
 	case image_ratio
@@ -37,7 +40,8 @@
 		<p>{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
 	</div>
 	{% endif %}
-	<a href="{{ article.url }}" title="{{ article.title | escape }}" class="text-button read-more">{{ 'blogs.article.read_more' | t }}</a>
+
+	<a href="{{ article.url }}" title="{{ article.title | escape }}" class="text-button read-more read-more-custom">{{ 'blogs.article.read_more' | t }}</a>
 </div>
 {%- else -%}
 <div class="blog-post">
