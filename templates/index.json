@@ -132,8 +132,29 @@
             "button_2_outline": false,
             "button_2_underline": false
           }
-        },
-        "slide_PtrTWK": {
+        }
+      },
+      "block_order": [
+        "slide_9wDP8D"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "slide",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
+      }
+    },
+    "slideshow_VqLG7P": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yV9NrF": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/GOTHIC_1.jpg",
@@ -163,8 +184,7 @@
         }
       },
       "block_order": [
-        "slide_9wDP8D",
-        "slide_PtrTWK"
+        "slide_yV9NrF"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -1335,6 +1355,7 @@
     "16479477632637c9a7",
     "slideshow_w7MbVp",
     "slideshow_tDqQJ4",
+    "slideshow_VqLG7P",
     "collection_tabs_Fbjncb",
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
