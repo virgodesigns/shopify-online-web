@@ -3,38 +3,9 @@
     "16479477632637c9a7": {
       "type": "slideshow",
       "blocks": {
-        "slide_GPnqP4": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/holi_desk_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/holi_1.png",
-            "slide_link": "shopify:\/\/collections\/holi-sale-edit",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/spring-dream-collection",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        },
         "slide_V4D4x9": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/web_banner_b687ea64-8d92-472e-9300-6f8f6f01ce88.png",
             "mobile_image": "shopify:\/\/shop_images\/Frame_48096541_1.png",
@@ -61,11 +32,39 @@
             "button_2_outline": false,
             "button_2_underline": false
           }
+        },
+        "slide_YJbkij": {
+          "type": "slide",
+          "settings": {
+            "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
+            "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": false
+          }
         }
       },
       "block_order": [
-        "slide_GPnqP4",
-        "slide_V4D4x9"
+        "slide_V4D4x9",
+        "slide_YJbkij"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -74,7 +73,56 @@
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "slide",
-        "show_on_desktop": true,
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
+      }
+    },
+    "slideshow_w7MbVp": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_nhWBWG": {
+          "type": "slide",
+          "settings": {
+            "mobile_image": "shopify:\/\/shop_images\/banner_2_b9bfa1cc-6b7d-4afd-83ed-7e14bee3d4f1.jpg",
+            "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_nhWBWG"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "slide",
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
@@ -1209,54 +1257,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "slideshow_RQ3bpV": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_hRYnng": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Guarantee_3.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_hRYnng"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 3,
-        "transition": "fade",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "featured_blog_YU4Nfw": {
       "type": "featured-blog",
       "custom_css": [
@@ -1378,6 +1378,7 @@
   },
   "order": [
     "16479477632637c9a7",
+    "slideshow_w7MbVp",
     "collection_tabs_Fbjncb",
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
@@ -1398,7 +1399,6 @@
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "rich_text_WLiWHk",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
-    "slideshow_RQ3bpV",
     "featured_blog_YU4Nfw",
     "slideshow_MCNKwV",
     "slideshow_aQQdbF"
