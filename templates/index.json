@@ -10,7 +10,7 @@
             "slide_link": "shopify:\/\/collections\/gothic-bloom-fractured-florals",
             "video_background": true,
             "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
+            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner_1080x2070.mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-large",
@@ -38,55 +38,6 @@
       ],
       "custom_css": [
         ".mute-toggle {display: none;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "slideshow_KtdpVX": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_bGagBF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_2_b9bfa1cc-6b7d-4afd-83ed-7e14bee3d4f1.jpg",
-            "slide_link": "",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_bGagBF"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
@@ -899,7 +850,7 @@
         "template--21447364542761__7c2288b9-760f-41be-a885-02548bc5a5c3-slide-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6_The_Date_Banner_1a264d0b-300e-4277-9ba5-064cfdfa2722.png",
+            "image": "shopify:\/\/shop_images\/The_Date_Banner_2_3fa9579d-1c40-479e-af6f-2e90c316986d.png",
             "slide_link": "shopify:\/\/collections\/date-collection",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -1382,7 +1333,6 @@
   },
   "order": [
     "16479477632637c9a7",
-    "slideshow_KtdpVX",
     "slideshow_w7MbVp",
     "slideshow_tDqQJ4",
     "collection_tabs_Fbjncb",
