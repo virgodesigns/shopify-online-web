@@ -233,6 +233,21 @@
         "sub_heading": "Spotted in Virgio"
       }
     },
+    "product_recommendations_TeC3wP": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Similar products",
+        "heading_left": false,
+        "description": "<p>Add a short description for this section<\/p>",
+        "full_width": true,
+        "display_type": "carousel",
+        "columns_desktop": 4,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "17103942529f2cf36f": {
       "type": "apps",
       "blocks": {
@@ -258,17 +273,6 @@
     },
     "171084000521e9d8dd": {
       "type": "apps",
-      "blocks": {
-        "ai_stylist_aistylist_button_9LjBLC": {
-          "type": "shopify:\/\/apps\/ai-stylist\/blocks\/aistylist-button\/9a44c51b-f4f3-4724-9175-c0d8913bf194",
-          "settings": {
-            "title": "Try this on"
-          }
-        }
-      },
-      "block_order": [
-        "ai_stylist_aistylist_button_9LjBLC"
-      ],
       "settings": {
       }
     }
@@ -283,6 +287,7 @@
     "16623877721f33fb14",
     "product-recommendations",
     "6504c889-765e-4951-97dd-2817199cfc89",
+    "product_recommendations_TeC3wP",
     "17103942529f2cf36f",
     "171084000521e9d8dd"
   ]
