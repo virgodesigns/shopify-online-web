@@ -1193,7 +1193,7 @@
       ],
       "custom_css": [
         ".social-images-collections .image-container::after {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.6) 100% ); z-index: 1;}",
-        ".heading {font-family: Inter;}"
+        ".social-images-collections{padding-top:0px;}"
       ],
       "settings": {
         "para_top": "",
