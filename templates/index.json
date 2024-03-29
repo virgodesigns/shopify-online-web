@@ -29,8 +29,8 @@
             "button_1_underline": true,
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
+            "button_2_outline": true,
+            "button_2_underline": true
           }
         }
       },
