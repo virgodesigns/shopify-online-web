@@ -11,8 +11,6 @@
 -%}
 
 <style>
-
-
   .black-variant{
     display:none;
   }
@@ -36,11 +34,11 @@
     #header.scrolled .black-variant{
       display:flex
      }
-   
+
      #header.scrolled .white-variant{
        display:none
-      } 
-   
+      }
+
      #header.scrolled {
       background-color: #ffffff;
       display: block;
@@ -54,12 +52,12 @@
       background-color: rgba(17, 17, 17, 0.25);
       display:block;
     }
-   
+
   }
 
 
 
-  
+
 
                  {% comment %} {% if template contains 'product' %}
                      .header{
@@ -159,101 +157,113 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-  var innerHeightVal = window.innerHeight * 2
-    if (window.innerWidth <= 750) {
-      var header = document.getElementById('header');
-      var lastScrollPosition = 0;
-      window.addEventListener('scroll', function() {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;      
-        if (currentScroll > lastScrollPosition && currentScroll > innerHeightVal) {
-          header.style.transform = 'translateY(-100%)';
-        } else {
-          header.style.transform = 'translateY(0)';
-        }
-        lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
-      }, false);
-      {% if template contains 'index' %}
-        {% comment %} header.classList.remove('scrolled');
-        header.classList.add('transparent'); {% endcomment %}
+    document.addEventListener('DOMContentLoaded', function () {
+    var innerHeightVal = window.innerHeight * 2
+      if (window.innerWidth <= 750) {
+        var header = document.getElementById('header');
+        var lastScrollPosition = 0;
         window.addEventListener('scroll', function() {
-          var currentScrollPosition = window.pageYOffset;
-          if (currentScrollPosition > 50) {
-            header.classList.add('scrolled');
-            header.classList.remove('transparent');
+          let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+          if (currentScroll > lastScrollPosition && currentScroll > innerHeightVal) {
+            header.style.transform = 'translateY(-100%)';
           } else {
-            header.classList.remove('scrolled');
-            header.classList.add('transparent');
+            header.style.transform = 'translateY(0)';
           }
+          lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
+        }, false);
+        {% if template contains 'index' %}
+          {% comment %} header.classList.remove('scrolled');
+          header.classList.add('transparent'); {% endcomment %}
+          window.addEventListener('scroll', function() {
+            var currentScrollPosition = window.pageYOffset;
+            if (currentScrollPosition > 50) {
+              header.classList.add('scrolled');
+              header.classList.remove('transparent');
+            } else {
+              header.classList.remove('scrolled');
+              header.classList.add('transparent');
+            }
+          });
+        {% else  %}
+        header.classList.add('scrolled');
+        {% endif %}
+        var mobileLinks = document.getElementsByClassName('mobile-links');
+        var mobileLinksArrayConverted = [].slice.call(mobileLinks);
+        var index = mobileLinksArrayConverted.findIndex(function (link) {
+          let arraySplit = window.location.pathname.split('/');
+          let urlpath = arraySplit[arraySplit.length - 1];
+          return link.dataset.linkUrl.indexOf(urlpath) > -1;
         });
-      {% else  %}
-      header.classList.add('scrolled');
-      {% endif %}
-      var mobileLinks = document.getElementsByClassName('mobile-links');
-      var mobileLinksArrayConverted = [].slice.call(mobileLinks);
-      var index = mobileLinksArrayConverted.findIndex(function (link) {
-        let arraySplit = window.location.pathname.split('/');
-        let urlpath = arraySplit[arraySplit.length - 1];
-        return link.dataset.linkUrl.indexOf(urlpath) > -1;
-      });
-      if (index > -1) {
-        var parentElement = mobileLinks[index];
-        const link = parentElement.querySelector('a');
-        link.classList.add('active');
-      }
-      const backElem = document.getElementById('back_btn');
-      const liquidTemplate = {{ template|json }}
-  
-      if (backElem) {
-        backElem.addEventListener('click', (e) => {
-          if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
-            window.location.href = "/"
-          } else {
-            history.back();
-          }
-        });
-      }
-    }  
-    else{
+        if (index > -1) {
+          var parentElement = mobileLinks[index];
+          const link = parentElement.querySelector('a');
+          link.classList.add('active');
+        }
+        const backElem = document.getElementById('back_btn');
+        const liquidTemplate = {{ template|json }}
 
-const header = document.getElementById('header');
-var lastScrollTop = 0;
-window.addEventListener('scroll', function() {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-  if (currentScroll > lastScrollTop && currentScroll > innerHeightVal) {
-    header.style.display = "none"
-  } else {
-    header.style.display = "block"
-  }
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
-}, false);
-  }
-  });
-  
+        if (backElem) {
+          backElem.addEventListener('click', (e) => {
+            if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
+              window.location.href = "/"
+            } else {
+              history.back();
+            }
+          });
+        }
+      }
+      else{
+
+  const header = document.getElementById('header');
+  var lastScrollTop = 0;
+  var innerHeightVal = window.innerHeight;
+  window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop && currentScroll > innerHeightVal) {
+      header.style.display = "none"
+    } else {
+      header.style.display = "block"
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
+  }, false);
+    }
+    });
 </script>
 
 {% comment %} {{ template|json }} {% endcomment %}
 {% comment %} {% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %} {% endcomment %}
-  <header
-    id="header"
-    class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
-  >
-    <div class="row expanded header-in">
-      <div class="small-12 columns" style="display: flex; justify-content: space-between; padding: 0;">
-
-        {% unless template contains 'index' or template contains 'page.circularity' or template contains 'list-collections' or template contains 'customers' %}
-        <a class="right-arrow-button customPDPheader" id="back_btn">
-          <div class="black-variant">  {% render 'back-icon-pdp' %}</div>
-          <div class="white-variant">  {% render 'back-icon-white-pdp' %}</div>
-        </a>
+<header
+  id="header"
+  class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
+>
+  <div class="row expanded header-in">
+    <div class="small-12 columns" style="display: flex; justify-content: space-between; padding: 0;">
+      <span
+        style="
+          display: flex;
+              align-items: center;
+          }
+        "
+      >
+        {% unless template contains 'index'
+          or template contains 'page.circularity'
+          or template contains 'list-collections'
+          or template contains 'customers'
+        %}
+          <a class="right-arrow-button customPDPheader" id="back_btn">
+            <div class="black-variant">{% render 'back-icon-pdp' %}</div>
+            <div class="white-variant">{% render 'back-icon-white-pdp' %}</div>
+          </a>
         {% endunless %}
         <a href="/">
-       <div class="white-variant virgio-logo"> {% render 'svg-icons' with 'virgio-logo' %}</div>
-       <div class="black-variant virgio-logo"> {% render 'svg-icons' with 'virgio-logo-dark' %}</div>
-       </a>
+          <div class="white-variant virgio-logo">{% render 'svg-icons' with 'virgio-logo' %}</div>
+          <div class="black-variant virgio-logo">{% render 'svg-icons' with 'virgio-logo-dark' %}</div>
+        </a>
+      </span>
       {% render 'header-full-menu', menu: section.settings.menu, blocks: section.blocks %}
-     {% render 'header-secondary-area', header_settings: section.settings %}
-        {% comment %} {%- case style -%}
+      {% render 'header-secondary-area', header_settings: section.settings %}
+      {% comment %}
+        {%- case style -%}
           {%- when 'style1' -%}
             {% render 'header-style1', blocks: section.blocks, header_settings: section.settings %}
           {%- when 'style2' -%}
@@ -262,21 +272,22 @@ window.addEventListener('scroll', function() {
             {% render 'header-style3', blocks: section.blocks, header_settings: section.settings %}
           {%- when 'style4' -%}
             {% render 'header-style4', blocks: section.blocks, header_settings: section.settings %}
-        {%- endcase -%} {% endcomment %}
-      </div>
+        {%- endcase -%}
+      {% endcomment %}
     </div>
-    {%- style -%}
-      :root {
-        --logo-height: {{ logo_height_range | append: 'px' }};
-        --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
-      }
-      {% unless sticky_header %}
-      .header-section {
-        position: static !important;
-      }
-      {%- endunless -%}
-    {%- endstyle -%}
-  </header>
+  </div>
+  {%- style -%}
+    :root {
+      --logo-height: {{ logo_height_range | append: 'px' }};
+      --logo-height-mobile: {{ logo_height_range_mobile | append: 'px' }};
+    }
+    {% unless sticky_header %}
+    .header-section {
+      position: static !important;
+    }
+    {%- endunless -%}
+  {%- endstyle -%}
+</header>
 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
@@ -373,7 +384,6 @@ window.addEventListener('scroll', function() {
     }
   </script>
 {%- endif -%}
-
 
 {% schema %}
 {
