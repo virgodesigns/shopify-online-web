@@ -456,6 +456,36 @@
         "text_color": ""
       }
     },
+    "mwidget_cHtxfN": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_3r6hXT": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_237648.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/discount-zone"
+          }
+        },
+        "image_item_Pn8C6k": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bottomwear_1.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/new-launch"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_3r6hXT",
+        "image_item_Pn8C6k"
+      ],
+      "settings": {
+        "main_heading": "",
+        "bg_color": "",
+        "text_color": ""
+      }
+    },
     "rich_text_MX8JkP": {
       "type": "rich-text",
       "blocks": {
@@ -671,6 +701,7 @@
     "spacer_ftfyrK",
     "rich_text_4MX4F3",
     "mwidget_W9XH4M",
+    "mwidget_cHtxfN",
     "rich_text_MX8JkP",
     "gallery_CUjiGh"
   ]
