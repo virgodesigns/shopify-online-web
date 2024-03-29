@@ -42,6 +42,7 @@
             {% for item in cart.items %}
               <div class="product-cart-item" id="CartDrawerItem-{{ item.index | plus: 1 }}">
                 <div class="product-cart-item-image">
+                  <a href="{{ item.url }}" title="{{ item.product.title | escape }}" class="cart-product-link">
                   {% if item.image %}
                     {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                   {% else %}
@@ -49,6 +50,7 @@
                       {{ 'product-1' | placeholder_svg_tag }}
                     </div>
                   {% endif %}
+                  </a>
                   <div class="loading-overlay">
                     {% render 'svg-icons' with 'thb-loading' %}
                   </div>
@@ -284,9 +286,9 @@
               {% endif %}
               {%- if settings.cart_drawer_checkout_button -%}
                 <form action="{{ routes.cart_url }}" method="post" novalidate>
-                  <!--
+                 
                     <button type="submit" class="button full checkout" name="checkout" title="{{ 'general.cart_drawer.checkout' | t | escape }}"><span>{{ 'general.cart_drawer.checkout' | t }} <b>•</b> {% if settings.currency_code_enabled %}{{ cart.total_price | money_with_currency }}{% else %}{{ cart.total_price | money }}{% endif %}</span></button>
-                  -->
+                 <!--
                   <button
                     type="button"
                     id="checkout2"
@@ -304,6 +306,7 @@
                       {%- endif -%}
                     </span>
                   </button>
+                  -->
                 </form>
               {%- endif -%}
               {%- if settings.cart_drawer_cart_button -%}
