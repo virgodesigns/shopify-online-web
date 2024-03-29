@@ -6,6 +6,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 .collection-tabs .text-button:before{
   background: transparent;
