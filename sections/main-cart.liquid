@@ -229,9 +229,9 @@
                     </div>
                   {% endif %}
                   <div class="proceed-to-checkout" data-additional-checkout="{{ additional_checkout_buttons }}">
-                    <!--
+                 
                       <button type="submit" name="checkout" class="checkout-button button full"><span>{{ 'sections.cart.checkout' | t }}  • {% if settings.currency_code_enabled %}{{ cart.total_price | money_with_currency }}{% else %}{{ cart.total_price | money }}{% endif %}</span></button>
-                    -->
+                    <!--
                     <button
                       type="button"
                       style="display:inline-block !important;"
@@ -249,6 +249,7 @@
                         {%- endif -%}
                       </span>
                     </button>
+                    -->
                     {%- if additional_checkout_buttons -%}
                       <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                         {{ content_for_additional_checkout_buttons }}
