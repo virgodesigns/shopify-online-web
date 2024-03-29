@@ -6,7 +6,7 @@
         "slide_YJbkij": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop.jpg",
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
             "slide_link": "shopify:\/\/collections\/new-launch",
             "video_background": false,
@@ -41,7 +41,7 @@
         ".mute-toggle {display: none;}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-image",
+        "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": true,
