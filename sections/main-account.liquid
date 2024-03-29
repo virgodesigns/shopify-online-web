@@ -285,7 +285,7 @@
     }
     sessionStorage.removeItem("selectedOrder");
     sessionStorage.setItem("selectedOrder", JSON.stringify(storageData));
-    window.location.href = "/pages/order-details"
+    window.location.href = "/pages/order-details2"
     }
 
 
@@ -441,26 +441,109 @@ const useDeliveryStatusText = (displayStatus) => {
   if (displayStatus === 'RETURNED') {
     return 'Return Complete';
   }
-  // if( displayStatus === '')
+  if( displayStatus === 'NOT_DELIVERED'){
+     return 'Delivery Failed';
+  }
   return '';
 };
 
-const useDeliveryText = (orderLineItem) => {
-  console.log("orderLineItem",orderLineItem)
-  if (orderLineItem.displayStatus === 'DELIVERED') {
-    return `Delivered on ${orderLineItem.deliveredAt}`;
+  const useDeliveryText = (order) => {
+    if (order.fulfillmentStatus === 'DELIVERED') {
+      return `Delivered on ${useISODateToFormattedDate(
+        order.order.fulfillments?.[0]?.deliveredAt,
+      )}`;
+    }
+    if (
+      !order.fulfillmentStatus ||
+      (order.fulfillmentStatus === 'NOT_DELIVERED' &&
+        (!order.estimatedDeliveryDate || order.order.cancelReason))
+    ) {
+      return '';
+    }
+    return `Arriving by ${order?.estimatedDeliveryDate ?? ''}`;
+  };
+
+  const useFormatDate = (inputDateStr) => {
+  // Create a Date object from the input string
+  if (inputDateStr) {
+    const inputDate = new Date(inputDateStr);
+    // Define an array of month names
+    const monthNames = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+
+    // Get the day of the week as a string (e.g., 'Tue')
+    const dayOfWeek = new Intl.DateTimeFormat('en-US', {
+      weekday: 'short',
+    }).format(inputDate ?? '');
+    // Get the day of the month (e.g., '26')
+    const dayOfMonth = inputDate.getDate().toString();
+    // Get the month as a string (e.g., 'Sep')
+    const month = monthNames[inputDate.getMonth()];
+    // Get the year (e.g., '2023')
+    const year = inputDate.getFullYear().toString();
+    // Create the formatted date string
+    const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month} ${year}`;
+
+    return formattedDate ?? '';
   }
-  if (
-    orderLineItem.displayStatus === 'OUT_FOR_DELIVERY' ||
-    orderLineItem.displayStatus === 'CANCELLED' ||
-    orderLineItem.estimatedDeliveryTime === '' ||
-    orderLineItem.estimatedDeliveryTime === undefined ||
-    orderLineItem.estimatedDeliveryTime === null
-  ) {
-    return '';
-  }
-  return `Arriving by ${orderLineItem?.estimatedDeliveryTime ?? ''}`;
+  return '';
 };
+
+const useISODateToFormattedDate = (isoDateStr) => {
+  // Create a Date object from the ISO date string
+  if (isoDateStr != null) {
+    const inputDate = new Date(isoDateStr);
+
+    // Define an array of month names
+    const monthNames = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+
+    // Get the day of the week as a string (e.g., 'Tue')
+    const dayOfWeek = new Intl.DateTimeFormat('en-US', {
+      weekday: 'short',
+    }).format(inputDate);
+
+    // Get the day of the month (e.g., '10')
+    const dayOfMonth = inputDate.getDate().toString();
+
+    // Get the month as a string (e.g., 'Oct')
+    const month = monthNames[inputDate.getMonth()];
+
+    // Get the year (e.g., '2023')
+    const year = inputDate.getFullYear().toString();
+
+    // Create the formatted date string
+    const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month} ${year}`;
+    return formattedDate;
+  }
+  return '';
+};
+
+
 </script>
 
 {% include 'returnprime_script' %}
