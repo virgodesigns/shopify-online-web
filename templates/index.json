@@ -32,36 +32,6 @@
             "button_2_underline": true
           }
         },
-        "slide_fDPWtA": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_3.png",
-            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-09_at_9.46.31_AM.jpg",
-            "slide_link": "shopify:\/\/collections\/ramadan-spring-edit",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "GLAM SPRING EDIT",
-            "heading_size": "h2",
-            "content": "CREATING STYLE WITH NATURE'S FINEST",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Now",
-            "button_1_link": "shopify:\/\/collections\/ramadan-spring-edit",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/spring-dream-collection",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_LbaR6E": {
           "type": "slide",
           "settings": {
@@ -94,7 +64,6 @@
       },
       "block_order": [
         "slide_KG87MY",
-        "slide_fDPWtA",
         "slide_LbaR6E"
       ],
       "settings": {
