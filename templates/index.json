@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/16_9_-_Desktop_1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/1st_banner_2.png",
-            "slide_link": "shopify:\/\/collections\/ramadan-special",
+            "slide_link": "shopify:\/\/collections\/summer-soiree",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -27,7 +27,7 @@
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
-            "button_2_link": "",
+            "button_2_link": "shopify:\/\/collections\/summer-soiree",
             "button_2_outline": true,
             "button_2_underline": true
           }
@@ -164,7 +164,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096620_1.jpg",
-            "slide_link": "",
+            "slide_link": "shopify:\/\/collections\/fractured-floral",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -212,7 +212,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096621_1.jpg",
-            "slide_link": "",
+            "slide_link": "shopify:\/\/collections\/forbidden-blooms",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
