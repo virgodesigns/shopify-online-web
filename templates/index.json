@@ -48,6 +48,59 @@
         "autoplay_length": 5,
         "transition": "slide",
         "show_on_desktop": true,
+        "show_on_mobile": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
+      }
+    },
+    "slideshow_eQX7fA": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_aJ3hzE": {
+          "type": "slide",
+          "settings": {
+            "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
+            "slide_link": "shopify:\/\/collections\/new-launch",
+            "video_background": true,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/new-launch",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_aJ3hzE"
+      ],
+      "custom_css": [
+        ".mute-toggle {display: none;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "slide",
+        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
@@ -1193,7 +1246,7 @@
       ],
       "custom_css": [
         ".social-images-collections .image-container::after {background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.6) 100% ); z-index: 1;}",
-        ".social-images-collections{padding-top:0px;}"
+        ".social-images-collections {padding-top: 0px;}"
       ],
       "settings": {
         "para_top": "",
@@ -1332,6 +1385,7 @@
   },
   "order": [
     "16479477632637c9a7",
+    "slideshow_eQX7fA",
     "slideshow_4W9bzy",
     "slideshow_w7MbVp",
     "slideshow_tDqQJ4",
