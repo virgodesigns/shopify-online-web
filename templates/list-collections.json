@@ -442,6 +442,36 @@
         "text_color": ""
       }
     },
+    "mwidget_QWQL76": {
+      "type": "mwidget",
+      "blocks": {
+        "image_item_tPM8kg": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_237648_1.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/ramadan-special"
+          }
+        },
+        "image_item_XAFq7h": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bottomwear_2.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/summer-soiree"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_tPM8kg",
+        "image_item_XAFq7h"
+      ],
+      "settings": {
+        "main_heading": "",
+        "bg_color": "",
+        "text_color": ""
+      }
+    },
     "rich_text_AtQCdz": {
       "type": "rich-text",
       "blocks": {
@@ -656,6 +686,7 @@
     "8e2aa702-a629-4a08-b4ab-75452deb5c89",
     "rich_text_eQiJWb",
     "mwidget_yyhMqJ",
+    "mwidget_QWQL76",
     "rich_text_AtQCdz",
     "gallery_pt6jFb"
   ]
