@@ -32,11 +32,41 @@
             "button_2_underline": true
           }
         },
-        "slide_LbaR6E": {
+        "slide_pkM6BC": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_4.png",
-            "mobile_image": "shopify:\/\/shop_images\/RAMADAN_HERO_3.png",
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Hero_banner_2.png",
+            "slide_link": "shopify:\/\/collections\/all-collections",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/all-collections",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "shopify:\/\/collections\/all-collections",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        },
+        "slide_LbaR6E": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/1st_banner_2.png",
             "slide_link": "shopify:\/\/collections\/ramadan-special",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -64,6 +94,7 @@
       },
       "block_order": [
         "slide_KG87MY",
+        "slide_pkM6BC",
         "slide_LbaR6E"
       ],
       "settings": {
