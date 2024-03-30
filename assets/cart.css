@@ -15,6 +15,10 @@
   pointer-events: none;
 }
 
+.cart-items .product-subtotal .price{
+  justify-content: end;
+}
+
 .cart-items.no-borders tbody {
   border-bottom: 1px solid var(--color-border);
 }
@@ -37,11 +41,13 @@
 @media only screen and (min-width: 1068px) {
   .cart-items thead th.product-quantity {
     display: table-cell;
+    width: 155px;
   }
 }
 
 .cart-items tbody tr td.product-quantity {
   display: none;
+  padding: 0;
 }
 @media only screen and (min-width: 1068px) {
   .cart-items tbody tr td.product-quantity {

@@ -43,13 +43,13 @@
               <div class="product-cart-item" id="CartDrawerItem-{{ item.index | plus: 1 }}">
                 <div class="product-cart-item-image">
                   <a href="{{ item.url }}" title="{{ item.product.title | escape }}" class="cart-product-link">
-                  {% if item.image %}
-                    {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
-                  {% else %}
-                    <div class="thb-placeholder" style="width: 96px;">
-                      {{ 'product-1' | placeholder_svg_tag }}
-                    </div>
-                  {% endif %}
+                    {% if item.image %}
+                      {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
+                    {% else %}
+                      <div class="thb-placeholder" style="width: 96px;">
+                        {{ 'product-1' | placeholder_svg_tag }}
+                      </div>
+                    {% endif %}
                   </a>
                   <div class="loading-overlay">
                     {% render 'svg-icons' with 'thb-loading' %}
@@ -65,35 +65,47 @@
                       {% endfor %}
                     </p>
                   </a>
-                  <span class="price">
-                    {%- if item.original_line_price != item.final_line_price -%}
-                      <del
-                        ><span class="amount">{{ item.original_line_price | money }}</span></del
-                      >
-                      <ins
-                        ><span class="amount">{{ item.final_line_price | money }}</span></ins
-                      >
-                    {%- else -%}
-                      <ins
-                        ><span class="amount">{{ item.original_line_price | money }}</span></ins
-                      >
-                    {%- endif -%}
-                    {%- if item.variant.available and item.unit_price_measurement -%}
-                      <small class="unit-price">
-                        {{ item.variant.unit_price | money }}
-                        <span class="unit-price-separator">/</span>
-                        {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
-                          {{- item.variant.unit_price_measurement.reference_value -}}
-                        {%- endif -%}
-                        {{ item.variant.unit_price_measurement.reference_unit }}
-                      </small>
-                    {%- endif -%}
-                  </span>
-                  {% if item.selling_plan_allocation %}
-                    <div class="properties">
-                      <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
-                    </div>
-                  {% endif %}
+                  <div class="product-cart-item-price">
+                    <span class="price">
+                      {%- if item.original_line_price != item.final_line_price -%}
+                        <del
+                          ><span class="amount">
+                            <div class="pn-total-line-item" data-id="{{ item.key }}">
+                              {{ item.original_line_price | money }}
+                            </div>
+                          </span></del
+                        >
+                        <ins
+                          ><span class="amount">{{ item.final_line_price | money }}</span></ins
+                        >
+                      {%- else -%}
+                        <ins
+                          ><span class="amount">
+                            <div class="pn-total-line-item" data-id="{{ item.key }}">
+                              {{ item.original_line_price | money }}
+                            </div>
+                          </span></ins
+                        >
+                      {%- endif -%}
+                      {%- if item.variant.available and item.unit_price_measurement -%}
+                        <small class="unit-price">
+                          {{ item.variant.unit_price | money }}
+                          <span class="unit-price-separator">/</span>
+                          {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
+                            {{- item.variant.unit_price_measurement.reference_value -}}
+                          {%- endif -%}
+                          {{ item.variant.unit_price_measurement.reference_unit }}
+                        </small>
+                      {%- endif -%}
+                    </span>
+                  </div>
+                  {% comment %}
+                    {% if item.selling_plan_allocation %}
+                      <div class="properties">
+                        <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
+                      </div>
+                    {% endif %}
+                  {% endcomment %}
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}
@@ -102,22 +114,24 @@
                       {% endfor %}
                     </div>
                   {% endunless %}
-                  {%- for property in item.properties -%}
-                    {%- assign property_first_char = property.first | slice: 0 -%}
-                    {%- if property.last != blank and property_first_char != '_' -%}
-                      <div class="product-cart-item-options">
-                        <span>{{ property.first }}: </span>
-                        {%- if property.last contains '/uploads/' -%}
-                          <a href="{{ property.last }}" class="link" target="_blank">
-                            {{ property.last | split: '/' | last }}
-                          </a>
-                        {%- else -%}
-                          {{ property.last }}
-                        {%- endif -%}
-                        <br>
-                      </div>
-                    {%- endif -%}
-                  {%- endfor -%}
+                  {% comment %}
+                    {%- for property in item.properties -%}
+                      {%- assign property_first_char = property.first | slice: 0 -%}
+                      {%- if property.last != blank and property_first_char != '_' -%}
+                        <div class="product-cart-item-options">
+                          <span>{{ property.first }}: </span>
+                          {%- if property.last contains '/uploads/' -%}
+                            <a href="{{ property.last }}" class="link" target="_blank">
+                              {{ property.last | split: '/' | last }}
+                            </a>
+                          {%- else -%}
+                            {{ property.last }}
+                          {%- endif -%}
+                          <br>
+                        </div>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {% endcomment %}
                   {%- if item.discounts != blank -%}
                     <ul class="discounts" role="list">
                       {%- for discount in item.discounts -%}
@@ -167,40 +181,6 @@
                   >
                     {%- render 'svg-icons' with 'trash' -%}
                   </a>
-                </div>
-                <div class="product-cart-item-price">
-                  <span class="price">
-                    {%- if item.original_line_price != item.final_line_price -%}
-                      <del
-                        ><span class="amount">
-                          <div class="pn-total-line-item" data-id="{{ item.key }}">
-                            {{ item.original_line_price | money }}
-                          </div>
-                        </span></del
-                      >
-                      <ins
-                        ><span class="amount">{{ item.final_line_price | money }}</span></ins
-                      >
-                    {%- else -%}
-                      <ins
-                        ><span class="amount">
-                          <div class="pn-total-line-item" data-id="{{ item.key }}">
-                            {{ item.original_line_price | money }}
-                          </div>
-                        </span></ins
-                      >
-                    {%- endif -%}
-                    {%- if item.variant.available and item.unit_price_measurement -%}
-                      <small class="unit-price">
-                        {{ item.variant.unit_price | money }}
-                        <span class="unit-price-separator">/</span>
-                        {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
-                          {{- item.variant.unit_price_measurement.reference_value -}}
-                        {%- endif -%}
-                        {{ item.variant.unit_price_measurement.reference_unit }}
-                      </small>
-                    {%- endif -%}
-                  </span>
                 </div>
               </div>
             {% endfor %}
@@ -286,15 +266,11 @@
               {% endif %}
               {%- if settings.cart_drawer_checkout_button -%}
                 <form action="{{ routes.cart_url }}" method="post" novalidate>
-                 
-                    <button type="submit" class="button full checkout" name="checkout" title="{{ 'general.cart_drawer.checkout' | t | escape }}"><span>{{ 'general.cart_drawer.checkout' | t }} <b>•</b> {% if settings.currency_code_enabled %}{{ cart.total_price | money_with_currency }}{% else %}{{ cart.total_price | money }}{% endif %}</span></button>
-                 <!--
                   <button
-                    type="button"
-                    id="checkout2"
-                    onclick="handleFloCheckoutBtn();openCheckout();"
+                    type="submit"
                     class="button full checkout"
-                    name="checkout2"
+                    name="checkout"
+                    title="{{ 'general.cart_drawer.checkout' | t | escape }}"
                   >
                     <span>
                       {{- 'general.cart_drawer.checkout' | t }}
@@ -306,6 +282,24 @@
                       {%- endif -%}
                     </span>
                   </button>
+                  <!--
+                    <button
+                      type="button"
+                      id="checkout2"
+                      onclick="handleFloCheckoutBtn();openCheckout();"
+                      class="button full checkout"
+                      name="checkout2"
+                    >
+                      <span>
+                        {{- 'general.cart_drawer.checkout' | t }}
+                        <b>•</b>
+                        {% if settings.currency_code_enabled -%}
+                          {{- cart.total_price | money_with_currency -}}
+                        {%- else -%}
+                          {{- cart.total_price | money -}}
+                        {%- endif -%}
+                      </span>
+                    </button>
                   -->
                 </form>
               {%- endif -%}

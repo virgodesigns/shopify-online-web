@@ -2225,8 +2225,7 @@ table.no-borders tfoot td:first-child {
   z-index: 35;
   background: var(--bg-body, #fff);
   border-bottom: 1px solid var(--color-border);
-  padding: 17px 30px;
-  height: 72px;
+  padding: 20px 22px;
 }
 .side-panel-header h4 {
   margin: 0;
@@ -2256,7 +2255,7 @@ table.no-borders tfoot td:first-child {
   cursor: pointer;
 }
 .side-panel-content {
-  padding: 25px 30px;
+  padding: 20px;
 }
 .side-panel-content.side-panel-content--has-tabs {
   padding: 0;
@@ -3052,6 +3051,12 @@ h6,
   .thb-item-count {
   background-color: var(--color-header-transparent-text, #fff);
   color: var(--color-header-icons, --color-accent);
+}
+.header.scrolled.transparent--true:not(:hover):not(.is-sticky)
+  .thb-secondary-area
+  .thb-item-count {
+  background-color: #000;
+  color: #fff;
 }
 .header.transparent--true:not(:hover):not(.is-sticky)
   .thb-secondary-area-item.thb-secondary-myaccount {
@@ -4623,6 +4628,7 @@ select.resize-select {
   position: relative;
   flex-shrink: 0;
   margin-right: 15px;
+  width: 37%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4656,25 +4662,23 @@ select.resize-select {
   width: 24px;
 }
 .product-cart-item-info .price {
-  display: block;
   font-size: 14px;
 }
-@media only screen and (min-width: 1068px) {
-  .product-cart-item-info .price {
-    display: none;
-  }
+.product-cart-item-info .price del{
+  height: 1.3rem;
 }
-.product-cart-item-price {
+
+/* .product-cart-item-price {
   margin-left: auto;
   padding-left: 15px;
   text-align: right;
-}
-.product-cart-item-price .price {
+} */
+/* .product-cart-item-price .price {
   display: none;
-}
+} */
 @media only screen and (min-width: 1068px) {
   .product-cart-item-price .price {
-    display: block;
+    display: flex;
   }
 }
 .product-cart-item-price .price .unit-price {
@@ -4682,13 +4686,13 @@ select.resize-select {
 }
 .product-cart-item img,
 .product-cart-item .thb-placeholder {
-  width: 75px;
+  width: 100%;
   height: auto;
 }
 @media only screen and (min-width: 768px) {
   .product-cart-item img,
   .product-cart-item .thb-placeholder {
-    width: 96px;
+    width: 132px;
   }
 }
 .product-cart-item .text-button {
@@ -4771,13 +4775,14 @@ select.resize-select {
 .cart-drawer .side-panel-footer .button {
   display: inline-block;
   padding: 12px 20px;
+  margin-bottom: 0;
 }
 .cart-drawer-footer {
-  padding: 0 30px 80px 30px;
+  padding: 0 30px 15px;
 }
 @media only screen and (min-width: 768px) {
   .cart-drawer-footer {
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 15px;
   }
 }
 .cart-drawer .product-cart-item {
