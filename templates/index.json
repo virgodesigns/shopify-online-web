@@ -35,9 +35,9 @@
         "slide_pkM6BC": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Hero_banner_2.png",
-            "slide_link": "shopify:\/\/collections\/all-collections",
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_4.png",
+            "mobile_image": "shopify:\/\/shop_images\/RAMADAN_HERO_3.png",
+            "slide_link": "shopify:\/\/collections\/ramadan-special",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -55,8 +55,8 @@
             "button_1_link": "shopify:\/\/collections\/all-collections",
             "button_1_outline": true,
             "button_1_underline": true,
-            "button_2_text": "Shop Now",
-            "button_2_link": "shopify:\/\/collections\/all-collections",
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/collections\/ramadan-special",
             "button_2_outline": true,
             "button_2_underline": true
           }
