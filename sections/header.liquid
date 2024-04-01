@@ -12,7 +12,7 @@
 
 <style>
   .header-orderdetails{
-    display:none;
+    display:none !important;
   }
   .black-variant{
     display:none;
@@ -235,6 +235,7 @@
 {% assign current_url = shop.url | append: request.path %}
 {% comment %} {{ template|json }} {% endcomment %}
 {% comment %} {% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %} {% endcomment %}
+{{ current_url |json }}
 <header
   id="header"
   class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active {% if current_url contains 'order-details' %} header-orderdetails {%  endif %}"
