@@ -294,6 +294,7 @@
   {%- endstyle -%}
 </header>
 
+{% unless current_url contains 'order-details' %} 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
     <nav>
@@ -350,6 +351,7 @@
     </nav>
   </div>
 </mobile-header>
+{%  endunless %}
 
 <script type="application/ld+json">
   {
