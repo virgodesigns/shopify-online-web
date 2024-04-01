@@ -229,14 +229,14 @@
     }
     });
 </script>
-
+{% assign current_url = shop.url | append: request.path %}
 {% comment %} {{ template|json }} {% endcomment %}
 {% comment %} {% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %} {% endcomment %}
 <header
   id="header"
   class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
 >
-  {{ template|json }}
+  {{ current_url|json }}
   <div class="row expanded header-in">
     <div class="small-12 columns" style="display: flex; justify-content: space-between; padding: 0;">
       <span
