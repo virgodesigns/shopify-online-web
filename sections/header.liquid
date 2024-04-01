@@ -11,6 +11,11 @@
 -%}
 
 <style>
+    @media only screen and (max-width: 768px) {
+  .header-orderdetails{
+    display:none !important;
+  }
+    }
   .black-variant{
     display:none;
   }
@@ -229,12 +234,12 @@
     }
     });
 </script>
-
+{% assign current_url = shop.url | append: request.path %}
 {% comment %} {{ template|json }} {% endcomment %}
 {% comment %} {% if template contains 'index' or template contains 'list-collections' or template contains 'collection' %} {% endcomment %}
 <header
   id="header"
-  class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active"
+  class="header transparent--true style1 header--shadow-none transparent--false header-sticky--active {% if current_url contains 'order-details' %} header-orderdetails {%  endif %}"
 >
   <div class="row expanded header-in">
     <div class="small-12 columns" style="display: flex; justify-content: space-between; padding: 0;">
@@ -289,6 +294,7 @@
   {%- endstyle -%}
 </header>
 
+{% unless current_url contains 'order-details' %} 
 <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
   <div class="m-header">
     <nav>
@@ -345,6 +351,7 @@
     </nav>
   </div>
 </mobile-header>
+{%  endunless %}
 
 <script type="application/ld+json">
   {

@@ -183,8 +183,14 @@
 
     ],
     "blocks": {
-      "11349500561483629931": {
-        "type": "shopify:\/\/apps\/Notify Me\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
+      "5946647744298494267": {
+        "type": "shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "7856480075841494758": {
+        "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
         "disabled": false,
         "settings": {
         }
@@ -195,14 +201,8 @@
         "settings": {
         }
       },
-      "5946647744298494267": {
-        "type": "shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "7856480075841494758": {
-        "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
+      "11349500561483629931": {
+        "type": "shopify:\/\/apps\/notify-back-in-stock-preorder\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
         "settings": {
         }
