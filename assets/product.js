@@ -452,7 +452,7 @@ if (!customElements.get("variant-selects")) {
         );
         const available_options = this.createAvailableOptionsTree(
           variant_data,
-          selected_options ? selected_options : []
+          selected_options
         );
 
         this.fieldsets.forEach((fieldset, i) => {
