@@ -4777,6 +4777,7 @@ select.resize-select {
   display: inline-block;
   padding: 12px 20px;
   margin-bottom: 0;
+  height: 3.4rem;
 }
 .cart-drawer-footer {
   padding: 0 15px 13px;
