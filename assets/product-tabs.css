@@ -282,6 +282,7 @@
     padding: 12px 16px;
     height: auto;
     box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    z-index: 10;
   }
   .button-card-containers.add-to-cart button {
     background: #000;
