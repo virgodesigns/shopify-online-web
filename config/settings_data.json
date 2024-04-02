@@ -24,7 +24,7 @@
     "show_products_rating": false,
     "sale_badge_type": "save_percentage",
     "cart_drawer_notes": false,
-    "cart_recommendations": false,
+    "cart_recommendations": true,
     "search_product_heading": "",
     "search_product_collection": "all",
     "search_product_collection_limit": 12,
