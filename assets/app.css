@@ -4775,10 +4775,8 @@ select.resize-select {
 }
 .cart-drawer .side-panel-footer .button {
   display: inline-block;
-  padding: 12px 20px;
   margin-bottom: 0;
   height: 3rem;
-  font-size: 0.9rem;
 }
 .cart-drawer-footer {
   padding: 0 15px 13px;
