@@ -57,6 +57,36 @@
     "slideshow_eQX7fA": {
       "type": "slideshow",
       "blocks": {
+        "slide_przdNG": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1080X1440.png",
+            "mobile_image": "shopify:\/\/shop_images\/1080X1440.png",
+            "slide_link": "shopify:\/\/collections\/flash-sale",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/new-launch",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        },
         "slide_aJ3hzE": {
           "type": "slide",
           "settings": {
@@ -88,6 +118,7 @@
         }
       },
       "block_order": [
+        "slide_przdNG",
         "slide_aJ3hzE"
       ],
       "custom_css": [
