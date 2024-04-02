@@ -213,13 +213,18 @@
         {%- endif -%}
       </div>
       <div class="scrolling-text-container">
-        <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+        <div class="scrolling-text-inner" style="--marquee-speed: 60s; --direction:scroll-left" role="marquee">
           <div class="scrolling-text">
+            <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
+            <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
+            <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
+            <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
             <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
             <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
           </div>
         </div>
       </div>
+      <div class="cart-same-day-delivery">One day delivery only in Bangalore</div>
       <div class="cart-trust-markers">
         <div class="cart-trust-markers-card">
           <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/cart-trust-exchange.png?v=1712049255">
@@ -372,6 +377,17 @@
   /* Pause the animation when a user hovers over it */
   .scrolling-text-container:hover .scrolling-text-inner > div {
     animation-play-state: paused;
+  }
+
+  .cart-same-day-delivery {
+    background: #edfaff;
+    padding: 6px 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 12px;
   }
 
   .cart-trust-markers {
