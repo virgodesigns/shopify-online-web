@@ -59,6 +59,7 @@
       "blocks": {
         "slide_przdNG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/1080X1440.png",
             "mobile_image": "shopify:\/\/shop_images\/1080X1440.png",
