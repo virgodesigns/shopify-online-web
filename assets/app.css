@@ -4779,11 +4779,11 @@ select.resize-select {
   margin-bottom: 0;
 }
 .cart-drawer-footer {
-  padding: 0 30px 15px;
+  padding: 0 15px 13px;
 }
 @media only screen and (min-width: 768px) {
   .cart-drawer-footer {
-    padding: 0 30px 15px;
+    padding: 0 18px 15px;
   }
 }
 .cart-drawer .product-cart-item {

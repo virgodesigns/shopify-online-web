@@ -220,6 +220,23 @@
           </div>
         </div>
       </div>
+      <div class="cart-trust-markers">
+        <div class="cart-trust-markers-card">
+          <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/cart-trust-exchange.png?v=1712049255">
+          <div class="cart-trust-markers-card-text">15 Days Return/ Exchange*</div>
+        </div>
+        <div class="cart-trust-markers-card">
+          <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/cart-trust-free-ship.png?v=1712049388">
+          <div class="cart-trust-markers-card-text">Free Shipping above ₹1500</div>
+        </div>
+        <div class="cart-trust-markers-card">
+          <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/cart-trust-cod.png?v=1712049388">
+          <div class="cart-trust-markers-card-text">
+            Cash on <br>
+            Delivery
+          </div>
+        </div>
+      </div>
       {%- if cart != empty -%}
         <div class="side-panel-footer">
           {%- if settings.cart_drawer_notes -%}
@@ -326,6 +343,7 @@
     border-radius: 4px;
     color: #fff;
     overflow: hidden;
+    border-top: 1px solid var(--color-border);
   }
 
   /* Inner container styles */
@@ -354,6 +372,29 @@
   /* Pause the animation when a user hovers over it */
   .scrolling-text-container:hover .scrolling-text-inner > div {
     animation-play-state: paused;
+  }
+
+  .cart-trust-markers {
+    margin: 12px 18px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+  }
+  .cart-trust-markers .cart-trust-markers-card {
+    width: 33.3%;
+  }
+  .cart-trust-markers .cart-trust-markers-card .cart-trust-markers-card-text {
+    padding: 0 8px;
+  }
+  .cart-trust-markers .cart-trust-markers-card img {
+    width: 34px;
+    display: block;
+    margin: 0 auto 12px;
   }
 
   /* Setting the Animation using Keyframes */
