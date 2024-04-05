@@ -122,7 +122,6 @@
     },
     "product_pairs_tR6KQe": {
       "type": "product-pairs",
-      "disabled": true,
       "settings": {
         "heading": "Can Be Paired With",
         "heading_left": false,
