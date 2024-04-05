@@ -112,6 +112,7 @@
     },
     "ace3e86a-9dba-4966-8d72-88d70f4f48c2": {
       "type": "product-page-tabs",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -122,6 +123,7 @@
     },
     "product_pairs_tR6KQe": {
       "type": "product-pairs",
+      "disabled": true,
       "settings": {
         "heading": "Can Be Paired With",
         "heading_left": false,
@@ -152,6 +154,7 @@
     },
     "6504c889-765e-4951-97dd-2817199cfc89": {
       "type": "pdp-spotted-images",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -170,6 +173,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You May Also Like",
         "heading_left": false,
