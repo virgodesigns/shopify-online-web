@@ -154,7 +154,6 @@
     },
     "6504c889-765e-4951-97dd-2817199cfc89": {
       "type": "pdp-spotted-images",
-      "disabled": true,
       "custom_css": [
 
       ],
@@ -173,7 +172,6 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
         "heading": "You May Also Like",
         "heading_left": false,
