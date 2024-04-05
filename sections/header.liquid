@@ -209,9 +209,9 @@
 
         if (backElem) {
           backElem.addEventListener('click', (e) => {
-            if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
+            if(!document.referrer.includes('virgio.com')){
               window.location.href = "/"
-            } else {
+            }else {
               history.back();
             }
           });
