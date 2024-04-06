@@ -94,6 +94,16 @@
     padding: 2px 6px 2px 6px;
   }
 }
+
+@media (min-width: 768px) {
+  .coupon-app {
+    pointer-events: none;
+  }
+  .download-button {
+    display: none;
+  }
+}
+
 .coupon-svg{
   margin-top: 12px;
   margin-left: 12px;
