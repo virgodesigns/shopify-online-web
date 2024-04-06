@@ -57,6 +57,44 @@
 .offer-code {
   font-weight: 500;
 }
+
+.coupon-app {
+  display: flex;
+  position: relative;
+  background-color: #edfaff;
+  margin-bottom: 16px;
+}
+
+.app-offer-code {
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  padding: 2px 4px 2px 4px;
+  margin: 0 2px;
+}
+
+.download-button {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+  font-family: Inter;
+  padding: 2px 8px 2px 8px;
+  background-color: #edfaff;
+  border: 1px solid black;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .download-button {
+    right: 8px;
+    font-size: 10px;
+    padding: 2px 6px 2px 6px;
+  }
+}
+
 .coupon-svg{
   margin-top: 12px;
   margin-left: 12px;
