@@ -58,6 +58,10 @@
   font-weight: 500;
 }
 
+.offer-code-app {
+  font-weight: 600;
+}
+
 .coupon-app {
   display: flex;
   position: relative;
