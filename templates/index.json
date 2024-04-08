@@ -1051,6 +1051,7 @@
         },
         "slide_dDgMBm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/3_5.png",
             "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
