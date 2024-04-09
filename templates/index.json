@@ -932,51 +932,12 @@
             "strikePrice": "",
             "url": "shopify:\/\/collections\/newtro-twist"
           }
-        },
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-2.jpg",
-            "name": "Whims & Fancies",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/whims-fancies"
-          }
-        },
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMAGE-1.jpg",
-            "name": "Cityscape",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/cityscape"
-          }
-        },
-        "collection_GzqYTr": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IDGAF.jpg",
-            "name": "#IDGAF",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/poolside-splash"
-          }
         }
       },
       "block_order": [
         "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
         "collection_QKNKgb",
-        "collection_eC7Qmf",
-        "57f80e1c-e1cd-4d69-9254-c8577faa337d",
-        "6c3b3605-3069-4325-bf42-e81b89d7f38b",
-        "collection_GzqYTr"
+        "collection_eC7Qmf"
       ],
       "settings": {
         "heading": "SHOP BY COLLECTION",
