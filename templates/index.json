@@ -1103,7 +1103,7 @@
         "template--20881644159273__db7c3fd2-75c3-4d85-b865-9a233129c01e-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Less_is_MOre_1878e93c-93f8-41d8-8d65-8eef9e75cef7.jpg",
+            "image": "shopify:\/\/shop_images\/Less_is_MOre_3.png",
             "mobile_image": "shopify:\/\/shop_images\/9185922_1.png",
             "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
             "video_background": false,
@@ -1119,13 +1119,13 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "Know More",
+            "button_1_text": "",
             "button_1_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_outline": false,
+            "button_2_outline": true,
             "button_2_underline": true
           }
         }
@@ -1138,7 +1138,7 @@
         "@media only screen and (max-width: 600px) {.main-slideshow .slideshow__slide-content .button {display: none; }}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
+        "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-full",
         "full_width": true,
         "autoplay": false,
