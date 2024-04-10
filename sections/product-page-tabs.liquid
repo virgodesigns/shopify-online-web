@@ -1,7 +1,6 @@
 <script src="{{ 'tab-switching.js' | asset_url }}" defer="defer"></script>
 {{- 'product-tabs.css' | asset_url | stylesheet_tag -}}
 <tab-switch>
-  
   <div class="produt-tab-container  section-{{ section.id }}-padding">
     <div class="product-page-tab">
       {% assign tabs = product.metafields.custom.story_details.value %}
@@ -28,7 +27,7 @@
             <div id="{{ tabContent.footer | handleize }}" class="tab-content container-content">
               <div class="tab-contents">
                 <div class="tab-content-description">
-                  <h1 class="heading">{{ tabContent.header }}</h1>
+                  <h2 class="heading">{{ tabContent.header }}</h2>
                   <p class="description">{{ tabContent.description }}</p>
                   <!-- KNOW YOUR FABRIC TAB CONTENT -->
                   <div class="scale_card">
@@ -47,7 +46,7 @@
                         <br>
                       </div>
                     {% endfor %}
-                     <div class="description">{{ tabContent.bottomText }}</div>
+                    <div class="description">{{ tabContent.bottomText }}</div>
                   </div>
                   <!-- IMPACT RECEIPT TAB CONTENT -->
                   {% assign footprintDetails = tabContent.footprintDetails %}
@@ -120,9 +119,9 @@
                         <p class="origin-description">{{ origindata.desc }}</p>
                       {% endfor %}
                     </div>
-                       <div class="bottom_image">
+                    <div class="bottom_image">
                       <img src="{{ tabContent.bottomImage }}" alt="image">
-                       </div>
+                    </div>
                   {% endif %}
                   <!-- STYLING TIPS TAB CONTENT -->
                   <div class="styling_tips">
@@ -158,7 +157,7 @@
                   </div>
                 </div>
 
-                <div class="details_image" style="padding-right: 15px;" >
+                <div class="details_image" style="padding-right: 15px;">
                   {% if tabContent.assetUrl != blank %}
                     {% if tabContent.assetUrl contains 'mp4' %}
                       <video
@@ -175,7 +174,6 @@
                     {% endif %}
                   {% endif %}
                 </div>
-
               </div>
               <div class="tab--heading-mobile">
                 {{ tabContent.footer }}
@@ -192,7 +190,7 @@
   const tabHeadings = document.querySelectorAll('.tab--heading');
   const tabVideo = document.getElementById('tabVideo');
 
-  tabHeadings.forEach(tabHeading => {
+  tabHeadings.forEach((tabHeading) => {
     tabHeading.addEventListener('click', () => {
       if (tabVideo && !tabVideo.paused) {
         tabVideo.pause();
