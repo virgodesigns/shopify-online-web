@@ -406,15 +406,15 @@
   
     const liquidTemplate = {{ template|json }}
 
-    if (backElem) {
-      backElem.addEventListener('click', (e) => {
-        if (document.referrer == '' && (liquidTemplate == 'product' || liquidTemplate == 'product.coords') || document.documentElement.classList.contains('in-app-browser')|| navigator.userAgent.match(/FBAN|FBAV/i)) {
-          window.location.href = "/"
-        } else {
-          history.back();
+      if (backElem) {
+          backElem.addEventListener('click', (e) => {
+            if(!document.referrer.includes('virgio.ae')){
+              window.location.href = "/"
+            }else {
+              history.back();
+            }
+          });
         }
-      });
-    }
   
   });
   
