@@ -3,6 +3,35 @@
     "slideshow_nfyjbt": {
       "type": "slideshow",
       "blocks": {
+        "slide_pkM6BC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_b5a6bbc8-9354-404e-a013-f124d415a52b.png",
+            "mobile_image": "shopify:\/\/shop_images\/RAMADAN_HERO_6cf82a0a-e9b8-47a3-9035-4dd34168bbb6.png",
+            "slide_link": "shopify:\/\/collections\/ramadan-special",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/all-collections",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/collections\/ramadan-special",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        },
         "slide_LbaR6E": {
           "type": "slide",
           "settings": {
@@ -60,41 +89,12 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
-        },
-        "slide_pkM6BC": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_b5a6bbc8-9354-404e-a013-f124d415a52b.png",
-            "mobile_image": "shopify:\/\/shop_images\/RAMADAN_HERO_6cf82a0a-e9b8-47a3-9035-4dd34168bbb6.png",
-            "slide_link": "shopify:\/\/collections\/ramadan-special",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/all-collections",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/ramadan-special",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
         }
       },
       "block_order": [
+        "slide_pkM6BC",
         "slide_LbaR6E",
-        "slide_KG87MY",
-        "slide_pkM6BC"
+        "slide_KG87MY"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
