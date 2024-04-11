@@ -120,6 +120,11 @@ This file can be re-written at any time.
           });
       }
     </script>
+    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.6.2-beta.0-min.js.gz"></script>
+    <script src="https://cdn.amplitude.com/libs/session-replay-browser-1.2.1-min.js.gz"></script>
+    <script>
+      window.amplitude.init('25f2c0580d4ae81427774cc85e122bbf');window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+    </script>
     <!-- Google Tag Manager -->
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
