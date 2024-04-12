@@ -127,42 +127,6 @@
               </div>
             {% endif %}
 
-            {% if product.metafields.custom.app_price.value != blank %}
-              {% assign productType = product.productType %}
-              {% assign productHandle = product.handle %}
-              <a
-                class="coupon-app"
-                href="
-                  https://link.virgio.com/?link=https://link.virgio.com/product/{{ productType }}/{{ productHandle }}&apn=com.ameyam.virgio&afl=
-                  https://link.virgio.com/dn1t&isi=1635305474&ibi=com.ameyam.virgio&ifl=https://link.virgio.com/dn1t&efr=1
-                "
-              >
-                <svg
-                  class="coupon-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path d="M0.75 7.18933V0.75H7.18934L14.8233 8.384L8.3863 14.8233L0.75 7.18933Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.95837 5.20834C4.64873 5.20834 5.20837 4.6487 5.20837 3.95834C5.20837 3.26799 4.64873 2.70834 3.95837 2.70834C3.26802 2.70834 2.70837 3.26799 2.70837 3.95834C2.70837 4.6487 3.26802 5.20834 3.95837 5.20834Z" fill="black"/>
-                </svg>
-
-                <div class="coupon-content">
-                  <span class="offer-code-app">
-                    {% assign price = product.metafields.custom.app_price.value %}
-                    {% assign formatted_price = price | round: 2 | replace: '.0', '' %}
-                    ₹{{ formatted_price }}
-                  </span>
-                  <span class="app-offer-code">APP</span> <br>
-                  <span>Special price available only on App.</span>
-                </div>
-
-                <span class="download-button">DOWNLOAD</span>
-              </a>
-            {% endif %}
-
             <div class="coupon">
               <svg
                 class="coupon-svg"
