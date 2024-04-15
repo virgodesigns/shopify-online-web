@@ -5,6 +5,7 @@
       "blocks": {
         "slide_pkM6BC": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/16_9_-_Desktop_web.png",
             "mobile_image": "shopify:\/\/shop_images\/RAMADAN_HERO_mweb.png",
