@@ -992,7 +992,7 @@
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
-        "mobile_height": "mobile-height-450",
+        "mobile_height": "mobile-height-400",
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 5,
