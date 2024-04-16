@@ -951,6 +951,58 @@
         "carouselCardWidth": ""
       }
     },
+    "slideshow_F9bBcq": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6qmdyX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/test-circularity.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": true,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_hosted": "shopify:\/\/files\/videos\/Package_Widget.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_6qmdyX"
+      ],
+      "custom_css": [
+        ".mute-toggle {display: none;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-image",
+        "mobile_height": "mobile-height-450",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "slideshow_3ANpL7": {
       "type": "slideshow",
       "blocks": {
@@ -1374,58 +1426,6 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
-    },
-    "slideshow_F9bBcq": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_6qmdyX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/test-circularity.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
-            "video_background": true,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "video_hosted": "shopify:\/\/files\/videos\/Package_Widget.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-xlarge",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#ffffff",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_6qmdyX"
-      ],
-      "custom_css": [
-        ".mute-toggle {display: none;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-image",
-        "mobile_height": "mobile-height-450",
-        "full_width": true,
-        "autoplay": false,
-        "autoplay_length": 5,
-        "transition": "swipe",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
     }
   },
   "order": [
@@ -1446,13 +1446,13 @@
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
+    "slideshow_F9bBcq",
     "slideshow_3ANpL7",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
     "slideshow_MM3ChM",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_GL9Ar6",
     "featured_blog_YU4Nfw",
-    "slideshow_GEVUek",
-    "slideshow_F9bBcq"
+    "slideshow_GEVUek"
   ]
 }
