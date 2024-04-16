@@ -17,8 +17,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
     <meta name="theme-color" content="{{ settings.color_body_bg }}">
+    <meta name="p:domain_verify" content="29c5d28f0577b13b62999bd49eb8f6a1">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="alternate" href="https://www.virgio.com" hreflang="en-in">
     {% render 'head-preload' %}
 
     {% if settings.favicon != blank -%}
@@ -75,14 +77,6 @@
 			}
 		};
     </script>
-    <script src="https://bridge.shopflo.com/js/shopflo.bundle.js" async></script>
-    <!-- Cloudflare Web Analytics -->
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "1692971e968441478bfb85fad81d8bea"}'
-    ></script>
-    <!-- End Cloudflare Web Analytics -->
     {{ content_for_header }}
     <!-- Header hook for plugins -->
 
@@ -99,7 +93,7 @@
 
     {% include 'store-credit-launcher' %}
 
-    <script>
+    <script type="text/javascript">
           (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -110,6 +104,8 @@
 
         function openCheckout() {
         let cartitems = {{ cart | json }};
+        console.log("cart items", cartitems);
+             console.log("cart items", cartitems);
                Shopify.analytics.publish("Checkout Initiated", {
               "order_count": cartitems.item_count,
               "items": cartitems.items,
@@ -117,6 +113,20 @@
           });
       }
     </script>
+    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.6.2-beta.0-min.js.gz"></script>
+    <script src="https://cdn.amplitude.com/libs/session-replay-browser-1.2.1-min.js.gz"></script>
+    <script>
+      window.amplitude.init('25f2c0580d4ae81427774cc85e122bbf');window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-55VGTP2Z');
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
     <a class="screen-reader-shortcut" href="#main-content">{{ 'accessibility.skip_to_text' | t }}</a>
@@ -165,5 +175,15 @@
     {% include 'swymSnippet' %}
 
     {% include 'store-credit-launcher' %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-55VGTP2Z"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
