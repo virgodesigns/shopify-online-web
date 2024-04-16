@@ -1001,6 +1001,58 @@
         "carouselCardWidth": "75"
       }
     },
+    "slideshow_LJKjcW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_P3U4Mr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Media_spotlight.png",
+            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "video_background": true,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_hosted": "shopify:\/\/files\/videos\/Package_Widget.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_P3U4Mr"
+      ],
+      "custom_css": [
+        ".mute-toggle {display: none;}"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-450",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "slideshow_tQPWEz": {
       "type": "slideshow",
       "blocks": {
@@ -1370,6 +1422,7 @@
     "featured_collection_list_zeDUHp",
     "slideshow_b3443E",
     "collection_carousel_ctNVrA",
+    "slideshow_LJKjcW",
     "slideshow_tQPWEz",
     "slideshow_EjmBBq",
     "social_images_collections_AyYGeN",
