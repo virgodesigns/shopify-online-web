@@ -279,6 +279,7 @@
         "slide_FHGeLG": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Less_is_MOre_3.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -292,7 +293,7 @@
             "content_size": "medium",
             "overlay_color": "#000000",
             "overlay_opacity": 70,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_1_outline": true,
