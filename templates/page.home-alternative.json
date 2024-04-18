@@ -9,8 +9,8 @@
       "type": "main-page",
       "settings": {
         "show_page_title": false,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "image_with_text_overlay_irWUXY": {
