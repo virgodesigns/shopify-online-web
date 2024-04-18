@@ -15,7 +15,6 @@
     },
     "image_with_text_overlay_irWUXY": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image": "shopify:\/\/shop_images\/Hero_web_3b5966f8-65ab-4284-a4a3-c0e0c7b2b6b8.png",
@@ -115,6 +114,8 @@
         "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -271,6 +272,111 @@
         "border_separator": false,
         "border_separator_full": false
       }
+    },
+    "slideshow_AMJqWe": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_FHGeLG": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_pYaMyR": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_hDeyeE": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_FHGeLG",
+        "slide_pYaMyR",
+        "slide_hDeyeE"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "parallax_image": "shopify:\/\/shop_images\/homeBanner.png",
+        "parallax_image_mobile": "shopify:\/\/shop_images\/VirgioCatalog1808_d9337cb3-a907-4e4b-b779-6e94e448b161.jpg"
+      }
     }
   },
   "order": [
@@ -288,6 +394,7 @@
     "image_with_text_overlay_eCyk9f",
     "spacer_RYqNVn",
     "image_with_text_overlay_WeXmBi",
-    "spacer_zbf4kG"
+    "spacer_zbf4kG",
+    "slideshow_AMJqWe"
   ]
 }
