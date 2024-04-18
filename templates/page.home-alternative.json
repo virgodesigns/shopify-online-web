@@ -373,8 +373,8 @@
         "transition": "swipe",
         "show_on_desktop": true,
         "show_on_mobile": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
         "parallax_image": "shopify:\/\/shop_images\/homeBanner.png",
         "parallax_image_mobile": "shopify:\/\/shop_images\/VirgioCatalog1808_d9337cb3-a907-4e4b-b779-6e94e448b161.jpg"
       }
