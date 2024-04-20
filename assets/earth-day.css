@@ -76,6 +76,7 @@
 
 .earth-input .earth-input-form input::placeholder {
   color: #cfcfcf;
+  font-size: 14px;
 }
 
 .earth-input .earth-input-form input:disabled {
