@@ -22,7 +22,7 @@
 .earth-input {
   font-family: Inter;
 }
-.earth-input .earth-input-text1 {
+.earth-input .earth-input-text1 span {
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
