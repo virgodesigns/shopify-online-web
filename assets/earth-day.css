@@ -71,8 +71,8 @@
   color: #cfcfcf;
 }
 .earth-input .earth-input-form button[type="submit"] {
-  background-color: yellow;
-  color: black;
+  background: #97ff5b;
+  border: 0.71px solid #111111;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
