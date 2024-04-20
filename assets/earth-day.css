@@ -7,8 +7,9 @@ line-height: 18px;
 letter-spacing: 0.02em;
 text-align: center;
 }
-
-
+.text-style{
+position: absolute; top: 40%; left: 50%; transform: translateX(-50%); z-index: 1; color: green; text-align: center; font-size: 24px;
+}
 /* styles.css */
 #userInput {
     background-color: white;
