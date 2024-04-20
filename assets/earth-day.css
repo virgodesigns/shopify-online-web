@@ -19,7 +19,7 @@
   width: 60%;
   margin: 0 auto;
 }
-.earth-input .earth-input-title1 {
+.earth-input .earth-input-text1 {
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
@@ -27,10 +27,10 @@
   letter-spacing: 0.02em;
   text-align: center;
 }
-.earth-input .earth-input-title1 .earth-input-title1-bold {
+.earth-input .earth-input-text1 .earth-input-text1-bold {
   color: #97ff5b;
 }
-.earth-input .earth-input-title2 {
+.earth-input .earth-input-text2 {
   font-family: Inter;
   font-size: 12px;
   font-weight: 500;
