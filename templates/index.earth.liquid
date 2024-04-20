@@ -8,7 +8,7 @@
       Hint: Her net worth is over $1Trillion!
     </div>
 
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); z-index: 1; color: green; text-align: center; font-size: 24px;">
+    <div style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%); z-index: 1; color: green; text-align: center; font-size: 24px;">
       Drop in your guesses below
     </div>
 
@@ -17,7 +17,7 @@
       <button type="submit">Submit</button>
     </form>
 
-    <div id="message" style="display: none; color: green; text-align: center;" class="subtext1">
+    <div id="message" style="display: none; color: green; text-align: center;">
       Will be revealed on Monday 22nd April
     </div>
 
@@ -26,9 +26,9 @@
 </div>
 
 <script>
- 
+  // JavaScript
   document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    document.getElementById('message').style.display = 'block'; 
+    event.preventDefault(); // Prevents the default form submission
+    document.getElementById('message').style.display = 'block'; // Displays the message
   });
 </script>
