@@ -1,9 +1,8 @@
 {{ 'earth-day.css' | asset_url | stylesheet_tag }}
 
-<div  class="earth-background-img">
-
+<div class="earth-background-img">
   <div class="earth-center-img">
-    <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-typo.png"/>
+    <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-typo.png">
   </div>
 
   <div class="earth-input">
@@ -11,28 +10,27 @@
       <span> Hint: Her net worth is over <span class="earth-input-text1-bold">$1 Trillion!</span></span>
     </p>
 
-    <p class="earth-input-text2">
-      Drop in your guesses below
-    </p>
-
+    <p class="earth-input-text2">Drop in your guesses below</p>
 
     <form class="earth-input-form">
-      <input type="text" placeholder="Text">
-      <button type="submit">Submit</button>
+      <input type="text" placeholder="Text" id="earth-input">
+      <button type="submit" onclick="readInput()">Submit</button>
     </form>
 
-    <div class="earth-input-text3" style="visibility: hidden;">
+    <div class="earth-input-text3" id="earth-results" style="visibility: hidden;">
       Will be revealed on Monday 22nd April
     </div>
-
   </div>
-
 </div>
 
 <script>
-  // JavaScript
-  document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submission
-    document.getElementById('message').style.display = 'block'; // Displays the message
-  });
+    function readInput() {
+      const inputElement = document.getElementById("earth-input");
+      const userInput = inputElement.value;
+
+      if (userInput) {
+        const resultsDisplay = document.getElementById("earth-results");
+        resultsDisplay.style.visibility = 'visible'
+      }
+  }
 </script>
