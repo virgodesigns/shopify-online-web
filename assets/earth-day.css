@@ -1,56 +1,60 @@
-
-.subtext1{
-    font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 18px;
-letter-spacing: 0.02em;
-text-align: center;
+.subtext1 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
-.earth-background-img{
-  position: relative; 
-  background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png); 
-  height: 100vh; 
+.earth-background-img {
+  position: relative;
+  background-image: url(/cdn/shop/files/Earth-day-background.png);
+  height: 100vh;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.earth-center-img{
+.earth-center-img {
   width: 60%;
   margin: 0 auto;
 }
-.center{
-  position: relative; 
-  height: 100vh; 
+.center {
+  position: relative;
+  height: 100vh;
 }
-.text-style1{ 
-  z-index: 1; color: green;
-  text-align: center; 
+.text-style1 {
+  z-index: 1;
+  color: green;
+  text-align: center;
   font-size: 12px;
 }
-.text-style2{ 
-  z-index: 1; color: green;
-  text-align: center; 
+.text-style2 {
+  z-index: 1;
+  color: green;
+  text-align: center;
   font-size: 12px;
 }
 /* styles.css */
 #userInput {
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button[type="submit"] {
-    background-color: yellow;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-        #message {
-            display: none;
-            color: green;
-            text-align: center;
-            margin-top: 10px;
-        }
+#message {
+  display: none;
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
