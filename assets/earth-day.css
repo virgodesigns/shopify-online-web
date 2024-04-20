@@ -9,8 +9,8 @@
 .earth-background-img {
   position: relative;
   background-image: url(/cdn/shop/files/Earth-day-background.png);
-  height: 100vh;
-  height: 100dvh;
+  height: calc(100vh - 60px);
+  height: calc(100dvh - 60px);
   background-size: cover;
   display: flex;
   flex-direction: column;
