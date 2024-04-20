@@ -61,6 +61,10 @@
   width: 90%;
   margin: 0 auto;
 }
+.earth-input .earth-input-form input {
+  border-bottom: 0.5px solid #fdfdfd;
+  background: #f6fdff;
+}
 
 button[type="submit"] {
   background-color: yellow;
