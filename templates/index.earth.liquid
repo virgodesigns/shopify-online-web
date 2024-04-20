@@ -15,8 +15,21 @@
 
   </div>
   <form style="text-align: center;">
-      <input type="text" id="userInput" placeholder="Type something...">
+      <input type="text" id="userInput" placeholder="Text">
       <button type="submit">Submit</button>
     </form>
 
+   <div id="message">
+      Will be revealed on Monday 22nd April
+    </div>
+
 </div>
+
+<script>
+    // JavaScript
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission
+        document.getElementById('message').style.display = 'block'; // Displays the message
+    });
+</script>
+

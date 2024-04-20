@@ -25,3 +25,10 @@ button[type="submit"] {
     border-radius: 5px;
     margin-top: 10px;
 }
+
+        #message {
+            display: none;
+            color: green;
+            text-align: center;
+            margin-top: 10px;
+        }
