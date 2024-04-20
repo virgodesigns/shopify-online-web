@@ -14,7 +14,7 @@
 
       <div class="earth-input-form">
         <input type="text" placeholder="Text" id="earth-input">
-        <button type="submit" onclick="readInput()">Submit</button>
+        <button id="earth-submit" type="submit" onclick="readInput()">Submit</button>
       </div>
 
       <div class="earth-input-text3" id="earth-results" style="visibility: hidden;">
@@ -31,7 +31,8 @@
 
       if (userInput) {
         const resultsDisplay = document.getElementById("earth-results");
-        resultsDisplay.style.visibility = 'visible'
+        resultsDisplay.style.visibility = 'visible';
+        document.getElementById("earth-input").disabled = true;
       }
   }
 </script>
