@@ -19,10 +19,17 @@
 .earth-center-img {
   width: 60%;
   margin: 0 auto;
+  height: auto;
+  padding-bottom: 31%;
 }
 .earth-input {
   font-family: Inter;
   margin-bottom: 1rem;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .earth-input .earth-input-text1 {
   text-align: center;
