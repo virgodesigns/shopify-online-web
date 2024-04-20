@@ -1,6 +1,4 @@
-{{ 'earth-day.css' | asset_url | stylesheet_tag }} 
-
-
+{{ 'earth-day.css' | asset_url | stylesheet_tag }}
 
 <div class="background-image-container" style="position: relative; background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png?v=1713613942); height: 100vh; background-size: cover;">
 
@@ -10,26 +8,23 @@
       Hint: Her net worth is over $1Trillion!
     </div>
 
-
-   
-
   </div>
-  <form style="text-align: center;">
-      <input type="text" id="userInput" placeholder="Text">
-      <button type="submit">Submit</button>
-    </form>
 
-   <div id="message">
-      Will be revealed on Monday 22nd April
-    </div>
+  <form id="myForm" style="text-align: center;">
+    <input type="text" id="userInput" placeholder="Text">
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="message" style="display: none; color: green; text-align: center;">
+    Will be revealed on Monday 22nd April
+  </div>
 
 </div>
 
 <script>
-    // JavaScript
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevents the default form submission
-        document.getElementById('message').style.display = 'block'; // Displays the message
-    });
+  // JavaScript
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission
+    document.getElementById('message').style.display = 'block'; // Displays the message
+  });
 </script>
-
