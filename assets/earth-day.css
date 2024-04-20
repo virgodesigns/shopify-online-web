@@ -90,6 +90,10 @@
   margin-left: 0.3rem;
 }
 
+.earth-input .earth-input-form button[type="submit"]:disabled {
+  opacity: 0.5;
+}
+
 @media only screen and (min-width: 768px) {
   .earth-background-img {
     width: 540px;
