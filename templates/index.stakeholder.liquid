@@ -34,6 +34,7 @@
         resultsDisplay.style.visibility = 'visible';
         inputElement.disabled = true;
         document.getElementById("earth-submit").disabled = true;
+        Shopify.analytics.publish('Stakeholder Submit',{input: userInput})
       }
   }
 </script>
