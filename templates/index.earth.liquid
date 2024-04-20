@@ -1,28 +1,24 @@
 {{ 'earth-day.css' | asset_url | stylesheet_tag }}
 
-<div class="background-image-container" style="position: relative; background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png?v=1713613942); height: 100vh; background-size: cover;">
-
-  <div class="foreground-image-container" style="position: relative; background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-typo.png?v=1713613940); height: 100vh;">
-  
-    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); z-index: 1; color: green; text-align: center; font-size: 24px;">
+<div class="background-image-container">
+  <div class="foreground-image-container">
+    <div class="hint">
       Hint: Her net worth is over $1Trillion!
     </div>
 
-    <div style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%); z-index: 1; color: green; text-align: center; font-size: 24px;">
+    <div class="guesses">
       Drop in your guesses below
     </div>
 
-    <form id="myForm" style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <form id="myForm">
       <input type="text" id="userInput" placeholder="Text">
       <button type="submit">Submit</button>
     </form>
 
-    <div id="message" style="display: none; color: green; text-align: center;">
+    <div id="message">
       Will be revealed on Monday 22nd April
     </div>
-
   </div>
-
 </div>
 
 <script>
