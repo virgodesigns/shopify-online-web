@@ -1,0 +1,84 @@
+.subtext1 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.earth-background-img {
+  position: relative;
+  background-image: url(/cdn/shop/files/Earth-day-background.png);
+  height: calc(100vh - 60px);
+  height: calc(100dvh - 60px);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.earth-center-img {
+  width: 60%;
+  margin: 0 auto;
+}
+.earth-input {
+  font-family: Inter;
+  margin-bottom: 1rem;
+}
+.earth-input .earth-input-text1 {
+  text-align: center;
+  margin: 0;
+}
+.earth-input .earth-input-text1 span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fdfdfd;
+  text-align: center;
+}
+.earth-input .earth-input-text1 .earth-input-text1-bold {
+  color: #97ff5b;
+}
+.earth-input .earth-input-text2 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #97ff5b;
+  text-align: center;
+  margin-top: 4px;
+}
+.earth-input .earth-input-text3 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #97ff5b;
+  margin-top: 1rem;
+}
+.earth-input .earth-input-form {
+  text-align: center;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.earth-input .earth-input-form input {
+  border-bottom: 0.5px solid #fdfdfd;
+  background: #f6fdff;
+  margin: 0;
+  width: 77%;
+}
+.earth-input .earth-input-form input::placeholder {
+  color: #cfcfcf;
+}
+.earth-input .earth-input-form button[type="submit"] {
+  background: #97ff5b;
+  border: 0.71px solid #111111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0;
+  margin-left: 0.3rem;
+}
