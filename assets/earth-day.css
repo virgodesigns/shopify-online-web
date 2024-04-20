@@ -64,12 +64,13 @@
 .earth-input .earth-input-form input {
   border-bottom: 0.5px solid #fdfdfd;
   background: #f6fdff;
+  margin: 0;
+  width: 77%;
 }
 .earth-input .earth-input-form input::placeholder {
   color: #cfcfcf;
 }
-
-button[type="submit"] {
+.earth-input .earth-input-form button[type="submit"] {
   background-color: yellow;
   color: black;
   padding: 10px 20px;
