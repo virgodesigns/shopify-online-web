@@ -19,22 +19,31 @@
   width: 60%;
   margin: 0 auto;
 }
-.center {
-  position: relative;
-  height: 100vh;
-}
-.text-style1 {
-  z-index: 1;
-  color: green;
+.earth-input .earth-input-title1 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
   text-align: center;
-  font-size: 12px;
 }
-.text-style2 {
-  z-index: 1;
-  color: green;
-  text-align: center;
+.earth-input .earth-input-title2 {
+  font-family: Inter;
   font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
+.earth-input .earth-input-title2 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 /* styles.css */
 #userInput {
   background-color: white;
