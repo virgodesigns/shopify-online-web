@@ -8,11 +8,7 @@ letter-spacing: 0.02em;
 text-align: center;
 }
 .text-style{
-position: absolute;
-  transform: translateX(-50%);
-  z-index: 1; color: green; 
-  text-align: center; 
-  font-size: 12px;
+position: absolute; top: 40%; left: 50%; transform: translateX(-50%); z-index: 1; color: green; text-align: center; font-size: 12px;
 }
 /* styles.css */
 #userInput {
