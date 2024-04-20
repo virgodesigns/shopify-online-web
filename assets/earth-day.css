@@ -65,9 +65,3 @@ button[type="submit"] {
   margin-top: 10px;
 }
 
-#message {
-  display: none;
-  color: green;
-  text-align: center;
-  margin-top: 10px;
-}
