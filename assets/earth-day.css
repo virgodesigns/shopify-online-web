@@ -7,8 +7,20 @@ line-height: 18px;
 letter-spacing: 0.02em;
 text-align: center;
 }
+.background-img{
+  position: relative; 
+  background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png?v=1713613942); 
+  height: 100vh; 
+  background-size: cover;"
+}
+.center{
+  position: relative; 
+  background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png?v=1713613942); 
+  height: 100vh; 
+  background-size: cover;"
+}
 .text-style{
-
+   
   top: 40%; 
   left: 50%; 
   transform: translateX(-50%); 
