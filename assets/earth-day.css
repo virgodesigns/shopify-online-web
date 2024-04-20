@@ -27,6 +27,9 @@
   letter-spacing: 0.02em;
   text-align: center;
 }
+.earth-input .earth-input-title1 .earth-input-title1-bold {
+  color: #97ff5b;
+}
 .earth-input .earth-input-title2 {
   font-family: Inter;
   font-size: 12px;
