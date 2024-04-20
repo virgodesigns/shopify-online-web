@@ -73,6 +73,11 @@
   margin: 0;
   width: 77%;
 }
+
+.earth-input .earth-input-form input::placeholder {
+  color: #cfcfcf;
+}
+
 .earth-input .earth-input-form input:disabled {
   opacity: 0.5;
 }
