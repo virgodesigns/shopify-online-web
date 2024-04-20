@@ -31,7 +31,7 @@
     "search_product_collection": "all",
     "search_product_collection_limit": 12,
     "lazy_loading": true,
-    "back_to_top": false,
+    "back_to_top": true,
     "favicon": "shopify:\/\/shop_images\/Fav_icon_Dark_32x32_Squircle-1.png",
     "body_measurement_mobile": "shopify:\/\/shop_images\/BODY_MEASUREMENT_1.jpg",
     "body_measurement": "shopify:\/\/shop_images\/Frame_48096245_ed25262e-e88f-4b4e-b21a-2910a912d38c.png",
