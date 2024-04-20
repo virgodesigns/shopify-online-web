@@ -9,16 +9,13 @@ text-align: center;
 }
 .earth-background-img{
   position: relative; 
-  background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png?v=1713613942); 
+  background-image: url(https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Earth-day-background.png); 
   height: 100vh; 
   background-size: cover;
 }
 .earth-center-img{
   width: 60%;
   margin: 0 auto;
-}
-.earth-input{
-
 }
 .center{
   position: relative; 
