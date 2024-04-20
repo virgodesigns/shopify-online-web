@@ -28,6 +28,15 @@ text-align: center;
   text-align: center; 
   font-size: 12px;
 }
+.text-style2{
+  position: absolute;
+  top: 40%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1; color: green;
+  text-align: center; 
+  font-size: 12px;
+}
 /* styles.css */
 #userInput {
     background-color: white;
