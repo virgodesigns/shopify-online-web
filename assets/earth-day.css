@@ -24,6 +24,7 @@
 }
 .earth-input .earth-input-text1 {
   text-align: center;
+  margin: 0;
 }
 .earth-input .earth-input-text1 span {
   font-size: 14px;
@@ -44,21 +45,21 @@
   letter-spacing: 0.02em;
   color: #97ff5b;
   text-align: center;
+  margin-top: 4px;
 }
 .earth-input .earth-input-title3 {
+  font-family: Inter;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
 }
-
-/* styles.css */
-#userInput {
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.earth-input .earth-input-form {
+  text-align: center;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
 }
 
 button[type="submit"] {
