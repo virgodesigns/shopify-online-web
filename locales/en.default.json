@@ -415,6 +415,11 @@
       "sorting": {
         "date_descending": "What's New"
       }
+    },
+    "checkout": {
+      "order_summary": {
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">{{ code }}<\/strong> discount code isn’t valid for the value of your cart"
+      }
     }
   }
 }
