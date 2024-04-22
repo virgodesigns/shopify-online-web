@@ -50,7 +50,7 @@
         "slide_QxTGH6"
       ],
       "custom_css": [
-        ".slideshow{background:#000;}"
+        ".slideshow {background-color: #000;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
