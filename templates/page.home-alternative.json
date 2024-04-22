@@ -100,6 +100,9 @@
       "block_order": [
         "slide_C9YwP9"
       ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
+      ],
       "settings": {
         "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
@@ -147,6 +150,9 @@
       },
       "block_order": [
         "slide_Y7YcMa"
+      ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
@@ -196,6 +202,9 @@
       "block_order": [
         "slide_wMbEjX"
       ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
+      ],
       "settings": {
         "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
@@ -243,6 +252,9 @@
       },
       "block_order": [
         "slide_naRLHD"
+      ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
@@ -292,6 +304,9 @@
       "block_order": [
         "slide_rUztJQ"
       ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
+      ],
       "settings": {
         "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
@@ -339,6 +354,9 @@
       },
       "block_order": [
         "slide_EmhG4a"
+      ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
@@ -388,6 +406,9 @@
       "block_order": [
         "slide_aVHJbC"
       ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
+      ],
       "settings": {
         "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
@@ -435,6 +456,9 @@
       },
       "block_order": [
         "slide_Xx6MxE"
+      ],
+      "custom_css": [
+        ".slideshow {background-color: #000;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
