@@ -430,7 +430,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/s9_1.png",
-            "slide_link": "",
+            "slide_link": "shopify:\/\/collections",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
