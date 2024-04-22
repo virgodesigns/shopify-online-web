@@ -73,9 +73,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096406.png",
             "slide_link": "",
-            "video_background": true,
+            "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "video_hosted": "shopify:\/\/files\/videos\/Earth_1170x1920.mp4",
             "subheading": "",
             "heading": "",
             "heading_size": "h1-xlarge",
@@ -102,7 +101,8 @@
         "slide_C9YwP9"
       ],
       "custom_css": [
-        ".slideshow {background-color: #000;}"
+        ".slideshow {background-color: #000;}",
+        ".mute-toggle {display: none;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
@@ -430,7 +430,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/s9_1.png",
-            "slide_link": "shopify:\/\/collections",
+            "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
