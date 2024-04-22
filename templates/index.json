@@ -187,6 +187,55 @@
         "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
       }
     },
+    "slideshow_kV4pV9": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_wUGAYj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_1_e457005a-fd1c-4fd6-aa8e-f0175c665a2e.png",
+            "slide_link": "shopify:\/\/pages\/earth-day-sustainability-report",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/new-launch",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_wUGAYj"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-400",
+        "full_width": false,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "slide",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
+      }
+    },
     "slideshow_w7MbVp": {
       "type": "slideshow",
       "blocks": {
@@ -1356,28 +1405,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "featured_blog_YU4Nfw": {
-      "type": "featured-blog",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "heading": "From The Editor's Desk",
-        "heading_left": false,
-        "description": "",
-        "full_width": true,
-        "blog": "textiles-and-fashion",
-        "post_limit": 2,
-        "columns_desktop": 2,
-        "mobile_swipe": true,
-        "image_ratio": "adapt",
-        "show_date": false,
-        "show_excerpt": true,
-        "show_view_all": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "slideshow_GEVUek": {
       "type": "slideshow",
       "blocks": {
@@ -1432,6 +1459,7 @@
     "16479477632637c9a7",
     "slideshow_eQX7fA",
     "slideshow_4W9bzy",
+    "slideshow_kV4pV9",
     "slideshow_w7MbVp",
     "slideshow_tDqQJ4",
     "slideshow_VqLG7P",
@@ -1452,7 +1480,6 @@
     "slideshow_MM3ChM",
     "57e4c19e-e72d-42fc-b2a5-f565d4d34148",
     "slideshow_GL9Ar6",
-    "featured_blog_YU4Nfw",
     "slideshow_GEVUek"
   ]
 }
