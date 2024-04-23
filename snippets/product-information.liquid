@@ -26,7 +26,25 @@
             {% assign title_words = product.title | split: '|' %}
             <div class="card_container">
               <span class="product-tittle-first_word">{{ title_words[0] }}</span>
-
+              <span class="pre-order_products">
+                {%- assign Special_deal = '' -%}
+                {%- assign background = '' -%}
+                {% for tag in product.tags %}
+                  {% if tag contains 'Badge:' %}
+                    {%- assign special = tag | split: ':' -%}
+                    {%- assign Special_deal = special | last -%}
+                  {% endif %}
+                  {% if tag contains 'BadgeColour:' %}
+                    {%- assign color = tag | remove: 'BadgeColour:' -%}
+                    {%- assign background = color -%}
+                  {% endif %}
+                {% endfor %}
+                {% if Special_deal != blank %}
+                  <div class="coordset_tag">
+                    <div class="coordset" style="background-color:{{ background }}">{{ Special_deal }}</div>
+                  </div>
+                {% endif %}
+              </span>
               <span class="pre-order_products hide-message">
                 {%- assign Special_deal = '' -%}
                 {%- assign background = '' -%}
