@@ -418,7 +418,7 @@
     },
     "checkout": {
       "order_summary": {
-        "cart_does_not_meet_discount_requirements_notice": "<strong style = \"text-transfrom:uppercase\">{{code}}<\/strong> discount code isn’t valid for your cart value"
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transfrom:uppercase\">{{code}}<\/strong> discount code isn’t valid for your cart value"
       }
     }
   }
