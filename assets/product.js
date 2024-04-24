@@ -454,7 +454,7 @@ if (!customElements.get("variant-selects")) {
         if(productTags.includes('isFreeSize:true')){
           const metafieldValues = document.querySelectorAll(".meta-value");
           metafieldValues.forEach((value, index) => {
-            value.classList.toggle("active-metafield", true);
+            value.classList.toggle("active-metafield", index === 0);
           });
         }
         const available_options = this.createAvailableOptionsTree(
