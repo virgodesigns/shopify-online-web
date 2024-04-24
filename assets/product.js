@@ -450,6 +450,13 @@ if (!customElements.get("variant-selects")) {
             };
           }
         );
+        const productTags =  document.getElementById('product_tags').value
+        if(productTags.includes('isFreeSize:true')){
+          const metafieldValues = document.querySelectorAll(".meta-value");
+          metafieldValues.forEach((value, index) => {
+            value.classList.toggle("active-metafield", true);
+          });
+        }
         const available_options = this.createAvailableOptionsTree(
           variant_data,
           selected_options
