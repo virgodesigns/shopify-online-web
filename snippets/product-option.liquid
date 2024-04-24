@@ -7,7 +7,7 @@
 
   assign handle = option.name | replace: ' ', '-' | downcase | escape
 -%}
-
+<input id="product_tags" type="hidden" value="{{product.tags}}">
 {%- case option_type -%}
   {%- when 'dropdown' -%}
     {% if settings.color_swatches %}
