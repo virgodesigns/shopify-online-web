@@ -460,6 +460,8 @@ input.pin-input::placeholder {
   padding: 4px 10px;
   font-size: 11px;
   background: var(--info-info-50-edfaff, #edfaff);
+  display: flex;
+  align-items: center;
 }
 
 /* add to button  */
