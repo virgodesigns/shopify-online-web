@@ -5467,4 +5467,5 @@ input[type="radio"],
 }
 .docapp-coupon-input input[type=text].docapp-coupon-input--input { 
   background: #EDFAFF !important;
+  border: 0.5px dashed #033161 !important;
 }
