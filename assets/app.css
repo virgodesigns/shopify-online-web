@@ -5465,6 +5465,6 @@ input[type="radio"],
   font-weight: 600;
   margin-bottom: 0px;
 }
-.docapp-coupon-input--input  {
-  background: #EDFAFF;
+.docapp-coupon-input input[type=text].docapp-coupon-input--input { 
+  background: #EDFAFF !important;
 }
