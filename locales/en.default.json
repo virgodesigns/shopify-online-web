@@ -418,7 +418,8 @@
     },
     "checkout": {
       "order_summary": {
-        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transfrom:uppercase\">{{code}}<\/strong> discount code isn’t valid for your cart value"
+        "cart_does_not_meet_discount_requirements_notice": "Your cart value is lesser than eligibility criteria for <strong style=\"text-transfrom:uppercase\">{{code}}<\/strong>",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transfrom:uppercase\">{{code}}<\/strong> is not valid. Please check eligibility criteria."
       }
     }
   }
