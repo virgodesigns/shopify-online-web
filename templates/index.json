@@ -89,6 +89,7 @@
         },
         "slide_aJ3hzE": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
             "slide_link": "shopify:\/\/collections\/new-launch",
@@ -115,86 +116,13 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
-        }
-      },
-      "block_order": [
-        "slide_przdNG",
-        "slide_aJ3hzE"
-      ],
-      "custom_css": [
-        ".mute-toggle {display: none;}"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "slideshow_4W9bzy": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_R6Arwd": {
+        },
+        "slide_n9gPaN": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_2_b9bfa1cc-6b7d-4afd-83ed-7e14bee3d4f1.jpg",
-            "slide_link": "shopify:\/\/collections\/new-launch",
-            "video_background": true,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_R6Arwd"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "slideshow_kV4pV9": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_wUGAYj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_1_e457005a-fd1c-4fd6-aa8e-f0175c665a2e.png",
-            "slide_link": "shopify:\/\/pages\/earth-day-sustainability-report",
+            "image": "shopify:\/\/shop_images\/top_banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/top_banner.jpg",
+            "slide_link": "shopify:\/\/collections\/elevated-essential",
             "video_background": false,
             "video": "",
             "subheading": "",
@@ -220,12 +148,96 @@
         }
       },
       "block_order": [
-        "slide_wUGAYj"
+        "slide_przdNG",
+        "slide_aJ3hzE",
+        "slide_n9gPaN"
+      ],
+      "custom_css": [
+        ".mute-toggle {display: none;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-400",
-        "full_width": false,
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "slide",
+        "show_on_desktop": false,
+        "show_on_mobile": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
+      }
+    },
+    "slideshow_4W9bzy": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_R6Arwd": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_2_b9bfa1cc-6b7d-4afd-83ed-7e14bee3d4f1.jpg",
+            "slide_link": "shopify:\/\/collections\/new-launch",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/new-launch",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        },
+        "slide_e8Bqm8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_2_23f93243-2577-475e-b627-4ad89080e183.jpg",
+            "slide_link": "shopify:\/\/collections\/elevated-essential",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_R6Arwd",
+        "slide_e8Bqm8"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-image",
+        "full_width": true,
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "slide",
@@ -271,6 +283,7 @@
       "block_order": [
         "slide_nhWBWG"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -320,6 +333,7 @@
       "block_order": [
         "slide_9wDP8D"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -369,6 +383,7 @@
       "block_order": [
         "slide_yV9NrF"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -600,32 +615,32 @@
         "image_item_wfhHkc": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_6224_1.png",
-            "heading_text": "Dresses",
+            "image": "shopify:\/\/shop_images\/Frame_48096616.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/dresses-date"
           }
         },
         "image_item_8k6yQC": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_6224-1_1.png",
-            "heading_text": "Topwear",
+            "image": "shopify:\/\/shop_images\/Frame_48096617.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
         },
         "image_item_MLUAC8": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_6224-3_1.png",
-            "heading_text": "Bottomwear",
+            "image": "shopify:\/\/shop_images\/Frame_48096618.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
         },
         "image_item_ABtpDQ": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_6224-2_1.png",
-            "heading_text": "Co-ord Sets",
+            "image": "shopify:\/\/shop_images\/Frame_48096619.png",
+            "heading_text": "",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
         }
@@ -1459,7 +1474,6 @@
     "16479477632637c9a7",
     "slideshow_eQX7fA",
     "slideshow_4W9bzy",
-    "slideshow_kV4pV9",
     "slideshow_w7MbVp",
     "slideshow_tDqQJ4",
     "slideshow_VqLG7P",
