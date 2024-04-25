@@ -172,39 +172,10 @@
     "slideshow_4W9bzy": {
       "type": "slideshow",
       "blocks": {
-        "slide_R6Arwd": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_2_b9bfa1cc-6b7d-4afd-83ed-7e14bee3d4f1.jpg",
-            "slide_link": "shopify:\/\/collections\/new-launch",
-            "video_background": true,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_e8Bqm8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_2_23f93243-2577-475e-b627-4ad89080e183.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_48096615.jpg",
             "slide_link": "shopify:\/\/collections\/elevated-essential",
             "video_background": false,
             "video": "",
@@ -231,7 +202,6 @@
         }
       },
       "block_order": [
-        "slide_R6Arwd",
         "slide_e8Bqm8"
       ],
       "settings": {
