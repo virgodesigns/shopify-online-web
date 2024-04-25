@@ -3,36 +3,6 @@
     "slideshow_nfyjbt": {
       "type": "slideshow",
       "blocks": {
-        "slide_pkM6BC": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_web.png",
-            "mobile_image": "shopify:\/\/shop_images\/RAMADAN_HERO_mweb.png",
-            "slide_link": "shopify:\/\/collections\/ramadan-special",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/all-collections",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/ramadan-special",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_LbaR6E": {
           "type": "slide",
           "settings": {
@@ -93,7 +63,6 @@
         }
       },
       "block_order": [
-        "slide_pkM6BC",
         "slide_LbaR6E",
         "slide_KG87MY"
       ],
@@ -105,55 +74,6 @@
         "autoplay_length": 5,
         "transition": "slide",
         "show_on_desktop": true,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "slideshow_R7XC7x": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_GHLGWB": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_1_4752a44a-a0cd-4f6a-a51b-d9cf83dab888.png",
-            "mobile_image": "shopify:\/\/shop_images\/homepage_1_4752a44a-a0cd-4f6a-a51b-d9cf83dab888.png",
-            "slide_link": "shopify:\/\/pages\/earth-day-sustainability-report",
-            "video_background": false,
-            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h2",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/summer-soiree",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "slide_GHLGWB"
-      ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-400",
-        "full_width": false,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
         "show_on_mobile": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -1455,7 +1375,6 @@
   },
   "order": [
     "slideshow_nfyjbt",
-    "slideshow_R7XC7x",
     "slideshow_wDECDJ",
     "slideshow_cJ3nxT",
     "slideshow_KyyWYb",
