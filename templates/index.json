@@ -88,66 +88,6 @@
     "slideshow_eQX7fA": {
       "type": "slideshow",
       "blocks": {
-        "slide_przdNG": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1080X1440.png",
-            "mobile_image": "shopify:\/\/shop_images\/1080X1440.png",
-            "slide_link": "shopify:\/\/collections\/flash-sale",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
-        "slide_aJ3hzE": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
-            "slide_link": "shopify:\/\/collections\/new-launch",
-            "video_background": true,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner_1080x1660.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_n9gPaN": {
           "type": "slide",
           "settings": {
@@ -179,8 +119,6 @@
         }
       },
       "block_order": [
-        "slide_przdNG",
-        "slide_aJ3hzE",
         "slide_n9gPaN"
       ],
       "custom_css": [
@@ -235,156 +173,6 @@
       "block_order": [
         "slide_e8Bqm8"
       ],
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "slideshow_w7MbVp": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_nhWBWG": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pick_your_floral.png",
-            "slide_link": "",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_nhWBWG"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "slideshow_tDqQJ4": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_9wDP8D": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096620.jpg",
-            "slide_link": "shopify:\/\/collections\/fractured-floral",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_9wDP8D"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-image",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "slide",
-        "show_on_desktop": false,
-        "show_on_mobile": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "parallax_image": "shopify:\/\/shop_images\/Rectangle_3197_1.png"
-      }
-    },
-    "slideshow_VqLG7P": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_yV9NrF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096621.jpg",
-            "slide_link": "shopify:\/\/collections\/forbidden-bloom",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": false,
-            "button_2_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_yV9NrF"
-      ],
-      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -1475,9 +1263,6 @@
     "16479477632637c9a7",
     "slideshow_eQX7fA",
     "slideshow_4W9bzy",
-    "slideshow_w7MbVp",
-    "slideshow_tDqQJ4",
-    "slideshow_VqLG7P",
     "collection_tabs_Fbjncb",
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2",
     "slideshow_KMFfTm",
