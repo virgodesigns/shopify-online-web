@@ -188,24 +188,24 @@ if (!customElements.get("product-card")) {
         });
       };
       if (image_container) {
-        // image_container.addEventListener("touchstart", mousemove, {
-        //   passive: true,
-        // });
-        // image_container.addEventListener("touchmove", mousemove, {
-        //   passive: true,
-        // });
-        // image_container.addEventListener("touchend", mouseleave, {
-        //   passive: true,
-        // });
-        // image_container.addEventListener("mouseenter", mousemove, {
-        //   passive: true,
-        // });
-        // image_container.addEventListener("mousemove", mousemove, {
-        //   passive: true,
-        // });
-        // image_container.addEventListener("mouseleave", mouseleave, {
-        //   passive: true,
-        // });
+        image_container.addEventListener("touchstart", mousemove, {
+          passive: true,
+        });
+        image_container.addEventListener("touchmove", mousemove, {
+          passive: true,
+        });
+        image_container.addEventListener("touchend", mouseleave, {
+          passive: true,
+        });
+        image_container.addEventListener("mouseenter", mousemove, {
+          passive: true,
+        });
+        image_container.addEventListener("mousemove", mousemove, {
+          passive: true,
+        });
+        image_container.addEventListener("mouseleave", mouseleave, {
+          passive: true,
+        });
       }
     }
     enableSwatches(swatches, image) {
