@@ -19,6 +19,7 @@
     "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/virgio",
     "product_aspect_ratio": "adapt",
     "products_hover_images": true,
+    "products_hover_images_count": 0,
     "enable_quick_view": false,
     "show_products_vendor": false,
     "show_products_rating": false,
