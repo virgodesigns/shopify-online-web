@@ -39,7 +39,7 @@
     "product_aspect_ratio": "adapt",
     "products_hover_images": true,
     "products_hover_images_count": 3,
-    "enable_quick_view": true,
+    "enable_quick_view": false,
     "show_products_vendor": false,
     "show_products_rating": false,
     "sale_badge_type": "save_percentage",
