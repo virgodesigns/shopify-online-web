@@ -53,7 +53,7 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
+            "button_1_text": "SHOP NOW",
             "button_1_link": "shopify:\/\/collections\/new-launch",
             "button_1_outline": true,
             "button_1_underline": true,
