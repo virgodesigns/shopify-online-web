@@ -37,7 +37,7 @@
         "slide_RmTHMe": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop.png",
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_a9b59a46-a979-4af4-962d-5e19b8044b0d.png",
             "slide_link": "shopify:\/\/collections\/elevated-essential",
             "video_background": false,
             "video": "",
@@ -72,7 +72,7 @@
         ".mute-toggle {display: none;}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
+        "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": true,
