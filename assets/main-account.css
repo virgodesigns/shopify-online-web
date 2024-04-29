@@ -56,9 +56,15 @@
 }
 
 .order-img-name{
-  background: rgba(17, 17, 17, 0.50);
-  backdrop-filter: blur(16.5px);
-  padding: 16px;
+    background: #11111180;
+    -webkit-backdrop-filter: blur(16.5px);
+    backdrop-filter: blur(16.5px);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
 }
 
 .order-img img {
