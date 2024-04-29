@@ -60,7 +60,7 @@
   background: #11111180;
   -webkit-backdrop-filter: blur(16.5px);
   backdrop-filter: blur(16.5px);
-  padding: 16px;
+  padding: 4px;
   position: absolute;
   bottom: 0;
   width: 100%;
