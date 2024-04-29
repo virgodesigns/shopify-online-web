@@ -74,11 +74,23 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {
+      }
     }
   },
   "order": [
+    "shogun-helper",
     "1661619382b4020fa2",
     "1652268757b7c53383",
-    "1652081672ff9b3c2c"
+    "1652081672ff9b3c2c",
+    "shogun-optimizer"
   ]
 }

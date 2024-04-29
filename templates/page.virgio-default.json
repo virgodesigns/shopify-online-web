@@ -33,12 +33,18 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {
+      }
     }
   },
   "order": [
     "shogun-helper",
     "main",
     "custom_liquid_pkrcYj",
-    "video_4AyjLt"
+    "video_4AyjLt",
+    "shogun-optimizer"
   ]
 }

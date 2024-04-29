@@ -271,6 +271,11 @@
         "border_separator": false,
         "border_separator_full": false
       }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -288,6 +293,7 @@
     "image_with_text_overlay_eCyk9f",
     "spacer_RYqNVn",
     "image_with_text_overlay_WeXmBi",
-    "spacer_zbf4kG"
+    "spacer_zbf4kG",
+    "shogun-optimizer"
   ]
 }
