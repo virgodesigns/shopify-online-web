@@ -373,7 +373,7 @@ if (!data || !data.data || data.data.orders.length === 0) {
 
   // Update UI with the fetched data
   dataContainer.innerHTML += data.data.orders.map(order => {
-    const { displayStatus } = order;
+    const { displayStatus,orderName } = order;
     const { title } = order;
     const titles = title.split('|');
 
@@ -384,6 +384,7 @@ if (!data || !data.data || data.data.orders.length === 0) {
         <div style="display: flex;margin-top: 1rem;align-items: center;">
           <div style="margin-right: 1.5rem;" class="order-img"><img  src="${order.image}" alt="${order.title}"></div>
           <div>
+            <div class="order-title1">${orderName}</div>
             <div class="order-title1">${titles[0]}</div>
             <div class="order-title2">${titles[1]}</div>
             <div class="order-title3">Size: ${order.variantTitle}</div>
