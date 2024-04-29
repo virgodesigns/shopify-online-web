@@ -51,19 +51,20 @@
 }
 
 .order-img {
-  width: 9.375rem;
+  min-width: 9rem;
+  width: 9rem;
   position: relative;
 }
 
-.order-img-name{
-    background: #11111180;
-    -webkit-backdrop-filter: blur(16.5px);
-    backdrop-filter: blur(16.5px);
-    padding: 16px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #fff !important;
+.order-img-name {
+  background: #11111180;
+  -webkit-backdrop-filter: blur(16.5px);
+  backdrop-filter: blur(16.5px);
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff !important;
 }
 
 .order-img img {
