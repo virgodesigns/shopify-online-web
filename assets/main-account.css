@@ -52,6 +52,13 @@
 
 .order-img {
   width: 9.375rem;
+  position: relative;
+}
+
+.order-img-name{
+  background: rgba(17, 17, 17, 0.50);
+  backdrop-filter: blur(16.5px);
+  padding: 16px;
 }
 
 .order-img img {
