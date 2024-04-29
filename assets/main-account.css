@@ -59,12 +59,11 @@
     background: #11111180;
     -webkit-backdrop-filter: blur(16.5px);
     backdrop-filter: blur(16.5px);
-    padding: 8px;
+    padding: 16px;
     position: absolute;
     bottom: 0;
-    color: #fff !important;
     width: 100%;
-    text-align: center;
+    color: #fff !important;
 }
 
 .order-img img {
