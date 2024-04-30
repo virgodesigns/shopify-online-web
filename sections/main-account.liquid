@@ -447,21 +447,22 @@ const useDeliveryStatusText = (displayStatus) => {
   return '';
 };
 
-  const useDeliveryText = (order) => {
-    if (order.fulfillmentStatus === 'DELIVERED') {
-      return `Delivered on ${useISODateToFormattedDate(
-        order.order.fulfillments?.[0]?.deliveredAt,
-      )}`;
-    }
-    if (
-      !order.fulfillmentStatus ||
-      (order.fulfillmentStatus === 'NOT_DELIVERED' &&
-        (!order.estimatedDeliveryDate || order.order.cancelReason))
-    ) {
-      return '';
-    }
-    return `Arriving by ${order?.estimatedDeliveryDate ?? ''}`;
-  };
+
+  const useDeliveryText = (orderLineItem: IOrderLineItemNew) => {
+  if (orderLineItem.displayStatus === 'DELIVERED') {
+    return `Delivered on ${orderLineItem.deliveredAt}`;
+  }
+  if (
+    orderLineItem.displayStatus === 'CANCELLED' ||
+    orderLineItem.estimatedDeliveryTime === '' ||
+    orderLineItem.estimatedDeliveryTime === undefined ||
+    orderLineItem.estimatedDeliveryTime === null
+  ) {
+    return '';
+  }
+  return `Arriving by ${orderLineItem?.estimatedDeliveryTime ?? ''}`;
+};
+
 
   const useFormatDate = (inputDateStr) => {
   // Create a Date object from the input string
@@ -497,48 +498,6 @@ const useDeliveryStatusText = (displayStatus) => {
     const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month} ${year}`;
 
     return formattedDate ?? '';
-  }
-  return '';
-};
-
-const useISODateToFormattedDate = (isoDateStr) => {
-  // Create a Date object from the ISO date string
-  if (isoDateStr != null) {
-    const inputDate = new Date(isoDateStr);
-
-    // Define an array of month names
-    const monthNames = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ];
-
-    // Get the day of the week as a string (e.g., 'Tue')
-    const dayOfWeek = new Intl.DateTimeFormat('en-US', {
-      weekday: 'short',
-    }).format(inputDate);
-
-    // Get the day of the month (e.g., '10')
-    const dayOfMonth = inputDate.getDate().toString();
-
-    // Get the month as a string (e.g., 'Oct')
-    const month = monthNames[inputDate.getMonth()];
-
-    // Get the year (e.g., '2023')
-    const year = inputDate.getFullYear().toString();
-
-    // Create the formatted date string
-    const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month} ${year}`;
-    return formattedDate;
   }
   return '';
 };
