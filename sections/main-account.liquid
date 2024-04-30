@@ -448,7 +448,7 @@ const useDeliveryStatusText = (displayStatus) => {
 };
 
 
-  const useDeliveryText = (orderLineItem: IOrderLineItemNew) => {
+  const useDeliveryText = (orderLineItem) => {
   if (orderLineItem.displayStatus === 'DELIVERED') {
     return `Delivered on ${orderLineItem.deliveredAt}`;
   }
