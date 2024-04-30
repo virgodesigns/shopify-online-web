@@ -15,34 +15,39 @@
         </div>
       </div>
 
-      {% assign cartTotalInRs = cart.total_price | divided_by: 100 %}
+      {% comment %} {% assign cartTotalInRs = cart.total_price | divided_by: 100 %} {% endcomment %}
 
       <div class="scrolling-text-container">
-        {% comment %} <div class="scrolling-text-inner" style="--marquee-speed: 60s; --direction:scroll-left" role="marquee">
-          <div class="scrolling-text">
-            <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
-            <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
-            <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
-            <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
-            <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
-            <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
+        <div class="scrolling-text-inner">Shop above ₹3000 and get extra 10% off</div>
+        {% comment %}
+          <div class="scrolling-text-inner" style="--marquee-speed: 60s; --direction:scroll-left" role="marquee">
+            <div class="scrolling-text">
+              <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
+              <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
+              <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
+              <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
+              <div class="scrolling-text-item">{{ settings.text_message_1 }}</div>
+              <div class="scrolling-text-item">{{ settings.text_message_2 }}</div>
+            </div>
           </div>
-        </div> {% endcomment %}
+        {% endcomment %}
 
-        <div class="scrolling-text-inner" style="--marquee-speed: 40s; --direction:scroll-left" role="marquee">
-          <div class="scrolling-text">
-            
-            {% if cartTotalInRs < 3000 and cart.item_count > 0 %}
-              <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
-              <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
+        {% comment %}
+          <div class="scrolling-text-inner" style="--marquee-speed: 40s; --direction:scroll-left" role="marquee">
+            <div class="scrolling-text">
+
+              {% if cartTotalInRs < 3000 and cart.item_count > 0 %}
                 <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
                 <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
-              <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
-                <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} moreto get extra 10% off</div>
+                  <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
+                  <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
+                <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} more to get extra 10% off</div>
+                  <div class="scrolling-text-item">Add items worth  ₹{{ 3000 | minus: cartTotalInRs }} moreto get extra 10% off</div>
 
-            {% endif %}
+              {% endif %}
+            </div>
           </div>
-        </div>
+        {% endcomment %}
       </div>
 
       <div class="side-panel-content">
@@ -248,7 +253,10 @@
       <div class="cart-trust-markers">
         <div class="cart-trust-markers-card">
           <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Returns.png?v=1712585519">
-          <div class="cart-trust-markers-card-text">15 Days <br/> Return*</div>
+          <div class="cart-trust-markers-card-text">
+            15 Days <br>
+            Return*
+          </div>
         </div>
         <div class="cart-trust-markers-card">
           <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/ShipReturns.png?v=1712585492">
@@ -372,9 +380,10 @@
 
   /* Inner container styles */
   .scrolling-text-inner {
-    display: flex;
+    {% comment %} display: flex; {% endcomment %}
     white-space: nowrap;
     font-size: 14px;
+    text-align: center;
   }
 
   /* Text styles */
@@ -411,37 +420,37 @@
     border-top: 1px solid var(--color-border);
   }
 
-.cart-trust-markers {
-  margin : 4px 2px 4px 16px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 14px;
-  letter-spacing: 0.1px;
-  text-transform: capitalize;
-}
+  .cart-trust-markers {
+    margin: 4px 2px 4px 16px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+  }
 
-.cart-trust-markers .cart-trust-markers-card {
-  width: 33.33%;
-  display: flex; 
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0px 4px 0px 8px
-}
+  .cart-trust-markers .cart-trust-markers-card {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px 4px 0px 8px;
+  }
 
-.cart-trust-markers .cart-trust-markers-card .cart-trust-markers-card-text {
-  padding: 4px;
-  text-align: left;
-}
+  .cart-trust-markers .cart-trust-markers-card .cart-trust-markers-card-text {
+    padding: 4px;
+    text-align: left;
+  }
 
-.cart-trust-markers .cart-trust-markers-card img {
-  width: 34px;
-  display: block;
-  margin-right: 4px;
-}
+  .cart-trust-markers .cart-trust-markers-card img {
+    width: 34px;
+    display: block;
+    margin-right: 4px;
+  }
 
   /* Setting the Animation using Keyframes */
   @keyframes scroll-left {
