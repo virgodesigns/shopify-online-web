@@ -411,6 +411,14 @@
     "mwidget_W9XH4M": {
       "type": "mwidget",
       "blocks": {
+        "image_item_NPyiVi": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Topwear.png",
+            "heading_text": "",
+            "button_link": "shopify:\/\/collections\/top-wear-date"
+          }
+        },
         "image_item_j47W9K": {
           "type": "image-item",
           "settings": {
@@ -434,21 +442,13 @@
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
-        },
-        "image_item_NPyiVi": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Topwear.png",
-            "heading_text": "",
-            "button_link": "shopify:\/\/collections\/top-wear-date"
-          }
         }
       },
       "block_order": [
+        "image_item_NPyiVi",
         "image_item_j47W9K",
         "image_item_KLFkJL",
-        "image_item_QHb3CA",
-        "image_item_NPyiVi"
+        "image_item_QHb3CA"
       ],
       "settings": {
         "main_heading": "",
