@@ -11,7 +11,7 @@
 }
 
 .tab-content-description {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .jdgm-review-widget--small .jdgm-rev-widg,
