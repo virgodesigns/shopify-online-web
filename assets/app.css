@@ -5491,3 +5491,7 @@ input[type="radio"],
   font-weight: 600;
   margin-bottom: 0px;
 }
+.docapp-cart-with-coupon-summary {
+  padding: 1rem;
+  margin-top: auto;
+}
