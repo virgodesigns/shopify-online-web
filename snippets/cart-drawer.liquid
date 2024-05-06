@@ -247,29 +247,29 @@
             </product-recommendations>
           </div>
         {%- endif -%}
+        <div class="cart-same-day-delivery">One day delivery available in Bangalore</div>
+        <div class="cart-trust-markers">
+          <div class="cart-trust-markers-card">
+            <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Returns.png?v=1712585519">
+            <div class="cart-trust-markers-card-text">
+              15 Days <br>
+              Return*
+            </div>
+          </div>
+          <div class="cart-trust-markers-card">
+            <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/ShipReturns.png?v=1712585492">
+            <div class="cart-trust-markers-card-text">Free Shipping ₹1499+</div>
+          </div>
+          <div class="cart-trust-markers-card">
+            <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/cart-trust-cod.png?v=1712049388">
+            <div class="cart-trust-markers-card-text">
+              Cash on <br>
+              Delivery
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="cart-same-day-delivery">One day delivery available in Bangalore</div>
-      <div class="cart-trust-markers">
-        <div class="cart-trust-markers-card">
-          <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/Returns.png?v=1712585519">
-          <div class="cart-trust-markers-card-text">
-            15 Days <br>
-            Return*
-          </div>
-        </div>
-        <div class="cart-trust-markers-card">
-          <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/ShipReturns.png?v=1712585492">
-          <div class="cart-trust-markers-card-text">Free Shipping ₹1499+</div>
-        </div>
-        <div class="cart-trust-markers-card">
-          <img src="https://cdn.shopify.com/s/files/1/0785/1674/8585/files/cart-trust-cod.png?v=1712049388">
-          <div class="cart-trust-markers-card-text">
-            Cash on <br>
-            Delivery
-          </div>
-        </div>
-      </div>
       {%- if cart != empty -%}
         <div class="side-panel-footer">
           {%- if settings.cart_drawer_notes -%}
@@ -409,6 +409,7 @@
   }
 
   .cart-same-day-delivery {
+    margin-top: auto;
     background: #edfaff;
     padding: 6px 10px;
     font-weight: 500;
