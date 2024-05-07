@@ -287,7 +287,7 @@
               {%- if settings.cart_drawer_checkout_button -%}
                 <form action="{{ routes.cart_url }}" method="post" novalidate>
                  
-                    <button type="submit" class="button full checkout" name="checkout" title="{{ 'general.cart_drawer.checkout' | t | escape }}"><span>{{ 'general.cart_drawer.checkout' | t }} <b>•</b> {% if settings.currency_code_enabled %}{{ cart.total_price | money_with_currency }}{% else %}{{ cart.total_price | money }}{% endif %}</span></button>
+                    <button type="submit" class="button full checkout" name="checkout" title="{{ 'general.cart_drawer.checkout' | t | escape }}"> </button>
                  <!--
                   <button
                     type="button"
