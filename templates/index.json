@@ -36,6 +36,7 @@
         },
         "slide_RmTHMe": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/16_9_-_Desktop_a9b59a46-a979-4af4-962d-5e19b8044b0d.png",
             "slide_link": "shopify:\/\/collections\/elevated-essential",
@@ -65,7 +66,6 @@
         },
         "slide_MGHBiQ": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/16_9_-_Desktop_646b4d25-83fa-4bc8-ac75-dce65c01147a.png",
             "slide_link": "shopify:\/\/collections\/stripe-club",
@@ -121,6 +121,7 @@
       "blocks": {
         "slide_n9gPaN": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/top_banner.jpg",
             "mobile_image": "shopify:\/\/shop_images\/top_banner.jpg",
@@ -150,7 +151,6 @@
         },
         "slide_hdYN3z": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Mobile_banner.png",
             "mobile_image": "shopify:\/\/shop_images\/Mobile_banner.png",
@@ -205,6 +205,7 @@
       "blocks": {
         "slide_e8Bqm8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096615.jpg",
             "slide_link": "shopify:\/\/collections\/elevated-essential",
@@ -233,7 +234,6 @@
         },
         "slide_EtKmbA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/made_from_cotton.png",
             "slide_link": "shopify:\/\/collections\/stripe-club",
@@ -504,7 +504,7 @@
         "image_item_8k6yQC": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096617.png",
+            "image": "shopify:\/\/shop_images\/c1.png",
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
@@ -520,7 +520,7 @@
         "image_item_ABtpDQ": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/co-ords_mweb.png",
+            "image": "shopify:\/\/shop_images\/c3.png",
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
