@@ -324,12 +324,6 @@
                   >
                     <span>
                       {{- 'general.cart_drawer.checkout' | t }}
-                      <b>•</b>
-                      {% if settings.currency_code_enabled -%}
-                        {{- cart.total_price | money_with_currency -}}
-                      {%- else -%}
-                        {{- cart.total_price | money -}}
-                      {%- endif -%}
                     </span>
                   </button>
                   <!--
