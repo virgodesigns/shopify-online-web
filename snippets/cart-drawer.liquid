@@ -287,7 +287,8 @@
               {%- if settings.cart_drawer_checkout_button -%}
                 <form action="{{ routes.cart_url }}" method="post" novalidate>
                  
-                    <button type="submit" class="button full checkout" name="checkout" title="{{ 'general.cart_drawer.checkout' | t | escape }}"> </button>
+                    <button type="submit" class="button full checkout" name="checkout" title="{{ 'general.cart_drawer.checkout' | t | escape }}"><span>
+                      {{- 'general.cart_drawer.checkout' | t }}</span></button>
                  <!--
                   <button
                     type="button"
