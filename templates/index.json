@@ -62,11 +62,42 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
+        },
+        "slide_MGHBiQ": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_646b4d25-83fa-4bc8-ac75-dce65c01147a.png",
+            "slide_link": "shopify:\/\/collections\/stripe-club",
+            "video_background": false,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
         "slide_YJbkij",
-        "slide_RmTHMe"
+        "slide_RmTHMe",
+        "slide_MGHBiQ"
       ],
       "custom_css": [
         ".mute-toggle {display: none;}"
@@ -116,10 +147,41 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
+        },
+        "slide_hdYN3z": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mobile_banner.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_banner.png",
+            "slide_link": "shopify:\/\/collections\/stripe-club",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/new-launch",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "slide_n9gPaN"
+        "slide_n9gPaN",
+        "slide_hdYN3z"
       ],
       "custom_css": [
         ".mute-toggle {display: none;}"
@@ -168,10 +230,40 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
+        },
+        "slide_EtKmbA": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/made_from_cotton.png",
+            "slide_link": "shopify:\/\/collections\/stripe-club",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "slide_e8Bqm8"
+        "slide_e8Bqm8",
+        "slide_EtKmbA"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
