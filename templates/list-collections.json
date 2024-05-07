@@ -524,6 +524,20 @@
         "image_YbaVkA": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/mweb-collection_1cb6fad2-6a5c-4c4f-8485-123b27aae0e6.png",
+            "banner_link": "shopify:\/\/collections\/stripe-club",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_DKhpLK": {
+          "type": "image",
+          "settings": {
             "image": "shopify:\/\/shop_images\/mweb_7676eb76-e31b-4e95-9079-d9f2208219b8.png",
             "banner_link": "shopify:\/\/collections\/elevated-essential",
             "subheading": "",
@@ -692,6 +706,7 @@
       },
       "block_order": [
         "image_YbaVkA",
+        "image_DKhpLK",
         "image_eYzLmz",
         "image_DcDJir",
         "image_PQe6R8",
