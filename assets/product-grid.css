@@ -205,6 +205,7 @@
 .product-card .badge {
   position: absolute;
   z-index: 30;
+  letter-spacing: -0.4px;
 }
 .product-card .badge.bottom {
   bottom: 8px;
