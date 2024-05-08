@@ -212,14 +212,14 @@
         "description": "",
         "full_width": true,
         "collection_list": [
+          "elevated-essential",
+          "new-launch",
+          "discount-delights",
           "date-collection",
           "veronicas-all-collection",
           "newtro-twist",
-          "the-safari-edit",
-          "whims-fancies",
           "poolside-splash",
-          "discount-delights",
-          "elevated-essential"
+          "born-to-shine"
         ],
         "image_ratio": "square",
         "layout": "carousel",
