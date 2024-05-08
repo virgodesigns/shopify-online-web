@@ -777,8 +777,75 @@
         "bg_color": "#ffffff",
         "heading_color": "#151515",
         "name_color": "#151515",
-        "show_on_desktop": true,
+        "show_on_desktop": false,
         "show_on_mobile": true,
+        "button_url": "shopify:\/\/collections",
+        "button_text": "",
+        "carouselCardWidth": ""
+      }
+    },
+    "collection_carousel_pL8dye": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_KbCTLj": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Valencia.webp",
+            "name": "Elevated Essentials",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/elevated-essential"
+          }
+        },
+        "collection_XLifpg": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lillian.webp",
+            "name": "Summer Soiree",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/new-launch"
+          }
+        },
+        "collection_yBqmUt": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jeslin.webp",
+            "name": "The Date",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/date-collection"
+          }
+        },
+        "collection_JHnPg7": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cora.webp",
+            "name": "Veronicas",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/veronicas-all-collection"
+          }
+        }
+      },
+      "block_order": [
+        "collection_KbCTLj",
+        "collection_XLifpg",
+        "collection_yBqmUt",
+        "collection_JHnPg7"
+      ],
+      "settings": {
+        "heading": "SHOP BY COLLECTION",
+        "bg_color": "#ffffff",
+        "heading_color": "#151515",
+        "name_color": "#151515",
+        "show_on_desktop": true,
+        "show_on_mobile": false,
         "button_url": "shopify:\/\/collections",
         "button_text": "",
         "carouselCardWidth": ""
@@ -1253,6 +1320,7 @@
     "slideshow_CPqhht",
     "collection_tabs_V4xyYe",
     "8b61fc5c-4397-4c69-93af-8b61a417cbf0",
+    "collection_carousel_pL8dye",
     "slideshow_F9bBcq",
     "slideshow_3ANpL7",
     "db7c3fd2-75c3-4d85-b865-9a233129c01e",
