@@ -3,67 +3,6 @@
     "16479477632637c9a7": {
       "type": "slideshow",
       "blocks": {
-        "slide_YJbkij": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/1st_banner.png",
-            "slide_link": "shopify:\/\/collections\/new-launch",
-            "video_background": false,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
-        "slide_RmTHMe": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_a9b59a46-a979-4af4-962d-5e19b8044b0d.png",
-            "slide_link": "shopify:\/\/collections\/elevated-essential",
-            "video_background": false,
-            "video": "",
-            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify:\/\/collections\/elevated-essential",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_MGHBiQ": {
           "type": "slide",
           "settings": {
@@ -95,8 +34,6 @@
         }
       },
       "block_order": [
-        "slide_YJbkij",
-        "slide_RmTHMe",
         "slide_MGHBiQ"
       ],
       "custom_css": [
@@ -119,36 +56,6 @@
     "slideshow_eQX7fA": {
       "type": "slideshow",
       "blocks": {
-        "slide_n9gPaN": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/top_banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/top_banner.jpg",
-            "slide_link": "shopify:\/\/collections\/elevated-essential",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/new-launch",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_hdYN3z": {
           "type": "slide",
           "settings": {
@@ -180,7 +87,6 @@
         }
       },
       "block_order": [
-        "slide_n9gPaN",
         "slide_hdYN3z"
       ],
       "custom_css": [
@@ -203,35 +109,6 @@
     "slideshow_4W9bzy": {
       "type": "slideshow",
       "blocks": {
-        "slide_e8Bqm8": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096615.jpg",
-            "slide_link": "shopify:\/\/collections\/elevated-essential",
-            "video_background": false,
-            "video": "",
-            "subheading": "",
-            "heading": "",
-            "heading_size": "h1-large",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_1_underline": true,
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_outline": true,
-            "button_2_underline": true
-          }
-        },
         "slide_EtKmbA": {
           "type": "slide",
           "settings": {
@@ -262,7 +139,6 @@
         }
       },
       "block_order": [
-        "slide_e8Bqm8",
         "slide_EtKmbA"
       ],
       "settings": {
@@ -848,41 +724,53 @@
         "a5279dc3-0e75-450e-9f44-d11e8a0ed34e": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Veronicas_2.png",
+            "image": "shopify:\/\/shop_images\/Valencia.webp",
+            "name": "Elevated Essentials",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/elevated-essential"
+          }
+        },
+        "collection_QKNKgb": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lillian.webp",
+            "name": "Summer Soiree",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/new-launch"
+          }
+        },
+        "collection_eC7Qmf": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jeslin.webp",
+            "name": "The Date",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/collections\/date-collection"
+          }
+        },
+        "collection_AyVCAU": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cora.webp",
             "name": "Veronicas",
             "subname": "",
             "price": "",
             "strikePrice": "",
             "url": "shopify:\/\/collections\/veronicas-all-collection"
           }
-        },
-        "collection_QKNKgb": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/born_to_shine.jpg",
-            "name": "Born To Shine",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/born-to-shine"
-          }
-        },
-        "collection_eC7Qmf": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4._Newtro_twist_op2.png",
-            "name": "Newtro Twist",
-            "subname": "",
-            "price": "",
-            "strikePrice": "",
-            "url": "shopify:\/\/collections\/newtro-twist"
-          }
         }
       },
       "block_order": [
         "a5279dc3-0e75-450e-9f44-d11e8a0ed34e",
         "collection_QKNKgb",
-        "collection_eC7Qmf"
+        "collection_eC7Qmf",
+        "collection_AyVCAU"
       ],
       "settings": {
         "heading": "SHOP BY COLLECTION",
