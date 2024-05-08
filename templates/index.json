@@ -6,7 +6,7 @@
         "slide_MGHBiQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_646b4d25-83fa-4bc8-ac75-dce65c01147a.png",
+            "image": "shopify:\/\/shop_images\/desktop-banner.png",
             "slide_link": "shopify:\/\/collections\/stripe-club",
             "video_background": false,
             "video": "",
@@ -22,7 +22,7 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "",
+            "button_1_text": "SHOP NOW",
             "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
