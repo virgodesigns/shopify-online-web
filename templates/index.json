@@ -216,6 +216,17 @@
     "0ae4c3ab-19a4-4597-b68c-817d2756a0b2": {
       "type": "collection-carousel",
       "blocks": {
+        "collection_cqcgNi": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/soha_ali_khan.png",
+            "name": "",
+            "subname": "",
+            "price": "",
+            "strikePrice": "",
+            "url": "shopify:\/\/products\/floral-glam-lycra-satin-floral-dress"
+          }
+        },
         "4becdef9-56f9-47a7-80fd-64c6a8892f80": {
           "type": "collection",
           "settings": {
@@ -229,6 +240,7 @@
         },
         "89304511-9896-4639-8a32-32a4b0ec2cc0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096569.png",
             "name": "",
@@ -251,6 +263,7 @@
         }
       },
       "block_order": [
+        "collection_cqcgNi",
         "4becdef9-56f9-47a7-80fd-64c6a8892f80",
         "89304511-9896-4639-8a32-32a4b0ec2cc0",
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f"
@@ -465,6 +478,34 @@
     "slideshow_MQn6Jh": {
       "type": "slideshow",
       "blocks": {
+        "slide_LaYJ7H": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/soha_ali_khan.png",
+            "slide_link": "shopify:\/\/products\/floral-glam-lycra-satin-floral-dress",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
         "slide_CbRU6m": {
           "type": "slide",
           "settings": {
@@ -551,6 +592,7 @@
         }
       },
       "block_order": [
+        "slide_LaYJ7H",
         "slide_CbRU6m",
         "slide_iyD8AR",
         "slide_8cy6WM"
