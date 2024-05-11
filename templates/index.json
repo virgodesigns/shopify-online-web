@@ -240,7 +240,6 @@
         },
         "89304511-9896-4639-8a32-32a4b0ec2cc0": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096569.png",
             "name": "",
@@ -252,6 +251,7 @@
         },
         "c15e30cf-0a36-4f32-b5dc-bb30f3cd822f": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096571.png",
             "name": "",
