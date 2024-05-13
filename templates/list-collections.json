@@ -107,6 +107,54 @@
             "button_2_underline": true
           }
         },
+        "slide_8e9Lmf": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "COLLECTION",
+            "image": "shopify:\/\/shop_images\/A10._STRIPE_CLUB.png",
+            "heading": "STRIPE CLUB",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/stripe-club",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_hGnB6f": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "COLLECTION",
+            "image": "shopify:\/\/shop_images\/A9._ELEVATED_ESSENTIALS.png",
+            "heading": "ELEVATED ESSENTIALS",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/elevated-essential",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
+        "slide_3DAHqj": {
+          "type": "slide",
+          "settings": {
+            "tab_id": "COLLECTION",
+            "image": "shopify:\/\/shop_images\/A11._SUMMER_SOIREE.png",
+            "heading": "SUMMER SOIREE",
+            "heading_size": "h2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_2_text": "EXPLORE NOW",
+            "button_2_link": "shopify:\/\/collections\/new-launch",
+            "button_2_outline": false,
+            "button_2_underline": true
+          }
+        },
         "08bd4723-2e0a-47cc-8b15-875e8b628a37": {
           "type": "slide",
           "settings": {
@@ -335,6 +383,9 @@
         "512fc4a0-db0c-45f6-a68f-9c3cc82360a2",
         "af8048b8-dcb7-48a4-8df6-212a21589bdc",
         "6a7112a8-f40a-4a73-9117-e9153adc61af",
+        "slide_8e9Lmf",
+        "slide_hGnB6f",
+        "slide_3DAHqj",
         "08bd4723-2e0a-47cc-8b15-875e8b628a37",
         "slide_g9ch6A",
         "dd4d989c-ba17-429d-8bc8-3854ad5b60fe",
