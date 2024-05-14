@@ -28,7 +28,7 @@
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Frame_48096327.png",
             "image-mobile": "shopify:\/\/shop_images\/Dresses.png",
-            "heading": "DAINTY DRESSES",
+            "heading": "DRESSES",
             "heading_size": "h2",
             "overlay_color": "#000000",
             "overlay_opacity": 53,
@@ -45,7 +45,7 @@
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Classic_Co-Ords_1.png",
             "image-mobile": "shopify:\/\/shop_images\/Co-ords.png",
-            "heading": "CLASSIC CO-ORDS",
+            "heading": "CO-ORDS",
             "heading_size": "h2",
             "overlay_color": "#000000",
             "overlay_opacity": 83,
@@ -62,7 +62,7 @@
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Tailored_Bottom_wear_1.png",
             "image-mobile": "shopify:\/\/shop_images\/bottoms.png",
-            "heading": "TAILORED BOTTOMWEAR",
+            "heading": "BOTTOMWEAR",
             "heading_size": "h2",
             "overlay_color": "#000000",
             "overlay_opacity": 100,
@@ -79,7 +79,7 @@
             "tab_id": "CATEGORY",
             "image": "shopify:\/\/shop_images\/Chic_Topwear_1.png",
             "image-mobile": "shopify:\/\/shop_images\/Explore_State_7.png",
-            "heading": "CHIC TOPWEAR",
+            "heading": "TOPWEAR",
             "heading_size": "h2",
             "overlay_color": "#000000",
             "overlay_opacity": 70,
@@ -208,6 +208,7 @@
         },
         "b570446c-10f1-4d20-b6c3-e342f9462350": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "tab_id": "COLLECTION",
             "image": "shopify:\/\/shop_images\/A3._WHIMS_FANCIES.png",
@@ -225,6 +226,7 @@
         },
         "47e222f4-2cab-4611-a963-524937ae7b8a": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "tab_id": "COLLECTION",
             "image": "shopify:\/\/shop_images\/A4._NEWTRO_TWIST.png",
@@ -242,6 +244,7 @@
         },
         "ddff0e7d-5227-47b1-b40a-2d724bed2328": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "tab_id": "COLLECTION",
             "image": "shopify:\/\/shop_images\/A5._BORN_TO_SHINE.png",
@@ -259,6 +262,7 @@
         },
         "575e4d5c-8bc0-4c47-87e7-d36aeda90e7c": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "tab_id": "COLLECTION",
             "image": "shopify:\/\/shop_images\/A6._WILD_ROMANCE.png",
@@ -276,6 +280,7 @@
         },
         "0d72bc29-1e3b-483b-93ff-54ef2ca5682f": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "tab_id": "COLLECTION",
             "image": "shopify:\/\/shop_images\/A7._IDGAF.png",
@@ -631,6 +636,7 @@
         },
         "image_PQe6R8": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Spring_fling.png",
             "banner_link": "shopify:\/\/collections\/spring-dream-collection",
@@ -648,6 +654,34 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/The_Veronicas.png",
             "banner_link": "shopify:\/\/collections\/veronicas-all-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_kpHrN4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cityscape.png",
+            "banner_link": "shopify:\/\/collections\/cityscape",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_fR88cU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_Safari_Edit-mweb.png",
+            "banner_link": "shopify:\/\/collections\/the-safari-edit",
             "subheading": "",
             "title": "",
             "text": "",
@@ -726,35 +760,6 @@
             "use_text_button": false,
             "block_link": ""
           }
-        },
-        "image_fR88cU": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/The_Safari_Edit-mweb.png",
-            "banner_link": "shopify:\/\/collections\/the-safari-edit",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_kpHrN4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cityscape.png",
-            "banner_link": "shopify:\/\/collections\/cityscape",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
         }
       },
       "block_order": [
@@ -764,13 +769,13 @@
         "image_DcDJir",
         "image_PQe6R8",
         "image_gagKLe",
+        "image_kpHrN4",
+        "image_fR88cU",
         "image_crrqJh",
         "image_HtVt8X",
         "image_t8rHGV",
         "image_ncMXn4",
-        "image_UQ8JqD",
-        "image_fR88cU",
-        "image_kpHrN4"
+        "image_UQ8JqD"
       ],
       "custom_css": [
         ".gallery-spacing--small .gallery__inner {grid-gap: 24px;"
