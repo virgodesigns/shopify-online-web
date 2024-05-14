@@ -729,9 +729,10 @@
         },
         "image_fR88cU": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Newtro_Twist.png",
-            "banner_link": "shopify:\/\/collections\/newtro-twist",
+            "image": "shopify:\/\/shop_images\/The_Safari_Edit-mweb.png",
+            "banner_link": "shopify:\/\/collections\/the-safari-edit",
             "subheading": "",
             "title": "",
             "text": "",
