@@ -3,48 +3,50 @@
   <span class="badge out-of-stock {{ badge_position }}">{{ 'products.product.sold_out' | t }}</span>
 {% endunless %}
 
-{%- assign special_deal = '' -%}
-{%- assign background = '' -%}
-{% for tag in product_card_product.tags %}
-  {% if tag contains 'Badge:' %}
-    {%- assign special = tag | split: ':' -%}
-    {%- assign special_deal = special | last -%}
-  {% endif %}
-  {% if tag contains 'BadgeColour:' %}
-    {%- assign color = tag | remove: 'BadgeColour:' -%}
-    {%- assign background = color -%}
-  {% endif %}
-{% endfor %}
-
-{% if special_deal != blank %}
-  <span
-    class="badge onsale {{ badge_position }}"
-    {% if background != '' %}
-      style="background-color:{{ background }}"
+{% if product_card_product.available %}
+  {%- assign special_deal = '' -%}
+  {%- assign background = '' -%}
+  {% for tag in product_card_product.tags %}
+    {% if tag contains 'Badge:' %}
+      {%- assign special = tag | split: ':' -%}
+      {%- assign special_deal = special | last -%}
     {% endif %}
-  >
-    {{ special_deal }}
-  </span>
-{% elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available %}
-  {%- if settings.sale_badge_type == 'save_amount' -%}
-    {%- capture saved_amount -%}{{ product_card_product.compare_at_price | minus: product_card_product.price | money }}{%- endcapture -%}
-  {%- elsif settings.sale_badge_type == 'save_percentage' -%}
-    {%- capture saved_amount -%}
+    {% if tag contains 'BadgeColour:' %}
+      {%- assign color = tag | remove: 'BadgeColour:' -%}
+      {%- assign background = color -%}
+    {% endif %}
+  {% endfor %}
+
+  {% if special_deal != blank %}
+    <span
+      class="badge onsale {{ badge_position }}"
+      {% if background != '' %}
+        style="background-color:{{ background }}"
+      {% endif %}
+    >
+      {{ special_deal }}
+    </span>
+  {% elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available %}
+    {%- if settings.sale_badge_type == 'save_amount' -%}
+      {%- capture saved_amount -%}{{ product_card_product.compare_at_price | minus: product_card_product.price | money }}{%- endcapture -%}
+    {%- elsif settings.sale_badge_type == 'save_percentage' -%}
+      {%- capture saved_amount -%}
   {%- assign discount_percentage = product_card_product.compare_at_price | minus: product_card_product.price | times: 100.0 | divided_by: product_card_product.compare_at_price | round -%}
   {%- if discount_percentage >= 15 -%}
     {{ discount_percentage }}%
   {%- endif -%}
 {%- endcapture -%}
-  {%- endif -%}
-  {% if saved_amount != blank %}
-    <span class="badge onsale {{ badge_position }}">
-      {%- if settings.sale_badge_type == 'sale' -%}
-        {{ 'products.product.on_sale' | t }}
-      {%- else -%}
-        {% if saved_amount != blank %}
-          {{ 'products.product.save_html' | t: saved_amount: saved_amount }}
-        {% endif %}
-      {%- endif -%}
-    </span>
-  {%- endif -%}
+    {%- endif -%}
+    {% if saved_amount != blank %}
+      <span class="badge onsale {{ badge_position }}">
+        {%- if settings.sale_badge_type == 'sale' -%}
+          {{ 'products.product.on_sale' | t }}
+        {%- else -%}
+          {% if saved_amount != blank %}
+            {{ 'products.product.save_html' | t: saved_amount: saved_amount }}
+          {% endif %}
+        {%- endif -%}
+      </span>
+    {%- endif -%}
+  {% endif %}
 {% endif %}
