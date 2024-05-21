@@ -620,7 +620,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Environmental_Savings_mob_3.png",
-            "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
+            "slide_link": "shopify:\/\/pages\/earth-day-sustainability-report",
             "video_background": true,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "video_hosted": "shopify:\/\/files\/videos\/not brag_1080x1416 (2).mp4",
@@ -950,7 +950,6 @@
         "slide_p7tQqU": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_4.png",
             "slide_link": "https:\/\/virgio.com\/pages\/circularity#impact-receipt",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
