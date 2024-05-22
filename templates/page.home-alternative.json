@@ -458,6 +458,7 @@
       "block_order": [
         "slide_Xx6MxE"
       ],
+      "disabled": true,
       "custom_css": [
         ".slideshow {background-color: #000;}"
       ],
