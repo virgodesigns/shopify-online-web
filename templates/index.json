@@ -5,6 +5,7 @@
       "blocks": {
         "slide_MGHBiQ": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner.png",
             "slide_link": "shopify:\/\/collections\/stripe-club",
@@ -31,10 +32,40 @@
             "button_2_outline": true,
             "button_2_underline": true
           }
+        },
+        "slide_NHdKYk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_0a969929-140c-41ed-be07-61d0b09dcd61.png",
+            "slide_link": "shopify:\/\/collections\/virgio-x-elle-ft-alaya-f-the-monochrome-story",
+            "video_background": false,
+            "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/Main_Banner.mp4",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-large",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections\/virgio-x-elle-ft-alaya-f-the-monochrome-story",
+            "button_1_outline": true,
+            "button_1_underline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": true,
+            "button_2_underline": true
+          }
         }
       },
       "block_order": [
-        "slide_MGHBiQ"
+        "slide_MGHBiQ",
+        "slide_NHdKYk"
       ],
       "custom_css": [
         ".mute-toggle {display: none;}"
