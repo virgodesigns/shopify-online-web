@@ -1,9 +1,9 @@
 {
   "sections": {
-    "16479477632637c9a7": {
+    "slideshow_nR3iFT": {
       "type": "slideshow",
       "blocks": {
-        "slide_MGHBiQ": {
+        "slide_mdARHA": {
           "type": "slide",
           "disabled": true,
           "settings": {
@@ -33,7 +33,7 @@
             "button_2_underline": true
           }
         },
-        "slide_NHdKYk": {
+        "slide_FtLEtx": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/16_9_-_Desktop_0a969929-140c-41ed-be07-61d0b09dcd61.png",
@@ -52,8 +52,8 @@
             "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify:\/\/collections\/virgio-x-elle-ft-alaya-f-the-monochrome-story",
+            "button_1_text": "",
+            "button_1_link": "",
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
@@ -64,11 +64,8 @@
         }
       },
       "block_order": [
-        "slide_MGHBiQ",
-        "slide_NHdKYk"
-      ],
-      "custom_css": [
-        ".mute-toggle {display: none;}"
+        "slide_mdARHA",
+        "slide_FtLEtx"
       ],
       "settings": {
         "desktop_height": "desktop-height-image",
@@ -1439,7 +1436,7 @@
     }
   },
   "order": [
-    "16479477632637c9a7",
+    "slideshow_nR3iFT",
     "slideshow_eQX7fA",
     "slideshow_4W9bzy",
     "collection_tabs_Fbjncb",
