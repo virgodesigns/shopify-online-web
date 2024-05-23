@@ -592,6 +592,20 @@
             "block_link": ""
           }
         },
+        "image_EETaEA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cottonon.png",
+            "banner_link": "shopify:\/\/collections\/summer-breathable-collection",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
         "image_4UdGKt": {
           "type": "image",
           "settings": {
@@ -777,6 +791,7 @@
       },
       "block_order": [
         "image_YbaVkA",
+        "image_EETaEA",
         "image_4UdGKt",
         "image_c7cr4f",
         "image_DKhpLK",
