@@ -1,1 +1,19 @@
-{"sections":{"165460479522332vv3":{"type":"otp-login","settings":{}},"main-login":{"type":"main-login","disabled":true,"settings":{}}},"order":["main-login","165460479522332vv3"]}
+{
+  "sections": {
+    "main-login": {
+      "type": "main-login",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "otp_section_FH6nAK": {
+      "type": "otp-section",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-login",
+    "otp_section_FH6nAK"
+  ]
+}
