@@ -466,6 +466,7 @@
         "image_item_tPM8kg",
         "image_item_XAFq7h"
       ],
+      "disabled": true,
       "settings": {
         "main_heading": "",
         "bg_color": "",
@@ -510,7 +511,49 @@
         "image_7Yw7cj": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/The_date.png",
+            "image": "shopify:\/\/shop_images\/cottonon_1.png",
+            "banner_link": "shopify:\/\/collections\/cotton-collection-1",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_bEJVCz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stripe_club.png",
+            "banner_link": "shopify:\/\/collections\/stripe-club",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_XfnGjD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Summer_soire.png",
+            "banner_link": "shopify:\/\/collections\/summer-soiree",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_3YrpeQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_date_collection_5.png",
             "banner_link": "shopify:\/\/collections\/date-collection",
             "subheading": "",
             "title": "",
@@ -524,22 +567,8 @@
         "image_EPjcYV": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/The_Veronicas.png",
+            "image": "shopify:\/\/shop_images\/The_Veronicas_63e38dc9-d46e-4d93-bd17-d8e94ea87b0c.png",
             "banner_link": "shopify:\/\/collections\/veronicas-all-collection",
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_4cDCLQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Spring_fling.png",
-            "banner_link": "shopify:\/\/collections\/spring-dream-collection",
             "subheading": "",
             "title": "",
             "text": "",
@@ -552,7 +581,7 @@
         "image_JnPbEM": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/office_wear.png",
+            "image": "shopify:\/\/shop_images\/office_wear_6077655a-adc4-4e96-a841-c1a787ac06a1.png",
             "banner_link": "shopify:\/\/collections\/office-wear",
             "subheading": "",
             "title": "",
@@ -566,7 +595,7 @@
         "image_mYj8Vx": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Day_wear.png",
+            "image": "shopify:\/\/shop_images\/Day_wear_2ccf4077-8580-4ce9-a000-2c9cf94e6ce0.png",
             "banner_link": "shopify:\/\/collections\/day-wear",
             "subheading": "",
             "title": "",
@@ -580,7 +609,7 @@
         "image_XYx4Vy": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/party_wear.png",
+            "image": "shopify:\/\/shop_images\/party_wear_53a713be-57c5-40ef-9733-198a1489f820.png",
             "banner_link": "shopify:\/\/collections\/party-collection",
             "subheading": "",
             "title": "",
@@ -594,7 +623,7 @@
         "image_DRQFeN": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Evening_wear.png",
+            "image": "shopify:\/\/shop_images\/Evening_wear_db047852-a0a6-4ede-91f0-688f27519d70.png",
             "banner_link": "shopify:\/\/collections\/evening-wear",
             "subheading": "",
             "title": "",
@@ -608,7 +637,7 @@
         "image_gdhdVX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vacation_wear.png",
+            "image": "shopify:\/\/shop_images\/Vacation_wear_23cf6cd0-4fd7-42f4-b64f-01733fa80947.png",
             "banner_link": "shopify:\/\/collections\/vacation-wear",
             "subheading": "",
             "title": "",
@@ -622,7 +651,7 @@
         "image_ig8qMT": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Newtro_Twist_c8a7c62a-5731-4318-bc3a-ca91f144951f.png",
+            "image": "shopify:\/\/shop_images\/Retro_Twist.png",
             "banner_link": "shopify:\/\/collections\/newtro-twist",
             "subheading": "",
             "title": "",
@@ -636,7 +665,7 @@
         "image_emYbFg": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cityscape_5d323c7b-9adc-446d-a3af-7c74cee9b985.png",
+            "image": "shopify:\/\/shop_images\/Cityscape_fc4255b2-bd9d-4d32-b811-1d7ee2f2563a.png",
             "banner_link": "shopify:\/\/collections\/cityscape",
             "subheading": "",
             "title": "",
@@ -650,8 +679,10 @@
       },
       "block_order": [
         "image_7Yw7cj",
+        "image_bEJVCz",
+        "image_XfnGjD",
+        "image_3YrpeQ",
         "image_EPjcYV",
-        "image_4cDCLQ",
         "image_JnPbEM",
         "image_mYj8Vx",
         "image_XYx4Vy",

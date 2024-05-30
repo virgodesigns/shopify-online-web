@@ -6,9 +6,9 @@
         "slide_LbaR6E": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/1st_banner_2.png",
-            "slide_link": "shopify:\/\/collections\/summer-soiree",
+            "image": "shopify:\/\/shop_images\/16_9_-_Desktop_05442118-bfa9-45ce-be5a-a30669b98ba7.png",
+            "mobile_image": "shopify:\/\/shop_images\/1_71ddcd7f-e632-44a0-9d1b-8d6e389d5027.png",
+            "slide_link": "shopify:\/\/collections\/alaya-f-x-elle",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -27,7 +27,7 @@
             "button_1_outline": true,
             "button_1_underline": true,
             "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/summer-soiree",
+            "button_2_link": "shopify:\/\/collections\/alaya-f-x-elle",
             "button_2_outline": true,
             "button_2_underline": true
           }
@@ -114,6 +114,7 @@
       "block_order": [
         "slide_ffgXLp"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -133,8 +134,8 @@
         "slide_YXFUed": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096620_1.jpg",
-            "slide_link": "shopify:\/\/collections\/fractured-floral",
+            "image": "shopify:\/\/shop_images\/2_2211078a-e011-4449-b9e2-0f949a913851.png",
+            "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "subheading": "",
@@ -162,6 +163,7 @@
       "block_order": [
         "slide_YXFUed"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -180,6 +182,7 @@
       "blocks": {
         "slide_iMgxm3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_48096621_1.jpg",
             "slide_link": "shopify:\/\/collections\/forbidden-blooms",
@@ -210,6 +213,7 @@
       "block_order": [
         "slide_iMgxm3"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
@@ -339,7 +343,7 @@
         "image_item_wBwCT7": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096377_1.jpg",
+            "image": "shopify:\/\/shop_images\/c2.png",
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/dresses-date"
           }
@@ -347,7 +351,7 @@
         "image_item_Hx8bmE": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096379-1_1_31f36031-1b93-4ddc-9dc0-3a7b7015895a.jpg",
+            "image": "shopify:\/\/shop_images\/c3.png",
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/co-ords-date"
           }
@@ -355,7 +359,7 @@
         "image_item_WtCAGK": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096379_1_90979f24-4734-4b20-8ea8-6b7e7391436e.jpg",
+            "image": "shopify:\/\/shop_images\/c1.png",
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/top-wear-date"
           }
@@ -363,7 +367,7 @@
         "image_item_kfJXYh": {
           "type": "image-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48096378_1_bf7af2ce-cf61-4fb7-8eaf-7f9c6a3cd634.jpg",
+            "image": "shopify:\/\/shop_images\/c4.png",
             "heading_text": "",
             "button_link": "shopify:\/\/collections\/bottomwear-date"
           }
