@@ -7,6 +7,10 @@ This file can be re-written at any time.
   {{product.metafields.shogun.head}}
 {% endif %}
 
+{% if collection and collection.metafields.shogun.head %}
+  {{collection.metafields.shogun.head}}
+{% endif %}
+
 {% if page and page.metafields.shogun.head %}
   {{page.metafields.shogun.head}}
 {% endif %}
