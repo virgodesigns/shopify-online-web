@@ -1,7 +1,7 @@
 {
   "current": {
-    "text_message_1": "Get 10% off on your First order",
-    "text_message_2": "Use \"WELCOME10\" at checkout",
+    "text_message_1": "Get 20% off above AED 300",
+    "text_message_2": "Use \"GET20\" at checkout",
     "text_message": "<div class=\"notify_alert\">MORE STYLES DROPPING<\/div> <div class=\"pagination_text\"> ON 17 DECEMBER, 2023 <\/div>",
     "heading_font": "inter_n7",
     "heading_font_scale": 100,
