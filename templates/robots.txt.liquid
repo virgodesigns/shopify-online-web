@@ -1,4 +1,4 @@
-# we use Shopify as our ecommerce platform
+{% comment %} # we use Shopify as our ecommerce platform
 {%- comment -%}
 # Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
 {% endcomment %}
@@ -13,8 +13,8 @@
     {{ group.sitemap }}
   {%- endif -%}
 {% endfor %}
+ {% endcomment %}
 
 
-
-
-
+User-agent: *
+Disallow: /
