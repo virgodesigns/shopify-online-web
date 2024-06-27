@@ -1,6 +1,228 @@
+{% if customer %}
+    {% if template contains 'login' or template contains 'register' %}
+    <style>
+      .otp-loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1.5s linear infinite;
+        margin:20px auto;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      </style>
+  <script>
+    if(location.hash == "#ref=gokwik"){
+      window.addEventListener("load", (event) => {
+        setTimeout(function(){
+          window.gokwikSdk.initCheckout(merchantInfo);
+        }, 4000);
+      });
+    }
+      else{
+        location.href="/account";
+      }
+  </script>
+  <div class="otp-loader">&nbsp;</div>
+      {% endif %}
+  {% else %}
+    <style>
+      .simply-otp-wrapper {
+        display: block;
+
+      }
+      .otp-loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1.5s linear infinite;
+        margin:20px auto;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    <div id="otp-original-login" style="display:none">
+      {%- form 'customer_login', name: 'login', class: 'sotp-form', id: 'sotp-form' -%}
+        <input
+          type="email"
+          id="otp-original-email"
+          name="customer[email]">
+        <input
+          type="password"
+          id="otp-original-password"
+          name="customer[password]">
+        <input
+          type="hidden"
+          name="return_url"
+          id="otp-return_to">
+        <button type="submit" id="otp-original-submit">Login</button>
+      {%- endform -%}
+    </div>
+    <div id="recaptcha-container"></div>
+
+    {% comment %}Popup HTML{% endcomment %}
+    {% comment %}
+    <div class="sotp-popup-wrapper">
+      <div class="sotp-popup-bg"></div>
+      <div class="sotp-popup-inner">
+        <div class="sotp-popup-content">
+          <div class="sotp-popup-close-btn">
+            <span>
+              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L30 30M30 1L1 30" stroke="#2D2D2D" stroke-width="1.37676"/>
+              </svg>
+            </span>
+          </div>
+          <div class="sotp-widget"></div>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+    {% comment %}
+      For open popup use function "simplyOtp.openPopup();"
+      For close popup use function "simplyOtp.closePopup();"
+    {% endcomment %}
+
+    {{ 'otp-login.css' | asset_url | stylesheet_tag }}
+    <script>
+      window.simplyOtp = window.simplyOtp || {};
+      window.simplyOtp.designMode = 1;{% comment %}
+        window.simplyOtp.pageUrl = location.href;{% endcomment %}
+      window.simplyOtp.initializeCss = () => {
+        simplyOtp.cartJson = {{ cart | json }};
+        window.olWrapper = document.querySelectorAll('.olWrapper');
+        olWrapper.forEach(ele => ele.style.display = "none")
+
+  // If available then change olWrapper display property
+
+  /* Load css */
+        var cssId = 'myCss'; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName('head')[0];
+          var link = document.createElement('link');
+          link.id = cssId;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = "{{'otp-login.css' | asset_url}}";
+          link.media = 'all';
+          head.appendChild(link);
+        }if (Shopify.designMode) {
+          document.addEventListener("shopify:section:load", () => {
+            let olWrapperDiv = document.querySelectorAll('.olWrapper'); // Parent element
+            if (olWrapperDiv) { // To check css is available in the DOM or not
+              olWrapperDiv.forEach(ele => ele.style.display = "flex") // If available then change olWrapper display property
+            }
+          });
+        }
+      }
+      window.simplyOtp.signUpEvent = (data) => {
+        {% comment %}
+          data
+            .email
+            data
+            .phone
+            data
+            .firstName
+            data
+            .lastName{% endcomment %}
+          console.log('signup', data);
+        }
+        window.simplyOtp.loginEvent = (data) => {
+          console.log('login', data);
+        }
+    </script>
+    <script>
+      {% if shop.metafields.simply-otp-login.otp_widgets  %}
+      simplyOtp.otp_widgets = {{shop.metafields.simply-otp-login.otp_widgets}};
+      {% else  %}
+      simplyOtp.otp_widgets = {};
+      {% endif  %}
+      {% if shop.metafields.simply-otp-login.custom_fields  %}
+      simplyOtp.custom_fields = {{ shop.metafields.simply-otp-login.custom_fields }};
+      {% else  %}
+      simplyOtp.custom_fields = [];
+    {% endif  %}
+      simplyOtp.language = {
+        loginSubTitle: simplyOtp.otp_widgets.login_sub_title,
+        loginTitle: simplyOtp.otp_widgets.login_title,
+        phoneEnable: simplyOtp.otp_widgets.phone_enable,
+        emailEnable: simplyOtp.otp_widgets.email_enable,
+        whatsappEnable: simplyOtp.otp_widgets.whatsapp_enable,
+        phonePlaceholder: simplyOtp.otp_widgets.phone_placeholder,
+        emailPlaceholder: simplyOtp.otp_widgets.email_placeholder,
+        whatsappPlaceholder: simplyOtp.otp_widgets.whatsapp_placeholder,
+        otpTitle: simplyOtp.otp_widgets.otp_title,
+        otpSubTitle: simplyOtp.otp_widgets.otp_sub_title,
+        accountTitle: simplyOtp.otp_widgets.account_title,
+        marketingText: simplyOtp.otp_widgets.marketing_text,
+        emailOfferEnable: simplyOtp.otp_widgets.email_offer_enable,
+        phoneOfferEnable: simplyOtp.otp_widgets.sms_offer_enable,
+        whatsappOfferEnable: simplyOtp.otp_widgets.whatsapp_offer_enable,
+        enableCountries: simplyOtp.otp_widgets.enable_countries,
+        otherOptionText: "Or Login Using",
+        btn_bg_color: simplyOtp.otp_widgets.btn_bg_color,
+        btn_text_color: simplyOtp.otp_widgets.btn_text_color,
+        fname_required:false,
+        lname_required:false,
+        email_required:true,
+        phone_required:true,
+        updateBtnText: "Update",
+        requestOTP : "Request OTP",
+        emText : "Email",
+        waText : "WhatsApp",
+        phText : "Phone",
+        emTextError : "Please enter a valid email",
+        phTextError : "Please enter a valid Phone Number",
+        fnameTextError : "Please enter First Name",
+        lnameTextError : "Please enter Last Name",
+        fnameText : "First Name",
+        lnameText : "Last Name",
+        verifyOTPText : "Verify OTP",
+        resendOTPText : "Resend OTP",
+        didNotReceiveOTPText : "Didn't Receive the OTP?",
+      };
+      let ec = simplyOtp.language.enableCountries.split(',');
+      simplyOtp.settings = {
+        onlyOTPNoLogin : false,
+        multipass_enabled : false,
+        skipPage3 : false,
+        goKwik:false,
+        onlyIndia: false,
+        selectedCountry: ec[0].toLowerCase(),
+        primaryColor: simplyOtp.otp_widgets.btn_bg_color,
+        resendTime: 5,
+        image: simplyOtp.otp_widgets.image_url
+          ? simplyOtp.otp_widgets.image_url
+          : null
+      };
+      simplyOtp.popupEnable=false; //Otp popup
+      simplyOtp.permanentDomain = "{{ shop.permanent_domain }}";
+      simplyOtp.myFirebaseApi = '{{ shop.metafields.simply-otp-login.firebase_config }}';
+    </script>
+    <script
+      src="{{'otp-login.js' | asset_url}}"
+      type="text/javascript"
+      defer="defer"></script>
+  {% endif %}
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Simply OTP Section",
+    "tag": "section",
+    "class": "section",
+    "presets": [
+      {
+        "name": "Simply OTP Section"
+      }
+    ]
   }
 {% endschema %}
