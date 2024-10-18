@@ -1,1 +1,45 @@
-{"sections":{"165460479522332vv3":{"type":"otp-login","settings":{}},"main-login":{"type":"main-login","disabled":true,"settings":{}}},"order":["main-login","165460479522332vv3"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-login": {
+      "type": "main-login",
+      "settings": {
+      }
+    },
+    "165460479522332vv3": {
+      "type": "otp-login",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1729247860cd64d602": {
+      "type": "apps",
+      "blocks": {
+        "simply_otp_login_app_section_block_xLTk8B": {
+          "type": "shopify://apps/simply-otp-login/blocks/app-section-block/c26b7b17-273d-4800-af62-8ec88ba18251",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "simply_otp_login_app_section_block_xLTk8B"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-login",
+    "165460479522332vv3",
+    "1729247860cd64d602"
+  ]
+}
