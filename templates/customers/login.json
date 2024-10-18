@@ -32,6 +32,7 @@
       "block_order": [
         "simply_otp_login_app_section_block_xLTk8B"
       ],
+      "disabled": true,
       "settings": {
       }
     },
