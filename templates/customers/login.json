@@ -11,12 +11,12 @@
   "sections": {
     "main-login": {
       "type": "main-login",
-      "disabled": true,
       "settings": {
       }
     },
     "165460479522332vv3": {
       "type": "otp-login",
+      "disabled": true,
       "settings": {
       }
     },
@@ -48,6 +48,24 @@
       "block_order": [
         "simply_otp_login_app_section_block_7zA9NP"
       ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "17292528525ef6a8ff": {
+      "type": "apps",
+      "blocks": {
+        "simply_otp_login_app_section_block_gXLnAm": {
+          "type": "shopify://apps/simply-otp-login/blocks/app-section-block/c26b7b17-273d-4800-af62-8ec88ba18251",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "simply_otp_login_app_section_block_gXLnAm"
+      ],
+      "disabled": true,
       "settings": {
       }
     }
@@ -56,6 +74,7 @@
     "main-login",
     "165460479522332vv3",
     "1729247860cd64d602",
-    "1729248248711291d2"
+    "1729248248711291d2",
+    "17292528525ef6a8ff"
   ]
 }
