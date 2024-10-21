@@ -197,7 +197,7 @@
     "blocks": {
       "9717370649079274736": {
         "type": "shopify://apps/simply-otp-login/blocks/app-embed-block/c26b7b17-273d-4800-af62-8ec88ba18251",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
