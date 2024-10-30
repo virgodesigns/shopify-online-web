@@ -294,64 +294,69 @@
   {%- endstyle -%}
 </header>
 
-{% unless current_url contains 'order-details' %} 
-<mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
-  <div class="m-header">
-    <nav>
-      <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
-        <li class="mobile-links flex-box__item" data-link-url="/">
-          <a href="/">
-            <div class="highlight">
-              {% render 'svg-icons' with 'mobile-nav-home-active' %}
-            </div>
-            <div class="normal">
-              {% render 'svg-icons' with 'mobile-nav-home' %}
-            </div>
+{% unless current_url contains 'order-details' %}
+  <mobile-header class="medium-hide large-up-hide  {% if template == 'product' or template == 'product.coords' or template == 'collection' %}header-hide{% endif %}">
+    <div class="m-header">
+      <nav>
+        <ul class="flex-box flex-box--4-col" style="--grid-mobile-horizontal-spacing: 16px;" id="mobile-header-custom">
+          <li class="mobile-links flex-box__item" data-link-url="/">
+            <a href="/">
+              <div class="highlight">
+                {% render 'svg-icons' with 'mobile-nav-home-active' %}
+              </div>
+              <div class="normal">
+                {% render 'svg-icons' with 'mobile-nav-home' %}
+              </div>
 
-            <span> Home</span>
-          </a>
-        </li>
-        <li class="mobile-links flex-box__item" data-link-url="/collections">
-          <a href="/collections">
-            <div class="highlight">
-              {% render 'svg-icons' with 'mobile-nav-category-active' %}
-            </div>
-            <div class="normal">
-              {% render 'svg-icons' with 'mobile-nav-category' %}
-            </div>
+              <span> Home</span>
+            </a>
+          </li>
+          <li class="mobile-links flex-box__item" data-link-url="/collections">
+            <a href="/collections">
+              <div class="highlight">
+                {% render 'svg-icons' with 'mobile-nav-category-active' %}
+              </div>
+              <div class="normal">
+                {% render 'svg-icons' with 'mobile-nav-category' %}
+              </div>
 
-            <span> Categories</span>
-          </a>
-        </li>
-        <li class="mobile-links flex-box__item" data-link-url="/pages/circularity-mweb">
-          <a href="/pages/circularity-mweb">
-            <div class="highlight">
-              {% render 'svg-icons' with 'mobile-nav-circularity-active' %}
-            </div>
-            <div class="normal">
-              {% render 'svg-icons' with 'mobile-nav-circularity' %}
-            </div>
+              <span> Categories</span>
+            </a>
+          </li>
+          <li class="mobile-links flex-box__item" data-link-url="/pages/circularity-mweb">
+            <a href="/pages/circularity-mweb">
+              <div class="highlight">
+                {% render 'svg-icons' with 'mobile-nav-circularity-active' %}
+              </div>
+              <div class="normal">
+                {% render 'svg-icons' with 'mobile-nav-circularity' %}
+              </div>
 
-            <span> Circularity</span>
-          </a>
-        </li>
-        <li class="mobile-links flex-box__item" data-link-url="https://virgiofashion.myshopify.com/account/login">
-          <a href="/account/login">
-            <div class="highlight">
-              {% render 'svg-icons' with 'mobile-nav-account-active' %}
-            </div>
-            <div class="normal">
-              {% render 'svg-icons' with 'mobile-nav-account' %}
-            </div>
+              <span> Circularity</span>
+            </a>
+          </li>
+          {% if customer %}
+            <a href="{{ routes.account_url }}">Account</a>
+          {% else %}
+            <a href="{{ routes.account_login_url }}">Login</a>
+          {% endif %}
+          <li class="mobile-links flex-box__item" data-link-url="https://virgiofashion.myshopify.com/account/login">
+            <a href="/account/login">
+              <div class="highlight">
+                {% render 'svg-icons' with 'mobile-nav-account-active' %}
+              </div>
+              <div class="normal">
+                {% render 'svg-icons' with 'mobile-nav-account' %}
+              </div>
 
-            <span> Account</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</mobile-header>
-{%  endunless %}
+              <span> Account</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </mobile-header>
+{% endunless %}
 
 <script type="application/ld+json">
   {
