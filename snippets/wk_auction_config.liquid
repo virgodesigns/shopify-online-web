@@ -1,0 +1,19 @@
+{%- assign wk_general_config = shop.metafields.wk_general -%}
+{%- assign wk_auction_config = shop.metafields.wk_auction -%}
+{%- assign wk_widget_config = shop.metafields.wk_widget -%}
+{%- assign wk_theme_colors = shop.metafields.wk_design -%}
+{%- assign wk_labels = shop.metafields.wk_label -%}
+<script>
+  if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 1.7)) {
+    jqueryScript = document.createElement('script');
+    jqueryScript.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+    document.head.append(jqueryScript);
+  }
+
+  var wk_general_config = {{wk_general_config | json}};
+  var wk_auction_config = {{wk_auction_config | json}};
+  var wk_widget_config = {{wk_widget_config | json}};
+  var wk_theme_colors = {{wk_theme_colors | json}};
+  var wk_labels = {{wk_labels | json}};
+  var shop_currency = {{shop.currency | json}};
+</script>
